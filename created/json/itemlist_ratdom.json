@@ -14,5 +14,21 @@
             "increaseAttackChance":0,
             "increaseBlockChance":1
         }
+    },
+    {
+        "id":"ratdom_pickaxe",
+        "iconID":"items_misc_5:24",
+        "name":"Pickaxe",
+        "displaytype":"quest",
+        "category":"axe",
+        "equipEffect":{
+            "increaseAttackDamage":{
+                "min":1,
+                "max":2
+            },
+            "increaseAttackCost":7,
+            "increaseAttackChance":-1,
+            "increaseBlockChance":1
+        }
     }
 ]

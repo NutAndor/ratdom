@@ -68,6 +68,11 @@
             },
             {
                 "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":3
+            },
+            {
+                "rewardType":"questProgress",
                 "rewardID":"ratdom_quest",
                 "value":10
             },
@@ -94,12 +99,12 @@
             {
                 "rewardType":"spawnAll",
                 "rewardID":"ratdom_mara",
-                "mapName":"crossglen_cave"
+                "mapName":"crossglen"
             },
             {
                 "rewardType":"spawnAll",
                 "rewardID":"ratdom_tharal",
-                "mapName":"crossglen_cave"
+                "mapName":"crossglen"
             }
         ]
     },
@@ -395,38 +400,293 @@
     {
         "id":"ratdom_rat",
         "message":"This is my bed - go away!",
-        "replies":[
-            {
-                "text":"How do I get into the cave?",
-				"nextPhraseID":"ratdom_rat_test"
-			}
-        ]
-    },
-    {
-        "id":"ratdom_rat_test",
-        "message":"Speak friend and enter!",
         "rewards":[
             {
                 "rewardType":"questProgress",
-                "rewardID":"ratdom_nondisplay",
-                "value":2
+                "rewardID":"ratdom_quest",
+                "value":10
             },
             {
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_nondisplay",
                 "value":3
             }
+        ],
+        "replies":[
+            {
+                "text":"How do I get out of here?",
+				"nextPhraseID":"ratdom_rat_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":60,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"Where would I find this yellow artefact?",
+				"nextPhraseID":"ratdom_rat_50",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":80,
+						"negate":true
+                    }
+                ]
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_10",
+        "message":"I know the way. Rats know all ways everywhere.",
+        "replies":[
+            {
+                "text":"Great. Where shall I go?",
+				"nextPhraseID":"ratdom_rat_10_10"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_10_10",
+        "message":"You must help me to find a yellow, round artefact. Then I'll show you the exit.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":50
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":3
+            }
+		],
+        "replies":[
+            {
+                "text":"Where would I find this yellow artefact?",
+				"nextPhraseID":"ratdom_rat_50"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_50",
+        "message":"It is deep in the rat cave, of course. Behind the statue.",
+        "replies":[
+            {
+                "text":"In our supply cave? I didn't know there was a statue?",
+				"nextPhraseID":"ratdom_rat_50_10"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_50_10",
+        "message":"We had build up the statue of Andor in memory that he never killed any rats.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":70
+            }
+		],
+        "replies":[
+            {
+                "text":"OK. I'll go into the deep cave.",
+				"nextPhraseID":"X"
+			},
+            {
+                "text":"How do I get by the statue?",
+				"nextPhraseID":"ratdom_rat_70"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_70",
+        "message":"Probably you are too fat to get by. Tore the statue down. But don't tell anyrat that I said so.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":80
+            }
+		],
+        "replies":[
+            {
+                "text":"Where on earth do I get a pickaxe?",
+				"nextPhraseID":"X"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_audir",
+        "message":"Now that you mention it - yes. Long ago I made a good, sturdy pickaxe. But nobody wanted it for years, so I almost forgot it.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_audir_1"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_audir_1",
+        "message":"You could have it for 80 pieces of gold.",
+        "replies":[
+            {
+                "text":"Great, I'll take it.",
+                "nextPhraseID":"ratdom_audir_2",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":80
+                    }
+                ]
+            },
+            {
+                "text":"Hmm, I will think about it.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_audir_2",
+        "message":"Here you are.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":82
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"ratdom_pickaxe",
+                "value":1
+            }
+        ],
+        "replies":[
+            {
+                "text":"Thank you, bye.",
+                "nextPhraseID":"X"
+            }
         ]
     },
     {
         "id":"ratdom_rat_statue",
-        "message":"Impressing rat statue.",
         "replies":[
             {
-                "text":"Friend!",
-				"nextPhraseID":"F"
+                "nextPhraseID":"F",
+                "requires":[
+                    {
+                        "requireType":"wear",
+                        "requireID":"ratdom_pickaxe",
+                        "value":1
+                    }
+                ]
 			}
         ]
+    },
+    {
+        "id":"crossglen_cave_ratdom_key",
+        "message":"The rock wall looks quite massive. There is just a tiny little hole in the shape of a bone.",
+        "replies":[
+            {
+                "text":"What would happen if I put a bone into the hole?",
+				"nextPhraseID":"crossglen_cave_ratdom_key_10",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"bone",
+                        "value":1
+                    }
+                ]
+			}
+        ]
+    },
+    {
+        "id":"crossglen_cave_ratdom_key_10",
+        "message":"The massive rock wall just disappears!",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":100
+            }
+        ]
+    },
+    {
+        "id":"ratdom_maze_rat1",
+        "replies":[
+            {
+				"nextPhraseID":"ratdom_maze_rat1_10",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"ratdom_torch",
+                        "value":1
+                    },
+                    {
+                        "requireType":"wear",
+                        "requireID":"ratdom_torch",
+                        "value":1,
+						"negate":true
+                    }
+                ]
+			},
+            {
+				"nextPhraseID":"ratdom_maze_rat1_20",
+                "requires":[
+                    {
+                        "requireType":"wear",
+                        "requireID":"ratdom_torch",
+                        "value":1,
+						"negate":true
+                    }
+                ]
+			}
+        ]
+    },
+    {
+        "id":"ratdom_maze_rat1_10",
+		"switchToNPC":"ratdom_rat",
+        "message":"A torch in the bag doesn't make much light."
+    },
+    {
+        "id":"ratdom_maze_rat1_20",
+		"switchToNPC":"ratdom_rat",
+        "message":"It might be no good idea, to stumble in the dark."
+    },
+    {
+        "id":"ratdom_maze_rat2",
+        "replies":[
+            {
+				"nextPhraseID":"ratdom_maze_rat2_10",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"ratdom_torch",
+                        "value":1,
+						"negate":true
+                    }
+                ]
+			}
+        ]
+    },
+    {
+        "id":"ratdom_maze_rat2_10",
+		"switchToNPC":"ratdom_rat",
+        "message":"Go and look for a torch, you blockhead! And use it!"
     },
     {
         "id":"ratdom_maze_light1",
