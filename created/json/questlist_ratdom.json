@@ -44,10 +44,9 @@
         "name":"ratdom_nondisplay",
         "showInLog":1,
         "stages":[	
-			{ "progress":1, "logText":"Ratdom lurking"  },
-			{ "progress":2, "logText":"Ratdom active"  },
-			{ "progress":3, "logText":"Rat statue built"  },
-			{ "progress":4, "logText":"Maze entry open"  },
+			{ "progress":1, "logText":"Ratdom active"  },
+			{ "progress":2, "logText":"Rat statue built"  },
+			{ "progress":3, "logText":"Maze entry open"  },
 			{ "progress":5, "logText":"5"  },
 			{ "progress":6, "logText":"6"  },
 			{ "progress":7, "logText":"7"  },

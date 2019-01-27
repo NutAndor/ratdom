@@ -36,33 +36,5 @@
                 "nextPhraseID":"mikhail_start_select2"
             }
         ]
-    },
-    {
-        "id":"mikhail_start_select2",
-        "replies":[
-            {
-                "nextPhraseID":"mikhail_start_select_default",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"mikhail_rats",
-                        "value":100
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"mikhail_rats_continue",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"mikhail_rats",
-                        "value":10
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"mikhail_start_select_default"
-            }
-        ]
     }
 ]

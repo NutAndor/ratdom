@@ -40,18 +40,13 @@
         "id":"ratdom_check_1",
         "rewards":[
             {
-                "rewardType":"questProgress",
-                "rewardID":"ratdom_nondisplay",
-                "value":1
-            },
-            {
-                "rewardType":"activateMapObjectGroup",
-                "rewardID":"Inactive",
+                "rewardType":"deactivateMapObjectGroup",
+                "rewardID":"normal",
                 "mapName":"home"
             },
             {
-                "rewardType":"deactivateMapObjectGroup",
-                "rewardID":"Active",
+                "rewardType":"activateMapObjectGroup",
+                "rewardID":"ratdom_lurking",
                 "mapName":"home"
             }
         ]
@@ -59,8 +54,13 @@
     {
         "id":"ratdom_wakeup",
         "switchToNPC":"none",
-        "message":"You woke up as you hit the ground with a hard punch. Apparently you had a nightmare - there were rats everywhere! Anyway, you were not a bit recovered.",
+        "message":"You wake up when you dreamed that something bites you firmly in your toes. Apparently you had a nightmare - there were rats everywhere! Anyway, you were not a bit recovered.",
         "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":1
+            },
             {
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_nondisplay",
@@ -68,13 +68,38 @@
             },
             {
                 "rewardType":"questProgress",
-                "rewardID":"ratdom_nondisplay",
-                "value":3
-            },
-            {
-                "rewardType":"questProgress",
                 "rewardID":"ratdom_quest",
                 "value":10
+            },
+            {
+                "rewardType":"activateMapObjectGroup",
+                "rewardID":"ratdom_active",
+                "mapName":"home"
+            },
+            {
+                "rewardType":"deactivateMapObjectGroup",
+                "rewardID":"ratdom_lurking",
+                "mapName":"home"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"ratdom_rat",
+                "mapName":"home"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"ratdom_rat_statue",
+                "mapName":"crossglen_cave"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"ratdom_mara",
+                "mapName":"crossglen_cave"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"ratdom_tharal",
+                "mapName":"crossglen_cave"
             }
         ]
     },
@@ -369,7 +394,39 @@
     },
     {
         "id":"ratdom_rat",
-        "message":"This is my bed - go away!"
+        "message":"This is my bed - go away!",
+        "replies":[
+            {
+                "text":"How do I get into the cave?",
+				"nextPhraseID":"ratdom_rat_test"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_test",
+        "message":"Speak friend and enter!",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":2
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":3
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_statue",
+        "message":"Impressing rat statue.",
+        "replies":[
+            {
+                "text":"Friend!",
+				"nextPhraseID":"F"
+			}
+        ]
     },
     {
         "id":"ratdom_maze_light1",
