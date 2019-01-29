@@ -319,10 +319,10 @@
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="crossglen_caverat_2" type="spawn" x="160" y="288" width="192" height="416">
+  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
    <properties>
     <property name="quantity" value="2"/>
-    <property name="spawngroup" value="crossglen_caverat2"/>
+    <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
   <object id="46" name="crossglen_caverat_3" type="spawn" x="64" y="704" width="128" height="192">

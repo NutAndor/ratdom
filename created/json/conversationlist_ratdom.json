@@ -53,8 +53,6 @@
     },
     {
         "id":"ratdom_wakeup",
-        "switchToNPC":"none",
-        "message":"You wake up when you dreamed that something bites you firmly in your toes. Apparently you had a nightmare - there were rats everywhere! Anyway, you were not a bit recovered.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -65,11 +63,6 @@
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_nondisplay",
                 "value":2
-            },
-            {
-                "rewardType":"questProgress",
-                "rewardID":"ratdom_nondisplay",
-                "value":3
             },
             {
                 "rewardType":"questProgress",
@@ -105,8 +98,142 @@
                 "rewardType":"spawnAll",
                 "rewardID":"ratdom_tharal",
                 "mapName":"crossglen"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"crossglen_caverat",
+                "mapName":"crossglen"
+            }
+        ],
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_wakeup_10",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"bone",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_wakeup_20"
             }
         ]
+    },
+    {
+        "id":"ratdom_wakeup_10",
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"ratdom_wakeup_bones",
+                "value":1
+            }
+        ],
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_wakeup_10",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"bone",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_wakeup_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_wakeup_20",
+        "switchToNPC":"none",
+        "message":"You wake up when you dreamed that something bites you firmly in your toes. Apparently you had a nightmare - there were rats everywhere! Anyway, you were not a bit recovered."
+    },
+    {
+        "id":"ratdom_check_kills",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_check_kills_mara",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_mara",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":30,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_check_kills_2"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_check_kills_mara",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":30
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"Mara",
+                "mapName":"crossglen_hall"
+            }
+        ],
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_check_kills_2"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_check_kills_2",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_check_kills_tharal",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_tharal",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":32,
+						"negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"ratdom_check_kills_tharal",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":32
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"Tharal",
+                "mapName":"crossglen_hall"
+            }
+        ]
+    },
+    {
+        "id":"crossglen_ratdom_key",
+        "message":"This must be a bad dream. How can I only wake up?"
     },
     {
         "id":"ratdom_mikhail",
@@ -169,7 +296,7 @@
     },
     {
         "id":"ratdom_mikhail_30",
-        "message":"We drove all the people out of this village.",
+        "message":"We rats took over this village.",
         "replies":[
             {
                 "text":"N",
@@ -207,7 +334,7 @@
     },
     {
         "id":"ratdom_mikhail_42",
-        "message":"Then try to be useful. Go to the town hall and buy me some more bread.",
+        "message":"Now try to be useful. Go to the town hall and buy me some more bread.",
         "replies":[
             {
                 "text":"OK.",
@@ -318,86 +445,6 @@
         ]
     },
     {
-        "id":"ratdom_check_kills",
-        "replies":[
-            {
-                "nextPhraseID":"ratdom_check_kills_mara",
-                "requires":[
-                    {
-                        "requireType":"killedMonster",
-                        "requireID":"ratdom_mara",
-                        "value":1
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"ratdom_mikhail",
-                        "value":30,
-						"negate":true
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"ratdom_check_kills_2"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_check_kills_mara",
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"ratdom_mikhail",
-                "value":30
-            },
-            {
-                "rewardType":"removeSpawnArea",
-                "rewardID":"Mara",
-                "mapName":"crossglen_hall"
-            }
-        ],
-        "replies":[
-            {
-                "nextPhraseID":"ratdom_check_kills_2"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_check_kills_2",
-        "replies":[
-            {
-                "nextPhraseID":"ratdom_check_kills_tharal",
-                "requires":[
-                    {
-                        "requireType":"killedMonster",
-                        "requireID":"ratdom_tharal",
-                        "value":1
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"ratdom_mikhail",
-                        "value":32,
-						"negate":true
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id":"ratdom_check_kills_tharal",
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"ratdom_mikhail",
-                "value":32
-            },
-            {
-                "rewardType":"removeSpawnArea",
-                "rewardID":"Tharal",
-                "mapName":"crossglen_hall"
-            }
-        ]
-    },
-    {
         "id":"ratdom_rat",
         "message":"This is my bed - go away!",
         "rewards":[
@@ -405,11 +452,6 @@
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_quest",
                 "value":10
-            },
-            {
-                "rewardType":"questProgress",
-                "rewardID":"ratdom_nondisplay",
-                "value":3
             }
         ],
         "replies":[
@@ -419,7 +461,7 @@
                 "requires":[
                     {
                         "requireType":"questProgress",
-                        "requireID":"ratdom_quest",
+                        "requireID":"ratdom_mikhail",
                         "value":10
                     },
                     {
@@ -434,10 +476,27 @@
                 "text":"Where would I find this yellow artefact?",
 				"nextPhraseID":"ratdom_rat_50",
                 "requires":[
-                    {
+                    {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_quest",
                         "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":70,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"What's this new statue in the cave?",
+				"nextPhraseID":"ratdom_rat_60",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":60
                     },
                     {
                         "requireType":"questProgress",
@@ -451,7 +510,7 @@
     },
     {
         "id":"ratdom_rat_10",
-        "message":"I know the way. Rats know all ways everywhere.",
+        "message":"I know the way out, of course. Rats know all ways everywhere.",
         "replies":[
             {
                 "text":"Great. Where shall I go?",
@@ -467,11 +526,6 @@
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_quest",
                 "value":50
-            },
-            {
-                "rewardType":"questProgress",
-                "rewardID":"ratdom_nondisplay",
-                "value":3
             }
 		],
         "replies":[
@@ -483,16 +537,25 @@
     },
     {
         "id":"ratdom_rat_50",
-        "message":"It is deep in the rat cave, of course. Behind the statue.",
+        "message":"It is deep in the rat cave, of course. Use your eyes.",
         "replies":[
             {
-                "text":"In our supply cave? I didn't know there was a statue?",
+                "text":"In our supply cave? That should be easy."
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_60",
+        "message":"The artefact must be behind the statue. Did you seek there?",
+        "replies":[
+            {
+                "text":"I didn't know there was a statue in our supply cave.",
 				"nextPhraseID":"ratdom_rat_50_10"
 			}
         ]
     },
     {
-        "id":"ratdom_rat_50_10",
+        "id":"ratdom_rat_60_10",
         "message":"We had build up the statue of Andor in memory that he never killed any rats.",
         "rewards":[
             {
@@ -503,11 +566,11 @@
 		],
         "replies":[
             {
-                "text":"OK. I'll go into the deep cave.",
+                "text":"OK. I'll seek behind the statue.",
 				"nextPhraseID":"X"
 			},
             {
-                "text":"How do I get by the statue?",
+                "text":"How do I pass by the statue?",
 				"nextPhraseID":"ratdom_rat_70"
 			}
         ]
@@ -515,17 +578,9 @@
     {
         "id":"ratdom_rat_70",
         "message":"Probably you are too fat to get by. Tore the statue down. But don't tell anyrat that I said so.",
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"ratdom_quest",
-                "value":80
-            }
-		],
         "replies":[
             {
-                "text":"Where on earth do I get a pickaxe?",
-				"nextPhraseID":"X"
+                "text":"A pity to destroy such a beautyful thing."
 			}
         ]
     },
@@ -594,16 +649,84 @@
                         "value":1
                     }
                 ]
+			},
+            {
+                "nextPhraseID":"ratdom_rat_statue_10"
 			}
         ]
     },
     {
+        "id":"ratdom_rat_statue_10",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_rat_statue_30",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":70
+                    }
+                ]
+			},
+            {
+                "nextPhraseID":"ratdom_rat_statue_20"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_statue_20",
+		"switchToNPC":"none",
+		"message":"You see a beautifully crafted statue of your brother Andor.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":60
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_statue_30",
+		"switchToNPC":"ratdom_rat",
+		"message":"Andor's statue may be cleared away with a pickaxe. Didn't I say already?",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":80
+            }
+        ]
+    },
+    {
         "id":"crossglen_cave_ratdom_key",
+        "replies":[
+            {
+				"nextPhraseID":"crossglen_cave_ratdom_key_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":3,
+						"negate":true
+                    }
+                ]
+			}
+        ]
+    },
+    {
+        "id":"crossglen_cave_ratdom_key_10",
         "message":"The rock wall looks quite massive. There is just a tiny little hole in the shape of a bone.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":90
+            }
+        ],
         "replies":[
             {
                 "text":"What would happen if I put a bone into the hole?",
-				"nextPhraseID":"crossglen_cave_ratdom_key_10",
+				"nextPhraseID":"crossglen_cave_ratdom_key_20",
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
@@ -615,13 +738,18 @@
         ]
     },
     {
-        "id":"crossglen_cave_ratdom_key_10",
+        "id":"crossglen_cave_ratdom_key_20",
         "message":"The massive rock wall just disappears!",
         "rewards":[
             {
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_quest",
                 "value":100
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":3
             }
         ]
     },
@@ -669,22 +797,6 @@
     },
     {
         "id":"ratdom_maze_rat2",
-        "replies":[
-            {
-				"nextPhraseID":"ratdom_maze_rat2_10",
-                "requires":[
-                    {
-                        "requireType":"inventoryKeep",
-                        "requireID":"ratdom_torch",
-                        "value":1,
-						"negate":true
-                    }
-                ]
-			}
-        ]
-    },
-    {
-        "id":"ratdom_maze_rat2_10",
 		"switchToNPC":"ratdom_rat",
         "message":"Go and look for a torch, you blockhead! And use it!"
     },
