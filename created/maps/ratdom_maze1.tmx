@@ -174,9 +174,12 @@
  <tileset firstgid="7273" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
+ <tileset firstgid="7381" name="map_cavewall_1" tilewidth="32" tileheight="32" tilecount="108" columns="18">
+  <image source="../drawable/map_cavewall_1.png" width="576" height="192"/>
+ </tileset>
  <layer name="Ground" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJzFVckRwkAM48GDIrYNCgNKCJSwCR2EpAOODgLURDKsZ4SQN2EYhoce2cOyZXlThtmsJBwEmh7zxRPROYPgmBhbrQ/xTwJn4G2dM4ha1GGxW9prUvyrwA14L84ZxDE8dako92HvkjgrWMf4Hu4TznTAy7nfgZdrGrDqv7cJ6x6bCXyISL5AGK/aY63OH/AW6R7eKVINu/DOW6R106rO6JHjNL/gHfRaGd5nBPMYat5/wLcF37I+R/A5axHTOtYcoc+INX3zTLA+XfK58d4EbyXWEDgfPOe5fnQiPnOYf7kvOAO5OVee8XyOsU1/64v3bk71GPKyz7Eey9364r2b5icFNYPR6a3Sv3P0xFwV1AzGTG/R02Nv0hivusP95numF+dg2uY4Fa/pcwiv85cDz+o3GPuP/gpj/9FfYbn4Dx4yeUQe
+   eJzFVdsRwjAM44MPhsgaDAaMUBghLRu0sAGUDQrMRHvEd0LIKT2O40MfzcOyZTktw2xWEhqBQ4/54ononEFwTIyt1of4Z4EWeI/OGUQt6rDYR9o7pPhXgRvwXpwziFN46lJR7sPeJXFWsI7xPdw/ONMBL+d+B16uacCq/94mrHtsPuBDRPIFwnjVHmvVTuAt0j28U6QaduGdt0jrplWd0SPHaX7BO+i1MrzPCOYx1LyfwLcF37I+J/A5axHTOtYcoc+INX3zTLA+XfK58d4EbyXWEDgfPOe5fnQiPnOYf7kvOAO5OVee8XyOvKa/9QXfQW8Gch5DDvY51mO5W1+8d9P8pKBmMDq9Vfp3jp6Yq4KawZjRGD099iaN8ao73G++Z3pxDqZtjlPxmj5NeJ2/HHhWv8HYf/RXGPuP/grLxX/wAOZCRAs=
   </data>
  </layer>
  <layer name="Objects" width="30" height="20">

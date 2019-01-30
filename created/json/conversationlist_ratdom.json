@@ -236,6 +236,14 @@
         "message":"This must be a bad dream. How can I only wake up?"
     },
     {
+        "id":"crossglen_ratdom_key_2",
+        "replies":[
+            {
+                "nextPhraseID":"crossglen_ratdom_key"
+            }
+        ]
+    },
+    {
         "id":"ratdom_mikhail",
         "switchToNPC":"ratdom_mikhail",
         "replies":[
@@ -247,7 +255,7 @@
                         "value":90
                     }
                 ],
-                "nextPhraseID":"F"
+                "nextPhraseID":"ratdom_mikhail_10"
             },
             {
                 "requires":[
@@ -313,7 +321,7 @@
     },
     {
         "id":"ratdom_mikhail_40",
-        "message":"However, two people are running around in the garden again. You should kill them.",
+        "message":"However, two people are running around in my garden again. You should kill them.",
         "replies":[
             {
                 "text":"I'll have a look.",
@@ -334,7 +342,7 @@
     },
     {
         "id":"ratdom_mikhail_42",
-        "message":"Now try to be useful. Go to the town hall and buy me some more bread.",
+        "message":"And try to be useful. Go to the town hall and buy me some more bread.",
         "replies":[
             {
                 "text":"OK.",
@@ -432,8 +440,8 @@
 				"nextPhraseID":"X"
             },
             {
-                "text":"I have enough. Attack!",
-				"nextPhraseID":"F"
+                "text":"I have enough.",
+				"nextPhraseID":"X"
             }
         ],
         "rewards":[
@@ -443,6 +451,11 @@
                 "value":90
             }
         ]
+    },
+    {
+        "id":"ratdom_mikhail_90",
+		"switchToNPC":"none",
+        "message":"The huge rat ignores you."
     },
     {
         "id":"ratdom_rat",
@@ -467,7 +480,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"ratdom_quest",
-                        "value":60,
+                        "value":70,
 						"negate":true
                     }
                 ]
@@ -490,7 +503,7 @@
                 ]
 			},
             {
-                "text":"What's this new statue in the cave?",
+                "text":"There is a nice new statue in the cave.",
 				"nextPhraseID":"ratdom_rat_60",
                 "requires":[
                     {			
@@ -498,10 +511,66 @@
                         "requireID":"ratdom_quest",
                         "value":60
                     },
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":50
+                    },
                     {
                         "requireType":"questProgress",
                         "requireID":"ratdom_quest",
                         "value":80,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"I tried to pass by Andor's statue, but there is not enough space.",
+				"nextPhraseID":"ratdom_rat_80",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":80
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":90,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"Look! I have a pickaxe now.",
+				"nextPhraseID":"ratdom_rat_82",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":82
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":90,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"There is a little bone shaped hole in the wall behind the statue. What shall I do now?",
+				"nextPhraseID":"ratdom_rat_90",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":90
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":100,
 						"negate":true
                     }
                 ]
@@ -550,7 +619,7 @@
         "replies":[
             {
                 "text":"I didn't know there was a statue in our supply cave.",
-				"nextPhraseID":"ratdom_rat_50_10"
+				"nextPhraseID":"ratdom_rat_60_10"
 			}
         ]
     },
@@ -583,6 +652,107 @@
                 "text":"A pity to destroy such a beautyful thing."
 			}
         ]
+    },
+    {
+        "id":"ratdom_rat_80",
+        "message":"The statue is well built. You'd probably need a pickaxe to tore it down."
+    },
+    {
+        "id":"ratdom_rat_82",
+        "message":"Did you get behind the statue?"
+    },
+    {
+        "id":"ratdom_rat_90",
+        "message":"Anything new?"
+    },
+    {
+        "id":"ratdom_rat_bwm1",,
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_rat_bwm1_10",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_rat_bwm1_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bwm1_10",
+        "message":"Your brother was here often. He had made himself rather comfortable."
+    },
+    {
+        "id":"ratdom_rat_bwm1_20",
+        "message":"Nobody seemed to be here for a long time."
+    },
+    {
+        "id":"ratdom_bwm1_east1",
+        "rewards":[
+            {
+                "rewardType":"createTimer",
+                "rewardID":"ratdom_rat_crossglen"
+            }
+        ]    
+	},
+    {
+        "id":"ratdom_bwm1_east_10_1",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_bwm1_east_10_2"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_bwm1_east_10_2",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_rat_crossglen",
+                "requires":[
+                    {
+                        "requireType":"timerElapsed",
+                        "requireID":"ratdom_rat_crossglen",
+                        "value":30
+                    }
+                ]
+            }
+        ]
+	},
+    {
+        "id":"ratdom_rat_crossglen",
+        "rewards":[
+            {
+                "rewardType":"createTimer",
+                "rewardID":"ratdom_rat_crossglen"
+            }
+        ]    ,
+		"switchToNPC":"ratdom_rat_crossglen",
+        "message":"A beautiful view, indeed.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_rat_crossglen_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_crossglen_10"
+        "message":"Do you need much longer?",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_rat_crossglen_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_crossglen_20"
+        "message":"Hey, wake up!"
     },
     {
         "id":"ratdom_audir",
@@ -688,7 +858,7 @@
     {
         "id":"ratdom_rat_statue_30",
 		"switchToNPC":"ratdom_rat",
-		"message":"Andor's statue may be cleared away with a pickaxe. Didn't I say already?",
+		"message":"Andor's statue may be cleared away with a pickaxe. Hadn't I mentioned it?",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -703,6 +873,11 @@
             {
 				"nextPhraseID":"crossglen_cave_ratdom_key_10",
                 "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":1
+                    },
                     {
                         "requireType":"questProgress",
                         "requireID":"ratdom_nondisplay",

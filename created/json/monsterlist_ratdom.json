@@ -14,6 +14,20 @@
         "phraseID":"ratdom_rat"
     },
     {
+        "id":"ratdom_rat_bwm1",
+        "name":"Clavred",
+        "iconID":"monsters_rats:1",
+        "unique":1,
+        "phraseID":"ratdom_rat_bwm1"
+    },
+    {
+        "id":"ratdom_rat_crossglen",
+        "name":"Clavred",
+        "iconID":"monsters_rats:1",
+        "unique":1,
+        "phraseID":"ratdom_rat_crossglen"
+    },
+    {
         "id":"ratdom_rat_statue",
         "name":"Enourmous rat statue",
         "iconID":"monsters_maksiu1:1",
