@@ -33,6 +33,16 @@
 	"negate":true
                     }
                 ]
+            },
+            {
+                "nextPhraseID":"ratdom_check_2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":13
+                    }
+                ]
             }
         ]
     },
@@ -52,6 +62,26 @@
         ]
     },
     {
+        "id":"ratdom_check_2",
+        "rewards":[
+            {
+                "rewardType":"activateMapObjectGroup",
+                "rewardID":"normal",
+                "mapName":"home"
+            },
+            {
+                "rewardType":"deactivateMapObjectGroup",
+                "rewardID":"ratdom_lurking",
+                "mapName":"home"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_rat",
+                "mapName":"home"
+            }
+        ]
+    },
+    {
         "id":"ratdom_wakeup",
         "rewards":[
             {
@@ -63,6 +93,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_nondisplay",
                 "value":2
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":10
             },
             {
                 "rewardType":"questProgress",
@@ -102,6 +137,11 @@
             {
                 "rewardType":"spawnAll",
                 "rewardID":"crossglen_caverat",
+                "mapName":"crossglen"
+            },
+            {
+                "rewardType":"activateMapObjectGroup",
+                "rewardID":"ratdom_keys",
                 "mapName":"crossglen"
             }
         ],
@@ -149,7 +189,17 @@
     {
         "id":"ratdom_wakeup_20",
         "switchToNPC":"none",
-        "message":"You wake up when you dreamed that something bites you firmly in your toes. Apparently you had a nightmare - there were rats everywhere! Anyway, you were not a bit recovered."
+        "message":"You wake up when you dreamed that something bites you firmly in your toes. Apparently you had a nightmare - there were rats everywhere!",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_wakeup_30"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_wakeup_30",
+        "message":"Anyway, you were not a bit recovered."
     },
     {
         "id":"ratdom_check_kills",
@@ -233,7 +283,24 @@
     },
     {
         "id":"crossglen_ratdom_key",
-        "message":"This must be a bad dream. How can I only wake up?"
+        "message":"This must be a bad dream.",
+        "replies":[
+            {
+                "text":"How can I only wake up?"
+            },
+            {
+                "text":"Maybe I should talk to the rat in my bed again.",
+				"nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":100,
+						"negate":true
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"crossglen_ratdom_key_2",
@@ -255,7 +322,7 @@
                         "value":90
                     }
                 ],
-                "nextPhraseID":"ratdom_mikhail_10"
+                "nextPhraseID":"ratdom_mikhail_90"
             },
             {
                 "requires":[
@@ -574,6 +641,17 @@
 						"negate":true
                     }
                 ]
+			},
+            {
+                "text":"I found a dark deep passage behind our supply cave.",
+				"nextPhraseID":"ratdom_rat_100",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":100
+                    }
+                ]
 			}
         ]
     },
@@ -615,17 +693,17 @@
     },
     {
         "id":"ratdom_rat_60",
-        "message":"The artefact must be behind the statue. Did you seek there?",
+        "message":"Yes. The artefact must be behind this statue. Did you seek there?",
         "replies":[
             {
-                "text":"I didn't know there was a statue in our supply cave.",
+                "text":"Not yet. I didn't know there was a statue in our supply cave?",
 				"nextPhraseID":"ratdom_rat_60_10"
 			}
         ]
     },
     {
         "id":"ratdom_rat_60_10",
-        "message":"We had build up the statue of Andor in memory that he never killed any rats.",
+        "message":"We had build up the statue of Andor in memory, that he never killed any rats.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -649,21 +727,56 @@
         "message":"Probably you are too fat to get by. Tore the statue down. But don't tell anyrat that I said so.",
         "replies":[
             {
-                "text":"A pity to destroy such a beautyful thing."
+                "text":"A pity to destroy such a beautyful thing.",
+				"nextPhraseID":"ratdom_rat_70_10"
 			}
         ]
     },
     {
+        "id":"ratdom_rat_70_10",
+        "message":"I will accompany you. I think it will be necessary to have an eye on you."
+    },
+    {
         "id":"ratdom_rat_80",
-        "message":"The statue is well built. You'd probably need a pickaxe to tore it down."
+        "message":"The statue is well built. You'd probably need a pickaxe to tore it down.",
+        "replies":[
+            {
+                "text":"Where would I get a pickaxe?",
+				"nextPhraseID":"ratdom_rat_80_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_80_10",
+        "message":"O dear - I can't believe it! Are you really that stupid?",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_rat_80_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_80_20",
+        "message":"Think yourself: Where are pickaxes supposed to be?"
     },
     {
         "id":"ratdom_rat_82",
-        "message":"Did you get behind the statue?"
+        "message":"Then why didn't you tried to get behind the statue yet?"
     },
     {
         "id":"ratdom_rat_90",
-        "message":"Anything new?"
+        "message":"In the shape of bones? That is a key hole, of course!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_rat_90_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_90_10",
+        "message":"Now, let's find out where the grosse rat over there stores his bone supply."
     },
     {
         "id":"ratdom_rat_bwm1",,
@@ -674,7 +787,7 @@
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_nondisplay",
-                        "value":1
+                        "value":10
                     }
                 ]
             },
@@ -684,6 +797,15 @@
         ]
     },
     {
+        "id":"ratdom_rat_100",
+        "message":"I hope  you finally have found my artefact?",
+        "replies":[
+            {
+                "text":"Eh, no, not yet."
+            }
+        ]
+    },
+	{
         "id":"ratdom_rat_bwm1_10",
         "message":"Your brother was here often. He had made himself rather comfortable."
     },
@@ -693,6 +815,14 @@
     },
     {
         "id":"ratdom_bwm1_east1",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_bwm1_east2"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_bwm1_east2",
         "rewards":[
             {
                 "rewardType":"createTimer",
@@ -712,12 +842,22 @@
         "id":"ratdom_bwm1_east_10_2",
         "replies":[
             {
+                "nextPhraseID":"ratdom_rat_crossglen_10",
+                "requires":[
+                    {
+                        "requireType":"timerElapsed",
+                        "requireID":"ratdom_rat_crossglen",
+                        "value":9
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"ratdom_rat_crossglen",
                 "requires":[
                     {
                         "requireType":"timerElapsed",
                         "requireID":"ratdom_rat_crossglen",
-                        "value":30
+                        "value":5
                     }
                 ]
             }
@@ -725,24 +865,28 @@
 	},
     {
         "id":"ratdom_rat_crossglen",
+		"switchToNPC":"ratdom_rat_crossglen",
+        "message":"A beautiful view.",
+        "replies":[
+            {
+                "text":"Indeed.",
+                "nextPhraseID":"ratdom_rat_crossglen_02"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_crossglen_02",
+        "message":"I remember your brother was sometimes up here with one or two other human beings."
+    },
+    {
+        "id":"ratdom_rat_crossglen_10",
+        "message":"Do you need much longer?",
         "rewards":[
             {
                 "rewardType":"createTimer",
                 "rewardID":"ratdom_rat_crossglen"
             }
-        ]    ,
-		"switchToNPC":"ratdom_rat_crossglen",
-        "message":"A beautiful view, indeed.",
-        "replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"ratdom_rat_crossglen_10"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_crossglen_10"
-        "message":"Do you need much longer?",
+        ],
         "replies":[
             {
                 "text":"N",

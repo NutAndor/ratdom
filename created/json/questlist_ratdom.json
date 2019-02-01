@@ -23,7 +23,7 @@
 			{	"progress":110, 
 				"logText":"A torch helps you to see in the dark. Unfortunately, the torch is so heavy that you have to lift it with both hands." },
 			{ 	"progress":120, 
-				"logText":"You found a platform from which you have a good view of Crossglen. Andor seems to have been here many times." },
+				"logText":"You found a platform from which you have a good view over Crossglen. Andor seems to have been here many times." },
 			{ 	"progress":110, "logText":"" },
 			{	"progress":100, "logText":"" },
 			{	"progress":100, "logText":"" },
@@ -47,7 +47,7 @@
                 "rewardExperience":500 },
 			{ "progress":54, "logText":"You lied to the big rat, that you killed Mara and Tharal.",
                 "rewardExperience":500 },
-			{ "progress":90, "logText":"Suddenly the huge rat attacked you.", 
+			{ "progress":90, "logText":"The huge rat ignores you now.", 
 				"finishesQuest":1 }
         ]
     },
@@ -64,7 +64,10 @@
 			{ "progress":7, "logText":"7"  },
 			{ "progress":8, "logText":"8"  },
 			{ "progress":9, "logText":"9"  },
-			{ "progress":10, "logText":"10"  }
+			{ "progress":10, "logText":"Clevred company"  },
+			{ "progress":11, "logText":"Clevred got artefact"  },
+			{ "progress":12, "logText":"Artefact brought back"  },
+			{ "progress":13, "logText":"Clevred dead"  }
         ]
     },
     {
