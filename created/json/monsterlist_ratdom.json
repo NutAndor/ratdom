@@ -95,7 +95,7 @@
     },
     {
         "id":"ratdom_mikhail",
-        "name":"Hideous rat",
+        "name":"Gruiik",
         "iconID":"monsters_rats:3",
         "unique":1,
         "phraseID":"ratdom_mikhail"
@@ -106,6 +106,13 @@
         "iconID":"monsters_rats:1",
         "unique":1,
         "phraseID":"ratdom_rat"
+    },
+    {
+        "id":"ratdom_rat_bwm1",
+        "name":"Clavred",
+        "iconID":"monsters_rats:1",
+        "unique":1,
+        "phraseID":"ratdom_rat_bwm1"
     },
     {
         "id":"ratdom_rat_crossglen",

@@ -406,6 +406,50 @@
         ]
     },
     {
+        "id":"crossglen_ratdom_key_3",
+        "message":"You see a note pinned to the door\n * Main hall closed * ",
+        "replies":[
+            {
+                "text":"It's the first time, that I see it closed.",
+				"nextPhraseID":"X"
+            },
+            {
+                "text":"Oh, what's this?",
+				"nextPhraseID":"crossglen_ratdom_key_3_20",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":72,
+						"negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"crossglen_ratdom_key_3_20",
+        "message":"A bag with a freshly baken bread was dangling at the door.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":72
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"bread",
+                "value":1
+            }
+        ],
+        "replies":[
+            {
+				"nextPhraseID":"X",
+                "text":"Good old Mara - she always knows what I need."
+            }
+        ]
+    },
+    {
         "id":"ratdom_bwm1_east1",
         "rewards":[
             {

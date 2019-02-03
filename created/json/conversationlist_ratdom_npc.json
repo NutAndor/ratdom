@@ -61,6 +61,22 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"ratdom_mikhail",
+                        "value":70
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":74,
+						"negate":true
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_kills_62"
+            },
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
                         "value":20
                     }
                 ],
@@ -103,7 +119,7 @@
     },
     {
         "id":"ratdom_mikhail_30",
-        "message":"We rats took over this village.",
+        "message":"We rats took over this village. I am Gruiik, their leader.",
         "replies":[
             {
                 "text":"N",
@@ -120,7 +136,7 @@
     },
     {
         "id":"ratdom_mikhail_40",
-        "message":"However, two people are running around in my garden again. You should kill them.",
+        "message":"However, there are two-legs running around in my garden again. Go and kill them.",
         "replies":[
             {
                 "text":"I'll have a look.",
@@ -141,7 +157,14 @@
     },
     {
         "id":"ratdom_mikhail_42",
-        "message":"And try to be useful. Go to the town hall and buy me some more bread.",
+        "message":"And I am hungry. Go to the town hall and bring me some bread.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":70
+            }
+        ],
         "replies":[
             {
                 "text":"OK.",
@@ -167,6 +190,13 @@
     {
         "id":"ratdom_mikhail_44",
         "message":"Was about time.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":74
+            }
+        ],
         "replies":[
             {
                 "text":"What - no thanks? Rats.",
@@ -176,7 +206,7 @@
     },
     {
         "id":"ratdom_mikhail_50",
-        "message":"Is my garden clean of filthy humans again?",
+        "message":"Is my garden clean of filthy two-legs again?",
         "replies":[
             {
                 "text":"I killed Mara and Tharal in the garden for you.",
@@ -232,14 +262,62 @@
     },
     {
         "id":"ratdom_mikhail_kills_60",
-        "message":"Good! Now I don't need you anymore!",
         "replies":[
             {
-                "text":"I will go then.",
+				"nextPhraseID":"ratdom_mikhail_kills_68",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":74
+                    },
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_tharal",
+                        "value":1
+                    }
+                ]
+            },
+            {
+				"nextPhraseID":"ratdom_mikhail_kills_62"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_kills_62",
+        "message":"And where is my bread? Why does it need so long?",
+        "replies":[
+            {
+                "text":"Just a minute.",
 				"nextPhraseID":"X"
             },
             {
-                "text":"I have enough.",
+                "text":"Forget it.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Here I have some bread for you.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"bread",
+                        "value":1
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_44"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_kills_68",
+        "message":"Good! Now I don't need you anymore!",
+        "replies":[
+            {
+                "text":"OK.",
+				"nextPhraseID":"X"
+            },
+            {
+                "text":"I would have gone anyway now.",
 				"nextPhraseID":"X"
             }
         ],
@@ -508,7 +586,7 @@
     },
     {
         "id":"ratdom_rat_90_10",
-        "message":"Now, let's find out where the grosse rat over there stores his bone supply."
+        "message":"Now, let's find out where Gruiik stores his bone supply."
     },
     {
         "id":"ratdom_rat_100",
@@ -614,6 +692,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_nondisplay",
                 "value":13
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_roundling2",
+                "mapName":"ratdom_maze_448"
             },
             {
                 "rewardType":"removeSpawnArea",
