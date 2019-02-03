@@ -1,5 +1,48 @@
 [
     {
+        "id":"ratdom_audir_1",
+        "message":"You could have it for 80 pieces of gold.",
+        "replies":[
+            {
+                "text":"Great, I'll take it.",
+                "nextPhraseID":"ratdom_audir_2",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":80
+                    }
+                ]
+            },
+            {
+                "text":"Hmm, I will think about it.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_audir_2",
+        "message":"Here you are.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":82
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"ratdom_pickaxe",
+                "value":1
+            }
+        ],
+        "replies":[
+            {
+                "text":"Thank you, bye.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
         "id":"ratdom_mikhail",
         "switchToNPC":"ratdom_mikhail",
         "replies":[
@@ -513,45 +556,34 @@
         ]
     },
     {
-        "id":"ratdom_audir_1",
-        "message":"You could have it for 80 pieces of gold.",
-        "replies":[
-            {
-                "text":"Great, I'll take it.",
-                "nextPhraseID":"ratdom_audir_2",
-                "requires":[
-                    {
-                        "requireType":"inventoryRemove",
-                        "requireID":"gold",
-                        "value":80
-                    }
-                ]
-            },
-            {
-                "text":"Hmm, I will think about it.",
-                "nextPhraseID":"X"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_audir_2",
-        "message":"Here you are.",
+        "id":"ratdom_roundling2",
+        "message":"The yellow round must not leave these caves! Give it back and you may leave.",
         "rewards":[
             {
-                "rewardType":"questProgress",
-                "rewardID":"ratdom_quest",
-                "value":82
-            },
-            {
-                "rewardType":"giveItem",
-                "rewardID":"ratdom_pickaxe",
-                "value":1
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_ratdom_roundling2",
+                "value":-10
             }
         ],
         "replies":[
             {
-                "text":"Thank you, bye.",
-                "nextPhraseID":"X"
+                "text":"Oops. OK, Clevred, do as they want.",
+                "nextPhraseID":"ratdom_roundling2_10"
+            },
+            {
+                "text":"Never!",
+                "nextPhraseID":"F"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_roundling2_10",
+		"switchToNPC":"ratdom_rat",
+        "message":"Never! I'd rather die!",
+		"replies":[
+            {
+                "text":"Well, then let's attack!",
+                "nextPhraseID":"F"
             }
         ]
     }

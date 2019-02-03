@@ -24,12 +24,10 @@
 				"logText":"A torch helped you to see in the dark. Unfortunately, the torch is so heavy that you have to lift it with both hands." },
 			{ 	"progress":120, 
 				"logText":"You found a platform from which you have a good view over Crossglen. Andor seemed to have been here many times." },
-			{ 	"progress":110, "logText":"" },
-			{	"progress":100, "logText":"" },
-			{	"progress":100, "logText":"" },
-			{	"progress":100, "logText":"" },
-			{	"progress":950, "logText":"Clevred died." },
-			{	"progress":999, "logText":"End" }
+			{	"progress":950, 
+				"logText":"Clevred died." },
+			{	"progress":999, 
+				"logText":"End" }
         ]
     },
     {
@@ -56,18 +54,18 @@
         "name":"ratdom_nondisplay",
         "showInLog":1,
         "stages":[	
-			{ "progress":1, "logText":"Ratdom active"  },
-			{ "progress":2, "logText":"Rat statue built"  },
-			{ "progress":3, "logText":"Maze entry open"  },
+			{ "progress":1, "logText":"1=Ratdom active"  },
+			{ "progress":2, "logText":"2=Rat statue built"  },
+			{ "progress":3, "logText":"3=Maze entry open"  },
 			{ "progress":5, "logText":"5"  },
 			{ "progress":6, "logText":"6"  },
 			{ "progress":7, "logText":"7"  },
 			{ "progress":8, "logText":"8"  },
 			{ "progress":9, "logText":"9"  },
-			{ "progress":10, "logText":"Clevred company"  },
-			{ "progress":11, "logText":"Clevred got artefact"  },
-			{ "progress":12, "logText":"Artefact brought back"  },
-			{ "progress":13, "logText":"Clevred dead"  }
+			{ "progress":10, "logText":"10=Clevred company"  },
+			{ "progress":11, "logText":"11=Clevred got artefact"  },
+			{ "progress":12, "logText":"12=Artefact brought back"  },
+			{ "progress":13, "logText":"13=Clevred dead"  }
         ]
     },
     {

@@ -51,17 +51,15 @@
         ],
 		"message":"Wait... I feel my end coming... Here, take the artefact... Farewell",
         "replies":[
-            {
-                "nextPhraseID":"ratdom_artefact_la_10",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"ratdom_nondisplay",
-                        "value":11
-                    }
-                ]
+            {	
+				"text":"I will miss you.",
+                "nextPhraseID":"ratdom_artefact_la_20"
             }
         ]
+    },
+    {
+        "id":"ratdom_artefact_la_20",
+		"message":"Go home now, take a nap."
     },
     {
         "id":"ratdom_artefact_lb",
@@ -84,7 +82,7 @@
         "rewards":[
             {
                 "rewardType":"spawnAll",
-                "rewardID":"roundling",
+                "rewardID":"ratdom_roundling2",
                 "mapName":"ratdom_maze_448"
             }
         ]
@@ -120,7 +118,7 @@
             },
             {
                 "rewardType":"removeSpawnArea",
-                "rewardID":"roundling",
+                "rewardID":"ratdom_roundling2",
                 "mapName":"ratdom_maze_448"
             }
         ],
@@ -128,6 +126,33 @@
     },
     {
         "id":"ratdom_artefact_ly",
+        "replies":[
+            {
+				"nextPhraseID":"ratdom_artefact_ly_02",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":11,
+						"negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":13,
+						"negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"ratdom_artefact_ly_02",
 		"switchToNPC":"ratdom_rat",
         "rewards":[
             {

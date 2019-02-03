@@ -151,7 +151,7 @@
         "droplistID":"drop_ratdom_tharal"
     },
     {
-        "id":"roundling",
+        "id":"ratdom_roundling",
         "name":"Roundling",
         "iconID":"monsters_rltiles1:134",
         "maxHP":200,
@@ -160,7 +160,24 @@
             "min":10,
             "max":20
         },
-        "spawnGroup":"roundling"
+        "spawnGroup":"ratdom_roundling",
+        "attackCost":5,
+        "attackChance":120
+    },
+    {
+        "id":"ratdom_roundling2",
+        "name":"Roundling",
+        "iconID":"monsters_rltiles1:134",
+        "maxHP":200,
+        "monsterClass":"humanoid",
+        "phraseID":"ratdom_roundling2",
+        "movementAggressionType": "helpOthers",
+        "attackDamage":{
+            "min":10,
+            "max":20
+        },
+        "spawnGroup":"ratdom_roundling2",
+        "faction":"fct_ratdom_roundling2",
         "attackCost":5,
         "attackChance":120
     }
