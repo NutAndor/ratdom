@@ -189,6 +189,9 @@
  <tileset firstgid="7685" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
+ <tileset firstgid="7793" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
+  <image source="../../created/drawable/map_ratdom.png" width="576" height="192"/>
+ </tileset>
  <layer name="Ground" width="30" height="30">
   <data encoding="base64" compression="zlib">
    eJztlk0OgjAQRklcGNmyJHgDubuJF3AhHAG5AT8HAHeW2Ibhc6ZUpbJh8aIW6ZtOmBmyJAhyRatoLNSKmyLT3Aml/k8B64ZMO86HEW5NogCPoSWxcTEX+h6rN2LQ12rwGOh+Uq7aGe81egf3dcnNHOitYhUfoYmX8XBemvtOeXb7IOjjFw9P3pzJ/T9wfZY3rx9vEtrx5T2qvdNw+km/+/KiC38v5cUcnkI7S3nZHHK9GvqmuD5znXoxh1yvxn49WWeQ7svAS8+LvZrt14KDjQW8w5lTxtvFY582PRv7NXVgjAO28w7eb5+ZiuShZ6iEPOE8+hQzv6S51QlzrVxpHq3hZGtsrh4XxKVOfeBUpx5wqdON3xj6xkXAt1fC57vXEz+Zm/w=
@@ -204,9 +207,9 @@
    eJy9VjtuAkEMdbYJFUJKBKLgGtwoKbldikhRmkjpCS0gkRvAASJiBQvnyWN7Rru8ZnfHM372jn9Ef9hMib6mFOJzEe8p4eOi/3V+XdsEnHpvZr/Hi2uHe3v/t7Hu/Zvtr427+fXpnWHeu5GtpyusW8D/wtgZa5q3RWZhG3Br2zzdpX/6NCF6nuTtQb+zsdw3mNe6l1lHtLzc7VLdsX7nPbWQe6i9vxboGBdoXvYl8mHV+d8el8bQ/lp3eAveEvrirY2xiHf/0G5LLa+u1T/AK/Ua6znWcUuua7bFq2v1+PG/TOr1EfSe4DuSv1T2VLGzhRdzqqafck1dG/0L+1YkZ/QR05EOlqO/1plSHSrlS9RbUH7LfoTx3EeOvjlzhXAKJMcwRxnWXJWB9qnUGyTmMEcZ2bkK57ioDzG8/MnEuKfbk0dz1XqgeEPeoXgQtTUyA5zXLXkG70ZsWvGaeWYhcadtbNGjzzLOjvuEJA==
   </data>
  </layer>
- <layer name="Walkable" width="30" height="30">
+ <layer name="Walkable" width="30" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJy9VEESxDAI6iv6/y/0hzt76MWJCITUmVwaBRHT576uRzj/UPIRzouFItVP5UK1Kd6VRja/fpt6TvAiDxSMmo8wWF7Ev9LoxLQv7B5MNaoXzJ2r2QlHFzszhsvtecJzvHF5u9wv9O7sIsvrhroL6B8xYZziTe3/Cd5ay8yI6Z/VO826u9/dZ4TL6l3NpsNJvCU3Os8VD3c4dzGVPUnydvgKl8PtYiM/T3LW2agx1SZ9TPif3i1Xv/J+3fMDKbly2w==
+   eJy9VEEOwCAI8xX7/xf84bLDkoVoKaWOxIuDlkLdvMaYhfNEJR/hvFgoXP1ELlTr4l1pZPPjXdazgxftoIIR8xEGy4v4VxqVyPzC+iCrqe6C+aZqVkLRxc6M4VJ7zvCU3ai8u9w/9Ha8yPKqUfUC+kdkGKd4Xf4/wavMiOnf9d6/2lZ3HT/vcFm9aHYn3pIa2c6ZWXY4u5hx5h3OzuxVv1e5u57OvOnmjLOpRlbr3KNj/25vqfor71c9N0hadTA=
   </data>
  </layer>
  <layer name="Top" width="30" height="30">
@@ -273,29 +276,12 @@
     <property name="place" value="east1"/>
    </properties>
   </object>
-  <object id="9" name="west2" type="mapchange" x="0" y="544" width="32" height="32">
-   <properties>
-    <property name="map" value="ratdom_bwm1"/>
-    <property name="place" value="east2"/>
-   </properties>
-  </object>
-  <object id="10" name="west3" type="mapchange" x="0" y="576" width="32" height="64">
-   <properties>
-    <property name="map" value="ratdom_bwm1"/>
-    <property name="place" value="east3"/>
-   </properties>
-  </object>
   <object id="11" name="ratdom_check_kills" type="script" x="320" y="96" width="32" height="128">
    <properties>
     <property name="when" value="step"/>
    </properties>
   </object>
   <object id="12" name="ratdom_bwm1_east_10_1" type="script" x="0" y="32" width="64" height="160">
-   <properties>
-    <property name="when" value="always"/>
-   </properties>
-  </object>
-  <object id="13" name="ratdom_bwm1_east_10_2" type="script" x="0" y="544" width="32" height="96">
    <properties>
     <property name="when" value="always"/>
    </properties>

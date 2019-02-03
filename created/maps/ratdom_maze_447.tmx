@@ -325,10 +325,10 @@
     <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
-  <object id="46" name="crossglen_caverat" type="spawn" x="288" y="704" width="128" height="192">
+  <object id="46" name="ratdom_maze_rat" type="spawn" x="288" y="704" width="128" height="192">
    <properties>
     <property name="quantity" value="1"/>
-    <property name="spawngroup" value="cavesnake2_1"/>
+    <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
  </objectgroup>

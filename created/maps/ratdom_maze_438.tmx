@@ -325,16 +325,16 @@
     <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
-  <object id="46" name="crossglen_caverat_3" type="spawn" x="64" y="704" width="128" height="192">
+  <object id="46" name="ratdom_maze_rat" type="spawn" x="64" y="704" width="128" height="192">
    <properties>
     <property name="quantity" value="1"/>
-    <property name="spawngroup" value="crossglen_caverat"/>
+    <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
   <object id="51" name="burrower_4" type="spawn" x="352" y="832" width="96" height="96">
    <properties>
     <property name="quantity" value="2"/>
-    <property name="spawngroup" value="cavesnake2"/>
+    <property name="spawngroup" value="burrower_4"/>
    </properties>
   </object>
  </objectgroup>

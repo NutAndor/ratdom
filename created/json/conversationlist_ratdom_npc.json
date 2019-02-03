@@ -1,0 +1,558 @@
+[
+    {
+        "id":"ratdom_mikhail",
+        "switchToNPC":"ratdom_mikhail",
+        "replies":[
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":90
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_90"
+            },
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":20
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_50"
+            },
+            {
+                "nextPhraseID":"ratdom_mikhail_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_10",
+        "message":"Good. You are awake at last.",
+        "replies":[
+            {
+                "text":"A rat? Here?",
+                "nextPhraseID":"ratdom_mikhail_12"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_12",
+        "message":"As you see. Did you find your brother Andor already? He hasn't been back for too long now.",
+        "replies":[
+            {
+                "text":"Eh, what? No, I am still looking after Andor.",
+                "nextPhraseID":"ratdom_mikhail_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_20",
+        "message":"I should have thought so. Anyway.",
+        "replies":[
+            {
+                "text":"What do you do in my house? Where is Mikhail?",
+                "nextPhraseID":"ratdom_mikhail_30"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_30",
+        "message":"We rats took over this village.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_mikhail_40"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":10
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_40",
+        "message":"However, two people are running around in my garden again. You should kill them.",
+        "replies":[
+            {
+                "text":"I'll have a look.",
+				"nextPhraseID":"ratdom_mikhail_42"
+            },
+            {
+                "text":"I would never do that!",
+				"nextPhraseID":"ratdom_mikhail_42"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":20
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_42",
+        "message":"And try to be useful. Go to the town hall and buy me some more bread.",
+        "replies":[
+            {
+                "text":"OK.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Forget it.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Here I have some bread for you.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"bread",
+                        "value":1
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_44"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_44",
+        "message":"Was about time.",
+        "replies":[
+            {
+                "text":"What - no thanks? Rats.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_50",
+        "message":"Is my garden clean of filthy humans again?",
+        "replies":[
+            {
+                "text":"I killed Mara and Tharal in the garden for you.",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_mara",
+                        "value":1
+                    },
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_tharal",
+                        "value":1
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_kills_52"
+            },
+            {
+                "text":"(lie) I killed Mara and Tharal in the garden for you.",
+                "nextPhraseID":"ratdom_mikhail_kills_54"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_kills_52",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":52
+            }
+        ],
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_mikhail_kills_60"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_kills_54",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":54
+            }
+        ],
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_mikhail_kills_60"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_kills_60",
+        "message":"Good! Now I don't need you anymore!",
+        "replies":[
+            {
+                "text":"I will go then.",
+				"nextPhraseID":"X"
+            },
+            {
+                "text":"I have enough.",
+				"nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":90
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_90",
+		"switchToNPC":"none",
+        "message":"The huge rat ignores you."
+    },
+    {
+        "id":"ratdom_rat",
+        "message":"This is my bed - go away!",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":10
+            }
+        ],
+        "replies":[
+            {
+                "text":"How do I get out of here?",
+				"nextPhraseID":"ratdom_rat_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":70,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"Where would I find this yellow artefact?",
+				"nextPhraseID":"ratdom_rat_50",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":70,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"There is a nice new statue in the cave.",
+				"nextPhraseID":"ratdom_rat_60",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":60
+                    },
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":80,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"I tried to pass by Andor's statue, but there is not enough space.",
+				"nextPhraseID":"ratdom_rat_80",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":80
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":90,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"Look! I have a pickaxe now.",
+				"nextPhraseID":"ratdom_rat_82",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":82
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":90,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"There is a little bone shaped hole in the wall behind the statue. What shall I do now?",
+				"nextPhraseID":"ratdom_rat_90",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":90
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":100,
+						"negate":true
+                    }
+                ]
+			},
+            {
+                "text":"I found a dark deep passage behind our supply cave.",
+				"nextPhraseID":"ratdom_rat_100",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":100
+                    }
+                ]
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_10",
+        "message":"I know the way out, of course. Rats know all ways everywhere.",
+        "replies":[
+            {
+                "text":"Great. Show me the way out of this rat infected place here.",
+				"nextPhraseID":"ratdom_rat_10_10"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_10_10",
+        "message":"You must help me to find a yellow, round artefact. Then I'll show you the exit.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":50
+            }
+		],
+        "replies":[
+            {
+                "text":"Where would I find this yellow artefact?",
+				"nextPhraseID":"ratdom_rat_50"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_50",
+        "message":"It is deep in the rat cave, of course. Use your eyes.",
+        "replies":[
+            {
+                "text":"In our supply cave? That should be easy."
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_60",
+        "message":"Yes. The artefact must be behind this statue. Did you seek there?",
+        "replies":[
+            {
+                "text":"Not yet. I didn't know there was a statue in our supply cave?",
+				"nextPhraseID":"ratdom_rat_60_10"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_60_10",
+        "message":"We had build up the statue of Andor in memory, that he never killed any rats.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":70
+            }
+		],
+        "replies":[
+            {
+                "text":"OK. I'll seek behind the statue.",
+				"nextPhraseID":"X"
+			},
+            {
+                "text":"How do I pass by the statue?",
+				"nextPhraseID":"ratdom_rat_70"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_70",
+        "message":"Probably you are too fat to get by. Tore the statue down. But don't tell anyrat that I said so.",
+        "replies":[
+            {
+                "text":"A pity to destroy such a beautyful thing.",
+				"nextPhraseID":"ratdom_rat_70_10"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_70_10",
+        "message":"I will accompany you. I think it will be necessary to have an eye on you."
+    },
+    {
+        "id":"ratdom_rat_80",
+        "message":"The statue is well built. You'd probably need a pickaxe to tore it down.",
+        "replies":[
+            {
+                "text":"Where would I get a pickaxe?",
+				"nextPhraseID":"ratdom_rat_80_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_80_10",
+        "message":"O dear - I can't believe it! Are you really that stupid?",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_rat_80_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_80_20",
+        "message":"Think yourself: Where are pickaxes supposed to be?"
+    },
+    {
+        "id":"ratdom_rat_82",
+        "message":"Then why didn't you tried to get behind the statue yet?"
+    },
+    {
+        "id":"ratdom_rat_90",
+        "message":"In the shape of bones? That is a key hole, of course!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_rat_90_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_90_10",
+        "message":"Now, let's find out where the grosse rat over there stores his bone supply."
+    },
+    {
+        "id":"ratdom_rat_100",
+        "message":"I hope  you finally have found my artefact?",
+        "replies":[
+            {
+                "text":"Eh, no, not yet."
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bwm1",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_rat_bwm1_10",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_rat_bwm1_20"
+            }
+        ]
+    },
+	{
+        "id":"ratdom_rat_bwm1_10",
+        "message":"Your brother was here often. He had made himself rather comfortable."
+    },
+    {
+        "id":"ratdom_rat_bwm1_20",
+        "message":"Nobody seemed to be here for a long time."
+    },
+    {
+        "id":"ratdom_audir",
+        "message":"Now that you mention it - yes. Long ago I made a good, sturdy pickaxe. But nobody wanted it for years, so I almost forgot it.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_audir_1"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_audir_1",
+        "message":"You could have it for 80 pieces of gold.",
+        "replies":[
+            {
+                "text":"Great, I'll take it.",
+                "nextPhraseID":"ratdom_audir_2",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":80
+                    }
+                ]
+            },
+            {
+                "text":"Hmm, I will think about it.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_audir_2",
+        "message":"Here you are.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":82
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"ratdom_pickaxe",
+                "value":1
+            }
+        ],
+        "replies":[
+            {
+                "text":"Thank you, bye.",
+                "nextPhraseID":"X"
+            }
+        ]
+    }
+]

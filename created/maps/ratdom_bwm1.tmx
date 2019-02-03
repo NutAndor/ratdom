@@ -189,6 +189,9 @@
  <tileset firstgid="7685" name="map_cavewall_1" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../../altered/drawable/map_cavewall_1.png" width="576" height="192"/>
  </tileset>
+ <tileset firstgid="7793" name="map_trail_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
+  <image source="../../altered/drawable/map_trail_1.png" width="512" height="256"/>
+ </tileset>
  <layer name="Ground" width="10" height="30">
   <data encoding="base64" compression="zlib">
    eJxbx8TAsA4LPgDFB3HIr4PKXYLiyzjUrIfKPYFiXGatxyM3GNTRChNrP754QFaDKx5IUbOeCDXEuolYs0DqNnKiiqHzsakDsWGYkDpc5iKbgc1OdEyOWmLieg4JaWL9EFBHSA2xaWgdUhoCAGgY0Vk=
@@ -196,22 +199,22 @@
  </layer>
  <layer name="Objects" width="10" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYCAMLkvilhNkJ8IAIFCEqlvDhFsNPjlSwCch6piDDg6LEa92Lol+OQgM40N4wpkU8IQI/xMT1tRSAwJTWCG0lAQDgzQQy0hgN0saKs8NlefCotYQiH+JMzD8BuJqAYgYKM650NQ5QvXDzILpQQd/oGKwcIPp+YVFLQggxy1IjQ4Wv6Cr5cGjBhngM2sUMDAAAHVIGYE=
+   eJxjYCAMLkvilhNkJ8IAIFCEqlvDhFsNPjlSwCch6piDDg6LofHxhMtcEv1yEGjWITzmkQKeEOF/YsKaWmpAYAorhJaSYGCQBmIZCexmSUPluYH4hCADAxcWtYZA/EucgeE3EFcLQMRAcc6Fps6RASLGDRWH6UEHf6BisHCD6fmFRS0IIMctSI0OFr8gq70H9AcPUM1NIuIFn1mjgIEBAI9oHRA=
   </data>
  </layer>
  <layer name="Above" width="10" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYCAMDovhlruMJHcJh7rLePQTa89gUDeXiTh1yGCjJAPDJkn8aqgZPiCzcMUDtdWAADFqhmr87yEQbzBwhkh1xABy0thIAgDP1hfv
+   eJxjYCAMDovhlruMJHcJh7rLePQTaw891W2WxK5uLhMqX5gI8zdKElYHCx9C6g4ToQ5k1iUC6pDV4FKHrgaXOmxxjq4OV/yjq8MVX4NFHS5wBkd6IQegp7FRgAoA/skZMA==
   </data>
  </layer>
  <layer name="Top" width="10" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2Bkg7lMA+2CUUAsAAAOkQCg
+   eJxjYBgFo2Bkg7lM2MX3SNLXHaOAMAAAXqsBdQ==
   </data>
  </layer>
  <layer name="Walkable" width="10" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFkNjLApR6XOnxmEZJDV0cMoEQdPv8SYwe6WnxuISZs0M2gVB0x7iPGv/jSBqnqCKUNfGbjEycEiE13yGpplQ4I5SVseoaLOmIxALoeQhQ=
+   eJzbKMbAsBEHBgFkNjLApR6XOnxmEZJDV0cMoEQdPv8SYwe6WnxuISZs0M2gVB0x7iPGv/jSBqnqCKUNfGZj009KGBFjL7JaWqUDQnmJkPuGsjpiMQDFhERp
   </data>
  </layer>
  <objectgroup name="Mapevents">
@@ -227,21 +230,8 @@
     <property name="place" value="west1"/>
    </properties>
   </object>
-  <object id="21" name="east2" type="mapchange" x="288" y="544" width="32" height="32">
-   <properties>
-    <property name="map" value="crossglen"/>
-    <property name="place" value="west2"/>
-   </properties>
-  </object>
-  <object id="22" name="east3" type="mapchange" x="288" y="576" width="32" height="64">
-   <properties>
-    <property name="map" value="crossglen"/>
-    <property name="place" value="west3"/>
-   </properties>
-  </object>
   <object id="25" name="rest" type="rest" x="96" y="576" width="32" height="32"/>
   <object id="26" name="ratdom_bwm1_east1" type="script" x="256" y="96" width="64" height="128"/>
-  <object id="27" name="ratdom_bwm1_east2" type="script" x="256" y="512" width="64" height="160"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="24" name="ratdom_rat_bwm1" type="spawn" x="96" y="448" width="192" height="256"/>
