@@ -25,7 +25,9 @@
 			{ 	"progress":120, 
 				"logText":"You found a platform from which you have a good view over Crossglen. Andor seemed to have been here many times." },
 			{	"progress":950, 
-				"logText":"Clevred died." },
+				"logText":"You fought your way through the roundlings. But Clevred was seriously wounded. He was just able to give you his beloved artefact. With a last breath he thanked for your company and died in your arms." },
+			{	"progress":910, 
+				"logText":"You persuaded Clevred to leave the artefact behind. He left you disappointedly then." },
 			{	"progress":999, 
 				"logText":"End" }
         ]
@@ -65,7 +67,7 @@
 			{ "progress":10, "logText":"10=Clevred company"  },
 			{ "progress":11, "logText":"11=Clevred got artefact"  },
 			{ "progress":12, "logText":"12=Artefact brought back"  },
-			{ "progress":13, "logText":"13=Clevred dead"  }
+			{ "progress":13, "logText":"13=Clevred dead/gone"  }
         ]
     },
     {

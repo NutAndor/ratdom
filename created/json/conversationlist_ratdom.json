@@ -125,6 +125,42 @@
 		"message":"The artifact was taken back obviously"
     },
     {
+        "id":"ratdom_artefact_lf",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_artefact_lf_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":11
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"ratdom_artefact_lf_10",
+		"switchToNPC":"none",
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_roundling2",
+                "mapName":"ratdom_maze_448"
+            },
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_ratdom_roundling2",
+                "value":10
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"ratdom_roundling2",
+                "mapName":"ratdom_maze_448"
+            }
+        ]
+    },
+    {
         "id":"ratdom_artefact_ly",
         "replies":[
             {

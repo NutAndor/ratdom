@@ -584,6 +584,41 @@
             {
                 "text":"Well, then let's attack!",
                 "nextPhraseID":"F"
+            },
+            {
+                "text":"Die you will, if you can't let go of this artefact.",
+                "nextPhraseID":"ratdom_roundling2_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_roundling2_20",
+        "message":"Oh OK. I thought you were braver. Go, I don't want to see you again.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":960
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":10
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":11
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":13
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_rat",
+                "mapName":"home"
             }
         ]
     }
