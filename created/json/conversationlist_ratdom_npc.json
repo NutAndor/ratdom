@@ -61,6 +61,28 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"ratdom_mikhail",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":52,
+						"negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":54,
+						"negate":true
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_50"
+            },
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
                         "value":70
                     },
                     {
@@ -70,60 +92,50 @@
 						"negate":true
                     }
                 ],
-                "nextPhraseID":"ratdom_mikhail_kills_62"
+                "nextPhraseID":"ratdom_mikhail_70"
             },
             {
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"ratdom_mikhail",
-                        "value":20
-                    }
-                ],
-                "nextPhraseID":"ratdom_mikhail_50"
-            },
-            {
-                "nextPhraseID":"ratdom_mikhail_10"
+                "nextPhraseID":"ratdom_mikhail_01"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_10",
+        "id":"ratdom_mikhail_01",
         "message":"Good. You are awake at last.",
         "replies":[
             {
                 "text":"A rat? Here?",
-                "nextPhraseID":"ratdom_mikhail_12"
+                "nextPhraseID":"ratdom_mikhail_02"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_12",
+        "id":"ratdom_mikhail_02",
         "message":"As you see. Did you find your brother Andor already? He hasn't been back for too long now.",
         "replies":[
             {
                 "text":"Eh, what? No, I am still looking after Andor.",
-                "nextPhraseID":"ratdom_mikhail_20"
+                "nextPhraseID":"ratdom_mikhail_03"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_20",
+        "id":"ratdom_mikhail_03",
         "message":"I should have thought so. Anyway.",
         "replies":[
             {
                 "text":"What do you do in my house? Where is Mikhail?",
-                "nextPhraseID":"ratdom_mikhail_30"
+                "nextPhraseID":"ratdom_mikhail_04"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_30",
+        "id":"ratdom_mikhail_04",
         "message":"We rats took over this village. I am Gruiik, their leader.",
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"ratdom_mikhail_40"
+                "nextPhraseID":"ratdom_mikhail_10"
             }
         ],
         "rewards":[
@@ -135,16 +147,16 @@
         ]
     },
     {
-        "id":"ratdom_mikhail_40",
+        "id":"ratdom_mikhail_10",
         "message":"However, there are two-legs running around in my garden again. Go and kill them.",
         "replies":[
             {
                 "text":"I'll have a look.",
-				"nextPhraseID":"ratdom_mikhail_42"
+				"nextPhraseID":"ratdom_mikhail_10_10"
             },
             {
                 "text":"I would never do that!",
-				"nextPhraseID":"ratdom_mikhail_42"
+				"nextPhraseID":"ratdom_mikhail_10_10"
             }
         ],
         "rewards":[
@@ -156,7 +168,7 @@
         ]
     },
     {
-        "id":"ratdom_mikhail_42",
+        "id":"ratdom_mikhail_10_10",
         "message":"And I am hungry. Go to the town hall and bring me some bread.",
         "rewards":[
             {
@@ -183,12 +195,12 @@
                         "value":1
                     }
                 ],
-                "nextPhraseID":"ratdom_mikhail_44"
+                "nextPhraseID":"ratdom_mikhail_10_20"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_44",
+        "id":"ratdom_mikhail_10_20",
         "message":"Was about time.",
         "rewards":[
             {
@@ -209,7 +221,11 @@
         "message":"Is my garden clean of filthy two-legs again?",
         "replies":[
             {
-                "text":"I killed Mara and Tharal in the garden for you.",
+                "text":"No, not yet",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Yes, I killed Mara and Tharal in the garden for you.",
                 "requires":[
                     {
                         "requireType":"killedMonster",
@@ -222,16 +238,64 @@
                         "value":1
                     }
                 ],
-                "nextPhraseID":"ratdom_mikhail_kills_52"
+                "nextPhraseID":"ratdom_mikhail_50_2"
             },
             {
                 "text":"(lie) I killed Mara and Tharal in the garden for you.",
-                "nextPhraseID":"ratdom_mikhail_kills_54"
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_mara",
+                        "value":1,
+						"negate":true
+                    },
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_tharal",
+                        "value":1
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_50_4"
+            },
+            {
+                "text":"(lie) I killed Mara and Tharal in the garden for you.",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_mara",
+                        "value":1
+                    },
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_tharal",
+                        "value":1,
+						"negate":true
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_50_4"
+            },
+            {
+                "text":"(lie) I killed Mara and Tharal in the garden for you.",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_mara",
+                        "value":1,
+						"negate":true
+                    },
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_tharal",
+                        "value":1,
+						"negate":true
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_50_4"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_kills_52",
+        "id":"ratdom_mikhail_50_2",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -241,12 +305,12 @@
         ],
         "replies":[
             {
-                "nextPhraseID":"ratdom_mikhail_kills_60"
+                "nextPhraseID":"ratdom_mikhail_50_10"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_kills_54",
+        "id":"ratdom_mikhail_50_4",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -256,35 +320,31 @@
         ],
         "replies":[
             {
-                "nextPhraseID":"ratdom_mikhail_kills_60"
+                "nextPhraseID":"ratdom_mikhail_50_10"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_kills_60",
+        "id":"ratdom_mikhail_50_10",
         "replies":[
             {
-				"nextPhraseID":"ratdom_mikhail_kills_68",
+				"nextPhraseID":"ratdom_mikhail_70",
                 "requires":[
                     {
                         "requireType":"questProgress",
                         "requireID":"ratdom_mikhail",
-                        "value":74
-                    },
-                    {
-                        "requireType":"killedMonster",
-                        "requireID":"ratdom_tharal",
-                        "value":1
+                        "value":74,
+						"negate":true
                     }
                 ]
             },
             {
-				"nextPhraseID":"ratdom_mikhail_kills_62"
+				"nextPhraseID":"ratdom_mikhail_80"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_kills_62",
+        "id":"ratdom_mikhail_70",
         "message":"And where is my bread? Why does it need so long?",
         "replies":[
             {
@@ -304,12 +364,44 @@
                         "value":1
                     }
                 ],
-                "nextPhraseID":"ratdom_mikhail_44"
+                "nextPhraseID":"ratdom_mikhail_74"
             }
         ]
     },
     {
-        "id":"ratdom_mikhail_kills_68",
+        "id":"ratdom_mikhail_74",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_mikhail",
+                "value":74
+            }
+        ],
+        "replies":[
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":52
+                    }
+                ],
+				"nextPhraseID":"ratdom_mikhail_80"
+            },
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":54
+                    }
+                ],
+				"nextPhraseID":"ratdom_mikhail_80"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_mikhail_80",
         "message":"Good! Now I don't need you anymore!",
         "replies":[
             {
@@ -332,7 +424,7 @@
     {
         "id":"ratdom_mikhail_90",
 		"switchToNPC":"none",
-        "message":"The huge rat ignores you."
+        "message":"The huge rat ignores you now."
     },
     {
         "id":"ratdom_rat",
