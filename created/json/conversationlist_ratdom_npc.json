@@ -83,6 +83,22 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"ratdom_mikhail",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":70,
+						"negate":true
+                    }
+                ],
+                "nextPhraseID":"ratdom_mikhail_10_10"
+            },
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
                         "value":70
                     },
                     {
@@ -328,6 +344,17 @@
         "id":"ratdom_mikhail_50_10",
         "replies":[
             {
+				"nextPhraseID":"ratdom_mikhail_10_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_mikhail",
+                        "value":70,
+						"negate":true
+                    }
+                ]
+            },
+			{
 				"nextPhraseID":"ratdom_mikhail_70",
                 "requires":[
                     {
@@ -345,7 +372,7 @@
     },
     {
         "id":"ratdom_mikhail_70",
-        "message":"And where is my bread? Why does it need so long?",
+        "message":"Where is my bread? Why does it need so long?",
         "replies":[
             {
                 "text":"Just a minute.",

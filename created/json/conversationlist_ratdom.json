@@ -407,7 +407,7 @@
     },
     {
         "id":"crossglen_ratdom_key_3",
-        "message":"You see a note pinned to the door\n * Main hall closed * ",
+        "message":"You see a note pinned to the door\n * Town hall closed * ",
         "replies":[
             {
                 "text":"It's the first time, that I see it closed.",
@@ -554,6 +554,71 @@
             {
                 "nextPhraseID":"ratdom_rat_statue_10"
 			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_final_1",
+		"switchToNPC":"ratdom_rat",
+		"message":"Wait! Do you feel it too? We are very close!",
+        "replies":[
+            {
+				"text":"Are you sure?",
+                "nextPhraseID":"ratdom_rat_final_1_10"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_final_1_10",
+		"message":"Of course.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":21
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_final_2",
+		"switchToNPC":"ratdom_rat",
+		"message":"I am so excited!",
+        "replies":[
+            {
+				"text":"Hush!",
+                "nextPhraseID":"ratdom_rat_final_2_10"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_final_2_10",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":22
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_final_3",
+		"switchToNPC":"ratdom_rat",
+		"message":"Over there - look, the roundling!",
+        "replies":[
+            {
+				"text":"He hadn't remarked us yet.",
+                "nextPhraseID":"ratdom_rat_final_3_10"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_final_3_10",
+		"message":"I am not so sure. Roundlings are a strange folk.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":23
+            }
         ]
     },
     {

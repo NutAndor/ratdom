@@ -48,7 +48,10 @@
 			{ "progress":10, "logText":"10=Clevred company"  },
 			{ "progress":11, "logText":"11=Clevred got artefact"  },
 			{ "progress":12, "logText":"12=Artefact brought back"  },
-			{ "progress":13, "logText":"13=Clevred dead/gone"  }
+			{ "progress":13, "logText":"13=Clevred dead/gone"  },
+			{ "progress":21, "logText":"21=Rat final_1"  },
+			{ "progress":22, "logText":"22=Rat final_2"  },
+			{ "progress":23, "logText":"23=Rat final_3"  }
         ]
     },
     {
@@ -73,7 +76,7 @@
 			{ 	"progress":70, 
 				"logText":"Gruiik was hungry and asked to bring him bread." },
 			{	"progress":72, 
-				"logText":"You found a bread in a bag hanging at the door of the Crossglen tavern." },
+				"logText":"You found a bread in a bag hanging at the door of the Crossglen town hall." },
 			{	"progress":74, 
 				"logText":"You gave a bread to Gruiik.",
                 "rewardExperience":200 },
