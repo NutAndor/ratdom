@@ -163,11 +163,14 @@
         "iconID":"monsters_rltiles1:134",
         "maxHP":200,
         "monsterClass":"humanoid",
+        "phraseID":"ratdom_roundling",
+        "movementAggressionType": "helpOthers",
         "attackDamage":{
             "min":10,
             "max":20
         },
         "spawnGroup":"ratdom_roundling",
+        "faction":"fct_ratdom_roundling",
         "attackCost":5,
         "attackChance":120
     },

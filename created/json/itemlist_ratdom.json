@@ -7,12 +7,13 @@
         "hasManualPrice":1,
         "baseMarketCost":3000,
         "category":"food",
+        "description":"A hard, dry cheese wheel that seems to last almost for ever.",
         "useEffect":{
             "conditionsSource":[
                 {
                     "condition":"food",
                     "magnitude":2,
-                    "duration":40,
+                    "duration":400,
                     "chance":"100"
                 }
             ]

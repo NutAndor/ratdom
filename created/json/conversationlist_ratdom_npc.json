@@ -740,6 +740,7 @@
     },
     {
         "id":"ratdom_rat_bwm1_20",
+		"switchToNPC":"none",
         "message":"Nobody seemed to be here for a long time."
     },
     {
@@ -753,23 +754,46 @@
         ]
     },
     {
-        "id":"ratdom_roundling2",
-        "message":"The yellow round must not leave these caves! Give it back and you may leave.",
+        "id":"ratdom_roundling",
+        "message":"If wanderers come here to gain \nour treasure, their hope is in vain. \nIn darkest deep ground \nwith our Yellow Round \ntheir bones will for ever remain.",
+        "replies":[
+            {
+                "text":"Nice. Now to work...",
+                "nextPhraseID":"ratdom_roundling_90"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_roundling_90",
+		"switchToNPC":"ratdom_roundling",
         "rewards":[
             {
                 "rewardType":"alignmentSet",
-                "rewardID":"fct_ratdom_roundling2",
+                "rewardID":"fct_ratdom_roundling",
                 "value":-10
             }
         ],
         "replies":[
             {
-                "text":"Oops. OK, Clevred, do as they want.",
+                "nextPhraseID":"F"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_roundling2",
+        "message":"A thief who thinks to get through \nwith our treasure is due \nto give his life \nupon a strife \nand all his stolen goods too.",
+        "replies":[
+            {
+                "text":"Eh, Let us think a minute.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Well, OK. Clevred, do as they want.",
                 "nextPhraseID":"ratdom_roundling2_10"
             },
             {
-                "text":"Never!",
-                "nextPhraseID":"F"
+                "text":"Never - attack!",
+                "nextPhraseID":"ratdom_roundling2_90"
             }
         ]
     },
@@ -779,18 +803,18 @@
         "message":"Never! I'd rather die!",
 		"replies":[
             {
-                "text":"Well, then let's attack!",
-                "nextPhraseID":"F"
+                "text":"If you think so, then let's attack!",
+                "nextPhraseID":"ratdom_roundling2_90"
             },
             {
-                "text":"Die you will, if you can't let go of this artefact.",
+                "text":"Die you will, if you can't let go of it. I will leave it behind.",
                 "nextPhraseID":"ratdom_roundling2_20"
             }
         ]
     },
     {
         "id":"ratdom_roundling2_20",
-        "message":"Oh OK. I thought you were braver. Go, I don't want to see you again.",
+        "message":"I see. I thought you were braver. Go then, I don't want to see you again!",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -814,6 +838,11 @@
             },
             {
                 "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_roundling",
+                "mapName":"ratdom_maze_427"
+            },
+            {
+                "rewardType":"removeSpawnArea",
                 "rewardID":"ratdom_roundling2",
                 "mapName":"ratdom_maze_448"
             },
@@ -821,6 +850,27 @@
                 "rewardType":"removeSpawnArea",
                 "rewardID":"ratdom_rat",
                 "mapName":"home"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_rat",
+                "mapName":"ratdom_bwm1"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_roundling2_90",
+		"switchToNPC":"ratdom_roundling2",
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"fct_ratdom_roundling2",
+                "value":-10
+            }
+        ],
+        "replies":[
+            {
+                "nextPhraseID":"F"
             }
         ]
     }

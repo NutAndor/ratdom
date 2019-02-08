@@ -24,9 +24,11 @@
 				"logText":"A torch helped you to see in the dark. Unfortunately, the torch is so heavy that you have to lift it with both hands." },
 			{ 	"progress":120, 
 				"logText":"You found a platform from which you have a good view over Crossglen. Andor seemed to have been here many times." },
+			{	"progress":900, 
+				"logText":"You had finally found the yellow artefact. It was a big smelly cheese, almost everlasting food. Clevred was overjoyed!" },
 			{	"progress":950, 
 				"logText":"You fought your way through the roundlings. But Clevred was seriously wounded. He was just able to give you his beloved artefact. With a last breath he thanked for your company and died in your arms." },
-			{	"progress":910, 
+			{	"progress":952, 
 				"logText":"You persuaded Clevred to leave the artefact behind. He left you disappointedly then." },
 			{	"progress":999, 
 				"logText":"End" }
@@ -35,7 +37,7 @@
     {
         "id":"ratdom_nondisplay",
         "name":"ratdom_nondisplay",
-        "showInLog":1,
+        "showInLog":0,
         "stages":[	
 			{ "progress":1, "logText":"1=Ratdom active"  },
 			{ "progress":2, "logText":"2=Rat statue built"  },
