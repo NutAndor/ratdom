@@ -281,7 +281,7 @@
     <property name="when" value="step"/>
    </properties>
   </object>
-  <object id="12" name="ratdom_bwm1_east_10_1" type="script" x="0" y="32" width="64" height="160">
+  <object id="12" name="ratdom_bwm1_east_10_1" type="script" x="32" y="32" width="32" height="160">
    <properties>
     <property name="when" value="always"/>
    </properties>

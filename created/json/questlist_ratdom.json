@@ -90,7 +90,7 @@
     {
         "id":"ratdom_maze",
         "name":"Ratdom_maze",
-        "showInLog":1,
+        "showInLog":0,
         "stages":[	
 			{ "progress":1, "logText":"Light-1"  },
 			{ "progress":2, "logText":"Light-2"  },

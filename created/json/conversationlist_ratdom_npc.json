@@ -755,10 +755,10 @@
     },
     {
         "id":"ratdom_roundling",
-        "message":"If wanderers come here to gain \nour treasure, their hope is in vain. \nIn darkest deep ground \nwith our Yellow Round \ntheir bones will for ever remain.",
+        "message":"If strangers come hither to gain \nour treasure, their hope is in vain. \nIn darkest deep ground, \nwith our Yellow Round, \ntheir bones will for ever remain.",
         "replies":[
             {
-                "text":"Nice. Now to work...",
+                "text":"Nice. And now to work...",
                 "nextPhraseID":"ratdom_roundling_90"
             }
         ]
@@ -781,7 +781,7 @@
     },
     {
         "id":"ratdom_roundling2",
-        "message":"A thief who thinks to get through \nwith our treasure is due \nto give his life \nupon a strife \nand all his stolen goods too.",
+        "message":"A thief who thinks to get through \nwith our treasure, is due \nto give his life \nupon a strife, \nand all his stolen goods too.",
         "replies":[
             {
                 "text":"Eh, Let us think a minute.",
@@ -853,7 +853,7 @@
             },
             {
                 "rewardType":"removeSpawnArea",
-                "rewardID":"ratdom_rat",
+                "rewardID":"ratdom_rat_bwm1",
                 "mapName":"ratdom_bwm1"
             }
         ]

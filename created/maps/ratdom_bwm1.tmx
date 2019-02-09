@@ -231,7 +231,7 @@
    </properties>
   </object>
   <object id="25" name="rest" type="rest" x="96" y="576" width="32" height="32"/>
-  <object id="26" name="ratdom_bwm1_east1" type="script" x="256" y="96" width="64" height="128"/>
+  <object id="26" name="ratdom_bwm1_east1" type="script" x="256" y="96" width="32" height="128"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="24" name="ratdom_rat_bwm1" type="spawn" x="96" y="448" width="192" height="256"/>

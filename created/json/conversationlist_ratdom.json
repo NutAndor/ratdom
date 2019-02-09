@@ -50,8 +50,18 @@
       },
 	  {
 		"rewardType":"removeSpawnArea",
-		"rewardID":"ratdom_rat",
+		"rewardID":"ratdom_rat_bwm1",
  		"mapName":"ratdom_bwm1"
+ 	  },
+	  {
+		"rewardType":"deactivateSpawnArea",
+		"rewardID":"ratdom_roundling2",
+ 		"mapName":"ratdom_maze_448"
+ 	  },
+	  {
+		"rewardType":"removeSpawnArea",
+		"rewardID":"ratdom_roundling",
+ 		"mapName":"ratdom_maze_427"
  	  }
     ],
     "message":"Wait...",
@@ -292,16 +302,6 @@
             "value":190
           }
         ]
-      },
-      {
-        "nextPhraseID":"ratdom_check_2",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_nondisplay",
-            "value":13
-          }
-        ]
       }
     ]
   },
@@ -316,26 +316,6 @@
       {
         "rewardType":"activateMapObjectGroup",
         "rewardID":"ratdom_lurking",
-        "mapName":"home"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_check_2",
-    "rewards":[
-      {
-        "rewardType":"activateMapObjectGroup",
-        "rewardID":"normal",
-        "mapName":"home"
-      },
-      {
-        "rewardType":"deactivateMapObjectGroup",
-        "rewardID":"ratdom_lurking",
-        "mapName":"home"
-      },
-      {
-        "rewardType":"removeSpawnArea",
-        "rewardID":"ratdom_rat",
         "mapName":"home"
       }
     ]
@@ -863,11 +843,6 @@
       {
         "nextPhraseID":"ratdom_maze_light1_off",
         "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_nondisplay",
-            "value":10
-          },
           {
             "requireType":"questProgress",
             "requireID":"ratdom_maze",
@@ -1604,8 +1579,13 @@
         "mapName":"home"
       },
       {
-        "rewardType":"activateMapObjectGroup",
+        "rewardType":"deactivateMapObjectGroup",
         "rewardID":"ratdom_lurking",
+        "mapName":"home"
+      },
+      {
+        "rewardType":"activateMapObjectGroup",
+        "rewardID":"normal",
         "mapName":"home"
       },
       {
@@ -1687,7 +1667,7 @@
   },
   {
     "id":"ratdom_underconstruction_30",
-    "message":"* The maze will consist of about 100 maps. \* They look equal in principle. Thus I could copy the lighting feature over all maps. And the players head gets more swirling :) \n* There will be no worldmap - would be difficult in 3D and with partial lighting.",
+    "message":"* The maze will consist of about 100 maps. \n* They look equal in principle. Thus I could copy the lighting feature over all maps. And the players head gets more swirling :) \n* There will be no worldmap - would be difficult in 3D and with partial lighting.",
     "replies":[
       {
         "text":"N",
