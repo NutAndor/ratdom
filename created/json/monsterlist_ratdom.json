@@ -102,21 +102,21 @@
     },
     {
         "id":"ratdom_rat",
-        "name":"Clavred",
+        "name":"Clevred",
         "iconID":"monsters_rats:1",
         "unique":1,
         "phraseID":"ratdom_rat"
     },
     {
         "id":"ratdom_rat_bwm1",
-        "name":"Clavred",
+        "name":"Clevred",
         "iconID":"monsters_rats:1",
         "unique":1,
         "phraseID":"ratdom_rat_bwm1"
     },
     {
         "id":"ratdom_rat_crossglen",
-        "name":"Clavred",
+        "name":"Clevred",
         "iconID":"monsters_rats:1",
         "unique":1,
         "phraseID":"ratdom_rat_crossglen"

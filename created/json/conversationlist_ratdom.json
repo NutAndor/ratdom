@@ -270,57 +270,6 @@
     "message":"Let's hurry back now!"
   },
   {
-    "id":"ratdom_check",
-    "replies":[
-      {
-        "nextPhraseID":"ratdom_check_1",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_quest",
-            "value":999,
-            "negate":true
-          },
-          {
-            "requireType":"questProgress",
-            "requireID":"lodar2",
-            "value":60
-          },
-          {
-            "requireType":"questProgress",
-            "requireID":"mikhail_rats",
-            "value":100
-          },
-          {
-            "requireType":"questProgress",
-            "requireID":"charwood1",
-            "value":115
-          },
-          {
-            "requireType":"questProgress",
-            "requireID":"stn_colonel",
-            "value":190
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id":"ratdom_check_1",
-    "rewards":[
-      {
-        "rewardType":"deactivateMapObjectGroup",
-        "rewardID":"normal",
-        "mapName":"home"
-      },
-      {
-        "rewardType":"activateMapObjectGroup",
-        "rewardID":"ratdom_lurking",
-        "mapName":"home"
-      }
-    ]
-  },
-  {
     "id":"ratdom_check_kills",
     "replies":[
       {
@@ -1430,13 +1379,66 @@
         "requires":[
           {
             "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":1
+          },
+          {
+            "requireType":"questProgress",
             "requireID":"ratdom_quest",
             "value":950
           }
         ]
       },
       {
-        "nextPhraseID":"ratdom_wakeup_02"
+        "nextPhraseID":"ratdom_wakeup_90",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":1
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":960
+          }
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_wakeup_02",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":1,
+            "negate":true
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":999
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"lodar2",
+            "value":60
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"mikhail_rats",
+            "value":100
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"charwood1",
+            "value":115
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"stn_colonel",
+            "value":190
+          }
+        ]
       }
     ]
   },
@@ -1465,17 +1467,17 @@
       },
       {
         "rewardType":"activateMapObjectGroup",
-        "rewardID":"ratdom_active",
-        "mapName":"home"
-      },
-      {
-        "rewardType":"deactivateMapObjectGroup",
-        "rewardID":"ratdom_lurking",
+        "rewardID":"ratdom_objgrp",
         "mapName":"home"
       },
       {
         "rewardType":"spawnAll",
         "rewardID":"ratdom_rat",
+        "mapName":"home"
+      },
+      {
+        "rewardType":"spawnAll",
+        "rewardID":"ratdom_mikhail",
         "mapName":"home"
       },
       {
@@ -1548,7 +1550,7 @@
   {
     "id":"ratdom_wakeup_20",
     "switchToNPC":"none",
-    "message":"You wake up when you dreamed that something bites you firmly in your toes. Apparently you had a nightmare - there were rats everywhere!",
+    "message":"You were so tired yesterday, that you didn't even make it to your bed. You dreamed of rats and that something bites you firmly in your toes. Apparently you had a nightmare. \You open your eyes...",
     "replies":[
       {
         "text":"N",
@@ -1558,7 +1560,7 @@
   },
   {
     "id":"ratdom_wakeup_30",
-    "message":"Anyway, you were not a bit recovered."
+    "message":"You seem to sleep still!"
   },
   {
     "id":"ratdom_wakeup_90",
@@ -1572,21 +1574,6 @@
         "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":1
-      },
-      {
-        "rewardType":"deactivateMapObjectGroup",
-        "rewardID":"ratdom_active",
-        "mapName":"home"
-      },
-      {
-        "rewardType":"deactivateMapObjectGroup",
-        "rewardID":"ratdom_lurking",
-        "mapName":"home"
-      },
-      {
-        "rewardType":"activateMapObjectGroup",
-        "rewardID":"normal",
-        "mapName":"home"
       },
       {
         "rewardType":"removeSpawnArea",
