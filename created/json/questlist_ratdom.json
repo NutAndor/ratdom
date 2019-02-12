@@ -68,7 +68,7 @@
     {
         "id":"ratdom_nondisplay",
         "name":"ratdom_nondisplay",
-        "showInLog":1,
+        "showInLog":0,
         "stages":[	
 			{ "progress":1, "logText":"1=Ratdom active" },
 			{ "progress":2, "logText":"2=Rat statue act." },

@@ -8,7 +8,7 @@
                 "nextPhraseID":"S"
             },
             {
-                "text":"Do you have a pickaxe by chance?.",
+                "text":"Do you have a pickaxe by chance?",
                 "nextPhraseID":"ratdom_audir",
                 "requires":[
                     {

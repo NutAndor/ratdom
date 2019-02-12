@@ -1386,6 +1386,12 @@
             "requireType":"questProgress",
             "requireID":"ratdom_quest",
             "value":950
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":999,
+            "negate":true
           }
         ]
       },
@@ -1401,6 +1407,12 @@
             "requireType":"questProgress",
             "requireID":"ratdom_quest",
             "value":960
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":999,
+            "negate":true
           }
         ]
       },
@@ -1416,7 +1428,8 @@
           {
             "requireType":"questProgress",
             "requireID":"ratdom_quest",
-            "value":999
+            "value":999,
+            "negate":true
           },
           {
             "requireType":"questProgress",
@@ -1550,7 +1563,7 @@
   {
     "id":"ratdom_wakeup_20",
     "switchToNPC":"none",
-    "message":"You were so tired yesterday, that you didn't even make it to your bed. You dreamed of rats and that something bites you firmly in your toes. Apparently you had a nightmare. \You open your eyes...",
+    "message":"You were so tired yesterday, that you didn't even make it to your bed. You dreamed of rats and that something  bit you firmly in your toes. Apparently you had a nightmare. \nYou open your eyes...",
     "replies":[
       {
         "text":"N",
@@ -1560,7 +1573,7 @@
   },
   {
     "id":"ratdom_wakeup_30",
-    "message":"You seem to sleep still!"
+    "message":"... but you seem to sleep still!"
   },
   {
     "id":"ratdom_wakeup_90",
@@ -1596,7 +1609,7 @@
         "mapName":"crossglen"
       }
     ],
-    "message":"Something had changed. The rats are gone!"
+    "message":"You didn't make it to your bed again. Nevertheless you took some minutes of sleep. \nWhen you woke up, something had changed. The rats are gone!"
   },
   {
     "id":"ratdom_underconstruction",

@@ -227,7 +227,7 @@
   </object>
   <object id="2" name="rest" type="rest" x="32" y="128" width="32" height="32"/>
   <object id="3" name="startitems2" type="container" x="256" y="256" width="32" height="32"/>
-  <object id="6" name="ratdom_check" type="script" x="64" y="128" width="32" height="64"/>
+  <object id="6" name="ratdom_wakeup" type="script" x="64" y="128" width="32" height="64"/>
  </objectgroup>
  <objectgroup name="keys" visible="0">
   <object id="4" name="andor:1" type="key" x="0" y="288" width="320" height="32">
