@@ -1,5 +1,15 @@
 [
     {
+        "id":"ratdom_audir",
+        "message":"Now that you mention it - yes. Long ago I made a good, sturdy pickaxe. But nobody wanted it for years, so I almost forgot it.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_audir_1"
+            }
+        ]
+    },
+    {
         "id":"ratdom_audir_1",
         "message":"You could have it for 80 pieces of gold.",
         "replies":[
@@ -617,6 +627,17 @@
         "replies":[
             {
                 "text":"In our supply cave? That should be easy."
+			},
+            {
+                "text":"There is a nice new statue in the cave.",
+				"nextPhraseID":"ratdom_rat_60",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":60
+                    }
+                ]
 			}
         ]
     },
@@ -663,7 +684,7 @@
     },
     {
         "id":"ratdom_rat_70_10",
-        "message":"I will accompany you. I think it will be necessary to have an eye on you."
+        "message":"I better will accompany you. I think it will be necessary to have an eye on you."
     },
     {
         "id":"ratdom_rat_80",
@@ -742,16 +763,6 @@
         "id":"ratdom_rat_bwm1_20",
 		"switchToNPC":"none",
         "message":"Nobody seemed to be here for a long time."
-    },
-    {
-        "id":"ratdom_audir",
-        "message":"Now that you mention it - yes. Long ago I made a good, sturdy pickaxe. But nobody wanted it for years, so I almost forgot it.",
-        "replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"ratdom_audir_1"
-            }
-        ]
     },
     {
         "id":"ratdom_roundling",

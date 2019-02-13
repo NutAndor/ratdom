@@ -259,7 +259,7 @@
  <objectgroup name="Mapevents" visible="0">
   <object id="49" name="south2" type="mapchange" x="416" y="928" width="64" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_448"/>
+    <property name="map" value="ratdom_maze_439"/>
     <property name="place" value="north1"/>
    </properties>
   </object>
@@ -271,7 +271,7 @@
   </object>
   <object id="48" name="north2" type="mapchange" x="416" y="0" width="64" height="32">
    <properties>
-    <property name="map" value="ratdom_maze2"/>
+    <property name="map" value="ratdom_maze_419"/>
     <property name="place" value="down"/>
    </properties>
   </object>

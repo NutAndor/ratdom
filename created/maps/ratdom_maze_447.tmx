@@ -277,7 +277,7 @@
   </object>
   <object id="33" name="north1" type="mapchange" x="0" y="0" width="64" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_448"/>
+    <property name="map" value="ratdom_maze_437"/>
     <property name="place" value="south2"/>
    </properties>
   </object>

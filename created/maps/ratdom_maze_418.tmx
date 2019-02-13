@@ -271,13 +271,13 @@
   </object>
   <object id="48" name="north2" type="mapchange" x="416" y="0" width="64" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_428"/>
+    <property name="map" value="ratdom_maze_408"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
   <object id="33" name="north1" type="mapchange" x="0" y="0" width="64" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_447"/>
+    <property name="map" value="ratdom_maze_407"/>
     <property name="place" value="south2"/>
    </properties>
   </object>
