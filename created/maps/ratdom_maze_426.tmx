@@ -262,25 +262,25 @@
  <objectgroup name="Mapevents" visible="0">
   <object id="49" name="south2" type="mapchange" x="416" y="928" width="64" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_457"/>
+    <property name="map" value="ratdom_maze_437"/>
     <property name="place" value="north1"/>
    </properties>
   </object>
   <object id="43" name="south1" type="mapchange" x="0" y="928" width="64" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_456"/>
+    <property name="map" value="ratdom_maze_436"/>
     <property name="place" value="north2"/>
    </properties>
   </object>
   <object id="48" name="north2" type="mapchange" x="437" y="0" width="64" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_437"/>
+    <property name="map" value="ratdom_maze_417"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
   <object id="33" name="north1" type="mapchange" x="0" y="0" width="64" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_436"/>
+    <property name="map" value="ratdom_maze_416"/>
     <property name="place" value="south2"/>
    </properties>
   </object>
