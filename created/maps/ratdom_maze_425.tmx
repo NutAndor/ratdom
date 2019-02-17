@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="56">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="60">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -188,7 +188,7 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlNsNgzAMRZmCz4gdSkdoGSFlhMAIgenYoBM1UW3JveThoCKdD6KcGJwrD6brhoAPuIANvIj4PM2X+D4HVtqPsL8QVjgLebvYf0/4G+GEs4F3o+9BH8/ZYZ29yFjwEelJan7Oq/k1LzJd9Jh3/+vaBhdru0Zf1ubMPC7W9g3unOiZxs1lvuZO5pz5FjflXc2G9l//nSvt3aTuR5sp7jNmUnu32GevqF2ag3KG5rzU3eIMtQ0ezj7+/1IGS2dYk88gZyI3Q50554j3j9APPMPT+tHrsod15Lma7Bwirx/g4qWz
+   eJytlOERgyAMhZ3Cn5w71I5gHQEdgToCdTo36ESFa3JNXwEDV+/eD4EvkeSZwXTdEOSDXJANWkjxuZm34vsadCdNxA3A874FZgt6kCJ7TfC874DZxbmJvgd5jLPD+sV87jIWeJTkpM74HHfGn3FRcyPHevbfrK1gMber5GVu9szUmNtXsGuiZho2clsDOxOHPtSyKa7VG9q7/ttX2t6k+qP1FNcZPantLdbZK3LnPCH/h6XApXqLM9RWcDj7+P4lD5ZiWJP3IHsiN0Od+fURnx+hHhjD0/rR67yHeWRcjXcO4dcXjWOmsw==
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
@@ -208,7 +208,7 @@
  </layer>
  <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYICAjWKYGJ84OsCmDp9edHNI0UesOwiZTwwgxk3khge5+rDpJVYfsWFDK7244pLe7iZV/0DopZY+etg50OlqIPRSM5yJ1YsPkKsPnxmE1OCSI8VfuMyldbwj6wcAgnHupg==
+   eJxjYICAjWKYGJc4sjwDHv2EMCn6sanDBkgxnxhArPtJ0Ues+0nRS8uwp1W80zrNUDPMBkIvtfTRw86BTlcDoZea4UysXnyAXH34zCCkBpccKf7CZS6t4x1ZPwBbBPHC
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -281,22 +281,22 @@
     <property name="place" value="south2"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light1" type="script" x="0" y="0" width="128" height="192">
+  <object id="56" name="ratdom_maze_light1" type="script" x="0" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light2" type="script" x="352" y="0" width="128" height="192">
+  <object id="57" name="ratdom_maze_light2" type="script" x="352" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light3" type="script" x="0" y="736" width="128" height="192">
+  <object id="58" name="ratdom_maze_light3" type="script" x="0" y="736" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light4" type="script" x="352" y="768" width="128" height="192">
+  <object id="59" name="ratdom_maze_light4" type="script" x="352" y="768" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
