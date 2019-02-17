@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="52">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="56">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -186,32 +186,29 @@
  <tileset firstgid="7705" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
- <tileset firstgid="7813" name="map_ground_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_ground_1.png" width="512" height="256"/>
- </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlMENwjAMRTsFx6o7UEaAjhA6QsoIaadjAyYiEbZkPk7iRFR6h1Z5ceN8eRqHYYqEiI+4yJ1Iz238kN7XyIPWI+xvhBPORt4h1l8Ufye8cHbwzvQ/6OM+B3xnLzEXfER6kpqf82p+zUssnR7zOn27rsHF2r7Rl7U5M9fO2qHBXZWeWdxc5mvuMv5mvsXVvN5sWM/671xZ70a7H2umuM+YSevdYp+DoXZpDsoZmvO0u8UZ6ho8nH18/lIGS3u4ipcykZuhXvF4/Qz9wD2C4vVk3ZrZp8jrG78apP8=
+   eJyl1OENgyAQBWCn6E/jDrqCdARlhNYRqEt2IiGBlFzeyT1q8hJ/8OWQO3HjMDgl6Snve4yPOWKmHM1J887uJOwzm49ws8F6YaRbGjU1x9Rk3NHhyl5P0hVb73UjbX0+L9J/Hz8bsl87awfCemEno5X9sVrZH9YiZ+mxPCPmW5Fl5qrurbWm1h/rTKF/1jpT6J4IhtraTLRqF4d6ezfPLaedt9WhHt+5tH6pIi26e9FaZHtnz/3hUi6NBagb
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
+   eJwrkmNgKMKDNYA4AYixAXL1EdJrg0cfPr2E7MSnl5Cd+PQSshObXmLcisscYtxKbb2jYBSMNKBJQV7RQsrrQ0GvD1C9NRl60fUR0gtS7wvF6Pqw6SWkHpdebO7ChwFwCjdx
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSI6CAQWXxcjXa0phvA5Vuw9ToPcSGXoHyq0DpXeg4hakj5z4AQFy9Y2CwQGoVRYBAOWkDiw=
+   eJxjYMANiuTwSI6CEQsui5Gv15TCNEWJ3Ycp0HuJDL0D5daB0jtQcQvSR078gAC5+kbB8AIAVZkL4A==
   </data>
  </layer>
- <layer name="Top" width="15" height="30" visible="0">
+ <layer name="Top" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
  <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYICAjWKYGJ84OsCmDp9edHNI0UesOwiZTwwgxk3khge5+rDpJVYfsWFDK7244pLe7iZV/0DopZY+etg50OlqIPRSM5yJ1YsPkKsPnxmE1OCSI8VfyOpI0UdpHCDrBwBxGuuK
+   eJzbKMbAsBEHBgFc4rjkCGFy9ZKjDxnQQx+9/UconmjtVnrbS624oTRN0EsvtfTRw05qx89Q0EvNcCZWLz5AL330ClNy45FUfSAMAIeEDpQ=
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -262,25 +259,25 @@
  <objectgroup name="Mapevents" visible="0">
   <object id="49" name="south2" type="mapchange" x="416" y="896" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_437"/>
+    <property name="map" value="ratdom_maze_477"/>
     <property name="place" value="north1"/>
    </properties>
   </object>
   <object id="43" name="south1" type="mapchange" x="0" y="896" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_436"/>
+    <property name="map" value="ratdom_maze_476"/>
     <property name="place" value="north2"/>
    </properties>
   </object>
   <object id="48" name="north2" type="mapchange" x="416" y="0" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_417"/>
+    <property name="map" value="ratdom_maze_457"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
   <object id="33" name="north1" type="mapchange" x="0" y="0" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_416"/>
+    <property name="map" value="ratdom_maze_456"/>
     <property name="place" value="south2"/>
    </properties>
   </object>
@@ -319,7 +316,7 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="51" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
+  <object id="55" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
@@ -329,7 +326,7 @@
     <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
-  <object id="46" name="ratdom_maze_rat" type="spawn" x="96" y="704" width="96" height="192">
+  <object id="55" name="ratdom_maze_rat" type="spawn" x="288" y="64" width="128" height="192">
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>

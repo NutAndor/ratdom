@@ -1,5 +1,78 @@
 [
   {
+    "id":"crossglen_ratdom_key",
+    "message":"This must be a bad dream.",
+    "replies":[
+      {
+        "text":"How can I only wake up?"
+      },
+      {
+        "text":"Maybe I should talk to the rat in my bed again.",
+        "nextPhraseID":"X",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":100,
+            "negate":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"crossglen_ratdom_key_2",
+    "replies":[
+      {
+        "nextPhraseID":"crossglen_ratdom_key"
+      }
+    ]
+  },
+  {
+    "id":"crossglen_ratdom_key_3",
+    "message":"You see a note pinned to the door\n * Town hall closed * ",
+    "replies":[
+      {
+        "text":"It's the first time, that I see it closed.",
+        "nextPhraseID":"X"
+      },
+      {
+        "text":"Oh, what's this?",
+        "nextPhraseID":"crossglen_ratdom_key_3_20",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_mikhail",
+            "value":72,
+            "negate":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"crossglen_ratdom_key_3_20",
+    "message":"A bag with a freshly baken bread was dangling at the door.",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_mikhail",
+        "value":72
+      },
+      {
+        "rewardType":"giveItem",
+        "rewardID":"bread",
+        "value":1
+      }
+    ],
+    "replies":[
+      {
+        "nextPhraseID":"X",
+        "text":"Good old Mara - she always knows what I need."
+      }
+    ]
+  },
+  {
     "id":"ratdom_artefact_la",
     "replies":[
       {
@@ -350,79 +423,6 @@
     ]
   },
   {
-    "id":"crossglen_ratdom_key",
-    "message":"This must be a bad dream.",
-    "replies":[
-      {
-        "text":"How can I only wake up?"
-      },
-      {
-        "text":"Maybe I should talk to the rat in my bed again.",
-        "nextPhraseID":"X",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_quest",
-            "value":100,
-            "negate":true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id":"crossglen_ratdom_key_2",
-    "replies":[
-      {
-        "nextPhraseID":"crossglen_ratdom_key"
-      }
-    ]
-  },
-  {
-    "id":"crossglen_ratdom_key_3",
-    "message":"You see a note pinned to the door\n * Town hall closed * ",
-    "replies":[
-      {
-        "text":"It's the first time, that I see it closed.",
-        "nextPhraseID":"X"
-      },
-      {
-        "text":"Oh, what's this?",
-        "nextPhraseID":"crossglen_ratdom_key_3_20",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_mikhail",
-            "value":72,
-            "negate":true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id":"crossglen_ratdom_key_3_20",
-    "message":"A bag with a freshly baken bread was dangling at the door.",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
-        "rewardID":"ratdom_mikhail",
-        "value":72
-      },
-      {
-        "rewardType":"giveItem",
-        "rewardID":"bread",
-        "value":1
-      }
-    ],
-    "replies":[
-      {
-        "nextPhraseID":"X",
-        "text":"Good old Mara - she always knows what I need."
-      }
-    ]
-  },
-  {
     "id":"ratdom_bwm1_east1",
     "rewards":[
       {
@@ -434,6 +434,12 @@
         "rewardID":"ratdom_rat_crossglen2"
       }
     ]
+  },
+  {
+    "id":"ratdom_rat_conv1"
+  },
+  {
+    "id":"ratdom_rat_conv2"
   },
   {
     "id":"ratdom_bwm1_east_10_1",
@@ -522,24 +528,6 @@
     "message":"Hey, wake up!"
   },
   {
-    "id":"ratdom_rat_statue",
-    "replies":[
-      {
-        "nextPhraseID":"F",
-        "requires":[
-          {
-            "requireType":"wear",
-            "requireID":"ratdom_pickaxe",
-            "value":1
-          }
-        ]
-      },
-      {
-        "nextPhraseID":"ratdom_rat_statue_10"
-      }
-    ]
-  },
-  {
     "id":"ratdom_rat_final_1",
     "switchToNPC":"ratdom_rat",
     "message":"Wait! Do you feel it too? We are very close!",
@@ -601,48 +589,6 @@
         "rewardType":"questProgress",
         "rewardID":"ratdom_nondisplay",
         "value":23
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_statue_10",
-    "replies":[
-      {
-        "nextPhraseID":"ratdom_rat_statue_30",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_quest",
-            "value":70
-          }
-        ]
-      },
-      {
-        "nextPhraseID":"ratdom_rat_statue_20"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_statue_20",
-    "switchToNPC":"none",
-    "message":"You see a beautifully crafted statue of your brother Andor.",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
-        "rewardID":"ratdom_quest",
-        "value":60
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_statue_30",
-    "switchToNPC":"ratdom_rat",
-    "message":"Andor's statue may be cleared away with a pickaxe. Hadn't I mentioned it?",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
-        "rewardID":"ratdom_quest",
-        "value":80
       }
     ]
   },
@@ -1369,6 +1315,66 @@
       { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":8 },
       { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":9 },
       { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":10 }
+    ]
+  },
+  {
+    "id":"ratdom_rat_statue",
+    "replies":[
+      {
+        "nextPhraseID":"F",
+        "requires":[
+          {
+            "requireType":"wear",
+            "requireID":"ratdom_pickaxe",
+            "value":1
+          }
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_rat_statue_10"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_statue_10",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_statue_30",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":70
+          }
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_rat_statue_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_statue_20",
+    "switchToNPC":"none",
+    "message":"You see a beautifully crafted statue of your brother Andor.",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_quest",
+        "value":60
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_statue_30",
+    "switchToNPC":"ratdom_rat",
+    "message":"Andor's statue may be cleared away with a pickaxe. Hadn't I mentioned it?",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_quest",
+        "value":80
+      }
     ]
   },
   {
