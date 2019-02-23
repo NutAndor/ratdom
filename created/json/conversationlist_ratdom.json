@@ -1318,6 +1318,84 @@
     ]
   },
   {
+    "id":"ratdom_skeleton_boss1_check",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skeleton_boss1_check_10",
+        "requires":[
+          {
+            "requireType":"killedMonster",
+            "requireID":"ratdom_skeleton_boss1",
+            "value":1
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_skeleton",
+            "value":31,
+			"negate":true
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_skeleton",
+            "value":90,
+			"negate":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skeleton_boss1_check_10",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_skeleton",
+			"value":31
+		}
+	]
+  },
+  {
+    "id":"ratdom_skeleton_boss2_check",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skeleton_boss2_check_10",
+        "requires":[
+          {
+            "requireType":"killedMonster",
+            "requireID":"ratdom_skeleton_boss2",
+            "value":1
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_skeleton",
+            "value":32
+			"negate":true
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_skeleton",
+            "value":90,
+			"negate":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skeleton_boss2_check_10",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_skeleton",
+			"value":32
+		}
+	]
+  },
+  {
+    "id":"ratdom_skeleton_drop",
+    "message":"You stopped short under the stare of the skeleton leader."
+  },
+  {
     "id":"ratdom_rat_statue",
     "replies":[
       {

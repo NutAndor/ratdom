@@ -3,10 +3,10 @@
         "id":"ratdom_gruil",
         "name":"Gruil",
         "iconID":"monsters_rogue1:0",
-        "unique":1,
         "maxHP":160,
         "maxAP":10,
         "moveCost":5,
+        "unique":1,
         "monsterClass":"humanoid",
         "attackDamage":{
             "min":2,
@@ -23,20 +23,20 @@
         "maxAP":10,
         "moveCost":5,
         "monsterClass":"humanoid",
-        "spawnGroup":"ratdom_leonid",
         "attackDamage":{
             "min":3,
             "max":8
-        }
-	},
+        },
+        "spawnGroup":"ratdom_leonid"
+    },
     {
         "id":"ratdom_mara",
         "name":"Mara",
         "iconID":"monsters_men:7",
-        "unique":1,
         "maxHP":90,
         "maxAP":10,
         "moveCost":5,
+        "unique":1,
         "monsterClass":"humanoid",
         "attackDamage":{
             "min":1,
@@ -125,17 +125,17 @@
         "id":"ratdom_rat_statue",
         "name":"Andor's statue",
         "iconID":"monsters_maksiu1:1",
-        "unique":1,
-        "phraseID":"ratdom_rat_statue",
         "maxHP":90,
         "maxAP":10,
         "moveCost":5,
+        "unique":1,
         "monsterClass":"humanoid",
         "attackDamage":{
             "min":1,
             "max":4
         },
         "spawnGroup":"ratdom_rat_statue",
+        "phraseID":"ratdom_rat_statue",
         "droplistID":"drop_ratdom_mara",
         "attackCost":99,
         "attackChance":60,
@@ -145,10 +145,10 @@
         "id":"ratdom_tharal",
         "name":"Tharal",
         "iconID":"monsters_men:4",
-        "unique":1,
         "maxHP":160,
         "maxAP":10,
         "moveCost":5,
+        "unique":1,
         "monsterClass":"humanoid",
         "attackDamage":{
             "min":1,
@@ -163,14 +163,14 @@
         "iconID":"monsters_rltiles1:134",
         "maxHP":200,
         "monsterClass":"humanoid",
-        "phraseID":"ratdom_roundling",
-        "movementAggressionType": "helpOthers",
+        "movementAggressionType":"helpOthers",
         "attackDamage":{
             "min":10,
             "max":20
         },
         "spawnGroup":"ratdom_roundling",
         "faction":"fct_ratdom_roundling",
+        "phraseID":"ratdom_roundling",
         "attackCost":5,
         "attackChance":120
     },
@@ -180,15 +180,77 @@
         "iconID":"monsters_rltiles1:134",
         "maxHP":200,
         "monsterClass":"humanoid",
-        "phraseID":"ratdom_roundling2",
-        "movementAggressionType": "helpOthers",
+        "movementAggressionType":"helpOthers",
         "attackDamage":{
             "min":10,
             "max":20
         },
         "spawnGroup":"ratdom_roundling2",
         "faction":"fct_ratdom_roundling2",
+        "phraseID":"ratdom_roundling2",
         "attackCost":5,
         "attackChance":120
+    },
+    {
+        "id":"ratdom_skeleton1",
+        "name":"Skeleton",
+        "iconID":"monsters_tometik8:35",
+        "attackDamage":{
+            "min":10,
+            "max":20
+        },
+        "spawnGroup":"ratdom_skeleton1"
+        "faction":"ratdom_skeleton1",
+        "phraseID":"ratdom_skeleton1",
+        "attackCost":5,
+        "attackChance":100,
+        "damageResistance":2
+    },
+    {
+        "id":"ratdom_skeleton2",
+        "name":"Skeleton",
+        "iconID":"monsters_tometik8:35",
+        "attackDamage":{
+            "min":10,
+            "max":20
+        },
+        "spawnGroup":"ratdom_skeleton2"
+        "faction":"ratdom_skeleton2",
+        "phraseID":"ratdom_skeleton2",
+        "attackCost":5,
+        "attackChance":100,
+        "damageResistance":2
+    },
+    {
+        "id":"ratdom_skeleton_boss1",
+        "name":"Roskelt",
+        "iconID":"monsters_tometik8:44",
+        "unique":1,
+        "attackDamage":{
+            "min":15,
+            "max":30
+        },
+        "spawnGroup":"ratdom_skeleton_boss1"
+        "faction":"ratdom_skeleton_boss1",
+        "phraseID":"ratdom_skeleton_boss1",
+        "attackCost":5,
+        "attackChance":100,
+        "damageResistance":5
+    },
+    {
+        "id":"ratdom_skeleton_boss2",
+        "name":"Bloskelt",
+        "iconID":"monsters_tometik8:43",
+        "unique":1,
+        "attackDamage":{
+            "min":15,
+            "max":30
+        },
+        "spawnGroup":"ratdom_skeleton_boss2"
+        "faction":"ratdom_skeleton_boss2",
+        "phraseID":"ratdom_skeleton_boss2",
+        "attackCost":5,
+        "attackChance":100,
+        "damageResistance":5
     }
 ]
