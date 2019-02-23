@@ -981,289 +981,49 @@
                 ]
 			},
             {
-            	"nextPhraseID":"ratdom_skeleton_boss1_30",
+            	"nextPhraseID":"ratdom_skeleton_boss_70",
                 "requires":[
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":31
+                        "value":71
                     }
                 ]
 			},
             {
-            	"nextPhraseID":"ratdom_skeleton_boss1_20",
+            	"nextPhraseID":"ratdom_skeleton_boss_60",
                 "requires":[
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":21
+                        "value":61
                     }
                 ]
 			},
             {
-                "nextPhraseID":"ratdom_skeleton_boss1_10"
-            }
-        ]
-
-	},
-    {
-        "id":"ratdom_skeleton_boss1_10",
-        "message":"Mortal - What do you do in my realm?",
-		"replies":[
-            {
-                "text":"I have lost my way. Could you help me?",
-                "nextPhraseID":"ratdom_skeleton_boss1_12",
+            	"nextPhraseID":"ratdom_skeleton_boss_51",
                 "requires":[
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":12,
-						"negate":true
+                        "value":51
                     }
                 ]
-            },
-            {
-                "text":"I have come to kill you.",
-                "nextPhraseID":"ratdom_skeleton_boss1_25",
-                "requires":[
-                    {			
-                        "requireType":"questProgress",
-                        "requireID":"ratdom_skeleton",
-                        "value":26
-                    }
-                ]
-            },
-            {
-                "text":"Who are you?",
-                "nextPhraseID":"ratdom_skeleton_boss1_14"
-            }
-        ]
-
-	},
-    {
-        "id":"ratdom_skeleton_boss1_12",
-        "message":"Of course I could, But why should I?",
-		"replies":[
-            {
-                "text":"Yes, right. Why should you?",
-                "nextPhraseID":"ratdom_skeleton_boss1_10"
-            }
-        ]
-
-	},
-    {
-        "id":"ratdom_skeleton_boss1_14",
-        "message":"I am Roskelt, the Great. King of the caves. Nobody equals me.",
-		"replies":[
-            {
-                "text":"I have lost my way. Could you help me?",
-                "nextPhraseID":"ratdom_skeleton_boss1_12",
-                "requires":[
-                    {			
-                        "requireType":"questProgress",
-                        "requireID":"ratdom_skeleton",
-                        "value":12,
-						"negate":true
-                    }
-                ]
-            },
-            {
-                "text":"Aha.",
-                "nextPhraseID":"ratdom_skeleton_boss1_14_2"
-            },
-            {
-            	"text":"Interesting. Bloskelt said the same.",
-                "nextPhraseID":"ratdom_skeleton_boss1_16",
-                "requires":[
-                    {			
-                        "requireType":"questProgress",
-                        "requireID":"ratdom_skeleton",
-                        "value":12
-                    }
-                ]
-			}
-		]
-
-	},
-    {
-        "id":"ratdom_skeleton_boss1_14_2",
-        "message":"There is just one being, that denies me my rightful title. My brother.",
-		"replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"ratdom_skeleton_boss1_18"
-            }
-        ]
-
-	},
-    {
-        "id":"ratdom_skeleton_boss1_16",
-        "message":"My brother again! He always tries to mock me! And now you are going to tell me, that I should surrender?",
-		"replies":[
-            {
-                "text":"Eh, yes.",
-                "nextPhraseID":"ratdom_skeleton_boss1_16_1"
-            }
-        ]
-
-	},
-    {
-        "id":"ratdom_skeleton_boss1_16_1",
-        "message":"HAHAHA! Never! Tell him that.",
-		"rewards":[
-			{
-				"rewardType":"questProgress",
-				"rewardID":"ratdom_skeleton",
-				"value":22
-			}
-		],
-		"replies":[
-            {
-                "text":"If you wish so. Although the messenger of bad news always gets into trouble...",
-                "nextPhraseID":"X"
-            }
-        ]
-
-	},
-    {
-        "id":"ratdom_skeleton_boss1_18",
-        "message":"You go and find my brother! Tell him that he shall come to me to surrender! He would have the grace of a quick, almost painless death.",
-		"rewards":[
-			{
-				"rewardType":"questProgress",
-				"rewardID":"ratdom_skeleton",
-				"value":11
-			}
-		],
-		"replies":[
-            {
-                "text":"How generous.",
-                "nextPhraseID":"X"
-            }
-        ]
-	},
-    {
-        "id":"ratdom_skeleton_boss1_19",
-        "rewards":[
-            {
-                "rewardType":"alignmentSet",
-                "rewardID":"ratdom_skeleton_boss1",
-                "value":-10
-            }
-        ]
-	},
-    {
-        "id":"ratdom_skeleton_boss1_20",
-        "message":"Mortal! Did you fulfil your task?",
-		"replies":[
-            {
-                "text":"I delivered your message, but Bloskelt was just laughing.",
-                "nextPhraseID":"ratdom_skeleton_boss1_22"
-            }
-        ]
-	},
-    {
-        "id":"ratdom_skeleton_boss1_22",
-        "message":"Then go again, and kill him.",
-		"rewards":[
-			{
-				"rewardType":"questProgress",
-				"rewardID":"ratdom_skeleton",
-				"value":25
-			}
-		],
-		"replies":[
-            {
-				"text":"But...",
-                "nextPhraseID":"ratdom_skeleton_boss1_24"
-            }
-        ]
-	},
-    {
-        "id":"ratdom_skeleton_boss1_24",
-        "message":"Hurry now.",
-		"replies":[
-            {
-				"text":"Oh, OK.",
-                "nextPhraseID":"X"
-            },
-            {
-				"text":"Enough! Let's fight!",
-                "nextPhraseID":"F"
-            }
-        ]
-	},
-    {
-        "id":"ratdom_skeleton_boss1_25",
-        "message":"Mortal! You amuse me. I will have you as my jester.",
-		"replies":[
-            {
-				"text":"Enough! Let's fight!",
-                "nextPhraseID":"F"
-            }
-        ]
-	},
-    {
-        "id":"ratdom_skeleton_boss1_30",
-        "message":"Mortal! Did you fulfil your task?",
-		"replies":[
-            {
-                "text":"Yes. I have killed your brother.",
-                "nextPhraseID":"ratdom_skeleton_boss_32",
-				"requires":[
-				  {
-					"requireType":"killedMonster",
-					"requireID":"ratdom_skeleton_boss2",
-					"value":1
-				  }
-				]
-            }
-        ]
-	},
-    {
-        "id":"ratdom_skeleton_boss_32",
-        "message":"Good. I will shower you with gold and jewels.",
-		"rewards":[
-			{
-				"rewardType":"questProgress",
-				"rewardID":"ratdom_skeleton",
-				"value":90
 			},
-			{
-				"rewardType":"giveItem",
-				"rewardID":"gold",
-				"value":18
+            {
+            	"nextPhraseID":"ratdom_skeleton_boss_40",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":41
+                    }
+                ]
 			},
-			{
-				"rewardType":"giveItem",
-				"rewardID":"gem1",
-				"value":2
-			}
-		],
-		"replies":[
             {
-				"text":"Hm, not much of a shower...",
-                "nextPhraseID":"ratdom_skeleton_boss_34"
+                "nextPhraseID":"ratdom_skeleton_boss_11"
             }
         ]
-	},
-    {
-        "id":"ratdom_skeleton_boss_34",
-        "message":"What? Do I hear ungrateful words?",
-		"replies":[
-            {
-				"text":"No, everything is well.",
-                "nextPhraseID":"X"
-            },
-            {
-				"text":"Enough! Let's fight!",
-                "nextPhraseID":"F"
-            }
-        ]
-	},
-    {
-        "id":"ratdom_skeleton_boss_90",
-        "message":"Thank you again for your efforts."
 	},
     {
         "id":"ratdom_skeleton_boss2",
@@ -1279,246 +1039,429 @@
                 ]
 			},
             {
-            	"nextPhraseID":"ratdom_skeleton_boss2_30",
+            	"nextPhraseID":"ratdom_skeleton_boss_70",
                 "requires":[
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":32
+                        "value":72
                     }
                 ]
 			},
             {
-            	"nextPhraseID":"ratdom_skeleton_boss2_20",
+            	"nextPhraseID":"ratdom_skeleton_boss_60",
                 "requires":[
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":22
+                        "value":62
                     }
                 ]
 			},
             {
-                "nextPhraseID":"ratdom_skeleton_boss2_10"
+            	"nextPhraseID":"ratdom_skeleton_boss_52",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":52
+                    }
+                ]
+			},
+            {
+            	"nextPhraseID":"ratdom_skeleton_boss_40",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":42
+                    }
+                ]
+			},
+            {
+                "nextPhraseID":"ratdom_skeleton_boss_12"
             }
         ]
-
 	},
-    {
-        "id":"ratdom_skeleton_boss2_10",
+	{
+        "id":"ratdom_skeleton_boss_11",
         "message":"Mortal - What do you do in my realm?",
 		"replies":[
             {
                 "text":"I have lost my way. Could you help me?",
-                "nextPhraseID":"ratdom_skeleton_boss2_12",
+                "nextPhraseID":"ratdom_skeleton_boss_11_10",
                 "requires":[
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":11,
+                        "value":42,
 						"negate":true
                     }
                 ]
             },
             {
                 "text":"I have come to kill you.",
-                "nextPhraseID":"ratdom_skeleton_boss2_25",
+                "nextPhraseID":"ratdom_skeleton_boss_10_20",
                 "requires":[
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":25
+                        "value":62
                     }
                 ]
             },
             {
                 "text":"Who are you?",
-                "nextPhraseID":"ratdom_skeleton_boss2_14"
+                "nextPhraseID":"ratdom_skeleton_boss_11_30"
             }
         ]
-
 	},
-    {
-        "id":"ratdom_skeleton_boss2_12",
-        "message":"Of course I could, But why should I?",
-		"replies":[
-            {
-                "text":"Yes, right. Why should you?",
-                "nextPhraseID":"ratdom_skeleton_boss2_10"
-            }
-        ]
-
-	},
-    {
-        "id":"ratdom_skeleton_boss2_14",
-        "message":"I am Bloskelt, the Great. King of the caves. Nobody equals me.",
+	{
+        "id":"ratdom_skeleton_boss_12",
+        "message":"Mortal - What do you do in my realm?",
 		"replies":[
             {
                 "text":"I have lost my way. Could you help me?",
-                "nextPhraseID":"ratdom_skeleton_boss2_12",
+                "nextPhraseID":"ratdom_skeleton_boss_12_10",
                 "requires":[
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":11,
+                        "value":41,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I have come to kill you.",
+                "nextPhraseID":"ratdom_skeleton_boss_10_20",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":61
+                    }
+                ]
+            },
+            {
+                "text":"Who are you?",
+                "nextPhraseID":"ratdom_skeleton_boss_12_30"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_11_10",
+        "message":"Of course I could, But why should I?",
+		"replies":[
+            {
+                "text":"Yes, right. Why should you?",
+                "nextPhraseID":"ratdom_skeleton_boss_11"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_12_10",
+        "message":"Of course I could, But why should I?",
+		"replies":[
+            {
+                "text":"Yes, right. Why should you?",
+                "nextPhraseID":"ratdom_skeleton_boss_12"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_10_20",
+        "message":"Mortal! You amuse me. I will have you as my jester.",
+		"replies":[
+            {
+				"text":"We'll see! Let's fight!",
+                "nextPhraseID":"F"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_11_30",
+        "message":"I am Roskelt, the Great. King of the caves. Nobody equals me.",
+		"replies":[
+            {
+                "text":"I have lost my way. Could you help me?",
+                "nextPhraseID":"ratdom_skeleton_boss_11_10",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":42,
 						"negate":true
                     }
                 ]
             },
             {
                 "text":"Aha.",
-                "nextPhraseID":"ratdom_skeleton_boss2_14_2"
+                "nextPhraseID":"ratdom_skeleton_boss_11_40"
             },
             {
-            	"text":"Interesting. Roskelt said the same.",
-                "nextPhraseID":"ratdom_skeleton_boss2_16",
+            	"text":"Interesting. Bloskelt said the same.",
+                "nextPhraseID":"ratdom_skeleton_boss_11_50",
                 "requires":[
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":11
+                        "value":42
                     }
                 ]
 			}
-        ]
-
+		]
 	},
     {
-        "id":"ratdom_skeleton_boss2_14_2",
-        "message":"There is just one being, that denies me my rightful title. My brother.",
+        "id":"ratdom_skeleton_boss_12_30",
+        "message":"I am Bloskelt, the Great. King of the caves. Nobody equals me.",
+		"replies":[
+            {
+                "text":"I have lost my way. Could you help me?",
+                "nextPhraseID":"ratdom_skeleton_boss_12_10",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":41,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Aha.",
+                "nextPhraseID":"ratdom_skeleton_boss_12_40"
+            },
+            {
+            	"text":"Interesting. Roskelt said the same.",
+                "nextPhraseID":"ratdom_skeleton_boss_12_50",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":41
+                    }
+                ]
+			}
+		]
+	},
+    {
+        "id":"ratdom_skeleton_boss_11_40",
+        "message":"There is just one being, that denies me my rightful title. Bloskelt, my wretched brother.",
 		"replies":[
             {
                 "text":"N",
-                "nextPhraseID":"ratdom_skeleton_boss2_18"
+                "nextPhraseID":"ratdom_skeleton_boss_11_42"
             }
         ]
-
 	},
     {
-        "id":"ratdom_skeleton_boss2_16",
-        "message":"My brother again! He always tries to mock me! And now you are going to tell me, that I should surrender?",
+        "id":"ratdom_skeleton_boss_12_40",
+        "message":"There is just one being, that denies me my rightful title. Roskelt, my wretched brother.",
 		"replies":[
             {
-                "text":"Eh, yes.",
-                "nextPhraseID":"ratdom_skeleton_boss2_16_1"
+                "text":"N",
+                "nextPhraseID":"ratdom_skeleton_boss_12_42"
             }
         ]
 	},
     {
-        "id":"ratdom_skeleton_boss2_16_1",
-        "message":"HAHAHA! Never! Tell him that.",
+        "id":"ratdom_skeleton_boss_11_42",
+        "message":"You go and find Bloskelt! Tell him that he shall come to me to surrender! He would receive the grace of a quick, almost painless death.",
 		"rewards":[
 			{
 				"rewardType":"questProgress",
 				"rewardID":"ratdom_skeleton",
-				"value":21
+				"value":41
 			}
 		],
 		"replies":[
             {
-                "text":"If you wish so. Although the messenger of bad news always gets into trouble...",
-                "nextPhraseID":"X"
-            }
-        ]
-
-	},
-    {
-        "id":"ratdom_skeleton_boss2_18",
-        "message":"You go and find my brother! Tell him that he shall come to me to surrender! He would have the grace of a quick, almost painless death.",
-		"rewards":[
-			{
-				"rewardType":"questProgress",
-				"rewardID":"ratdom_skeleton",
-				"value":12
-			}
-		],
-		"replies":[
-            {
-                "text":"How generous.",
+                "text":"How generously.",
                 "nextPhraseID":"X"
             }
         ]
 	},
     {
-        "id":"ratdom_skeleton_boss2_19",
-        "rewards":[
+        "id":"ratdom_skeleton_boss_12_42",
+        "message":"You go and find Roskelt! Tell him that he shall come to me to surrender! He would receive the grace of a quick, almost painless death.",
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_skeleton",
+				"value":42
+			}
+		],
+		"replies":[
             {
-                "rewardType":"alignmentSet",
-                "rewardID":"ratdom_skeleton_boss2",
-                "value":-10
+                "text":"How generously.",
+                "nextPhraseID":"X"
             }
         ]
 	},
     {
-        "id":"ratdom_skeleton_boss2_20",
+        "id":"ratdom_skeleton_boss_11_50",
+        "message":"My brother again! He always tries to mock me! And surely  you are now going to tell me, that I should surrender?",
+		"replies":[
+            {
+                "text":"Eh, yes. How did you know?",
+                "nextPhraseID":"ratdom_skeleton_boss_11_52"
+            }
+        ]
+
+	},
+    {
+        "id":"ratdom_skeleton_boss_12_50",
+        "message":"My brother again! He always tries to mock me! And surely  you are now going to tell me, that I should surrender?",
+		"replies":[
+            {
+                "text":"Eh, yes. How did you know?",
+                "nextPhraseID":"ratdom_skeleton_boss_12_52"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_11_52",
+        "message":"HAHAHA! I will not give up and surrender to him! Never! Tell him that. HAHAHAHA!",
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_skeleton",
+				"value":51
+			}
+		],
+		"replies":[
+            {
+                "text":"I go and tell Roskelt. Although the messenger of bad news always gets into trouble...",
+                "nextPhraseID":"X"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_12_52",
+        "message":"HAHAHA! I will not give up and surrender to him! Never! Tell him that. HAHAHAHA!",
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_skeleton",
+				"value":52
+			}
+		],
+		"replies":[
+            {
+                "text":"I go and tell Roskelt. Although the messenger of bad news always gets into trouble...",
+                "nextPhraseID":"X"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_40",
+        "message":"Mortal! Where is my brother?",
+		"replies":[
+            {
+                "text":"I didn't find him yet.",
+                "nextPhraseID":"ratdom_skeleton_boss_40_10"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_40_10",
+        "message":"Then look again, thoroughly."
+	},
+    {
+        "id":"ratdom_skeleton_boss_51",
         "message":"Mortal! Did you fulfil your task?",
 		"replies":[
             {
                 "text":"I delivered your message, but Bloskelt was just laughing.",
-                "nextPhraseID":"ratdom_skeleton_boss2_22"
+                "nextPhraseID":"ratdom_skeleton_boss_51_10"
             }
         ]
 	},
     {
-        "id":"ratdom_skeleton_boss2_22",
-        "message":"Then go again, and kill him.",
+        "id":"ratdom_skeleton_boss_52",
+        "message":"Mortal! Did you fulfil your task?",
+		"replies":[
+            {
+                "text":"I delivered your message, but Roskelt was just laughing.",
+                "nextPhraseID":"ratdom_skeleton_boss_52_10"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_51_10",
+        "message":"Then go again. And kill him.",
 		"rewards":[
 			{
 				"rewardType":"questProgress",
 				"rewardID":"ratdom_skeleton",
-				"value":26
+				"value":61
 			}
 		],
 		"replies":[
             {
-				"text":"But...",
-                "nextPhraseID":"ratdom_skeleton2_boss_24"
+				"text":"Kill him? But it is your brother?",
+                "nextPhraseID":"ratdom_skeleton_boss_50_20"
             }
         ]
 	},
     {
-        "id":"ratdom_skeleton_boss2_24",
-        "message":"Hurry now.",
+        "id":"ratdom_skeleton_boss_52_10",
+        "message":"Then go again. And kill him.",
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_skeleton",
+				"value":62
+			}
+		],
+		"replies":[
+            {
+				"text":"Kill him? But it is your brother?",
+                "nextPhraseID":"ratdom_skeleton_boss_50_20"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_50_20",
+        "message":"Yes, that's why. Hurry now.",
 		"replies":[
             {
 				"text":"Oh, OK.",
                 "nextPhraseID":"X"
             },
             {
-				"text":"Enough! Let's fight!",
+				"text":"I have enough of you! Let's fight!",
                 "nextPhraseID":"F"
             }
         ]
 	},
-    {
-        "id":"ratdom_skeleton_boss2_25",
-        "message":"Mortal! You amuse me. I will have you as my jester.",
-		"replies":[
-            {
-				"text":"Enough! Let's fight!",
-                "nextPhraseID":"F"
-            }
-        ]
-	},
-    {
-        "id":"ratdom_skeleton_boss2_30",
+	{
+        "id":"ratdom_skeleton_boss_60",
         "message":"Mortal! Did you fulfil your task?",
 		"replies":[
             {
-                "text":"Yes. I have killed your brother.",
-                "nextPhraseID":"ratdom_skeleton_boss_32",
-				"requires":[
-				  {
-					"requireType":"killedMonster",
-					"requireID":"ratdom_skeleton_boss2",
-					"value":1
-				  }
-				]
+                "text":"To kill your brother? No, not yet.",
+                "nextPhraseID":"ratdom_skeleton_boss_60_10"
             }
         ]
 	},
     {
-        "id":"ratdom_skeleton_boss_32",
+        "id":"ratdom_skeleton_boss_60_10",
+        "message":"Then what do you want here? Go and do it."
+	},
+    {
+        "id":"ratdom_skeleton_boss_70",
+        "message":"Mortal! Did you fulfil your task?",
+		"replies":[
+            {
+                "text":"Yes. Your brother is dead.",
+                "nextPhraseID":"ratdom_skeleton_boss_70_10"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_70_10",
         "message":"Good. I will shower you with gold and jewels.",
 		"rewards":[
 			{
@@ -1540,12 +1483,12 @@
 		"replies":[
             {
 				"text":"Hm, not much of a shower...",
-                "nextPhraseID":"ratdom_skeleton_boss_34"
+                "nextPhraseID":"ratdom_skeleton_boss_70_20"
             }
         ]
 	},
     {
-        "id":"ratdom_skeleton_boss_34",
+        "id":"ratdom_skeleton_boss_70_20",
         "message":"What? Do I hear ungrateful words?",
 		"replies":[
             {
@@ -1560,6 +1503,26 @@
 	},
     {
         "id":"ratdom_skeleton_boss_90",
-        "message":"Thank you again for your efforts."
+        "message":"Thank you again for your efforts.",
+		"replies":[
+            {
+				"text":"It could have been a bit more gold.",
+                "nextPhraseID":"ratdom_skeleton_boss_90_10"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_skeleton_boss_90_10",
+        "message":"What? Do I hear ungrateful words?",
+		"replies":[
+            {
+				"text":"Eh, no, it is nothing. Bye.",
+                "nextPhraseID":"X"
+            },
+            {
+				"text":"I will take my gold now - attack!",
+                "nextPhraseID":"F"
+            }
+        ]
 	}
 ]

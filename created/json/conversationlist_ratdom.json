@@ -1331,7 +1331,7 @@
           {
             "requireType":"questProgress",
             "requireID":"ratdom_skeleton",
-            "value":31,
+            "value":32,
 			"negate":true
           },
           {
@@ -1350,7 +1350,7 @@
 		{
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_skeleton",
-			"value":31
+			"value":32
 		}
 	]
   },
@@ -1368,7 +1368,7 @@
           {
             "requireType":"questProgress",
             "requireID":"ratdom_skeleton",
-            "value":32
+            "value":31
 			"negate":true
           },
           {
@@ -1387,7 +1387,7 @@
 		{
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_skeleton",
-			"value":32
+			"value":31
 		}
 	]
   },
