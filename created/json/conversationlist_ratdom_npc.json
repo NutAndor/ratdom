@@ -1197,7 +1197,15 @@
             },
             {
                 "text":"Aha.",
-                "nextPhraseID":"ratdom_skeleton_boss_11_40"
+                "nextPhraseID":"ratdom_skeleton_boss_11_40",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":42,
+						"negate":true
+                    }
+                ]
             },
             {
             	"text":"Interesting. Bloskelt said the same.",
@@ -1230,7 +1238,15 @@
             },
             {
                 "text":"Aha.",
-                "nextPhraseID":"ratdom_skeleton_boss_12_40"
+                "nextPhraseID":"ratdom_skeleton_boss_12_40",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":41,
+						"negate":true
+                    }
+                ]
             },
             {
             	"text":"Interesting. Roskelt said the same.",
@@ -1327,7 +1343,7 @@
 			{
 				"rewardType":"questProgress",
 				"rewardID":"ratdom_skeleton",
-				"value":51
+				"value":52
 			}
 		],
 		"replies":[
@@ -1344,7 +1360,7 @@
 			{
 				"rewardType":"questProgress",
 				"rewardID":"ratdom_skeleton",
-				"value":52
+				"value":51
 			}
 		],
 		"replies":[
