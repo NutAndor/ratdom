@@ -195,12 +195,15 @@
         "id":"ratdom_skeleton1",
         "name":"Skeleton",
         "iconID":"monsters_tometik8:35",
-        "movementAggressionType":"protectSpawn",
+        "maxHP":60,
+        "maxAP":10,
+        "monsterClass":"construct",
+		"movementAggressionType":"protectSpawn",
         "attackDamage":{
             "min":10,
             "max":20
         },
-        "spawnGroup":"ratdom_skeleton1"
+        "spawnGroup":"ratdom_skeleton1",
         "faction":"ratdom_skeleton1",
         "phraseID":"ratdom_skeleton1",
         "attackCost":5,
@@ -211,12 +214,15 @@
         "id":"ratdom_skeleton2",
         "name":"Skeleton",
         "iconID":"monsters_tometik8:35",
-        "movementAggressionType":"protectSpawn",
+        "maxHP":60,
+        "maxAP":10,
+        "monsterClass":"construct",
+		"movementAggressionType":"protectSpawn",
         "attackDamage":{
             "min":10,
             "max":20
         },
-        "spawnGroup":"ratdom_skeleton2"
+        "spawnGroup":"ratdom_skeleton2",
         "faction":"ratdom_skeleton2",
         "phraseID":"ratdom_skeleton2",
         "attackCost":5,
@@ -227,12 +233,15 @@
         "id":"ratdom_skeleton_boss1",
         "name":"Roskelt",
         "iconID":"monsters_tometik8:44",
-        "unique":1,
+        "maxHP":100,
+        "maxAP":10,
+        "monsterClass":"construct",
+		"unique":1,
         "attackDamage":{
             "min":15,
             "max":30
         },
-        "spawnGroup":"ratdom_skeleton_boss1"
+        "spawnGroup":"ratdom_skeleton_boss1",
         "faction":"ratdom_skeleton_boss1",
         "phraseID":"ratdom_skeleton_boss1",
         "attackCost":5,
@@ -243,12 +252,15 @@
         "id":"ratdom_skeleton_boss2",
         "name":"Bloskelt",
         "iconID":"monsters_tometik8:43",
-        "unique":1,
+        "maxHP":100,
+        "maxAP":10,
+        "monsterClass":"construct",
+		"unique":1,
         "attackDamage":{
             "min":15,
             "max":30
         },
-        "spawnGroup":"ratdom_skeleton_boss2"
+        "spawnGroup":"ratdom_skeleton_boss2",
         "faction":"ratdom_skeleton_boss2",
         "phraseID":"ratdom_skeleton_boss2",
         "attackCost":5,

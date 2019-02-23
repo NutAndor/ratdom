@@ -987,6 +987,11 @@
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
                         "value":71
+                    },
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":61
                     }
                 ]
 			},
@@ -1045,6 +1050,11 @@
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
                         "value":72
+                    },
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":62
                     }
                 ]
 			},
@@ -1445,12 +1455,8 @@
             {
 				"text":"Oh, OK.",
                 "nextPhraseID":"X"
-            },
-            {
-				"text":"I have enough of you! Let's fight!",
-                "nextPhraseID":"F"
-            }
-        ]
+            }	
+		]
 	},
 	{
         "id":"ratdom_skeleton_boss_60",
