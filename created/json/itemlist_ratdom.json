@@ -50,5 +50,12 @@
             "increaseAttackChance":0,
             "increaseBlockChance":1
         }
+    },
+    {
+        "id":"ratdom_wells_ball",
+        "iconID":"items_misc:0",
+        "name":"Shimmering globe",
+        "displaytype":"quest",
+        "category":"other"
     }
 ]

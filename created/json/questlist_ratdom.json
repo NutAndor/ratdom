@@ -94,7 +94,7 @@
     {
         "id":"ratdom_nondisplay",
         "name":"ratdom_nondisplay",
-        "showInLog":0,
+        "showInLog":1,
         "stages":[	
 			{ "progress":1, "logText":"1=Ratdom active" },
 			{ "progress":2, "logText":"2=Rat statue act." },
@@ -111,7 +111,15 @@
 			{ "progress":13, "logText":"13=Clevred dead/gone" },
 			{ "progress":21, "logText":"21=Rat final_1" },
 			{ "progress":22, "logText":"22=Rat final_2" },
-			{ "progress":23, "logText":"23=Rat final_3" }
+			{ "progress":23, "logText":"23=Rat final_3" },
+			{ "progress":40, "logText":"40=Lantern-0 on" },
+			{ "progress":41, "logText":"41=Lantern-1 on" },
+			{ "progress":42, "logText":"42=Lantern-2 on" },
+			{ "progress":43, "logText":"43=Lantern-3 on" },
+			{ "progress":44, "logText":"44=Lantern-4 on" },
+			{ "progress":45, "logText":"45=Lantern-5 on" },
+			{ "progress":46, "logText":"46=Lantern-6 on" },
+			{ "progress":47, "logText":"47=Lantern-7 on" }
         ]
     },
     {
