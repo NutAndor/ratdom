@@ -186,9 +186,6 @@
  <tileset firstgid="7705" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
- <tileset firstgid="7813" name="map_ground_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../altered/drawable/map_ground_1.png" width="512" height="256"/>
- </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJytlMENwjAMRTsFx6o7UEaAjhA6QsoIaadjAyYiEbZkPk7iRFR6h1Z5ceN8eRqHYYqEiI+4yJ1Iz238kN7XyIPWI+xvhBPORt4h1l8Ufye8cHbwzvQ/6OM+B3xnLzEXfER6kpqf82p+zUssnR7zOn27rsHF2r7Rl7U5M9fO2qHBXZWeWdxc5mvuMv5mvsXVvN5sWM/671xZ70a7H2umuM+YSevdYp+DoXZpDsoZmvO0u8UZ6ho8nH18/lIGS3u4ipcykZuhXvF4/Qz9wD2C4vVk3ZrZp8jrG78apP8=
@@ -201,7 +198,7 @@
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSI6CAQWXxcjXa0phvA5Vuw9ToPcSGXoHyq0DpXeg4hakj5z4AQFy9Y2CwQGoVRYBAOWkDiw=
+   eJxjYMAN3OTwSI6CAQWXxcjXa0phvA5Vuw9ToPcSGXoHyq0DpXeg4hakj5z4AQF6p4lRQF1ArbIIAGgUDwU=
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -209,7 +206,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYICAjWKYGJ84OsCmDp9edHNI0UesOwiZTwwgxk3khge5+rDpJVYfsWFDK7244pLe7iZV/0DopZY+etg50OlqIPRSM5yJ1YsPkKsPnxmE1OCSI8VfyOpI0UdpHCDrBwBxGuuK
   </data>

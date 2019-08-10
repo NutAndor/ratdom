@@ -188,7 +188,7 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlLENAjEMRW8KyogdOEroCCV0x40QboTAdGzARDgSlnzGSX4iitflxYr9Y++GwX+5AXiDmbgDTMo7EwvxAAjESblPYgsQlZvYg+4u8+aan/Nqfs3jt/d4zHuzdvVcWmqHRl/WjsZcW2pbc80xGz1D3OQtHS5n28oo4lpebzbQt/47V+hsrPmgmeI+60yis9V9jkDtXCbkf7B2JXu5vcX/Qe/Kmid9uStLGSzdMbnyfk2ZGJ29w4L7zRGfH1U/9B2p9oE4CqclrxfiCs4+8RJ5/QDfZKhs
+   eJytlMENwjAMRXvn3mPFDpQRCCOUjpB2hMB0bMBEOBKWXMtOfiIO75YXK/aPwzQM4ccDIBisxAawKO9O7MQTIBI35b6IM0BSbuYKuhfnzTXf82p+zeO393jMZzy6ei4ttWOjL2snY64tta25eqxGzxA3e3uHy9m2Moq4ltebDfSt/84VOhtrPmimuM86k+hsdZ8TUNvLhPwP1q5kz9tb/B/0rqx50pe7spTB0h2L0xuZiXmyd1g0esPnZ9UPfUeufRqPTkterRol3iKvX9SUqBQ=
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
@@ -198,7 +198,7 @@
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSNIR8PDjluPGIzecwWUx8vWaUhivQ9XuwxTovUSG3oFy60DpHai4BekjJ35AgFx9o2BwAGqVRQA1gA5h
+   eJxjYMAN3OTwSNIR8PDjluPGIzecwWUx8vWaUhivQ9XuwxTovUSG3oFy60DpHai4BekjJ35AgFx9QwUMpfxCDqBWWQQAqlARCw==
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccoMFIwNkN6OLE9KLCxBrNyn68Oknx9/kxNNA6UXWT434JlcvqfoHQi+19NHDzoFOVwOhl5rhTKxefIBcffjMIKQGlxwp/sKml9y4I0Uvsn4A6rD5iA==
+   eJzbKMbAsBEHBgFccoMFIwNkN6OLE9KLCxBrNyn68Oknx9/kxNNA6UXWT434JlcvqfoHQi+19NHDzoFOVwOhl5rhTKxefIBcffjMIKQGlxwp/kJWR6weasQ7sn4AuPD5iA==
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -263,7 +263,7 @@
     <property name="place" value="north1"/>
    </properties>
   </object>
-  <object id="43" name="south1" type="mapchange" x="32" y="896" width="32" height="32">
+  <object id="43" name="south1" type="mapchange" x="0" y="896" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_525"/>
     <property name="place" value="north2"/>

@@ -188,17 +188,17 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlFEOgyAMhj3FHo13mDsC+rwn5QjOIzAvuROtZDT51xUoZiZ/FMPXQvvD0HddIG2kB2khrUnxmfqP4tiTdtKQdE/vyD8hBsbxaRy5A9gZvjEGxtnTGLlrWs9N8DLOIf4zFzUWeCnkUDU+x9X4GjcptbNyrNflm10aWJl7a+QxN/vOncwdGliv1MzCSs9b2bn/9XwLq3FnvWHd6799Ze2N1h+rp7jO0pPW3so6B0PunCfwPKwFTustnge+P62cvPt4/1ZOO1MlLnoid4c6heP5o6iHjOEUzuJXntfqWVzPG9JUpYw=
+   eJytlM0NgzAMhbn3zjHqDqUjpIwAGQEYIXTJTlRb2JJr5ceJivSELOWzE+fFpxuGE7SBdtACWkn4vdwljAPoAN1Jt/H6R5VD5gkUI/cWrBbnkHkOiiX3oP08K3l0LeZQU4HXkpxUjc9xNb7GoeZOjvUZf9mlgdW1t0Ze1o7E+87asYENiZ5ZWO15Kzu7vOctbIrr9Yb1rP/2lfVuUvdj9RT3WXvSere6z9FQO+cJ+R7WApebg/weeH5aOT37+PxWLvWmShx6IjdDfYLj9ZPqh87hE5zFr7yu1bNyP19OKKV0
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJyzl2NgcABickAgUF8QiXqPCzEwnBAiz75RMApGwSgYBaOA2gAAQ+oDTg==
+   eJxjYKAvOC7EwHBCiM6WjoJRMApGwSgYBTgAADhpAbQ=
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwzlGRgSAZibMBNDrv4diEGhh1APJcJuzyx4LIYZfpHMqAk7ExxxOtwt/swBXovkaF3oNw6UHoHKm5B+siJHxAgV98oGByAWnUIADv5Ebo=
+   eJxjYMAN3OSwi28XYmDYIYRHIxHAFIfZ9NI/1MFlMfL1Uhp2Q9XuwxTovUSG3oFy60DpHai4BekjJ35AgFx9o2BwAEryGDIAAMuTEBI=
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzbKMYABhvFMDEucXQ1xKjDp5dce7ABUswnBhDrflL0Eet+UvTSMuypqZeeaYaaYTYQeqmljx52DnS6Ggi91AxnYvXiA+Tqw2cGITW45EjxF7I6UvTB1GMzh1QMAHmK81A=
+   eJzbKMbAsBEHBgFccjB5QmqI0U+MGdjUYQOkmE8MINb9pOgj1v2k6KVl2FNTL6XphlruJlX/QOillj562DnQ6Wog9FIznInViw+Qqw+fGYTU4JIjxV/I6kjRB1OPzRxSMQDno/QX
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -275,7 +275,7 @@
     <property name="place" value="south1"/>
    </properties>
   </object>
-  <object id="33" name="north1" type="mapchange" x="32" y="32" width="32" height="32">
+  <object id="33" name="north1" type="mapchange" x="0" y="32" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_506"/>
     <property name="place" value="south2"/>
@@ -326,7 +326,7 @@
     <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
-  <object id="56" name="ratdom_maze_rat" type="spawn" x="64" y="64" width="128" height="192">
+  <object id="56" name="ratdom_maze_rat" type="spawn" x="64" y="704" width="128" height="224">
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>

@@ -188,17 +188,17 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlMENwjAMRTsFx6o7tIzQMELpCKEjBKbrBkxEKmHJWN/NT8Th3fJixf5x6LsufLkTBMCaeRAsxrtltsyTIGZm474yA0Ey7sGVdEfnzSXf80p+yZO3t3jC+/Lr2rnU1I6Vvq6dwFxraqO5eqygZ4x7eFuDK9lGGWVc5LVmg33rv3PFzgbNh82U9Nlmkp2t7XMianuZ0P8B7UrxvL0l/8HuypKnfb0rzzJ4dsfi9EZnYurxDougN3J+Mv2wdyRVcwTn2ayzmdtVXj8Eu6hm
+   eJytlMENwjAMRXvn3mPFDpQRCCNARwgdITAdGzARjoQl1/ppfiIO79ZXy/aPwzQM4cedIAAW4UFwc95VWIUnQRQuzn0JR4Lk3MyZdE+Fnmt+yav5NU977/GUz7h1/V5aasdG39ZOYK8ttdFeSyxgZoybvbXD1WyjjDIu8nqzwfb671yxu0H7YTOlc/aZZHfr55yI2qVM2PeAbqV6pbul78HfyppnfXsrWQ/1v+flTMwTvmERePr97Obh/5FrH8at05JXVGOPt8nrFwdDqEo=
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYKAuiGSD0FYsEDqKjXi9mUC129kZGLyAencA6SwCev/wMTC84UPwrwP1RAH13mBHVccnTLwbkMFLIcJqHhOhhlbg4QDaPRjAdgr8f5wCvc8Hebg/HeTuGwXUA/RMi/xklqOkAGk5BgYZOfL06gL16ZGpFwAaABCC
+   eJxjYKAuiGSD0FYsEDqKjXi9mUC129kZGLyAencA6SwCev/wMTC84UPwrwP1RAH13mBHVccnTLwbkMFLIcJqHhOhhlbg4QDaPRjAdgr8f5wCvc8Hebg/HeTuGwXUA/RMi/xklqNDAQAAwzUPeA==
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSI6CAQWXxcjXa0phvA5Vuw9ToPcSGXoHyq0DpXeg4hakj5z4AQF6pwl6g6GUX8gByP7zA6a/Tibi9SKnVwAUixKm
+   eJxjYMAN3OTwSI6CAQWXxcjXa0phvA5Vuw9ToPcSGXoHyq0DpXeg4hakj5z4AQF6p4lRQF1ArbIIAGgUDwU=
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccoMFIwNkN6OLE9KLCxBrNyn68Oknx9/kxNNA6UXWT434Hgi9pOqndxxjA8M9XQ2EXmqGM7F68QFy9eEzg5AaXHKk+AubXnLjjhS9yPoBE0b6Tw==
+   eJzbKMbAsBEHBgFccoMFIwNkN6OLE9KLCxBrNyn68Oknx9/kxNNA6UXWT434Hgi9pOqndxxjA8M9XQ2EXmqGM7F68QFy9eEzg5AaXHKk+AtZHbF6qBHvyPoB4Xf6Tw==
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -263,7 +263,7 @@
     <property name="place" value="north1"/>
    </properties>
   </object>
-  <object id="43" name="south1" type="mapchange" x="32" y="896" width="32" height="32">
+  <object id="43" name="south1" type="mapchange" x="0" y="896" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_524"/>
     <property name="place" value="north2"/>

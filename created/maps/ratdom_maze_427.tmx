@@ -188,27 +188,27 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlFEOgyAMhj3FHol3mDuC+rwn5QjOIzAvuROtZDT51xUoZiZ/FMPXQvtD77oukDbSg7SQ1qT4TO6jOPakndQn3dM78k+IgXF8GkfuAHaGb4yBcfY0Ru6a1nMTvIxziP/MRQ0FXgo5VI3PcTW+xk1K7awc63X5ZpcGVubeGnnMzb4bT+YODaxXamZhpeet7Ox+Pd/CatxZb1j3+m9fWXuj9cfqKa6z9KS1t7LOwZA75wk8D2uB03qL54HvTysn7z7ev5XT9l/ioidyd+imcDx/EPWQMUaFs/iV57V6FtfzBv1cpcI=
+   eJytlM0NgzAMhbn3zjHqDqUjUEaAjBAYIXTJTlRb2JJr5ceJivSELOWzE+fFpxuGExRAO2gFbST8Xu4Sxh50gO6k23j9o8oh83iKkXsLVotzyDwHxZJ70H6elTy6FnOoqcBrSU6qxue4Gl/jUEsnx/qMv+zawOraoZGXtSPxc2ft2MD6RM8srPa8lV1c3vMWNsX1esN61n/7yno3qfuxeor7rD1pvVvd52ionfOEfA9bgcvNQX4PPD+tnJ59fH4rlzp/iUNP5GZoSHC8flL90DnmBGfxK69r9azczxd5MKWq
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJyzl2NgcABickAgUF8QmXpHwSgYBaNgFIwCSsAOPuqYAwBKKwJh
+   eJxjYBgFo2AUjIJRMAqGHtjBRx1zAD6qAMc=
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwzlGRgSAZibMBNDrs4DMxlwi9PCFwWI1+vKQG3DXcwkGE3VO0+TIHeS2ToHSi3DpTegYpbkD5y4gcEyNU3CgYHoCSPIQMAitQQeg==
+   eJxjYMAN3OTwSFIITCk0m1L9Qx1cFiNfL6VhN1TtPkyB3ktk6B0otw6U3oGKW5A+cuIHBMjVNwoGB6AkjyEDAA6NDn8=
   </data>
  </layer>
- <layer name="Top" width="15" height="30">
+ <layer name="Top" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzFkgEKACAIA3uF//9CPwyCIEjXFpUDIXJnJlYrXdXWQPcjN5+Z8FiG93yeojyqicT0pHJs/wrLcuxsXrEnO/Oib5XPYG9xP97M3qsM9uacWRbplEM1dp4op/xr9inc8Ht11Gig9/A0
+   eJzFklsKACAIBDtF979CN4w+gojWmpIU/ElnfVVySkV4M/U+muItdtYhnOrDip/MsdMjPNkF5V5vQHfvyapb/u6b8hGsF/ejZvS/imA993zKWnbLWRq7HBUjc415hOv5Kx3qFQ8f8Ps=
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -275,7 +275,7 @@
     <property name="place" value="south1"/>
    </properties>
   </object>
-  <object id="33" name="north1" type="mapchange" x="32" y="32" width="32" height="32">
+  <object id="33" name="north1" type="mapchange" x="0" y="32" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_517"/>
     <property name="place" value="south2"/>
