@@ -127,7 +127,9 @@
 			{ "progress":44, "logText":"44=Lantern-4 on" },
 			{ "progress":45, "logText":"45=Lantern-5 on" },
 			{ "progress":46, "logText":"46=Lantern-6 on" },
-			{ "progress":47, "logText":"47=Lantern-7 on" }
+			{ "progress":47, "logText":"47=Lantern-7 on" },
+			{ "progress":48, "logText":"48=Lantern carry" },
+			{ "progress":49, "logText":"49=Wise3 active" }
         ]
     },
     {

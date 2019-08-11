@@ -2662,6 +2662,51 @@
 				}
 			],
 			"nextPhraseID":"ratdom_well_20"
+		},
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":40
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":41
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":42
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":43
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":44
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":45
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":46
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":47
+				}
+			],
+			"nextPhraseID":"ratdom_well_30"
 		}
 	]
   },
@@ -2682,8 +2727,36 @@
 			"rewardType":"spawnAll",
 			"rewardID":"ratdom_well_wise3",
 			"mapName":"ratdom_maze_568"
+		},
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":49
 		}
 	]
+  },
+  {
+	"id":"ratdom_well_30",
+	"switchToNPC":"ratdom_well_wise0",
+	"message":"No, no, no, NO! Not orange! Make it blue!",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_31"
+		}
+	]
+  },
+  {
+	"id":"ratdom_well_31",
+	"message":"Blue! Do you hear me? BLUE!!",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_32"
+		}
+	]
+  },
+  {
+	"id":"ratdom_well_32",
+	"message":"Is it really that difficult? Sigh."
   },
   {
     "id":"ratdom_wells_init",
@@ -2800,9 +2873,8 @@
 		{
 			"requires":[
 				{
-					"requireType":"questProgress",
-					"requireID":"base_nondisplay",
-					"value":2
+					"requireType":"random",
+					"requireID":"50"
 				}
 			],
 			"nextPhraseID":"ratdom_wells_init_12"
@@ -2840,9 +2912,8 @@
 		{
 			"requires":[
 				{
-					"requireType":"questProgress",
-					"requireID":"base_nondisplay",
-					"value":2
+					"requireType":"random",
+					"requireID":"50"
 				}
 			],
 			"nextPhraseID":"ratdom_wells_init_13"
@@ -2961,9 +3032,8 @@
 		{
 			"requires":[
 				{
-					"requireType":"questProgress",
-					"requireID":"base_nondisplay",
-					"value":2
+					"requireType":"random",
+					"requireID":"50"
 				}
 			],
 			"nextPhraseID":"ratdom_wells_init_16"
@@ -3001,10 +3071,8 @@
 		{
 			"requires":[
 				{
-					"requireType":"questProgress",
-					"requireID":"base_nondisplay",
-					"value":2,
-					"negate":true
+					"requireType":"random",
+					"requireID":"50"
 				}
 			],
 			"nextPhraseID":"ratdom_wells_init_17"
@@ -3042,10 +3110,8 @@
 		{
 			"requires":[
 				{
-					"requireType":"questProgress",
-					"requireID":"base_nondisplay",
-					"value":2,
-					"negate":true
+					"requireType":"random",
+					"requireID":"50"
 				}
 			],
 			"nextPhraseID":"ratdom_wells_init_20"
@@ -3073,6 +3139,12 @@
   {
     "id":"ratdom_wells_init_20",
 	"rewards":[
+,
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":49
+		},
 		{
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_nondisplay",
@@ -3418,6 +3490,22 @@
   },
   {
 	"id":"ratdom_well_wise_1",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":49,
+					"negate":true
+				}
+			],
+			"nextPhraseID":"ratdom_well_wise_1_10"
+		}
+	]
+  },
+  {
+	"id":"ratdom_well_wise_1_10",
 	"rewards":[
 		{
 			"rewardType":"removeSpawnArea",
@@ -3433,6 +3521,22 @@
   },
   {
 	"id":"ratdom_well_wise_2",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":49,
+					"negate":true
+				}
+			],
+			"nextPhraseID":"ratdom_well_wise_2_10"
+		}
+	]
+  },
+  {
+	"id":"ratdom_well_wise_2_10",
 	"rewards":[
 		{
 			"rewardType":"removeSpawnArea",
