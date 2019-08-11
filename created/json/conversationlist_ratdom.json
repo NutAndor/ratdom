@@ -2178,7 +2178,7 @@
 		{
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
-			"value":43
+			"value":44
 		}
 	]
   },
@@ -2243,7 +2243,47 @@
 					"value":1
 				}
 			],
+			"nextPhraseID":"ratdom_well_4_09"
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_09",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":40
+				}
+			],
 			"nextPhraseID":"ratdom_well_4_10"
+		},
+		{
+			"nextPhraseID":"ratdom_well_4_09b"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":48
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_09b",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_4_10"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":48
 		}
 	]
   },
@@ -2251,7 +2291,32 @@
     "id":"ratdom_well_4_10",
 	"replies":[
 		{
-			"nextPhraseID":"ratdom_well_10"
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":41
+				}
+			],
+			"nextPhraseID":"ratdom_well_4_11"
+		},
+		{
+			"nextPhraseID":"ratdom_well_4_10b"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":40
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_10b",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_4_11"
 		}
 	],
 	"rewards":[
@@ -2259,37 +2324,282 @@
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":40
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_11",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":42
+				}
+			],
+			"nextPhraseID":"ratdom_well_4_12"
 		},
+		{
+			"nextPhraseID":"ratdom_well_4_11b"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":41
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_11b",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_4_12"
+		}
+	],
+	"rewards":[
 		{
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":41
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_12",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":43
+				}
+			],
+			"nextPhraseID":"ratdom_well_4_13"
 		},
+		{
+			"nextPhraseID":"ratdom_well_4_12b"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":42
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_12b",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_4_13"
+		}
+	],
+	"rewards":[
 		{
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":42
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_13",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":44
+				}
+			],
+			"nextPhraseID":"ratdom_well_4_14"
 		},
+		{
+			"nextPhraseID":"ratdom_well_4_13b"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":43
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_13b",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_4_14"
+		}
+	],
+	"rewards":[
 		{
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":43
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_14",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":45
+				}
+			],
+			"nextPhraseID":"ratdom_well_4_15"
 		},
+		{
+			"nextPhraseID":"ratdom_well_4_14b"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":44
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_14b",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_4_15"
+		}
+	],
+	"rewards":[
 		{
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":44
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_15",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":46
+				}
+			],
+			"nextPhraseID":"ratdom_well_4_16"
 		},
+		{
+			"nextPhraseID":"ratdom_well_4_15b"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":45
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_15b",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_4_16"
+		}
+	],
+	"rewards":[
 		{
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":45
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_16",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":47
+				}
+			],
+			"nextPhraseID":"ratdom_well_4_17"
 		},
+		{
+			"nextPhraseID":"ratdom_well_4_16b"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":46
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_16b",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_4_17"
+		}
+	],
+	"rewards":[
 		{
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":46
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_17",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":48
+				}
+			],
+			"nextPhraseID":"ratdom_well_10"
 		},
+		{
+			"nextPhraseID":"ratdom_well_4_17b"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":47
+		}
+	]
+  },
+  {
+    "id":"ratdom_well_4_17b",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_well_10"
+		}
+	],
+	"rewards":[
 		{
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
@@ -2429,10 +2739,10 @@
 					"negate":true
 				}
 			],
-			"nextPhraseID":"ratdom_wells_init_20"
+			"nextPhraseID":"ratdom_wells_init_10"
 		},
 		{
-			"nextPhraseID":"ratdom_wells_init_10"
+			"nextPhraseID":"ratdom_wells_init_20"
 		}
 	]
   },
@@ -2978,7 +3288,7 @@
 					"value":35
 				}
 			],
-			"nextPhraseID":"ratdom_wells_init_25"
+			"nextPhraseID":"ratdom_wells_init_26"
 		},
 		{
 			"nextPhraseID":"ratdom_wells_init_25b"

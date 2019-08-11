@@ -1553,6 +1553,20 @@
 	},
     {
         "id":"ratdom_well_wise3",
-        "message":"Omm..."
+        "message":"Omm...",
+		"replies":[
+            {
+				"text":"Omm.",
+                "nextPhraseID":"ratdom_well_wise3_10"
+            },
+            {
+				"text":"Hi!",
+                "nextPhraseID":"ratdom_well_wise3"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_well_wise3_10",
+        "message":"Congratulation!"
 	}
 ]

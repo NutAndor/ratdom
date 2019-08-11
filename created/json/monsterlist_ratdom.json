@@ -270,21 +270,21 @@
     {
         "id":"ratdom_well_wise1",
         "name":"Wise of the wells",
-        "iconID":"monsters_tometik8:43",
+        "iconID":"monsters_rltiles2:89",
         "unique":1,
         "phraseID":"ratdom_well_wise"
     },
     {
         "id":"ratdom_well_wise2",
         "name":"Wise of the wells",
-        "iconID":"monsters_tometik8:43",
+        "iconID":"monsters_rltiles2:89",
         "unique":1,
         "phraseID":"ratdom_well_wise"
     },
     {
         "id":"ratdom_well_wise3",
         "name":"Wise of the wells",
-        "iconID":"monsters_tometik8:43",
+        "iconID":"monsters_rltiles2:89",
         "unique":1,
         "phraseID":"ratdom_well_wise3"
     }
