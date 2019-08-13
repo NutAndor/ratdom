@@ -3574,11 +3574,13 @@
 			"requires":[
 				{
 					"requireType":"questProgress",
-					"requireID":"ratdom_water",
-					"value":90,
-					"negate":true
+					"requireID":"ratdom_nondisplay",
+					"value":60
 				}
 			],
+			"nextPhraseID":"ratdom_water_flag_20"
+		},
+		{
 			"nextPhraseID":"ratdom_water_flag_10"
 		}
 	]
@@ -3588,12 +3590,48 @@
     "message":"Go around the flag."
   },
   {
+	"id":"ratdom_water_flag_20",
+    "message":"One time around the flag is enough."
+  },
+  {
+	"id":"ratdom_water_sign",
+    "message":"[unreadable signs]",
+	"replies":[
+		{
+			"text":"What is that scribble?",
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":10
+				}
+			],
+			"nextPhraseID":"ratdom_water_sign_10"
+		}
+	]
+  },
+  {
+	"id":"ratdom_water_sign_10",
+    "switchToNPC":"ratdom_rat",
+    "message":"Scribble? It is plain text!",
+	"replies":[
+		{
+			"text":"N",
+			"nextPhraseID":"ratdom_water_sign_20"
+		}
+	]
+  },
+  {
+	"id":"ratdom_water_sign_20",
+    "message":"It says: 'Don't touch the water.'"
+  },
+  {
 	"id":"ratdom_water_x1",
 	"rewards":[
 		{
 			"rewardType":"questProgress",
-			"rewardID":"ratdom_water",
-			"value":90
+			"rewardID":"ratdom_nondisplay",
+			"value":60
 		},
 		{
 			"rewardType":"deactivateMapObjectGroup",
@@ -3605,19 +3643,53 @@
 			"rewardID":"water02",
 			"mapName":"ratdom_maze_664"
 		}
+	],
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_rat_skelett",
+					"value":51,
+					"negate":true
+				}
+			],
+			"nextPhraseID":"ratdom_water_x1_10"
+		}
+	]
+  },
+  {
+	"id":"ratdom_water_x1_10",
+	"message":"You find some rat bones on the ground behind the flag.",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_rat_skelett",
+			"value":51
+		},
+		{
+			"rewardType":"giveItem",
+			"rewardID":"ratdom_rat_skelett_leg",
+			"value":1
+		}
 	]
   },
   {
 	"id":"ratdom_water_x2",
 	"rewards":[
 		{
-			"rewardType":"deactivateMapObjectGroup",
-			"rewardID":"water02",
-			"mapName":"ratdom_maze_664"
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":60
 		},
 		{
 			"rewardType":"activateMapObjectGroup",
 			"rewardID":"water01",
+			"mapName":"ratdom_maze_664"
+		},
+		{
+			"rewardType":"deactivateMapObjectGroup",
+			"rewardID":"water02",
 			"mapName":"ratdom_maze_664"
 		}
 	]

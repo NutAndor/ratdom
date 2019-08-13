@@ -72,4 +72,39 @@
 			  "chance":"100", 
 			  "quantity":{ "min":1, "max":1 } 
 			}]
-	}]
+	},
+	{
+		"id":"ratdom_troll",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"60",
+				"quantity":{
+					"min":1,
+					"max":5
+				}
+			},
+			{
+				"itemID":"club3",
+				"chance":"5",
+				"quantity":{
+					"min":1,
+					"max":1
+				}
+			}
+		]
+	},
+    {
+        "id":"ratdom_water_container",
+        "items":[
+            {
+                "itemID":"ratdom_rat_skelett_leg",
+                "chance":"100",
+                "quantity":{
+                    "min":1,
+                    "max":1
+                }
+            }
+        ]
+    }
+]

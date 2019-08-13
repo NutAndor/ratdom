@@ -129,7 +129,9 @@
 			{ "progress":46, "logText":"46=Lantern-6 on" },
 			{ "progress":47, "logText":"47=Lantern-7 on" },
 			{ "progress":48, "logText":"48=Lantern carry" },
-			{ "progress":49, "logText":"49=Wise3 active" }
+			{ "progress":49, "logText":"49=Wise3 active" },
+			{ "progress":50, "logText":"50=talked to Wise3" },
+			{ "progress":60, "logText":"60=Water: Flag reached" }
         ]
     },
     {
@@ -150,15 +152,17 @@
         ]
     },
     {
-        "id":"ratdom_water",
-        "name":"Don't touch the water",
+        "id":"ratdom_rat_skelett",
+        "name":"Rat bones",
         "showInLog":1,
         "stages":[	
-			{ "progress":50, 
-				"logText":"Go around the flag - but don't touch the water." },
-			{ "progress":90, 
-				"logText":"Done", 
-				"finishesQuest":1 }
+			{ "progress":50, "logText":"You got the skull of a rat."  },
+			{ "progress":51, "logText":"You got a bone leg of a dead rat."  },
+			{ "progress":52, "logText":"You got a bone leg of a dead rat."  },
+			{ "progress":53, "logText":"You got a bone leg of a dead rat."  },
+			{ "progress":54, "logText":"You got a bone leg of a dead rat."  },
+			{ "progress":55, "logText":"You got the tail bones of a dead rat."  },
+			{ "progress":90, "logText":"End"  }
         ]
     }
 ]

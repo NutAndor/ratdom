@@ -1557,16 +1557,123 @@
 		"replies":[
             {
 				"text":"Hi! I am $playername.",
-                "nextPhraseID":"ratdom_well_wise3"
+                "nextPhraseID":"ratdom_well_wise3_10",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":50,
+						"negate":true
+                    }
+                ]
             },
             {
 				"text":"Omm.",
-                "nextPhraseID":"ratdom_well_wise3_10"
+                "nextPhraseID":"ratdom_well_wise3_20"
             }
         ]
 	},
     {
         "id":"ratdom_well_wise3_10",
+		"replies":[
+            {
+                "nextPhraseID":"ratdom_well_wise3"
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":50
+			}
+        ]
+	},
+    {
+        "id":"ratdom_well_wise3_20",
+        "message":"Ommmmm...",
+		"replies":[
+            {
+				"text":"I am $playername. Who are you?",
+                "nextPhraseID":"ratdom_well_wise3_10",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":50,
+						"negate":true
+                    }
+                ]
+            },
+            {
+				"text":"Omm.",
+                "nextPhraseID":"ratdom_well_wise3_10"
+            },
+            {
+				"text":"Ommmmm...",
+                "nextPhraseID":"ratdom_well_wise3_30"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_well_wise3_30",
+        "message":"Ommm... ommm... ommmmm...",
+		"replies":[
+            {
+				"text":"Omm... omm... omm...",
+                "nextPhraseID":"ratdom_well_wise3_10"
+            },
+            {
+				"text":"Omm... ommm... ommmmm...",
+                "nextPhraseID":"ratdom_well_wise3_50"
+            },
+            {
+				"text":"Omm... ommm... ommmmmm...",
+                "nextPhraseID":"ratdom_well_wise3_10"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_well_wise3_50",
+        "message":"Very good. Finally a learned being in this rat hole.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"ratdom_well_wise3_52",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_rat_skelett",
+                        "value":50,
+						"negate":true
+                    }
+                ]
+            }
+        ]
+	},
+    {
+        "id":"ratdom_well_wise3_52",
+        "message":"In gratitude for the great joy I give you this rat skull.",
+		"replies":[
+            {
+				"text":"Eh - nice, thank you.",
+                "nextPhraseID":"ratdom_well_wise3_90"
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_rat_skelett",
+				"value":50
+			},
+            {
+                "rewardType":"giveItem",
+                "rewardID":"ratdom_rat_skelett_skull",
+                "value":1
+            }
+        ]
+	},
+    {
+        "id":"ratdom_well_wise3_90",
         "message":"\n**  C o n g r a t u l a t i o n  **"
 	}
 ]
