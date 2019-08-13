@@ -3598,12 +3598,12 @@
 		{
 			"rewardType":"deactivateMapObjectGroup",
 			"rewardID":"water01",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_664"
 		},
 		{
 			"rewardType":"activateMapObjectGroup",
 			"rewardID":"water02",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_664"
 		}
 	]
   },
@@ -3613,12 +3613,12 @@
 		{
 			"rewardType":"deactivateMapObjectGroup",
 			"rewardID":"water02",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_664"
 		},
 		{
 			"rewardType":"activateMapObjectGroup",
 			"rewardID":"water01",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_664"
 		}
 	]
   }
