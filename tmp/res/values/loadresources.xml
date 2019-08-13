@@ -886,6 +886,12 @@
         <item>@xml/ratdom_maze_555</item>
         <item>@xml/ratdom_maze_565</item>
         <item>@xml/ratdom_maze_568</item>
+        <item>@xml/ratdom_maze_635</item>
+        <item>@xml/ratdom_maze_636</item>
+        <item>@xml/ratdom_maze_644</item>
+        <item>@xml/ratdom_maze_645</item>
+        <item>@xml/ratdom_maze_655</item>
+        <item>@xml/ratdom_maze_664</item>
     </array>
 
     </resources>

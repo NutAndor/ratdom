@@ -2738,24 +2738,37 @@
   {
 	"id":"ratdom_well_30",
 	"switchToNPC":"ratdom_well_wise0",
-	"message":"No, no, no, NO! Not orange! Make it blue!",
+	"message":"No, no, no, NO!",
 	"replies":[
 		{
+			"text":"N",
 			"nextPhraseID":"ratdom_well_31"
 		}
 	]
   },
   {
 	"id":"ratdom_well_31",
-	"message":"Blue! Do you hear me? BLUE!!",
+	"switchToNPC":"ratdom_well_wise0",
+	"message":"Not orange! Make it blue!",
 	"replies":[
 		{
+			"text":"N",
 			"nextPhraseID":"ratdom_well_32"
 		}
 	]
   },
   {
 	"id":"ratdom_well_32",
+	"message":"Blue! Do you hear me? BLUE!!",
+	"replies":[
+		{
+			"text":"N",
+			"nextPhraseID":"ratdom_well_33"
+		}
+	]
+  },
+  {
+	"id":"ratdom_well_33",
 	"message":"Is it really that difficult? Sigh."
   },
   {
@@ -3139,7 +3152,11 @@
   {
     "id":"ratdom_wells_init_20",
 	"rewards":[
-,
+		{
+			"rewardType":"removeSpawnArea",
+			"rewardID":"ratdom_well_wise3",
+			"mapName":"ratdom_maze_568"
+		},
 		{
 			"rewardType":"removeQuestProgress",
 			"rewardID":"ratdom_nondisplay",
@@ -3546,6 +3563,61 @@
 		{
 			"rewardType":"spawnAll",
 			"rewardID":"ratdom_well_wise1",
+			"mapName":"ratdom_maze_568"
+		}
+	]
+  },
+  {
+	"id":"ratdom_water_flag",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_water",
+					"value":90,
+					"negate":true
+				}
+			],
+			"nextPhraseID":"ratdom_water_flag_10"
+		}
+	]
+  },
+  {
+	"id":"ratdom_water_flag_10",
+    "message":"Go around the flag."
+  },
+  {
+	"id":"ratdom_water_x1",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_water",
+			"value":90
+		},
+		{
+			"rewardType":"deactivateMapObjectGroup",
+			"rewardID":"water01",
+			"mapName":"ratdom_maze_568"
+		},
+		{
+			"rewardType":"activateMapObjectGroup",
+			"rewardID":"water02",
+			"mapName":"ratdom_maze_568"
+		}
+	]
+  },
+  {
+	"id":"ratdom_water_x2",
+	"rewards":[
+		{
+			"rewardType":"deactivateMapObjectGroup",
+			"rewardID":"water02",
+			"mapName":"ratdom_maze_568"
+		},
+		{
+			"rewardType":"activateMapObjectGroup",
+			"rewardID":"water01",
 			"mapName":"ratdom_maze_568"
 		}
 	]

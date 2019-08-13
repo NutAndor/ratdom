@@ -268,6 +268,13 @@
         "damageResistance":5
     },
     {
+        "id":"ratdom_well_wise0",
+        "name":"Wise of the wells",
+        "iconID":"monsters_rltiles2:89",
+        "unique":1,
+        "phraseID":"ratdom_well_wise"
+    },
+    {
         "id":"ratdom_well_wise1",
         "name":"Wise of the wells",
         "iconID":"monsters_rltiles2:89",

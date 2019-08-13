@@ -1556,17 +1556,17 @@
         "message":"Omm...",
 		"replies":[
             {
-				"text":"Omm.",
-                "nextPhraseID":"ratdom_well_wise3_10"
+				"text":"Hi! I am $playername.",
+                "nextPhraseID":"ratdom_well_wise3"
             },
             {
-				"text":"Hi!",
-                "nextPhraseID":"ratdom_well_wise3"
+				"text":"Omm.",
+                "nextPhraseID":"ratdom_well_wise3_10"
             }
         ]
 	},
     {
         "id":"ratdom_well_wise3_10",
-        "message":"Congratulation!"
+        "message":"\n**  C o n g r a t u l a t i o n  **"
 	}
 ]

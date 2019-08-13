@@ -94,7 +94,7 @@
     {
         "id":"ratdom_nondisplay",
         "name":"ratdom_nondisplay",
-        "showInLog":1,
+        "showInLog":0,
         "stages":[	
 			{ "progress":1, "logText":"1=Ratdom active" },
 			{ "progress":2, "logText":"2=Rat statue act." },
@@ -147,6 +147,18 @@
 			{ "progress":8, "logText":"Light-8"  },
 			{ "progress":9, "logText":"Light-9"  },
 			{ "progress":10, "logText":"Light off"  }
+        ]
+    },
+    {
+        "id":"ratdom_water",
+        "name":"Don't touch the water",
+        "showInLog":1,
+        "stages":[	
+			{ "progress":50, 
+				"logText":"Go around the flag - but don't touch the water." },
+			{ "progress":90, 
+				"logText":"Done", 
+				"finishesQuest":1 }
         ]
     }
 ]
