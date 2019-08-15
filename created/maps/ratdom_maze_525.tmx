@@ -188,7 +188,7 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJyt00EOgyAQBVD37Zpl0ztUj1B6BOUItUeAXrInKiZMMpIvfIiLv9LngDNjb8NgiSwxLuYTE1JYsyb3jbmnlJw2IXOPikOm5iw4H+tcp3ulmq1ObI+T/Mzezg02r/1u9Lq2T/7ZWds3WAf+GWNlplqt9BfNBmN7ZupoNti7nj1XbG9Qf9iZQnvEzhTaXU/UPpoJvQ9LwaHe6n1YszPUnPZB3Z91aKdKbpuJMWYCz2bg5P0x+x/5N7ZzX8ze1Hoo/mpwjVrE/AEBpahf
+   eJyt00EOgjAQBVD2uu7SeAfxCOARgCOIR2i5pCeyJJ1kaD6d38bFX+ljCv0z3rpuJDLHLDGfmJDCmjW5LeaeUnLahMw9DIeM5V7gfIyTmS1OZtY6sS1O8nVHO1XYfPa70uvZPvmhcbavsAv4ZoyVTtXaUqcY29Kps26w7/rvXrF3g+6H7RTaI7ZTaHc9MfusE3of5oJDd6v3Yc3OYDntg3p/1qGdKrm9E33ME/w2ASf/77PvkT9jP/fFHY11h+KvDs+wIuYHB6moYA==
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
@@ -198,7 +198,7 @@
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMANiuTwSI4CisFlsYHRa0phvA5Vuw9ToPcSGXoHyq0DpXeg4hakj5z4AQF6p4lRMDgBAGAcDt4=
+   eJxjYMANiuTwSJIALouRr/cSBXpJAQPhRkrspESvKYXxOlTtPkznOB4otw6U3oGKW5A+cvMgvdPEKBicAADqMhKA
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -333,16 +333,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0">
-  <object id="57" name="ratdom_rat_conv2" type="key" x="224" y="416" width="128" height="32">
-   <properties>
-    <property name="phrase" value="ratdom_rat_conv2"/>
-    <property name="requireId" value="ratdom_rat_conv2"/>
-    <property name="requireType" value="factionScore"/>
-    <property name="requireValue" value="0"/>
-   </properties>
-  </object>
- </objectgroup>
+ <objectgroup name="Keys" visible="0"/>
  <objectgroup name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>

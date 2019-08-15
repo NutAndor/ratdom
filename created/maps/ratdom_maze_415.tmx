@@ -206,7 +206,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30">
+ <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFccoMFIwNkN6OLE9KLCxBrNyn68Oknx9/kxNNA6UXWT434Hgi9pOqndxxjA8M9XQ2EXmqGM7F68QFy9eEzg5AaXHKk+AtZHbF6qBHvyPoB4Xf6Tw==
   </data>
@@ -316,7 +316,6 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="55" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="66" name="ratdom_skeleton_gold" type="container" x="96" y="96" width="32" height="32"/>
   <object id="67" name="ratdom_skeleton_boss1_check" type="script" x="128" y="160" width="224" height="32"/>
  </objectgroup>
@@ -342,14 +341,6 @@
   </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0">
-  <object id="57" name="ratdom_rat_conv2" type="key" x="224" y="416" width="128" height="32">
-   <properties>
-    <property name="phrase" value="ratdom_rat_conv2"/>
-    <property name="requireId" value="ratdom_rat_conv2"/>
-    <property name="requireType" value="factionScore"/>
-    <property name="requireValue" value="0"/>
-   </properties>
-  </object>
   <object id="68" name="ratdom_skeleton_drop" type="key" x="96" y="96" width="32" height="32">
    <properties>
     <property name="phrase" value="ratdom_skeleton_drop"/>

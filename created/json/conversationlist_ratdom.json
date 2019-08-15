@@ -343,6 +343,54 @@
     "message":"Let's hurry back now!"
   },
   {
+    "id":"ratdom_bwm1_east1",
+    "rewards":[
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_crossglen"
+      },
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_crossglen2"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bwm1_east_10_1",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_crossglen_10",
+        "requires":[
+          {
+            "requireType":"timerElapsed",
+            "requireID":"ratdom_rat_crossglen2",
+            "value":6
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":10
+          }
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_rat_crossglen",
+        "requires":[
+          {
+            "requireType":"timerElapsed",
+            "requireID":"ratdom_rat_crossglen",
+            "value":3
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":10
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id":"ratdom_check_kills",
     "replies":[
       {
@@ -419,176 +467,6 @@
         "rewardType":"removeSpawnArea",
         "rewardID":"Tharal",
         "mapName":"crossglen_hall"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_bwm1_east1",
-    "rewards":[
-      {
-        "rewardType":"createTimer",
-        "rewardID":"ratdom_rat_crossglen"
-      },
-      {
-        "rewardType":"createTimer",
-        "rewardID":"ratdom_rat_crossglen2"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_conv1"
-  },
-  {
-    "id":"ratdom_rat_conv2"
-  },
-  {
-    "id":"ratdom_bwm1_east_10_1",
-    "replies":[
-      {
-        "nextPhraseID":"ratdom_rat_crossglen_10",
-        "requires":[
-          {
-            "requireType":"timerElapsed",
-            "requireID":"ratdom_rat_crossglen2",
-            "value":6
-          },
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_nondisplay",
-            "value":10
-          }
-        ]
-      },
-      {
-        "nextPhraseID":"ratdom_rat_crossglen",
-        "requires":[
-          {
-            "requireType":"timerElapsed",
-            "requireID":"ratdom_rat_crossglen",
-            "value":3
-          },
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_nondisplay",
-            "value":10
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_crossglen",
-    "switchToNPC":"ratdom_rat_crossglen",
-    "message":"A beautiful view.",
-    "rewards":[
-      {
-        "rewardType":"createTimer",
-        "rewardID":"ratdom_rat_crossglen"
-      }
-    ]    ,
-    "replies":[
-      {
-        "text":"Indeed.",
-        "nextPhraseID":"ratdom_rat_crossglen_02"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_crossglen_02",
-    "message":"I remember your brother was sometimes up here with one or two other human beings.",
-    "rewards":[
-      {
-        "rewardType":"createTimer",
-        "rewardID":"ratdom_rat_crossglen"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_crossglen_10",
-    "message":"Do you need much longer?",
-    "rewards":[
-      {
-        "rewardType":"createTimer",
-        "rewardID":"ratdom_rat_crossglen"
-      },
-      {
-        "rewardType":"createTimer",
-        "rewardID":"ratdom_rat_crossglen2"
-      }
-    ],
-    "replies":[
-      {
-        "text":"N",
-        "nextPhraseID":"ratdom_rat_crossglen_20"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_crossglen_20",
-    "message":"Hey, wake up!"
-  },
-  {
-    "id":"ratdom_rat_final_1",
-    "switchToNPC":"ratdom_rat",
-    "message":"Wait! Do you feel it too? We are very close!",
-    "replies":[
-      {
-        "text":"Are you sure?",
-        "nextPhraseID":"ratdom_rat_final_1_10"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_final_1_10",
-    "message":"Of course.",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
-        "rewardID":"ratdom_nondisplay",
-        "value":21
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_final_2",
-    "switchToNPC":"ratdom_rat",
-    "message":"I am so excited!",
-    "replies":[
-      {
-        "text":"Hush!",
-        "nextPhraseID":"ratdom_rat_final_2_10"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_final_2_10",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
-        "rewardID":"ratdom_nondisplay",
-        "value":22
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_final_3",
-    "switchToNPC":"ratdom_rat",
-    "message":"Over there - look, the roundling!",
-    "replies":[
-      {
-        "text":"He hadn't remarked us yet.",
-        "nextPhraseID":"ratdom_rat_final_3_10"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_final_3_10",
-    "message":"I am not so sure. Roundlings are a strange folk.",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
-        "rewardID":"ratdom_nondisplay",
-        "value":23
       }
     ]
   },
@@ -1318,6 +1196,295 @@
     ]
   },
   {
+    "id":"ratdom_rat_conv1",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_conv2"
+      }
+    ],
+  },
+  {
+    "id":"ratdom_rat_conv2",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_conv2_1",
+		"requires":[
+			{
+				"requireType":"random",
+				"requireID":"20"
+			}
+		]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_1",
+    "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2_20",
+		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":8 }]
+      },
+      {	"nextPhraseID":"X",
+		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":7 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_10",
+		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":3 }]
+      },
+      {	"nextPhraseID":"X",
+		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":2 }]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_1b",
+	"rewards":[
+		{
+			"rewardType":"alignmentChange",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_10",
+	"switchToNPC":"ratdom_rat",
+    "message":"It is beautiful inside here, isn't it?",
+    "replies":[
+      {
+        "text":"I'd prefer a bit more daylight.",
+		"nextPhraseID":"ratdom_rat_conv2_1b"
+      },
+      {
+        "text":"Sure.",
+		"nextPhraseID":"ratdom_rat_conv2_1b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_20",
+	"switchToNPC":"ratdom_rat",
+    "message":"The paths are so logical, it's easy to find your way around here.",
+    "replies":[
+      {
+        "text":"Do you think so? I am rather lost already.",
+		"nextPhraseID":"ratdom_rat_conv2_20b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_20b",
+	"message":"Two-legs are really dumb. We rats always know where to go.",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_20c"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_20c",
+	"message":"If you want to get out, just follow the rats. They show you the way.",
+    "replies":[
+      {
+        "text":"Of course.",
+		"nextPhraseID":"ratdom_rat_conv2_1b"
+      },
+      {
+        "text":"What do you mean?",
+		"nextPhraseID":"ratdom_rat_conv2_20d"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_20d",
+	"message":"Don't tell me that you didn't recognize it? That my fellow rats are always running to the exit?",
+    "replies":[
+      {
+        "text":"Eh, of course I did.",
+		"nextPhraseID":"ratdom_rat_conv2_1b"
+      },
+      {
+        "text":"Now that you mention it, indeed they do!",
+		"nextPhraseID":"ratdom_rat_conv2_1b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_crossglen",
+    "switchToNPC":"ratdom_rat_crossglen",
+    "message":"A beautiful view.",
+    "rewards":[
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_crossglen"
+      }
+    ],
+    "replies":[
+      {
+        "text":"Indeed.",
+        "nextPhraseID":"ratdom_rat_crossglen_02"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_crossglen_02",
+    "message":"I remember your brother was sometimes up here with one or two other human beings.",
+    "rewards":[
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_crossglen"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_crossglen_10",
+    "message":"Do you need much longer?",
+    "rewards":[
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_crossglen"
+      },
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_crossglen2"
+      }
+    ],
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_crossglen_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_crossglen_20",
+    "message":"Hey, wake up!"
+  },
+  {
+    "id":"ratdom_rat_final_1",
+    "switchToNPC":"ratdom_rat",
+    "message":"Wait! Do you feel it too? We are very close!",
+    "replies":[
+      {
+        "text":"Are you sure?",
+        "nextPhraseID":"ratdom_rat_final_1_10"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_final_1_10",
+    "message":"Of course.",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":21
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_final_2",
+    "switchToNPC":"ratdom_rat",
+    "message":"I am so excited!",
+    "replies":[
+      {
+        "text":"Hush!",
+        "nextPhraseID":"ratdom_rat_final_2_10"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_final_2_10",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":22
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_final_3",
+    "switchToNPC":"ratdom_rat",
+    "message":"Over there - look, the roundling!",
+    "replies":[
+      {
+        "text":"He hadn't remarked us yet.",
+        "nextPhraseID":"ratdom_rat_final_3_10"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_final_3_10",
+    "message":"I am not so sure. Roundlings are a strange folk.",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":23
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_statue",
+    "replies":[
+      {
+        "nextPhraseID":"F",
+        "requires":[
+          {
+            "requireType":"wear",
+            "requireID":"ratdom_pickaxe",
+            "value":1
+          }
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_rat_statue_10"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_statue_10",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_statue_30",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":70
+          }
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_rat_statue_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_statue_20",
+    "switchToNPC":"none",
+    "message":"You see a beautifully crafted statue of your brother Andor.",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_quest",
+        "value":60
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_statue_30",
+    "switchToNPC":"ratdom_rat",
+    "message":"Andor's statue may be cleared away with a pickaxe. Hadn't I mentioned it?",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_quest",
+        "value":80
+      }
+    ]
+  },
+  {
     "id":"ratdom_skeleton_boss1_check",
     "replies":[
       {
@@ -1382,66 +1549,6 @@
   {
     "id":"ratdom_skeleton_drop",
     "message":"You stopped short under the stare of the skeleton leader."
-  },
-  {
-    "id":"ratdom_rat_statue",
-    "replies":[
-      {
-        "nextPhraseID":"F",
-        "requires":[
-          {
-            "requireType":"wear",
-            "requireID":"ratdom_pickaxe",
-            "value":1
-          }
-        ]
-      },
-      {
-        "nextPhraseID":"ratdom_rat_statue_10"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_statue_10",
-    "replies":[
-      {
-        "nextPhraseID":"ratdom_rat_statue_30",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_quest",
-            "value":70
-          }
-        ]
-      },
-      {
-        "nextPhraseID":"ratdom_rat_statue_20"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_statue_20",
-    "switchToNPC":"none",
-    "message":"You see a beautifully crafted statue of your brother Andor.",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
-        "rewardID":"ratdom_quest",
-        "value":60
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_statue_30",
-    "switchToNPC":"ratdom_rat",
-    "message":"Andor's statue may be cleared away with a pickaxe. Hadn't I mentioned it?",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
-        "rewardID":"ratdom_quest",
-        "value":80
-      }
-    ]
   },
   {
     "id":"ratdom_wakeup",

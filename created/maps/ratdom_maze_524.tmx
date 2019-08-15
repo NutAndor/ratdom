@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="64">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="75">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -188,17 +188,17 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytk8ENwzAIRTNFj1V2aDpC3RESj9BkBDvTdYNOVA4gUYQxWD38m5+x4ZGu05Qc2SAZckAqxsvsyJ2QGWNxnKmCu3U4jelxSXmfl8uD3BNrRjliRzjK5/LLrgFW1n4FeV67IP8YrF0CbFZ65mHJqShL89Xc8LAjTrXc8P713155Z6PNx+uUtkdep7TdLY7aLSf4PmwGp82W78Mu3tDjOF/Z/y0HrTvWRm+4Ewvk3vi/7A2dX0Q/5B1FYSK+ajWsvJmvXwlVqNE=
+   eJyt1MENwjAMBdBOwRGxA2UEygi0I1BGSJiODZgII9mSsVznO+rhH1/dxL+djsMwAZkpC+VJqRzUrOxelBMnctpU484N5xnUWdNyt04ntseJ7XGSz+Hf3hPWzn4kvZ5d2F87Z5eEXZw7Q6x0I2ujbiB2z26gZ927V+huvP2gnZJ7tp1Ed2vvuQCztzqhv4c5cN5u9fewmndoOe2rOj/qvPNH7teJkXLZOL/37x05+j7sM4pjMn31ZkR5q75+AYAEqT8=
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx4Q+C1Knj5c9hKrD5teGyL1oeslxU50vaTYOQpGwSgYBSMF/BEdGHsBbjUZJw==
+   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx4Q+C1Knj5c9hKrD5teYvWh67UhQR+lekfBKBgFo2AkgD+iA2MvAOEtGOE=
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMANiuTwSI4CisFlsYHRa0phvA5Vuw9ToPcSGXoHyq0DpXeg4hakj5z4AQF6pwlywVBK99QAnUzEqaNWWQQA7DETTw==
+   eJxjYMANiuTwSI4CMLgsNvT0mlIYr0PV7sMU6L1Eht6BcutA6R2ouAXpIyd+QIDeaWIUEAc6mYhTR62yCAAlbhGO
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -257,46 +257,46 @@
   </data>
  </layer>
  <objectgroup name="Mapevents" visible="0">
-  <object name="south2" type="mapchange" x="416" y="896" width="64" height="64">
+  <object id="64" name="south2" type="mapchange" x="416" y="896" width="64" height="64">
    <properties>
     <property name="map" value="ratdom_maze_645"/>
     <property name="place" value="north1"/>
    </properties>
   </object>
-  <object name="south1" type="mapchange" x="0" y="896" width="64" height="64">
+  <object id="65" name="south1" type="mapchange" x="0" y="896" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_644"/>
+    <property name="map" value="ratdom_maze_434"/>
     <property name="place" value="north2"/>
    </properties>
   </object>
-  <object name="north2" type="mapchange" x="416" y="0" width="64" height="64">
+  <object id="66" name="north2" type="mapchange" x="416" y="0" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_625"/>
+    <property name="map" value="ratdom_maze_415"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
-  <object name="north1" type="mapchange" x="0" y="0" width="64" height="64">
+  <object id="67" name="north1" type="mapchange" x="0" y="0" width="64" height="64">
    <properties>
     <property name="map" value="ratdom_maze_624"/>
     <property name="place" value="south2"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light4" type="script" x="0" y="0" width="128" height="192">
+  <object id="68" name="ratdom_maze_light4" type="script" x="0" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light3" type="script" x="352" y="0" width="128" height="192">
+  <object id="69" name="ratdom_maze_light3" type="script" x="352" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light2" type="script" x="0" y="736" width="128" height="192">
+  <object id="70" name="ratdom_maze_light2" type="script" x="0" y="736" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light1" type="script" x="352" y="768" width="128" height="192">
+  <object id="71" name="ratdom_maze_light1" type="script" x="352" y="768" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
@@ -316,7 +316,9 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="51" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
+  <object id="72" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
+  <object id="73" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
+  <object id="74" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
@@ -333,16 +335,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0">
-  <object id="57" name="ratdom_rat_conv2" type="key" x="224" y="416" width="128" height="32">
-   <properties>
-    <property name="phrase" value="ratdom_rat_conv2"/>
-    <property name="requireId" value="ratdom_rat_conv2"/>
-    <property name="requireType" value="factionScore"/>
-    <property name="requireValue" value="0"/>
-   </properties>
-  </object>
- </objectgroup>
+ <objectgroup name="Keys" visible="0"/>
  <objectgroup name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>

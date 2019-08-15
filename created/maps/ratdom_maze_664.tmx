@@ -188,17 +188,17 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJydlDEOwjAMRZuRS6DeoVyASoQjtIyM0AlmuB/HIpES6cv9jt0OX1UTv3zHthKPXRcdmpNuSUtSX+RlnoX7OllkPoIbDI4xFhdJfl7uupOr7BZuLmLsQGJkPbOm8o/sRGKqR61n1kP0v4c1jLkU9nfgOgd9z2LHnWzmvL45DuNbnGRrfvLr9WX+WDdcZ75W3UbCtu7H6iB9MS/MA89lvq25wHyZr5an1jdrrlpz5mVZ3yTL8tT6J1kZr82J5uu9O/NFvzuRt1bvsBayscG+wlp1D9+7k+PtlfoDxlHyoQ==
+   eJydlDEOwjAMRZuRS6DeoVyASoQjtIwdgQnmcj+ORSI50pf7nZgOX1UTv3zHthKPXRcdmpNuSc+kXuRlHsJ9nCwyq+KGBseYFncl+Xm4wu7hCvsPN4sYO5AYXc+sSf6RnUgM1mUV3VX/e1jDmIuw3wPXOdh7LXbcyWbO65vjML7Gabbkp79eX+aPdcN15tuq20jY2v1YHbQv5oV54LnMtzYXmC/ztfK0+taaq9qceVnWN82yPK3+aVbHW3Ni+XrvznzRbyHy1uodtkI2VthX2Krs4Xt3cry9Wj/MVfKi
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx58eonRh00vsfqw6bUhUh+6XlLsBIF4OQQmRR+twCVR2tuxhgnBfgxkv2aHYBCAsZHVrGZiGAWjYBSMcDCXxHJgNhXKDQA6th/K
+   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx58eonRh00vsfqw6bUhUh+6XlLsBIF4OQQmRR+twCVR2tuxhgnBfgxkv2aHYBA4LAZhI6tZzcQwCkbBKBjhAFQ2kAJmU6HcAADivB/r
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMANiuTwSI6CUUAiWMOEyn8M5V+ThWBSAEwPMh7sekcBdQAl4T8ad9QFVmzk6/WiQC+1AQBJcxpv
+   eJxjYMANiuTwSJIALouRr/cSBXpJAZS48fAQ0IvuP2x6sYUBSAw9DrDFCTYxdDvWMCHYr9kZGB5D+ddkIZiQ+5DlYHqQMTF6L5GoFxYmMHFi9OKi8QFcanGlf+S4ItYebOpIcSMuvcS4jVi9uNRcQhPHFv7I4BIOfxGjF5cbSclv6PFGaljh0otLDa50QoxeXIAY9VZsEJqY8gUdeLFhVzuXCVMtLkCt+gEAAO9Rnw==
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -241,7 +241,7 @@
    eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzJmC3Hw79cUT4F5/dIP2aZNpNyM+E7CakN4EMvRoE9OHTSyh+KdGLL44HY7oiFDf4whlfmtKAYlL9q0HATmS749HsJ0YfNveTqg9ZPzn6RgHpAACgRXsk
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30">
+ <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFc4rjkCGFy9ZKjDxmQo2cw6yPXf/TWi64Om15sZpEDRvWO6h3VO/T1kqqf1PILGwYAUz+L7Q==
   </data>
@@ -301,7 +301,6 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="52" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="98" name="ratdom_water_p1" type="mapchange" x="224" y="288" width="32" height="32"/>
   <object id="99" name="ratdom_water_p2" type="mapchange" x="352" y="864" width="32" height="32"/>
   <object id="124" name="ratdom_water_sign" type="script" x="192" y="256" width="32" height="32"/>

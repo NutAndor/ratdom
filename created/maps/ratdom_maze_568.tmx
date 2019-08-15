@@ -198,7 +198,7 @@
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSFIITCk0m1L9Qx1cFiNfL6VhN1TtvkSGXnNB/PzBAEBhAnOXuwADg4cAqjyyGLr7DyOFSThQTQSaXmxi2PSSCgZS70CE1Vwm8t2MDkhJk9S0d7AAWtRLALXOFS0=
+   eJxjYMAN3OQwxS6L4dGAA8D0XELSa4rFbGzgEg77iNU/XAE58QADlIbdULUbV1rCB8wF8fMHAwCFCcxd7gIMDB4CqPLIYujuP4wUJuFANRFoerGJYdNLKhhIvQMRVnOZyHczOiAlTVLT3oEGsLyPrV6iFAAAHA8ZuA==
   </data>
  </layer>
  <layer name="Light_on" width="15" height="30" visible="0">
@@ -216,7 +216,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30">
+ <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFccjB5QmqI0U+MGdjUYQOkmE8MINb9pOgj1v2k6KVl2FNTLzHpajjppUbcEmsGMYCaeskBQ10vKWGFrJdUu6kdv7jcT0raJtU+WuVBSszAhQFBN9XG
   </data>
@@ -345,7 +345,6 @@
     <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
-  <object id="56" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="90" name="ratdom_well_wise1" type="spawn" x="64" y="608" width="64" height="64">
    <properties>
     <property name="quantity" value="1"/>

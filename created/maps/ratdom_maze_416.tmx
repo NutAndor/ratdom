@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="68">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="71">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -188,17 +188,17 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlMENwjAMRXvn3mPFDpQRCCOUjpB2hMB0bMBEOBKWXMtOfiIO75YXK/aPwzQM4ccDIBisxAawKO9O7MQTIBI35b6IM0BSbuYKuhfnzTXf82p+zeO393jMZzy6ei4ttWOjL2snY64tta25eqxGzxA3e3uHy9m2Moq4ltebDfSt/84VOhtrPmimuM86k+hsdZ8TUNvLhPwP1q5kz9tb/B/0rqx50pe7spTB0h2L0xuZiXmyd1g0esPnZ9UPfUeufRqPTkterRol3iKvX9SUqBQ=
+   eJytlMENwjAMRXvn3mPFDpQRCCNARwgdITAdGzARjoQl1/ppfiIO79ZXy/aPwzQM4cedIAAW4UFwc95VWIUnQRQuzn0JR4Lk3MyZdE+Fnmt+yav5NU977/GUz7h1/V5aasdG39ZOYK8ttdFeSyxgZoybvbXD1WyjjDIu8nqzwfb671yxu0H7YTOlc/aZZHfr55yI2qVM2PeAbqV6pbul78HfyppnfXsrWQ/1v+flTMwTvmERePr97Obh/5FrH8at05JXVGOPt8nrFwdDqEo=
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYKAuiGaD0NYsEDqGjXi92UC1BzgYGLxZIHQOVO8OPgaG53yE9T8A6olmgdAwcIIIfaNgFIyCUTAKRi4AAFfsCIU=
+   eJxjYKAuiGaD0NYsEDoGylcTJqw3G6j2AAcDgzcLhM6B6t3Bx8DwnI+w/gdAPdEsEBoGThChbxSMgsEOXggNtAuGP7hGxzB+gscuYsrKUUBdAAC8/AvP
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSNIR8PDjluPGIzecwWUx8vWaUhivQ9XuwxTovUSG3oFy60DpHai4BekjJ35AgFx9QwUMpfxCDqBWWQQAqlARCw==
+   eJxjYMAN3OTwSNIR8PDjluPGIzecwWUx8vWaUhivQ9XuwxTovUSG3oFy60DpHai4BekjJ35AgFx9o2BwAGqVRQA1gA5h
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -208,7 +208,7 @@
  </layer>
  <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccoMFIwNkN6OLE9KLCxBrNyn68Oknx9/kxNNA6UXWT434JlcvqfoHQi+19NHDzoFOVwOhl5rhTKxefIBcffjMIKQGlxwp/kJWR6weasQ7sn4AuPD5iA==
+   eJzNkksKACAIRD1F97+CN4x2Q+A30QbcpC+VkRcRC3Ek5X4JFM58v1usJG/vCKfxmb0zPk2xyFf4nWWj/ARbxXX0nL6rCvb1njo80pTltD+sGikX2QvrvEyF78hvQ9z6Tw==
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -316,7 +316,9 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="55" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
+  <object id="68" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
+  <object id="69" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
+  <object id="70" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
   <object id="65" name="ratdom_skeleton_gold" type="container" x="352" y="96" width="32" height="32"/>
   <object id="66" name="ratdom_skeleton_boss2_check" type="script" x="128" y="160" width="224" height="32"/>
  </objectgroup>
@@ -342,14 +344,6 @@
   </object>
  </objectgroup>
  <objectgroup name="Keys" visible="0">
-  <object id="57" name="ratdom_rat_conv2" type="key" x="224" y="416" width="128" height="32">
-   <properties>
-    <property name="phrase" value="ratdom_rat_conv2"/>
-    <property name="requireId" value="ratdom_rat_conv2"/>
-    <property name="requireType" value="factionScore"/>
-    <property name="requireValue" value="0"/>
-   </properties>
-  </object>
   <object id="67" name="ratdom_skeleton_drop" type="key" x="352" y="96" width="32" height="32">
    <properties>
     <property name="phrase" value="ratdom_skeleton_drop"/>

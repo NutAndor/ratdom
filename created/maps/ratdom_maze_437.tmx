@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="57">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="68">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,12 +193,12 @@
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4B0cE1ooF0wCkbBKBgF1AEAY7IA6Q==
+   eJxjYBgFIw0cFqPcjGtClJsxCkbBKBgFgwEAALHMAcI=
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSI6CUTAKRsEgAJfFyNd7iQK9QwFQEjaHB0ivKQn1DiX+Q7YHAHexBmA=
+   eJxjYMAN3OTwSJIALouRr/cSBXqHM6AkTE2pFK+jYBQMBjBavuAGlITN4QHSS0r5RK1yEADNLwlt
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -281,22 +281,22 @@
     <property name="place" value="south2"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light4" type="script" x="0" y="0" width="128" height="192">
+  <object id="57" name="ratdom_maze_light4" type="script" x="0" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light3" type="script" x="352" y="0" width="128" height="192">
+  <object id="58" name="ratdom_maze_light3" type="script" x="352" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light2" type="script" x="0" y="736" width="128" height="192">
+  <object id="59" name="ratdom_maze_light2" type="script" x="0" y="736" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object name="ratdom_maze_light1" type="script" x="352" y="768" width="128" height="192">
+  <object id="60" name="ratdom_maze_light1" type="script" x="352" y="768" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
@@ -316,7 +316,9 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="52" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
+  <object id="61" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
+  <object id="62" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
+  <object id="63" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
@@ -339,16 +341,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0">
-  <object id="57" name="ratdom_rat_conv2" type="key" x="224" y="416" width="128" height="32">
-   <properties>
-    <property name="phrase" value="ratdom_rat_conv2"/>
-    <property name="requireId" value="ratdom_rat_conv2"/>
-    <property name="requireType" value="factionScore"/>
-    <property name="requireValue" value="0"/>
-   </properties>
-  </object>
- </objectgroup>
+ <objectgroup name="Keys" visible="0"/>
  <objectgroup name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
@@ -358,7 +351,7 @@
     <property name="requireValue" value="10"/>
    </properties>
   </object>
-  <object name="ratdom_maze:4" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="64" name="ratdom_maze:4" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light1"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -366,7 +359,7 @@
     <property name="requireValue" value="4"/>
    </properties>
   </object>
-  <object name="ratdom_maze:3" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="65" name="ratdom_maze:3" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light2"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -374,7 +367,7 @@
     <property name="requireValue" value="3"/>
    </properties>
   </object>
-  <object name="ratdom_maze:2" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="66" name="ratdom_maze:2" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light3"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -382,7 +375,7 @@
     <property name="requireValue" value="2"/>
    </properties>
   </object>
-  <object name="ratdom_maze:1" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="67" name="ratdom_maze:1" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light4"/>
     <property name="requireId" value="ratdom_maze"/>
