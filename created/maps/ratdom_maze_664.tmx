@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="128">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="130">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -241,9 +241,9 @@
    eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzJmC3Hw79cUT4F5/dIP2aZNpNyM+E7CakN4EMvRoE9OHTSyh+KdGLL44HY7oiFDf4whlfmtKAYlL9q0HATmS749HsJ0YfNveTqg9ZPzn6RgHpAACgRXsk
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFc4rjkCGFy9ZKjDxmQo2cw6yPXf/TWi64Om15sZpEDRvWO6h3VO/T1kqqf1PILGwYAUz+L7Q==
+   eJzbKMbAsBEHBgFc4rjkCGFy9ZKjDxmQo2cw6yPXf/TWi00dNj4uMVLAqN5RvaN6h75eUvWTWn5hwwBxlI17
   </data>
  </layer>
  <layer name="Light7" width="15" height="30">
@@ -419,7 +419,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="water01" visible="0">
+ <objectgroup name="water01">
   <object id="97" name="ratdom_water_x1" type="script" x="352" y="864" width="32" height="32"/>
   <object id="77" name="ratdom_water01a" type="mapchange" x="192" y="320" width="32" height="64">
    <properties>
@@ -530,6 +530,18 @@
    </properties>
   </object>
   <object id="95" name="ratdom_water01s" type="mapchange" x="96" y="448" width="32" height="64">
+   <properties>
+    <property name="map" value="ratdom_maze_664"/>
+    <property name="place" value="ratdom_water_p1"/>
+   </properties>
+  </object>
+  <object id="128" name="ratdom_water01t" type="mapchange" x="320" y="576" width="32" height="96">
+   <properties>
+    <property name="map" value="ratdom_maze_664"/>
+    <property name="place" value="ratdom_water_p1"/>
+   </properties>
+  </object>
+  <object id="129" name="ratdom_water01u" type="mapchange" x="352" y="512" width="32" height="96">
    <properties>
     <property name="map" value="ratdom_maze_664"/>
     <property name="place" value="ratdom_water_p1"/>
@@ -653,6 +665,18 @@
    <properties>
     <property name="map" value="ratdom_maze_664"/>
     <property name="place" value="ratdom_water_p2"/>
+   </properties>
+  </object>
+  <object name="ratdom_water02t" type="mapchange" x="320" y="576" width="32" height="96">
+   <properties>
+    <property name="map" value="ratdom_maze_664"/>
+    <property name="place" value="ratdom_water_p1"/>
+   </properties>
+  </object>
+  <object name="ratdom_water02u" type="mapchange" x="352" y="512" width="32" height="96">
+   <properties>
+    <property name="map" value="ratdom_maze_664"/>
+    <property name="place" value="ratdom_water_p1"/>
    </properties>
   </object>
  </objectgroup>

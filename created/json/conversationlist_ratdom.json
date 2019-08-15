@@ -1201,7 +1201,7 @@
       {
         "nextPhraseID":"ratdom_rat_conv2"
       }
-    ],
+    ]
   },
   {
     "id":"ratdom_rat_conv2",
@@ -1220,6 +1220,9 @@
   {
     "id":"ratdom_rat_conv2_1",
     "replies":[
+      {	"nextPhraseID":"X",
+		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":999 }]
+      },
       {	"nextPhraseID":"ratdom_rat_conv2_20",
 		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":8 }]
       },
@@ -1305,6 +1308,14 @@
       {
         "text":"Now that you mention it, indeed they do!",
 		"nextPhraseID":"ratdom_rat_conv2_1b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv3",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_conv2"
       }
     ]
   },
@@ -1438,13 +1449,15 @@
         ]
       },
       {
-        "nextPhraseID":"ratdom_rat_statue_10"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_statue_10",
-    "replies":[
+        "nextPhraseID":"ratdom_rat_statue_40",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":82
+          }
+        ]
+      },
       {
         "nextPhraseID":"ratdom_rat_statue_30",
         "requires":[
@@ -1483,6 +1496,11 @@
         "value":80
       }
     ]
+  },
+  {
+    "id":"ratdom_rat_statue_40",
+    "switchToNPC":"ratdom_rat",
+    "message":"When will you finally try to use the pickaxe?"
   },
   {
     "id":"ratdom_skeleton_boss1_check",
