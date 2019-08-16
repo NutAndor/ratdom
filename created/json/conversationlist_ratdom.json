@@ -1891,51 +1891,19 @@
   },
   {
     "id":"ratdom_well_1_10",
-	"replies":[
-		{
-			"requires":[
-				{
-					"requireType":"questProgress",
-					"requireID":"ratdom_nondisplay",
-					"value":45
-				}
-			],
-			"nextPhraseID":"ratdom_well_1_10_1"
-		},
-		{
-			"nextPhraseID":"ratdom_well_1_10_0"
-		}
-	]
+	"replies":[	{	"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":45 }],
+					"nextPhraseID":"ratdom_well_1_10_1" },
+				{	"nextPhraseID":"ratdom_well_1_10_0" }]
   },
   {
     "id":"ratdom_well_1_10_0",
-	"replies":[
-		{
-			"nextPhraseID":"ratdom_well_1_11"
-		}
-	],
-	"rewards":[
-		{
-			"rewardType":"questProgress",
-			"rewardID":"ratdom_nondisplay",
-			"value":45
-		}
-	]
+	"replies":[	{	"nextPhraseID":"ratdom_well_1_11" }],
+	"rewards":[	{	"rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":45 }]
   },
   {
     "id":"ratdom_well_1_10_1",
-	"replies":[
-		{
-			"nextPhraseID":"ratdom_well_1_11"
-		}
-	],
-	"rewards":[
-		{
-			"rewardType":"removeQuestProgress",
-			"rewardID":"ratdom_nondisplay",
-			"value":45
-		}
-	]
+	"replies":[	{	"nextPhraseID":"ratdom_well_1_11" }],
+	"rewards":[	{	"rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":45 }]
   },
   {
     "id":"ratdom_well_1_11",
