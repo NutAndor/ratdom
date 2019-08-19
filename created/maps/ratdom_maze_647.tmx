@@ -188,7 +188,7 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlNsNwjAMRTsFn1F3IIwAGSF0hJQRmk7HYsTCkcwlJg8JiQ8qnY9GPrYrNXc20zQntkRI+MSVoedintD7krhxPZL9lfHCWdnbRf2p4EcmCCeCd+R90Mc+O5xnj7AffER6kpqveTW/5hFu0NNmnztc6ffMlNhB7893cT+ww8jOa4GWf3oR9dG8ZlfNy9mEyAzVPMymUob6Dg+zL/D3u0YPe3h2NY/uvZahwbznU67He489Nj67H9ryBedYZY5GnkM8APDKqxc=
+   eJytlNsNgzAMRZminxE7lI7QMkLKCIERAtN1sSZqLJlLHnZUpPMByomJc+XRDMMY8AEXsIF3Ij4v8yO+L4EtrUfIXxOWOWvyDrb+kfH3hGPODt49/Q/6uM8B38mLTBUf4R6n5Ze8lt/yInOnR3xuZ9cqXKztlD6vTZl5dtb2CnfJ9EziljLfcmdzzbzGzXm92ZCe9d+5kt5N7n6kmaI+Yyald4t99oLatTnIZ2jJy90tzlCr8HD20flrGaztYU05g5SJ0gx15pojWj9BP3APb845amUP6/B9tXn9AibKpYY=
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
@@ -198,7 +198,7 @@
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSJIALouRr/cSBXqHM6AkTE2pFK+jYBQMBjBavuAGlITN4QHSS0r5RK1yEADNLwlt
+   eJxjYMAN3OSwi18Sw6MJC7hMonpK7BopgJIwNcURr8Pd7sN0TocD5daB0jtQcQvSR245Qe80QW8wFNMgKemIWmURAAKRFKw=
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30">
+ <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYICAjWKYGJ84OsCmDp9edHNI0UeKO/CZTwwgxk3khge5+rDpJVYfNv2k6sWXNoYrpiS86R3HQzVdDTW91AxnYvXiA+Tqw2cGITW45EjxFy5zaR3vyPoBsrv3+g==
+   eJxjYICAjWKYGJ84OsCmDp9edHNI0UeKO/CZTwwgxk3khge5+rDpJVYfNv301EsoTujlblL1D4Reaumjh50Dna4GQi81w5lYvfgAufrwmUFIDS45UvyFy1xaxzuyfgBO2u9t
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -236,7 +236,7 @@
    eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwcgczTx6LPBoQ8GtMiwE9nueCz2E9KHbgaxbsWnnxy9IDCql3gAADm+th8=
   </data>
  </layer>
- <layer name="Light5" width="15" height="30">
+ <layer name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBg5wEeOgcFPjjx9RUBsBcS+JJgB04eMrYjQj00fDNvg0YtPHyG7tQjoxWc3MXqx2Q1yrzURepHDHoaJ0TOKR/EoHsXEYAAP7r0K
   </data>
@@ -332,12 +332,6 @@
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>
-   </properties>
-  </object>
-  <object id="51" name="burrower_4" type="spawn" x="352" y="832" width="96" height="96">
-   <properties>
-    <property name="quantity" value="2"/>
-    <property name="spawngroup" value="burrower_4"/>
    </properties>
   </object>
  </objectgroup>
