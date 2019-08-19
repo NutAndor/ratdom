@@ -188,17 +188,17 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlNENgzAMRJmin6g7lI6QMkJhBMoIgSU7URM1Vt3ThTgRSCcRKc+G3MVb33Vb0BL0CnoGTUnxefRfTf3vXXRN8lBD15nVmrFYQ9dZ1doBfyc1dJ1drZEdDngUsqX+oluGK/ElLmps5ETvyz+L3tT0Xip53dtnvLX2Zt7mNFd4i9zawI6J2xtZxrVmw/qvZ+fK6g3zx5opOWfMpNVbPGdv6J3LhL4PbF4Kx7zV9wHnZYljc9hVcOxOHXExE7kZ6ggn+wc4D6zhCGfJq+yrzaz+ng9nUaaV
+   eJytlMENwzAIRTNFj1Z3aDqCmxESj5BmBNIlO1GNChJF2MZWI/2DJR448M0ZpunM2rOeWWvWRsLvEb7Cc6JY1pUEKofMk+j8EvGWQOTlPIfB3eg+90aeEoeaK7yW5KRafIlr8S0OtQxyrPfll107WF177+RlbSA+DtaGDjYZPfOwyB0D7BJs/3pZixv1hvdf/+0r72ys+Xg9xX3WnvTOVvcZHLVLnpDvYatwpV3I74H3p5ez9nDs4Kw3VePQE6UdGg2O42fVD50jGpzHrxzX61l5nw8zSqWz
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYCANxMkxMGgCcREQ/xElUTMQaEH1kgOGot5RMApGwSgYBYMbAABaDAXF
+   eJxjYCAf/BElT99vMvWNglEwCkbBKBgF1AYARHwCIg==
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSJIALothipkSafYlLHpJ0T9cAbYwJRZQGnZD1e7DFOjFlQ7xgYFy60DpHai4BekjJ35AgN5pYhRQF1CSx5ABAGr6ESk=
+   eJxjYMAN3OTwSFIITCk0m1L9Qx1cFiNfL6VhN1TtPkyB3ktk6B0otw6U3oGKW5A+cuIHBOidJkYBdQEleQwZAACQ7g9Y
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccjB5QmqI0U+uGdgAOe7HB8jVTw33k6KXnmFPiV5K0w213E2q/oHQSy199LBzoNPVQOilZjgTqxcfIFcfPjMIqcElR4q/kNWRog+mHps5pGIAXa/3Mw==
+   eJzFktEJACAIRJ2i/Vdww+hDiNC8i0rBj7p7ZqI2EQ1yRKSZnnk8vzHrGeW8+0zP6kaB9sVwaP8Mi3LobF6xJ3vzom+Wr2BvcT/erN6rCvbmnFF2F6fcrkbmiTTmX7OP4czv1WGzA46b8Ps=
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -269,9 +269,9 @@
     <property name="place" value="north2"/>
    </properties>
   </object>
-  <object id="72" name="north2" type="mapchange" x="416" y="0" width="64" height="64">
+  <object id="72" name="north2" type="mapchange" x="448" y="32" width="32" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_626"/>
+    <property name="map" value="ratdom_maze_526"/>
     <property name="place" value="south1"/>
    </properties>
   </object>

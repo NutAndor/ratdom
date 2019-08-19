@@ -206,7 +206,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJzFktEJACAIRJ2i/Vdowz4iCFK7K9EDf/KeaSYy1dsZ1vmeF4f3GJbXfJqY/hCh8zMc2j/DotzP7iJYa5fZfbN8BRvFZdxZ/a8q2Mh3RllPr5xX4+axcsxcu4/hll+rw8YAe6fwNA==
   </data>
@@ -271,7 +271,7 @@
   </object>
   <object id="54" name="north2" type="mapchange" x="448" y="32" width="32" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_647"/>
+    <property name="map" value="ratdom_maze_547"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
