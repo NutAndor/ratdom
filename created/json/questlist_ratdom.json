@@ -148,7 +148,14 @@
 			{ "progress":7, "logText":"Light-7"  },
 			{ "progress":8, "logText":"Light-8"  },
 			{ "progress":9, "logText":"Light-9"  },
-			{ "progress":10, "logText":"Light off"  }
+			{ "progress":10, "logText":"Light off"  },
+			{ "progress":21, "logText":"Rpl_568-1"  },
+			{ "progress":22, "logText":"Rpl_568-2"  },
+			{ "progress":23, "logText":"Rpl_568-3"  },
+			{ "progress":24, "logText":"Rpl_568-4"  },
+			{ "progress":25, "logText":"Rpl_568-5"  },
+			{ "progress":26, "logText":"Rpl_568-6"  },
+			{ "progress":27, "logText":"Rpl_568-7"  }
         ]
     },
     {

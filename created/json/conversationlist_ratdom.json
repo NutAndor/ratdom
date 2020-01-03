@@ -1196,6 +1196,90 @@
     ]
   },
   {
+    "id":"ratdom_mz1",
+    "rewards":[	
+	  { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":21 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":22 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":23 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":24 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":25 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":26 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":27 }
+    ]
+  },
+  {
+    "id":"ratdom_mz2",
+    "rewards":[	
+	  { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":21 },
+      { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":22 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":23 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":24 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":25 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":26 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":27 }
+    ]
+  },
+  {
+    "id":"ratdom_mz3",
+    "rewards":[	
+	  { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":21 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":22 },
+      { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":23 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":24 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":25 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":26 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":27 }
+    ]
+  },
+  {
+    "id":"ratdom_mz4",
+    "rewards":[	
+	  { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":21 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":22 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":23 },
+      { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":24 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":25 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":26 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":27 }
+    ]
+  },
+  {
+    "id":"ratdom_mz5",
+    "rewards":[	
+	  { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":21 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":22 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":23 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":24 },
+      { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":25 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":26 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":27 }
+    ]
+  },
+  {
+    "id":"ratdom_mz6",
+    "rewards":[	
+	  { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":21 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":22 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":23 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":24 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":25 },
+      { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":26 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":27 }
+    ]
+  },
+  {
+    "id":"ratdom_mz7",
+    "rewards":[	
+	  { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":21 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":22 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":23 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":24 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":25 },
+      { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":26 },
+      { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":27 }
+    ]
+  },
+  {
     "id":"ratdom_rat_conv1",
     "replies":[
       {

@@ -337,7 +337,7 @@
   <object id="68" name="ratdom_troll" type="spawn" x="160" y="96" width="192" height="128">
    <properties>
     <property name="quantity" value="2"/>
-    <property name="spawngroup" value="ratdom_maze_rat"/>
+    <property name="spawngroup" value="ratdom_troll"/>
    </properties>
   </object>
  </objectgroup>
