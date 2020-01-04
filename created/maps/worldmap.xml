@@ -7,63 +7,68 @@
     <map id="ratdom_maze_416" x="150" y="30" area="ratdom_maze_bloskelt_area" />
     <map id="ratdom_maze_417" x="180" y="30"/>
     <map id="ratdom_maze_418" x="210" y="30"/>
-    <map id="ratdom_maze_421" x="45" y="60"/>
-    <map id="ratdom_maze_424" x="135" y="60"/>
-    <map id="ratdom_maze_425" x="165" y="60"/>
-    <map id="ratdom_maze_426" x="195" y="60"/>
-    <map id="ratdom_maze_427" x="225" y="60"/>
-    <map id="ratdom_maze_428" x="255" y="60"/>
+    <map id="ratdom_maze_421" x="15" y="60"/>
+    <map id="ratdom_maze_424" x="105" y="60"/>
+    <map id="ratdom_maze_425" x="135" y="60"/>
+    <map id="ratdom_maze_426" x="165" y="60"/>
+    <map id="ratdom_maze_427" x="195" y="60"/>
+    <map id="ratdom_maze_428" x="225" y="60"/>
     <map id="ratdom_maze_435" x="120" y="90"/>
     <map id="ratdom_maze_436" x="150" y="90"/>
     <map id="ratdom_maze_437" x="180" y="90"/>
     <map id="ratdom_maze_438" x="210" y="90"/>
-    <map id="ratdom_maze_445" x="165" y="120"/>
-    <map id="ratdom_maze_446" x="195" y="120"/>
-    <map id="ratdom_maze_447" x="225" y="120"/>
-    <map id="ratdom_maze_448" x="255" y="120" area="ratdom_maze_entry_area"/>
+    <map id="ratdom_maze_445" x="135" y="120"/>
+    <map id="ratdom_maze_446" x="165" y="120"/>
+    <map id="ratdom_maze_447" x="195" y="120"/>
+    <map id="ratdom_maze_448" x="225" y="120" area="ratdom_maze_entry_area"/>
     <map id="ratdom_maze_456" x="150" y="150"/>
     <map id="ratdom_maze_457" x="180" y="150"/>
     <map id="ratdom_maze_458" x="210" y="150"/>
-    <map id="ratdom_maze_466" x="195" y="180"/>
-    <map id="ratdom_maze_467" x="225" y="180"/>
+    <map id="ratdom_maze_466" x="165" y="180"/>
+    <map id="ratdom_maze_467" x="195" y="180"/>
     <map id="ratdom_maze_476" x="150" y="210"/>
     <namedarea id="ratdom_maze_bloskelt_area" name="Bloskelt + Roskelt" type="other"/>
     <namedarea id="ratdom_maze_entry_area" name="Entry" type="other"/>
   </segment>
   <segment id="ratdom_level_5" x="0" y="0">
     <map id="ratdom_maze_517" x="180" y="30"/>
-    <map id="ratdom_maze_524" x="135" y="60"/>
-    <map id="ratdom_maze_525" x="165" y="60"/>
-    <map id="ratdom_maze_527" x="225" y="60"/>
+    <map id="ratdom_maze_524" x="105" y="60"/>
+    <map id="ratdom_maze_525" x="135" y="60"/>
+    <map id="ratdom_maze_526" x="165" y="60"/>
+    <map id="ratdom_maze_527" x="195" y="60"/>
     <map id="ratdom_maze_535" x="120" y="90"/>
     <map id="ratdom_maze_536" x="150" y="90"/>
+    <map id="ratdom_maze_537" x="180" y="90"/>
     <map id="ratdom_maze_538" x="210" y="90"/>
-    <map id="ratdom_maze_545" x="165" y="120"/>
-    <map id="ratdom_maze_546" x="195" y="120"/>
+    <map id="ratdom_maze_543" x="105" y="120"/>
+    <map id="ratdom_maze_543d" x="120" y="120"/>
+    <map id="ratdom_maze_545" x="135" y="120"/>
+    <map id="ratdom_maze_546" x="165" y="120"/>
+    <map id="ratdom_maze_547" x="195" y="120"/>
     <map id="ratdom_maze_555" x="120" y="150"/>
     <map id="ratdom_maze_558" x="210" y="150"/>
-    <map id="ratdom_maze_565" x="165" y="180"/>
-    <map id="ratdom_maze_568" x="255" y="180"/>
+    <map id="ratdom_maze_565" x="135" y="180"/>
+    <map id="ratdom_maze_568" x="225" y="180"/>
   </segment>
   <segment id="ratdom_level_6" x="0" y="0">
     <map id="ratdom_maze_618" x="210" y="30"/>
-    <map id="ratdom_maze_627" x="225" y="60" area="ratdom_maze_roundlings_area"/>
-    <map id="ratdom_maze_628" x="255" y="60"/>
+    <map id="ratdom_maze_627" x="195" y="60" area="ratdom_maze_roundlings_area"/>
+    <map id="ratdom_maze_628" x="225" y="60"/>
     <map id="ratdom_maze_635" x="120" y="90"/>
     <map id="ratdom_maze_636" x="150" y="90"/>
     <map id="ratdom_maze_637" x="180" y="90"/>
     <map id="ratdom_maze_638" x="210" y="90"/>
-    <map id="ratdom_maze_644" x="135" y="120"/>
-    <map id="ratdom_maze_645" x="165" y="120"/>
-    <map id="ratdom_maze_646" x="195" y="120"/>
-    <map id="ratdom_maze_647" x="225" y="120"/>
-    <map id="ratdom_maze_648" x="255" y="120"/>
+    <map id="ratdom_maze_644" x="105" y="120"/>
+    <map id="ratdom_maze_645" x="135" y="120"/>
+    <map id="ratdom_maze_646" x="165" y="120"/>
+    <map id="ratdom_maze_647" x="195" y="120"/>
+    <map id="ratdom_maze_648" x="225" y="120"/>
     <map id="ratdom_maze_655" x="120" y="150"/>
     <map id="ratdom_maze_656" x="150" y="150"/>
     <map id="ratdom_maze_657" x="180" y="150"/>
     <map id="ratdom_maze_658" x="210" y="150"/>
-    <map id="ratdom_maze_664" x="135" y="180" area="ratdom_maze_water_area"/>
-    <map id="ratdom_maze_666" x="195" y="180"/>
+    <map id="ratdom_maze_664" x="105" y="180" area="ratdom_maze_water_area"/>
+    <map id="ratdom_maze_666" x="165" y="180"/>
     <namedarea id="ratdom_maze_water_area" name="Waterway" type="other"/>
     <namedarea id="ratdom_maze_roundlings_area" name="Roundlings" type="other"/>
   </segment>

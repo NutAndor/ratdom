@@ -131,7 +131,16 @@
 			{ "progress":48, "logText":"48=Lantern carry" },
 			{ "progress":49, "logText":"49=Wise3 active" },
 			{ "progress":50, "logText":"50=talked to Wise3" },
-			{ "progress":60, "logText":"60=Water: Flag reached" }
+			{ "progress":60, "logText":"60=Water: Flag reached" },
+			{ "progress":101, "logText":"101=Lute_1 active" },
+			{ "progress":102, "logText":"102=Horn_1 active" },
+			{ "progress":103, "logText":"103=Drum_1 active" },
+			{ "progress":104, "logText":"104=Cymb_1 active" },
+			{ "progress":105, "logText":"105=Color_1 active" },
+			{ "progress":106, "logText":"106=Color_2 active" },
+			{ "progress":107, "logText":"107=Color_3 active" },
+			{ "progress":108, "logText":"108=Color_4 active" },
+			{ "progress":109, "logText":"109=Color_5 active" }
         ]
     },
     {

@@ -190,6 +190,154 @@
         "phraseID":"ratdom_roundling2",
         "attackCost":5,
         "attackChance":120
+    },    
+	{
+        "id":"ratdom_skel_lute",
+        "name":"Lutenist",
+        "iconID":"monsters_fatboy73:41",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_lute"
+    },
+    {
+        "id":"ratdom_skel_horn",
+        "name":"Horn player",
+        "iconID":"monsters_fatboy73:43",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_horn"
+    },
+    {
+        "id":"ratdom_skel_drum",
+        "name":"Drummer",
+        "iconID":"monsters_fatboy73:45",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_drum"
+    },
+    {
+        "id":"ratdom_skel_cymb",
+        "name":"Cymbalist",
+        "iconID":"monsters_fatboy73:47",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_cymb"
+    },    
+	{
+        "id":"ratdom_skel_lute1",
+        "name":"Lutenist",
+        "iconID":"monsters_fatboy73:41",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_lute1"
+    },
+    {
+        "id":"ratdom_skel_horn1",
+        "name":"Horn player",
+        "iconID":"monsters_fatboy73:43",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_horn1"
+    },
+    {
+        "id":"ratdom_skel_drum1",
+        "name":"Drummer",
+        "iconID":"monsters_fatboy73:45",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_drum1"
+    },
+    {
+        "id":"ratdom_skel_cymb1",
+        "name":"Cymbalist",
+        "iconID":"monsters_fatboy73:47",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_cymb1"
+    },    
+	{
+        "id":"ratdom_skel_lute2",
+        "name":"Lutenist",
+        "iconID":"monsters_fatboy73:40",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_lute2"
+    },
+    {
+        "id":"ratdom_skel_horn2",
+        "name":"Horn player",
+        "iconID":"monsters_fatboy73:42",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_horn2"
+    },
+    {
+        "id":"ratdom_skel_drum2",
+        "name":"Drummer",
+        "iconID":"monsters_fatboy73:44",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_drum2"
+    },
+    {
+        "id":"ratdom_skel_cymb2",
+        "name":"Cymbalist",
+        "iconID":"monsters_fatboy73:46",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_cymb2"
+    },
+    {
+        "id":"ratdom_skel_dance1",
+        "name":"Dancing skeleton",
+        "iconID":"monsters_tometik8:28",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_dance"
+    },
+    {
+        "id":"ratdom_skel_dance1",
+        "name":"Dancing skeleton",
+        "iconID":"monsters_tometik8:28",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_dance"
+    },
+    {
+        "id":"ratdom_skel_dance2",
+        "name":"Dancing skeleton",
+        "iconID":"monsters_tometik8:29",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_dance"
+    },
+    {
+        "id":"ratdom_skel_dance3",
+        "name":"Dancing skeleton",
+        "iconID":"monsters_tometik8:30",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_dance"
+    },
+    {
+        "id":"ratdom_skel_dance4",
+        "name":"Dancing skeleton",
+        "iconID":"monsters_tometik8:31",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_dance"
+    },
+    {
+        "id":"ratdom_skel_dance5",
+        "name":"Dancing skeleton",
+        "iconID":"monsters_tometik8:35",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_dance"
+    },
+    {
+        "id":"ratdom_skel_dance6",
+        "name":"Dancing skeleton",
+        "iconID":"monsters_tometik8:42",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_dance"
+    },
+    {
+        "id":"ratdom_skel_dance7",
+        "name":"Dancing skeleton",
+        "iconID":"monsters_tometik8:32",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_dance"
+    },
+    {
+        "id":"ratdom_skel_mage",
+        "name":"Skeleton mage",
+        "iconID":"monsters_tometik8:44",
+        "monsterClass":"undead",
+        "spawnGroup":"ratdom_skel_mage",
+        "phraseID":"ratdom_skel_mage"
     },
     {
         "id":"ratdom_skeleton1",

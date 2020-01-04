@@ -4,7 +4,8 @@
     "message":"This must be a bad dream.",
     "replies":[
       {
-        "text":"How can I only wake up?"
+        "text":"How can I only wake up?",
+        "nextPhraseID":"N"
       },
       {
         "text":"Maybe I should talk to the rat in my bed again.",
@@ -1606,6 +1607,146 @@
         ]
       }
     ]
+  },
+  {
+    "id":"ratdom_skel_clock",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skel_clock_101"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skel_clock_101",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_102", 
+				  "requires":[{ "requireType":"random", "requireID":"50" }] },
+				{ "nextPhraseID":"ratdom_skel_clock_101_0", 
+				  "requires":[{ "requireType":"questProgress", "requireID":":"ratdom_nondisplay", "value":101 }] },
+				{ "nextPhraseID":"ratdom_skel_clock_101_1" }]
+  },
+  {
+    "id":"ratdom_skel_clock_101_0",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_102" }],
+	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":101 }]
+  },
+  {
+    "id":"ratdom_skel_clock_101_1",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_102" }],
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":101 }]
+  },
+  {
+    "id":"ratdom_skel_clock_102",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_103", 
+				  "requires":[{ "requireType":"random", "requireID":"50" }] },
+				{ "nextPhraseID":"ratdom_skel_clock_102_0", 
+				  "requires":[{ "requireType":"questProgress", "requireID":":"ratdom_nondisplay", "value":102 }] },
+				{ "nextPhraseID":"ratdom_skel_clock_102_1" }]
+  },
+  {
+    "id":"ratdom_skel_clock_102_0",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_103" }],
+	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":102 }]
+  },
+  {
+    "id":"ratdom_skel_clock_102_1",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_103" }],
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":102 }]
+  },
+  {
+    "id":"ratdom_skel_clock_103",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_104", 
+				  "requires":[{ "requireType":"random", "requireID":"50" }] },
+				{ "nextPhraseID":"ratdom_skel_clock_103_0", 
+				  "requires":[{ "requireType":"questProgress", "requireID":":"ratdom_nondisplay", "value":103 }] },
+				{ "nextPhraseID":"ratdom_skel_clock_103_1" }]
+  },
+  {
+    "id":"ratdom_skel_clock_103_0",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_104" }],
+	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":103 }]
+  },
+  {
+    "id":"ratdom_skel_clock_103_1",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_104" }],
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":103 }]
+  },
+  {
+    "id":"ratdom_skel_clock_104",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105", 
+				  "requires":[{ "requireType":"random", "requireID":"50" }] },
+				{ "nextPhraseID":"ratdom_skel_clock_104_0", 
+				  "requires":[{ "requireType":"questProgress", "requireID":":"ratdom_nondisplay", "value":104 }] },
+				{ "nextPhraseID":"ratdom_skel_clock_104_1" }]
+  },
+  {
+    "id":"ratdom_skel_clock_104_0",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105" }],
+	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":104 }]
+  },
+  {
+    "id":"ratdom_skel_clock_104_1",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105" }],
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":104 }]
+  },
+  {
+    "id":"ratdom_skel_clock_105",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_1", 
+				  "requires":[{ "requireType":"random", "requireID":"20" }] },
+				{ "nextPhraseID":"ratdom_skel_clock_105_2", 
+				  "requires":[{ "requireType":"random", "requireID":"25" }] },
+				{ "nextPhraseID":"ratdom_skel_clock_105_3", 
+				  "requires":[{ "requireType":"random", "requireID":"33" }] },
+				{ "nextPhraseID":"ratdom_skel_clock_105_4", 
+				  "requires":[{ "requireType":"random", "requireID":"50" }] },
+				{ "nextPhraseID":"ratdom_skel_clock_105_5" }]
+  },
+  {
+    "id":"ratdom_skel_clock_105_1",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":105 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":106 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":107 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":108 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+  },
+  {
+    "id":"ratdom_skel_clock_105_2",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":105 },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":106 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":107 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":108 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+  },
+  {
+    "id":"ratdom_skel_clock_105_3",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":105 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":106 },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":107 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":108 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+  },
+  {
+    "id":"ratdom_skel_clock_105_4",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":105 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":106 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":107 },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":108 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+  },
+  {
+    "id":"ratdom_skel_clock_105_5",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":105 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":106 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":107 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":108 },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+  },
+  {
+    "id":"ratdom_skel_clock_105_x"
   },
   {
     "id":"ratdom_skeleton_boss1_check_10",
