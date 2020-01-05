@@ -280,56 +280,147 @@
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:28",
         "monsterClass":"undead",
-        "spawnGroup":"ratdom_skel_dance"
-    },
-    {
-        "id":"ratdom_skel_dance1",
-        "name":"Dancing skeleton",
-        "iconID":"monsters_tometik8:28",
-        "monsterClass":"undead",
-        "spawnGroup":"ratdom_skel_dance"
+        "phraseID":"do_nothing",
+        "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
         "id":"ratdom_skel_dance2",
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:29",
         "monsterClass":"undead",
-        "spawnGroup":"ratdom_skel_dance"
+        "phraseID":"do_nothing",
+        "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
         "id":"ratdom_skel_dance3",
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:30",
         "monsterClass":"undead",
-        "spawnGroup":"ratdom_skel_dance"
+        "phraseID":"do_nothing",
+        "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
         "id":"ratdom_skel_dance4",
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:31",
         "monsterClass":"undead",
-        "spawnGroup":"ratdom_skel_dance"
+        "phraseID":"do_nothing",
+        "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
         "id":"ratdom_skel_dance5",
         "name":"Dancing skeleton",
-        "iconID":"monsters_tometik8:35",
+        "iconID":"monsters_tometik8:32",
         "monsterClass":"undead",
-        "spawnGroup":"ratdom_skel_dance"
+        "phraseID":"do_nothing",
+        "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
         "id":"ratdom_skel_dance6",
         "name":"Dancing skeleton",
-        "iconID":"monsters_tometik8:42",
+        "iconID":"monsters_tometik8:33",
         "monsterClass":"undead",
-        "spawnGroup":"ratdom_skel_dance"
+        "phraseID":"do_nothing",
+        "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
         "id":"ratdom_skel_dance7",
         "name":"Dancing skeleton",
-        "iconID":"monsters_tometik8:32",
+        "iconID":"monsters_tometik8:34",
         "monsterClass":"undead",
-        "spawnGroup":"ratdom_skel_dance"
+        "phraseID":"do_nothing",
+        "spawnGroup":"ratdom_skel_dance_grp"
+    },
+    {
+        "id":"ratdom_skel_dance21",
+        "name":"Angry skeleton",
+        "iconID":"monsters_tometik8:35",
+        "maxHP":80,
+        "monsterClass":"undead",
+        "movementAggressionType":"helpOthers",
+        "attackDamage":{ "min":10, "max":20 },
+        "spawnGroup":"ratdom_skel_dance2_grp",
+        "unique":1,
+        "attackCost":5,
+        "attackChance":80
+    },
+    {
+        "id":"ratdom_skel_dance22",
+        "name":"Angry skeleton",
+        "iconID":"monsters_tometik8:36",
+        "maxHP":80,
+        "monsterClass":"undead",
+        "movementAggressionType":"helpOthers",
+        "attackDamage":{ "min":10, "max":20 },
+        "spawnGroup":"ratdom_skel_dance2_grp",
+        "unique":1,
+        "attackCost":5,
+        "attackChance":80
+    },
+    {
+        "id":"ratdom_skel_dance23",
+        "name":"Angry skeleton",
+        "iconID":"monsters_tometik8:37",
+        "maxHP":80,
+        "monsterClass":"undead",
+        "movementAggressionType":"helpOthers",
+        "attackDamage":{ "min":10, "max":20 },
+        "spawnGroup":"ratdom_skel_dance2_grp",
+        "unique":1,
+        "attackCost":5,
+        "attackChance":80
+    },
+    {
+        "id":"ratdom_skel_dance24",
+        "name":"Angry skeleton",
+        "iconID":"monsters_tometik8:38",
+        "maxHP":80,
+        "monsterClass":"undead",
+        "movementAggressionType":"helpOthers",
+        "attackDamage":{ "min":10, "max":20 },
+        "spawnGroup":"ratdom_skel_dance2_grp",
+        "unique":1,
+        "attackCost":5,
+        "attackChance":80
+    },
+    {
+        "id":"ratdom_skel_dance25",
+        "name":"Angry skeleton",
+        "iconID":"monsters_tometik8:39",
+        "maxHP":80,
+        "monsterClass":"undead",
+        "movementAggressionType":"helpOthers",
+        "attackDamage":{ "min":10, "max":20 },
+        "spawnGroup":"ratdom_skel_dance2_grp",
+        "unique":1,
+        "attackCost":5,
+        "attackChance":80
+    },
+    {
+        "id":"ratdom_skel_dance26",
+        "name":"Angry skeleton",
+        "iconID":"monsters_tometik8:40",
+        "maxHP":80,
+        "monsterClass":"undead",
+        "movementAggressionType":"wholeMap",
+        "attackDamage":{ "min":10, "max":30 },
+        "spawnGroup":"ratdom_skel_dance2_grp",
+        "unique":1,
+        "attackCost":5,
+        "attackChance":100
+    },
+    {
+        "id":"ratdom_skel_dance27",
+        "name":"Angry skeleton",
+        "iconID":"monsters_tometik8:57",
+        "maxHP":80,
+        "monsterClass":"undead",
+        "movementAggressionType":"wholeMap",
+        "attackDamage":{ "min":10, "max":30 },
+        "spawnGroup":"ratdom_skel_dance2_grp",
+        "unique":1,
+        "attackCost":5,
+        "attackChance":100
     },
     {
         "id":"ratdom_skel_mage",
@@ -446,12 +537,12 @@
     {
         "id":"ratdom_water_fish1",
         "name":"Fish",
-        "iconID":"monsters_rltiles1:147",
+        "iconID":"monsters_rltiles1:147"
     },
     {
         "id":"ratdom_water_fish2",
         "name":"Fish",
-        "iconID":"monsters_snakes:0",
+        "iconID":"monsters_snakes:0"
     },
     {
         "id":"ratdom_well_wise0",

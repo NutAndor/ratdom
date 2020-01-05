@@ -132,6 +132,7 @@
 			{ "progress":49, "logText":"49=Wise3 active" },
 			{ "progress":50, "logText":"50=talked to Wise3" },
 			{ "progress":60, "logText":"60=Water: Flag reached" },
+			{ "progress":100, "logText":"100=clock active" },
 			{ "progress":101, "logText":"101=Lute_1 active" },
 			{ "progress":102, "logText":"102=Horn_1 active" },
 			{ "progress":103, "logText":"103=Drum_1 active" },

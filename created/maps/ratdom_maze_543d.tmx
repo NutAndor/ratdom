@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="69">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="88">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -186,19 +186,25 @@
  <tileset firstgid="7705" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
+ <tileset firstgid="7813" name="map_trail_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
+  <image source="../drawable/map_trail_1.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="7941" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
+  <image source="../drawable/map_ratdom.png" width="576" height="192"/>
+ </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxbx8TAsG6IYTc5BI4gAiMDZL2RQJwFxEZsmBgkHo6mH1lfNhDX4MGZaPqR9f3ghOBzWDBMDlm/O5o+Qnph+l2hen9wkqYXhHHpJQa7Qv1Kip7/QMzABdGL7ldS9JLqVn6gPgEy9YLw4gHSCwvn9UyDS2+lGANDFRBXi5GutxOopwuIu8nQOxOoZxYQzyZDL63Dah2ZepHLPHL1kaIfX5k7Bw8e6PqAGhgAPgxlXA==
+   eJxbx8TAsG6IYTc5BAbxI+RwY5A8MkDWGwnEWUBsxIaJQeLhUDPQ9YL0ZQNxDR6ciaYfWd8PTgg+hwXD5JD1u6PpI6QXpt8VqvcHJ2l6QRiXXmKwK9SvpOj5D8QMXBC96H4lRS+pbuUH6hMgUy8ILx4gvbBwXs+EXa5SjIGhCoirxUjX2wnU0wXE3WTonQnUMwuIZ5OhlxL/EqN3HZl6kcsecvWRoh9f2TcHDx7ocnkoYwCwp14u
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBjZwISNgcEIiOPRaGM2wnpdgGqcsGBnAnrr5RgYTnBglwOJN8jh1mfNhl+vFRum/noo3xsodwOHXpC4F9TduOwHgXguTDyYQD0et1MbBDJSx5y5TNQxZzgAD5aBdgFtwGEx0tTPRksTxKYRdH3E6selb6QAADypFYk=
+   eJxjYBjZwISNgcEIiOPRaGM2wnpdgGqcsGBnAnrr5RgYTnBglwOJN8jh1mfNhl+vFRum/noo3xsodwOHXpC4F9TduOwHgXguTDyYQD0et1MbBDJSx5y5TNQxh5rAg2WgXUAbcFiMNPWz0eKG2LhC10esflz6RgFtAQA39xWJ
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSA4hsI4JgSnRjw52cGBXjy5Orr3I4LIY+XoPD0G9lyjQO5KAuxz5aQOkl9w4GtVLGphLhTJgFNAOAADk9hPC
+   eJxjYMAN3OTwSA4hsI4JgSnRjw52cGBXjy5Orr3I4LIY+XoPD0G9lyjQO9LASEsblOidS4W8OAqGHwAAt1YPTQ==
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -208,11 +214,21 @@
  </layer>
  <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFcckMJIwNK9FNiPyF3EWsHTA0uvfjsIset5ABy9BITNvj0UmIvMk0vvchm0DOcR/UOjF5K8wOx+oktB0nRNxIwAIBQrVo=
+   eJzbKMbAsBEHBgFcckMJIwNK9FNiPyF3EWsHTA0uvfjsIsZedP3kAHL0EhM2+PRSYi8yTS+9yGbQM5xHul5K0yWx+oktj0jRN4pphwEYeb2t
+  </data>
+ </layer>
+ <layer name="Band0" width="15" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFAwmc5BgYHIHYQY48/fZk6hsFo2AUjIJRAAEAFiwBew==
+  </data>
+ </layer>
+ <layer name="Band1" width="15" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFAwkM5BgY9IFYT448/bpk6hsFo2AUjIJRAAEAjSYBMw==
   </data>
  </layer>
  <objectgroup name="Mapevents" visible="0">
-  <object id="34" name="ratdom_skel_clock" type="script" x="0" y="192" width="448" height="640">
+  <object id="34" name="ratdom_skel_clock" type="script" x="0" y="192" width="448" height="576">
    <properties>
     <property name="when" value="always"/>
    </properties>
@@ -223,58 +239,13 @@
     <property name="place" value="east"/>
    </properties>
   </object>
+  <object id="86" name="ratdom_skel_bone" type="script" x="224" y="544" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="65" name="ratdom_skel_lute2" type="spawn" x="224" y="224" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="ratdom_skel_lute2"/>
-   </properties>
-  </object>
-  <object id="66" name="ratdom_skel_horn2" type="spawn" x="256" y="192" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="ratdom_skel_horn2"/>
-   </properties>
-  </object>
-  <object id="67" name="ratdom_skel_drum2" type="spawn" x="224" y="192" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="ratdom_skel_drum2"/>
-   </properties>
-  </object>
-  <object id="68" name="ratdom_skel_cymb2" type="spawn" x="192" y="192" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="ratdom_skel_cymb2"/>
-   </properties>
-  </object>
-  <object id="44" name="ratdom_skel_lute1" type="spawn" x="224" y="224" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="ratdom_skel_lute1"/>
-   </properties>
-  </object>
-  <object id="56" name="ratdom_skel_horn1" type="spawn" x="256" y="192" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="ratdom_skel_horn1"/>
-   </properties>
-  </object>
-  <object id="57" name="ratdom_skel_drum1" type="spawn" x="224" y="192" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="ratdom_skel_drum1"/>
-   </properties>
-  </object>
-  <object id="58" name="ratdom_skel_cymb1" type="spawn" x="192" y="192" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="ratdom_skel_cymb1"/>
-   </properties>
-  </object>
   <object id="59" name="ratdom_skel_mage" type="spawn" x="416" y="352" width="32" height="32">
    <properties>
     <property name="spawngroup" value="ratdom_skel_mage"/>
-   </properties>
-  </object>
-  <object id="60" name="ratdom_skel_dance" type="spawn" x="96" y="480" width="288" height="288">
-   <properties>
-    <property name="quantity" value="25"/>
-    <property name="spawngroup" value="ratdom_skel_dance"/>
    </properties>
   </object>
   <object id="61" name="ratdom_skel_lute" type="spawn" x="416" y="128" width="32" height="32">
@@ -297,79 +268,130 @@
     <property name="spawngroup" value="ratdom_skel_cymb"/>
    </properties>
   </object>
+  <object id="60" name="ratdom_skel_dance" type="spawn" x="96" y="416" width="288" height="288">
+   <properties>
+    <property name="quantity" value="25"/>
+    <property name="spawngroup" value="ratdom_skel_dance_grp"/>
+   </properties>
+  </object>
+  <object id="87" name="ratdom_skel_dance2" type="spawn" x="96" y="416" width="288" height="288">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="25"/>
+    <property name="spawngroup" value="ratdom_skel_dance2_grp"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
- <objectgroup name="Replace" visible="0">
-  <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
+ <objectgroup name="Keys" visible="0">
+  <object id="27" name="dummy:1" type="key" x="192" y="576" width="96" height="96">
    <properties>
-    <property name="Top" value="Light10"/>
-    <property name="requireId" value="ratdom_maze"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="10"/>
-   </properties>
-  </object>
-  <object id="21" name="ratdom_maze:1" type="replace" x="0" y="0" width="480" height="960" visible="0">
-   <properties>
-    <property name="Top" value="Light1"/>
-    <property name="requireId" value="ratdom_maze"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="1"/>
-   </properties>
-  </object>
-  <object id="22" name="ratdom_maze:2" type="replace" x="0" y="0" width="480" height="960" visible="0">
-   <properties>
-    <property name="Top" value="Light2"/>
-    <property name="requireId" value="ratdom_maze"/>
+    <property name="phrase" value="ratdom_skel_bone"/>
+    <property name="requireId" value="base_nondisplay"/>
+    <property name="requireNegation" value="true"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="2"/>
    </properties>
   </object>
-  <object id="23" name="ratdom_maze:3" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="74" name="skel_lute" type="key" x="224" y="224" width="32" height="32">
    <properties>
-    <property name="Top" value="Light3"/>
-    <property name="requireId" value="ratdom_maze"/>
+    <property name="phrase" value="ratdom_skel_lute"/>
+    <property name="requireId" value="base_nondisplay"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="3"/>
+    <property name="requireValue" value="2"/>
    </properties>
   </object>
-  <object id="24" name="ratdom_maze:4" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="75" name="skel_horn" type="key" x="256" y="192" width="32" height="32">
    <properties>
-    <property name="Top" value="Light4"/>
-    <property name="requireId" value="ratdom_maze"/>
+    <property name="phrase" value="ratdom_skel_horn"/>
+    <property name="requireId" value="base_nondisplay"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="4"/>
+    <property name="requireValue" value="2"/>
    </properties>
   </object>
-  <object id="25" name="ratdom_maze:5" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="76" name="skel_drum" type="key" x="224" y="192" width="32" height="32">
    <properties>
-    <property name="Top" value="Light5"/>
-    <property name="requireId" value="ratdom_maze"/>
+    <property name="phrase" value="ratdom_skel_drum"/>
+    <property name="requireId" value="base_nondisplay"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="5"/>
+    <property name="requireValue" value="2"/>
    </properties>
   </object>
-  <object id="40" name="ratdom_maze:6" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="77" name="skel_cymb" type="key" x="192" y="192" width="32" height="32">
    <properties>
-    <property name="Top" value="Light6"/>
-    <property name="requireId" value="ratdom_maze"/>
+    <property name="phrase" value="ratdom_skel_cymb"/>
+    <property name="requireId" value="base_nondisplay"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="6"/>
+    <property name="requireValue" value="2"/>
    </properties>
   </object>
-  <object id="41" name="ratdom_maze:7" type="replace" x="0" y="0" width="480" height="960" visible="0">
+ </objectgroup>
+ <objectgroup name="Replace">
+  <object id="78" name="band_1:101" type="replace" x="224" y="224" width="32" height="32" visible="0">
    <properties>
-    <property name="Top" value="Light7"/>
-    <property name="requireId" value="ratdom_maze"/>
+    <property name="Objects" value="Band1"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="7"/>
+    <property name="requireValue" value="101"/>
    </properties>
   </object>
-  <object id="42" name="ratdom_maze:8" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="79" name="band_1:104" type="replace" x="192" y="192" width="32" height="32" visible="0">
    <properties>
-    <property name="Top" value="Light8"/>
-    <property name="requireId" value="ratdom_maze"/>
+    <property name="Objects" value="Band1"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="8"/>
+    <property name="requireValue" value="104"/>
+   </properties>
+  </object>
+  <object id="80" name="band_1:103" type="replace" x="224" y="192" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Band1"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="103"/>
+   </properties>
+  </object>
+  <object id="81" name="band_1:102" type="replace" x="256" y="192" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Band1"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="102"/>
+   </properties>
+  </object>
+  <object id="82" name="band_1:101" type="replace" x="224" y="224" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Band0"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="101"/>
+   </properties>
+  </object>
+  <object id="83" name="band_1:104" type="replace" x="192" y="192" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Band0"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="104"/>
+   </properties>
+  </object>
+  <object id="84" name="band_1:103" type="replace" x="224" y="192" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Band0"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="103"/>
+   </properties>
+  </object>
+  <object id="85" name="band_1:102" type="replace" x="256" y="192" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Band0"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="102"/>
    </properties>
   </object>
  </objectgroup>

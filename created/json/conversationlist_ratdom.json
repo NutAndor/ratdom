@@ -1609,19 +1609,190 @@
     ]
   },
   {
-    "id":"ratdom_skel_clock",
+    "id":"ratdom_skel_bone",
     "replies":[
       {
-        "nextPhraseID":"ratdom_skel_clock_101"
+        "nextPhraseID":"ratdom_skel_bone_10",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":100,
+			"negate":true
+          }
+        ]
       }
     ]
   },
   {
+    "id":"ratdom_skel_bone_10",
+    "message":"As soon as you stepped on the carpet, a loud voice boomed: STOP THE THIEF!",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skel_bone_20",
+		"text":"N"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skel_bone_20",
+    "switchToNPC":"ratdom_skel_mage",
+    "message":"Leave the carpet immediatly!",
+    "replies":[
+      {
+        "nextPhraseID":"X",
+		"text":"Oh, of course. Sorry."
+      },
+      {
+        "nextPhraseID":"ratdom_skel_bone_30",
+		"text":"Sure. But I'll take this bone here with me."
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skel_bone_30",
+    "switchToNPC":"none",
+    "message":"You picked the bone from its podest. Immediatly the music stopped. O oh...",
+	"rewards":[	{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance_grp", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance1", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance2", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance3", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance4", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance5", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance6", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance7", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":100 },
+				{ "rewardType":"giveItem", "rewardID":"ratdom_rat_skelett_leg", "value":1 },
+				{ "rewardType":"changeMapFilter", "mapName":"ratdom_maze_543d", "rewardID":"none" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_skel_dance2", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_skel_dance2_grp", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_skel_dance21", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_skel_dance22", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_skel_dance23", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_skel_dance24", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_skel_dance25", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_skel_dance26", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_skel_dance27", "mapName":"ratdom_maze_543d" }]
+  },
+  {
+    "id":"ratdom_skel_lute",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skel_lute_10",
+        "requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":100 }]
+      },
+      {
+        "nextPhraseID":"ratdom_skel_lute_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skel_lute_10",
+    "switchToNPC":"ratdom_skel_lute",
+    "message":"Hey, why did you disturb our Bone Dance?"
+  },
+  {
+    "id":"ratdom_skel_lute_20",
+    "switchToNPC":"ratdom_skel_lute",
+    "message":"Hey, come and join the Bone Dance!"
+  },
+  {
+    "id":"ratdom_skel_horn",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skel_horn_10",
+        "requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":100 }]
+      },
+      {
+        "nextPhraseID":"ratdom_skel_horn_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skel_horn_10",
+    "switchToNPC":"ratdom_skel_lute",
+    "message":"Yeah?"
+  },
+  {
+    "id":"ratdom_skel_horn_20",
+    "switchToNPC":"ratdom_skel_horn",
+    "message":"Yeah, yeah, yeah!"
+  },
+  {
+    "id":"ratdom_skel_drum",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skel_drum_10",
+        "requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":100 }]
+      },
+      {
+        "nextPhraseID":"ratdom_skel_drum_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skel_drum_10",
+    "switchToNPC":"ratdom_skel_drum",
+    "message":"What now?"
+  },
+  {
+    "id":"ratdom_skel_drum_20",
+    "switchToNPC":"ratdom_skel_drum",
+    "message":"Oom chicky oom chick, oom chicky oom chi-chicky",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skel_drum_20",
+		"text":"N"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skel_cymb",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skel_cymb_10",
+        "requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":100 }]
+      },
+      {
+        "nextPhraseID":"ratdom_skel_cymb_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skel_cymb_10",
+    "switchToNPC":"ratdom_skel_drum",
+    "message":"What next?"
+  },
+  {
+    "id":"ratdom_skel_cymb_20",
+    "switchToNPC":"ratdom_skel_cymb",
+    "message":"Come on Andor, let's have fun there!",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skel_cymb_22",
+		"text":"Oh, you know my brother?"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_skel_cymb_22",
+    "message":"... what? Eh, no. Just a song we heard once."
+  },
+  {
+    "id":"ratdom_skel_clock",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_101", 
+				  "requires":[{	"requireType":"questProgress", 
+								"requireID":"ratdom_nondisplay", 
+								"value":100,
+								"negate":true }] }]
+  },
+  {
     "id":"ratdom_skel_clock_101",
     "replies":[ { "nextPhraseID":"ratdom_skel_clock_102", 
-				  "requires":[{ "requireType":"random", "requireID":"50" }] },
+				  "requires":[{ "requireType":"random", "requireID":"80" }] },
 				{ "nextPhraseID":"ratdom_skel_clock_101_0", 
-				  "requires":[{ "requireType":"questProgress", "requireID":":"ratdom_nondisplay", "value":101 }] },
+				  "requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":101 }] },
 				{ "nextPhraseID":"ratdom_skel_clock_101_1" }]
   },
   {
@@ -1637,9 +1808,9 @@
   {
     "id":"ratdom_skel_clock_102",
     "replies":[ { "nextPhraseID":"ratdom_skel_clock_103", 
-				  "requires":[{ "requireType":"random", "requireID":"50" }] },
+				  "requires":[{ "requireType":"random", "requireID":"80" }] },
 				{ "nextPhraseID":"ratdom_skel_clock_102_0", 
-				  "requires":[{ "requireType":"questProgress", "requireID":":"ratdom_nondisplay", "value":102 }] },
+				  "requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":102 }] },
 				{ "nextPhraseID":"ratdom_skel_clock_102_1" }]
   },
   {
@@ -1655,9 +1826,9 @@
   {
     "id":"ratdom_skel_clock_103",
     "replies":[ { "nextPhraseID":"ratdom_skel_clock_104", 
-				  "requires":[{ "requireType":"random", "requireID":"50" }] },
+				  "requires":[{ "requireType":"random", "requireID":"1" }] },
 				{ "nextPhraseID":"ratdom_skel_clock_103_0", 
-				  "requires":[{ "requireType":"questProgress", "requireID":":"ratdom_nondisplay", "value":103 }] },
+				  "requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":103 }] },
 				{ "nextPhraseID":"ratdom_skel_clock_103_1" }]
   },
   {
@@ -1675,7 +1846,7 @@
     "replies":[ { "nextPhraseID":"ratdom_skel_clock_105", 
 				  "requires":[{ "requireType":"random", "requireID":"50" }] },
 				{ "nextPhraseID":"ratdom_skel_clock_104_0", 
-				  "requires":[{ "requireType":"questProgress", "requireID":":"ratdom_nondisplay", "value":104 }] },
+				  "requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":104 }] },
 				{ "nextPhraseID":"ratdom_skel_clock_104_1" }]
   },
   {
@@ -1690,63 +1861,77 @@
   },
   {
     "id":"ratdom_skel_clock_105",
-    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_1", 
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_0", 
 				  "requires":[{ "requireType":"random", "requireID":"20" }] },
-				{ "nextPhraseID":"ratdom_skel_clock_105_2", 
+				{ "nextPhraseID":"ratdom_skel_clock_110" }]
+  },
+  {
+    "id":"ratdom_skel_clock_105_0",
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_1", 
 				  "requires":[{ "requireType":"random", "requireID":"25" }] },
-				{ "nextPhraseID":"ratdom_skel_clock_105_3", 
+				{ "nextPhraseID":"ratdom_skel_clock_105_2", 
 				  "requires":[{ "requireType":"random", "requireID":"33" }] },
-				{ "nextPhraseID":"ratdom_skel_clock_105_4", 
+				{ "nextPhraseID":"ratdom_skel_clock_105_3", 
 				  "requires":[{ "requireType":"random", "requireID":"50" }] },
+				{ "nextPhraseID":"ratdom_skel_clock_105_4" },
 				{ "nextPhraseID":"ratdom_skel_clock_105_5" }]
   },
   {
     "id":"ratdom_skel_clock_105_1",
-    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_110" }],
 	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":105 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":106 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":107 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":108 },
-				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 },
+				{ "rewardType":"changeMapFilter", "mapName":"ratdom_maze_543d", "rewardID":"none" }]
   },
   {
     "id":"ratdom_skel_clock_105_2",
-    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_110" }],
 	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":105 },
 				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":106 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":107 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":108 },
-				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 },
+				{ "rewardType":"changeMapFilter", "mapName":"ratdom_maze_543d", "rewardID":"redtint" }]
   },
   {
     "id":"ratdom_skel_clock_105_3",
-    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_110" }],
 	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":105 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":106 },
 				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":107 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":108 },
-				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 },
+				{ "rewardType":"changeMapFilter", "mapName":"ratdom_maze_543d", "rewardID":"bluetint" }]
   },
   {
     "id":"ratdom_skel_clock_105_4",
-    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_110" }],
 	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":105 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":106 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":107 },
 				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":108 },
-				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":109 },
+				{ "rewardType":"changeMapFilter", "mapName":"ratdom_maze_543d", "rewardID":"greentint" }]
   },
   {
     "id":"ratdom_skel_clock_105_5",
-    "replies":[ { "nextPhraseID":"ratdom_skel_clock_105_x" }],
+    "replies":[ { "nextPhraseID":"ratdom_skel_clock_110" }],
 	"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":105 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":106 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":107 },
 				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_nondisplay", "value":108 },
-				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":109 }]
+				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":109 },
+				{ "rewardType":"changeMapFilter", "mapName":"ratdom_maze_543d", "rewardID":"bw" }]
   },
   {
-    "id":"ratdom_skel_clock_105_x"
+    "id":"ratdom_skel_clock_110"
+  },
+  {
+    "id":"ratdom_skel_mage",
+    "message":"Do not disturb. I have to concentrate, because I am providing the light."
   },
   {
     "id":"ratdom_skeleton_boss1_check_10",
@@ -4011,5 +4196,9 @@
 			"mapName":"ratdom_maze_664"
 		}
 	]
+  },
+  {
+    "id":"do_nothing",
+    "message":"Let's do the bone dance again!"
   }
 ]
