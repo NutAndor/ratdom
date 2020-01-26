@@ -533,6 +533,34 @@
     ]
   },
   {
+    "id":"ratdom_goldHunter_bridge",
+    "message":"You find a wooden plank.",
+    "replies":[
+      {
+        "text":"Let's build a bridge...",
+        "nextPhraseID":"ratdom_goldHunter_bridge_90",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":71,
+			"negate":true
+          }
+        ]
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldHunter_bridge_90",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":71
+		}
+	]
+  },
+  {
     "id":"ratdom_maze_rat1",
     "replies":[
       {
@@ -1977,6 +2005,42 @@
   {
     "id":"ratdom_skeleton_drop",
     "message":"You stopped short under the stare of the skeleton leader."
+  },
+  {
+    "id":"ratdom_uglybrute_script",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_uglybrute_script_10",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":70,
+			"negate":true
+          }
+        ]
+      }        
+	]
+  },
+  {
+    "id":"ratdom_uglybrute_script_10",
+    "message":"What an ugly monster!",
+    "replies":[
+      {
+		"text":"Hey, Ugly!",
+        "nextPhraseID":"ratdom_uglybrute_script_90"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_uglybrute_script_90",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":70
+		}
+	]
   },
   {
     "id":"ratdom_wakeup",
