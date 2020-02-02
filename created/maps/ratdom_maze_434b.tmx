@@ -193,7 +193,7 @@
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMANLATxSJKo74UQeWaBQBIT+XqJATsocNsJqF4RNDf+h4qTG4bEgJdo7pZHcsM3PH46LEYb9+AD5IbDKwrihhzQjRaP24Ug6WMNmjg2/6CLHRdCpA9SQSeafXMJ5IFHSPZgcxt6+iQHPEXzC3I60gSar0WmHZZAfVYUug8lvIQpM4tUQE7afo4UluhpCxc4Q4O88IgIMweivKA3AAASeRiu
+   eJxjYMANLATxSJKo74UQeWaBQBIT+XqJATsocNsJHHr/Q8WJCUMRMv33Es1ueSRzvuHx02Ex8uyjBJCbll5REDfkgG60uNguBEkfa9DEsfkHXey4EO70QQh0otk3l0AaeYRkDza3kZvGkMFTNL8gpyNNoPlaZNphCdRnRaH7UMJLmDKzSAXkpO3nSGGJnrZwgTM0yAuPiDBzIMoLegMADVEYrg==
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
@@ -218,7 +218,7 @@
     <property name="place" value="east"/>
    </properties>
   </object>
-  <object id="76" name="down1" type="mapchange" x="224" y="160" width="32" height="32">
+  <object id="76" name="down1" type="mapchange" x="224" y="192" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_535a"/>
     <property name="place" value="up1"/>

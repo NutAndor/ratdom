@@ -3,7 +3,7 @@
   <segment id="ratdom_level_4" x="0" y="0">
     <map id="ratdom_maze_411" x="0" y="30"/>
     <map id="ratdom_maze_412" x="30" y="30"/>
-    <map id="ratdom_maze_414" x="90" y="60"/>
+    <map id="ratdom_maze_414" x="90" y="30"/>
     <map id="ratdom_maze_415" x="120" y="30" area="ratdom_maze_bloskelt_area" />
     <map id="ratdom_maze_416" x="150" y="30" area="ratdom_maze_bloskelt_area" />
     <map id="ratdom_maze_417" x="180" y="30"/>
@@ -16,7 +16,7 @@
     <map id="ratdom_maze_427" x="195" y="60"/>
     <map id="ratdom_maze_428" x="225" y="60"/>
     <map id="ratdom_maze_434" x="90" y="90"/>
-    <map id="ratdom_maze_434a" x="105" y="90"/>
+    <map id="ratdom_maze_434b" x="105" y="90"/>
     <map id="ratdom_maze_435" x="120" y="90"/>
     <map id="ratdom_maze_436" x="150" y="90"/>
     <map id="ratdom_maze_437" x="180" y="90"/>

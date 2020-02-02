@@ -535,6 +535,34 @@
 		}
     },
     {
+        "id":"ratdom_uglybrute",
+        "name":"Cave troll",
+        "iconID":"monsters_tometik5:14",
+		"maxHP":230,
+		"maxAP":10,
+		"moveCost":5,
+		"monsterClass":"giant",
+		"attackDamage":{
+			"min":1,
+			"max":15
+		},
+		"spawnGroup":"ratdom_uglybrute",
+		"droplistID":"ratdom_uglybrute",
+		"attackCost":5,
+		"attackChance":60,
+		"blockChance":40,
+		"hitEffect":{
+			"conditionsTarget":[
+				{
+					"condition":"stunned",
+					"magnitude":1,
+					"duration":2,
+					"chance":"10"
+				}
+			]
+		}
+    },
+    {
         "id":"ratdom_water_fish1",
         "name":"Fish",
         "iconID":"monsters_rltiles1:147"
