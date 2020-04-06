@@ -1,5 +1,23 @@
 [
     {
+        "id":"ratdom_goldhunter",
+        "name":"Gold hunter",
+        "iconID":"monsters_ld1:82",
+		"maxHP":70,
+		"maxAP":10,
+		"moveCost":5,
+		"monsterClass":"humanoid",
+		"attackDamage":{
+			"min":3,
+			"max":10
+		},
+		"spawnGroup":"ratdom_goldhunter",
+		"droplistID":"ratdom_goldhunter",
+		"attackCost":5,
+		"attackChance":60,
+		"blockChance":40,
+    },
+    {
         "id":"ratdom_gruil",
         "name":"Gruil",
         "iconID":"monsters_rogue1:0",
@@ -541,22 +559,23 @@
 		"maxHP":230,
 		"maxAP":10,
 		"moveCost":5,
+        "movementAggressionType":"wholeMap",
 		"monsterClass":"giant",
 		"attackDamage":{
 			"min":1,
-			"max":15
+			"max":30
 		},
 		"spawnGroup":"ratdom_uglybrute",
 		"droplistID":"ratdom_uglybrute",
 		"attackCost":5,
-		"attackChance":60,
-		"blockChance":40,
+		"attackChance":90,
+		"blockChance":70,
 		"hitEffect":{
 			"conditionsTarget":[
 				{
 					"condition":"stunned",
 					"magnitude":1,
-					"duration":2,
+					"duration":4,
 					"chance":"10"
 				}
 			]

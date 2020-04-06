@@ -74,6 +74,19 @@
             }
         ]
     },
+	{
+		"id":"ratdom_goldhunter",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":30,
+					"max":200
+				}
+			}
+		]
+	},
     {
         "id":"ratdom_skeleton_gold",
         "items":[

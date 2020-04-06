@@ -248,7 +248,7 @@
  </layer>
  <layer name="Light7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz25c7iXG7jgi9OKzG6Rfk0y7CfmZkN2E9CaQqRefPnx6KUkfhPSC4tiaTL2UpCtcdhKKW0Jxgy+cCaUpWvl3JOrFF9aE8gEuu4kt3weDXgCX13Qm
+   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz25k98ZDMbF2x0HVJyDJk+NvXHpJiS9ywxyX3gQy9RKrD10vsWnLF4pJ0QvSZ01muqQkXeGyk1Dc4rOTUDiD0qQmmW6mxL8jUS++sCYmH5Bbxg4WvQDY+2sQ
   </data>
  </layer>
  <layer name="Light8" width="15" height="30">
@@ -269,7 +269,7 @@
     <property name="place" value="north2"/>
    </properties>
   </object>
-  <object id="83" name="north2" type="mapchange" x="416" y="0" width="64" height="64">
+  <object id="83" name="north2" type="mapchange" x="448" y="32" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_524"/>
     <property name="place" value="south1"/>

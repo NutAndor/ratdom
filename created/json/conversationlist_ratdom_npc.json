@@ -53,6 +53,120 @@
         ]
     },
     {
+        "id":"ratdom_goldhunter_talk",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_goldhunter_talk_b"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_goldhunter_talk_b",
+        "switchToNPC":"ratdom_goldhunter",
+        "replies":[
+            {
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_goldhunter",
+                        "value":1,
+						"negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":72
+                    }
+                ],
+                "nextPhraseID":"ratdom_goldhunter_talk_20"
+            },
+            {
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"ratdom_goldhunter",
+                        "value":1,
+						"negate":true
+                    }
+                ],
+                "nextPhraseID":"ratdom_goldhunter_talk_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_goldhunter_talk_10",
+		"message":"No tresspassing! What do you want?"
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_goldhunter_talk_12",
+				"text":"Who are you?"
+            },
+            {
+                "nextPhraseID":"ratdom_goldhunter_talk_12",
+				"text":"Hey, hey - calm down!"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_goldhunter_talk_12",
+		"message":"No - you can't fool me! You just want to steal my gold! Go away!"
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_goldhunter_talk_20",
+				"text":"But..."
+            },
+            {
+                "nextPhraseID":"X",
+				"text":"OK, I'll leave."
+            }
+        ]
+    },
+    {
+        "id":"ratdom_goldhunter_talk_20",
+		"message":"Leave me alone!"
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_goldhunter_talk_30",
+				"text":"May I come to you, so that we could talk a bit?"
+            },
+            {
+                "nextPhraseID":"X",
+				"text":"Well, I'll leave. May you rot among your gold coins."
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":72
+            }
+        ]
+    },
+    {
+        "id":"ratdom_goldhunter_talk_30",
+		"message":"Don't you dare! Put a foot into the water and you are dead!"
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_goldhunter_talk_40",
+				"text":"But how did you get onto your little isle?"
+            },
+            {
+                "nextPhraseID":"X",
+				"text":"Enough. Enjoy yourself."
+            }
+        ]
+    },
+    {
+        "id":"ratdom_goldhunter_talk_40",
+		"message":"You would like to know, he? But I don't tell you!"
+        "replies":[
+            {
+                "nextPhraseID":"X",
+				"text":"Enough. Enjoy yourself."
+            }
+        ]
+    },
+    {
         "id":"ratdom_mikhail",
         "switchToNPC":"ratdom_mikhail",
         "replies":[

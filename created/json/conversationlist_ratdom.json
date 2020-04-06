@@ -533,12 +533,12 @@
     ]
   },
   {
-    "id":"ratdom_goldHunter_bridge",
+    "id":"ratdom_goldhunter_bridge",
     "message":"You find a wooden plank.",
     "replies":[
       {
         "text":"Let's build a bridge...",
-        "nextPhraseID":"ratdom_goldHunter_bridge_90",
+        "nextPhraseID":"ratdom_goldhunter_bridge_90",
         "requires":[
           {
             "requireType":"questProgress",
@@ -551,7 +551,7 @@
 	]
   },
   {
-    "id":"ratdom_goldHunter_bridge_90",
+    "id":"ratdom_goldhunter_bridge_90",
 	"rewards":[
 		{
 			"rewardType":"questProgress",
