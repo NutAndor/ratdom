@@ -20,6 +20,13 @@
         }
     },
     {
+        "id":"ratdom_compass_bwm",
+        "iconID":"items_reterski_1:9",
+        "name":"Blue rat necklace",
+        "displaytype":"rare",
+        "category":"neck",
+    },
+    {
         "id":"ratdom_pickaxe",
         "iconID":"items_misc_5:24",
         "name":"Pickaxe",

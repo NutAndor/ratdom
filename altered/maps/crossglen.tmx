@@ -190,7 +190,7 @@
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
  <tileset firstgid="7793" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
-  <image source="../../created/drawable/map_ratdom.png" width="576" height="192"/>
+  <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
  <layer name="Ground" width="30" height="30">
   <data encoding="base64" compression="zlib">
@@ -240,25 +240,26 @@
     <property name="place" value="entrance"/>
    </properties>
   </object>
-  <object id="3" name="farmhouse" type="mapchange" x="320" y="544" width="32" height="32">
+  <object id="3" name="burhczyd_check1" type="script" x="512" y="640" width="96" height="32"/>
+  <object id="4" name="farmhouse" type="mapchange" x="320" y="544" width="32" height="32">
    <properties>
     <property name="map" value="crossglen_farmhouse"/>
     <property name="place" value="entrance"/>
    </properties>
   </object>
-  <object id="4" name="home" type="mapchange" x="160" y="160" width="32" height="32">
+  <object id="5" name="home" type="mapchange" x="160" y="160" width="32" height="32">
    <properties>
     <property name="map" value="home"/>
     <property name="place" value="entrance"/>
    </properties>
   </object>
-  <object id="5" name="east" type="mapchange" x="928" y="416" width="32" height="64">
+  <object id="6" name="east" type="mapchange" x="928" y="416" width="32" height="64">
    <properties>
     <property name="map" value="wild1"/>
     <property name="place" value="west"/>
    </properties>
   </object>
-  <object id="6" name="smith" type="mapchange" x="128" y="800" width="32" height="32">
+  <object id="7" name="smith" type="mapchange" x="128" y="800" width="32" height="32">
    <properties>
     <property name="map" value="crossglen_smith"/>
     <property name="place" value="entrance"/>
@@ -270,6 +271,7 @@
     <property name="place" value="north"/>
    </properties>
   </object>
+  <object id="9" name="crossglen_fortune_teller" type="script" x="96" y="64" width="32" height="32"/>
   <object id="8" name="west1" type="mapchange" x="0" y="32" width="32" height="160">
    <properties>
     <property name="map" value="ratdom_bwm1"/>

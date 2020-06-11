@@ -21,6 +21,19 @@
 		]
 	},
 	{
+		"id":"ratdom_drop_compass_bwm",
+		"items":[
+			{
+				"itemID":"ratdom_compass_bwm",
+				"chance":"100",
+				"quantity":{
+					"min":1,
+					"max":1
+				}
+			}
+		]
+	},
+	{
 		"id":"container_rock_1",
 		"items":[
 			{
