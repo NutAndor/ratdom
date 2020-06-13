@@ -23,6 +23,7 @@
         "id":"ratdom_compass_bwm",
         "iconID":"items_reterski_1:9",
         "name":"Blue rat necklace",
+        "description":"This necklace will work as compass towards the sky.",
         "displaytype":"rare",
         "category":"neck",
     },

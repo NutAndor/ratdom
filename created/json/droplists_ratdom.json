@@ -184,7 +184,7 @@
 		]
 	},
     {
-        "id":"ratdom_maze_center",
+        "id":"ratdom_mz_center",
         "items":[
             {
                 "itemID":"ratdom_rat_skelett_leg",

@@ -740,7 +740,8 @@
         "message":"It is deep in the rat cave, of course. Use your eyes.",
         "replies":[
             {
-                "text":"In our supply cave? That should be easy."
+                "text":"In our supply cave? That should be easy.",
+				"nextPhraseID":"X"
 			},
             {
                 "text":"There is a nice new statue in the cave.",
@@ -847,7 +848,8 @@
         "message":"I hope  you finally have found my artefact?",
         "replies":[
             {
-                "text":"Eh, no, not yet."
+                "text":"Eh, no, not yet.",
+				"nextPhraseID":"X"
             }
         ]
     },

@@ -181,7 +181,8 @@
     "message":"Good bye, my friend.",
     "replies":[
       {
-        "text":"Good bye. * Sob *"
+        "text":"Good bye. * Sob *",
+        "nextPhraseID":"X"
       }
     ]
   },
@@ -1312,7 +1313,167 @@
     "id":"ratdom_rat_conv1",
     "replies":[
       {
-        "nextPhraseID":"ratdom_rat_conv2"
+        "nextPhraseID":"ratdom_rat_conv2c"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c",
+    "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2c_1",
+		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_2",
+		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_2", "value":1 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_3",
+		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_3", "value":1 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_4",
+		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_4", "value":1 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_5",
+		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_5", "value":1 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_0"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_0",
+    "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2",
+		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":30 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_0b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_0b",
+    "rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":30 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":31 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":32 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":33 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":34 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":35 }],
+    "replies":[
+      { "nextPhraseID":"ratdom_rat_conv2"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_1",
+    "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2",
+		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":31 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_1b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_1b",
+    "rewards":[ { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":30 },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":31 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":32 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":33 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":34 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":35 }],
+    "replies":[
+      { "nextPhraseID":"ratdom_rat_conv2"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_2",
+    "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2",
+		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":32 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_2b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_2b",
+    "rewards":[ { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":30 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":31 },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":32 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":33 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":34 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":35 }],
+    "replies":[
+      { "nextPhraseID":"ratdom_rat_conv2"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_3",
+    "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2",
+		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":33 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_3b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_3b",
+    "rewards":[ { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":30 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":31 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":32 },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":33 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":34 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":35 }],
+    "replies":[
+      { "nextPhraseID":"ratdom_rat_conv2"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_4",
+    "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2",
+		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":34 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_4b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_4b",
+    "rewards":[ { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":30 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":31 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":32 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":33 },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":34 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":35 }],
+    "replies":[
+      { "nextPhraseID":"ratdom_rat_conv2"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_5",
+    "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2",
+		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":35 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2c_5b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2c_5b",
+    "rewards":[ { "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":30 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":31 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":32 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":33 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"ratdom_maze", "value":34 },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":35 }],
+    "replies":[
+      { "nextPhraseID":"ratdom_rat_conv2"
       }
     ]
   },
@@ -1333,20 +1494,16 @@
   {
     "id":"ratdom_rat_conv2_1",
     "replies":[
-      {	"nextPhraseID":"X",
-		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":999 }]
+      {	"nextPhraseID":"ratdom_rat_conv2_30",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":200 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_20",
-		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":8 }]
-      },
-      {	"nextPhraseID":"X",
-		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":7 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":80 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_10",
-		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":3 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":20 }]
       },
-      {	"nextPhraseID":"X",
-		"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_conv2", "value":2 }]
+      {	"nextPhraseID":"ratdom_rat_conv2_1b"
       }
     ]
   },
@@ -1401,8 +1558,8 @@
 	"message":"If you want to get out, just follow the rats. They show you the way.",
     "replies":[
       {
-        "text":"Of course.",
-		"nextPhraseID":"ratdom_rat_conv2_1b"
+        "text":"Nonsense.",
+		"nextPhraseID":"ratdom_rat_conv2_20d"
       },
       {
         "text":"What do you mean?",
@@ -1412,7 +1569,7 @@
   },
   {
     "id":"ratdom_rat_conv2_20d",
-	"message":"Don't tell me that you didn't recognize it? That my fellow rats are always running to the exit?",
+	"message":"Don't tell me that you didn't recognize it? That my fellow rats are always running towards the exit?",
     "replies":[
       {
         "text":"Eh, of course I did.",
@@ -1425,10 +1582,21 @@
     ]
   },
   {
+    "id":"ratdom_rat_conv2_30",
+	"switchToNPC":"ratdom_rat",
+    "message":"Ah, I love these tunnels!",
+    "replies":[
+      {
+        "text":"Me, I loath these tunnels by now.",
+		"nextPhraseID":"ratdom_rat_conv2_1b"
+      }
+    ]
+  },
+  {
     "id":"ratdom_rat_conv3",
     "replies":[
       {
-        "nextPhraseID":"ratdom_rat_conv2"
+        "nextPhraseID":"ratdom_rat_conv2c"
       }
     ]
   },

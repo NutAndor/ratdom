@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextobjectid="37">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextobjectid="40">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -184,7 +184,7 @@
  </layer>
  <layer name="Objects" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYCAeGIlA8CgY/GAH80C7YBSMglEwCkbBKBi5AACRewFI
+   eJxjYCAeGIlA8CgY/GAH80C7YBSQA36PxtsoGAWjYBQMCwAAVjICRg==
   </data>
  </layer>
  <layer name="Above" width="30" height="20">
@@ -247,6 +247,11 @@
    eJztk0EKgDAMBNtH+P+vijcpm3Z3FEExkEPaJhOyad9a64UfNsbj2RP+Ve7K3DeOdopJelL59I5wXX1UH5Sb7IXiqjjhJbo5O0B3NOFStjOTWU+EW7GqOOU6luxQyk3nsMqfzYFocK7l1HbneFVv+ifuzvv9vb4D+1slCw==
   </data>
  </layer>
+ <layer name="Compass" width="30" height="20" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwrk2FgKBvFo3gUj+JRPIpH8SgexVTDANM6VkA=
+  </data>
+ </layer>
  <objectgroup name="Mapevents" visible="0">
   <object id="1" name="east" type="mapchange" x="928" y="128" width="32" height="32">
    <properties>
@@ -307,6 +312,7 @@
    </properties>
   </object>
   <object id="35" name="ratdom_maze_rat1" type="script" x="512" y="320" width="192" height="64"/>
+  <object id="37" name="ratdom_drop_compass_bwm" type="container" x="576" y="224" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="34" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
@@ -415,6 +421,22 @@
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="8"/>
+   </properties>
+  </object>
+  <object id="38" name="ratdom_rat_conv2:0" type="replace" x="0" y="384" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Top"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="30"/>
+   </properties>
+  </object>
+  <object id="39" name="ratdom_rat_conv2:1" type="replace" x="0" y="384" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Compass"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="31"/>
    </properties>
   </object>
  </objectgroup>

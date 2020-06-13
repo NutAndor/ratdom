@@ -279,7 +279,6 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="36" name="ratdom_drop_compass_bwm" type="container" x="64" y="160" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="35" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
