@@ -1,4 +1,129 @@
 [
+    {
+        "id":"ratdom_dev_info",
+        "message":"Hello adventurer!\nYou are visiting a new area, still under construction.\n\nHere some general infos about it.",
+        "replies":[
+            {
+                "text":"Further info",
+                "nextPhraseID":"ratdom_dev_info_10"
+            },
+            {
+                "text":"Just get the compass",
+                "nextPhraseID":"ratdom_dev_info_90"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_10",
+        "message":"This area is made for rather high level players: Lodar, Charwood and the supply cave are mandatory.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_dev_info_12"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_12",
+        "message":"The maze is about 50% complete. It is already a really vast area of rather similar looking maps. \nThis is intentionally. This area looks and feels differently, and is a challenge also for the high level players that simply run though new areas without any effort.",
+        "replies":[
+            {
+                "text":"The plot",
+                "nextPhraseID":"ratdom_dev_info_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_20",
+        "message":"You have a dream about Crossglen beeing taken over by rats, and you have to free it again with the help of a smart cheeky rat. \nIt is not sure, if it is really a dream - who knows? I tend to let it open.\nAnyway the maze will be left open to visit, so it has some kind of reality.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_dev_info_22"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_22",
+        "message":"To find out of the dream, you have to help Clevred to find the artifact - which is in fact a very big round cheese. \nTo find it, you'll have to collect several parts of a rat skelet (7) and thus get access to the end place. \nGet the artifact and go home again.",
+        "replies":[
+            {
+                "text":"Lighting",
+                "nextPhraseID":"ratdom_dev_info_40"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_40",
+        "message":"Torch: You need to use a torch to have light on your way, and you only see the near parts of a map. \nThe torch must be worn as a bihander, which will probably offend some players ...",
+        "replies":[
+            {
+                "text":"Finding the way",
+                "nextPhraseID":"ratdom_dev_info_42"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_42",
+        "message":"There will be no world map, and even map drawing is difficult, because of the 3D maze with non-quadratic fields :D \nThe following 2 things help:",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_dev_info_44"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_44",
+        "message":"Rats: You may find out yourself, or you are told by Clevred after some time wandering: If you just want to get out again: Look for the passages whith rats in front of it - they are leading to the entrance.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_dev_info_46"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_46",
+        "message":"Compass: After you finally have found your way through the maze, you get a compass, that will mark the correct passages to find your way again more easily in the future.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_dev_info_48"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_48",
+        "message":"I plan let outs on top of BW mountains. There will be some view maybe, but no connection to Prim or anywhere else - so no shortcut.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_dev_info_50"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_50",
+        "message":"Hope you'll like it. Remember, it's still under construction. The maze will be completed. And there will be added little objects, monsters, little scenes, loot, etc. for athmosphere.",
+        "replies":[
+            {
+                "text":"At last: Get the compass",
+                "nextPhraseID":"ratdom_dev_info_90"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_90",
+        "message":"Now here's the compass. Be sure to wear it for activation. (Marrowtaint owner will hate me ... :D) I am sure you see immediatly how he works.",
+		"rewards":[
+		{
+			"rewardType":"giveItem",
+			"rewardID":"ratdom_compass_bwm",
+			"value":1
+		}
+	]
+    },
   {
     "id":"crossglen_ratdom_key",
     "message":"This must be a bad dream.",
@@ -540,6 +665,12 @@
         "nextPhraseID":"ratdom_goldhunter_bridge_10",
         "requires":[
 			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":71,
+				"negate":true
+			},
+			{
 				"requireType":"killedMonster",
 				"requireID":"ratdom_goldhunter",
 				"value":1
@@ -550,7 +681,7 @@
   },
   {
     "id":"ratdom_goldhunter_bridge_10",
-    "message":"A wooden plank.",
+    "message":"A wooden plank - hmm ...",
     "replies":[
       {
         "text":"That's exactly what I need! Let's build a bridge...",
@@ -2482,6 +2613,10 @@
   },
   {
     "id":"ratdom_underconstruction",
+	"message":"Under Construction!"
+  },
+  {
+    "id":"ratdom_underconstruction_01",
     "replies":[
       {
         "nextPhraseID":"ratdom_underconstruction_02",

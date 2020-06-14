@@ -8,6 +8,7 @@
 		"moveCost":5,
         "unique":1,
 		"monsterClass":"humanoid",
+        "movementAggressionType":"wholeMap",
 		"attackDamage":{
 			"min":3,
 			"max":10

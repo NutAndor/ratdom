@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="92">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="98">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,7 +193,7 @@
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFIw0cFqPcjIWslJsxCkbBKICAFoGhp3c4AQCmCAM8
+   eJxjYBh40CIw9PSCwEYxyvQPlN2HqeDuhayUmzEKRsEoGAWDAQAA/I8Eyg==
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccjB5GMCnDpseUvVjU4cNkOI+YgCx/idFH7HuJ0UvsfooibuRjCkJb3rH8VBNV0NNLzXDmVi9+AC5+vCZQUgNLjlS/IXLXFrHO7J+ACrq+xY=
+   eJzbKMbAsBEHBgFccjB5GMCnDpsedDYp+tDdh8sdxLiPECDW/6Tow6ef1HAkVR+hsCHF7aTaOdT1khve9I7jwZiuhqNeaoYzsXrxAXL14TODkBpccqT4C5e5tI53ZP0AFSH5iA==
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -274,13 +274,13 @@
     <property name="place" value="north2"/>
    </properties>
   </object>
-  <object id="82" name="north2" type="mapchange" x="416" y="0" width="64" height="64">
+  <object id="82" name="north2" type="mapchange" x="448" y="32" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_648"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
-  <object id="83" name="north1" type="mapchange" x="0" y="0" width="64" height="64">
+  <object id="83" name="north1" type="mapchange" x="0" y="32" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_647"/>
     <property name="place" value="south2"/>
@@ -324,6 +324,18 @@
   <object id="61" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="62" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="63" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="92" name="south2_skeldance" type="mapchange" x="160" y="224" width="32" height="32">
+   <properties>
+    <property name="map" value="ratdom_maze_627"/>
+    <property name="place" value="north1"/>
+   </properties>
+  </object>
+  <object id="93" name="south1_roundlings" type="mapchange" x="128" y="160" width="32" height="32">
+   <properties>
+    <property name="map" value="ratdom_maze_543"/>
+    <property name="place" value="north2"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
@@ -340,7 +352,16 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
+ <objectgroup name="keys">
+  <object id="97" name="ratdom_underconstruction" type="key" x="96" y="64" width="32" height="96">
+   <properties>
+    <property name="phrase" value="ratdom_underconstruction"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="4711"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>

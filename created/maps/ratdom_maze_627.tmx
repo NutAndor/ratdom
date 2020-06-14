@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="61">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="64">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,7 +193,7 @@
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAP4uQYGOKBWBOIi9AwsSAOi34YeChEWL8WmfbSQ+8THO4nx14BYcrdDAKU6B3OAFdcEQMeU6B3KAE+4YF2AQPDoxES1riAPRtuOULlpT+SXncK8j+y3t1IdhITN25AvaZk2g3SC8ImUEwI7ODD1AvDpAAA+usfGQ==
+   eJzbKMbAsBGIcYE4OQaGeCDWBOIiNLyRgF5kM9D1w8BDIcL6tXDoJQbQWu8THO4nx14BYcrdDAKU6B3OAFdcEQMeU6B3KAE+4YF2AQPDoxES1riAPRtuOULlpT+SXncK8j+y3t1IdhITN25AvaZk2g3SC8ImUEwI7ODD1AvDpAAAdT0iNQ==
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
@@ -282,8 +282,8 @@
   </object>
   <object id="33" name="north1" type="mapchange" x="0" y="0" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_617"/>
-    <property name="place" value="south2"/>
+    <property name="map" value="ratdom_maze_467"/>
+    <property name="place" value="south2_skeldance"/>
    </properties>
   </object>
   <object id="34" name="ratdom_maze_light1" type="script" x="0" y="0" width="128" height="192">
@@ -444,6 +444,22 @@
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="8"/>
+   </properties>
+  </object>
+  <object id="61" name="ratdom_rat_conv2:0" type="replace" x="160" y="32" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Top"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="30"/>
+   </properties>
+  </object>
+  <object id="62" name="ratdom_rat_conv2:1" type="replace" x="160" y="32" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Compass"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="31"/>
    </properties>
   </object>
  </objectgroup>
