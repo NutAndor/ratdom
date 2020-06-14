@@ -286,22 +286,22 @@
     <property name="place" value="south2"/>
    </properties>
   </object>
-  <object id="56" name="ratdom_maze_light1" type="script" x="0" y="0" width="128" height="192">
+  <object id="56" name="ratdom_maze_light4" type="script" x="0" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="57" name="ratdom_maze_light2" type="script" x="352" y="0" width="128" height="192">
+  <object id="57" name="ratdom_maze_light3" type="script" x="352" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="58" name="ratdom_maze_light3" type="script" x="0" y="736" width="128" height="192">
+  <object id="58" name="ratdom_maze_light2" type="script" x="0" y="736" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="59" name="ratdom_maze_light4" type="script" x="352" y="768" width="128" height="192">
+  <object id="59" name="ratdom_maze_light1" type="script" x="352" y="768" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>

@@ -535,19 +535,26 @@
   },
   {
     "id":"ratdom_goldhunter_bridge",
-    "message":"You find a wooden plank.",
     "replies":[
       {
-        "text":"Let's build a bridge...",
-        "nextPhraseID":"ratdom_goldhunter_bridge_90",
+        "nextPhraseID":"ratdom_goldhunter_bridge_10",
         "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_nondisplay",
-            "value":71,
-			"negate":true
-          }
+			{
+				"requireType":"killedMonster",
+				"requireID":"ratdom_goldhunter",
+				"value":1
+			}
         ]
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bridge_10",
+    "message":"A wooden plank.",
+    "replies":[
+      {
+        "text":"That's exactly what I need! Let's build a bridge...",
+        "nextPhraseID":"ratdom_goldhunter_bridge_90"
       }        
 	]
   },
@@ -2196,12 +2203,35 @@
     "replies":[
       {
 		"text":"Hey, Ugly!",
+        "nextPhraseID":"ratdom_uglybrute_script_20"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_uglybrute_script_20",
+	"switchToNPC":"ratdom_uglybrute",
+    "message":"Roar?",
+    "replies":[
+      {
+		"text":"Fortunately for you there is no mirror here.",
+        "nextPhraseID":"ratdom_uglybrute_script_30"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_uglybrute_script_30",
+    "message":"ROAR!!",
+    "replies":[
+      {
+		"text":"Aww, is the little brute angry now?",
         "nextPhraseID":"ratdom_uglybrute_script_90"
       }        
 	]
   },
   {
     "id":"ratdom_uglybrute_script_90",
+	"switchToNPC":"ratdom_uglybrute",
+    "message":"It is ENOUGH now! I'll teach you manners!",
 	"rewards":[
 		{
 			"rewardType":"questProgress",
@@ -3451,17 +3481,17 @@
 		{
 			"rewardType":"removeSpawnArea",
 			"rewardID":"ratdom_well_wise1",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_768"
 		},
 		{
 			"rewardType":"removeSpawnArea",
 			"rewardID":"ratdom_well_wise2",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_768"
 		},
 		{
 			"rewardType":"spawnAll",
 			"rewardID":"ratdom_well_wise3",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_768"
 		},
 		{
 			"rewardType":"questProgress",
@@ -3890,7 +3920,7 @@
 		{
 			"rewardType":"removeSpawnArea",
 			"rewardID":"ratdom_well_wise3",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_768"
 		},
 		{
 			"rewardType":"removeQuestProgress",
@@ -4262,12 +4292,12 @@
 		{
 			"rewardType":"removeSpawnArea",
 			"rewardID":"ratdom_well_wise1",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_768"
 		},
 		{
 			"rewardType":"spawnAll",
 			"rewardID":"ratdom_well_wise2",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_768"
 		}
 	]
   },
@@ -4293,12 +4323,12 @@
 		{
 			"rewardType":"removeSpawnArea",
 			"rewardID":"ratdom_well_wise2",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_768"
 		},
 		{
 			"rewardType":"spawnAll",
 			"rewardID":"ratdom_well_wise1",
-			"mapName":"ratdom_maze_568"
+			"mapName":"ratdom_maze_768"
 		}
 	]
   },

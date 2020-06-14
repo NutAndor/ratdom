@@ -420,7 +420,7 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object name="ratdom_rat_conv2:0" type="replace" x="160" y="32" width="32" height="32" visible="0">
+  <object name="ratdom_rat_conv2:0" type="replace" x="320" y="32" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Top"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -428,7 +428,7 @@
     <property name="requireValue" value="30"/>
    </properties>
   </object>
-  <object name="ratdom_rat_conv2:1" type="replace" x="160" y="32" width="32" height="32" visible="0">
+  <object name="ratdom_rat_conv2:1" type="replace" x="320" y="32" width="32" height="32">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>

@@ -193,7 +193,7 @@
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFIw0cFqPcjIWslJsxCkbBKBgFgwEAAHQqAYA=
+   eJxjYBgFIw0cFqPcjIWslJsxCkbBKICAFoGhp3c4AQCmCAM8
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
@@ -236,7 +236,7 @@
    eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwcgczTx6LPBoQ8GtMiwE9nueCz2E9KHbgaxbsWnnxy9IDCql3gAADm+th8=
   </data>
  </layer>
- <layer name="Light5" width="15" height="30">
+ <layer name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBg5wEeOgcFPjjx9RUBsBcS+JJgB04eMrYjQj00fDNvg0YtPHyG7tQjoxWc3MXqx2Q1yrzURepHDHoaJ0TOKR/EoHsXEYAAP7r0K
   </data>

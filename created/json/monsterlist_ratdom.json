@@ -6,6 +6,7 @@
 		"maxHP":70,
 		"maxAP":10,
 		"moveCost":5,
+        "unique":1,
 		"monsterClass":"humanoid",
 		"attackDamage":{
 			"min":3,
@@ -558,7 +559,7 @@
         "iconID":"monsters_tometik5:14",
 		"maxHP":230,
 		"maxAP":10,
-		"moveCost":5,
+		"moveCost":2,
         "movementAggressionType":"wholeMap",
 		"monsterClass":"giant",
 		"attackDamage":{
