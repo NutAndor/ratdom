@@ -1,6 +1,22 @@
 [
     {
         "id":"ratdom_dev_info",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_dev_info_2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":900,
+						"negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_2",
         "message":"Hello adventurer!\nYou are visiting a new area, still under construction.\n\nHere some general infos about it.",
         "replies":[
             {
@@ -655,6 +671,213 @@
         "rewardType":"questProgress",
         "rewardID":"ratdom_nondisplay",
         "value":3
+      }
+    ]
+  },
+  {
+    "id":"ratdom_ghost1",
+    "rewards":[
+      {
+        "rewardType":"removeQuestProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":81
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":82
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":83
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":84
+      },
+	  {
+		"rewardType":"removeSpawnArea",
+		"rewardID":"ratdom_ghost1",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost2",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost3",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost4",
+		"mapName":"ratdom_maze_648"
+	  }
+    ]
+  },
+  {
+    "id":"ratdom_ghost2",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":81
+      },
+      {
+        "rewardType":"removeQuestProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":82
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":83
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":84
+      },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost1",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"removeSpawnArea",
+		"rewardID":"ratdom_ghost2",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost3",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost4",
+		"mapName":"ratdom_maze_648"
+	  }
+    ]
+  },
+  {
+    "id":"ratdom_ghost3",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":81
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":82
+      },
+      {
+        "rewardType":"removeQuestProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":83
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":84
+      },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost1",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost2",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"removeSpawnArea",
+		"rewardID":"ratdom_ghost3",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost4",
+		"mapName":"ratdom_maze_648"
+	  }
+    ]
+  },
+  {
+    "id":"ratdom_ghost4",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":81
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":82
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":83
+      },
+      {
+        "rewardType":"removeQuestProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":84
+      },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost1",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost2",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"spawnAll",
+		"rewardID":"ratdom_ghost3",
+		"mapName":"ratdom_maze_648"
+	  },
+	  {
+		"rewardType":"removeSpawnArea",
+		"rewardID":"ratdom_ghost4",
+		"mapName":"ratdom_maze_648"
+	  }
+    ]
+  },
+  {
+    "id":"ratdom_goldhunter_bone",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_goldhunter_bone_10",
+        "requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_rat_skelett",
+				"value":51,
+				"negate":true
+			}
+        ]
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bone_10",
+    "message":"You grab the content of the gold hunters chest: Some gold nuggets - and a leg bone of a rat!?",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_rat_skelett",
+        "value":51
       }
     ]
   },
@@ -1922,27 +2145,6 @@
     "message":"When will you finally try to use the pickaxe?"
   },
   {
-    "id":"ratdom_skeleton_boss1_check",
-    "replies":[
-      {
-        "nextPhraseID":"ratdom_skeleton_boss1_check_10",
-        "requires":[
-          {
-            "requireType":"killedMonster",
-            "requireID":"ratdom_skeleton_boss1",
-            "value":1
-          },
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_skeleton",
-            "value":90,
-			"negate":true
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id":"ratdom_skel_bone",
     "replies":[
       {
@@ -2266,6 +2468,27 @@
   {
     "id":"ratdom_skel_mage",
     "message":"Do not disturb. I have to concentrate, because I am providing the light."
+  },
+  {
+    "id":"ratdom_skeleton_boss1_check",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_skeleton_boss1_check_10",
+        "requires":[
+          {
+            "requireType":"killedMonster",
+            "requireID":"ratdom_skeleton_boss1",
+            "value":1
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_skeleton",
+            "value":90,
+			"negate":true
+          }
+        ]
+      }
+    ]
   },
   {
     "id":"ratdom_skeleton_boss1_check_10",
@@ -2661,7 +2884,7 @@
   },
   {
     "id":"ratdom_underconstruction_20",
-    "message":"* Create the missing 95% of the maze \n* Fill caves with decoration (skeletons, etc) \n* Some little quest here and there \n* Some nice details, this and that",
+    "message":"* Create the missing 50% of the maze \n* Fill caves with decoration (skeletons, etc) \n* Some little quest here and there \n* Some nice details, this and that",
     "replies":[
       {
         "text":"N",

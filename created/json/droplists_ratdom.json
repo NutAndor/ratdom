@@ -21,6 +21,19 @@
 		]
 	},
 	{
+		"id":"container_gold_200_500",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":200,
+					"max":500
+				}
+			}
+		]
+	},
+	{
 		"id":"ratdom_drop_compass_bwm",
 		"items":[
 			{
@@ -88,7 +101,7 @@
         ]
     },
 	{
-		"id":"ratdom_goldhunter",
+		"id":"ratdom_goldhunter_drop",
 		"items":[
             {
                 "itemID":"ratdom_rat_skelett_leg",

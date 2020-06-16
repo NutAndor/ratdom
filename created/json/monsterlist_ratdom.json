@@ -1,5 +1,48 @@
 [
     {
+        "id":"tough_cave_rat3",
+        "name":"Tough cave rat",
+        "iconID":"monsters_rats:1",
+        "maxHP":5,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":3,
+            "max":3
+        },
+        "spawnGroup":"ratdom_maze_rat",
+        "droplistID":"rat",
+        "attackCost":5,
+        "attackChance":90
+    },
+    {
+        "id":"ratdom_ghost1",
+        "name":"Ghost",
+        "iconID":"monsters_tometik2:65",
+		"moveCost":5,
+		"spawnGroup":"ratdom_ghost3",
+    },
+    {
+        "id":"ratdom_ghost2",
+        "name":"Ghost",
+        "iconID":"monsters_tometik8:24",
+		"moveCost":5,
+		"spawnGroup":"ratdom_ghost1",
+    },
+    {
+        "id":"ratdom_ghost3",
+        "name":"Ghost",
+        "iconID":"monsters_tometik8:50",
+		"moveCost":5,
+		"spawnGroup":"ratdom_ghost3",
+    },
+    {
+        "id":"ratdom_ghost4",
+        "name":"Ghost",
+        "iconID":"monsters_wraiths:0",
+		"moveCost":5,
+		"spawnGroup":"ratdom_ghost4",
+    },
+    {
         "id":"ratdom_goldhunter",
         "name":"Gold hunter",
         "iconID":"monsters_ld1:82",
@@ -14,7 +57,7 @@
 			"max":10
 		},
 		"spawnGroup":"ratdom_goldhunter",
-		"droplistID":"ratdom_goldhunter",
+		"droplistID":"container_gold_200_500",
 		"attackCost":5,
 		"attackChance":60,
 		"blockChance":40,
@@ -491,7 +534,7 @@
     {
         "id":"ratdom_skeleton_boss1",
         "name":"Roskelt",
-        "iconID":"monsters_tometik8:44",
+        "iconID":"monsters_tometik8:43",
         "maxHP":100,
         "maxAP":10,
         "monsterClass":"construct",
@@ -510,7 +553,7 @@
     {
         "id":"ratdom_skeleton_boss2",
         "name":"Bloskelt",
-        "iconID":"monsters_tometik8:43",
+        "iconID":"monsters_tometik8:44",
         "maxHP":100,
         "maxAP":10,
         "monsterClass":"construct",

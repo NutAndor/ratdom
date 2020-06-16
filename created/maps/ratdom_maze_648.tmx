@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="74">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="96">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,12 +193,12 @@
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYCAf/BGlQPMoGAWjYBSMglGABAaqTgEAxssCIw==
+   eJxjYCAf/BGlQPMwA1yCDAzcggPtilEwmMFDSQaGR5ID7YpRMFyA8DAsbwaqTgEAPc0Ecw==
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OQwxS6L4dGAA8D0XELSa4rFbGzgEg77iNU/XAE58QADlIbdULX7MAV6caVDfGCg3DpQegcqbkH6yIkfEKB3mhgF1AWU5DFkAACjehL6
+   eJxjYMAN3OQwxS6L4dFAAFxC0muKxWwYyATKZQFxNhY1rnKE9WMDxnLY/YMMfgkwMPwWwK6PkF5c9pGqF10fLr2UxAOpYTcQdqOHAQi7A/FhNLtdSQhjdL2kAFjavSgJZEsSp4eScKLEraToRQ9fdEBsegSBgUpXIH2XyNRLjTRBCWAWROXDyr5wMsocZOBKgd5wCvRmkqgXOc2Q6mZYeiWmbEcHIPUmSGkaAKQiKAc=
   </data>
  </layer>
  <layer name="Top" width="15" height="30" visible="0">
@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30">
+ <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccjB5QmqI0U+MGdjUYAOkmE8MINb9pOgj1v2k6KVl2FNTL6XphlruJlX/QOillj562DnQ6Wog9FIznInViw+Qqw+fGYTU4JIjxV/I6kjRB1NPanxjwwAza/Zs
+   eJzbKMbAsBEHBgFccjB5QmqI0U+MGdjUYAOkmE8MINX9pIQJqfbh00vLsKemXkrTDbXcTap+auill3uxgeGergZCLzXDmVi96OqJ1U8sINWduORI8Rc5/kHWS2p8Y8MAvML6Tw==
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -259,6 +259,16 @@
  <layer name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxTk2NgUBvFo3gUj+JRPIpHKAYAFCd3iQ==
+  </data>
+ </layer>
+ <layer name="Walk_ghost_off" width="15" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzVk8ENwCAMA5mi+6/AhhUPpArFxjbto5Z4hOQCMW2/WutgDaHczO9qFL7qse7N+LlfifVneSTmBapj8e58xZuKfdP7L1n1u0HeKJ6rPdOZU/bEZ4dH3ilviTj1HqlHf2Qdnx2W9VtzqLaKFbkzJjOw/8PhqjmTNXQDUSrlUg==
+  </data>
+ </layer>
+ <layer name="Walk_ghost_on" width="15" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzVk8ENwCAMA5mC/Vdgw6oPpD5w40sDUi3xii9KrDB6a0O8W6o265HH4Z89HBGvYjP82/yUJbzDVmR/gnXvJiMyN529gv2SM+FJNtU5ZzP6I0uzcdioX+RXLJW7o6orP7m/Xf9jxV5IYccB
   </data>
  </layer>
  <objectgroup name="Mapevents" visible="0">
@@ -324,19 +334,41 @@
   <object id="58" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32" visible="0"/>
   <object id="59" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="60" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="92" name="ratdom_ghost1" type="script" x="160" y="288" width="192" height="160" visible="0"/>
+  <object id="93" name="ratdom_ghost2" type="script" x="128" y="96" width="160" height="192" visible="0"/>
+  <object id="94" name="ratdom_ghost3" type="script" x="160" y="480" width="160" height="160" visible="0"/>
+  <object id="95" name="ratdom_ghost4" type="script" x="288" y="736" width="64" height="128" visible="0"/>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup name="Spawn">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
-   <properties>
-    <property name="quantity" value="2"/>
-    <property name="spawngroup" value="cavesnake2"/>
-   </properties>
-  </object>
   <object id="46" name="ratdom_maze_rat" type="spawn" x="64" y="32" width="128" height="192">
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>
+   </properties>
+  </object>
+  <object id="80" name="ratdom_ghost1" type="spawn" x="32" y="352" width="416" height="32">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ratdom_ghost1"/>
+   </properties>
+  </object>
+  <object id="81" name="ratdom_ghost2" type="spawn" x="192" y="64" width="288" height="160">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ratdom_ghost2"/>
+   </properties>
+  </object>
+  <object id="82" name="ratdom_ghost3" type="spawn" x="32" y="544" width="416" height="32">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ratdom_ghost3"/>
+   </properties>
+  </object>
+  <object id="83" name="ratdom_ghost4" type="spawn" x="352" y="736" width="128" height="224">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ratdom_ghost4"/>
    </properties>
   </object>
  </objectgroup>
@@ -414,7 +446,7 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object name="ratdom_rat_conv2:0" type="replace" x="96" y="736" width="32" height="32" visible="0">
+  <object id="74" name="ratdom_rat_conv2:0" type="replace" x="96" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Top"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -422,12 +454,80 @@
     <property name="requireValue" value="30"/>
    </properties>
   </object>
-  <object name="ratdom_rat_conv2:1" type="replace" x="96" y="736" width="32" height="32" visible="0">
+  <object id="75" name="ratdom_rat_conv2:1" type="replace" x="96" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="31"/>
+   </properties>
+  </object>
+  <object id="84" name="ratdom_rat_ghost:1" type="replace" x="32" y="320" width="416" height="96" visible="0">
+   <properties>
+    <property name="Walkable" value="Walk_ghost_on"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="81"/>
+   </properties>
+  </object>
+  <object id="85" name="ratdom_rat_ghost:1x" type="replace" x="32" y="320" width="416" height="96" visible="0">
+   <properties>
+    <property name="Walkable" value="Walk_ghost_off"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="81"/>
+   </properties>
+  </object>
+  <object id="86" name="ratdom_rat_ghost:2" type="replace" x="192" y="64" width="288" height="160" visible="0">
+   <properties>
+    <property name="Walkable" value="Walk_ghost_on"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="82"/>
+   </properties>
+  </object>
+  <object id="87" name="ratdom_rat_ghost:2x" type="replace" x="192" y="64" width="288" height="160" visible="0">
+   <properties>
+    <property name="Walkable" value="Walk_ghost_off"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="82"/>
+   </properties>
+  </object>
+  <object id="88" name="ratdom_rat_ghost:3" type="replace" x="32" y="512" width="416" height="96" visible="0">
+   <properties>
+    <property name="Walkable" value="Walk_ghost_on"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="83"/>
+   </properties>
+  </object>
+  <object id="89" name="ratdom_rat_ghost:3x" type="replace" x="32" y="512" width="416" height="96" visible="0">
+   <properties>
+    <property name="Walkable" value="Walk_ghost_off"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="83"/>
+   </properties>
+  </object>
+  <object id="90" name="ratdom_rat_ghost:4" type="replace" x="352" y="736" width="128" height="224" visible="0">
+   <properties>
+    <property name="Walkable" value="Walk_ghost_on"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="84"/>
+   </properties>
+  </object>
+  <object id="91" name="ratdom_rat_ghost:4x" type="replace" x="352" y="736" width="128" height="224" visible="0">
+   <properties>
+    <property name="Walkable" value="Walk_ghost_off"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="84"/>
    </properties>
   </object>
  </objectgroup>
