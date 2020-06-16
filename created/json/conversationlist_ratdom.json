@@ -678,22 +678,22 @@
     "id":"ratdom_ghost1",
     "rewards":[
       {
-        "rewardType":"removeQuestProgress",
+        "rewardType":"questProgress",
         "rewardID":"ratdom_nondisplay",
         "value":81
       },
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":82
       },
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":83
       },
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":84
       },
@@ -723,22 +723,22 @@
     "id":"ratdom_ghost2",
     "rewards":[
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":81
       },
       {
-        "rewardType":"removeQuestProgress",
+        "rewardType":"questProgress",
         "rewardID":"ratdom_nondisplay",
         "value":82
       },
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":83
       },
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":84
       },
@@ -768,22 +768,22 @@
     "id":"ratdom_ghost3",
     "rewards":[
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":81
       },
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":82
       },
       {
-        "rewardType":"removeQuestProgress",
+        "rewardType":"questProgress",
         "rewardID":"ratdom_nondisplay",
         "value":83
       },
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":84
       },
@@ -813,22 +813,22 @@
     "id":"ratdom_ghost4",
     "rewards":[
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":81
       },
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":82
       },
       {
-        "rewardType":"questProgress",
+        "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":83
       },
       {
-        "rewardType":"removeQuestProgress",
+        "rewardType":"questProgress",
         "rewardID":"ratdom_nondisplay",
         "value":84
       },
