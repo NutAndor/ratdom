@@ -296,7 +296,7 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="78" name="ratdom_maze_light3" type="script" x="0" y="736" width="128" height="192">
+  <object id="78" name="ratdom_maze_light3" type="script" x="0" y="768" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>

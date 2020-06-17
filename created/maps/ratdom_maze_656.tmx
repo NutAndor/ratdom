@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="87">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="89">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -236,7 +236,7 @@
    eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwdxBPTZ4NAHA1pk2IlsNzb3E9KHy/2E3IpPPzl6QWBUL/EAAHSdtrE=
   </data>
  </layer>
- <layer name="Light5" width="15" height="30" visible="0">
+ <layer name="Light5" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+Pw6CPGbkL6CflbiwK7CelNIFMvPn349OJzK6V6yU0bhPxKq3RFKG5w6SdkJ7p+XyRMrL5RPIphGABVP5aT
   </data>
@@ -296,7 +296,7 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="81" name="ratdom_maze_light2" type="script" x="0" y="736" width="128" height="192">
+  <object id="81" name="ratdom_maze_light2" type="script" x="0" y="768" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
@@ -414,7 +414,7 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object name="ratdom_rat_conv2:0" type="replace" x="384" y="736" width="32" height="32" visible="0">
+  <object id="87" name="ratdom_rat_conv2:0" type="replace" x="384" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Top"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -422,7 +422,7 @@
     <property name="requireValue" value="30"/>
    </properties>
   </object>
-  <object name="ratdom_rat_conv2:1" type="replace" x="384" y="736" width="32" height="32" visible="0">
+  <object id="88" name="ratdom_rat_conv2:1" type="replace" x="384" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
