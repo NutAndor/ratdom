@@ -965,8 +965,11 @@
         <item>@xml/ratdom_maze2</item>
         <item>@xml/ratdom_maze3</item>
         <item>@xml/ratdom_maze_</item>
+        <item>@xml/ratdom_maze_402</item>
+        <item>@xml/ratdom_maze_403</item>
         <item>@xml/ratdom_maze_411</item>
         <item>@xml/ratdom_maze_412</item>
+        <item>@xml/ratdom_maze_413</item>
         <item>@xml/ratdom_maze_414</item>
         <item>@xml/ratdom_maze_415</item>
         <item>@xml/ratdom_maze_416</item>
