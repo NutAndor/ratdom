@@ -188,12 +188,12 @@
  </tileset>
  <layer name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxzk2NgcCMSR5CgdlQv+XqHq7sJmU2JXnxqaK13KKcBbOqGmp9BeiKBOAuIw0kwA6YnG4hrgDgTyQxC+mB6aoFYAYirkczA5QaYPpgedFyNww2E9CHrh7nBlQR96Ga4EtBnDMQmQGyKRS4Tiz6YehO08EA3oxqLPnzx4I7HfcTEP7LdAJSnr+s=
+   eJztksENgCAMRZnEuIM4AjqCOgI6Arq79dCkaQoFjQeMh3ei7+dDGRpjhkzmgtnfve9+tbeW/cRNzbzt1vwHpLna7nw5C7ACU0EGOhuwA55kaB46B9ACgWTEOqCHDidEOmge9bGDK/B4hlO8DrBAL5x5wcN5y96DZwTBS+1hTPTL2b8lnJWLsBI=
   </data>
  </layer>
  <layer name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IKsQYUxwOxJon6QHoSgBgE4og0QwNJDzqIw6Mfm75Sfkz96G7AZV8rkt7PfJhuQNbHxQShXwphmsOMxQ3I9kkxYfcrCDzFYh4u8JwEtcSCF1Q28x8N3IgNPIbaAwAsYbsP
+   eJwrkmNgKBrFo3gUj2IKsQYUxwOxJon6QHoSgBgE4og0QwNJDzqIw6Mfm75Sfkz96G7AZV8rkt7PfJhuQNbHxQShXwphmsOMxQ3I9kkxYfcrCDzFYh4u8JwEtcSCF1Q28x+J5v0WJc+ex1B7AHBMvB8=
   </data>
  </layer>
  <layer name="Above" width="15" height="30">
@@ -208,7 +208,7 @@
  </layer>
  <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHdpPDLTeKR/EoHsWjmDyMDZCrjxj9xAJS3YlLjhR/IasjRR8l4YiuHwCeajm5
+   eJzbKMbAsBEHdpPDLTeKR/EoHsWjmDyMDZCrjxj9xAJS3YlLjhR/IasjRR8l4YiOAaeSO0c=
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -262,9 +262,9 @@
   </data>
  </layer>
  <objectgroup name="Mapevents" visible="0">
-  <object id="86" name="south2" type="mapchange" x="416" y="896" width="64" height="64">
+  <object id="86" name="south2" type="mapchange" x="448" y="896" width="32" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_533"/>
+    <property name="map" value="ratdom_maze_433"/>
     <property name="place" value="north1"/>
    </properties>
   </object>

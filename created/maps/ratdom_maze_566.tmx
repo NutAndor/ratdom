@@ -208,7 +208,7 @@
  </layer>
  <layer name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYICAjWKYGJ84OsCmDp9edHNI0UesOwiZTwwgxk3khge5+rDpJVYfsWEziqkX3vSO46GaroaaXmqGM7F68QFy9eEzg5AaXHKk+AuXubSOd2T9AKQo9/o=
+   eJzbKMbAsBEHBgFc4ugAlxm49KKbQ4o+Yt1ByHxiADFuIjc8yNWHTS+x+ogNm1FMvfCmdxwP1XQ11PRSM5yJ1YsPkKsPnxmE1OCSI8VfuMyldbwj6wcAj/X5iA==
   </data>
  </layer>
  <layer name="Light10" width="15" height="30" visible="0">
@@ -282,7 +282,7 @@
   </object>
   <object id="77" name="north1" type="mapchange" x="0" y="32" width="32" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_556"/>
+    <property name="map" value="ratdom_maze_456"/>
     <property name="place" value="south2"/>
    </properties>
   </object>

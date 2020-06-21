@@ -268,15 +268,15 @@
     <property name="place" value="north1"/>
    </properties>
   </object>
-  <object id="74" name="south1" type="mapchange" x="0" y="896" width="64" height="64">
+  <object id="74" name="south1" type="mapchange" x="0" y="896" width="32" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_561"/>
+    <property name="map" value="ratdom_maze_461"/>
     <property name="place" value="north2"/>
    </properties>
   </object>
-  <object id="75" name="north2" type="mapchange" x="416" y="0" width="64" height="64">
+  <object id="75" name="north2" type="mapchange" x="448" y="32" width="32" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_542"/>
+    <property name="map" value="ratdom_maze_442"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
@@ -286,22 +286,22 @@
     <property name="place" value="south2"/>
    </properties>
   </object>
-  <object id="77" name="ratdom_maze_light4" type="script" x="0" y="0" width="128" height="192">
+  <object name="ratdom_maze_light4" type="script" x="0" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="78" name="ratdom_maze_light3" type="script" x="352" y="0" width="128" height="192">
+  <object name="ratdom_maze_light3" type="script" x="352" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="79" name="ratdom_maze_light2" type="script" x="0" y="736" width="128" height="192">
+  <object name="ratdom_maze_light2" type="script" x="0" y="736" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="80" name="ratdom_maze_light1" type="script" x="352" y="768" width="128" height="192">
+  <object name="ratdom_maze_light1" type="script" x="352" y="768" width="128" height="192">
    <properties>
     <property name="when" value="always"/>
    </properties>
