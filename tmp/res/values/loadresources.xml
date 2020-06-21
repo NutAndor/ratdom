@@ -959,6 +959,8 @@
         <item>@xml/brimhaven_warehouse</item>
         <item>@xml/brimhaven_weapon1</item>
         <!--Added by ATCS v0.6.16 for project ratdom-->
+        <item>@xml/blackwater_mountain55</item>
+        <item>@xml/blackwater_mountain56</item>
         <item>@xml/ratdom_bwm1</item>
         <item>@xml/ratdom_crossglen</item>
         <item>@xml/ratdom_maze1</item>
