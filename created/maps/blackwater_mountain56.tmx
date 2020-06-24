@@ -188,22 +188,22 @@
  </tileset>
  <layer name="Ground" width="21" height="20">
   <data encoding="base64" compression="zlib">
-   eJylk9ENgzAMRBH7j8AKhBEIbEDLCAxCIxVxOp0dBz6ehOrkHJ+vqe+69Gf+kQULnCmM8F1qHwLPbqJe+NK5GXqV2kFwb64fpIe9uVcU5UUKaI6GlvLK80T5k0lLeYVMjibv5tLi+fmep8m7wd9xfjVP6344K2qeFr3JuONlrJabmlcRHc7NauzFY+jv7Krc7A/fODR6g/cQzPlTv7ycq/9kzasaLZpRUJM9Yq8sP9++MzI/a1pvjXp5aZ6N0i9D
+   eJyllO0JwzAMREP2HyEr2BnBaTdw2xEySGuIQDxOtkN/PAjIPn2cnLwuS74oPw7Bw51pJPfdYi/gz1YRb7xxrrhcLXYC5mb8hJ7PzVyzqFlkp3kE91KgpWalKOI+vTEtNStFFbr0xrTYf29GVfQbeeL7Vz2OZki4K6qWO5r7qnfF7m0XM14be6eWhNzUpNfGM/AlYa5Kk14bn06dtjv8F/Atzr4ru6fe52gvZmAto70g9PifHb2L19wCopqj+N06Z/qnZlTr7CxN8wuOLDAW
   </data>
  </layer>
  <layer name="Objects" width="21" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYKAdmM1EWI2ZMH75nUIMDLuEUMUe4zD3KZK4mzBuuZNA804JYXdjKAH34LIbHYQRMIdJDLv4JSHi3IENCGExcw2R7kUGyGGlhMOduAB6+MDMeiOEqZaLEVMMFm7XsKgnFmgDzdXBYjYycEcKX/SwBrm5HyoG8w/MzKd4wjMcR5xh03NZEr87ick72AA2M0k1Swca9rC8aQ00z4YRkTZh5qGbi+7PZzjsxeeeR2jxroPEvylIunnIYC6Sujto9txB8hu6PehqQQA5nc/FYz8ht4HkQfrRy6v1UH06ROQDbHbA9KOXr4ex5Gdk/6GbdQlJbj0R4fwFj3tNseQPdDMBRaczbA==
+   eJxjYKAdmM1EWI2ZMH75nUIMDLuEUMUe4zD3KR77kOVOAs07JYTdjaEE3IPLbnQQRsAcGGASwy5OyB34gBDUzO1AP+4Qwq8WG0AOKyUxVPo40LwTUDOxhQW6GMysN0jugPmZixFTPyjcQGZcI9HdQjjCERdwRwpf9LAGublfGOJnkFvMhVHTyVwcaSAcR5zhS5cwcEuQsBpywVcSw1IHqp5Q3oQBWB5F9+czHP5OFUakE/T0/whqNyyP6iC5/SaOMALFTSnQzDKouaC0gC3MkePtDlqY3EEqD2D2tALNaxPGVAsCj4lIDzDz8AGQPEi/G1pYr4fq0yEQd7+FsNsB048eh4ex5BNk/6GbdQlJbj0R6fgLFvdeloTQpljSE7qZAAxqPgY=
   </data>
  </layer>
  <layer name="Above" width="21" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYCAOHBYjT44cM0Hi5Jp5CY+ZuOTIBeS4kZAeUsyEqaWFmYTCihQzkc1C18fNyMDAw0i6mTBwmUBaIdVMmHn4/E9qOqJG2kP3B7n5g9ZmovsTl7+9gXHuw0i5fcMZXKYwPrDpn8tEmZnUSCP4zAQAdPsjKA==
+   eJxjYCAOHBZD5UcJ45YjFuDSBxIn18xLeMzEJUcuIMc8cv2FzyxamEnNsEI2i5puBYHLFKQVfOZR0//EmncZjxp0PxLrZ3zqaGEmuj+JDUdqpwtS7B6sAF96IFf/XCbKzKRFPCGbCQCosCIp
   </data>
  </layer>
  <layer name="Walkable" width="21" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJy1k8ENwCAMA5mi+6/Ahv1WqLbPURuJB5AcdhT2tdYG6xkk/y9mynXMdE4i1Tke9aHqnDfHTFpoTeux0ZX2jYeGoZhur/KbmVDMZt4Jc/IfiTbFJr7J/DiG0vNVHolJX8mbbz2ealH3lHW+75jTHpzMG2QVoz8=
+   eJy1k8ENACAIA53C/VdwQ788bHuQSGJCFEtb8ey1Dlg1SP0vzFTrMNM+CXcv4VE9pN/EI3KXanjlVGOtTz65UD0I9y5m8tJpIrOi3odwSJjd/6j0OZ5qRhVH5RvllXxxfqrozBP1lPZ0HCjnNKNTD+rZRH/6kzW/CGW3dQ==
   </data>
  </layer>
  <objectgroup name="Mapevents">
@@ -213,7 +213,7 @@
     <property name="place" value="south"/>
    </properties>
   </object>
-  <object id="6" name="south" type="mapchange" x="576" y="608" width="64" height="32">
+  <object id="6" name="south" type="mapchange" x="352" y="608" width="288" height="32">
    <properties>
     <property name="map" value="blackwater_mountain55"/>
     <property name="place" value="north"/>
