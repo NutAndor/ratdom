@@ -28,6 +28,14 @@
         "category":"neck",
     },
     {
+        "id":"ratdom_compass_tour",
+        "iconID":"items_reterski_1:10",
+        "name":"Orange rat necklace",
+        "description":"This necklace will work as compass towards everywhere.",
+        "displaytype":"rare",
+        "category":"neck",
+    },
+    {
         "id":"ratdom_pickaxe",
         "iconID":"items_misc_5:24",
         "name":"Pickaxe",

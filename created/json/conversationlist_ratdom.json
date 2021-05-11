@@ -17,14 +17,14 @@
     },
     {
         "id":"ratdom_dev_info_2",
-        "message":"Hello adventurer!\nYou are visiting a new area, still under construction.\n\nHere some general infos about it.",
+        "message":"Hello adventurer!\nYou are visiting a new area, still under construction.\n\nHere some general infos about it:",
         "replies":[
             {
                 "text":"Further info",
                 "nextPhraseID":"ratdom_dev_info_10"
             },
             {
-                "text":"Just get the compass",
+                "text":"Just get the compasses",
                 "nextPhraseID":"ratdom_dev_info_90"
             }
         ]
@@ -131,11 +131,16 @@
     },
     {
         "id":"ratdom_dev_info_90",
-        "message":"Now here's the compass. Be sure to wear it for activation. (Marrowtaint owner will hate me ... :D) I am sure you see immediatly how he works.",
+        "message":"Now here are the compasses. Be sure to wear them for activation. (Marrowtaint owner will hate me ... :D) I am sure you'll find out easily how they work.",
 		"rewards":[
 		{
 			"rewardType":"giveItem",
 			"rewardID":"ratdom_compass_bwm",
+			"value":1
+		},
+		{
+			"rewardType":"giveItem",
+			"rewardID":"ratdom_compass_tour",
 			"value":1
 		}
 	]
@@ -1685,7 +1690,7 @@
 		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2c_2",
-		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_2", "value":1 }]
+		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2c_3",
 		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_3", "value":1 }]
@@ -1856,13 +1861,13 @@
     "id":"ratdom_rat_conv2_1",
     "replies":[
       {	"nextPhraseID":"ratdom_rat_conv2_30",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":200 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":100 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_20",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":80 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":40 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_10",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":20 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":10 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_1b"
       }
