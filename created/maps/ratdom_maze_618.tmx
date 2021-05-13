@@ -256,9 +256,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="15" name="Compass" width="15" height="30" visible="0">
+ <layer id="15" name="Compass" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUBvFo3iAsMUgcMMoHsWjeGRjAGW3d5s=
+   eJxTk2NgUBvFo3iAsMUgcAOtsOogcMMopg0ezul2JGIAgqt3rA==
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
@@ -408,14 +408,6 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object id="76" name="ratdom_rat_conv2:0" type="replace" x="96" y="736" width="32" height="32" visible="0">
-   <properties>
-    <property name="Objects" value="Top"/>
-    <property name="requireId" value="ratdom_maze"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="30"/>
-   </properties>
-  </object>
   <object id="77" name="ratdom_rat_conv2:1" type="replace" x="96" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
@@ -424,7 +416,7 @@
     <property name="requireValue" value="31"/>
    </properties>
   </object>
-  <object id="78" name="ratdom_rat_conv2:2" type="replace" x="96" y="736" width="32" height="32" visible="0">
+  <object id="78" name="ratdom_rat_conv2:2" type="replace" x="128" y="704" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -432,7 +424,7 @@
     <property name="requireValue" value="32"/>
    </properties>
   </object>
-  <object id="79" name="ratdom_rat_conv2:2b" type="replace" x="320" y="320" width="32" height="32" visible="0">
+  <object id="79" name="ratdom_rat_conv2:2b" type="replace" x="160" y="448" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
