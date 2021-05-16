@@ -4849,7 +4849,7 @@
 		{
 			"rewardType":"activateMapObjectGroup",
 			"rewardID":"Ladder",
-			"mapName":"ratdom_maze_465"
+			"mapName":"ratdom_maze_455a"
 		}
 	]
   },
@@ -4879,7 +4879,7 @@
 		{
 			"rewardType":"deactivateMapObjectGroup",
 			"rewardID":"Ladder",
-			"mapName":"ratdom_maze_465"
+			"mapName":"ratdom_maze_455a"
 		}
 	]
   },

@@ -188,12 +188,12 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJyllNENwjAMRDsFnwiJEQgjtB2BdgRaNkhhORYjlRLJWHZ8Tj/u8+ku9jnDuesGQFPSnLQmXbJQZsncG2QpszHuZnASY3GjkA/himcLVzy9XGE97+P6nv7Zh4Mdme/TyVPvmPm+0Ts62FmYNcLyzqNsrVMI29IpaUaet0rskV6hu5H2g3ZKuiO0U9LtRsBb6wS9h6nCSbul97Cw/BZH+Y3kr3H7XkPSVclv/Yf73F9KfulvCmxnHyW/1T2t32hnA9GdMD/qQafl
+   eJyllN0NwjAMhDsFjwiJEcgKtCPQjkBhgxSWYzFSKZGMdU7O4eEeP51/zh6PwzASmpOWpEfSKYtl1sy9SFYym+IuDQ4xLW4C9TFc8ezhiqeXK6ynP63P4Ze9OdhJ+d6dvPSOmb92ekcHu4BZM6zOPMvWMsWwPZlCM/L0ith/csXuBu2HzRS6IzZT6HYj4W1lQt7DXOHQbuU9rKr+Fif5TfjXuH2vIekM6kf/Wudhn/vT8Ee/KaidvRu9WNmz8s1mNhj6AvQ1p+k=
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx58eonRh00vsfqw6bUhUh+6XlLsRNdLip2jYBSMAspArDgDQ5w4eXrtgfqkmIeOXpBfc4HYjkz/gkAuBXppAWDxF4/DXbjiFyTuBw1HX6gaZByPFFYAVWsh3g==
+   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx58eonRh00vsfqw6bUhUh+6XlLsRNdLip2jYBSMAgiIFSdfnx+Zeu2B+qSYybeTHL25QH12FNgL00+Ovcg0vQGu+AWJxwFxPB53YXMzchz4Qs3AhQF/LCPr
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHdpPDLg4DuPThw+TqJUcfMiBHz2DWR67/BlovtdIPpe6mJKzppZda+uhh50Cnq4HQS81wJlYvPkBuvOIzg5Ad5JiJz2xy9JESDrjMAgDjEv3P
+   eJzbKMbAsBEHdpPDLg4DuPThw+TqJUcfMiBHz2DWR67/BlovtdIPpe6mJKzppZda+uhh50Cnq4HQS81wJlYvPkBuvOIzg5Ad5JhJjF9ooQ8fBgCL7P6W
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -262,10 +262,10 @@
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
-  <object id="49" name="south2" type="mapchange" x="416" y="896" width="64" height="64">
+  <object id="49" name="east" type="mapchange" x="448" y="864" width="32" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_465"/>
-    <property name="place" value="north1"/>
+    <property name="map" value="ratdom_maze_455a"/>
+    <property name="place" value="west"/>
    </properties>
   </object>
   <object id="43" name="south1" type="mapchange" x="0" y="896" width="64" height="64">
