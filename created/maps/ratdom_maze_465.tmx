@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="96">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="25" nextobjectid="70">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -186,32 +186,44 @@
  <tileset firstgid="7705" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
- <tileset firstgid="7813" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
-  <image source="../drawable/map_ratdom.png" width="576" height="192"/>
- </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlAEOgyAMRT0J4Q7qETaPgB7BeQS2u49GmpCfsrZkJi8R46NCv8QwTbGQC2chFfYKXc9wQ+Oj8G6IDey/KqlxaPyB91fB53l5nkvw5vo96OM8PY9YfvhI67Vofs/TfM0jtkGPQTc5XKx9On0pM4/B2tnhHsK6LS5514C7BTm/VlfyRrNhXeu/c2XtjdQfa6Z4nzGT1t7iPmdDbakm/g+7s7d4hkrf0Ostnn3S+jVX+6cwE70ztLfvSwWfrQZXy6sno1if77+JjqLq
+   eJzlksENgkAQRQ1caEFMNjTASTwaTmAJYAlgCWJN1mANNuROdiZ81wVHvJhI8gIhefM/y2RmtcosZ0tnaSytpbbQRe96hp73sWMdOy/z/J5n1DxnYDrwyd2ZV3/wOrTQhd5XxrmbgO936L0uDbiHgIsdsHPFd3FpVig7NEuy0SUKxQz83pTdW+TuU/0xG13KvrN7VHRvwM3jMfOkcDtwy3jMvCjPTM5K/pMmUxA3Z1eT6bvlzH78qnuNlruyk5qdRld28tNs3MmlbrqgN7pEwrzztubZ85makcw4oRmC1tEgZ/QvFF+4D+QNgp4=
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYKA/4BEbAEtHARwcHsDwH0i7RwFtwWjcDl8w3OMWACj+A4c=
+   eJxjYMAOGuQgGAQExSC0PzMOxXjMgOlF189JhFkwvTB3kGI/sr0w/eToRQYgN89lYmA4jEMem150u0H6SbUXBPDZSUgvIUBI71My3UyJvYEE4pqW/h1MeksFGBjKBCB6YWx0gCusYOoV8egFAUJpCxcgJg/TCoDsBrmbXLcjm4MPsBPhR3QziNEzCgYXAAAtnxLk
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSFIITCk0m1L9Qx1cFiNf71ymkWn3YQr0XiJD70C5daD0DlTcgvSREz8gQKp/beRIt7NIDoJhekmxc7DoJSVuYXqtgNiPxHIaphem3xcLRjYTOc0g68WFcbkJABY2JtQ=
+   eJxjYMANauQQbGdJPAoJgIHQKyiGX+9lMfL0gvTNZSJP72EK9HIyI+xHponRi2w/Mk2K3ktiEDsvkaEXm53E6L2Mw05i9ILsw2bnQOhNFWBgSBOA6IWxSdWLzibFzYQAvjRJDIDFEzmAUndT6vZRMApAAADReybD
   </data>
  </layer>
- <layer id="4" name="Top" width="15" height="30" visible="0">
+ <layer id="21" name="Ladder" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
+   eJxjYBieQFBsVO+o3sGjN00AojdVgL56QUCRAv+OglEwEgAAlLQECQ==
+  </data>
+ </layer>
+ <layer id="4" name="Top" width="15" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU0BqkCUDoVAH66h0Fo2AUEAYAcH4B1w==
   </data>
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzF0skNACAIBECqsP8W7NCHH+MBu0CEhI8yiofIjN7OfI2v86J4qx71r7pbMP0hgfbFOLR/xqLO+3ZZdvURG+2b9RU2y/3Ys/pfVdjMe0atFhGLrHGr8Z7fWpexHrfnAEzv9/o=
+   eJxjYICAjWKYGCaOT54Bj358egnpJ9ZsXOrw6cOmF1k9Ib249BPjZmLNGCi9hPQPhF5iATX1kgKITVvIND30YkvPuPQOVDhTqpdY/bTKS9jMIFbPKB48GABFgtT/
+  </data>
+ </layer>
+ <layer id="24" name="Walkable1" width="15" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYICAjWKYGCaOT54Bj358egnpJ9ZsbOrI0YvsV0J6ceknVi8xZgyUXlr6m1y9xAJq6iUFkJK2SEn3lOrFlgdx6R2ocKZUL7H6aZWXSClzRvHgxQBkxdHj
+  </data>
+ </layer>
+ <layer id="23" name="Walkable0" width="15" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYICAjWKYGCaOT54Bj358egnpJ9ZsYtQRo5ca+kk1ixL9tNJLSP9A6CUWUFMvKYDYtIVMk6qX1DyDLI/OxqZ3oMKZUr3E6qdVXiImXkbx4McAVZDXVA==
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -221,129 +233,149 @@
  </layer>
  <layer id="7" name="Light1" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYCAdaMkxMBTJkaFxEOj1I0M/TK8VEPuSYIYPUJ01VG8RkhmE9GPTB8M2ePQi69sshqkXn91aSOqw6cVntxYOtxKyG58/sWFfJEysnlE8ikfxKCaEAUjuv+M=
+   eJxjYCAdaMkxMBTJkaFxEOj1I0M/TK8VEPuSYIYPUJ01VG8RkhmE9GPTB8M2ePQi69sshqkXn91aSOqw6cVntxYOtxKy24cIfcj6fZEwsfpG8SgexaOYEAYATSa/4g==
   </data>
  </layer>
  <layer id="8" name="Light2" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKAJiGyAmFRRRQW8CmXrJsdOHTPeC9FlD9VoBsR+R+pH1FZGgH5s+YsIanz58dhPSh8tuYvWh2+1DpB50/b4k2DeKR/EoHsXEYgC2+8U9
+   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
  <layer id="9" name="Light3" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IkHA/FpOpJAGIYiCNSH7IeZEBIvw0OfTCgRYadhOwmpA+XfmL1obudVH3IeskBI1UvABEdt1Y=
+   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
  <layer id="10" name="Light4" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwcgczTx6LPBoQ8GtMiwE9nueCz2E9KHbgaxbsWnnxy9IDCql3gAADm+th8=
+   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
  <layer id="11" name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+Pw6CPGbkL6CflbiwK7CelNIFMvPn349OJzK6V6yU0bhPxKq3RFKG5w6SdkJ7p+XyRMrL5RPIphGABVP5aT
+   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPI8K/+OwmpB+f3YT8TMhuQnoTyNSLTx8+vYTilxK9+OJ4MKYrQnGDL5wJpSlK/EsobkF2Y8vHhPThcj8p+pD1k6NvFJAOAOFcfbo=
+   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz25c7iXG7jgi9OKzG6Rfk0y7CfmZkN2E9CaQqRefPnx6KUkfhPSC4tiaTL2UpCtcdhKKW0Jxgy+cCaUpWvl3JOrFF9aE8gEuu4kt3weDXgCX13Qm
+   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="14" name="Light8" width="15" height="30" visible="0">
+ <layer id="14" name="Light8" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUKMytqCBmaN4FI/iUTyKRzEtMACMz3eb
+   eJxTk2NgUBvFo3gUj+JRPIpHKAYAFCd3iQ==
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
-  <object id="81" name="south2" type="mapchange" x="416" y="896" width="64" height="64">
+  <object id="49" name="south2" type="mapchange" x="416" y="896" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_455"/>
+    <property name="map" value="ratdom_maze_457"/>
     <property name="place" value="north1"/>
    </properties>
   </object>
-  <object id="82" name="south1" type="mapchange" x="0" y="896" width="64" height="64">
+  <object id="43" name="south1" type="mapchange" x="0" y="896" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_454"/>
+    <property name="map" value="ratdom_maze_456"/>
     <property name="place" value="north2"/>
    </properties>
   </object>
-  <object id="83" name="north2" type="mapchange" x="448" y="32" width="32" height="32">
+  <object id="48" name="north2" type="mapchange" x="416" y="0" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_535"/>
+    <property name="map" value="ratdom_maze_437"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
-  <object id="84" name="north1" type="mapchange" x="0" y="0" width="64" height="64">
+  <object id="33" name="north1" type="mapchange" x="0" y="0" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_434"/>
+    <property name="map" value="ratdom_maze_455"/>
     <property name="place" value="south2"/>
    </properties>
   </object>
-  <object id="85" name="ratdom_maze_light1" type="script" x="0" y="0" width="128" height="192">
+  <object id="34" name="ratdom_maze_light1" type="script" x="0" y="0" width="128" height="192" visible="0">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="86" name="ratdom_maze_light2" type="script" x="352" y="0" width="128" height="192">
+  <object id="35" name="ratdom_maze_light2" type="script" x="352" y="0" width="128" height="192" visible="0">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="87" name="ratdom_maze_light3" type="script" x="0" y="768" width="128" height="192">
+  <object id="36" name="ratdom_maze_light3" type="script" x="0" y="736" width="128" height="224" visible="0">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="88" name="ratdom_maze_light4" type="script" x="352" y="768" width="128" height="192">
+  <object id="37" name="ratdom_maze_light4" type="script" x="352" y="768" width="128" height="192" visible="0">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="38" name="ratdom_maze_light5" type="script" x="128" y="96" width="224" height="192">
+  <object id="38" name="ratdom_maze_light5" type="script" x="128" y="96" width="224" height="192" visible="0">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="39" name="ratdom_maze_light6" type="script" x="128" y="639" width="224" height="256">
+  <object id="39" name="ratdom_maze_light6" type="script" x="128" y="639" width="224" height="256" visible="0">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="47" name="ratdom_maze_light7" type="script" x="160" y="288" width="192" height="352">
+  <object id="47" name="ratdom_maze_light7" type="script" x="160" y="288" width="192" height="352" visible="0">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="78" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
-  <object id="79" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
-  <object id="80" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="58" name="ratdom_ladder_1" type="script" x="256" y="512" width="96" height="64"/>
+  <object id="69" name="ratdom_ladder_1" type="script" x="288" y="32" width="32" height="96"/>
+  <object id="59" name="ratdom_ladder_0" type="script" x="224" y="160" width="32" height="320"/>
+  <object id="67" name="ratdom_ladder_0" type="script" x="352" y="192" width="32" height="288"/>
+  <object id="60" name="ladder_left" type="mapchange" x="224" y="480" width="32" height="32"/>
+  <object id="62" name="ladder_right" type="mapchange" x="352" y="480" width="32" height="32"/>
+  <object id="65" name="up" type="mapchange" x="288" y="0" width="32" height="32">
+   <properties>
+    <property name="map" value="blackwater_mountain55"/>
+    <property name="place" value="cave"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="22" name="Ladder" visible="0">
+  <properties>
+   <property name="active" value="false"/>
+  </properties>
+  <object id="63" name="ladder_left1" type="mapchange" x="256" y="64" width="32" height="384">
+   <properties>
+    <property name="map" value="ratdom_maze_465"/>
+    <property name="place" value="ladder_left"/>
+   </properties>
+  </object>
+  <object id="64" name="ladder_right1" type="mapchange" x="320" y="64" width="32" height="384">
+   <properties>
+    <property name="map" value="ratdom_maze_465"/>
+    <property name="place" value="ladder_right"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
-   <properties>
-    <property name="quantity" value="2"/>
-    <property name="spawngroup" value="cavesnake2"/>
-   </properties>
-  </object>
-  <object id="56" name="ratdom_maze_rat" type="spawn" x="64" y="64" width="352" height="128">
+  <object id="46" name="ratdom_maze_rat" type="spawn" x="64" y="64" width="96" height="96">
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="18" name="Keys"/>
+ <objectgroup id="18" name="Keys" visible="0"/>
  <objectgroup id="19" name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
@@ -353,7 +385,7 @@
     <property name="requireValue" value="10"/>
    </properties>
   </object>
-  <object id="89" name="ratdom_maze:1" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="21" name="ratdom_maze:1" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light1"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -361,7 +393,7 @@
     <property name="requireValue" value="1"/>
    </properties>
   </object>
-  <object id="90" name="ratdom_maze:2" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="22" name="ratdom_maze:2" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light2"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -369,7 +401,7 @@
     <property name="requireValue" value="2"/>
    </properties>
   </object>
-  <object id="91" name="ratdom_maze:3" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="23" name="ratdom_maze:3" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light3"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -377,7 +409,7 @@
     <property name="requireValue" value="3"/>
    </properties>
   </object>
-  <object id="92" name="ratdom_maze:4" type="replace" x="0" y="0" width="480" height="960" visible="0">
+  <object id="24" name="ratdom_maze:4" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light4"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -417,28 +449,23 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object id="93" name="ratdom_rat_conv2:0" type="replace" x="320" y="32" width="32" height="32" visible="0">
+  <object id="56" name="ratdom_nondisplay_61" type="replace" x="256" y="96" width="96" height="416" visible="0">
    <properties>
-    <property name="Objects" value="Top"/>
-    <property name="requireId" value="ratdom_maze"/>
+    <property name="Above" value="Top"/>
+    <property name="Walkable" value="Walkable1"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="30"/>
+    <property name="requireValue" value="61"/>
    </properties>
   </object>
-  <object id="94" name="ratdom_rat_conv2:1" type="replace" x="320" y="32" width="32" height="32">
+  <object id="66" name="ratdom_nondisplay_n61" type="replace" x="256" y="96" width="96" height="416" visible="0">
    <properties>
-    <property name="Objects" value="Compass"/>
-    <property name="requireId" value="ratdom_maze"/>
+    <property name="Above" value="Ladder"/>
+    <property name="Walkable" value="Walkable0"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireNegation" value="true"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="31"/>
-   </properties>
-  </object>
-  <object id="95" name="ratdom_rat_conv2:2" type="replace" x="192" y="32" width="32" height="32">
-   <properties>
-    <property name="Objects" value="Compass"/>
-    <property name="requireId" value="ratdom_maze"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="32"/>
+    <property name="requireValue" value="61"/>
    </properties>
   </object>
  </objectgroup>

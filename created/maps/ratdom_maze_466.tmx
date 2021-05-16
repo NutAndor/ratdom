@@ -414,15 +414,7 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object id="59" name="ratdom_rat_conv2:0" type="replace" x="96" y="736" width="32" height="32" visible="0">
-   <properties>
-    <property name="Objects" value="Top"/>
-    <property name="requireId" value="ratdom_maze"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="30"/>
-   </properties>
-  </object>
-  <object id="60" name="ratdom_rat_conv2:1" type="replace" x="96" y="736" width="32" height="32" visible="0">
+  <object id="60" name="ratdom_rat_conv2:1" type="replace" x="128" y="704" width="32" height="32">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>

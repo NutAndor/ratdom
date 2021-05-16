@@ -4823,6 +4823,67 @@
 	]
   },
   {
+	"id":"ratdom_ladder_1",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":61,
+					"negate":true
+				}
+			],
+			"nextPhraseID":"ratdom_ladder_1a"
+		}
+	]
+  },
+  {
+	"id":"ratdom_ladder_1a",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":61
+		},
+		{
+			"rewardType":"activateMapObjectGroup",
+			"rewardID":"Ladder",
+			"mapName":"ratdom_maze_465"
+		}
+	]
+  },
+  {
+	"id":"ratdom_ladder_0",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":61
+				}
+			],
+			"nextPhraseID":"ratdom_ladder_0a"
+		}
+	]
+  },
+  {
+	"id":"ratdom_ladder_0a",
+	"rewards":[
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":61
+		},
+		{
+			"rewardType":"deactivateMapObjectGroup",
+			"rewardID":"Ladder",
+			"mapName":"ratdom_maze_465"
+		}
+	]
+  },
+  {
     "id":"do_nothing",
     "message":"Let's do the bone dance again!"
   }
