@@ -1791,5 +1791,53 @@
     {
         "id":"ratdom_well_wise3_90",
         "message":"Come again whenever you want. It is a nice diversion to talk with someone with a bit of brain at least."
+	},
+    {
+        "id":"whootibarfag",
+        "message":"Greetings, young being.",
+		"replies":[
+            {
+				"text":"Hi oldie.",
+                "nextPhraseID":"X"
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_quest",
+				"value":200
+			},
+			{
+				"rewardType":"giveItem",
+				"rewardID":"ratdom_compass_tour",
+				"value":1
+			}
+		]
+	},
+    {
+        "id":"whootibarfag_50",
+        "message":"Here, take the tour guide throgh the amazing caves of Rat World!\nStart at Crossglen entrance to behold all the wonders of BWM's underground world!",
+		"replies":[
+            {
+				"text":"Thanks!",
+                "nextPhraseID":"whootibarfag_52"
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_quest",
+				"value":210
+			},
+			{
+				"rewardType":"giveItem",
+				"rewardID":"ratdom_compass_tour",
+				"value":1
+			}
+		]
+	},
+    {
+        "id":"whootibarfag_52",
+        "message":"This dialogue needs rework of course. And the tour guide won't be given here, but later in the cave - maybe by - ah no, let's not spoil..."
 	}
 ]

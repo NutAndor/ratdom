@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="14">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="15">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -198,12 +198,12 @@
    eJxjYGBguCzJQDVwWIx8+YviDAyXoPiyOKrcZTHcemHiIHoPml8yhRkYsoD4IdC8R1D8WByhB2buJQJmg+TPSGKaT0gPPv+i23mGCLOR9cxlIqyeGPeSC4hxL6XgMZXsoEYap2Y+QQbbqGzuL6B5v7GYSYw92PxISB8+eXQ5avn1ihCirACZeUkcE5NqF0x9NDNlbsNmLylmUhJG1AzvXCxuRjYPmzwMXCZQD1ACCNUxAGj2Oes=
   </data>
  </layer>
- <layer id="4" name="Walkable" width="23" height="19" visible="0">
+ <layer id="4" name="Walkable" width="23" height="19">
   <data encoding="base64" compression="zlib">
-   eJytk8sRwCAIRK3C/lugw+SSC7PsJ8qMhxh5LL/aa9V7Pqutz2SI0/8zFouXaux+p2yH5bC7P6qfw0LvHWNvkxojPdNdogd9dz3I/8YcICbLzcmV6Ve7lPaDxUfsVBPS1f2SWezxVM3T/XPqpHYuyeNvj04s3ftEj+pFmrOas5Q/aXwAaGukzQ==
+   eJytU8kRADEIShXpvwU73P3sh0GQTZzJIwcIRmuvVe/6orZfXTAevFdcKl+qEXGn3BOuCTfiWf0mXOz9JNTbpMZMT3eW6GF71MPwN/qAcSpvbhYwf+dN4ac+FY/SlmhiuhCX9CLmczVP529SJzdziY+/f3QS6dwnetxfpJ5dn6X8ncYH0DamWw==
   </data>
  </layer>
- <objectgroup id="5" name="Mapevents" visible="0">
+ <objectgroup id="5" name="Mapevents">
   <object id="1" name="south1" type="mapchange" x="32" y="576" width="224" height="32">
    <properties>
     <property name="map" value="blackwater_mountain32"/>
@@ -274,6 +274,11 @@
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="hettar_dog3"/>
+   </properties>
+  </object>
+  <object id="14" name="whootibarfag" type="spawn" x="352" y="160" width="64" height="128">
+   <properties>
+    <property name="spawngroup" value="whootibarfag"/>
    </properties>
   </object>
  </objectgroup>

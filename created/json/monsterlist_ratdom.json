@@ -663,5 +663,11 @@
         "iconID":"monsters_rltiles2:89",
         "unique":1,
         "phraseID":"ratdom_well_wise3"
+    },
+    {
+        "id":"whootibarfag",
+        "name":"Whootibarfag",
+        "iconID":"monsters_rltiles3:16",
+        "phraseID":"whootibarfag"
     }
 ]

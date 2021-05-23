@@ -101,7 +101,7 @@
     },
     {
         "id":"ratdom_dev_info_46",
-        "message":"Compass: After you finally have found your way through the maze, you get a compass, that will mark the correct passages to find your way again more easily in the future.",
+        "message":"Compass: After you finally have found your way through the maze, you get an amulett, that will mark the correct passages to find your way again more easily in the future.",
         "replies":[
             {
                 "text":"N",
@@ -111,7 +111,7 @@
     },
     {
         "id":"ratdom_dev_info_48",
-        "message":"I plan let outs on top of BW mountains. There will be some view maybe, but no connection to Prim or anywhere else - so no shortcut.",
+        "message":"There is a let out on top of BW mountains, but no connection to Prim or anywhere else - so no shortcut! :D",
         "replies":[
             {
                 "text":"N",
@@ -131,16 +131,11 @@
     },
     {
         "id":"ratdom_dev_info_90",
-        "message":"Now here are the compasses. Be sure to wear them for activation. (Marrowtaint owner will hate me ... :D) I am sure you'll find out easily how they work.",
+        "message":"Now here is the amulett to the BWM let out. (Players in the final game will get it only after finding their way through)\nBe sure to wear it für activation. (Marrowtaint owners will hate me ... :D) I am sure you'll find out easily how it works, when you wander through the maze. Note that if you just follow it, you'll find the shortest way but also miss many of the interesting places.",
 		"rewards":[
 		{
 			"rewardType":"giveItem",
 			"rewardID":"ratdom_compass_bwm",
-			"value":1
-		},
-		{
-			"rewardType":"giveItem",
-			"rewardID":"ratdom_compass_tour",
 			"value":1
 		}
 	]
@@ -899,6 +894,12 @@
 				"negate":true
 			},
 			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":73,
+				"negate":true
+			},
+			{
 				"requireType":"killedMonster",
 				"requireID":"ratdom_goldhunter",
 				"value":1
@@ -914,7 +915,74 @@
       {
         "text":"That's exactly what I need! Let's build a bridge...",
         "nextPhraseID":"ratdom_goldhunter_bridge_90"
+      },
+      {
+        "text":"It would be a good idea to make a fire now.",
+        "nextPhraseID":"ratdom_goldhunter_bridge_20"
       }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bridge_20",
+    "switchToNPC":"ratdom_rat",
+    "message":"No it would be not.",
+    "replies":[
+      {
+        "text":"Oh. Well, then let's build the bridge.",
+        "nextPhraseID":"ratdom_goldhunter_bridge_90"
+      },
+      {
+        "text":"But I want a fire right now! It is cold here, and dark.",
+        "nextPhraseID":"ratdom_goldhunter_bridge_22"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bridge_22",
+    "message":"Then you'd have a fire. And then? You would never be able to leave again.",
+    "replies":[
+      {
+        "text":"Fine. Nothing is allowed!",
+        "nextPhraseID":"ratdom_goldhunter_bridge_24"
+      },
+      {
+        "text":"I want, want, want! Fire - now!",
+        "nextPhraseID":"ratdom_goldhunter_bridge_30"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bridge_24",
+    "message":"Do you want to stay here forever and starve? Think about the artifact. We have a job to do!",
+    "replies":[
+      {
+        "text":"Well, then let's just build this stupid bridge. [Grumble]",
+        "nextPhraseID":"ratdom_goldhunter_bridge_90"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bridge_30",
+    "message":"And you will be lonely. Unlike you, I can swim. And I will not spend the end of my life here.",
+    "replies":[
+      {
+        "text":"[Light the wood]",
+        "nextPhraseID":"ratdom_goldhunter_bridge_80"
+      },
+      {
+        "text":"All right then. So the wood becomes a bridge instead of giving warmth and joy. Sigh.",
+        "nextPhraseID":"ratdom_goldhunter_bridge_90"
+      }	]
+  },
+  {
+    "id":"ratdom_goldhunter_bridge_80",
+    "message":"Farewell then. I will think of you when I have the artifact in my claws!",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":73
+		}
 	]
   },
   {
@@ -1860,11 +1928,32 @@
   {
     "id":"ratdom_rat_conv2_1",
     "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2_540",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
+					{ "requireType":"random", "requireID":"25" }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_530",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
+					{ "requireType":"random", "requireID":"33" }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_520",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
+					{ "requireType":"random", "requireID":"50" }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_510",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_500",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":76 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_40",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":75 }]
+      },
       {	"nextPhraseID":"ratdom_rat_conv2_30",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":100 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":50 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_20",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":40 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":30 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_10",
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":10 }]
@@ -1889,7 +1978,7 @@
     "message":"It is beautiful inside here, isn't it?",
     "replies":[
       {
-        "text":"I'd prefer a bit more daylight.",
+        "text":"Hmm, I'd prefer a bit more daylight.",
 		"nextPhraseID":"ratdom_rat_conv2_1b"
       },
       {
@@ -1930,6 +2019,10 @@
       {
         "text":"What do you mean?",
 		"nextPhraseID":"ratdom_rat_conv2_20d"
+      },
+      {
+        "text":"Of course - you are right!",
+		"nextPhraseID":"ratdom_rat_conv2_1b"
       }
     ]
   },
@@ -1944,6 +2037,37 @@
       {
         "text":"Now that you mention it, indeed they do!",
 		"nextPhraseID":"ratdom_rat_conv2_1b"
+      },
+      {
+        "text":"And?",
+		"nextPhraseID":"ratdom_rat_conv2_20e"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_20e",
+	"message":"If you want to get out, just use the passages where you see rats in front of.",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_20f"
+      }
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentChange",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_20f",
+	"message":"Oh man. Humans aren't the smartest, but this one ...",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"X"
       }
     ]
   },
@@ -1959,10 +2083,332 @@
     ]
   },
   {
+    "id":"ratdom_rat_conv2_40",
+    "replies":[
+      {
+		"nextPhraseID":"ratdom_rat_conv2_40b",
+		"requires":[{ "requireType":"questProgress", "requireID":"mikhail_rats", "value":100 }]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_40b",
+	"switchToNPC":"ratdom_rat",
+    "message":"What I always wanted to ask you: Why did you actually kill my uncle?",
+    "replies":[
+      {
+        "text":"Did I?",
+		"nextPhraseID":"ratdom_rat_conv2_40c"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_40c",
+    "message":"Yes. My uncle together with his wife. They just romped around in your garden.",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_40d"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_40d",
+    "message":"Then you came and murdered them. Just because. And you proudly boasted in front of your father about this act.",
+    "replies":[
+      {
+        "text":"Eh...",
+		"nextPhraseID":"ratdom_rat_conv2_40e"
+      }
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentChange",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_40e",
+    "message":"Not that I liked my uncle, but he didn't deserve such an end.",
+    "replies":[
+      {
+        "text":"Well...",
+		"nextPhraseID":"ratdom_rat_conv2_40f"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_40f",
+    "message":"Not that I liked my uncle very much, but he didn't deserve an ending like this.",
+    "replies":[
+      {
+        "text":"Well...",
+		"nextPhraseID":"ratdom_rat_conv2_40g"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_40g",
+    "message":"I hope you are a little more reluctant to kill rats in the future."
+  },
+  {
     "id":"ratdom_rat_conv3",
     "replies":[
       {
         "nextPhraseID":"ratdom_rat_conv2c"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_500",
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1000
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_510",
+	"switchToNPC":"ratdom_rat",
+    "message":"[humming] Roads go ever on and on, over rock and under tree,",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_510b"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_510b",
+    "message":"By caves where never sun has shone, by streams that never find the sea.",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_510c"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_510c",
+    "message":"Pursuing it with eager feet, until the proper way is found",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_510d"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_510d",
+    "message":"towards the yellow artifact, so wonderful and big and round.",
+    "replies":[
+      {
+        "text":"Nice song.",
+		"nextPhraseID":"ratdom_rat_conv2_500"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_520",
+	"switchToNPC":"ratdom_rat",
+    "message":"Is it still far?",
+    "replies":[
+      {
+        "text":"Not annoying me!",
+		"nextPhraseID":"ratdom_rat_conv2_500"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_530",
+	"switchToNPC":"ratdom_rat",
+    "message":"Are we there soon?",
+    "replies":[
+      {
+        "text":"I hope so.",
+		"nextPhraseID":"ratdom_rat_conv2_500"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_540",
+	"switchToNPC":"ratdom_rat",
+    "message":"Boring. We might play a game?",
+    "replies":[
+      {
+        "text":"Why not? What about 'Rock Paper Scissors'?",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542",
+    "message":"OK. Ready - Sick - GO!",
+    "replies":[
+      {
+        "text":"Rock",
+		"nextPhraseID":"ratdom_rat_conv2_542r"
+      },
+      {
+        "text":"Paper",
+		"nextPhraseID":"ratdom_rat_conv2_542p"
+      },
+      {
+        "text":"Scissors",
+		"nextPhraseID":"ratdom_rat_conv2_542s"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542r",
+    "replies":[
+      { "requires":[{ "requireType":"random", "requireID":"33" }], "nextPhraseID":"ratdom_rat_conv2_542rp" },
+      { "requires":[{ "requireType":"random", "requireID":"50" }], "nextPhraseID":"ratdom_rat_conv2_542rs" },
+      { "requires":[{ "requireType":"random", "requireID":"10" }], "nextPhraseID":"ratdom_rat_conv2_542k" },
+      { "nextPhraseID":"ratdom_rat_conv2_542rr" }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542p",
+    "replies":[
+      { "requires":[{ "requireType":"random", "requireID":"33" }], "nextPhraseID":"ratdom_rat_conv2_542pr" },
+      { "requires":[{ "requireType":"random", "requireID":"50" }], "nextPhraseID":"ratdom_rat_conv2_542ps" },
+      { "requires":[{ "requireType":"random", "requireID":"10" }], "nextPhraseID":"ratdom_rat_conv2_542k" },
+      { "nextPhraseID":"ratdom_rat_conv2_542pp" }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542s",
+    "replies":[
+      { "requires":[{ "requireType":"random", "requireID":"33" }], "nextPhraseID":"ratdom_rat_conv2_542sr" },
+      { "requires":[{ "requireType":"random", "requireID":"50" }], "nextPhraseID":"ratdom_rat_conv2_542sp" },
+      { "requires":[{ "requireType":"random", "requireID":"10" }], "nextPhraseID":"ratdom_rat_conv2_542k" },
+      { "nextPhraseID":"ratdom_rat_conv2_542ss" }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542rp",
+    "message":"Paper - I'll wrap your rock!",
+    "replies":[
+      {
+        "text":"You win. Again?",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      },
+      {
+        "text":"I'll give up.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542rs",
+    "message":"Scissors - oh dear.",
+    "replies":[
+      {
+        "text":"I win. Another game?",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542rr",
+    "message":"Rock - too.",
+    "replies":[
+      {
+        "text":"Once more.",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542ps",
+    "message":"Scissors - I'll cut your paper!",
+    "replies":[
+      {
+        "text":"You win. Again?",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      },
+      {
+        "text":"I'll give up.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542pr",
+    "message":"Rock - oh dear, you'll wrap my rock.",
+    "replies":[
+      {
+        "text":"I win. Another game?",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542pp",
+    "message":"Paper - too.",
+    "replies":[
+      {
+        "text":"Once more.",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542sr",
+    "message":"Rock - let's smash you scissors!",
+    "replies":[
+      {
+        "text":"You win. Again?",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      },
+      {
+        "text":"I'll give up.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542sp",
+    "message":"Paper - oh dear, you'll cut my paper.",
+    "replies":[
+      {
+        "text":"I win. Another game?",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542ss",
+    "message":"Scissors - too.",
+    "replies":[
+      {
+        "text":"Once more.",
+		"nextPhraseID":"ratdom_rat_conv2_542"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_542k",
+    "message":"King!",
+    "replies":[
+      {
+        "text":"King? What's that?",
+		"nextPhraseID":"ratdom_rat_conv2_544"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_544",
+    "message":"The king always wins of course.",
+    "replies":[
+      {
+        "text":"Cheater! I don't play with you anymore!",
+		"nextPhraseID":"X"
       }
     ]
   },
@@ -2574,7 +3020,11 @@
       {
 		"text":"Fortunately for you there is no mirror here.",
         "nextPhraseID":"ratdom_uglybrute_script_30"
-      }        
+      },
+      {
+		"text":"Sorry, I didn't want to disturb you.",
+        "nextPhraseID":"X"
+      }
 	]
   },
   {
@@ -2584,6 +3034,25 @@
       {
 		"text":"Aww, is the little brute angry now?",
         "nextPhraseID":"ratdom_uglybrute_script_90"
+      },
+      {
+		"text":"Oops, I better be quiet now ...",
+        "nextPhraseID":"ratdom_uglybrute_script_32"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_uglybrute_script_32",
+	"switchToNPC":"ratdom_uglybrute",
+    "message":"Indeed you better be!",
+    "replies":[
+      {
+		"text":"The beast is able to talk?",
+        "nextPhraseID":"ratdom_uglybrute_script_90"
+      },
+      {
+		"text":"... and leave quickly!",
+        "nextPhraseID":"X"
       }        
 	]
   },
