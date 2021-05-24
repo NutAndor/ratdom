@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="16">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="16">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -183,30 +183,27 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="7577" name="map_trail_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../../../../../AndorsTrailRelease/andors-trail/AndorsTrail/res/drawable/map_trail_1.png" width="512" height="256"/>
- </tileset>
- <layer name="Ground" width="15" height="30">
+ <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJylld0NgzAMhFHeuv8rKyQgdYA0bEDpCB2kROKk68n5AR5OiODPPtlyCG4Ypl2BNMo7S2MRr8xonFtsKfZsvR6BiRdYaN3lxddLVPPObH6+Rb7CRmG/Im8w7Htu+FLfHLfcYD832FYvre/Px7962Ty75NpspDnje57dJvUtdqU5J4OFksGGY84zxYOFp2TkYi2SayRPNY7nyP1LR54ap/uKHWjVs/LESm+s+WjvUbO0s+hF6Y5Irryz6OkqZ/C8ub6d5TP2XIu7qrN36dW7t9cr/wssprf2JLwv1IB+QO09VA==
   </data>
  </layer>
- <layer name="Objects" width="15" height="30">
+ <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJx9VU1Lw0AQXdYfIE1pIFe99h+Lv8AeiyH1WA/W3iq0Bj2lKgo9eRAFEfeRHTL7Ms2DpZvd+dqZeVPnUlS5c7uR6+GQObc1zq0z2HjO0u990X1r+7gD/pQ8UEeZl3D+O2n3yzzVw6qVrce4n6sz0dmQfe17Tm9osr6MhUW4u47rht6MuNZk98p3+1LZ9Ud8SJ7EvqWbka74lHcj/vKIbkm6qOWU8gQZibtUuWRdoKb3rnJ7L7osr/EWZN7V+sg73U+KkXtwSbHdxT7hmKUnuE6sK35vR31fk9OWG4KnPNX1YztXAGLCveAryH3H9RNWRrp7n+pnYzeIUvFD52zm27df+Lbelz69Q1+viRvWTHgoUj1A6ix50vzZ5LYtLSM25exg8Bb8nFEuJE7dU3L2WrhBcE1PqF6wCQ7AJ8tq7kJmPDAvgCrEvohvEu7KvDlXXMMsmVLNVuH7Pp6dGX54VknMgDVz8at9NMpnMzAvAcmzcEfqhr6C3FbdQ5btcR6tPkVfap9V5FNFPaZtWf9HAvBF50Hz/h+u44v1
   </data>
  </layer>
- <layer name="Above" width="15" height="30">
+ <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJytlMsNhDAMRCNuHAMSBdD2imq2AzggGqAOFkXRGuPPGDEXQJlnD7GSlIq+Q3l+muSqejXxGhP55izSbxmudZq+cBPAck/X62sIL+WypHnqPlh7qa1JbCvs+Zrv+Sk7Gr1rbpofyaz5IuyW/779l38O9pVmhrKn+MwiLPdG2DnAnhm5H1nz6lqcxlrngJ5vPhcrp3QvtMY9EpH3j56e9vbmYgnhkLuU+lB/tP6boj3rO3JvR3UAkPk+vw==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer id="4" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJydk8sNwCAMQ5mitw7OGGxY9cAF2c4LkRClwp+EZD1jLLh23N53WBXqf6XjeIhHgldnqpu4HC+p462W8qv8p+8T6+44XcdVYSu+rk7qiU6tOrpVL95iq/p15lbl3cV1MWQeiF7ykML1W/Lv9g425Z/eWmFPvMox+SG1Jbnv83xZ3Wlv07mg/P/6AGVWwX8=
+   eJydk8sNwCAMQ5mi+6/Ahpx6QbbzTCREi/AnIdnfWhuuP17vO6wKdT7pOB7ikeDVP9VNXI6X1PFVS/lV/tP3jXV3nK7jmrATX6uTeqKpVaM79eIrdqpfM7cq7xbXYsg8EL3kIYXrt+Tf7Q025Z/eWmFvvMox+SG1Jbmnc+qJ5NTMk1sH8MzAyQ==
   </data>
  </layer>
- <objectgroup name="Mapevents">
+ <objectgroup id="5" name="Mapevents">
   <object id="1" name="west" type="mapchange" x="0" y="160" width="32" height="96">
    <properties>
     <property name="map" value="blackwater_mountain15"/>
@@ -233,7 +230,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup id="6" name="Spawn" visible="0">
   <object id="4" name="gornaud_1" type="spawn" x="192" y="672" width="96" height="32">
    <properties>
     <property name="quantity" value="2"/>
@@ -290,5 +287,5 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
+ <objectgroup id="7" name="Keys" visible="0"/>
 </map>

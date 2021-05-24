@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextobjectid="14">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="14">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -183,55 +183,52 @@
  <tileset firstgid="7577" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
- <tileset firstgid="7685" name="map_trail_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../created/drawable/map_trail_1.png" width="512" height="256"/>
- </tileset>
- <layer name="Ground" width="20" height="20">
+ <layer id="1" name="Ground" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJyllEEOgyAQRc3suP+WK6hduKf0BtYeob2HEks6+SJ/KouXmDi8EefDIF03AHcC1tfWx40nIVTcI9QuG2/CDG706drJ2dDuAD6r44zk7JXTA1ecvdRnhD1YL/yPbO7Yi+0ZHZibIMccsj1rB+ZmlnIOz3wRHLWM6B43OfrGr+vKXEu+2JDBB/havi3xKvjYGm+sYz4P82e+Ul0+B/+em/w+Zym52L1nQeeN3XsWPm5ncr/nFlYRkDAc
   </data>
  </layer>
- <layer name="ratdom_Ground" width="20" height="20" visible="0">
+ <layer id="2" name="ratdom_Ground" width="20" height="20" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYKAuOMAEwdQCl5ggmFrgCRMEUwts4YRgaoE5TBA8CkbBKBgFgx0AAADpB68=
   </data>
  </layer>
- <layer name="Objects" width="20" height="20">
+ <layer id="3" name="Objects" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYBiaQJwJgpH56IALixg6WANUs5gVu9xUoHgOEK+G2iWFwzwDIeziHwQJ27+aCDfOJUINsn3EmEmpXfQyV4ufODOJ9TMoHmXwqCXkTli6A6WbRGi6uSEIsR+W3oSwmIEtLawh0s2g9JnGit+PILOuE5HekMFUqPtPk6gPBOaREJ/I/kQPh9k4zIGpe0akPdjMOSxGnHqYOlxuGQzgGB6/kAO2U8k8ANv6Hu8=
   </data>
  </layer>
- <layer name="Above" width="20" height="20">
+ <layer id="4" name="Above" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYMANDjDhkSQBHBajrv5LVDaPUkBt80YBBFAjXJHNoEa6IceMy1j0kGsWTC8xYuSaR4nbQABdL7FuwxZO2ACx5s0lsvwiVh0pgFi/EAsGa5kFAEdzF7w=
   </data>
  </layer>
- <layer name="Top" width="20" height="20" visible="0">
+ <layer id="5" name="Top" width="20" height="20" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApIBwAGQAAB
   </data>
  </layer>
- <layer name="Top0" width="20" height="20" visible="0">
+ <layer id="6" name="Top0" width="20" height="20" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApIBwAGQAAB
   </data>
  </layer>
- <layer name="ratdom_Top" width="20" height="20" visible="0">
+ <layer id="7" name="ratdom_Top" width="20" height="20" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBg+QFyCgUECiCUlqGOeOtAcDSDWJMI8ats9WOwaygA9nAIlGRiCgDhYkjzz0NNDItCcJCBORjMP3V5CcUXIXej2EkqTIHcZAbEjmpnE+h9b+sLmV1z+J+R+egOYf0bzDPUBAFkQEaQ=
   </data>
  </layer>
- <layer name="Walkable" width="20" height="20">
+ <layer id="8" name="Walkable" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFccsMNYwOU6CUW0MKOgQwLYs2ldrzRIi1QSy0+NeTEJyFxYgG6XlLMwpdOcJlPjBuIMY+QOaTai83/1EhDI8E8ADfj3Yw=
   </data>
  </layer>
- <layer name="ratdom_Walkable" width="20" height="20" visible="0">
+ <layer id="9" name="ratdom_Walkable" width="20" height="20" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYKAu2CgGwSPFPGqDwe6+UTAKRsEogAEAgO8GOQ==
   </data>
  </layer>
- <objectgroup name="Mapevents">
+ <objectgroup id="10" name="Mapevents">
   <object id="1" name="entrance" type="mapchange" x="64" y="608" width="32" height="32">
    <properties>
     <property name="map" value="crossglen"/>
@@ -247,7 +244,7 @@
   </object>
   <object id="13" name="crossglen_cave_ratdom_key" type="script" x="32" y="128" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup id="11" name="Spawn" visible="0">
   <object id="4" name="crossglen_caverat" type="spawn" x="128" y="352" width="384" height="160">
    <properties>
     <property name="quantity" value="4"/>
@@ -278,8 +275,8 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="keys"/>
- <objectgroup name="Replace" visible="0">
+ <objectgroup id="12" name="keys"/>
+ <objectgroup id="13" name="Replace" visible="0">
   <object id="11" name="ratdom_nondisplay_1" type="replace" x="0" y="0" width="640" height="608">
    <properties>
     <property name="Top" value="ratdom_Top"/>

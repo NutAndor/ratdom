@@ -979,6 +979,10 @@
     "message":"Farewell then. I will think of you when I have the artifact in my claws!",
 	"rewards":[
 		{
+			"rewardType":"createTimer",
+			"rewardID":"ratdom_hunter_bridge"
+		},
+		{
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":73
@@ -1014,6 +1018,11 @@
 				"value":74,
 				"negate":true
 			}
+			{
+				"requireType":"timerElapsed",
+				"requireID":"ratdom_hunter_bridge",
+				"value":6
+			},
         ]
       }        
 	]
