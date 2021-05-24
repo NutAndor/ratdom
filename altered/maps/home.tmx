@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" infinite="0" nextobjectid="13">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="13">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -183,42 +183,42 @@
  <tileset firstgid="7577" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
- <layer name="Ground" width="10" height="10">
+ <layer id="1" name="Ground" width="10" height="10">
   <data encoding="base64" compression="zlib">
    eJzj42Jg4CMS75bCj2HqTkvhxzB1JznxY0rU1XEzMNRDcQM3bnV9QLl+KJ6ApA7kH0LqdkP9g6xuHlBuPhQvgKoDqXnJicAnOVH5yBgA38ZAiQ==
   </data>
  </layer>
- <layer name="Objects" width="10" height="10">
+ <layer id="2" name="Objects" width="10" height="10">
   <data encoding="base64" compression="zlib">
    eJxjYCAB8DMwLJRBcGFsAX5MpRuBcjdYGRj2s0LYj4BqHgIxowBCjTrIDBYGhhdANeeBuAKIP/EjMAyYE+m8razEqTvKCsEXxRgY3IH2FwLpYigbGdih8RuBapqxqItD4oPkJgLVTBaD8KuIdBMMAADVKhYu
   </data>
  </layer>
- <layer name="Above" width="10" height="10">
+ <layer id="3" name="Above" width="10" height="10">
   <data encoding="base64" compression="zlib">
    eJxjYMAP+LggGAQuixFQDAWHkdTh04Os7hKR6gjZu5WVOHXIYCM/8faexKIWm7ovOMwkBACWrQwv
   </data>
  </layer>
- <layer name="Walkable" width="10" height="10" visible="0">
+ <layer id="4" name="Walkable" width="10" height="10" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEPhgF8amiNCQFi1RLyGyHzqKEOJo7LrwCstzTd
   </data>
  </layer>
- <layer name="Top" width="10" height="10">
+ <layer id="5" name="Top" width="10" height="10">
   <data encoding="base64" compression="zlib">
    eJxjYBgFgwkAAAGQAAE=
   </data>
  </layer>
- <layer name="ratdom_Top" width="10" height="10" visible="0">
+ <layer id="6" name="ratdom_Top" width="10" height="10" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYCAfiEswMEgAsaQEqji6mDqQrQHEmmjqsIkhm43LPpj582QhZqODn+IMDN+B+AcQc+Ixn0MCIq+Oxx3obsflZ0L6iAUAzVcKag==
   </data>
  </layer>
- <layer name="Top0" width="10" height="10" visible="0">
+ <layer id="7" name="Top0" width="10" height="10" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFgwkAAAGQAAE=
   </data>
  </layer>
- <objectgroup name="mapevents" visible="0">
+ <objectgroup id="8" name="mapevents" visible="0">
   <object id="1" name="entrance" type="mapchange" x="96" y="288" width="32" height="32">
    <properties>
     <property name="map" value="crossglen"/>
@@ -229,7 +229,7 @@
   <object id="3" name="startitems2" type="container" x="256" y="256" width="32" height="32"/>
   <object id="6" name="ratdom_wakeup" type="script" x="64" y="128" width="32" height="64"/>
  </objectgroup>
- <objectgroup name="keys" visible="0">
+ <objectgroup id="9" name="keys" visible="0">
   <object id="4" name="andor:1" type="key" x="0" y="288" width="320" height="32">
    <properties>
     <property name="phrase" value="keyarea_andor1"/>
@@ -239,7 +239,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="spawn" visible="0">
+ <objectgroup id="10" name="spawn" visible="0">
   <object id="5" name="mikhail" type="spawn" x="224" y="128" width="32" height="32"/>
   <object id="7" name="ratdom_mikhail" type="spawn" x="288" y="0" width="32" height="32">
    <properties>
@@ -253,14 +253,14 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="ratdom_objgrp" visible="0">
+ <objectgroup id="11" name="ratdom_objgrp" visible="0">
   <properties>
    <property name="active" value="false"/>
   </properties>
   <object id="3" name="ratdom_startitems2" type="container" x="256" y="256" width="32" height="32"/>
   <object id="10" name="ratdom_underconstruction_01" type="script" x="64" y="256" width="96" height="32"/>
  </objectgroup>
- <objectgroup name="Replace" visible="0">
+ <objectgroup id="12" name="Replace" visible="0">
   <object id="11" name="ratdom_nondisplay_1" type="replace" x="32" y="32" width="256" height="256">
    <properties>
     <property name="Top" value="ratdom_Top"/>

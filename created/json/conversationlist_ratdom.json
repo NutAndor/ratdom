@@ -1094,6 +1094,16 @@
     "message":"So that looks sturdy enough to carry a person.",
 	"rewards":[
 		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":73
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":74
+		},
+		{
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":75
@@ -2024,7 +2034,7 @@
 		"requires":[
 			{
 				"requireType":"random",
-				"requireID":"20"
+				"requireID":"33"
 			}
 		]
       }
@@ -2188,7 +2198,7 @@
   },
   {
     "id":"ratdom_rat_conv2_20f",
-	"message":"Oh man. Humans aren't the smartest, but this one ...",
+	"message":"Oh man. Humans are not the smartest beings, but this one ...",
     "replies":[
       {
         "text":"N",
