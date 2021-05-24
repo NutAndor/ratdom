@@ -987,11 +987,107 @@
   },
   {
     "id":"ratdom_goldhunter_bridge_90",
+    "switchToNPC":"none",
+    "message":"So that looks sturdy enough to carry a person.",
 	"rewards":[
 		{
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":71
+		}
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bed",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_goldhunter_bed_10",
+        "requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":73
+			},
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":74,
+				"negate":true
+			}
+        ]
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bed_10",
+    "message":"Ouch! Something heavy fell on your head!",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":74
+		}
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bed2",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_goldhunter_bed2_10",
+        "requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":74
+			},
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":75,
+				"negate":true
+			}
+        ]
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bed2_10",
+    "message":"Another wooden plank - the ugly troll from above must have thrown it!",
+    "replies":[
+      {
+        "text":"Now at last let's build the bridge.",
+        "nextPhraseID":"ratdom_goldhunter_bed2_90"
+      },
+      {
+        "text":"Another fire for me?",
+        "nextPhraseID":"ratdom_goldhunter_bed2_20"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bed2_20",
+    "switchToNPC":"ratdom_rat",
+    "message":"No, not this time. You were very lucky that something pursuaded the troll to do you this favour.",
+    "replies":[
+      {
+        "text":"Probably you are right, I should not trust my luck too much. Let's build the bridge at last.",
+        "nextPhraseID":"ratdom_goldhunter_bed2_90"
+      },
+      {
+        "text":"But ...",
+        "nextPhraseID":"ratdom_goldhunter_bed2_20"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bed2_90",
+    "switchToNPC":"none",
+    "message":"So that looks sturdy enough to carry a person.",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":75
 		}
 	]
   },
@@ -1928,6 +2024,26 @@
   {
     "id":"ratdom_rat_conv2_1",
     "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2_400",
+		"requires":[{ "requireType":"random", "requireID":"10" },
+					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
+					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
+					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_bwm", "value":1 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_410",
+		"requires":[{ "requireType":"random", "requireID":"10" },
+					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
+					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
+					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_tour", "value":1 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_560",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
+					{ "requireType":"random", "requireID":"16" }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_550",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
+					{ "requireType":"random", "requireID":"20" }]
+      },
       {	"nextPhraseID":"ratdom_rat_conv2_540",
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
 					{ "requireType":"random", "requireID":"25" }]
@@ -1944,19 +2060,19 @@
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_500",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":76 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":31 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_40",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":75 }]
-      },
-      {	"nextPhraseID":"ratdom_rat_conv2_30",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":50 }]
-      },
-      {	"nextPhraseID":"ratdom_rat_conv2_20",
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":30 }]
       },
-      {	"nextPhraseID":"ratdom_rat_conv2_10",
+      {	"nextPhraseID":"ratdom_rat_conv2_30",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":20 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_20",
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":10 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_10",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":5 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_1b"
       }
@@ -2162,12 +2278,94 @@
     ]
   },
   {
+    "id":"ratdom_rat_conv2_400",
+	"switchToNPC":"ratdom_rat",
+    "message":"Why don't you wear that necklace you've got? The blue one that would show you the way to the sky?",
+    "replies":[
+      {
+        "text":"No need. I know the way perfectly well.",
+		"nextPhraseID":"X"
+      },
+      {
+        "text":"Well, why don't I? Really, I forgot about it.",
+		"nextPhraseID":"X"
+      },
+      {
+        "text":"I didn't see any use.",
+		"nextPhraseID":"ratdom_rat_conv2_402"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_402",
+    "message":"That's simple enough even for a simple mind: If worn they will mark the passage towards the mountain top with a blue shield.",
+    "replies":[
+      {
+        "text":"Ah, OK.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_410",
+	"switchToNPC":"ratdom_rat",
+    "message":"Why don't you wear that orange necklace you've got?",
+    "replies":[
+      {
+        "text":"No need. I know the way perfectly well.",
+		"nextPhraseID":"X"
+      },
+      {
+        "text":"Well, why don't I? Really, I forgot about it.",
+		"nextPhraseID":"X"
+      },
+      {
+        "text":"I didn't see any use.",
+		"nextPhraseID":"ratdom_rat_conv2_412"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_412",
+    "message":"That's simple enough even for a simple mind: If worn they will mark the passage towards the most interesting places here in the caves.",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_414"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_414",
+    "message":"The way might be somewhat longer, but you won't miss any of the cave wonders.",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_416"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_416",
+    "message":"Should there be a branch, it will be marked with a flag and a special formed shield.",
+    "replies":[
+      {
+        "text":"Got it.",
+		"nextPhraseID":"ratdom_rat_conv2_418"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_418",
+    "message":"[muttering] Want to hope so, but don't really believe it yet."
+  },
+  {
     "id":"ratdom_rat_conv2_500",
 	"rewards":[
 		{
 			"rewardType":"alignmentSet",
 			"rewardID":"ratdom_rat_conv2",
-			"value":1000
+			"value":1010
 		}
 	]
   },
@@ -2411,6 +2609,119 @@
 		"nextPhraseID":"X"
       }
     ]
+  },
+  {
+    "id":"ratdom_rat_conv2_550",
+	"switchToNPC":"ratdom_rat",
+    "message":"You really look funny as you stumble around on your two legs that are way too long.",
+    "replies":[
+      {
+        "text":"What? Take a look at yourself: Crooked four legs, much too short to even hold a knife.",
+		"nextPhraseID":"ratdom_rat_conv2_552"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_552",
+	"message":"You can run much faster on four legs. Give it a try!",
+    "replies":[
+      {
+        "text":"Forget it.",
+		"nextPhraseID":"ratdom_rat_conv2_500"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_560",
+	"switchToNPC":"ratdom_rat",
+    "message":"You are so quiet. Say, what's your problem.",
+    "replies":[
+      {
+        "text":"I don't have any problem.",
+		"nextPhraseID":"ratdom_rat_conv2_562"
+      }
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1010
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_562",
+    "message":"You can trust me. You will see, it will do you good.",
+    "replies":[
+      {
+        "text":"I really don't have a problem. At least not until now.",
+		"nextPhraseID":"ratdom_rat_conv2_563"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_563",
+    "message":"Ah, I knew it. What is it then?",
+    "replies":[
+      {
+        "text":"What?",
+		"nextPhraseID":"ratdom_rat_conv2_564"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_564",
+    "message":"Your problem that you just wanted to talk about.",
+    "replies":[
+      {
+        "text":"I don't want to talk about my problems.",
+		"nextPhraseID":"ratdom_rat_conv2_565"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_565",
+    "message":"So several problems. Which one do you want to start with?",
+    "replies":[
+      {
+        "text":"I don't have any problems!",
+		"nextPhraseID":"ratdom_rat_conv2_566"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_566",
+    "message":"At least it's a problem that you keep contradicting yourself.",
+    "replies":[
+      {
+        "text":"Oh rat, you're annoying. You are my problem.",
+		"nextPhraseID":"ratdom_rat_conv2_567"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_567",
+    "message":"See now? Your problem is your negative attitude.",
+    "replies":[
+      {
+        "text":"I wonder which tastes better, fried, boiled or grilled rat?",
+		"nextPhraseID":"ratdom_rat_conv2_568"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_568",
+    "message":"You have bad taste.",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_569"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_569",
+    "message":"Oh, don't look so murderous at me. You brutal biped."
   },
   {
     "id":"ratdom_rat_crossglen",

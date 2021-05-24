@@ -141,6 +141,8 @@
 			{ "progress":71, "logText":"71=GoldHunter bridge active" },
 			{ "progress":72, "logText":"72=GoldHunter talked to" },
 			{ "progress":73, "logText":"73=GoldHunter bridge burnt" },
+			{ "progress":74, "logText":"74=Troll bridge thrown" },
+			{ "progress":75, "logText":"75=Troll bridge active" },
 			{ "progress":81, "logText":"81=Ghost-1 active" },
 			{ "progress":82, "logText":"82=Ghost-1 active" },
 			{ "progress":83, "logText":"83=Ghost-1 active" },
