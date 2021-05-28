@@ -188,20 +188,20 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJydlNENwjAMRDsFn1V2aBgBOkLaEUpHCEzHBkxEItmSsS6OQ6X7iJSXk+2rwzxNoSgXHUWpaCPV7z63FYSYf5D4nRZ7BfyTxO/cBnj9TjLYaPCB/C3vnj+z4Q++51u1Am5xcKzP5Ze1etXzPgZ56c2Z8dSMvPMAuzt6rfO6EXc6WJn5nc6VezlYmfmTzohDM5aZR4yVq9ZdT64ikM60dzZoPt5MrWA+3kztoGfZ4d3KhPwf0O5jrjUnuUPTAKd3H9fv5VD9Frc05s31a47vR9UP/UYGzMg+QB6W3mIXfQFSgqaL
+   eJydlNENwyAMRDNFPyN2SDpCmxEII6QZgXbJTlSQbMm1DmMS6T6QeD7ZvhDmaQpFuegoikU7qX7Pua0gxPyLxHVa7B3wbxLXeQzwuk402NXgA/lb3j1/ZsMFvudbtQFucXCs7+2ftWbV8z4GeenNmfH0jLzzAJscs9Z53Yk7HazMfKJz5T4OVmb+pDPi0I5l5hFj5ap115OrFUhn2rsbtB9vpjawH2+mEphZdni3MiH/B/T2Mdfak3xD4wCn3z7u38uh/i1uaeyb+9cc31/VPHSNDJiR9wB5WJLsD0s2pfA=
   </data>
  </layer>
- <layer id="2" name="Objects" width="15" height="30" visible="0">
+ <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYMAN4uQQtCYQF6FhYoEWBXqx2U0KQLd7uOsFgaGodxSMglEwCv6IDoy9AGtMFnw=
   </data>
  </layer>
- <layer id="3" name="Above" width="15" height="30" visible="0">
+ <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSI6CAQWXxcjXa0phvA5Vuw9ToPcSBXpHAXGA3LgF6SM3fkbTxOAEnUzEqaNWWQQAROgLyQ==
+   eJxjYMAN3OTwSI6CAQWXxcjXa0phvA5Vuw9ToPcSBXpHAXGA3LgF6SM3fkbTxOAEnUzEqaOkPJiLZAcASJQMFQ==
   </data>
  </layer>
- <layer id="4" name="Top" width="15" height="30" visible="0">
+ <layer id="4" name="Top" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
@@ -256,7 +256,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="15" name="Compass" width="15" height="30">
+ <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxTk2NgUBvFo3gUDzhWHQRuGMWEMQhYsZGn1wKIvcjUO4pphwG8+nde
   </data>

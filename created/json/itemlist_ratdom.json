@@ -1,5 +1,13 @@
 [
     {
+        "id":"handcarved_snowball",
+        "iconID":"items_misc:4",
+        "hasManualPrice":1,
+        "baseMarketCost":10,
+        "name":"Hand carved snowball",
+        "category":"other"
+    },
+    {
         "id":"ratdom_artefact",
 		"iconID":"items_consumables:23",
         "name":"Rat's artefact",
@@ -20,6 +28,16 @@
         }
     },
     {
+        "id":"ratdom_book",
+		"iconID":"items_books:0",
+        "name":"Nasty looking book",
+        "displaytype":"extraordinary",
+        "hasManualPrice":1,
+        "baseMarketCost":300,
+        "category":"other",
+		"description":"-> Enslavement <- \nand how to do it right.\n\n[As you scan the pages, you decide that this is not appropriate reading for you]"
+    },
+    {
         "id":"ratdom_compass_bwm",
         "iconID":"items_reterski_1:9",
         "name":"Blue rat necklace",
@@ -31,7 +49,7 @@
         "id":"ratdom_compass_tour",
         "iconID":"items_reterski_1:10",
         "name":"Orange rat necklace",
-        "description":"This necklace will work as compass towards everywhere.",
+        "description":"This necklace will guide you through the caves from Crossglen entrance unto every worthy place.",
         "displaytype":"rare",
         "category":"neck",
     },

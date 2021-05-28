@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="5" name="Walkable" width="15" height="30" visible="0">
+ <layer id="5" name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHdpPDLTeKR/EoHsWjmDyMDZCrjxj9xAJS3YlLjhR/IasjRR8l4YiuHwCeajm5
+   eJzbKMbAsBEHdpPDLTeKR/EoHsWjmDyMDZCrjxj9xAJS3YlLjhR/IasjRR8l4YiOAaeSO0c=
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">

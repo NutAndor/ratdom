@@ -157,6 +157,23 @@
         "attackChance":90
     },
     {
+        "id":"ratdom_librarian",
+        "name":"Librarian",
+        "iconID":"monsters_rltiles1:94",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
+        "unique":1,
+        "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":10,
+            "max":30
+        },
+        "spawnGroup":"ratdom_librarian",
+        "droplistID":"ratdom_librarian"
+        "phraseID":"ratdom_librarian"
+    },
+    {
         "id":"ratdom_mikhail",
         "name":"Gruiik",
         "iconID":"monsters_rats:3",
@@ -167,7 +184,6 @@
         "id":"ratdom_rat",
         "name":"Clevred",
         "iconID":"monsters_rats:1",
-        "unique":1,
         "phraseID":"ratdom_rat"
     },
     {
@@ -668,6 +684,7 @@
         "id":"whootibarfag",
         "name":"Whootibarfag",
         "iconID":"monsters_rltiles3:16",
-        "phraseID":"whootibarfag"
+        "phraseID":"whootibarfag",
+        "droplistID":"whootibarfag"
     }
 ]

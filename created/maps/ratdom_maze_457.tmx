@@ -256,7 +256,7 @@
    eJxjYICAjWKYGJ84OsCmDp9edHNI0UesOwiZTwwgxk3khge5+rDpJVYfsWFDK7244pLe7iZV/0DopZY+etg50OlqIPRSM5yJ1YsPkKsPnxmE1OCSI8VfyOpI0QdTj80cUjEA4LLupg==
   </data>
  </layer>
- <layer id="15" name="Compass" width="15" height="30">
+ <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxTk2NgUBvFo3gUj+JRTHNsMQjcMIoxMQAw13eb
   </data>

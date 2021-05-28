@@ -900,6 +900,18 @@
 				"negate":true
 			},
 			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":74,
+				"negate":true
+			},
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":75,
+				"negate":true
+			},
+			{
 				"requireType":"killedMonster",
 				"requireID":"ratdom_goldhunter",
 				"value":1
