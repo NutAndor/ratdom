@@ -167,6 +167,78 @@
         ]
     },
     {
+        "id":"ratdom_librarian",
+        "message":"Andor! Good that you are back at last!",
+        "replies":[
+            {
+                "text":"I am $playername. You must mix me with my brother.",
+                "nextPhraseID":"ratdom_librarian_10"
+            },
+            {
+                "text":"Indeed. Any news?",
+                "nextPhraseID":"ratdom_librarian_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_10",
+        "message":"Yes. I see it now. Please leave. My master is not present today.",
+        "replies":[
+            {
+                "text":"Andor - master? What ... Where is my brother?",
+                "nextPhraseID":"ratdom_librarian_12"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_12",
+        "message":"That does not concern you. Mind your own business and leave now!",
+        "replies":[
+            {
+                "text":"Bye.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_20",
+        "message":"I am not sure. Today I hear strangers footsteps in the corridors.",
+        "replies":[
+            {
+                "text":"[muttering] Probably mine.",
+                "nextPhraseID":"ratdom_librarian_22"
+            },
+            {
+                "text":"Then what are you waiting for? Go and look who is wandering through our passages!",
+                "nextPhraseID":"ratdom_librarian_30"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_22",
+        "message":"What?? You are the stranger! You are not allowed to be here!",
+        "replies":[
+            {
+                "text":"It's fine, I'm going already.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Andor is my brother. I'm going to look for a clue to his whereabouts now. You won't stop me from doing that.",
+                "nextPhraseID":"F"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_30",
+        "message":"As you command me I'll be right back",
+        "replies":[
+            {
+                "text":"Take your time, rather be thoroughly!",
+                "nextPhraseID":"R"
+            }
+        ]
+    },
+    {
         "id":"ratdom_mikhail",
         "switchToNPC":"ratdom_mikhail",
         "replies":[
@@ -236,78 +308,6 @@
             },
             {
                 "nextPhraseID":"ratdom_mikhail_01"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_librarian",
-        "message":"Andor! Good that you are back at last!",
-        "replies":[
-            {
-                "text":"I am $playername. You must mix me with my brother.",
-                "nextPhraseID":"ratdom_librarian_10"
-            },
-            {
-                "text":"Indeed. Any news?",
-                "nextPhraseID":"ratdom_librarian_20"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_librarian_10",
-        "message":"Yes. I see it now. Please leave. My master is not present today.",
-        "replies":[
-            {
-                "text":"Andor - master? What ... Where is my brother?",
-                "nextPhraseID":"ratdom_librarian_12"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_librarian_12",
-        "message":"That does not concern you. Mind your own business and leave now!",
-        "replies":[
-            {
-                "text":"Bye.",
-                "nextPhraseID":"X"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_librarian_20",
-        "message":"I am not sure. Today I hear strangers footsteps in the corridors.",
-        "replies":[
-            {
-                "text":"[muttering] Probably mine.",
-                "nextPhraseID":"ratdom_librarian_22"
-            },
-            {
-                "text":"Then what are you waiting for? Go and look who is wandering through our passages!",
-                "nextPhraseID":"ratdom_librarian_30"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_librarian_22",
-        "message":"What?? You are the stranger! You are not allowed to be here!",
-        "replies":[
-            {
-                "text":"It's fine, I'm going already.",
-                "nextPhraseID":"X"
-            },
-            {
-                "text":"Andor is my brother. I'm going to look for a clue to his whereabouts now. You won't stop me from doing that.",
-                "nextPhraseID":"F"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_librarian_30",
-        "message":"As you command me I'll be right back",
-        "replies":[
-            {
-                "text":"Take your time, rather be thoroughly!",
-                "nextPhraseID":"R"
             }
         ]
     },
@@ -1904,6 +1904,6 @@
 	},
     {
         "id":"whootibarfag_52",
-        "message":"This dialogue needs rework of course. And the tour guide won't be in my droplist here, but later in the cave - maybe dropped by - ah no, let's not spoil..."
+        "message":"This dialogue needs rework of course. And the tour guide won't be in my droplist here, but later in the cave - maybe dropped by - ah no, let's not spoil - find it out yourself..."
 	}
 ]

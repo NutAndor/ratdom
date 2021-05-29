@@ -41,7 +41,7 @@
     },
     {
         "id":"ratdom_dev_info_12",
-        "message":"The maze is about 50% complete. It is already a really vast area of rather similar looking maps. \nThis is intentionally. This area looks and feels differently, and is a challenge also for the high level players that simply run though new areas without any effort.",
+        "message":"The maze is about 75% complete. It is already a really vast area of rather similar looking maps. \nThis is intentionally. This area looks and feels differently, and is a challenge also for the high level players that simply run though new areas without any effort.",
         "replies":[
             {
                 "text":"The plot",
@@ -140,80 +140,6 @@
 		}
 	]
     },
-  {
-    "id":"crossglen_ratdom_key",
-    "message":"This must be a bad dream.",
-    "replies":[
-      {
-        "text":"How can I only wake up?",
-        "nextPhraseID":"N"
-      },
-      {
-        "text":"Maybe I should talk to the rat in my bed again.",
-        "nextPhraseID":"X",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_quest",
-            "value":100,
-            "negate":true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id":"crossglen_ratdom_key_2",
-    "replies":[
-      {
-        "nextPhraseID":"crossglen_ratdom_key"
-      }
-    ]
-  },
-  {
-    "id":"crossglen_ratdom_key_3",
-    "message":"You see a note pinned to the door\n * Town hall closed * ",
-    "replies":[
-      {
-        "text":"It's the first time, that I see it closed.",
-        "nextPhraseID":"X"
-      },
-      {
-        "text":"Oh, what's this?",
-        "nextPhraseID":"crossglen_ratdom_key_3_20",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_mikhail",
-            "value":72,
-            "negate":true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id":"crossglen_ratdom_key_3_20",
-    "message":"A bag with a freshly baken bread was dangling at the door.",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
-        "rewardID":"ratdom_mikhail",
-        "value":72
-      },
-      {
-        "rewardType":"giveItem",
-        "rewardID":"bread",
-        "value":1
-      }
-    ],
-    "replies":[
-      {
-        "nextPhraseID":"X",
-        "text":"Good old Mara - she always knows what I need."
-      }
-    ]
-  },
   {
     "id":"ratdom_artefact_la",
     "replies":[
@@ -1119,6 +1045,141 @@
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":75
+		}
+	]
+  },
+  {
+    "id":"crossglen_ratdom_key",
+    "message":"This must be a bad dream.",
+    "replies":[
+      {
+        "text":"How can I only wake up?",
+        "nextPhraseID":"N"
+      },
+      {
+        "text":"Maybe I should talk to the rat in my bed again.",
+        "nextPhraseID":"X",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":100,
+            "negate":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"crossglen_ratdom_key_2",
+    "replies":[
+      {
+        "nextPhraseID":"crossglen_ratdom_key"
+      }
+    ]
+  },
+  {
+    "id":"crossglen_ratdom_key_3",
+    "message":"You see a note pinned to the door\n * Town hall closed * ",
+    "replies":[
+      {
+        "text":"It's the first time, that I see it closed.",
+        "nextPhraseID":"X"
+      },
+      {
+        "text":"Oh, what's this?",
+        "nextPhraseID":"crossglen_ratdom_key_3_20",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_mikhail",
+            "value":72,
+            "negate":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"crossglen_ratdom_key_3_20",
+    "message":"A bag with a freshly baken bread was dangling at the door.",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_mikhail",
+        "value":72
+      },
+      {
+        "rewardType":"giveItem",
+        "rewardID":"bread",
+        "value":1
+      }
+    ],
+    "replies":[
+      {
+        "nextPhraseID":"X",
+        "text":"Good old Mara - she always knows what I need."
+      }
+    ]
+  },
+  {
+	"id":"ratdom_ladder_1",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":61,
+					"negate":true
+				}
+			],
+			"nextPhraseID":"ratdom_ladder_1a"
+		}
+	]
+  },
+  {
+	"id":"ratdom_ladder_1a",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":61
+		},
+		{
+			"rewardType":"activateMapObjectGroup",
+			"rewardID":"Ladder",
+			"mapName":"ratdom_maze_455a"
+		}
+	]
+  },
+  {
+	"id":"ratdom_ladder_0",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":61
+				}
+			],
+			"nextPhraseID":"ratdom_ladder_0a"
+		}
+	]
+  },
+  {
+	"id":"ratdom_ladder_0a",
+	"rewards":[
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":61
+		},
+		{
+			"rewardType":"deactivateMapObjectGroup",
+			"rewardID":"Ladder",
+			"mapName":"ratdom_maze_455a"
 		}
 	]
   },
@@ -5630,67 +5691,6 @@
 			"rewardType":"deactivateMapObjectGroup",
 			"rewardID":"water02",
 			"mapName":"ratdom_maze_664"
-		}
-	]
-  },
-  {
-	"id":"ratdom_ladder_1",
-	"replies":[
-		{
-			"requires":[
-				{
-					"requireType":"questProgress",
-					"requireID":"ratdom_nondisplay",
-					"value":61,
-					"negate":true
-				}
-			],
-			"nextPhraseID":"ratdom_ladder_1a"
-		}
-	]
-  },
-  {
-	"id":"ratdom_ladder_1a",
-	"rewards":[
-		{
-			"rewardType":"questProgress",
-			"rewardID":"ratdom_nondisplay",
-			"value":61
-		},
-		{
-			"rewardType":"activateMapObjectGroup",
-			"rewardID":"Ladder",
-			"mapName":"ratdom_maze_455a"
-		}
-	]
-  },
-  {
-	"id":"ratdom_ladder_0",
-	"replies":[
-		{
-			"requires":[
-				{
-					"requireType":"questProgress",
-					"requireID":"ratdom_nondisplay",
-					"value":61
-				}
-			],
-			"nextPhraseID":"ratdom_ladder_0a"
-		}
-	]
-  },
-  {
-	"id":"ratdom_ladder_0a",
-	"rewards":[
-		{
-			"rewardType":"removeQuestProgress",
-			"rewardID":"ratdom_nondisplay",
-			"value":61
-		},
-		{
-			"rewardType":"deactivateMapObjectGroup",
-			"rewardID":"Ladder",
-			"mapName":"ratdom_maze_455a"
 		}
 	]
   },
