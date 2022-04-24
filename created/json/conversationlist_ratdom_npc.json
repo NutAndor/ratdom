@@ -926,6 +926,92 @@
         ]
     },
     {
+        "id":"ratdom_rat_bone_collector",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_rat_bone_collector_50",
+                "requires":[
+                    {			
+                        "requireType":"inventoryKeep",
+                        "requireID":"ratdom_rat_skelett_leg_coll",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_rat_bone_collector_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bone_collector_10",
+		"message":"Oh, a visitor - how unusual!",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_rat_bone_collector_12"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bone_collector_12",
+		"message":"I am Loirash. Nice to meet you.",
+        "replies":[
+            {
+                "text":"Hi, nice to meet you.",
+				"nextPhraseID":"ratdom_rat_bone_collector_14"
+            },
+            {
+                "text":"What are you doing here?",
+				"nextPhraseID":"ratdom_rat_bone_collector_16"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bone_collector_14",
+		"message":"You're probably wondering what I'm doing here deep in this dark cave.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_rat_bone_collector_16"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bone_collector_16",
+		"message":"I am an instrument maker. Professional musical instruments, you know?",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_rat_bone_collector_18"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bone_collector_18",
+		"message":"At the moment I'm working on a new instrument made entirely of bone. I expect a sound from it that sends chills down the spine.",
+        "replies":[
+            {
+                "text":"It's already doing that to me.",
+				"nextPhraseID":"ratdom_rat_bone_collector_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bone_collector_20",
+		"message":"This cave is a great source of bones of high quality, so I stay until my instrument is complete.",
+        "replies":[
+            {
+                "text":"May I have look?.",
+				"nextPhraseID":"ratdom_rat_bone_collector_22"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bone_collector_22",
+		"message":"Sure. Feel free."
+    },
+    {
         "id":"ratdom_rat_bwm1",
         "replies":[
             {
@@ -943,6 +1029,48 @@
             }
         ]
     },
+    {
+        "id":"ratdom_rat_bone_collector_50",
+		"message":"Looks like you have something that doesn't belong to you?",
+        "replies":[
+            {
+                "text":"Yes. I found this old leg bone of a rat. Can I purchase it?",
+				"nextPhraseID":"ratdom_rat_bone_collector_52"
+            },
+            {
+                "text":"[Lie] No. I haven't taken anything.",
+				"nextPhraseID":"ratdom_rat_bone_collector_54",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"ratdom_rat_skelett_leg_coll",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_bone_collector_52",
+		"message":"Well, no. This is my favorite bone, it makes good sound. Put it back."
+    },
+    {
+        "id":"ratdom_rat_bone_collector_54",
+		"message":"Yes you have. I'll better put it back agin. This is a very valuable bone, you know?",
+        "replies":[
+            {
+                "text":"I see.",
+				"nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":120
+            }
+		]
+    },
 	{
         "id":"ratdom_rat_bwm1_10",
         "message":"Your brother was here often. He had made himself rather comfortable."
@@ -952,6 +1080,351 @@
 		"switchToNPC":"none",
         "message":"Nobody seemed to be here for a long time."
     },
+	{
+		"id":"ratdom_rat_warden",
+		"message":"Yes please?",
+		"replies":[
+		  {
+			"text":"Who are you?",
+			"nextPhraseID":"ratdom_rat_warden_10"
+		  },
+		  {
+			"text":"What are you doing here?",
+			"nextPhraseID":"ratdom_rat_warden_10"
+		  },
+		  {
+			"text":"Could you tell me something about this place?",
+			"nextPhraseID":"ratdom_rat_warden_30"
+		  },
+		  {
+			"text":"How can I enter?",
+			"nextPhraseID":"ratdom_rat_warden_50",
+			"requires":[
+			  {
+				"requireType":"questProgress",
+				"requireID":"ratdom_rat_skelett",
+				"value":10,
+				"negate":true
+			  }
+			]
+		  },
+		  {
+			"text":"Oh, it's nothing. I just tried the bell.",
+			"nextPhraseID":"ratdom_rat_warden_20"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_10",
+		"message":"I am the warden of our Memorial Hall. I keep the exhibits in order and answer questions from visitors. Call me Wart.",
+		"replies":[
+		  {
+			"text":"Could you tell me something about this place?",
+			"nextPhraseID":"ratdom_rat_warden_30"
+		  },
+		  {
+			"text":"Wart - really? [giggle]",
+			"nextPhraseID":"ratdom_rat_warden_20"
+		  },
+		  {
+			"text":"OK, bye.",
+			"nextPhraseID":"X"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_20",
+		"message":"[Incomprehensible muttering]",
+		"replies":[
+		  {
+			"text":"OK, just leave me then.",
+			"nextPhraseID":"R"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_30",
+		"message":"...",
+		"replies":[
+		  {
+			"nextPhraseID":"ratdom_rat_warden_50"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_50",
+		"replies":[
+		  {
+			"nextPhraseID":"ratdom_rat_warden_80",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_skull",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_leg",
+				"value":4
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_tail",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_back",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_60",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_skull",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_65",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_tail",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_66",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_tail",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_61"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_60",
+		"message":"Wonderful! You've already recovered King Rah's head!",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_70"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_61",
+		"message":"You've already recovered some of King Rah's legs.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_70"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_65",
+		"message":"Ah, you've already recovered King Rah's tail!",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_70"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_66",
+		"message":"Good, you've already recovered King Rah's back bone.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_70"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_70",
+		"replies":[
+		  {
+			"nextPhraseID":"ratdom_rat_warden_70a",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_leg",
+				"value":4
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_tail",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_back",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_71a",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_skull",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_tail",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_back",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_75a",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_skull",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_leg",
+				"value":4
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_back",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_76a",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_skull",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_leg",
+				"value":4
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_tail",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_79"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_70a",
+		"message":"Great! Only a King Rah's head is missing. You will find it too, I am sure.",
+		"replies":[
+		  {
+			"text":"Of course.",
+			"nextPhraseID":"X"
+		  },
+		  {
+			"text":"I hope it is worth the hard work.",
+			"nextPhraseID":"X"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_71a",
+		"message":"Great! Now we only need the legs. You will find them too, I am sure.",
+		"replies":[
+		  {
+			"text":"Of course.",
+			"nextPhraseID":"X"
+		  },
+		  {
+			"text":"I hope it is worth the hard work.",
+			"nextPhraseID":"X"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_75a",
+		"message":"Great! Only a King Rah's tail is missing. You will find it too, I am sure.",
+		"replies":[
+		  {
+			"text":"Of course.",
+			"nextPhraseID":"X"
+		  },
+		  {
+			"text":"I hope it is worth the hard work.",
+			"nextPhraseID":"X"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_76a",
+		"message":"Great! Only a King Rah's back bone is missing. You will find it too, I am sure.",
+		"replies":[
+		  {
+			"text":"Of course.",
+			"nextPhraseID":"X"
+		  },
+		  {
+			"text":"I hope it is worth the hard work.",
+			"nextPhraseID":"X"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_79",
+		"message":"In total we need the head, the back bone, 4 legs and the tail of course.",
+		"replies":[
+		  {
+			"text":"OK, I'll be back.",
+			"nextPhraseID":"X"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_80",
+		"message":"I can't let you enter our Memorial Hall. We have to get back our skelet statue of King Rah first.",
+		"replies":[
+		  {
+			"text":"OK. I will find it for you.",
+			"nextPhraseID":"X"
+		  }
+		],
+		"rewards":[
+		  {
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_rat_skelett",
+			"value":10
+		  }
+		]
+	},
     {
         "id":"ratdom_roundling",
         "message":"If strangers come hither to gain \nour treasure, their hope is in vain. \nIn darkest deep ground, \nwith our Yellow Round, \ntheir bones will for ever remain.",
@@ -1830,8 +2303,8 @@
                 "requires":[
                     {			
                         "requireType":"questProgress",
-                        "requireID":"ratdom_rat_skelett",
-                        "value":50,
+                        "requireID":"ratdom_quest",
+                        "value":30,
 						"negate":true
                     }
                 ]
@@ -1850,8 +2323,8 @@
 		"rewards":[
 			{
 				"rewardType":"questProgress",
-				"rewardID":"ratdom_rat_skelett",
-				"value":50
+				"rewardID":"ratdom_quest",
+				"value":30
 			},
             {
                 "rewardType":"giveItem",

@@ -93,6 +93,13 @@
         "category":"other"
     },
     {
+        "id":"ratdom_rat_skelett_leg_coll",
+        "iconID":"items_misc:0",
+        "name":"Leg bones of a rat",
+        "displaytype":"quest",
+        "category":"other"
+    },
+    {
         "id":"ratdom_rat_skelett_skull",
         "iconID":"items_misc:0",
         "name":"Rat skull",

@@ -412,6 +412,113 @@
     "message":"Let's hurry back now!"
   },
   {
+    "id":"ratdom_bone_collector_s1",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_bone_collector_s1_10",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":120,
+			"negate":"true"
+          }
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_bone_collector_s1_20",
+        "requires":[
+          {
+            "requireType":"inventoryKeep",
+            "requireID":"ratdom_rat_skelett_leg_coll",
+            "value":1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bone_collector_s1_10",
+    "message":"An ancient bone catches your eye.",
+    "replies":[
+      {
+        "text":"Take the bone.",
+		"nextPhraseID":"ratdom_bone_collector_s1_14"
+      },
+      {
+        "text":"Look closer.",
+		"nextPhraseID":"ratdom_bone_collector_s1_12"
+      },
+      {
+        "text":"Don't touch it.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bone_collector_s1_12",
+    "message":"It seems to be a leg bone of a great old rat. Maybe you could find a better use for it?",
+    "replies":[
+      {
+        "text":"Take the bone.",
+		"nextPhraseID":"ratdom_bone_collector_s1_14"
+      },
+      {
+        "text":"Don't touch it.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bone_collector_s1_14",
+	"message":"You slip the bone unobtrusively into your pocket.",
+    "rewards":[
+      {
+        "rewardType":"give",
+        "rewardID":"ratdom_rat_skelett_leg_coll",
+		"value":"1"
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+		"value":"120"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bone_collector_s1_20",
+    "message":"You look at the pile of bones.",
+    "replies":[
+      {
+        "text":"Put the leg bone back onto the pile.",
+		"nextPhraseID":"ratdom_bone_collector_s1_22"
+      },
+      {
+        "text":"Maybe you could put another bone of your bag instead?",
+		"nextPhraseID":"ratdom_bone_collector_s1_24"
+      },
+      {
+        "text":"Leave.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bone_collector_s1_22",
+	"message":"The pile of bones is complete again.",
+    "rewards":[
+      {
+        "rewardType":"removeQuestProgress",
+        "rewardID":"ratdom_nondisplay",
+		"value":"120"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bone_collector_s1_24",
+	"message":"Silently you check your bag for bones."
+  },
+  {
     "id":"ratdom_bwm1_east1",
     "rewards":[
       {
@@ -788,8 +895,8 @@
         "requires":[
 			{
 				"requireType":"questProgress",
-				"requireID":"ratdom_rat_skelett",
-				"value":51,
+				"requireID":"ratdom_quest",
+				"value":31,
 				"negate":true
 			}
         ]
@@ -802,8 +909,8 @@
     "rewards":[
       {
         "rewardType":"questProgress",
-        "rewardID":"ratdom_rat_skelett",
-        "value":51
+        "rewardID":"ratdom_quest",
+        "value":31
       }
     ]
   },
@@ -2997,6 +3104,57 @@
     "id":"ratdom_rat_statue_40",
     "switchToNPC":"ratdom_rat",
     "message":"When will you finally try to use the pickaxe?"
+  },
+  {
+    "id":"ratdom_rat_warden_bell",
+    "message":"'Hall of remembrance and commemoration of the glorious history of ratdom\n\nFree entry - donation requested'\n",
+    "replies":[
+      {
+        "text":"A museum - boring.",
+		"nextPhraseID":"X"
+      },
+      {
+        "text":"Great, I might get a clue how to find my way through these twisty little passages.",
+		"nextPhraseID":"X"
+      },
+      {
+        "text":"Read further.",
+		"nextPhraseID":"ratdom_rat_warden_bell_10",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_rat_skelett",
+            "value":90,
+			"negate":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_warden_bell_10",
+    "message":"Oh, there is a note attached to it:\n\n'Museum closed until further notice due to vandalism.\nRing the bell for further advice.'\n",
+    "replies":[
+      {
+        "text":"OK, they had their chance.",
+        "nextPhraseID":"X"
+      },
+      {
+        "text":"Ring the bell.",
+        "nextPhraseID":"ratdom_rat_warden_bell_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_warden_bell_20",
+    "message":"DING!",
+	"rewards":[
+		{
+			"rewardType":"removeSpawnArea",
+			"rewardID":"ratdom_rat_warden",
+			"mapName":"ratdom_maze_624"
+		}
+	]
   },
   {
     "id":"ratdom_skel_bone",
@@ -5649,8 +5807,8 @@
 			"requires":[
 				{
 					"requireType":"questProgress",
-					"requireID":"ratdom_rat_skelett",
-					"value":51,
+					"requireID":"ratdom_quest",
+					"value":31,
 					"negate":true
 				}
 			],
@@ -5664,8 +5822,8 @@
 	"rewards":[
 		{
 			"rewardType":"questProgress",
-			"rewardID":"ratdom_rat_skelett",
-			"value":51
+			"rewardID":"ratdom_quest",
+			"value":35
 		},
 		{
 			"rewardType":"giveItem",
