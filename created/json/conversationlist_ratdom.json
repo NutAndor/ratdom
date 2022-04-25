@@ -431,7 +431,7 @@
             "requireType":"questProgress",
             "requireID":"ratdom_nondisplay",
             "value":120,
-			"negate":"true"
+			"negate":true
           }
         ]
       }
@@ -474,14 +474,14 @@
 	"message":"You slip the bone unobtrusively into your pocket.",
     "rewards":[
       {
-        "rewardType":"give",
+        "rewardType":"giveItem",
         "rewardID":"ratdom_rat_skelett_leg_coll",
-		"value":"1"
+		"value":1
       },
       {
         "rewardType":"questProgress",
         "rewardID":"ratdom_nondisplay",
-		"value":"120"
+		"value":120
       }
     ]
   },
@@ -517,7 +517,7 @@
       {
         "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
-		"value":"120"
+		"value":120
       }
     ]
   },
@@ -568,14 +568,14 @@
 	"message":"You put the wrong bone onto the stack and try to look as innocent as possible.",
     "rewards":[
       {
-        "rewardType":"give",
+        "rewardType":"giveItem",
         "rewardID":"ratdom_rat_skelett_leg",
-		"value":"1"
+		"value":1
       },
       {
         "rewardType":"questProgress",
         "rewardID":"ratdom_quest",
-		"value":"32"
+		"value":32
       }
     ]
   },
@@ -1123,12 +1123,12 @@
 				"requireID":"ratdom_nondisplay",
 				"value":74,
 				"negate":true
-			}
+			},
 			{
 				"requireType":"timerElapsed",
 				"requireID":"ratdom_hunter_bridge",
 				"value":6
-			},
+			}
         ]
       }        
 	]
@@ -2517,7 +2517,7 @@
   },
   {
     "id":"ratdom_rat_conv2_40f",
-    "message":"Not that I liked my uncle very much, but he didn't deserve an ending like this.",
+    "message":"Neither my aunt. She was always squeeking too loud by far. But they were decent rats.",
     "replies":[
       {
         "text":"Well...",
@@ -2527,7 +2527,13 @@
   },
   {
     "id":"ratdom_rat_conv2_40g",
-    "message":"I hope you are a little more reluctant to kill rats in the future."
+    "message":"I hope you are a little more reluctant to kill rats in the future.",
+    "replies":[
+      {
+        "text":"Sure.",
+		"nextPhraseID":"X"
+      }
+    ]
   },
   {
     "id":"ratdom_rat_conv3",
@@ -2673,10 +2679,10 @@
   {
     "id":"ratdom_rat_conv2_520",
 	"switchToNPC":"ratdom_rat",
-    "message":"Is it still far?",
+    "message":"Are we there soon?",
     "replies":[
       {
-        "text":"Not annoying me!",
+        "text":"I hope so.",
 		"nextPhraseID":"ratdom_rat_conv2_500"
       }
     ]
@@ -2684,10 +2690,10 @@
   {
     "id":"ratdom_rat_conv2_530",
 	"switchToNPC":"ratdom_rat",
-    "message":"Are we there soon?",
+    "message":"Is it still far?",
     "replies":[
       {
-        "text":"I hope so.",
+        "text":"Do Not Annoy Me!",
 		"nextPhraseID":"ratdom_rat_conv2_500"
       }
     ]
@@ -3185,7 +3191,7 @@
           {
             "requireType":"questProgress",
             "requireID":"ratdom_quest",
-            "value":390,
+            "value":90,
 			"negate":true
           }
         ]
@@ -5719,7 +5725,7 @@
 	"replies":[
 		{
 			"text":"Nice.",
-			"nextPhraseID":"ratdom_wells_chest_10"
+			"nextPhraseID":"X"
 		},
 		{
 			"text":"Oh my. I just don't know, how to solve this.",
@@ -5728,7 +5734,7 @@
 				{
 					"requireType":"factionScoreEquals",
 					"requireID":"ratdom_wells",
-					"value":10
+					"value":5
 				}
 			]
 		}

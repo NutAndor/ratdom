@@ -4,28 +4,28 @@
         "name":"Ghost",
         "iconID":"monsters_tometik2:65",
 		"moveCost":5,
-		"spawnGroup":"ratdom_ghost3",
+		"spawnGroup":"ratdom_ghost3"
     },
     {
         "id":"ratdom_ghost2",
         "name":"Ghost",
         "iconID":"monsters_tometik8:24",
 		"moveCost":5,
-		"spawnGroup":"ratdom_ghost1",
+		"spawnGroup":"ratdom_ghost1"
     },
     {
         "id":"ratdom_ghost3",
         "name":"Ghost",
         "iconID":"monsters_tometik8:50",
 		"moveCost":5,
-		"spawnGroup":"ratdom_ghost3",
+		"spawnGroup":"ratdom_ghost3"
     },
     {
         "id":"ratdom_ghost4",
         "name":"Ghost",
         "iconID":"monsters_wraiths:0",
 		"moveCost":5,
-		"spawnGroup":"ratdom_ghost4",
+		"spawnGroup":"ratdom_ghost4"
     },
     {
         "id":"ratdom_goldhunter",
@@ -45,7 +45,7 @@
 		"droplistID":"container_gold_200_500",
 		"attackCost":5,
 		"attackChance":60,
-		"blockChance":40,
+		"blockChance":40
     },
     {
         "id":"ratdom_gruil",
@@ -110,7 +110,7 @@
             "max":30
         },
         "spawnGroup":"ratdom_librarian",
-        "droplistID":"ratdom_librarian"
+        "droplistID":"ratdom_librarian",
         "phraseID":"ratdom_librarian"
     },
     {
@@ -193,7 +193,7 @@
     {
         "id":"ratdom_rat_warden",
         "name":"Wart",
-        "iconID":"monsters_rltiles:80",
+        "iconID":"monsters_rltiles1:80",
         "movementAggressionType":"wholeMap",
         "phraseID":"ratdom_rat_warden",
         "droplistID":"ratdom_rat_warden"

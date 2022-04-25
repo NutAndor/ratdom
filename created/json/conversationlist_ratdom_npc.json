@@ -202,7 +202,8 @@
     },
     {
         "id":"ratdom_goldhunter_talk_10",
-		"message":"No tresspassing! What do you want?"
+        "switchToNPC":"ratdom_goldhunter",
+		"message":"No tresspassing! What do you want?",
         "replies":[
             {
                 "nextPhraseID":"ratdom_goldhunter_talk_12",
@@ -216,7 +217,7 @@
     },
     {
         "id":"ratdom_goldhunter_talk_12",
-		"message":"No - you can't fool me! You just want to steal my gold! Go away!"
+		"message":"No - you can't fool me! You just want to steal my gold! Go away!",
         "replies":[
             {
                 "nextPhraseID":"ratdom_goldhunter_talk_20",
@@ -230,7 +231,7 @@
     },
     {
         "id":"ratdom_goldhunter_talk_20",
-		"message":"Leave me alone!"
+		"message":"Leave me alone!",
         "replies":[
             {
                 "nextPhraseID":"ratdom_goldhunter_talk_30",
@@ -251,7 +252,7 @@
     },
     {
         "id":"ratdom_goldhunter_talk_30",
-		"message":"Don't you dare! Put a foot into the water and you are dead!"
+		"message":"Don't you dare! Put a foot into the water and you are dead!",
         "replies":[
             {
                 "nextPhraseID":"ratdom_goldhunter_talk_40",
@@ -265,7 +266,7 @@
     },
     {
         "id":"ratdom_goldhunter_talk_40",
-		"message":"You would like to know, he? But I don't tell you!"
+		"message":"You would like to know, he? But I don't tell you!",
         "replies":[
             {
                 "nextPhraseID":"X",
@@ -2581,7 +2582,7 @@
 	},
     {
         "id":"ratdom_well_wise3_30",
-        "message":"Ommm... ommm... ommmmm...",
+        "message":"Omm... ommm... ommmmm...",
 		"replies":[
             {
 				"text":"Omm... omm... omm...",

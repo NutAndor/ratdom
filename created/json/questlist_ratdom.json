@@ -64,9 +64,9 @@
 				"logText":"You found a platform from which you have a good view over Crossglen. Andor seemed to have been here many times." },
 			{ 	"progress":200, 
 				"logText":"You found an exit from the caves to the surface. Cold icy wind was swirling up here on the Black Water mountain top.\nAstonishingly you are not alone here - Whootibarfag, a very old eremit seemed to have awaited me." },
-			{	"progress":310, "logText":"Wart, the warden to the halls of memory told me, that the access would be closed, until the rat memorial is restored. I should seek the bones of King Rah's skeleton.", 
+			{	"progress":310, "logText":"Wart, the warden to the halls of memory told me, that the access would be closed, until the rat memorial is restored. I should seek the bones of King Rah's skeleton." }, 
 			{	"progress":390, "logText":"Wart was glad to have his rat memorial restored. He granted access now.", 
-			  "finishesQuest":1  }
+			  "finishesQuest":1  },
 			{	"progress":900, 
 				"logText":"You finally found the yellow artefact: It was a big, smelly cheese - almost everlasting. Clevred was overjoyed!" },
 			{	"progress":950, 
