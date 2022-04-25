@@ -415,6 +415,16 @@
     "id":"ratdom_bone_collector_s1",
     "replies":[
       {
+        "nextPhraseID":"ratdom_bone_collector_s1_20",
+        "requires":[
+          {
+            "requireType":"inventoryKeep",
+            "requireID":"ratdom_rat_skelett_leg_coll",
+            "value":1
+          }
+        ]
+      },
+      {
         "nextPhraseID":"ratdom_bone_collector_s1_10",
         "requires":[
           {
@@ -422,16 +432,6 @@
             "requireID":"ratdom_nondisplay",
             "value":120,
 			"negate":"true"
-          }
-        ]
-      },
-      {
-        "nextPhraseID":"ratdom_bone_collector_s1_20",
-        "requires":[
-          {
-            "requireType":"inventoryKeep",
-            "requireID":"ratdom_rat_skelett_leg_coll",
-            "value":1
           }
         ]
       }
@@ -491,7 +491,14 @@
     "replies":[
       {
         "text":"Put the leg bone back onto the pile.",
-		"nextPhraseID":"ratdom_bone_collector_s1_22"
+		"nextPhraseID":"ratdom_bone_collector_s1_22",
+        "requires":[
+          {
+            "requireType":"inventoryRemove",
+            "requireID":"ratdom_rat_skelett_leg_coll",
+            "value":1
+          }
+        ]
       },
       {
         "text":"Maybe you could put another bone of your bag instead?",
@@ -516,7 +523,61 @@
   },
   {
     "id":"ratdom_bone_collector_s1_24",
-	"message":"Silently you check your bag for bones."
+	"message":"Inconspicuously you search your bag for other bones.",
+    "replies":[
+      {
+        "text":"A bone.",
+		"nextPhraseID":"ratdom_bone_collector_s1_30",
+        "requires":[
+          {
+            "requireType":"inventoryRemove",
+            "requireID":"bone",
+            "value":1
+          },
+          {
+            "requireType":"inventoryRemove",
+            "requireID":"ratdom_rat_skelett_leg_coll",
+            "value":1
+          }
+        ]
+      },
+      {
+        "text":"A contaminated bone.",
+		"nextPhraseID":"ratdom_bone_collector_s1_30",
+        "requires":[
+          {
+            "requireType":"inventoryRemove",
+            "requireID":"bone2",
+            "value":1
+          },
+          {
+            "requireType":"inventoryRemove",
+            "requireID":"ratdom_rat_skelett_leg_coll",
+            "value":1
+          }
+        ]
+      },
+      {
+        "text":"Rats, I don't find any similar looking bone.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bone_collector_s1_30",
+	"message":"You put the wrong bone onto the stack and try to look as innocent as possible.",
+    "rewards":[
+      {
+        "rewardType":"give",
+        "rewardID":"ratdom_rat_skelett_leg",
+		"value":"1"
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_quest",
+		"value":"32"
+      }
+    ]
   },
   {
     "id":"ratdom_bwm1_east1",
@@ -3123,8 +3184,8 @@
         "requires":[
           {
             "requireType":"questProgress",
-            "requireID":"ratdom_rat_skelett",
-            "value":90,
+            "requireID":"ratdom_quest",
+            "value":390,
 			"negate":true
           }
         ]
@@ -5655,11 +5716,208 @@
   {
     "id":"ratdom_wells_chest",
 	"message":"You have found 5 shimmering balls.",
+	"replies":[
+		{
+			"text":"Nice.",
+			"nextPhraseID":"ratdom_wells_chest_10"
+		},
+		{
+			"text":"Oh my. I just don't know, how to solve this.",
+			"nextPhraseID":"ratdom_wells_chest_10",
+			"requires":[
+				{
+					"requireType":"factionScoreEquals",
+					"requireID":"ratdom_wells",
+					"value":10
+				}
+			]
+		}
+	],
 	"rewards":[
 		{
 			"rewardType":"giveItem",
 			"rewardID":"ratdom_wells_ball",
 			"value":5
+		},
+		{
+			"rewardType":"alignmentChange",
+			"rewardID":"ratdom_wells",
+			"value":1
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_10",
+	"switchToNPC":"ratdom_rat",
+	"message":"Sigh. Need help again?",
+	"replies":[
+		{
+			"text":"Me? Of course not!",
+			"nextPhraseID":"X"
+		},
+		{
+			"text":"Don't pretend you know how to solve it.",
+			"nextPhraseID":"ratdom_wells_chest_12"
+		},
+		{
+			"text":"Please. I just don't know what to do here.",
+			"nextPhraseID":"ratdom_wells_chest_10"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_12",
+	"message":"I don't pretend to know. I do know.",
+	"replies":[
+		{
+			"text":"So?",
+			"nextPhraseID":"ratdom_wells_chest_20"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_20",
+	"message":"Simply drop the balls into the right wells, so that the lamps all have one color. So easy.",
+	"replies":[
+		{
+			"text":"OK. I'll try again.",
+			"nextPhraseID":"X"
+		},
+		{
+			"text":"But the lamps never do what I want. Stupid game.",
+			"nextPhraseID":"ratdom_wells_chest_30"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_30",
+	"message":"Don't start crying.",
+	"replies":[
+		{
+			"text":"N",
+			"nextPhraseID":"ratdom_wells_chest_32"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_32",
+	"message":"Each well seem to affect the lamps in a certain way. Just combine that - I am sure you get it now.",
+	"replies":[
+		{
+			"text":"Do you think so? OK. I'll try again.",
+			"nextPhraseID":"X"
+		},
+		{
+			"text":"No, I give up.",
+			"nextPhraseID":"ratdom_wells_chest_40"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_40",
+	"message":"Oh dear. What do you have a head for, just against the rain? Well I could do it for you.",
+	"replies":[
+		{
+			"text":"Wait, I try once more.",
+			"nextPhraseID":"X"
+		},
+		{
+			"text":"Please do. Here, take the balls.",
+			"nextPhraseID":"ratdom_wells_chest_50"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_50",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_wells_chest_50",
+			"requires":[
+			  {
+				"requireType":"inventoryRemove",
+				"requireID":"ratdom_wells_ball",
+				"value":1
+			  }
+			]
+		},
+		{
+			"nextPhraseID":"ratdom_wells_chest_52"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_52",
+	"message":"Ready. I hope you watched closely how I did it.",
+	"replies":[
+		{
+			"text":"Eh, sure.",
+			"nextPhraseID":"X"
+		},
+		{
+			"text":"Well ...",
+			"nextPhraseID":"X"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":40
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":41
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":42
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":43
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":44
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":45
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":46
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":47
+		},
+		{
+			"rewardType":"removeSpawnArea",
+			"rewardID":"ratdom_well_wise1",
+			"mapName":"ratdom_maze_768"
+		},
+		{
+			"rewardType":"removeSpawnArea",
+			"rewardID":"ratdom_well_wise2",
+			"mapName":"ratdom_maze_768"
+		},
+		{
+			"rewardType":"spawnAll",
+			"rewardID":"ratdom_well_wise3",
+			"mapName":"ratdom_maze_768"
+		},
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":49
 		}
 	]
   },

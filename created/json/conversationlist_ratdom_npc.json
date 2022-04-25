@@ -53,6 +53,113 @@
         ]
     },
     {
+        "id":"ratdom_bone_collector",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_bone_collector_50",
+                "requires":[
+                    {			
+                        "requireType":"inventoryKeep",
+                        "requireID":"ratdom_rat_skelett_leg_coll",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_bone_collector_20",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":121
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_bone_collector_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_bone_collector_10",
+		"message":"Oh, a visitor - how unusual!",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_bone_collector_12"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_bone_collector_12",
+		"message":"I am Loirash. Nice to meet you.",
+        "replies":[
+            {
+                "text":"Hi, nice to meet you.",
+				"nextPhraseID":"ratdom_bone_collector_14"
+            },
+            {
+                "text":"What are you doing here?",
+				"nextPhraseID":"ratdom_bone_collector_16"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_bone_collector_14",
+		"message":"You're probably wondering what I'm doing here deep in this dark cave.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_bone_collector_16"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_bone_collector_16",
+		"message":"I am an instrument maker. Professional musical instruments, you know?",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_bone_collector_18"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_bone_collector_18",
+		"message":"At the moment I'm working on a new instrument made entirely of bone. I expect a sound from it that sends chills down the spine.",
+        "replies":[
+            {
+                "text":"It's already doing that to me.",
+				"nextPhraseID":"ratdom_bone_collector_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_bone_collector_20",
+		"message":"This cave is a great source of bones of high quality, so I stay until my instrument is complete.",
+        "replies":[
+            {
+                "text":"May I have look?.",
+				"nextPhraseID":"ratdom_bone_collector_22"
+            },
+            {
+                "text":"OK. Have fun.",
+				"nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":121
+            }
+		]
+    },
+    {
+        "id":"ratdom_bone_collector_22",
+		"message":"Sure. Feel free."
+    },
+    {
         "id":"ratdom_goldhunter_talk",
         "replies":[
             {
@@ -926,92 +1033,6 @@
         ]
     },
     {
-        "id":"ratdom_rat_bone_collector",
-        "replies":[
-            {
-                "nextPhraseID":"ratdom_rat_bone_collector_50",
-                "requires":[
-                    {			
-                        "requireType":"inventoryKeep",
-                        "requireID":"ratdom_rat_skelett_leg_coll",
-                        "value":1
-                    }
-                ]
-            },
-            {
-                "nextPhraseID":"ratdom_rat_bone_collector_10"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_bone_collector_10",
-		"message":"Oh, a visitor - how unusual!",
-        "replies":[
-            {
-                "text":"N",
-				"nextPhraseID":"ratdom_rat_bone_collector_12"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_bone_collector_12",
-		"message":"I am Loirash. Nice to meet you.",
-        "replies":[
-            {
-                "text":"Hi, nice to meet you.",
-				"nextPhraseID":"ratdom_rat_bone_collector_14"
-            },
-            {
-                "text":"What are you doing here?",
-				"nextPhraseID":"ratdom_rat_bone_collector_16"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_bone_collector_14",
-		"message":"You're probably wondering what I'm doing here deep in this dark cave.",
-        "replies":[
-            {
-                "text":"N",
-				"nextPhraseID":"ratdom_rat_bone_collector_16"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_bone_collector_16",
-		"message":"I am an instrument maker. Professional musical instruments, you know?",
-        "replies":[
-            {
-                "text":"N",
-				"nextPhraseID":"ratdom_rat_bone_collector_18"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_bone_collector_18",
-		"message":"At the moment I'm working on a new instrument made entirely of bone. I expect a sound from it that sends chills down the spine.",
-        "replies":[
-            {
-                "text":"It's already doing that to me.",
-				"nextPhraseID":"ratdom_rat_bone_collector_20"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_bone_collector_20",
-		"message":"This cave is a great source of bones of high quality, so I stay until my instrument is complete.",
-        "replies":[
-            {
-                "text":"May I have look?.",
-				"nextPhraseID":"ratdom_rat_bone_collector_22"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_bone_collector_22",
-		"message":"Sure. Feel free."
-    },
-    {
         "id":"ratdom_rat_bwm1",
         "replies":[
             {
@@ -1030,16 +1051,16 @@
         ]
     },
     {
-        "id":"ratdom_rat_bone_collector_50",
+        "id":"ratdom_bone_collector_50",
 		"message":"Looks like you have something that doesn't belong to you?",
         "replies":[
             {
                 "text":"Yes. I found this old leg bone of a rat. Can I purchase it?",
-				"nextPhraseID":"ratdom_rat_bone_collector_52"
+				"nextPhraseID":"ratdom_bone_collector_52"
             },
             {
                 "text":"[Lie] No. I haven't taken anything.",
-				"nextPhraseID":"ratdom_rat_bone_collector_54",
+				"nextPhraseID":"ratdom_bone_collector_54",
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
@@ -1051,11 +1072,11 @@
         ]
     },
     {
-        "id":"ratdom_rat_bone_collector_52",
-		"message":"Well, no. This is my favorite bone, it makes good sound. Put it back."
+        "id":"ratdom_bone_collector_52",
+		"message":"Well, no. This is my favorite bone, it makes good sound. Put it back, please."
     },
     {
-        "id":"ratdom_rat_bone_collector_54",
+        "id":"ratdom_bone_collector_54",
 		"message":"Yes you have. I'll better put it back agin. This is a very valuable bone, you know?",
         "replies":[
             {
@@ -1102,8 +1123,8 @@
 			"requires":[
 			  {
 				"requireType":"questProgress",
-				"requireID":"ratdom_rat_skelett",
-				"value":10,
+				"requireID":"ratdom_quest",
+				"value":310,
 				"negate":true
 			  }
 			]
@@ -1119,7 +1140,7 @@
 		"message":"I am the warden of our Memorial Hall. I keep the exhibits in order and answer questions from visitors. Call me Wart.",
 		"replies":[
 		  {
-			"text":"Could you tell me something about this place?",
+			"text":"Could you tell me anything about this place?",
 			"nextPhraseID":"ratdom_rat_warden_30"
 		  },
 		  {
@@ -1144,10 +1165,177 @@
 	},
 	{
 		"id":"ratdom_rat_warden_30",
-		"message":"...",
+		"message":"This used to be a happy place of memories.",
 		"replies":[
 		  {
-			"nextPhraseID":"ratdom_rat_warden_50"
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_32"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_32",
+		"message":"But QQ was filled with jealousy and consumed with envy. How he hated to see guests crowding and admiring the valuable pieces on display in these halls.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_34"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_34",
+		"message":"The fully preserved skeleton of King Rah, the powerful founder of this empire, was particularly brilliant. Standing upright, his dreaded sword in his bony right hand.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_36"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_36",
+		"message":"Fleeing from the numerous monsters that appeared when the world was divided, King Rah had led his people into the Black Water Mountains and created the underground passages there.",
+		"replies":[
+		  {
+			"text":"That's why the passages are laid out so confusingly?",
+			"nextPhraseID":"ratdom_rat_warden_38"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_38",
+		"message":"Right. This should be additional protection from enemies.",
+		"replies":[
+		  {
+			"text":"Interesting. But why is the passage closed now?",
+			"nextPhraseID":"ratdom_rat_warden_40"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_40",
+		"message":"Some time ago this place was robbed and desecrated. Only an empty pedestal remained where the richly decorated skeleton of King Rah had been.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_42"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_42",
+		"message":"This was probably QQ's most terrifying act. We found him and confronted him.",
+		"replies":[
+		  {
+			"text":"Such a miserable villain!",
+			"nextPhraseID":"ratdom_rat_warden_44"
+		  },
+		  {
+			"text":"Did he admit it?",
+			"nextPhraseID":"ratdom_rat_warden_44"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_44",
+		"message":"Of course he denied everything. But who else could it have been?",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_44a"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_44a",
+		"message":"He deserved immediate death for this terrible act. However, we only locked him up until he reveals where he stashed our beloved royal skeleton.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_44b"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_44b",
+		"message":"For security reasons, we don't let anyone in or out until QQ has admitted everything. And until King Rah is back in his accustomed place.",
+		"replies":[
+		  {
+			"text":"Even 100 pieces of gold don't change your mind?",
+			"nextPhraseID":"ratdom_rat_warden_46a"
+		  },
+		  {
+			"text":"If the skeleton is back, may I pass?",
+			"nextPhraseID":"ratdom_rat_warden_48"
+		  },
+		  {
+			"text":"I want to talk with QQ.",
+			"nextPhraseID":"ratdom_rat_warden_46b"
+		  },
+		  {
+			"text":"What lies behind this blocked passage?",
+			"nextPhraseID":"ratdom_rat_warden_46c"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_46a",
+		"message":"Of course not!",
+		"replies":[
+		  {
+			"text":"Sorry.",
+			"nextPhraseID":"ratdom_rat_warden_44b"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_46b",
+		"message":"Impossible! No way.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_44b"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_46c",
+		"message":"The museum of course.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_44d"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_46d",
+		"message":"And another tunnel, but only a short distance.",
+		"replies":[
+		  {
+			"text":"Finally light at the end of the tunnel.",
+			"nextPhraseID":"ratdom_rat_warden_44b"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_48",
+		"message":"If King Rah is with us again, that would be great! Of course you can then go to our museum. You would be our guest of honor.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_48a"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_48a",
+		"message":"But we are not there yet.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_80"
 		  }
 		]
 	},
@@ -1155,25 +1343,25 @@
 		"id":"ratdom_rat_warden_50",
 		"replies":[
 		  {
-			"nextPhraseID":"ratdom_rat_warden_80",
+			"nextPhraseID":"ratdom_rat_warden_52",
 			"requires":[
 			  {
-				"requireType":"inventoryKeep",
+				"requireType":"inventoryRemove",
 				"requireID":"ratdom_rat_skelett_skull",
 				"value":1
 			  },
 			  {
-				"requireType":"inventoryKeep",
+				"requireType":"inventoryRemove",
 				"requireID":"ratdom_rat_skelett_leg",
 				"value":4
 			  },
 			  {
-				"requireType":"inventoryKeep",
+				"requireType":"inventoryRemove",
 				"requireID":"ratdom_rat_skelett_tail",
 				"value":1
 			  },
 			  {
-				"requireType":"inventoryKeep",
+				"requireType":"inventoryRemove",
 				"requireID":"ratdom_rat_skelett_back",
 				"value":1
 			  }
@@ -1185,6 +1373,16 @@
 			  {
 				"requireType":"inventoryKeep",
 				"requireID":"ratdom_rat_skelett_skull",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_61",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_leg",
 				"value":1
 			  }
 			]
@@ -1210,7 +1408,34 @@
 			]
 		  },
 		  {
-			"nextPhraseID":"ratdom_rat_warden_61"
+			"nextPhraseID":"ratdom_rat_warden_69"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_52",
+		"message":"What are my old eyes seeing? King Rah is back, completely! I am overwhelmed with joy!\nYou may pass now of course.",
+		"replies":[
+		  {
+			"text":"I hope you can puzzle your king back together.",
+			"nextPhraseID":"ratdom_rat_warden_54"
+		  }
+		],
+		"rewards":[
+		  {
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_quest",
+			"value":320
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_54",
+		"message":"Thank you!",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_54"
 		  }
 		]
 	},
@@ -1251,6 +1476,16 @@
 		  {
 			"text":"N",
 			"nextPhraseID":"ratdom_rat_warden_70"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_69",
+		"message":"You could go and find all of King Rah's bones.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_80"
 		  }
 		]
 	},
@@ -1410,18 +1645,87 @@
 	},
 	{
 		"id":"ratdom_rat_warden_80",
-		"message":"I can't let you enter our Memorial Hall. We have to get back our skelet statue of King Rah first.",
+		"message":"I can't let you enter our Memorial Hall. We have to get back our skeleton statue of King Rah first.",
 		"replies":[
 		  {
 			"text":"OK. I will find it for you.",
 			"nextPhraseID":"X"
+		  },
+		  {
+			"text":"This maze is terrible. Do you have any idea how I could find my way out again?",
+			"nextPhraseID":"ratdom_rat_warden_82"
+		  },
+		  {
+			"text":"Do you have any idea where I should go looking for your bones?",
+			"nextPhraseID":"ratdom_rat_warden_90"
 		  }
 		],
 		"rewards":[
 		  {
 			"rewardType":"questProgress",
-			"rewardID":"ratdom_rat_skelett",
-			"value":10
+			"rewardID":"ratdom_quest",
+			"value":310
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_82",
+		"message":"That is easy. Just choose the exit where you see rats in front of. Rats always know their way out.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_84"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_84",
+		"switchToNPC":"ratdom_rat",
+		"message":"Didn't I tell you?",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_80"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_90",
+		"message":"Maybe you find wisdom in my compass?",
+		"replies":[
+		  {
+			"text":"What compass?",
+			"nextPhraseID":"ratdom_rat_warden_92"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_92",
+		"message":"Wear this compass and you may perceive invisible signs on the walls. Follow these.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_94"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_94",
+		"message":"It will be a far journey. But you will meet everything that you need to meet.",
+		"replies":[
+		  {
+			"text":"Sounds great!",
+			"nextPhraseID":"ratdom_rat_warden_98"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_98",
+		"message":"But beware! It slows you down, because your mind is clouded and partly in another dimension.",
+		"replies":[
+		  {
+			"text":"No problem.",
+			"nextPhraseID":"S"
 		  }
 		]
 	},

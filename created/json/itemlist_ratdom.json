@@ -42,7 +42,17 @@
         "iconID":"items_reterski_1:9",
         "name":"Blue rat necklace",
         "description":"This necklace will work as compass towards the sky.",
+        "equipEffect":{
+            "addedConditions":[
+                {
+                    "condition":"confusion",
+                    "magnitude":1
+                }
+            ]
+        },
         "displaytype":"rare",
+        "hasManualPrice":1,
+        "baseMarketCost":3000,
         "category":"neck",
     },
     {
@@ -51,6 +61,16 @@
         "name":"Orange rat necklace",
         "description":"This necklace will guide you through the caves from Crossglen entrance unto every worthy place.",
         "displaytype":"rare",
+        "hasManualPrice":1,
+        "baseMarketCost":5000,
+        "equipEffect":{
+            "addedConditions":[
+                {
+                    "condition":"confusion",
+                    "magnitude":1
+                }
+            ]
+        },
         "category":"neck",
     },
     {

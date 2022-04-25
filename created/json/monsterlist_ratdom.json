@@ -659,13 +659,6 @@
         "phraseID":"ratdom_well_wise3"
     },
     {
-        "id":"whootibarfag",
-        "name":"Whootibarfag",
-        "iconID":"monsters_rltiles3:16",
-        "phraseID":"whootibarfag",
-        "droplistID":"whootibarfag"
-    },
-    {
         "id":"tough_cave_rat3",
         "name":"Tough cave rat",
         "iconID":"monsters_rats:1",
@@ -679,5 +672,19 @@
         "droplistID":"rat",
         "attackCost":5,
         "attackChance":90
+    },
+    {
+        "id":"whootibarfag",
+        "name":"Whootibarfag",
+        "iconID":"monsters_rltiles3:16",
+        "phraseID":"whootibarfag",
+        "droplistID":"whootibarfag"
+    },
+    {
+        "id":"ratdom_rat_warden",
+        "name":"Wart",
+        "iconID":"monsters_rltiles3:10",
+        "phraseID":"ratdom_rat_warden",
+        "droplistID":"ratdom_rat_warden"
     }
 ]
