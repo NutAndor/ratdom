@@ -82,6 +82,7 @@
     },
     {
         "id":"ratdom_bone_collector_10",
+		"switchToNPC":"ratdom_bone_collector",
 		"message":"Oh, a visitor - how unusual!",
         "replies":[
             {
@@ -136,6 +137,7 @@
     },
     {
         "id":"ratdom_bone_collector_20",
+		"switchToNPC":"ratdom_bone_collector",
 		"message":"This cave is a great source of bones of high quality, so I stay until my instrument is complete.",
         "replies":[
             {
@@ -166,6 +168,49 @@
                 "nextPhraseID":"ratdom_goldhunter_talk_b"
             }
         ]
+    },
+    {
+        "id":"ratdom_bone_collector_50",
+		"switchToNPC":"ratdom_bone_collector",
+		"message":"Looks like you have something that doesn't belong to you?",
+        "replies":[
+            {
+                "text":"Yes. I found this old leg bone of a rat. Can I purchase it?",
+				"nextPhraseID":"ratdom_bone_collector_52"
+            },
+            {
+                "text":"[Lie] No. I haven't taken anything.",
+				"nextPhraseID":"ratdom_bone_collector_54",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"ratdom_rat_skelett_leg_coll",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"ratdom_bone_collector_52",
+		"message":"Well, no. This is my favorite bone, it makes good sound. Put it back, please."
+    },
+    {
+        "id":"ratdom_bone_collector_54",
+		"message":"Yes you have. I'll better put it back agin. This is a very valuable bone, you know?",
+        "replies":[
+            {
+                "text":"I see.",
+				"nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":120
+            }
+		]
     },
     {
         "id":"ratdom_goldhunter_talk_b",
@@ -1051,48 +1096,6 @@
             }
         ]
     },
-    {
-        "id":"ratdom_bone_collector_50",
-		"message":"Looks like you have something that doesn't belong to you?",
-        "replies":[
-            {
-                "text":"Yes. I found this old leg bone of a rat. Can I purchase it?",
-				"nextPhraseID":"ratdom_bone_collector_52"
-            },
-            {
-                "text":"[Lie] No. I haven't taken anything.",
-				"nextPhraseID":"ratdom_bone_collector_54",
-                "requires":[
-                    {
-                        "requireType":"inventoryRemove",
-                        "requireID":"ratdom_rat_skelett_leg_coll",
-                        "value":1
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id":"ratdom_bone_collector_52",
-		"message":"Well, no. This is my favorite bone, it makes good sound. Put it back, please."
-    },
-    {
-        "id":"ratdom_bone_collector_54",
-		"message":"Yes you have. I'll better put it back agin. This is a very valuable bone, you know?",
-        "replies":[
-            {
-                "text":"I see.",
-				"nextPhraseID":"X"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"removeQuestProgress",
-                "rewardID":"ratdom_nondisplay",
-                "value":120
-            }
-		]
-    },
 	{
         "id":"ratdom_rat_bwm1_10",
         "message":"Your brother was here often. He had made himself rather comfortable."
@@ -1119,14 +1122,13 @@
 			"nextPhraseID":"ratdom_rat_warden_30"
 		  },
 		  {
-			"text":"How can I enter?",
+			"text":"May I enter?",
 			"nextPhraseID":"ratdom_rat_warden_50",
 			"requires":[
 			  {
 				"requireType":"questProgress",
 				"requireID":"ratdom_quest",
-				"value":310,
-				"negate":true
+				"value":310
 			  }
 			]
 		  },
@@ -1277,6 +1279,17 @@
 		  {
 			"text":"What lies behind this blocked passage?",
 			"nextPhraseID":"ratdom_rat_warden_46c"
+		  },
+		  {
+			"text":"May I enter?",
+			"nextPhraseID":"ratdom_rat_warden_50",
+			"requires":[
+			  {
+				"requireType":"questProgress",
+				"requireID":"ratdom_quest",
+				"value":310
+			  }
+			]
 		  }
 		]
 	},
@@ -1311,7 +1324,7 @@
 		]
 	},
 	{
-		"id":"ratdom_rat_warden_46d",
+		"id":"ratdom_rat_warden_44d",
 		"message":"And another tunnel, but only a short distance.",
 		"replies":[
 		  {
@@ -1327,6 +1340,13 @@
 		  {
 			"text":"N",
 			"nextPhraseID":"ratdom_rat_warden_48a"
+		  }
+		],
+		"rewards":[
+		  {
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_quest",
+			"value":310
 		  }
 		]
 	},
@@ -1580,7 +1600,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_70a",
-		"message":"Great! Only a King Rah's head is missing. You will find it too, I am sure.",
+		"message":"Great! Only King Rah's head is missing. You will find it too, I am sure.",
 		"replies":[
 		  {
 			"text":"Of course.",
@@ -1608,7 +1628,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_75a",
-		"message":"Great! Only a King Rah's tail is missing. You will find it too, I am sure.",
+		"message":"Great! Only King Rah's tail is missing. You will find it too, I am sure.",
 		"replies":[
 		  {
 			"text":"Of course.",
@@ -1622,7 +1642,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_76a",
-		"message":"Great! Only a King Rah's back bone is missing. You will find it too, I am sure.",
+		"message":"Great! Only King Rah's back bone is missing. You will find it too, I am sure.",
 		"replies":[
 		  {
 			"text":"Of course.",
@@ -1692,6 +1712,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_90",
+		"switchToNPC":"ratdom_rat_warden",
 		"message":"Maybe you find wisdom in my compass?",
 		"replies":[
 		  {

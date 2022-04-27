@@ -206,7 +206,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="5" name="Walkable" width="15" height="30">
+ <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFccoMN4wLk6qNUP7luJte/lIQXPfUi66c0nilNI4NdL7X00cPOgU5XA6GXmuFMqbupoX8g3IBsBiV6KdUPANTXCeo=
   </data>
@@ -340,7 +340,7 @@
     <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
-  <object id="68" name="ratdom_librarian" type="spawn" x="160" y="96" width="192" height="96">
+  <object id="68" name="ratdom_librarian" type="spawn" x="128" y="128" width="32" height="32">
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_librarian"/>

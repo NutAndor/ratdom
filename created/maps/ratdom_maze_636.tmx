@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="84">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="84">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -206,7 +206,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="5" name="Walkable" width="15" height="30">
+ <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzFktEJACAIRJ2i/Vdww+hDiNC8i0rBj7p7ZqI2EQ1yRKSZnnk8vzHrGeW8+0zP6kaB9sVwaP8Mi3LobF6xJ3vzom+Wr2BvcT/erN6rCvbmnFF2F6fcrkbmiTTmX7OP4czv1WGzA46b8Ps=
   </data>
@@ -258,7 +258,7 @@
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUBuE2GIQuGEUj+JRPIpH8fDHAIgHd5s=
+   eJxTk2NgUBuE2AKKB9odo3gUj+JRPIqHNwYA+593rQ==
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
@@ -341,7 +341,7 @@
   </object>
  </objectgroup>
  <objectgroup id="18" name="Keys"/>
- <objectgroup id="19" name="Replace" visible="0">
+ <objectgroup id="19" name="Replace">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light10"/>
@@ -422,7 +422,7 @@
     <property name="requireValue" value="31"/>
    </properties>
   </object>
-  <object id="83" name="ratdom_rat_conv2:2" type="replace" x="256" y="64" width="32" height="32">
+  <object id="83" name="ratdom_rat_conv2:2" type="replace" x="288" y="64" width="32" height="32">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>

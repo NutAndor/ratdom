@@ -31,7 +31,7 @@
     },
     {
         "id":"ratdom_dev_info_10",
-        "message":"This area is made for rather high level players: Lodar, Charwood and the supply cave are mandatory.",
+        "message":"This area is made for rather high level players: The quests Lodar, Charwood and the supply cave are mandatory.",
         "replies":[
             {
                 "text":"N",
@@ -41,7 +41,7 @@
     },
     {
         "id":"ratdom_dev_info_12",
-        "message":"The maze is about 75% complete. It is already a really vast area of rather similar looking maps. \nThis is intentionally. This area looks and feels differently, and is a challenge also for the high level players that simply run though new areas without any effort.",
+        "message":"The maze is about 90% complete. It is a really vast area of rather similar looking maps. \nThis is intentionally. This area looks and feels differently from the rest of Andor's Trail, and will be a challenge also for the high level players that simply run though new areas without any effort.",
         "replies":[
             {
                 "text":"The plot",
@@ -51,7 +51,7 @@
     },
     {
         "id":"ratdom_dev_info_20",
-        "message":"You have a dream about Crossglen beeing taken over by rats, and you have to free it again with the help of a smart cheeky rat. \nIt is not sure, if it is really a dream - who knows? I tend to let it open.\nAnyway the maze will be left open to visit, so it has some kind of reality.",
+        "message":"You have a dream about Crossglen beeing taken over by rats, and you have to free the village again with the help of a smart cheeky rat called Clevred. \nIt is not sure, if it is really a dream - who knows? I tend to let it open.\nAnyway the maze will be left open to visit, so it has some kind of reality.",
         "replies":[
             {
                 "text":"N",
@@ -71,7 +71,7 @@
     },
     {
         "id":"ratdom_dev_info_40",
-        "message":"Torch: You need to use a torch to have light on your way, and you only see the near parts of a map. \nThe torch must be worn as a bihander, which will probably offend some players ...",
+        "message":"Torch: You need to use a torch to have light on your way, and you only see the near parts of a map. We have no other maps like this, and it probably will stay an exception, because it is hard to develop. \nThe torch must be worn as a bihander, which will probably offend some players ...",
         "replies":[
             {
                 "text":"Finding the way",
@@ -91,7 +91,7 @@
     },
     {
         "id":"ratdom_dev_info_44",
-        "message":"Rats: You may find out yourself, or you are told by Clevred after some time wandering: If you just want to get out again: Look for the passages whith rats in front of it - they are leading to the entrance.",
+        "message":"Rats: You may find out yourself, or you are told by Clevred after some time wandering: If you just want to get out again: Look for the passages whith rats in front of it - they are leading back to the entrance.",
         "replies":[
             {
                 "text":"N",
@@ -101,7 +101,7 @@
     },
     {
         "id":"ratdom_dev_info_46",
-        "message":"Compass: After you finally have found your way through the maze, you get an amulett, that will mark the correct passages to find your way again more easily in the future.",
+        "message":"Compass: After you finally have found your way through the maze, you get amuletts, that will mark the correct passages to find your way again more easily in the future.",
         "replies":[
             {
                 "text":"N",
@@ -131,14 +131,31 @@
     },
     {
         "id":"ratdom_dev_info_90",
-        "message":"Now here is the amulett to the BWM let out. (Players in the final game will get it only after finding their way through)\nBe sure to wear it für activation. (Marrowtaint owners will hate me ... :D) I am sure you'll find out easily how it works, when you wander through the maze. Note that if you just follow it, you'll find the shortest way but also miss many of the interesting places.",
+        "message":"Now here is the blue amulett to the BWM let out. (Players in the final game will get it only after finding their way through)\nBe sure to wear it für activation. (Marrowtaint owners will hate me ... :D) Look out for shields when you wander through the maze. Note that if you just follow it, you'll find the shortest way but also miss many of the interesting places.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_dev_info_92"
+            }
+        ],
 		"rewards":[
-		{
-			"rewardType":"giveItem",
-			"rewardID":"ratdom_compass_bwm",
-			"value":1
-		}
-	]
+			{
+				"rewardType":"giveItem",
+				"rewardID":"ratdom_compass_bwm",
+				"value":1
+			}
+		]
+    },
+    {
+        "id":"ratdom_dev_info_92",
+        "message":"The orange amulett uses a path that passes by every important place in the maze. (Players in the final game will get it only after finding their way through)\nBe sure to wear it für activation. It is a much longer way, but you won't miss anything. There is a flag shon in addition, if there is a side way.",
+		"rewards":[
+			{
+				"rewardType":"giveItem",
+				"rewardID":"ratdom_compass_tour",
+				"value":1
+			}
+		]
     },
   {
     "id":"ratdom_artefact_la",
@@ -566,6 +583,36 @@
   {
     "id":"ratdom_bone_collector_s1_30",
 	"message":"You put the wrong bone onto the stack and try to look as innocent as possible.",
+    "rewards":[
+      {
+        "rewardType":"giveItem",
+        "rewardID":"ratdom_rat_skelett_leg",
+		"value":1
+      },
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_quest",
+		"value":32
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bone_collector_s2",
+    "replies":[
+      {
+		"nextPhraseID":"ratdom_bone_collector_s2_10",
+        "requires":[
+          {
+            "requireType":"inventoryRemove",
+            "requireID":"ratdom_rat_skelett_leg_coll",
+            "value":1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_bone_collector_s2_10",
     "rewards":[
       {
         "rewardType":"giveItem",
@@ -3185,13 +3232,13 @@
 		"nextPhraseID":"X"
       },
       {
-        "text":"Read further.",
+        "text":"Read further.",,
 		"nextPhraseID":"ratdom_rat_warden_bell_10",
         "requires":[
           {
             "requireType":"questProgress",
             "requireID":"ratdom_quest",
-            "value":90,
+            "value":390,
 			"negate":true
           }
         ]
@@ -3217,11 +3264,15 @@
     "message":"DING!",
 	"rewards":[
 		{
-			"rewardType":"removeSpawnArea",
+			"rewardType":"spawnAll",
 			"rewardID":"ratdom_rat_warden",
 			"mapName":"ratdom_maze_624"
 		}
 	]
+  },
+  {
+    "id":"ratdom_rat_warden_cave",
+    "message":"You can't get through."
   },
   {
     "id":"ratdom_skel_bone",
@@ -5767,7 +5818,7 @@
 		},
 		{
 			"text":"Please. I just don't know what to do here.",
-			"nextPhraseID":"ratdom_wells_chest_10"
+			"nextPhraseID":"ratdom_wells_chest_20"
 		}
 	]
   },
@@ -6091,7 +6142,7 @@
 		},
 		{
 			"rewardType":"giveItem",
-			"rewardID":"ratdom_rat_skelett_leg",
+			"rewardID":"ratdom_rat_skelett_tail",
 			"value":1
 		}
 	]

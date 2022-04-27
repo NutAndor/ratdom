@@ -32,6 +32,7 @@
     <map id="ratdom_maze_437" x="180" y="90"/>
     <map id="ratdom_maze_438" x="210" y="90"/>
     <map id="ratdom_maze_442" x="45" y="120"/>
+    <map id="ratdom_maze_443" x="75" y="120"/>
     <map id="ratdom_maze_444" x="105" y="120"/>
     <map id="ratdom_maze_445" x="135" y="120"/>
     <map id="ratdom_maze_446" x="165" y="120"/>
@@ -83,28 +84,32 @@
     <map id="ratdom_maze_547" x="195" y="120"/>
     <map area="ratdom_maze_museum" id="ratdom_maze_551" x="0" y="150"/>
     <map id="ratdom_maze_552" x="30" y="150"/>
+    <map id="ratdom_maze_553" x="60" y="150"/>
     <map id="ratdom_maze_554" x="90" y="150"/>
     <map id="ratdom_maze_555" x="120" y="150"/>
     <map id="ratdom_maze_557" x="180" y="150"/>
     <map id="ratdom_maze_558" x="210" y="150"/>
     <map id="ratdom_maze_562" x="45" y="180"/>
+    <map id="ratdom_maze_563" x="75" y="180"/>
     <map id="ratdom_maze_564" x="105" y="180"/>
     <map id="ratdom_maze_565" x="135" y="180"/>
     <map id="ratdom_maze_566" x="165" y="180"/>
     <map id="ratdom_maze_568" x="225" y="180"/>
+    <map id="ratdom_maze_572" x="30" y="210"/>
     <namedarea id="ratdom_maze_goldhunter_area" name="Gold hunter" type="other"/>
     <namedarea id="ratdom_maze_skeleton_dance" name="Skeleton dance" type="other"/>
     <namedarea id="ratdom_maze_museum" name="Museum" type="other"/>
   </segment>
   <segment id="ratdom_level_6" x="0" y="0">
-    <map id="ratdom_maze_618" x="210" y="30"/>
-    <map area="ratdom_maze_roundlings_area" id="ratdom_maze_627" x="195" y="60"/>
     <map id="ratdom_maze_611" x="0" y="30"/>
+    <map id="ratdom_maze_616" x="150" y="30"/>
+    <map id="ratdom_maze_617" x="180" y="30"/>
     <map id="ratdom_maze_618" x="210" y="30"/>
     <map id="ratdom_maze_621" x="15" y="60"/>
     <map id="ratdom_maze_624" x="105" y="60"/>
     <map id="ratdom_maze_625" x="135" y="60"/>
-    <map id="ratdom_maze_627" x="195" y="60"/>
+    <map id="ratdom_maze_626" x="165" y="60"/>
+    <map area="ratdom_maze_roundlings_area" id="ratdom_maze_627" x="195" y="60"/>
     <map id="ratdom_maze_628" x="225" y="60"/>
     <map id="ratdom_maze_631" x="0" y="90"/>
     <map id="ratdom_maze_632" x="30" y="90"/>

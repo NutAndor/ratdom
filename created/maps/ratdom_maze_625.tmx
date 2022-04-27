@@ -188,12 +188,12 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlNsNwjAMRTsFn1F3IIwAGSF0hJQRmk7HYsTCkcwlJg8JiQ8qnY9GPrYrNXc20zQntkRI+MSVoedintD7krhxPZL9lfHCWdnbRf2p4EcmCCeCd+R90Mc+O5xnj7AffER6kpqveTW/5hFu0NNmnztc6ffMlNhB7893cT+ww8jOa4GWf3oR9dG8ZlfNy9mEyAzVPMymUob6Dg+zL/D3u0YPe3h2NY/uvZahwbznU67He489Nj67H9ryBedYZY5GnkM8APDKqxc=
+   eJztlNsNwjAMRTsFnxE7EEaAjBA6QsoITadjMWLhSOYSNw8JiQ8qnY9GPrYrNTeaaYpMSPjEjaHnal7Q+5y4J44FVvYXxgtnYW8T9eeCL/fITgTvxPugj302OM8eYXd8RHqSmq95Nb/mEW7Q02ZfOlzp98yU2EHvz3dxP7DDyM5LgZZ/ehb10bxnV83L2YTIDNU8zKZShvoOD7Mv8Pe7Rg97eHY1j+69lqHBfOZTrsd7jz1WPnsc2vIF51hljkaeQzwBBHSr0A==
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBhcwESQfL0uFOgdSeCwGOVmmI+G9SgYBaNgmAAAf/4BvA==
+   eJxjYCAf/BGlQDMOYCJIvl4XCvSOJHBYjHIzzEfDehSMglEwTAAAv94CzQ==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -264,25 +264,25 @@
  <objectgroup id="16" name="Mapevents" visible="0">
   <object id="68" name="south2" type="mapchange" x="416" y="896" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_474"/>
+    <property name="map" value="ratdom_maze_636"/>
     <property name="place" value="north1"/>
    </properties>
   </object>
   <object id="69" name="south1" type="mapchange" x="0" y="896" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_473"/>
+    <property name="map" value="ratdom_maze_635"/>
     <property name="place" value="north2"/>
    </properties>
   </object>
   <object id="70" name="north2" type="mapchange" x="416" y="0" width="64" height="64">
    <properties>
-    <property name="map" value="ratdom_maze_454"/>
+    <property name="map" value="ratdom_maze_616"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
-  <object id="71" name="north1" type="mapchange" x="0" y="0" width="64" height="64">
+  <object id="71" name="north1" type="mapchange" x="0" y="32" width="32" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_453"/>
+    <property name="map" value="ratdom_maze_515"/>
     <property name="place" value="south2"/>
    </properties>
   </object>

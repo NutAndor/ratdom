@@ -1,5 +1,13 @@
 [
     {
+        "id":"ratdom_bone_collector",
+        "name":"Loirash",
+        "iconID":"monsters_ld1:63",
+		"moveCost":5,
+        "phraseID":"ratdom_bone_collector",
+		"spawnGroup":"ratdom_bone_collector"
+    },
+    {
         "id":"ratdom_ghost1",
         "name":"Ghost",
         "iconID":"monsters_tometik2:65",
