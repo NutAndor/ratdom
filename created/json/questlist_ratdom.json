@@ -40,7 +40,7 @@
 			{ "progress":30, "logText":"You got the skull of a rat."  },
 			{ "progress":31, "logText":"You took a leg bone of a rat from a gold hunter."  },
 			{ "progress":32, "logText":"You stole a leg bone of a rat from the instrument maker."  },
-			{ "progress":33, "logText":"You got a bone leg of a dead rat."  },
+			{ "progress":33, "logText":"You found a leg bone of a  rat in the center of a labyrinth."  },
 			{ "progress":34, "logText":"You took a leg bone of a rat from the dancing skeletons."  },
 			{ "progress":35, "logText":"You found the tail bones of a dead rat on a platform in a lake."  },
 			{ "progress":36, "logText":"You found the back bone of a dead rat."  },
@@ -64,9 +64,10 @@
 				"logText":"You found a platform from which you have a good view over Crossglen. Andor seemed to have been here many times." },
 			{ 	"progress":200, 
 				"logText":"You found an exit from the caves to the surface. Cold icy wind was swirling up here on the Black Water mountain top.\nAstonishingly you are not alone here - Whootibarfag, a very old eremit seemed to have awaited me." },
-			{	"progress":310, "logText":"Wart, the warden to the halls of memory told me, that the access would be closed, until the rat memorial is restored. I should seek the bones of King Rah's skeleton." }, 
-			{	"progress":390, "logText":"Wart was glad to have his rat memorial restored. He granted access now.", 
-			  "finishesQuest":1  },
+			{	"progress":310, 
+				"logText":"Wart, the warden to the halls of memory told me, that the access would be closed, until the rat memorial is restored. I should seek the bones of King Rah's skeleton." }, 
+			{	"progress":390, 
+				"logText":"Wart was glad to have his rat memorial restored. He granted access now." },
 			{	"progress":900, 
 				"logText":"You finally found the yellow artefact: It was a big, smelly cheese - almost everlasting. Clevred was overjoyed!" },
 			{	"progress":950, 
@@ -74,7 +75,8 @@
 			{	"progress":960, 
 				"logText":"You persuaded Clevred to leave the artefact behind. He left you disappointedly then." },
 			{	"progress":999, 
-				"logText":"End" }
+				"logText":"End", 
+			  "finishesQuest":1  }
         ]
     },
     {

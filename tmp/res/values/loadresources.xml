@@ -400,6 +400,7 @@
         <!--Added by ATCS v0.6.17 for project Delivery-->
         <item>@raw/conversationlist_delivery</item>
         <!--Added by ATCS v0.6.17 for project ratdom-->
+        <item>@raw/conversationlist_ratdom</item>
         <item>@raw/conversationlist_ratdom_npc</item>
     </array>
         

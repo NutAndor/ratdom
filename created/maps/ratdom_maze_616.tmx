@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="72">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="73">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -188,7 +188,7 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlNERwiAMhjuFj5w7tG6gMELLCNgRsEs6kXCGM6YJhGrv/gd6/ZIm+Yk1w+CS7qA5aQHlx5q38tknrUlnogcoMHE8nDO3IcaRGJGJs8IZcyOwV+Y/cJyNvB/Np5Yp6SLwVJjDavES1+JbnGV6p+WKnqdvdu5gae7QyePcEfjbwdyxg/VMzzSs5PkW68ze8z0sxx31hrbWf/tKOxtuPlpPlT5TT2pnS/scFbklT+D7sFQ4brb4PpT9qeXo7iv1azmu/hqXPSHt0MBw5fuJ9IPykeFqc/hlh1L+BbtVpSE=
+   eJy9lVEOgjAMhjmFj4t3AG+gcITBEZhHGFzSE7nFNtbasXYxkvwPkH6Utj/d5rpuA61JPmkG5Wt0L+X7JelO4s9EEfgA8oQJwO0k/iLw9DsCyUW5PmlKujKev2dnz3v3rmUQ8pdEOaoaX+JqfI0bof4WDvU4fbLewPLcq5GnudEzt8bc0cAuQs80LHreyk7u2/MWVuJavaGt9de+0s5Gmo/WU9hn7kntbHmfoyJ3yRP0f5gPOGm2fId6A8d3H9av5aT6j7jsidIOXQUO4wfWD+kM+NcO5fwTHdel5g==
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
@@ -198,7 +198,7 @@
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYICAy2IMGMBNDlMMBC6hqT2MRS8ywGY2TBzdLEJ2EWvncAe4wpQYYIojXoe73ZSkGULpFBuglluns0Lo2Uyk66XEXlIBNeI2no08feTEDwjQO02MgsEJAJ4jFow=
+   eJxjYMAN3OTwSJIALouRr/cSDr2UmDkcACX+N6UwXoeq3YdpkA7xAWq5dTorhJ7NRLpeSuwlFVAjbuPZyNNHTvyAAL3TxCgYnAAA1d8SIQ==
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="5" name="Walkable" width="15" height="30">
+ <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzdkTEOACAIA3mF//+CPzQOJAyAtDDZxImeFruXyA7OVTTTuSrzeQzKez5PSL6KqvsjXDU/wla5TncTbNTlz7nZdyd2ZTiGt16E7XTBcF7GiX6Y/2LYTCyX3fHyRDNkL+tDuG4Hlj8yvvcz
+   eJzdkVEKACAIQz1F979CN4w+hD7U3BSCBn65V5PNITKd2fJ2uldFPotBectnCcmXUfZ+hMvmR9gsV+mug/W6/Dk3+2/HrQzX1RHDvpiOflCeZSOxXPTGzePtkLtOH8JVOzj5BUvD+xY=
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -258,7 +258,7 @@
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUBvFo3gUj+JRPIpHKAYAFCd3iQ==
+   eJxTk2NgUBvFo3gUj+JRPCiwxSBww0jDAC5Pd5s=
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
@@ -428,12 +428,20 @@
     <property name="requireValue" value="30"/>
    </properties>
   </object>
-  <object id="70" name="ratdom_rat_conv2:1" type="replace" x="384" y="736" width="32" height="32" visible="0">
+  <object id="70" name="ratdom_rat_conv2:1" type="replace" x="96" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="31"/>
+   </properties>
+  </object>
+  <object id="72" name="ratdom_rat_conv2:2" type="replace" x="384" y="736" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Compass"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="32"/>
    </properties>
   </object>
   <object id="69" name="ratdom_rat_conv2b:0" type="replace" x="320" y="32" width="32" height="32" visible="0">

@@ -314,6 +314,13 @@
   {
     "id":"ratdom_artefact_ld_10",
     "switchToNPC":"none",
+    "message":"The artifact was taken back obviously by the roundlings.",
+    "replies":[
+      {
+        "text":"Sigh. Back into the maze, I fear.",
+		"nextPhraseID":"N"
+      }
+    ],
     "rewards":[
       {
         "rewardType":"removeQuestProgress",
@@ -330,8 +337,7 @@
         "rewardID":"ratdom_roundling2",
         "mapName":"ratdom_maze_448"
       }
-    ],
-    "message":"The artifact was taken back obviously"
+    ]
   },
   {
     "id":"ratdom_artefact_lf",
@@ -647,7 +653,7 @@
 	"message":"I am really disappointed in you to steal my most precious bone. I take it back now.",
     "replies":[
       {
-        "text":"Yikes! You have startled me. Yes, sorry.",.
+        "text":"Yikes! You have startled me. Yes, sorry.",
 		"nextPhraseID":"X"
       }
     ],
@@ -1302,7 +1308,7 @@
     "replies":[
       {
         "text":"How can I only wake up?",
-        "nextPhraseID":"N"
+        "nextPhraseID":"X"
       },
       {
         "text":"Maybe I should talk to the rat in my bed again.",
@@ -2096,6 +2102,10 @@
     ]
   },
   {
+    "id":"ratdom_mz_center_s",
+    "rewards":[{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":33 }]
+  },
+  {
     "id":"ratdom_mz1",
     "rewards":[	
 	  { "rewardType":"questProgress", "rewardID":"ratdom_maze", "value":21 },
@@ -2354,6 +2364,11 @@
         "nextPhraseID":"ratdom_rat_conv2_1",
 		"requires":[
 			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":10
+			},
+			{
 				"requireType":"random",
 				"requireID":"33"
 			}
@@ -2435,13 +2450,20 @@
     "replies":[
       {
         "text":"Hmm, I'd prefer a bit more daylight.",
-		"nextPhraseID":"ratdom_rat_conv2_1b"
+		"nextPhraseID":"X"
       },
       {
         "text":"Sure.",
-		"nextPhraseID":"ratdom_rat_conv2_1b"
+		"nextPhraseID":"X"
       }
-    ]
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentChange",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_20",
@@ -2534,9 +2556,16 @@
     "replies":[
       {
         "text":"Me, I loath these tunnels by now.",
-		"nextPhraseID":"ratdom_rat_conv2_1b"
+		"nextPhraseID":"X"
       }
-    ]
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentChange",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_40",
@@ -2566,7 +2595,14 @@
         "text":"N",
 		"nextPhraseID":"ratdom_rat_conv2_40d"
       }
-    ]
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentChange",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_40d",
@@ -2724,7 +2760,14 @@
         "text":"N",
 		"nextPhraseID":"ratdom_rat_conv2_510b"
       }
-    ]
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1010
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_510b",
@@ -2752,7 +2795,7 @@
     "replies":[
       {
         "text":"Nice song.",
-		"nextPhraseID":"ratdom_rat_conv2_500"
+		"nextPhraseID":"X"
       }
     ]
   },
@@ -2763,9 +2806,16 @@
     "replies":[
       {
         "text":"I hope so.",
-		"nextPhraseID":"ratdom_rat_conv2_500"
+		"nextPhraseID":"X"
       }
-    ]
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1010
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_530",
@@ -2774,9 +2824,16 @@
     "replies":[
       {
         "text":"Do Not Annoy Me!",
-		"nextPhraseID":"ratdom_rat_conv2_500"
+		"nextPhraseID":"X"
       }
-    ]
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1010
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_540",
@@ -2785,9 +2842,16 @@
     "replies":[
       {
         "text":"Why not? What about 'Rock Paper Scissors'?",
-		"nextPhraseID":"ratdom_rat_conv2_542"
+		"nextPhraseID":"X"
       }
-    ]
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1010
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_542",
@@ -2963,9 +3027,16 @@
     "replies":[
       {
         "text":"What? Take a look at yourself: Crooked four legs, much too short to even hold a knife.",
-		"nextPhraseID":"ratdom_rat_conv2_552"
+		"nextPhraseID":"X"
       }
-    ]
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1010
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_552",
@@ -3265,7 +3336,7 @@
 		"nextPhraseID":"X"
       },
       {
-        "text":"Read further.",,
+        "text":"Read further.",
 		"nextPhraseID":"ratdom_rat_warden_bell_10",
         "requires":[
           {
@@ -3361,6 +3432,7 @@
 				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance5", "mapName":"ratdom_maze_543d" },
 				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance6", "mapName":"ratdom_maze_543d" },
 				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance7", "mapName":"ratdom_maze_543d" },
+				{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":34 },
 				{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":100 },
 				{ "rewardType":"giveItem", "rewardID":"ratdom_rat_skelett_leg", "value":1 },
 				{ "rewardType":"changeMapFilter", "mapName":"ratdom_maze_543d", "rewardID":"none" },
@@ -4070,7 +4142,7 @@
   },
   {
     "id":"ratdom_underconstruction_20",
-    "message":"* Create the missing 50% of the maze \n* Fill caves with decoration (skeletons, etc) \n* Some little quest here and there \n* Some nice details, this and that",
+    "message":"* Create the missing 10% of the maze \n* Fill caves with decoration (skeletons, etc) \n* Some nice details, this and that",
     "replies":[
       {
         "text":"N",
@@ -4080,7 +4152,7 @@
   },
   {
     "id":"ratdom_underconstruction_30",
-    "message":"* The maze will consist of about 100 maps. \n* They look equal in principle. Thus I could copy the lighting feature over all maps. And the players head gets more swirling :) \n* There will be no worldmap - would be difficult in 3D and with partial lighting.",
+    "message":"* The maze will consist of about 150 maps. \n* They look equal in principle. Thus I could copy the lighting feature over all maps. And the players head gets more swirling :) \n* There will be no worldmap - would be difficult in 3D and with partial lighting.",
     "replies":[
       {
         "text":"N",
@@ -5168,6 +5240,11 @@
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":49
+		},
+		{
+			"rewardType":"questProgress",
+			"rewardID":"achievements",
+			"value":110
 		}
 	]
   },

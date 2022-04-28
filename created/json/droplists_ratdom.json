@@ -240,19 +240,6 @@
        ]
     },
     {
-        "id":"ratdom_rat_warden",
-        "items":[
-            {
-                "itemID":"ratdom_compass_tour",
-                "chance":"50",
-                "quantity":{
-                    "min":1,
-                    "max":1
-                }
-            }
-       ]
-    },
-    {
         "id":"ratdom_library_container",
         "items":[
             {
@@ -347,6 +334,19 @@
 			}
 		]
 	},
+    {
+        "id":"ratdom_rat_warden",
+        "items":[
+            {
+                "itemID":"ratdom_compass_tour",
+                "chance":"50",
+                "quantity":{
+                    "min":1,
+                    "max":1
+                }
+            }
+       ]
+    },
     {
         "id":"ratdom_water_container",
         "items":[

@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHdpPDLTdYMAig85HF0OXR1REDyNVLyF5k9yHTlNqLTT+6GDZ19BDDFyb4woleevGJk6IXWR6ZJuQ2YgAxeYJUPQOtl1B+pYW91A5jYvQSCwaLXkJqcMkRcg+uvESKPkJ5kRQMAAbNzys=
+   eJzbKMbAsBEHdpPDLTdYMAig85HF0OXR1REDyNVLyF5k9yHTlNqLTT+6GDZ19BDDFyb4woleevGJk6IXl35S5HEBYvIEqXoGWi+h/EoLe6kdxsToJRYMFr2E1OCSI+QeXHmJFH2E8iIpGACEd9GA
   </data>
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">

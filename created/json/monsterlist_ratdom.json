@@ -199,14 +199,6 @@
         "blockChance":40
     },
     {
-        "id":"ratdom_rat_warden",
-        "name":"Wart",
-        "iconID":"monsters_rltiles1:80",
-        "movementAggressionType":"wholeMap",
-        "phraseID":"ratdom_rat_warden",
-        "droplistID":"ratdom_rat_warden"
-    },
-    {
         "id":"ratdom_roundling",
         "name":"Roundling",
         "iconID":"monsters_rltiles1:134",
@@ -629,6 +621,21 @@
 		}
     },
     {
+        "id":"ratdom_rat_warden",
+        "name":"Wart",
+        "iconID":"monsters_rltiles3:10",
+        "movementAggressionType":"wholeMap",
+        "phraseID":"ratdom_rat_warden",
+        "droplistID":"ratdom_rat_warden"
+    },
+    {
+        "id":"ratdom_rat_warden2",
+        "name":"Wart",
+        "iconID":"monsters_rltiles3:10",
+        "phraseID":"ratdom_rat_warden2",
+        "droplistID":"ratdom_rat_warden"
+    },
+    {
         "id":"ratdom_water_fish1",
         "name":"Fish",
         "iconID":"monsters_rltiles1:147"
@@ -687,12 +694,5 @@
         "iconID":"monsters_rltiles3:16",
         "phraseID":"whootibarfag",
         "droplistID":"whootibarfag"
-    },
-    {
-        "id":"ratdom_rat_warden",
-        "name":"Wart",
-        "iconID":"monsters_rltiles3:10",
-        "phraseID":"ratdom_rat_warden",
-        "droplistID":"ratdom_rat_warden"
     }
 ]

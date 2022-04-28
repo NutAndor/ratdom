@@ -1110,6 +1110,17 @@
 		"message":"Yes please?",
 		"replies":[
 		  {
+			"text":"May I enter now?",
+			"nextPhraseID":"ratdom_rat_warden_50",
+			"requires":[
+			  {
+				"requireType":"questProgress",
+				"requireID":"ratdom_quest",
+				"value":310
+			  }
+			]
+		  },
+		  {
 			"text":"Who are you?",
 			"nextPhraseID":"ratdom_rat_warden_10"
 		  },
@@ -1120,17 +1131,6 @@
 		  {
 			"text":"Could you tell me something about this place?",
 			"nextPhraseID":"ratdom_rat_warden_30"
-		  },
-		  {
-			"text":"May I enter?",
-			"nextPhraseID":"ratdom_rat_warden_50",
-			"requires":[
-			  {
-				"requireType":"questProgress",
-				"requireID":"ratdom_quest",
-				"value":310
-			  }
-			]
 		  },
 		  {
 			"text":"Oh, it's nothing. I just tried the bell.",
@@ -1178,7 +1178,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_32",
-		"message":"But QQ was filled with jealousy and consumed with envy. How he hated to see guests crowding and admiring the valuable pieces on display in these halls.",
+		"message":"But Fraedro was filled with jealousy and consumed with envy. How he hated to see guests crowding and admiring the valuable pieces on display in these halls.",
 		"replies":[
 		  {
 			"text":"N",
@@ -1228,7 +1228,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_42",
-		"message":"This was probably QQ's most terrifying act. We found him and confronted him.",
+		"message":"This was probably Fraedro's most terrifying act. We found him and confronted him.",
 		"replies":[
 		  {
 			"text":"Such a miserable villain!",
@@ -1262,7 +1262,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_44b",
-		"message":"For security reasons, we don't let anyone in or out until QQ has admitted everything. And until King Rah is back in his accustomed place.",
+		"message":"For security reasons, we don't let anyone in or out until Fraedro has admitted everything. And until King Rah is back in his accustomed place.",
 		"replies":[
 		  {
 			"text":"Even 100 pieces of gold don't change your mind?",
@@ -1273,7 +1273,7 @@
 			"nextPhraseID":"ratdom_rat_warden_48"
 		  },
 		  {
-			"text":"I want to talk with QQ.",
+			"text":"I want to talk with Fraedro.",
 			"nextPhraseID":"ratdom_rat_warden_46b"
 		  },
 		  {
@@ -1446,7 +1446,7 @@
 		  {
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_quest",
-			"value":320
+			"value":390
 		  }
 		]
 	},
@@ -1747,6 +1747,20 @@
 		"replies":[
 		  {
 			"text":"No problem.",
+			"nextPhraseID":"S"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2",
+		"message":"Welcome in our great rat museum!",
+		"replies":[
+		  {
+			"text":"Thank you, I'll find my way.",
+			"nextPhraseID":"X"
+		  },
+		  {
+			"text":"Do you also have something to purchase?",
 			"nextPhraseID":"S"
 		  }
 		]
@@ -2103,7 +2117,15 @@
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":62
+                        "value":62,
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":62,
+						"negate":true
+                    }
+                ]
                     }
                 ]
             },
@@ -2142,7 +2164,15 @@
             },
             {
                 "text":"Who are you?",
-                "nextPhraseID":"ratdom_skeleton_boss_12_30"
+                "nextPhraseID":"ratdom_skeleton_boss_12_30",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_skeleton",
+                        "value":61,
+						"negate":true
+                    }
+                ]
             }
         ]
 	},
