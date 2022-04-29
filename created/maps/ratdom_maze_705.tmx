@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="22" nextobjectid="58">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="23" nextobjectid="65">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -198,12 +198,12 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBicYLsohOYTYGB4zo9djTkLhLZngbBh/Olo6u1YMfU1QtXOh9KtUP3L0fT6oemlFIDsSEBy60CBNhxhOpSAPQVx40/leKU2CAa674kQeXqTB7nfhgs4LDbQLhgFMPBblDL9AIbsDJQ=
+   eJxjYKAcWAhiZ1MCtotCaD4BBobn/NjVmLNAaHsWCBvGn46m3o4VU18jVO18KN0K1b8cTa8fml5KAciOBCS3DhRowxGmQwU8AqYPewrixp/K8UptEAx03xMh8vQmD3K/DRdwWGygXTAKYOC3KGX6AYi5Dh0=
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSI4QMJtpoF2AG5TxD4y9l8XI12tKYZqC2f1IlHS9hylw9yUy9FISTpS4daD0UituydFHTvyAwFD0LzXsHgWoAAD6Mg9N
+   eJxjYMAN3OTwSI4QMJtpoF2AG5TxD4y9l8XI12tKYZqixO7DFOi9RIbegXLrQOkdqLgF6SMnfkBgKPqXGnaPAlQAANDbDlY=
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -241,9 +241,9 @@
    eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwdxBPTZ4NAHA1oU6I3D435CevG5n1i92PRbAbEfCfrR7SZFPzZ/E6sfV5iD9PsSMINQWsHnBmLSGi79AEV1y1A=
   </data>
  </layer>
- <layer id="11" name="Light5" width="15" height="30" visible="0">
+ <layer id="11" name="Light5" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+Pw6CPGbkL6CflbiwK7CelNIFMvPn349OJzK6V6yU0bhPxKq3RFKG5w6SdkJ7p+XyRMrL5RPIphGABVP5aT
+   eJxjYBg5wEeOfH3WZOiF6SsiUS+yPhD2I1I/uj4QtgJiXySMy6w4NH3YsA0edxDSb0XAH1oU2E1IbwKZevHpw6cXn1sp1YstjonVi8+v+PTis5NQ3BKKG1z6CdmJL40Tq28Uj2IYBgBXkJEH
   </data>
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
@@ -263,13 +263,13 @@
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUBvFo3gUj+JRPIpHKAYAFCd3iQ==
+   eJxTk2NgUBvFo5hMrDoI3DCKR/EoHsWUYAAPX3eI
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
-  <object id="49" name="south2" type="mapchange" x="416" y="896" width="64" height="64">
+  <object id="49" name="south2" type="mapchange" x="448" y="896" width="32" height="32">
    <properties>
-    <property name="map" value="ratdom_maze_432"/>
+    <property name="map" value="ratdom_maze_616"/>
     <property name="place" value="north1"/>
    </properties>
   </object>
@@ -329,12 +329,13 @@
   <object id="55" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="56" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="57" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="58" name="ratdom_rat_pub" type="script" x="288" y="352" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
+  <object id="44" name="cavesnake2" type="spawn" x="32" y="96" width="224" height="128">
    <properties>
-    <property name="quantity" value="2"/>
+    <property name="quantity" value="4"/>
     <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
@@ -344,8 +345,43 @@
     <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
+  <object id="59" name="ratdom_rat_pub_owner" type="spawn" x="320" y="96" width="64" height="64">
+   <properties>
+    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="ratdom_rat_pub_owner"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup id="18" name="Keys" visible="0"/>
+ <objectgroup id="22" name="keys" visible="0">
+  <object id="60" name="ratdom_rat_pub_k1" type="key" x="32" y="160" width="224" height="32">
+   <properties>
+    <property name="requireId" value="andor"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
+  <object id="61" name="ratdom_rat_pub_k2" type="key" x="96" y="96" width="32" height="96">
+   <properties>
+    <property name="requireId" value="andor"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
+  <object id="62" name="ratdom_rat_pub_k3" type="key" x="160" y="96" width="32" height="64">
+   <properties>
+    <property name="requireId" value="andor"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
+  <object id="63" name="ratdom_rat_pub_k3" type="key" x="160" y="192" width="96" height="32">
+   <properties>
+    <property name="requireId" value="andor"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="19" name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
@@ -417,6 +453,14 @@
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="8"/>
+   </properties>
+  </object>
+  <object id="64" name="ratdom_rat_conv2:2" type="replace" x="288" y="288" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Compass"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="32"/>
    </properties>
   </object>
  </objectgroup>

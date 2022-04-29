@@ -18,12 +18,14 @@
     <map id="ratdom_maze_417" x="180" y="30"/>
     <map id="ratdom_maze_418" x="210" y="30"/>
     <map id="ratdom_maze_421" x="15" y="60"/>
+    <map id="ratdom_maze_422" x="45" y="60"/>
     <map id="ratdom_maze_423" x="75" y="60"/>
     <map id="ratdom_maze_424" x="105" y="60"/>
     <map id="ratdom_maze_425" x="135" y="60"/>
     <map id="ratdom_maze_426" x="165" y="60"/>
     <map id="ratdom_maze_427" x="195" y="60"/>
     <map id="ratdom_maze_428" x="225" y="60"/>
+    <map id="ratdom_maze_432" x="30" y="90"/>
     <map id="ratdom_maze_433" x="60" y="90"/>
     <map id="ratdom_maze_434" x="90" y="90"/>
     <map area="ratdom_maze_goldhunter_area" id="ratdom_maze_434b" x="105" y="90"/>
@@ -31,6 +33,7 @@
     <map id="ratdom_maze_436" x="150" y="90"/>
     <map id="ratdom_maze_437" x="180" y="90"/>
     <map id="ratdom_maze_438" x="210" y="90"/>
+    <map id="ratdom_maze_441" x="15" y="120"/>
     <map id="ratdom_maze_442" x="45" y="120"/>
     <map id="ratdom_maze_443" x="75" y="120"/>
     <map id="ratdom_maze_444" x="105" y="120"/>
@@ -39,6 +42,8 @@
     <map id="ratdom_maze_447" x="195" y="120"/>
     <map area="ratdom_maze_entry_area" id="ratdom_maze_448" x="225" y="120"/>
     <map id="ratdom_maze_453" x="60" y="150"/>
+    <map id="ratdom_maze_451" x="0" y="150"/>
+    <map id="ratdom_maze_452" x="30" y="150"/>
     <map id="ratdom_maze_454" x="90" y="150"/>
     <map id="ratdom_maze_455" x="120" y="150"/>
     <map id="ratdom_maze_455a" x="135" y="159"/>
@@ -57,15 +62,20 @@
     <namedarea id="ratdom_maze_instrument_maker" name="Instrument maker" type="other"/>
   </segment>
   <segment id="ratdom_level_5" x="0" y="0">
+    <map id="ratdom_maze_506" x="165" y="0"/>
+    <map id="ratdom_maze_513" x="60" y="30"/>
     <map id="ratdom_maze_514" x="90" y="30"/>
     <map id="ratdom_maze_515" x="120" y="30"/>
+    <map id="ratdom_maze_516" x="150" y="30"/>
     <map id="ratdom_maze_517" x="180" y="30"/>
+    <map id="ratdom_maze_521" x="15" y="60"/>
     <map id="ratdom_maze_522" x="45" y="60"/>
     <map id="ratdom_maze_523" x="75" y="60"/>
     <map id="ratdom_maze_524" x="105" y="60"/>
     <map id="ratdom_maze_525" x="135" y="60"/>
     <map id="ratdom_maze_526" x="165" y="60"/>
     <map id="ratdom_maze_527" x="195" y="60"/>
+    <map id="ratdom_maze_531" x="0" y="90"/>
     <map id="ratdom_maze_532" x="30" y="90"/>
     <map id="ratdom_maze_533" x="60" y="90"/>
     <map id="ratdom_maze_534" x="90" y="90"/>
@@ -94,6 +104,7 @@
     <map id="ratdom_maze_564" x="105" y="180"/>
     <map id="ratdom_maze_565" x="135" y="180"/>
     <map id="ratdom_maze_566" x="165" y="180"/>
+    <map id="ratdom_maze_567" x="195" y="180"/>
     <map id="ratdom_maze_568" x="225" y="180"/>
     <map id="ratdom_maze_572" x="30" y="210"/>
     <namedarea id="ratdom_maze_goldhunter_area" name="Gold hunter" type="other"/>
@@ -102,10 +113,13 @@
   </segment>
   <segment id="ratdom_level_6" x="0" y="0">
     <map id="ratdom_maze_611" x="0" y="30"/>
+    <map id="ratdom_maze_612" x="30" y="30"/>
     <map id="ratdom_maze_616" x="150" y="30"/>
     <map id="ratdom_maze_617" x="180" y="30"/>
     <map id="ratdom_maze_618" x="210" y="30"/>
     <map id="ratdom_maze_621" x="15" y="60"/>
+    <map id="ratdom_maze_622" x="45" y="60"/>
+    <map id="ratdom_maze_623" x="75" y="60"/>
     <map id="ratdom_maze_624" x="105" y="60"/>
     <map id="ratdom_maze_625" x="135" y="60"/>
     <map id="ratdom_maze_626" x="165" y="60"/>

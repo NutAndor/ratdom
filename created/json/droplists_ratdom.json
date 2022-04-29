@@ -266,6 +266,35 @@
         ]
     },
     {
+        "id":"ratdom_rat_pub_owner",
+        "items":[
+            {
+                "itemID":"snake_meat_cooked",
+                "chance":"100",
+                "quantity":{
+                    "min":5,
+                    "max":10
+                }
+            },
+            {
+                "itemID":"guynmart_wine",
+                "chance":"100",
+                "quantity":{
+                    "min":5,
+                    "max":5
+                }
+            },
+            {
+                "itemID":"mead",
+                "chance":"100",
+                "quantity":{
+                    "min":5,
+                    "max":5
+                }
+            }
+        ]
+    },
+    {
         "id":"ratdom_skeleton_gold",
         "items":[
             {

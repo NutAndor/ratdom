@@ -1,5 +1,36 @@
 [
     {
+        "id":"ratdom_check_backbone",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_check_backbone_10",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"ratdom_rat_skelett_back",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":36,
+						"negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"ratdom_check_backbone_10",
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_quest",
+				"value":36
+			}
+		]
+    },
+    {
         "id":"ratdom_dev_info",
         "replies":[
             {
@@ -41,7 +72,7 @@
     },
     {
         "id":"ratdom_dev_info_12",
-        "message":"The maze is about 90% complete. It is a really vast area of rather similar looking maps. \nThis is intentionally. This area looks and feels differently from the rest of Andor's Trail, and will be a challenge also for the high level players that simply run though new areas without any effort.",
+        "message":"The maze is a really vast area of rather similar looking maps. \nThis is intentionally. This area looks and feels differently from the rest of Andor's Trail, and will be a challenge also for the high level players that simply run though new areas without any effort. \nThe single maps will be filled with a bit more life: Objects and monsters.",
         "replies":[
             {
                 "text":"The plot",
@@ -3255,6 +3286,10 @@
         "value":23
       }
     ]
+  },
+  {
+    "id":"ratdom_rat_pub",
+    "message":"Dish of the day: Filet de serpent sur pommes de terre au chou rouge."
   },
   {
     "id":"ratdom_rat_statue",

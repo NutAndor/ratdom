@@ -179,6 +179,13 @@
         "phraseID":"ratdom_rat_crossglen"
     },
     {
+        "id":"ratdom_rat_pub_owner",
+        "name":"Horfael",
+        "iconID":"monsters_ld1:9",
+        "phraseID":"ratdom_rat_pub_owner",
+        "droplistID":"ratdom_rat_pub_owner"
+    },
+    {
         "id":"ratdom_rat_statue",
         "name":"Andor's statue",
         "iconID":"monsters_maksiu1:1",

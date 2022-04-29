@@ -1105,6 +1105,36 @@
 		"switchToNPC":"none",
         "message":"Nobody seemed to be here for a long time."
     },
+    {
+        "id":"ratdom_rat_pub_owner",
+        "message":"Hi, have a drink?",
+        "replies":[
+            {
+                "text":"You are running a pub here?",
+				"nextPhraseID":"ratdom_rat_pub_owner_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_pub_owner_10",
+        "message":"Yes, I've always wanted that. Only my customers are usually a bit special.",
+        "replies":[
+            {
+                "text":"I see.",
+				"nextPhraseID":"ratdom_rat_pub_owner_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_pub_owner_20",
+        "message":"They are very picky, especially when it comes to food. For example, nobody has ordered anything today.",
+        "replies":[
+            {
+                "text":"What are you offering?",
+				"nextPhraseID":"S"
+            }
+        ]
+    },
 	{
 		"id":"ratdom_rat_warden",
 		"message":"Yes please?",
@@ -1723,7 +1753,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_92",
-		"message":"Wear this compass and you may perceive invisible signs on the walls. Follow these.",
+		"message":"Wear this compass and you may perceive otherwise invisible signs on the walls. Follow these.",
 		"replies":[
 		  {
 			"text":"N",
