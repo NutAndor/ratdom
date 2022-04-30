@@ -241,7 +241,7 @@
    eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwdxBPTZ4NAHA1oU6I3D435CevG5n1i92PRbAbEfCfrR7SZFPzZ/E6sfV5iD9PsSMINQWsHnBmLSGi79AEV1y1A=
   </data>
  </layer>
- <layer id="11" name="Light5" width="15" height="30">
+ <layer id="11" name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBg5wEeOfH3WZOiF6SsiUS+yPhD2I1I/uj4QtgJiXySMy6w4NH3YsA0edxDSb0XAH1oU2E1IbwKZevHpw6cXn1sp1YstjonVi8+v+PTis5NQ3BKKG1z6CdmJL40Tq28Uj2IYBgBXkJEH
   </data>

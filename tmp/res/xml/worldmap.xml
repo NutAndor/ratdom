@@ -105,14 +105,15 @@
     <map id="ratdom_maze_565" x="135" y="180"/>
     <map id="ratdom_maze_566" x="165" y="180"/>
     <map id="ratdom_maze_567" x="195" y="180"/>
-    <map id="ratdom_maze_568" x="225" y="180"/>
+    <map area="ratdom_maze_labyrinth" id="ratdom_maze_568" x="225" y="180"/>
     <map id="ratdom_maze_572" x="30" y="210"/>
     <namedarea id="ratdom_maze_goldhunter_area" name="Gold hunter" type="other"/>
     <namedarea id="ratdom_maze_skeleton_dance" name="Skeleton dance" type="other"/>
     <namedarea id="ratdom_maze_museum" name="Museum" type="other"/>
+    <namedarea id="ratdom_maze_labyrinth" name="Museum" type="other"/>
   </segment>
   <segment id="ratdom_level_6" x="0" y="0">
-    <map id="ratdom_maze_611" x="0" y="30"/>
+    <map area="ratdom_maze_library" id="ratdom_maze_611" x="0" y="30"/>
     <map id="ratdom_maze_612" x="30" y="30"/>
     <map id="ratdom_maze_616" x="150" y="30"/>
     <map id="ratdom_maze_617" x="180" y="30"/>
@@ -151,8 +152,11 @@
     <map id="ratdom_maze_662" x="45" y="180"/>
     <map area="ratdom_maze_water_area" id="ratdom_maze_664" x="105" y="180"/>
     <map id="ratdom_maze_666" x="165" y="180"/>
+    <map area="ratdom_maze_pub" id="ratdom_maze_705" x="135" y="0"/>
     <map area="ratdom_maze_4_wells" id="ratdom_maze_768" x="225" y="210"/>
     <namedarea id="ratdom_maze_water_area" name="Waterway" type="other"/>
+    <namedarea id="ratdom_maze_pub" name="Pub" type="other"/>
+    <namedarea id="ratdom_maze_library" name="Library" type="other"/>
     <namedarea id="ratdom_maze_4_wells" name="4 wells" type="other"/>
     <namedarea id="ratdom_maze_roundlings_area" name="Roundlings" type="other"/>
   </segment>

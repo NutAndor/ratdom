@@ -1469,6 +1469,10 @@
 	]
   },
   {
+    "id":"ratdom_maze_rat2_key2",
+    "message":"No tresspassing."
+  },
+  {
     "id":"ratdom_maze_rat1",
     "replies":[
       {
