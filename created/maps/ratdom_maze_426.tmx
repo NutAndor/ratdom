@@ -341,7 +341,7 @@
   </object>
  </objectgroup>
  <objectgroup id="18" name="Keys" visible="0"/>
- <objectgroup id="19" name="Replace">
+ <objectgroup id="19" name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light10"/>

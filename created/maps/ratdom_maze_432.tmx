@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBhcYBsf+XqPUaB3JIHDYgwMC1khbDtW8szIAOrzI1PvKBgFo2AUDCYAAKe8BBs=
+   eJxjYBhcYBsfefqO8jMwHCNT70gDh8UYGBayMjBkALEdK3lmTAHq8yNT7ygYBaNgFAwmAADO/AWI
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYICAjWKYGJ84OsCmDp9edHNI0YfLHfjcSaw/SPEXufqoGY6k6iMmfmmtdyhiSsKb3nE8kOlqJOmlZjgTqxcfIFcfPjMIqcElR4q/cJlL63hH1g8AmB/5iA==
+   eJxjYICAjWKYGJ84OsCmDp9edHNI0YfLHfjcSaw/SPEXufqoGY6k6iMmfkcxdcOb3nE8kOlqJOmlZjgTqxcfIFcfPjMIqcElR4q/cJlL63hH1g8AVfX6Tw==
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -324,7 +324,7 @@
   <object id="61" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="62" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="63" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
-  <object id="71" name="container_gold_3_10" type="container" x="224" y="288" width="32" height="32"/>
+  <object id="71" name="container_gold_3_10" type="container" x="224" y="256" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
