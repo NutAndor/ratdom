@@ -256,9 +256,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="15" name="Compass" width="15" height="30" visible="0">
+ <layer id="15" name="Compass" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUKMytqCBmaN4FI/iUTyKRzEtMACMz3eb
+   eJxTk2NgUKMyVqWBmaN4FI/iUTyKRzEtMAANc3eI
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">

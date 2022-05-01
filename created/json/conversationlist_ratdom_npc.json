@@ -1147,6 +1147,12 @@
 				"requireType":"questProgress",
 				"requireID":"ratdom_quest",
 				"value":310
+			  },
+			  {
+				"requireType":"questProgress",
+				"requireID":"ratdom_quest",
+				"value":390,
+				"negate":true
 			  }
 			]
 		  },
@@ -1318,6 +1324,12 @@
 				"requireType":"questProgress",
 				"requireID":"ratdom_quest",
 				"value":310
+			  },
+			  {
+				"requireType":"questProgress",
+				"requireID":"ratdom_quest",
+				"value":390,
+				"negate":true
 			  }
 			]
 		  }
@@ -1355,7 +1367,17 @@
 	},
 	{
 		"id":"ratdom_rat_warden_44d",
-		"message":"And another tunnel, but only a short distance.",
+		"message":"And another tunnel, but only a short distance and a dead end.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_44e"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_44e",
+		"message":"We never go there, there are scary noises coming from there.",
 		"replies":[
 		  {
 			"text":"Finally light at the end of the tunnel.",
@@ -1763,7 +1785,17 @@
 	},
 	{
 		"id":"ratdom_rat_warden_94",
-		"message":"It will be a far journey. But you will meet everything that you need to meet.",
+		"message":"Start at the entrance where you entered the lower part of these caves.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_96"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_96",
+		"message":"It will be a far journey. But you will meet everything that you need to meet. And even more.",
 		"replies":[
 		  {
 			"text":"Sounds great!",
@@ -1783,7 +1815,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2",
-		"message":"Welcome in our great rat museum!",
+		"message":"Welcome in our great rat museum! Shall I tell you something about our great expositions?",
 		"replies":[
 		  {
 			"text":"Thank you, I'll find my way.",
@@ -2728,12 +2760,12 @@
         "message":"Greetings, young being.",
 		"replies":[
             {
-				"text":"Hi oldie.",
-                "nextPhraseID":"whootibarfag_52"
+				"text":"Hello to you, old man.",
+                "nextPhraseID":"whootibarfag_20"
             },
             {
 				"text":"Do you have something to trade?",
-                "nextPhraseID":"whootibarfag_50"
+                "nextPhraseID":"whootibarfag_10"
             }
         ],
 		"rewards":[
@@ -2745,24 +2777,187 @@
 		]
 	},
     {
-        "id":"whootibarfag_50",
-        "message":"I have interesting items to sell. Torches, hand carved snowballs, or a tour guide throgh the amazing caves of Rat World - start at Crossglen entrance to behold all the wonders of BWM's underground world!",
+        "id":"whootibarfag_10",
+        "message":"Young people are always in a hurry. In my time, you introduced yourself first.",
 		"replies":[
             {
-				"text":"Thanks!",
+				"text":"N",
+                "nextPhraseID":"whootibarfag_12"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_12",
+        "message":"We'll try again from the beginning.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_20",
+        "message":"I am Whootibarfag, wise of the Blackwater mountains.",
+		"replies":[
+            {
+				"text":"Nice to meet you. I am $playername from Crossglen, if you should know the village.",
+                "nextPhraseID":"whootibarfag_24"
+            },
+            {
+				"text":"Do you have anything to trade?",
+                "nextPhraseID":"whootibarfag_22"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_22",
+        "message":"Sigh. Always in a hurry. Who are you?",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_20"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_24",
+        "message":"Now, what brings you to this lonely area?",
+		"replies":[
+            {
+				"text":"I'm helping a cheeky little rat find an artifact.",
+                "nextPhraseID":"whootibarfag_50"
+            },
+            {
+				"text":"Do you have anything to trade?",
+                "nextPhraseID":"whootibarfag_30"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_30",
+        "message":"Yes, I have interesting items to sell. However, no food, I need it for myself.",
+		"replies":[
+            {
+				"text":"Then what do you have for sale?",
+                "nextPhraseID":"whootibarfag_32"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_32",
+        "message":"Torches to light your way.",
+		"replies":[
+            {
+				"text":"I have already one.",
+                "nextPhraseID":"whootibarfag_34"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_34",
+        "message":"Hand carved snowballs.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_36"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_36",
+        "message":"And finally, a medallion that will help you find your way here if your memory fails you.",
+		"replies":[
+            {
+				"text":"Now that sounds interesting.",
                 "nextPhraseID":"S"
             }
-        ],
-		"rewards":[
-			{
-				"rewardType":"questProgress",
-				"rewardID":"ratdom_quest",
-				"value":210
-			}
-		]
+        ]
+	},
+    {
+        "id":"whootibarfag_50",
+        "message":"Ah, a sacred quest for a mystical object. Good luck on your way.",
+		"replies":[
+            {
+				"text":"Thanks. Then we'll go looking further.",
+                "nextPhraseID":"whootibarfag_50"
+            },
+            {
+				"text":"Maybe you can help us?",
+                "nextPhraseID":"whootibarfag_52"
+            }
+        ]
 	},
     {
         "id":"whootibarfag_52",
-        "message":"This dialogue needs rework of course. And the tour guide won't be in my droplist here, but later in the cave - maybe dropped by - ah no, let's not spoil - find it out yourself..."
+        "message":"Who knows? Tell me about your artefact.",
+		"replies":[
+            {
+				"text":"It's big, round and yellow. Clevered, what else do you know about this?",
+                "nextPhraseID":"whootibarfag_54"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_54",
+		"switchToNPC":"ratdom_rat"
+        "message":"Oh, whoever possesses this artifact will be rich and never go hungry again.",
+		"replies":[
+            {
+				"text":"Gold?",
+                "nextPhraseID":"whootibarfag_56"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_56",
+        "message":"Who needs gold! It is much better.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_58"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_58",
+        "message":"...",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_70"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_70",
+		"switchToNPC":"whootibarfag"
+        "message":"I'm afraid I can't help you much there. I'm more familiar with the events out here on the mountain.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_72"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_72",
+        "message":"But you might ask an old friend of mine. He has a small but valuable collection of important items and I'm sure he'll be happy to show you around.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_74"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_74",
+        "message":"You may find him in the caves below, even deeper in the mountain.",
+		"replies":[
+            {
+				"text":"Thank you.",
+                "nextPhraseID":"X"
+            }
+        ]
 	}
 ]

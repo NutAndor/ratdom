@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="15">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="16">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -195,12 +195,17 @@
  </layer>
  <layer id="3" name="Above" width="23" height="19">
   <data encoding="base64" compression="zlib">
-   eJxjYGBguCzJQDVwWIx8+YviDAyXoPiyOKrcZTHcemHiIHoPml8yhRkYsoD4IdC8R1D8WByhB2buJQJmg+TPSGKaT0gPPv+i23mGCLOR9cxlIqyeGPeSC4hxL6XgMZXsoEYap2Y+QQbbqGzuL6B5v7GYSYw92PxISB8+eXQ5avn1ihCirACZeUkcE5NqF0x9NDNlbsNmLylmUhJG1AzvXCxuRjYPmzwMXCZQD1ACCNUxAGj2Oes=
+   eJxjYGBguCzJQDVwWIx8+YviDAyXoPiyOKrcZTHcemHiIHoPml8yhRkYsoD4IdC8A0wMDI+A9GNxhB6YuZcImA2SPyOJaT4hPfj8i27nGSLMRtYzl4mwemLcSy4gxr2UgsdUsoMaaZya+QQZbKOyub+A5v3GYiYx9mDzIyF9+OTR5ajl1ytCiLICZOYlcUxMql0w9dHMlLkNm72kmElJGFEzvHOxuBnZPGzyMHCZQD1ACSBUxwAAJCQ5tA==
   </data>
  </layer>
- <layer id="4" name="Walkable" width="23" height="19">
+ <layer id="9" name="Top" width="23" height="19">
   <data encoding="base64" compression="zlib">
-   eJytU8kRADEIShXpvwU73P3sh0GQTZzJIwcIRmuvVe/6orZfXTAevFdcKl+qEXGn3BOuCTfiWf0mXOz9JNTbpMZMT3eW6GF71MPwN/qAcSpvbhYwf+dN4ac+FY/SlmhiuhCX9CLmczVP529SJzdziY+/f3QS6dwnetxfpJ5dn6X8ncYH0DamWw==
+   eJxjYBg54JH4QLtgFIyCUTAKRgEtAQDFsAD6
+  </data>
+ </layer>
+ <layer id="4" name="Walkable" width="23" height="19" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJylk1EOgCAMQzkF978CN9QfE9N03Z4uIUShXTu2s9c693ri7H5V4Xj0PHGlfFSj4t77F+7EQXQr3tVvwuXuTyLdJTV2eqp/RI/7Vj0OT/qA9GHy1s2C5q+8JfzUZ+JJ2ogmp0txpBc1X1dzOn+TOnUzR3x8faM/Qeee6Onegnru+ozyVxovOLillA==
   </data>
  </layer>
  <objectgroup id="5" name="Mapevents">
@@ -279,6 +284,11 @@
   <object id="14" name="whootibarfag" type="spawn" x="352" y="160" width="64" height="128">
    <properties>
     <property name="spawngroup" value="whootibarfag"/>
+   </properties>
+  </object>
+  <object id="15" name="ratdom_rat" type="spawn" x="416" y="64" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="ratdom_rat"/>
    </properties>
   </object>
  </objectgroup>
