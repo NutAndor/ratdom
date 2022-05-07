@@ -2137,6 +2137,10 @@
     ]
   },
   {
+    "id":"ratdom_maze_sign",
+    "message":"The script is no longer readable"
+  },
+  {
     "id":"ratdom_mz_center_s",
     "rewards":[{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":33 }]
   },
@@ -2236,7 +2240,7 @@
     "id":"ratdom_rat_conv2c",
     "replies":[
       {	"nextPhraseID":"ratdom_rat_conv2c_1",
-		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1 }]
+		"requires":[{ "requireType":"wear", "requireID":"ratdom_ _bwm", "value":1 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2c_2",
 		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1 }]
@@ -2415,13 +2419,13 @@
     "id":"ratdom_rat_conv2_1",
     "replies":[
       {	"nextPhraseID":"ratdom_rat_conv2_400",
-		"requires":[{ "requireType":"random", "requireID":"10" },
+		"requires":[{ "requireType":"random", "requireID":"1" },
 					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
 					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_bwm", "value":1 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_410",
-		"requires":[{ "requireType":"random", "requireID":"10" },
+		"requires":[{ "requireType":"random", "requireID":"2" },
 					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
 					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_tour", "value":1 }]

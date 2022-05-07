@@ -152,6 +152,33 @@
         "attackChance":90
     },
     {
+        "id":"ratdom_maze_slime",
+        "name":"Slime",
+        "iconID":"monsters_ld2:188",
+        "maxHP":5,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":8,
+            "max":18
+        },
+		"hitEffect":{
+			"conditionsTarget":[
+				{
+					"condition":"slime",
+					"magnitude":1,
+					"duration":2,
+					"chance":"30"
+				}
+			]
+		},
+        "movementAggressionType":"helpOthers",
+        "spawnGroup":"ratdom_maze_slime",
+        "droplistID":"rat",
+        "attackCost":5,
+        "attackChance":130,
+        "blockChance":40
+    },
+    {
         "id":"ratdom_mikhail",
         "name":"Gruiik",
         "iconID":"monsters_rats:3",
@@ -231,7 +258,7 @@
         "movementAggressionType":"helpOthers",
         "attackDamage":{
             "min":10,
-            "max":20
+            "max":30
         },
         "spawnGroup":"ratdom_roundling2",
         "faction":"fct_ratdom_roundling2",

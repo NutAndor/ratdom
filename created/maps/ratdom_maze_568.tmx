@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJztkUEKgDAMBMUXeDGf9wueVerdQ3yG3/BgxQbiiraNJ8GFQimZ7C4tCrvW+gX869OayM72nm1KO/vG16K2PNglM7PzzEgHK/dU9XQ9KX6dPzNwHN6f/CUj8rpDzC/HX7/JzH4fqisnO5985zCPWdAXO+kcDnjsrfdjNqZzJplFMeTSObFn7I9xV0wMnrpzinSnu35f1QYQympT
+   eJxjYCAf/BFFsMWZILQcEwUG4gGnhQireQ5VwwV1wzMi9AwW8JBEtz4aYL8dE2Ng0CPTDduBemeTmU5AekkFFoKoemF8YsEaJojexyS6eRdQz24xiF4Ym1iwXQwTE2PfNiA+jabvFFQcn/0wN6LrR/YDIftIsR9ZDKYGxN4hgKkPZiY+e09D1aO7Bd1edD8hu2MXmn50fyObj+62U2KoboKpRQen0NyF7E50fxKKY3SzCIFTaHYi+5kYgOwnXP4bqgAAO+lwHw==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -218,7 +218,7 @@
  </layer>
  <layer id="7" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccjB5QmqI0U+MGdjUYQOkmE8MINb9pOgj1v2k6KVl2FNTLzHparjopWb8EqOXGEBNveQAQnoJydHKXlrrJUU/uXFMSfogJU2is4cDBgAyfdji
+   eJzbKMbAsBEHBgFccjB5QmqI0U+sGejqsAFSzCcGEOt+UvQR635S9NI67Kmll5h0NVz0UjN+idFLDKCmXnIAIb2E5GhlL631kqKf3DimJH2QkibR2cMBAwAnUtmp
   </data>
  </layer>
  <layer id="8" name="Walkable1" width="15" height="30" visible="0">
@@ -251,7 +251,7 @@
    eJxjYBgFo2AUgMBGMepiZHNJtQNdLyl6sOklZD85evGFI7peYs0gRi8hQEgvseaQai8+vaSYQSiOSRHHpgbdLmL0UpqeSU339AYA0TJjgQ==
   </data>
  </layer>
- <layer id="14" name="Walkable7" width="15" height="30">
+ <layer id="14" name="Walkable7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUgMBGMepiSuwgRy8lfiRHLyE1+ORxyWFj00MvPndTw7/Y1JATz/j0Eps+CImRYjc98gw9AABH9mBl
   </data>
@@ -424,7 +424,7 @@
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
   <object id="44" name="cavesnake2" type="spawn" x="128" y="192" width="224" height="160">
    <properties>
-    <property name="quantity" value="9"/>
+    <property name="quantity" value="7"/>
     <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>

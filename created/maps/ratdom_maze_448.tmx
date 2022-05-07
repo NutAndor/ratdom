@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="65">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="66">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -196,7 +196,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBjaQIoJQhcDaT5h8swoZqLcHYVkmsFJBbsHChQNQbeTG95SVPLrQyHy9JEU1sKQNJ04QPEjSaG99E5X1IhbernZGc0eLij/CYF0JYBUNuIqq3CVg4TChxrlJ3r40TsNAACTuwl9
+   eJxjYBjaQIoJQhcDaT5h8swoZqLcHYVkmsFJBbsHChQNoNs3CZKnj9zwlqKSXx8KkaePpLAWhqTpxAGKH0kK7aV3uqJG3ILcTG6aJAU4o7mVC8p/QiBdCSCVjbjKKlzlIKHwoUb5iR7n9E4DAC8ICwM=
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -349,6 +349,12 @@
     <property name="active" value="false"/>
     <property name="quantity" value="5"/>
     <property name="spawngroup" value="ratdom_roundling2"/>
+   </properties>
+  </object>
+  <object id="65" name="ratdom_maze_rat2b" type="spawn" x="384" y="832" width="64" height="96">
+   <properties>
+    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
  </objectgroup>

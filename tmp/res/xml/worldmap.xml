@@ -153,7 +153,7 @@
     <map area="ratdom_maze_water_area" id="ratdom_maze_664" x="105" y="180"/>
     <map id="ratdom_maze_666" x="165" y="180"/>
     <map area="ratdom_maze_pub" id="ratdom_maze_705" x="135" y="0"/>
-    <map area="ratdom_maze_4_wells" id="ratdom_maze_768" x="225" y="210"/>
+    <map area="ratdom_maze_4_wells" id="ratdom_maze_768" x="225" y="180"/>
     <namedarea id="ratdom_maze_water_area" name="Waterway" type="other"/>
     <namedarea id="ratdom_maze_pub" name="Pub" type="other"/>
     <namedarea id="ratdom_maze_library" name="Library" type="other"/>

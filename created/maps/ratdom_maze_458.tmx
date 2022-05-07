@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="73">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="74">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
+   eJxjYKA+4GIiTl0SVF0RFvXORJqBDI4IQuhgmF5h0s0gBTwTgtCJZLgVBgop0DtQ4LkQgi07QO6HxfVAAAEK0tVjIcJqQAAUrsTmI3QAChupIZiuYOAhkWFELUCtPLiJzDRZTKL9L8gIH2LSLB8BNUl0TFP8NC670QEAQ54MuA==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -337,6 +337,12 @@
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>
+   </properties>
+  </object>
+  <object id="73" name="cavesnake2b" type="spawn" x="32" y="800" width="96" height="128">
+   <properties>
+    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
  </objectgroup>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="75">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="76">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,12 +193,12 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx58eonRh00vsfqw6bUhUh+6XlLsRNdLip2jYBSMglEwCmgLAPCvFwY=
+   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx58eonRh00vsfqw6bUhUh+6XnQ7pYWJ10uKnaNg8IFvQgPtAtqBa8PYb6OAvkCMQJk4mAAAuEkZTQ==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMANiuSwi18Sw6MJC7hMonpK7CIXDIQbKbHzMAV6TXHEK7GAEncPpN2UhBk5cTxQbh0ovQMVtyB95OZBeqcJeoOhmAZJSUfUKosAmtsXgg==
+   eJxjYMANiuSwi18SY2B4IYRHIxq4LEa8Wmx20QOA3MgtTJ5ect1ISbgcpkCvKY54JRZQ4u6BtJuSMCMnjil16xMS8hi6XkrsJRcMVNyC9JGbB6mZJh4SGV+/yYxXcgApYfoazV2gsGFDKhNJKfPplY4oLYtgeQwAe8selg==
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -243,7 +243,7 @@
  </layer>
  <layer id="12" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFc4rjkCGFy9ZKjDxmQo2cw6yPXfwOtl1rph1J3UxLW9NJLLX30sHOg09VA6KVmOBOrFx8gVx8+MwipwSVHir9wmUvreEfWDwAmLwCW
+   eJzbKMbAsBEHBgFc4rjkCGFy9ZKjDxmQo2c42jfQeqmVfih190CFNT3SBjYwFNLGUNNLSTiTqxcfIFcfPv2E1OGSg7GJ8Rcuc2kd78j6ATDSBHk=
   </data>
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">
@@ -337,6 +337,12 @@
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>
+   </properties>
+  </object>
+  <object id="75" name="cavesnake2b" type="spawn" x="32" y="800" width="96" height="128">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
  </objectgroup>

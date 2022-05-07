@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="78">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="78">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -191,14 +191,14 @@
    eJyllNsNgzAMRZmCT8QOpSNQRkgZITACMB0bdKImaiy5tw6xU6TzAfLBeVy575qmD2wBH3CBZyI+j+5DfJ8Da6pHyF8SjjlL8g5Wfxf8PeGZs4N3S+tBH/9zwHfyIsOFj3CPU/JzXskveZGp0iNe7bfrDC729kb/ZL0pM2Nl783gzsKZadxc5kvu1P1m3uJKXm02tHv9N1dna++Zux9tpuicMZPau8Vz3hS9r+Ygn6E5T7pbnKHO4OHso/1rPWn/V17MRG6GjoJH9QOcB/5jFDxNXqnOmlm+njc8NqSX
   </data>
  </layer>
- <layer id="2" name="Objects" width="15" height="30" visible="0">
+ <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
+   eJx7LMRAFnhIpj5k8I8KZiCDTYKo/KdUNn8wgSfD2G/0AALCpKlPYUPQMDaxAD1d0huQklfPjKYrosFzKoRVogQDQzIUp0iQprcQqL4YiFuA2JlEvchmlED1PqZi3JNaP/wf4HQHACOXEps=
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OSwi18Sw6MJC7hMonpK7BopgJIwNcURr8Pd7sN0TocD5daB0jtQcQvSR245Qe80MQqoCyjJY8gAAG6+EWs=
+   eJxjYMAN3OSwi18Sw6MJC7hMonpK7BopgJIwNcURr8Pd7hA2BA1jEwvISYeUuPXwENQ7UHEL0kduOUGJf0fLpoEHlOQxZAAAQZURoA==
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -243,7 +243,7 @@
  </layer>
  <layer id="12" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYICAjWKYGJ84OsCmDp9edHNI0UesOwiZTwwgxk3khge5+rDpJVYfsWFDK7244pLe7iZV/0DopZY+etg50OlqIPRSM5yJ1YsPkKsPnxmE1OCSI8VfyOpI0QdTj80cUjEA4LLupg==
+   eJxjYICAjWKYGJ84OsCmDp9edHNI0UesOwiZTwwgxk3khge5+rDpJVYfsWFDK7244pLe7iZXP6VupkccYwPDPV0NhF5qhjOxevEBcvXhM4OQGlxypPgLWR0p+mDqsZlDKgYA2svw+w==
   </data>
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">
@@ -341,7 +341,7 @@
   </object>
  </objectgroup>
  <objectgroup id="18" name="Keys" visible="0"/>
- <objectgroup id="19" name="Replace">
+ <objectgroup id="19" name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light10"/>
