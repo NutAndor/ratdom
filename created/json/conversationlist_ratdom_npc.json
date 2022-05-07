@@ -320,6 +320,9 @@
         ]
     },
     {
+        "id":"ratdom_maze_boulder"
+    },
+    {
         "id":"ratdom_librarian",
         "message":"Andor! Good that you are back at last!",
         "replies":[
@@ -390,6 +393,9 @@
                 "nextPhraseID":"R"
             }
         ]
+    },
+    {
+        "id":"ratdom_maze_mole"
     },
     {
         "id":"ratdom_mikhail",
@@ -2900,7 +2906,7 @@
 	},
     {
         "id":"whootibarfag_54",
-		"switchToNPC":"ratdom_rat"
+		"switchToNPC":"ratdom_rat",
         "message":"Oh, whoever possesses this artifact will be rich and never go hungry again.",
 		"replies":[
             {
@@ -2931,7 +2937,7 @@
 	},
     {
         "id":"whootibarfag_70",
-		"switchToNPC":"whootibarfag"
+		"switchToNPC":"whootibarfag",
         "message":"I'm afraid I can't help you much there. I'm more familiar with the events out here on the mountain.",
 		"replies":[
             {

@@ -1,5 +1,63 @@
 [
     {
+        "id":"cavesnake4",
+        "name":"Big cave snake",
+        "iconID":"monsters_rltiles2:22",
+        "maxHP":50,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":2,
+            "max":10
+        },
+        "spawnGroup":"cavesnake4",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":10,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"poison_weak",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"10"
+                }
+            ]
+        }
+    },
+    {
+        "id":"cavesnake5",
+        "name":"Nasty cave snake",
+        "iconID":"monsters_rltiles2:25",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"cavesnake4",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"poison_weak",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"10"
+                }
+            ]
+        }
+    },
+    {
         "id":"ratdom_bone_collector",
         "name":"Loirash",
         "iconID":"monsters_ld1:63",
@@ -86,6 +144,23 @@
         "spawnGroup":"ratdom_leonid"
     },
     {
+        "id":"ratdom_librarian",
+        "name":"Librarian",
+        "iconID":"monsters_rltiles1:94",
+        "maxHP":60,
+        "maxAP":10,
+        "moveCost":5,
+        "unique":1,
+        "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":10,
+            "max":30
+        },
+        "spawnGroup":"ratdom_librarian",
+        "droplistID":"ratdom_librarian",
+        "phraseID":"ratdom_librarian"
+    },
+    {
         "id":"ratdom_mara",
         "name":"Mara",
         "iconID":"monsters_men:7",
@@ -105,21 +180,79 @@
         "blockChance":40
     },
     {
-        "id":"ratdom_librarian",
-        "name":"Librarian",
-        "iconID":"monsters_rltiles1:94",
-        "maxHP":60,
-        "maxAP":10,
-        "moveCost":5,
+        "id":"ratdom_maze_boulder1",
+        "name":"Boulder",
+        "iconID":"monsters_rltiles1:15",
+		"moveCost":5,
+        "phraseID":"ratdom_maze_boulder",
+        "spawnGroup":"ratdom_maze_boulder"
+    },
+    {
+        "id":"ratdom_maze_boulder2",
+        "name":"Boulder",
+        "iconID":"monsters_rltiles1:14",
+		"moveCost":5,
+        "phraseID":"ratdom_maze_boulder",
+        "spawnGroup":"ratdom_maze_boulder"
+    },
+    {
+        "id":"ratdom_maze_boulder3",
+        "name":"Boulder",
+        "iconID":"monsters_rltiles1:3",
+		"moveCost":5,
+        "phraseID":"ratdom_maze_boulder",
+        "spawnGroup":"ratdom_maze_boulder"
+    },
+    {
+        "id":"ratdom_maze_boulder4",
+        "name":"Boulder",
+        "iconID":"monsters_rltiles1:15",
+		"moveCost":10,
+        "phraseID":"ratdom_maze_boulder",
+        "spawnGroup":"ratdom_maze_boulder"
+    },
+    {
+        "id":"ratdom_maze_boulder5",
+        "name":"Boulder",
+        "iconID":"monsters_rltiles1:15",
+		"moveCost":2,
+        "phraseID":"ratdom_maze_boulder",
+        "spawnGroup":"ratdom_maze_boulder"
+    },
+    {
+        "id":"ratdom_maze_mole",
+        "name":"Cave mole",
+        "iconID":"monsters_rltiles1:50",
+		"moveCost":5,
+        "phraseID":"ratdom_maze_mole",
+        "spawnGroup":"ratdom_maze_mole"
+    },
+    {
+        "id":"ratdom_maze_mole2",
+        "name":"Cave mole",
+        "iconID":"monsters_rltiles1:50",
         "unique":1,
-        "monsterClass":"humanoid",
+        "maxHP":70,
+        "monsterClass":"animal",
+        "movementAggressionType":"wholeMap",
         "attackDamage":{
-            "min":10,
-            "max":30
+            "min":8,
+            "max":15
         },
-        "spawnGroup":"ratdom_librarian",
-        "droplistID":"ratdom_librarian",
-        "phraseID":"ratdom_librarian"
+		"hitEffect":{
+			"conditionsTarget":[
+				{
+					"condition":"bleeding_wound",
+					"magnitude":1,
+					"duration":2,
+					"chance":"75"
+				}
+			]
+		},
+        "spawnGroup":"ratdom_maze_mole2",
+        "droplistID":"ratdom_maze_mole2",
+        "attackCost":5,
+        "attackChance":120
     },
     {
         "id":"ratdom_maze_rat1",

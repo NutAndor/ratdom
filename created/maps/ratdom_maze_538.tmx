@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN4uQguAgHJgbg0k8s0KJALza7SQHodg8FvaNgFIwC6gNYXrQhIz/C9FoBsR+J+tHLL1L0Yyt3fYk0A1eZT4wfcOmF6cfnBnx6CbmBGL244hAAzQUxkw==
+   eJxjYMAN4uQguAgHfiyERzOSGdj0Egu0KNCLzW5s4BEOf6DbTQogRe9VNPspsRfkZ00i9D7F4Wdk/eQAmH5yQRyRel8QkfZoBXCll8ECBIQH2gX4gR8F6cNKjnz9oDSNT/8/PPEKy082SHqJDWeYXnLcjl5+kaIfW7nri2TGQyL8i47x+QEWHrj0wvT74jEDn15CbiBGL3ocwgAAa3JArQ==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYICAjWKYGJc4sjwDHv2EMDX1k2MOLjCQ9pOrl55hT614o3eaoWZc0UMvtfTRw86BTlcDoZea4Uypu6mhfyDcgGwGOXqpoR+EAUBICSM=
+   eJxjYICAjWKYGJc4sjwDHv2EMDX1k2MOLkBv+9HZ5NhNz7CnVrzRO81QI67oqZda+uhh50Cnq4HQS81wptTd1NA/EG5ANoMcvdTQD8IAigoJ6g==
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -327,10 +327,10 @@
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
+  <object id="44" name="cavesnake5" type="spawn" x="160" y="288" width="192" height="416">
    <properties>
     <property name="quantity" value="2"/>
-    <property name="spawngroup" value="cavesnake2"/>
+    <property name="spawngroup" value="cavesnake5"/>
    </properties>
   </object>
   <object id="46" name="ratdom_maze_rat" type="spawn" x="96" y="64" width="96" height="128">

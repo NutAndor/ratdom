@@ -2137,8 +2137,52 @@
     ]
   },
   {
+    "id":"ratdom_maze_mole_fence",
+    "message":"The fence would be no problem for you.",
+    "replies":[
+      {	"nextPhraseID":"ratdom_maze_mole_fence_10",
+		"text":"Climb over the fence."
+      },
+      {	"nextPhraseID":"X",
+		"text":"Stay away."
+      }
+    ]
+  },
+  {
+    "id":"ratdom_maze_mole_fence_10",
+    "rewards":[{ "rewardType":"deactivateMapObjectGroup", "mapName":"ratdom_maze_516", "rewardID":"ratdom_maze_mole_fence_keys" }]
+  },
+  {
+    "id":"ratdom_maze_mole_fence_20",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_maze_mole_fence_30",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":90,
+			"negate":true
+          }
+        ]
+	  }
+	]
+  },
+  {
+    "id":"ratdom_maze_mole_fence_30",
+	"switchToNPC":"ratdom_maze_mole",
+    "message":"Thief! This is our food!!",
+    "rewards":[{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":90 },
+	           { "rewardType":"removeSpawnArea", "mapName":"ratdom_maze_516", "rewardID":"ratdom_maze_mole" },
+	           { "rewardType":"spawnAll", "mapName":"ratdom_maze_516", "rewardID":"ratdom_maze_mole2" }]
+  },
+  {
+    "id":"ratdom_maze_mole_food_sign",
+    "message":"Do not enter the enclosure!"
+  },
+  {
     "id":"ratdom_maze_sign",
-    "message":"The script is no longer readable"
+    "message":"The sign is no longer readable."
   },
   {
     "id":"ratdom_mz_center_s",

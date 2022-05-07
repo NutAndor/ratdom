@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="75">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="24" nextobjectid="81">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -186,29 +186,37 @@
  <tileset firstgid="7705" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
- <layer id="1" name="Ground" width="15" height="30">
+ <tileset firstgid="7813" name="map_broken_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
+  <image source="../../../../../laeroth/ATCS/laeroth/created/drawable/map_broken_1.png" width="512" height="256"/>
+ </tileset>
+ <layer id="20" name="Base" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzFlMEVwjAMQzsFR153IIxAGQEYIXSE0CWZCPfg94qfZSu99KBbfpRYSqbzMExGTyC7zuolegM9Au4umkUfoCq6BewiGoGaw5YNizhV5Btx2ayunX6Z94XgVN/TPxtlk3nXTn7r3ZJsM28v26ibe2a9cvMOVjvtdZNhPY7JGPXyiF6x2Xj5sJ3SOdtOstnaOTfC2/O07yH6L9Hb1/eQ/ZcF7LHy2X/JnIGZPTpDDdaXZI9GZo7uYffv6fsP6oeodg==
+   eJxjYBg+QEGOvnpBemB4FIyCUTAKRsHQBAAwswE3
   </data>
  </layer>
- <layer id="2" name="Objects" width="15" height="30" visible="0">
+ <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFtADGcvTVNwpGwSigHSiSg2AbMvInTK8VEPuRqB+mF4ZJ0Y+uF4R9iTQDm15i/YBLL0w/Pjfg00vIDcToxRWHAFXbH2U=
+   eJytlMENwjAMRTsAZ9QT6h1uhBFIRwBGCIwQWJKJKKIRxbL9fyIOX+qhL9/xdxw3XRcXOjuKjsZJV0cnwN4dpUlHhx1mrfrvd1FW2ECyA/Dd9h/tFHYP+nVQvBhO1l3DFT3Xv6yXDfJOlfzSO4NskbeWraVLRbaSuzWw48w9GlmNa50N9q7/nis2Gy0fdqZKn+VMstnKPmfCW/OU78Hbl9bbL+8B7ctgnPHm0b5kamB6b9WQnP8DOCOTmVv3kOfXzPsLWOOoBQ==
+  </data>
+ </layer>
+ <layer id="2" name="Objects" width="15" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhc4AkHgs0DxLxE6NnICcFfoHo7WRkYZIC0LBl6kUEZK369jzggmIkTU85YjgjLgeCSKHn6BhI8FxpoF0CAHYH4wQf8KND7mET/nx6g8Ho2SOIJHfgRSOOP8LjbSo6wflygSI58/SC9IGyDpJfYfADTi83uTwTMgOmFYVLcjq4XhH2RzHiIZvdTIfx6iQ0/XHph+n3xmIFPLz43gPxCjF70OIQBAM8bNf0=
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSOIAl8VI1wPTd4lMvYfJ1DeQek3JCFtkQG44j2S7KYkvctLmQLl1pKVpSsoOcvVRErejYPAAWDwCAFvBFFo=
+   eJxjYMAN3OTwSGIBl8VIU08tvYeHoF5TEsMWHVASXiPVbkri6xIZekfTNGmA3PAC6SMnfkCAXH2UxO0oGDwAFo8AfsETcg==
   </data>
  </layer>
- <layer id="4" name="Top" width="15" height="30">
+ <layer id="4" name="Top" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccoMN4wLk6iNGP7n68Okn17+UhBc99SLrpzSeKU0jg10vtfTRw86BTlcDoZea4Uypu6mhfyDcgGwGOXop1Q8DAIr/Ceo=
+   eJzbKMbAsBEHBgFccoMJowNK9JJiDiV6cemnh5/R9dNTL7J+SuN6oPTSy25qpQ162DmY4odeeqkRzujsgUqTA+UGSvxPDf0wAADi4g6U
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -324,13 +332,21 @@
   <object id="69" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="70" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="71" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="80" name="ratdom_maze_mole_fence_20" type="script" x="128" y="96" width="96" height="96"/>
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
+  <object id="44" name="ratdom_maze_mole" type="spawn" x="192" y="288" width="128" height="96">
    <properties>
     <property name="quantity" value="2"/>
-    <property name="spawngroup" value="cavesnake2"/>
+    <property name="spawngroup" value="ratdom_maze_mole"/>
+   </properties>
+  </object>
+  <object id="76" name="ratdom_maze_mole2" type="spawn" x="192" y="288" width="128" height="96">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ratdom_maze_mole2"/>
    </properties>
   </object>
   <object id="46" name="ratdom_maze_rat" type="spawn" x="288" y="704" width="128" height="160">
@@ -339,14 +355,44 @@
     <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
-  <object id="68" name="ratdom_troll" type="spawn" x="160" y="96" width="192" height="128">
+  <object id="75" name="cavesnake2b" type="spawn" x="128" y="96" width="64" height="64">
    <properties>
-    <property name="quantity" value="2"/>
-    <property name="spawngroup" value="ratdom_troll"/>
+    <property name="quantity" value="3"/>
+    <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="18" name="Keys" visible="0"/>
+ <objectgroup id="22" name="keys" visible="0">
+  <object id="77" name="ratdom_maze_mole_food_sign" type="key" x="192" y="192" width="32" height="32">
+   <properties>
+    <property name="phrase" value="ratdom_maze_mole_food_sign"/>
+    <property name="requireId" value="andor"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="23" name="ratdom_maze_mole_fence_keys" visible="0">
+  <object id="79" name="ratdom_maze_mole_food" type="key" x="128" y="160" width="96" height="32">
+   <properties>
+    <property name="phrase" value="ratdom_maze_mole_fence"/>
+    <property name="requireId" value="andor"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
+  <object id="78" name="ratdom_maze_mole_food2" type="key" x="192" y="96" width="32" height="64">
+   <properties>
+    <property name="phrase" value="ratdom_maze_mole_fence"/>
+    <property name="requireId" value="andor"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="19" name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>

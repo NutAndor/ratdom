@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="62">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="63">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -191,9 +191,9 @@
    eJytleERwiAMhTuFP3vsoI6AjEA7AnYE7JJOZHKSE99FGjh793608BFCXoObp8mRMimRImkp4uc2v8XvK+le5AvngJfxCMxGehQxe1V4GU/A7NU8X/aDPK6zw/fz/MmlxaOYuwBr4TGelT/iWGGQEz1P32zsYDF26uTr2OIZPxg7d7CrcmYWlrltgA2FQx9aWY0b9YY113/7ylobrT5WT8k5oyettcVzzobYvzxR/w9Lg9Nqiz00dnDY+yR/K6fl3+KkJ2o9zCuczMc+imvgnXLkvQDzej1b7+cFWgOltQ==
   </data>
  </layer>
- <layer id="2" name="Objects" width="15" height="30" visible="0">
+ <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
+   eJxjYCANJDIh2C+ESNQMBEVMmGLFWMSwgec47HuGJg4z7xGJ7ksm0h0wgBwW2PxFCiDVrQ+B6pMotHMwAGLjHhkkDjF/FyK59wkJ8SwgTJm9QzV9kJOX0MsAUsBAhNNjJPeS6l9sZQWushEGYHmmkMp+RQ47bOFIbNg+hbqf1LyNnkcekpkOAMrpFYg=
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -331,6 +331,12 @@
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>
+   </properties>
+  </object>
+  <object id="62" name="cavesnake5" type="spawn" x="160" y="288" width="192" height="416">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavesnake5"/>
    </properties>
   </object>
  </objectgroup>

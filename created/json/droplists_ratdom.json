@@ -252,6 +252,19 @@
             }
         ]
     },
+	{
+		"id":"ratdom_maze_mole",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":1,
+					"max":5
+				}
+			}
+		]
+	},
     {
         "id":"ratdom_mz_center",
         "items":[

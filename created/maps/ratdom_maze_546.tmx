@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="86">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="86">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -186,82 +186,82 @@
  <tileset firstgid="7705" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
- <layer name="Ground" width="15" height="30">
+ <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJzFlMENgzAMRbn3zhFlh9IRKCOkHSF0BMp03aATNZZiKVg/jpNLkf6N5y/bP3bTMLioPSpE+ahHEn33qSyXifktieuU2Bvg30lcZ2ngZR2vsLPCu+Svedf8a6zGW9gVcFcDx/qOZ1abVc07NPK5N2fG0jPyts6a9OycNXGvDnZN3NHJIs6yY5SNf+XKuhu0H2umeM6t75c95Zx3g3cpE/l7QLePObRbeUN9AydvH/dv5VD/GkeZKN3QADj+fxbzkDXI+zKemZa8Ig9NnyyvP42XpnU=
   </data>
  </layer>
- <layer name="Objects" width="15" height="30">
+ <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN4uQQtCYQF6FhYoEWAb1PhPC7Ad1uUgC63YTAPyS3kKqXVHsv4fA3JfaSCh7iCfvhDH4PIX8/JtGt/4aQ36gFHg1BP5Mar7QCd6DuuInFPchuvIjNvcII5hky/HMSqOeUEPn6jwP1nKAgHGH2AwCzmSPU
+   eJxjYGBgSGZiwAri5BC0JhAXoWFigRYBvU+EcOvFZjc2UMiESuOymxD4h+QWYvUi21nMRLzeSzj8TaqbyQGwOH+IJ+wHKyjCkV5JAb8HyN/FZLj9MYlu/UcFv1EjjOkJHkH9jJ7/SQUyFOrHVZbiU5uIpoePAjfIEakX2Z13oGF3E0u6AaW9JKjai9jSlTCCeYaMdHcSqOeUEPn6jwP1nKAgvcPsBwDX1CmL
   </data>
  </layer>
- <layer name="Above" width="15" height="30">
+ <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYMAN3OTwSI6CAQWXxcjXa0phvA5Vuw9ToPcSGXoHyq0DpXeg4hakj5z4AQF6p4nhCHYKMTDsEoLQpIK5TAwM24H6dqDp7WQiTj8o7mH2kwqQ0ysA+BcVuw==
   </data>
  </layer>
- <layer name="Top" width="15" height="30" visible="0">
+ <layer id="4" name="Top" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Walkable" width="15" height="30" visible="0">
+ <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYICAjWKYGJc4sjwDHv2EMDX1k2MOLkAv+7GZQWt91Ah7asUbvdPMQMTTQMQxNjDc09VA6KVmOBOrFx+gRB8u/YTU4bKfnDBB1kdqHFKKAayiAus=
   </data>
  </layer>
- <layer name="Light10" width="15" height="30" visible="0">
+ <layer id="6" name="Light10" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJwrkmNgKBrFo3gUj+JRPIpHKAYA5UH9IQ==
   </data>
  </layer>
- <layer name="Light1" width="15" height="30" visible="0">
+ <layer id="7" name="Light1" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYCAdaMkxMBTJkaFxEOj1I0M/TK8VEPuSYIYPUJ01VG8RkhmE9GPTB8M2ePQi69sshqkXn91aSOqw6cVntxYOtxKy24cIfcj6fZEwsfpG8SgexaOYEAYATSa/4g==
   </data>
  </layer>
- <layer name="Light2" width="15" height="30" visible="0">
+ <layer id="8" name="Light2" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJwrkmNgKAJiGyAmFRRRQW8CmXrJsdOHTPeC9FlD9VoBsR+R+pH1IWNC+nHpI+R2fPrwuZ2QPlx2+xChB5vdpOhD1u9Lhr5RPIpH8SgmhAHmSMXj
   </data>
  </layer>
- <layer name="Light3" width="15" height="30" visible="0">
+ <layer id="9" name="Light3" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJwrkmNgKBrFo3gUj2IkHA/FpOpJAGIYiCNSH7IeZEBIvw0OfTCgRYadhOwmpA+XfmL1obudVH3IeskBI1UvABEdt1Y=
   </data>
  </layer>
- <layer name="Light4" width="15" height="30" visible="0">
+ <layer id="10" name="Light4" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwdxBPTZ4NAHA1pk2IlsNzb3E9KHy/2E3IpPPzl6QWBUL/EAAHSdtrE=
   </data>
  </layer>
- <layer name="Light5" width="15" height="30" visible="0">
+ <layer id="11" name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+Pw6CPGbkL6CflbiwK7CelNIFMvPn349OJzK6V6yU0bhPxKq3RFKG5w6SdkJ7p+XyRMrL5RPIphGABVP5aT
   </data>
  </layer>
- <layer name="Light6" width="15" height="30" visible="0">
+ <layer id="12" name="Light6" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPI8K/+OwmpB+f3YT8TMhuQnoTyNSLTx8+vYTilxK9+OJ4MKYrQnGDL5wJpSlK/EsobkF2Y8vHhPThcj8p+pD1k6NvFJAOAOFcfbo=
   </data>
  </layer>
- <layer name="Light7" width="15" height="30" visible="0">
+ <layer id="13" name="Light7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz25c7iXG7jgi9OKzG6Rfk0y7CfmZkN2E9CaQqRefPnx6KUkfhPSC4tiaTL2UpCtcdhKKW0Jxgy+cCaUpWvl3JOrFF9aE8gEuu4kt3weDXgCX13Qm
   </data>
  </layer>
- <layer name="Light8" width="15" height="30" visible="0">
+ <layer id="14" name="Light8" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer name="Compass" width="15" height="30" visible="0">
+ <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxTk2NgUBvFo3gUj+JRPIpHKAYAFCd3iQ==
   </data>
  </layer>
- <objectgroup name="Mapevents" visible="0">
+ <objectgroup id="16" name="Mapevents" visible="0">
   <object id="71" name="south2" type="mapchange" x="416" y="896" width="64" height="64">
    <properties>
     <property name="map" value="ratdom_maze_557"/>
@@ -326,7 +326,7 @@
   <object id="70" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
   <object id="83" name="container_rock_1" type="container" x="384" y="832" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
   <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
    <properties>
@@ -341,8 +341,8 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
- <objectgroup name="Replace" visible="0">
+ <objectgroup id="18" name="Keys" visible="0"/>
+ <objectgroup id="19" name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light10"/>

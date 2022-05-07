@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN4uQQtCYQF6FhYoEWBXqx2U0KQLd7uOsFgaGodxSMglEwCv6IDoy9AGtMFnw=
+   eJxjYGBgeCbEgBXEySFoTSAuQsdMCLXIbHSghUUvsQCb3bgAzB/JSG5BtxsXKMbiF0J6nyCF21O0MCTWXhBIRAs7UvSiA/TwIhVoEaH3OY70QoxeXADZ3eQAmH5yQRwRemFp5CEO/w8mUIgnPxIC/6D+K6bAjCdDIIzQQTIF/iUVgMIYPd+TC0DxlETALGLsArkJXzmOK9/jSycvSEwHf0RJU08tAABmjit2
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -327,10 +327,10 @@
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
+  <object id="44" name="cavesnake5" type="spawn" x="160" y="288" width="192" height="416">
    <properties>
     <property name="quantity" value="2"/>
-    <property name="spawngroup" value="cavesnake2"/>
+    <property name="spawngroup" value="cavesnake5"/>
    </properties>
   </object>
   <object id="46" name="ratdom_maze_rat" type="spawn" x="160" y="192" width="128" height="96">

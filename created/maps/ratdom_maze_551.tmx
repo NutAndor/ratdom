@@ -325,12 +325,12 @@
   <object id="70" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="71" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
  </objectgroup>
- <objectgroup id="17" name="Spawn" visible="0">
+ <objectgroup id="17" name="Spawn">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
+  <object id="44" name="ratdom_maze_boulder" type="spawn" x="32" y="96" width="352" height="832">
    <properties>
-    <property name="quantity" value="2"/>
-    <property name="spawngroup" value="cavesnake2"/>
+    <property name="quantity" value="5"/>
+    <property name="spawngroup" value="ratdom_maze_boulder"/>
    </properties>
   </object>
   <object id="46" name="ratdom_maze_rat" type="spawn" x="256" y="704" width="96" height="128">
