@@ -218,12 +218,12 @@
  </layer>
  <layer id="7" name="Light1" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYCAdaMkxMBTJkaFxEOj1I0M/TK8VEPuSYIYPUJ01VG8RkhmE9GPTB8M2ePQi69sshqkXn91aSOqw6cVntxYOtxKyG58/sWFfJEysnlE8ikfxKCaEAUjuv+M=
+   eJxjYCAdaMkxMBTJkaFxEOj1I0M/TK8VEPuSYIYPUJ01VG8RkhmE9GPTB8M2ePQi69sshqkXn91aSOqw6cVntxYOtxKyG58/sen3RcLE6hvFo3gUj2JCGABmoL90
   </data>
  </layer>
  <layer id="8" name="Light2" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKAJiGyAmFRRRQW8CmXrJsdOHTPeC9FlD9VoBsR+R+pH1FZGgH5s+YsIanz58dhPSh8tuYvWh2+1DpB50/b4k2DeKR/EoHsXEYgC2+8U9
+   eJwrkmNgKAJiGyAmFRRRQW8CmXrJsdOHTPeC9FlD9VoBsR+R+pH1FZGgH5s+YsIanz58dhPSh8tuYvWh202KPmT9vmToG8WjeBSPYkIYALv8xQY=
   </data>
  </layer>
  <layer id="9" name="Light3" width="15" height="30" visible="0">
@@ -236,19 +236,19 @@
    eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwcgczTx6LPBoQ8GtMiwE9nueCz2E9KHbgaxbsWnnxy9IDCql3gAADm+th8=
   </data>
  </layer>
- <layer id="11" name="Light5" width="15" height="30">
+ <layer id="11" name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5wEeOgcFPjjx9RUBsBcS+JJgB04eMrYjQj00fDNvg0YtPHyG7tQjoxWc3MXqx2Q1yrzURepHDHoaJ0TOKR/EoHsXEYAAP7r0K
+   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu7Xw6CNkNzF6sdlNyL3o+n2RMLH6RvEoHsWjmBAGAF4Uu/c=
   </data>
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzJmC3Hw79cUT4F5/dIP2aZNpNyM+E7CakN4EMvRoE9OHTSyh+KdGLL44HY7oiFDf4whlfmtKAYlL9q0HATmS749HsJ0YfNveTqg9ZPzn6RgHpAACgRXsk
+   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzJmC3Hw79cUT4F5/dIP2aZNpNyM+E7CakN4EMvRoE9OHTSyh+KdGLL44HY7oiFDf4wplQmiLXv8TELcjueDT7idGHzf2k6kPWT46+UUA6AAAUY3vM
   </data>
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKMKBNYA4HogTgBgGtPCoR9aHrIdYvbj0EdKLTx8hvTZ49PkMgJ20ci8M++HQH0eEXnx2E6Mfl92E/EzIbkJ6yY0nfPrw6SUUv5ToxRfHgzFdEVNe4ApnQmmKVv4diXrxhTWhfIDLbmLywWDRCwBVkYMa
+   eJwrkmNgKMKBNYA4HogTgBgGtPCoR9aHrIdYvbj0EdKLTx8hvTZ49PkMgJ20ci8M++HQH0eEXnx2g/Rrkmk3IT8TspuQXnLiiVD84tNLKH4p0QuKY+sBSFe47ARhKzxxS0meJ5SmaOXfkagXX/4nlA9w2U1MPhgsegF9N4FO
   </data>
  </layer>
  <layer id="14" name="Light8" width="15" height="30" visible="0">

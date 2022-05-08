@@ -349,7 +349,7 @@
     "replies":[
       {
         "text":"Sigh. Back into the maze, I fear.",
-		"nextPhraseID":"N"
+		"nextPhraseID":"X"
       }
     ],
     "rewards":[
@@ -403,6 +403,62 @@
         "rewardType":"spawnAll",
         "rewardID":"ratdom_roundling2",
         "mapName":"ratdom_maze_448"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_artefact_lk",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_artefact_lk_10",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":11
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_artefact_lk_10",
+    "switchToNPC":"ratdom_rat",
+    "message":"[singing] Oh my round, oh my yellow, greatest joy on earth!",
+    "replies":[
+      {
+        "text":"Do you think the roundlings will chase us anymore?",
+		"nextPhraseID":"ratdom_artefact_lk_12"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_artefact_lk_12",
+    "message":"Those cowards? We showed them, so they hid and lick their wounds.",
+    "replies":[
+      {
+        "text":"Yes, apparently you are right.",
+		"nextPhraseID":"ratdom_artefact_lk_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_artefact_lk_20",
+    "message":"We'll be back in the light of day soon!",
+    "replies":[
+      {
+        "text":"Finally. My feet went flat. I'm really looking forward to my bed.",
+		"nextPhraseID":"ratdom_artefact_lk_22"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_artefact_lk_22",
+    "message":"Your bed? Alright, I'll share it with you.",
+    "replies":[
+      {
+        "text":"Lucky for you I'm too tired to argue.",
+		"nextPhraseID":"X"
       }
     ]
   },
@@ -4178,74 +4234,6 @@
       }
     ],
     "message":"You didn't make it to your bed again. Nevertheless you took some minutes of sleep. \nWhen you woke up, something had changed. The rats are gone!"
-  },
-  {
-    "id":"ratdom_underconstruction",
-	"message":"Under Construction!"
-  },
-  {
-    "id":"ratdom_underconstruction_01",
-    "replies":[
-      {
-        "nextPhraseID":"ratdom_underconstruction_02",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_quest",
-            "value":999
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id":"ratdom_underconstruction_02",
-    "switchToNPC":"ratdom_rat",
-    "message":"* Congratulations * \nNow you have made it through the existing new content, hope you liked it.",
-    "replies":[
-      {
-        "text":"Special features ...",
-        "nextPhraseID":"ratdom_underconstruction_10"
-      },
-      {
-        "text":"ToDo ...",
-        "nextPhraseID":"ratdom_underconstruction_20"
-      },
-      {
-        "text":"The maze ...",
-        "nextPhraseID":"ratdom_underconstruction_30"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_underconstruction_10",
-    "message":"* Reuse of existing maps in a night mare mode \n* Look from mountains down to Crossglen \n* Dynamic lighting with a torch \n* Torch use as bihander to annoy QSD user \n* Clevred as compagnion \n* A really big 3D maze",
-    "replies":[
-      {
-        "text":"N",
-        "nextPhraseID":"ratdom_underconstruction_02"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_underconstruction_20",
-    "message":"* Create the missing 10% of the maze \n* Fill caves with decoration (skeletons, etc) \n* Some nice details, this and that",
-    "replies":[
-      {
-        "text":"N",
-        "nextPhraseID":"ratdom_underconstruction_02"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_underconstruction_30",
-    "message":"* The maze will consist of about 150 maps. \n* They look equal in principle. Thus I could copy the lighting feature over all maps. And the players head gets more swirling :) \n* There will be no worldmap - would be difficult in 3D and with partial lighting.",
-    "replies":[
-      {
-        "text":"N",
-        "nextPhraseID":"ratdom_underconstruction_02"
-      }
-    ]
   },
   {
 	"id":"ratdom_water_flag",

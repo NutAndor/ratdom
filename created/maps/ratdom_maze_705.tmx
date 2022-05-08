@@ -223,7 +223,7 @@
  </layer>
  <layer id="7" name="Light1" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYCAdaMkxMBTJkaFxgIEPmW4G6bMmQy9MHyis/EjQj6wPhK2I1I+sb7MYqn5fKMZljhaSfch6kbENEXpxYWx+8CFCHzY/+JKgbxSP4lE8iglhAEEuuQw=
+   eJxjYCAdaMkxMBTJkaFxgIEPmW4G6bMmQy9MHyis/EjQj6wPhK2I1I+sb7MYqn5fKMZljhaSfch6kbENEXpxYWx+QPcnIf2+SJgYPaN4FI/iUUwMBgBH57jV
   </data>
  </layer>
  <layer id="8" name="Light2" width="15" height="30" visible="0">
@@ -233,27 +233,27 @@
  </layer>
  <layer id="9" name="Light3" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IkHA/FpOpJAGIYiCNSH7IeZEBIvw0OfTCgRYadhOwmpA+XfmL1obudVH3IeskBI1UvABEdt1Y=
+   eJwrkmNgKBrFo3gUj2IkHA/FmkSq14CqTwBiGIgjQr8Gmh5kQEi/DQ59MKBFhp347CZGHzb9pOhDdzup+pD1kgNGql4AoQy0dw==
   </data>
  </layer>
  <layer id="10" name="Light4" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwdxBPTZ4NAHA1oU6I3D435CevG5n1i92PRbAbEfCfrR7SZFPzZ/E6sfV5iD9PsSMINQWsHnBmLSGi79AEV1y1A=
+   eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AwQ1iSgRwNJHzqII6DfBoc+GNCiQG8cHvcT0ovP/cTqhelH1msFxH4k6Ed3Nyn6sYUZsfpxhTlIvy8BMwilMXxuICaN4tIPABRYyeI=
   </data>
  </layer>
  <layer id="11" name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5wEeOfH3WZOiF6SsiUS+yPhD2I1I/uj4QtgJiXySMy6w4NH3YsA0edxDSb0XAH1oU2E1IbwKZevHpw6cXn1sp1YstjonVi8+v+PTis5NQ3BKKG1z6CdmJL40Tq28Uj2IYBgBXkJEH
+   eJxjYBg5wEeOfH3WZOiF6SsiUS+yPhD2I1I/uj4QtgJiXySMy6w4NH3YsA0edxDSb0XAH1oU2I1PrwYQJ5Chl5A+fHrxuZVSvdjimFi9+MIJn158dhKKW0Lxiks/ITvxpXFi9Y3iUQzDAACCkHM=
   </data>
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPI8K/+OwmpB+f3YT8TMhuQnoTyNSLTx8+vYTilxK9+OJ4MKYrQnGDL5wJpSla+RdmN658TEz84nI/sXqx6SeUh9ABqXkQn15S9ONLJ74EzCCUVvC5gZBefPoBPL6XMw==
+   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPA4prUuBuQvrx2U3Iz4TsxqdXA4gTyNBLSB8+vYTilxK9+OJ4MKYrQvGKL5wJpSla+RdmdzwO+4mJX1zuJ1YvTD8peQgdkJoH8eklRT++dOJLwAx8aYWQGwjpxacfALDWlOg=
   </data>
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz25c7iXG7jgi9OKzG6Rfk0y7CfmZkN2E9CaQqRefPnx6KUkfhPSC4tiaTL2UpCtcdhKKW0Jxgy+cCaUpWvl3JOrFF9aE8gEuu4kt3weDXgCX13Qm
+   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz26Qe63x6MVndxwBfYTsBunXxKPXioC/8fmZkN349GoAcQIZegnpw6eXkvRBSC++OCakl1bpCl/cEopXfOFMKE3Ryr8jUS+usCYmH+Cym9jyfTDoBQCFRXJX
   </data>
  </layer>
  <layer id="14" name="Light8" width="15" height="30">
@@ -266,7 +266,7 @@
    eJxTk2NgUBvFo5hMrDoI3DCKR/EoHsWUYAAPX3eI
   </data>
  </layer>
- <objectgroup id="16" name="Mapevents">
+ <objectgroup id="16" name="Mapevents" visible="0">
   <object id="49" name="south2" type="mapchange" x="448" y="896" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_616"/>

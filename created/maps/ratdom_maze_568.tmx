@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="29" nextobjectid="172">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="29" nextobjectid="174">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -243,7 +243,7 @@
  </layer>
  <layer id="12" name="Walkable5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUgMBGMepiSuwgRy8lfsSlFp9edDFsenGZQcgeaujF5k58bsZnJqGwwGYfNnXEAFLSB6XpkVw7ybGfUjfSEgAAIvVpuQ==
+   eJxjYBgFo2AUgMBGMepiSuwgRy8lfsSlFp9edDFsenGZQcgeaujF5k58bsZnJrqbCMUDLnXEAFLSB6XpkVw7ybGfUjfSEgAAkdZqgA==
   </data>
  </layer>
  <layer id="13" name="Walkable6" width="15" height="30" visible="0">
@@ -253,7 +253,7 @@
  </layer>
  <layer id="14" name="Walkable7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUgMBGMepiSuwgRy8lfiRHLyE1+ORxyWFj00MvPndTw7/Y1JATz/j0Eps+CImRYjc98gw9AABH9mBl
+   eJxjYBgFo2AUgMBGMepiZHNJtQNdPTF6cfmJGD8SCg9seonVg02ekFux2UWKXlzuwqaHkL+w+QebXlzuwqWGWD2E0hQx+nCFLbF6KU3PpKZ7egMAvLFrRw==
   </data>
  </layer>
  <layer id="15" name="Light10" width="15" height="30" visible="0">
@@ -387,8 +387,8 @@
   <object id="113" name="ratdom_mz6" type="script" x="32" y="640" width="32" height="64"/>
   <object id="114" name="ratdom_mz2" type="script" x="32" y="704" width="64" height="32"/>
   <object id="115" name="ratdom_mz1" type="script" x="64" y="672" width="64" height="32"/>
-  <object id="116" name="ratdom_mz5" type="script" x="96" y="704" width="32" height="64"/>
-  <object id="117" name="ratdom_mz5" type="script" x="128" y="736" width="64" height="32"/>
+  <object id="116" name="ratdom_mz7" type="script" x="96" y="704" width="32" height="32"/>
+  <object id="117" name="ratdom_mz5" type="script" x="96" y="736" width="96" height="32"/>
   <object id="118" name="ratdom_mz1" type="script" x="192" y="736" width="32" height="64"/>
   <object id="119" name="ratdom_mz3" type="script" x="160" y="768" width="32" height="32"/>
   <object id="120" name="ratdom_mz2" type="script" x="128" y="768" width="32" height="64"/>
@@ -413,6 +413,7 @@
   <object id="139" name="ratdom_mz4" type="script" x="320" y="576" width="32" height="32"/>
   <object id="140" name="ratdom_mz4" type="script" x="320" y="608" width="96" height="32"/>
   <object id="141" name="ratdom_mz3" type="script" x="416" y="576" width="32" height="64"/>
+  <object id="172" name="ratdom_mz7" type="script" x="352" y="576" width="64" height="32"/>
   <object id="142" name="ratdom_mz3" type="script" x="288" y="480" width="32" height="64"/>
   <object id="143" name="ratdom_mz2" type="script" x="256" y="448" width="64" height="32"/>
   <object id="144" name="ratdom_mz6" type="script" x="256" y="480" width="32" height="160"/>

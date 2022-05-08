@@ -228,22 +228,22 @@
  </layer>
  <layer id="9" name="Light3" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IkHA/FpOpJAGIYiCNSH7IeZEBIvw0OfTCgRYadhOwmpA+XfmL1obudVH3IeskBI1UvABEdt1Y=
+   eJwrkmNgKBrFo3gUj2IkHA/FmkSq14CqTwBiGIgjQr8Gmh5kQEi/DQ59MKBFhp247NYgUh82/aToQ3c7qfqQ9ZIDRqpeABZMtC0=
   </data>
  </layer>
  <layer id="10" name="Light4" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwcgczTx6LPBoQ8GtMiwE9nueCz2E9KHbgaxbsWnnxy9IDCql3gAADm+th8=
+   eJwrkmNgKBrFo3gUj2IojidDjwYQJwAxCMRBzQBhTRL0oYM4AvptcOiDAS0y7ES2G939GlBMLEB2PyG34tJPrl4QGNVLPAAA7TO0LQ==
   </data>
  </layer>
  <layer id="11" name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+Pw6CPGbkL6CflbiwK7CelNIFMvPn349OJzK6V6yU0bhPxKq3RFKG5w6SdkJ7p+XyRMrL5RPIphGABVP5aT
+   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+Pw6CPGbkL6CflbiwK78enVAOIEMvQS0odPLz63UqqX3LSBz05apitC8YpLPyE70fX7ImFi9Y3iUQzDAP4ilf8=
   </data>
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPI8K/+OwmpB+f3YT8TMhuQnoTyNSLTx8+vYTilxK9+OJ4MKYrQnGDL5wJpSlK/EsobkF2Y8vHhPThcj8p+pD1k6NvFJAOAOFcfbo=
+   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPI8K/+OwmpB+f3YT8TMhufHo1gDiBDL0aUIwP4NJLKH4p0YsvjgdjuiIUr/jih1CaIte/hNIEzG70fEyMPmzuJ1Ufsn5y9I0C0gEAVml7xg==
   </data>
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">
@@ -347,7 +347,7 @@
   </object>
  </objectgroup>
  <objectgroup id="18" name="Keys" visible="0"/>
- <objectgroup id="19" name="Replace">
+ <objectgroup id="19" name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light10"/>
