@@ -162,7 +162,7 @@
     },
     {
         "id":"ratdom_dev_info_90",
-        "message":"Now here is the blue amulett to the BWM let out. (Players in the final game will get it only after finding their way through)\nBe sure to wear it für activation. (Marrowtaint owners will hate me ... :D) Look out for shields when you wander through the maze. Note that if you just follow it, you'll find the shortest way but also miss many of the interesting places.",
+        "message":"Now here is the blue amulett to the BWM let out. (Players in the final game will get it only after finding their way through)\nBe sure to wear it for activation. (Marrowtaint owners will hate me ... :D) Look out for shields when you wander through the maze. Note that if you just follow it, you'll find the shortest way but also miss many of the interesting places.",
         "replies":[
             {
                 "text":"N",
@@ -179,7 +179,7 @@
     },
     {
         "id":"ratdom_dev_info_92",
-        "message":"The orange amulett uses a path that passes by every important place in the maze. (Players in the final game will get it only after finding their way through)\nBe sure to wear it für activation. It is a much longer way, but you won't miss anything. There is a flag shon in addition, if there is a side way.",
+        "message":"The orange amulett uses a path that passes by every important place in the maze. (Players in the final game will get it only after finding their way through)\nBe sure to wear it for activation. It is a much longer way, but you won't miss anything. There is a flag shown in addition, if there is a side way to the attraction.",
 		"rewards":[
 			{
 				"rewardType":"giveItem",
@@ -2340,7 +2340,7 @@
     "id":"ratdom_rat_conv2c",
     "replies":[
       {	"nextPhraseID":"ratdom_rat_conv2c_1",
-		"requires":[{ "requireType":"wear", "requireID":"ratdom_ _bwm", "value":1 }]
+		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2c_2",
 		"requires":[{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1 }]
@@ -6084,11 +6084,66 @@
   },
   {
     "id":"ratdom_wells_chest",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_wells_chest_2",
+			"requires":[
+				{
+					"requireType":"factionScoreEquals",
+					"requireID":"ratdom_wells",
+					"value":29
+				}
+			]
+		},
+		{
+			"nextPhraseID":"ratdom_wells_chest_4"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_2",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_wells_chest_4"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"alignmentChange",
+			"rewardID":"ratdom_wells",
+			"value":19
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_4",
 	"message":"You have found 5 shimmering balls.",
 	"replies":[
 		{
 			"text":"Nice.",
 			"nextPhraseID":"X"
+		},
+		{
+			"text":"It seems to be more difficult than I thought at first.",
+			"nextPhraseID":"ratdom_wells_chest_10",
+			"requires":[
+				{
+					"requireType":"factionScoreEquals",
+					"requireID":"ratdom_wells",
+					"value":5
+				}
+			]
+		},
+		{
+			"text":"My head is spinning already.",
+			"nextPhraseID":"ratdom_wells_chest_10",
+			"requires":[
+				{
+					"requireType":"factionScoreEquals",
+					"requireID":"ratdom_wells",
+					"value":10
+				}
+			]
 		},
 		{
 			"text":"Oh my. I just don't know, how to solve this.",
@@ -6097,7 +6152,7 @@
 				{
 					"requireType":"factionScoreEquals",
 					"requireID":"ratdom_wells",
-					"value":5
+					"value":20
 				}
 			]
 		}
