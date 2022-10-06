@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="33">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="36">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -183,51 +183,45 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="7577" name="map_cavewall_1" tilewidth="32" tileheight="32" tilecount="108" columns="18">
-  <image source="../drawable/map_cavewall_1.png" width="576" height="192"/>
- </tileset>
- <tileset firstgid="7685" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
+ <tileset firstgid="7577" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
- <tileset firstgid="7793" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
-  <image source="../drawable/map_ratdom.png" width="576" height="192"/>
- </tileset>
- <layer name="Ground" width="30" height="30">
+ <layer id="1" name="Ground" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlk0OgjAQRklcGNmyJHgDubuJF3AhHAG5AT8HAHeW2Ibhc6ZUpbJh8aIW6ZtOmBmyJAhyRatoLNSKmyLT3Aml/k8B64ZMO86HEW5NogCPoSWxcTEX+h6rN2LQ12rwGOh+Uq7aGe81egf3dcnNHOitYhUfoYmX8XBemvtOeXb7IOjjFw9P3pzJ/T9wfZY3rx9vEtrx5T2qvdNw+km/+/KiC38v5cUcnkI7S3nZHHK9GvqmuD5znXoxh1yvxn49WWeQ7svAS8+LvZrt14KDjQW8w5lTxtvFY582PRv7NXVgjAO28w7eb5+ZiuShZ6iEPOE8+hQzv6S51QlzrVxpHq3hZGtsrh4XxKVOfeBUpx5wqdON3xj6xkXAt1fC57vXEz+Zm/w=
+   eJztlkEOgjAQRRtdGNmyJHoDObFXsMQTIEdALoFeANzZxjYO40xpsIUNixeklr72h06RGyEKRaO4O6gVF4U03ACV6VOidos0juv+C9XGUSKPpQFzo+ZcmmdYb8pg+tbIY4HjcVk1Dm+V0uBxfbIZA3rbTIgH4pmF8VBem32nHL1iu/tcNa9I3oLIfg583+XVG8d7SNzE8h7V2HkyvMLfsbzYhe9DeXGGp8RNKC+Z4Ui9/ulDOZj/oRdn6FOvB+0E3HMSeeF6veo14yDngrx6zTnhtfUa1mxcr6EDz1HjWq/2Tn1nWpBDT9AyOcHzaAqdyYI7tzrmXKsWOo+WcJJ7bGw/BsRnn8Zgzu8qiM8+XfkPXTfODLG9HDG/vd6l/Ig+
   </data>
  </layer>
- <layer name="Objects" width="30" height="30">
+ <layer id="2" name="Objects" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
- <layer name="Above" width="30" height="30">
+ <layer id="3" name="Above" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJy9VjtuAkEMdbYJFUJKBKLgGtwoKbldikhRmkjpCS0gkRvAASJiBQvnyWN7Rru8ZnfHM372jn9Ef9hMib6mFOJzEe8p4eOi/3V+XdsEnHpvZr/Hi2uHe3v/t7Hu/Zvtr427+fXpnWHeu5GtpyusW8D/wtgZa5q3RWZhG3Br2zzdpX/6NCF6nuTtQb+zsdw3mNe6l1lHtLzc7VLdsX7nPbWQe6i9vxboGBdoXvYl8mHV+d8el8bQ/lp3eAveEvrirY2xiHf/0G5LLa+u1T/AK/Ua6znWcUuua7bFq2v1+PG/TOr1EfSe4DuSv1T2VLGzhRdzqqafck1dG/0L+1YkZ/QR05EOlqO/1plSHSrlS9RbUH7LfoTx3EeOvjlzhXAKJMcwRxnWXJWB9qnUGyTmMEcZ2bkK57ioDzG8/MnEuKfbk0dz1XqgeEPeoXgQtTUyA5zXLXkG70ZsWvGaeWYhcadtbNGjzzLOjvuEJA==
+   eJy9VktOAzEMNbMpK1SpaFAv0hvBkhv1IEiIDSco3bZI5QZwAAQWteo+HNuJmnmbmYkzfrHjH9EftiPR20hd8XrU/7Q8rW0DTr03s9/jjdYEH7P/a55vdr9n3C9PT+8fj3e4LssQ6BfG3ljz9mfOZGEXcGsuT3fJp/dzood5/jxo9xSxbIF5LT/fDUSr492u1B3rd95TC7mH2vtrgY5xgeZlWyIbHgf/2+PS6G1vKVem8HNP3toYi3jfF+1nqeU9qJr8DbxSrw8ze93SIXJdsy3eK5WjN7fnMqnXn6D3C74j+brxXlp4Madq+inX1M147hMG9q1IzrhETEc6WI72Wv+U6lApX6LegvIp+xHG8yVy9NmZHYRTIDmGOcqw5qoMtE2l3iAxhznKyM5VOMdFfYjh5U8mxj3dnjyaqzad4g15e/EgamtkBjivW/IMXozYtOI188xC4k6fsUWP/pfxAwnkgeM=
   </data>
  </layer>
- <layer name="Walkable" width="30" height="30" visible="0">
+ <layer id="8" name="Top" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJy9VEEOwCAI8xX7/xf84bLDkoVoKaWOxIuDlkLdvMaYhfNEJR/hvFgoXP1ELlTr4l1pZPPjXdazgxftoIIR8xEGy4v4VxqVyPzC+iCrqe6C+aZqVkLRxc6M4VJ7zvCU3ai8u9w/9Ha8yPKqUfUC+kdkGKd4Xf4/wavMiOnf9d6/2lZ3HT/vcFm9aHYn3pIa2c6ZWXY4u5hx5h3OzuxVv1e5u57OvOnmjLOpRlbr3KNj/25vqfor71c9N0hadTA=
+   eJztzUENACAMBLDxAgX494ISnEzGkdAaaNWf7sy8Y2XeszMvAADwrgasfQHL
   </data>
  </layer>
- <layer name="Top" width="30" height="30">
+ <layer id="4" name="Walkable" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwQEBAAAAgiD/r25IQAEAAPBoDhAAAQ==
+   eJzFVEEKwDAI6yv2/y/0hzsNilSNie0Cg1Fc0mjcfMaYPzwf1vcdEB5Uz+oqnGhNVdfW2F6c1I1mUOHw6r0zRDfS33lkwOQl8qTsxe5eyJ1vgPHF5oDJq8eT8TGzYXW92ht+lSyiuiyqWYj+ERnHKd2u/J/QZXqE3L9r31dvuzMlzx4v6jfq3YldYpHNHOmloqly2p4rmkrv2bxXtdVMZ9ns1rS9qSL7tnOOHfPvzhbrv7K/7PMCUDp3hQ==
   </data>
  </layer>
- <layer name="ratdom_Top" width="30" height="30" visible="0">
+ <layer id="9" name="ratdom_Top" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJztVUEKwCAM6y/mXrDt/x9cL4IMVlMbGY4GPBljU6OKxLEVkaJjLzYP4Xg0D507dVwdTYTT00Q9soF6RLGqD0/dTH+eunu86iFS38j5VQ/P+jxazByyM52IYSSXjHfkLZfImtnZQfzNeEsRf1/fn1X/kAQP7AxYeu0cOwOWXmSvvCMxePvH6re3fy3/D2d+A2m5HOU=
+   eJztVcENgCAQw5dOoDiBuv8ITuImkhgSYpS7cjVGQxPCg1KvR0Hn7Bi8cz6M0ed5Gg6iOYW1OYxF0LzibC2mqfUooekwvtajhLU/ZpYPFFYfSN1Mf0jdEi96sNRXcn7Rw7k+RIuVQ7ZWhR0luWS8I3e51Ox5Ojsaf0+8pRp/b9+fr/5DKnhgZyCnl66xM5DTs3yr3hEb0P6x+o32L+X/4cx3CDUerw==
   </data>
  </layer>
- <layer name="Top0" width="30" height="30" visible="0">
+ <layer id="10" name="Top0" width="30" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJztwQEBAAAAgiD/r25IQAEAAPBoDhAAAQ==
+   eJztzUENACAMBLDxAgX494ISnEzGkdAaaNWf7sy8Y2XeszMvAADwrgasfQHL
   </data>
  </layer>
- <objectgroup name="Mapevents">
+ <objectgroup id="5" name="Mapevents">
   <object id="1" name="cave" type="mapchange" x="576" y="32" width="32" height="32">
    <properties>
     <property name="map" value="crossglen_cave"/>
@@ -265,139 +259,139 @@
     <property name="place" value="entrance"/>
    </properties>
   </object>
-  <object id="7" name="south" type="mapchange" x="256" y="928" width="32" height="32">
+  <object id="8" name="south" type="mapchange" x="256" y="928" width="32" height="32">
    <properties>
     <property name="map" value="wild2"/>
     <property name="place" value="north"/>
    </properties>
   </object>
-  <object id="9" name="crossglen_fortune_teller" type="script" x="96" y="64" width="32" height="32"/>
-  <object id="8" name="west1" type="mapchange" x="0" y="32" width="32" height="160">
+  <object id="9" name="crossglen_fortune_teller" type="script" x="96" y="32" width="32" height="32"/>
+  <object id="24" name="west1" type="mapchange" x="0" y="32" width="32" height="160">
    <properties>
     <property name="map" value="ratdom_bwm1"/>
     <property name="place" value="east1"/>
    </properties>
   </object>
-  <object id="11" name="ratdom_check_kills" type="script" x="320" y="96" width="32" height="128">
+  <object id="25" name="ratdom_check_kills" type="script" x="320" y="96" width="32" height="128">
    <properties>
     <property name="when" value="step"/>
    </properties>
   </object>
-  <object id="12" name="ratdom_bwm1_east_10_1" type="script" x="32" y="32" width="32" height="160">
+  <object id="26" name="ratdom_bwm1_east_10_1" type="script" x="32" y="32" width="32" height="160">
    <properties>
     <property name="when" value="always"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
-  <object id="14" name="crossglen_wasp" type="spawn" x="736" y="160" width="192" height="160">
+ <objectgroup id="6" name="Spawn">
+  <object id="10" name="crossglen_wasp" type="spawn" x="736" y="160" width="192" height="160">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="crossglen_wasp"/>
    </properties>
   </object>
-  <object id="15" name="trainingrat" type="spawn" x="352" y="96" width="192" height="128">
+  <object id="11" name="trainingrat" type="spawn" x="320" y="96" width="192" height="128">
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="trainingrat"/>
    </properties>
   </object>
-  <object id="16" name="crossglen_farmer1" type="spawn" x="192" y="320" width="256" height="128">
+  <object id="12" name="crossglen_farmer1" type="spawn" x="192" y="320" width="256" height="128">
    <properties>
     <property name="spawngroup" value="crossglen_farmer1"/>
    </properties>
   </object>
-  <object id="17" name="crossglen_farmer2" type="spawn" x="64" y="416" width="96" height="192">
+  <object id="13" name="crossglen_farmer2" type="spawn" x="64" y="416" width="96" height="192">
    <properties>
     <property name="spawngroup" value="crossglen_farmer2"/>
    </properties>
   </object>
-  <object id="18" name="crossglen_beetle" type="spawn" x="32" y="320" width="384" height="224">
+  <object id="14" name="crossglen_beetle" type="spawn" x="32" y="320" width="384" height="224">
    <properties>
     <property name="spawngroup" value="crossglen_beetle"/>
    </properties>
   </object>
-  <object id="19" name="crossglen_ant" type="spawn" x="512" y="832" width="384" height="96">
+  <object id="15" name="crossglen_ant" type="spawn" x="512" y="832" width="384" height="96">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="crossglen_ant"/>
    </properties>
   </object>
-  <object id="20" name="odair" type="spawn" x="896" y="32" width="32" height="32">
+  <object id="16" name="odair" type="spawn" x="896" y="32" width="32" height="32">
    <properties>
     <property name="spawngroup" value="odair"/>
    </properties>
   </object>
-  <object id="21" name="oromir" type="spawn" x="896" y="864" width="32" height="32">
+  <object id="17" name="oromir" type="spawn" x="896" y="864" width="32" height="32">
    <properties>
     <property name="spawngroup" value="oromir"/>
    </properties>
   </object>
-  <object name="gorwath" type="spawn" x="288" y="128" width="96" height="64">
+  <object id="18" name="gorwath" type="spawn" x="288" y="128" width="96" height="64">
    <properties>
     <property name="spawngroup" value="gorwath"/>
    </properties>
   </object>
-  <object id="22" name="halvor" type="spawn" x="736" y="608" width="32" height="32">
+  <object id="19" name="halvor" type="spawn" x="736" y="608" width="32" height="32">
    <properties>
     <property name="spawngroup" value="halvor"/>
    </properties>
   </object>
-  <object name="oromir_behind_inn_help" type="spawn" x="864" y="544" width="32" height="32">
+  <object id="20" name="oromir_behind_inn_help" type="spawn" x="864" y="544" width="32" height="32">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="oromir_behind_inn_help"/>
    </properties>
   </object>
-  <object name="oromir_behind_haystack_help" type="spawn" x="512" y="160" width="32" height="32">
+  <object id="21" name="oromir_behind_haystack_help" type="spawn" x="512" y="160" width="32" height="32">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="oromir_behind_haystack_help"/>
    </properties>
   </object>
-  <object name="oromir_behind_inn" type="spawn" x="864" y="512" width="32" height="32">
+  <object id="22" name="oromir_behind_inn" type="spawn" x="864" y="512" width="32" height="32">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="oromir_behind_inn"/>
    </properties>
   </object>
-  <object name="oromir_behind_haystack" type="spawn" x="512" y="160" width="32" height="32">
+  <object id="23" name="oromir_behind_haystack" type="spawn" x="512" y="160" width="32" height="32">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="oromir_behind_haystack"/>
    </properties>
   </object>
-  <object id="23" name="ratdom_mara" type="spawn" x="352" y="96" width="192" height="128">
+  <object id="27" name="ratdom_mara" type="spawn" x="352" y="96" width="192" height="128">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="ratdom_mara"/>
    </properties>
   </object>
-  <object id="24" name="ratdom_tharal" type="spawn" x="352" y="96" width="192" height="128">
+  <object id="28" name="ratdom_tharal" type="spawn" x="352" y="96" width="192" height="128">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="ratdom_tharal"/>
    </properties>
   </object>
-  <object id="25" name="crossglen_caverat" type="spawn" x="64" y="64" width="864" height="864">
+  <object id="29" name="crossglen_caverat" type="spawn" x="64" y="64" width="864" height="864">
    <properties>
     <property name="active" value="false"/>
     <property name="quantity" value="20"/>
     <property name="spawngroup" value="crossglen_caverat"/>
    </properties>
   </object>
-  <object id="26" name="ratdom_rat_crossglen" type="spawn" x="384" y="0" width="32" height="32">
+  <object id="30" name="ratdom_rat_crossglen" type="spawn" x="384" y="0" width="32" height="32">
    <properties>
     <property name="spawngroup" value="ratdom_rat_crossglen"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="keys"/>
- <objectgroup name="ratdom_keys">
+ <objectgroup id="11" name="keys"/>
+ <objectgroup id="12" name="ratdom_keys">
   <properties>
    <property name="active" value="false"/>
   </properties>
-  <object id="27" name="crossglen_ratdom_key_2" type="key" x="928" y="416" width="32" height="64">
+  <object id="31" name="crossglen_ratdom_key_2" type="key" x="928" y="416" width="32" height="64">
    <properties>
     <property name="phrase" value="crossglen_ratdom_key"/>
     <property name="requireId" value="ratdom_nondisplay"/>
@@ -406,7 +400,7 @@
     <property name="requireValue" value="1"/>
    </properties>
   </object>
-  <object id="28" name="crossglen_ratdom_key" type="key" x="256" y="928" width="32" height="32">
+  <object id="32" name="crossglen_ratdom_key" type="key" x="256" y="928" width="32" height="32">
    <properties>
     <property name="phrase" value="crossglen_ratdom_key"/>
     <property name="requireId" value="ratdom_nondisplay"/>
@@ -415,7 +409,7 @@
     <property name="requireValue" value="1"/>
    </properties>
   </object>
-  <object id="31" name="crossglen_ratdom_key_3" type="key" x="544" y="608" width="32" height="32">
+  <object id="33" name="crossglen_ratdom_key_3" type="key" x="544" y="608" width="32" height="32">
    <properties>
     <property name="phrase" value="crossglen_ratdom_key_3"/>
     <property name="requireId" value="ratdom_nondisplay"/>
@@ -425,8 +419,8 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Replace" visible="0">
-  <object id="29" name="ratdom_nondisplay_1" type="replace" x="0" y="0" width="960" height="960">
+ <objectgroup id="13" name="Replace" visible="0">
+  <object id="34" name="ratdom_nondisplay_1" type="replace" x="0" y="0" width="960" height="960">
    <properties>
     <property name="Top" value="ratdom_Top"/>
     <property name="requireId" value="ratdom_nondisplay"/>
@@ -434,7 +428,7 @@
     <property name="requireValue" value="1"/>
    </properties>
   </object>
-  <object id="30" name="ratdom_nondisplay_not_1" type="replace" x="0" y="0" width="960" height="960">
+  <object id="35" name="ratdom_nondisplay_not_1" type="replace" x="0" y="0" width="960" height="960">
    <properties>
     <property name="Top" value="Top0"/>
     <property name="requireId" value="ratdom_nondisplay"/>
