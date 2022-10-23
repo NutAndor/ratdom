@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="72">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="75">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,22 +193,22 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2BogmBW8vUmk6h3MZL6QgrsbSRT7wygvolE6i1GUrccyF5Bgp1mQLXmZLrRDajPnYKwCWIDxikQh7CRrjcJqCcZiFPI0DsKqAMa+QfO7t+ilOkHAB4aCl0=
+   eJxjYKA/eCiExBFGMLcDxXcIYSgnChwH6jtBpl4YeEKh/pECWgQYGPKECaujNQhmJV9vMol6FyOpL6TA3kYy9c4A6ptIpN5iJHXLgewVZNppSKJ6N6A97lC7HMmwL4gNGKdAHMJGut4koJ5kIE4hQy81wEM6lh2DtZxq5B84u3+LUqYfAGzBEpg=
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYICAy2IMGMBNDlMMBC6hqT2MRS8ywGY2TBzdLEJ2EWvncAe4wpQYYIojXoe73ZSkGULpFBuglluns0Lo2Uyk66XEXlIBNeI2no08feTEDwjQO02MgsEJAJ4jFow=
+   eJxjYICAy2IMGMBNDlMMBC6hqT2MRS8ywGY2TBzdLEJ2EWvncAe4wpQYYAqN1zhh6riFHLvJBZT4m5I0QyidYgPUcut0Vgg9m4l0vaQCM6Bd5qzk6aVG3MazkaePnPgBAXqniaEMNgsxMGwRGmhX0AYAAJ/EFz0=
   </data>
  </layer>
- <layer id="4" name="Top" width="15" height="30" visible="0">
+ <layer id="4" name="Top" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
+   eJxjYBgFo2AUjAIIOCw20C4YBaOA/gAAi0gA2g==
   </data>
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFc4rjkCGF0vcSahU0dNoBLHp+Z+AAxbiJVH7HuJ0UvufFAb73USj9Dyd3k2ksNv5Kjj1pxRI7egcDUiB9S9ZOrFx8gVx8+MwipwSVHir+Q1ZGij9I4QMYAohX+Mg==
+   eJzbKMbAsBEHBgFc4rjkCGF0vcSahU0dMsCnhxh5XIAYN5GqD59+csKSVH2U6iWUPsiJy6HgZ3rbSw2/UuLWgYjfgcDUiB9S9ZOrFx8gVx8+MwipwSVHir+Q1ZGij9I4QMYAqz4BXQ==
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -238,22 +238,22 @@
  </layer>
  <layer id="11" name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+Pw6CPGbkL6CflbiwK7CelNIFMvPn349OJzK6V6yU0bhPxKq3RFKG5w6SdkJ7p+XyRMrL5RPIphGABVP5aT
+   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+Pw6CPGbkL6CflbiwK7CelNIFMvPn349OJzK6V6yU0bhPwK03tYjDQ7CcUtobjBpZ+Qnej6fZEwsfpG8SiGYQDZf5ds
   </data>
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPI8K/+OwmpB+f3YT8TMhuQnoTyNSLTx8+vYTilxK9+OJ4MKYrQnGDL5wJpSlK/EsobkF2Y8vHhPThcj8p+pD1k6NvFJAOAOFcfbo=
+   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPI8K/+OwmpB+f3YT8TMhuQnoTyNSLTx8+vYTilxK9+OKYGunqsBhpdhKKW0Jxgy+cCaUpSvxLKG5BdmPLx4T04XI/KfqQ9ZOjbxSQDgBlq36T
   </data>
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz25c7iXG7jgi9OKzG6Rfk0y7CfmZkN2E9CaQqRefPnx6KUkfhPSC4tiaTL2UpCtcdhKKW0Jxgy+cCaUpWvl3JOrFF9aE8gEuu4kt3weDXgCX13Qm
+   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz25c7iXG7jgi9OKzG6Rfk0y7CfmZkN2E9CaQqRefPnx6KUkfhPSC4tiaTL3EpKvDYqTZSShuCcUNvnAmlKao4d9RvRCAL6wJ5QNcdhNbvg8GvQAcJnT/
   </data>
  </layer>
- <layer id="14" name="Light8" width="15" height="30">
+ <layer id="14" name="Light8" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
+   eJxjYBgFo2AUjAIIOCw20C4YBaOA/gAAi0gA2g==
   </data>
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
@@ -324,10 +324,12 @@
   <object id="52" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="53" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="54" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="73" name="ratdom_ff_guard_loot1" type="container" x="256" y="480" width="32" height="32"/>
+  <object id="74" name="ratdom_ff_guard_loot2" type="container" x="160" y="544" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
+  <object id="44" name="cavesnake2" type="spawn" x="160" y="672" width="160" height="192">
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="cavesnake2"/>
@@ -343,6 +345,12 @@
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>
+   </properties>
+  </object>
+  <object id="72" name="ratdom_ff_guard" type="spawn" x="256" y="288" width="32" height="32">
+   <properties>
+    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="ratdom_ff_guard"/>
    </properties>
   </object>
  </objectgroup>

@@ -72,7 +72,7 @@
     },
     {
         "id":"ratdom_dev_info_12",
-        "message":"The maze is a really vast area of rather similar looking maps. \nThis is intentionally. This area looks and feels differently from the rest of Andor's Trail, and will be a challenge also for the high level players that simply run though new areas without any effort. \nThe single maps will be filled with a bit more life: Objects and monsters.",
+        "message":"The maze is a really vast area of rather similar looking maps. \nThis is intentionally. This area looks and feels differently from the rest of Andor's Trail, and will be a challenge also for the high level players that simply run though new areas without any effort.",
         "replies":[
             {
                 "text":"The plot",
@@ -82,7 +82,7 @@
     },
     {
         "id":"ratdom_dev_info_20",
-        "message":"You have a dream about Crossglen beeing taken over by rats, and you have to free the village again with the help of a smart cheeky rat called Clevred. \nIt is not sure, if it is really a dream - who knows? I tend to let it open.\nAnyway the maze will be left open to visit, so it has some kind of reality.",
+        "message":"You have a dream about Crossglen beeing taken over by rats. You have to free the village again with the help of a smart cheeky rat called Clevred. \nIt is not sure, if it is really a dream - who knows? I tend to let it open.\nAnyway the maze will be left open to visit, so it has some kind of reality. Also if you have killed Mara or Tharal, the will later be vanished from the townhall.",
         "replies":[
             {
                 "text":"N",
@@ -92,7 +92,17 @@
     },
     {
         "id":"ratdom_dev_info_22",
-        "message":"To find out of the dream, you have to help Clevred to find the artifact - which is in fact a very big round cheese. \nTo find it, you'll have to collect several parts of a rat skelet (7) and thus get access to the end place. \nGet the artifact and go home again.",
+        "message":"To find out of this dream, you have to help Clevred to win the artifact - which is in fact a very big round cheese. \nTo find it, you'll have to collect several parts of a rat skelet (7) around the maze. With these you get access to the end place. \nGet the artifact and go home again.",
+        "replies":[
+            {
+                "text":"Companion",
+                "nextPhraseID":"ratdom_dev_info_30"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_30",
+        "message":"Companion: Clevred will accompany you thou not seen. He is small enough to hide or travel in your bag. But he will talk to you, sometimes randomly, sometimes giving advice. \nHis presence is limited to the ratdom quests though.",
         "replies":[
             {
                 "text":"Lighting",
@@ -122,7 +132,7 @@
     },
     {
         "id":"ratdom_dev_info_44",
-        "message":"Rats: You may find out yourself, or you are told by Clevred after some time wandering: If you just want to get out again: Look for the passages whith rats in front of it - they are leading back to the entrance.",
+        "message":"Rats: You may find out yourself, or you are told by Clevred after some time wandering: If you just want to get out again: Look for the passages whith a rat in front of it - they are leading back the shortest way to the entrance.",
         "replies":[
             {
                 "text":"N",
@@ -152,7 +162,7 @@
     },
     {
         "id":"ratdom_dev_info_50",
-        "message":"Hope you'll like it. Remember, it's still under construction. The maze will be completed. And there will be added little objects, monsters, little scenes, loot, etc. for athmosphere.",
+        "message":"Hope you'll like it. Remember, it's still under construction. Please feedback your comments and ideas.",
         "replies":[
             {
                 "text":"At last: Get the compass",
@@ -162,7 +172,7 @@
     },
     {
         "id":"ratdom_dev_info_90",
-        "message":"Now here is the blue amulett to the BWM let out. (Players in the final game will get it only after finding their way through)\nBe sure to wear it for activation. (Marrowtaint owners will hate me ... :D) Look out for shields when you wander through the maze. Note that if you just follow it, you'll find the shortest way but also miss many of the interesting places.",
+        "message":"Now here is the blue amulett to the BWM let out. (Players in the release version will get it only after finding their way through) \nBe sure to wear it for activation. (Marrowtaint owners will hate me ... :D) \nLook out for shields when you wander through the maze. Note that if you just follow it, you'll find the shortest way through half of the maze, but also miss many of the interesting places.",
         "replies":[
             {
                 "text":"N",
@@ -179,7 +189,13 @@
     },
     {
         "id":"ratdom_dev_info_92",
-        "message":"The orange amulett uses a path that passes by every important place in the maze. (Players in the final game will get it only after finding their way through)\nBe sure to wear it for activation. It is a much longer way, but you won't miss anything. There is a flag shown in addition, if there is a side way to the attraction.",
+        "message":"The orange amulett marks a path that passes by every important place in the maze. (Players in the release version will get it only after finding their way through to the maze end)\nBe sure to wear it for activation. It is a much longer way, but you won't miss anything. There is a flag shown in addition, if there is a side way to an important attraction.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_dev_info_94"
+            }
+        ],
 		"rewards":[
 			{
 				"rewardType":"giveItem",
@@ -187,6 +203,21 @@
 				"value":1
 			}
 		]
+    },
+    {
+        "id":"ratdom_dev_info_94",
+        "message":"Both amuletts not only block your neck from wearing another necklace, they also take away 1 AP per round.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_dev_info_99"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_dev_info_99",
+		"switchToNPC":"ratdom_rat",
+        "message":"Can we finally move on? We still have an artifact to find."
     },
   {
     "id":"ratdom_artefact_la",
@@ -3536,6 +3567,11 @@
         ]
       }
     ]
+  },
+  {
+    "id":"ratdom_rat_warden_exit",
+    "switchToNPC":"ratdom_rat_warden",
+    "message":"You can't get through."
   },
   {
     "id":"ratdom_skel_bone_10",

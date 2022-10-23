@@ -213,6 +213,93 @@
 		]
     },
     {
+        "id":"ratdom_ff_guard",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_ff_guard_10"
+            },
+            {
+                "nextPhraseID":"ratdom_ff_guard_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_ff_guard_10",
+        "message":"Go away!"
+    },
+    {
+        "id":"ratdom_ff_guard_20",
+        "message":"Hey, you!",
+        "replies":[
+            {
+                "text":"Who, me?",
+                "nextPhraseID":"ratdom_ff_guard_30"
+            },
+            {
+                "text":"Hey, you!",
+                "nextPhraseID":"ratdom_ff_guard_30"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_ff_guard_30",
+        "message":"I know your face!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_ff_guard_40"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_ff_guard_40",
+        "message":"You had made me leave my post in front of the Foaming Flask!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_ff_guard_50"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_ff_guard_50",
+        "message":"I lost everything because of this! Above all, my honor!",
+        "replies":[
+            {
+                "text":"What honor?",
+                "nextPhraseID":"ratdom_ff_guard_60"
+            },
+            {
+                "text":"Sorry.",
+                "nextPhraseID":"ratdom_ff_guard_60"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_ff_guard_60",
+        "message":"I took refuge in this filthy cave to be safe from the guards of Feygard.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_ff_guard_70"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_ff_guard_70",
+        "message":"You will pay for it now!.",
+        "replies":[
+            {
+                "text":"But you were so stupid...",
+                "nextPhraseID":"F"
+            },
+            {
+                "text":"Attack!",
+                "nextPhraseID":"F"
+            }
+        ]
+    },
+    {
         "id":"ratdom_goldhunter_talk_b",
         "switchToNPC":"ratdom_goldhunter",
         "replies":[
@@ -321,6 +408,60 @@
     },
     {
         "id":"ratdom_maze_boulder"
+    },
+    {
+        "id":"ratdom_kriih",
+        "message":"Please don't hurt me.",
+        "replies":[
+            {
+                "text":"Why did you steal King Rakiir's skeleton?",
+                "nextPhraseID":"ratdom_kriih_10"
+            },
+            {
+                "text":"OK, bye.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_10",
+        "message":"It was not me, it was not me.",
+        "replies":[
+            {
+                "text":"Finally confess!",
+                "nextPhraseID":"ratdom_kriih_10"
+            },
+            {
+                "text":"I believe you. Go now, as long as you can.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"I give up.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_20",
+        "message":"What? Thank you, thank you!",
+        "replies":[
+            {
+                "text":"You better get out of the area quick.",
+                "nextPhraseID":"R"
+            }
+		],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":398
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_kriih",
+                "mapName":"ratdom_maze_626"
+            }
+        ]
     },
     {
         "id":"ratdom_librarian",
@@ -1122,6 +1263,16 @@
         ]
     },
     {
+        "id":"ratdom_rat_museum_sign1",
+        "message":"Here you can see the complete skeleton of King Rakiir.",
+        "replies":[
+            {
+                "text":"I see nothing.",
+				"nextPhraseID":"X"
+            }
+        ]
+    },
+    {
         "id":"ratdom_rat_pub_owner_10",
         "message":"Yes, I've always wanted that. Only my customers are usually a bit special.",
         "replies":[
@@ -1824,12 +1975,242 @@
 		"message":"Welcome in our great rat museum! Shall I tell you something about our great expositions?",
 		"replies":[
 		  {
+			"text":"Why is here an empty podest?",
+			"nextPhraseID":"ratdom_rat_warden2_r_1"
+		  },
+		  {
 			"text":"Thank you, I'll find my way.",
 			"nextPhraseID":"X"
 		  },
 		  {
 			"text":"Do you also have something to purchase?",
 			"nextPhraseID":"S"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_1",
+		"message":"This used to be a happy place of memories. Many objects and statues from the past invite you to linger and think. Everyrat loved this place.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden2_r_2"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_2",
+		"message":"Well, almost everyrat.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden2_r_3"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_3",
+		"message":"But Kriih was filled with jealousy and consumed with envy.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden2_r_4"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_4",
+		"message":"How he hated it when visitors crowded these halls around the valuable exhibits and admired the statues.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden2_r_5"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_5",
+		"message":"He wanted to be the center of attention. A larger-than-life statue of himself should dominate the room, he thought.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden2_r_6"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_6",
+		"message":"Especially the most brilliant piece of the exhibition: The completely preserved skeleton of King Rakiir - the bones in an erect, stately posture, in his right hand his dreaded sword!",
+		"replies":[
+		  {
+			"text":"I would like to see that.",
+			"nextPhraseID":"ratdom_rat_warden2_r_7"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_7",
+		"message":"Yes, King Rakiir was a great leader. Many battles were fought against the monsters that came out of the rift. But when the superiority became too great, Rakiir led his people into the caves under the Blackwater Mountains and founded a new empire there.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden2_r_8"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_8",
+		"message":"This glorious time should be remembered in this place.",
+		"replies":[
+		  {
+			"text":"Very nice.",
+			"nextPhraseID":"ratdom_rat_warden2_r_9"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_9",
+		"message":"However, one bad day I found this place ransacked! Only an empty pedestal stands where the magnificent skeleton of Rakiir was.",
+		"replies":[
+		  {
+			"text":"No.",
+			"nextPhraseID":"ratdom_rat_warden2_r_10"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_10",
+		"message":"This was probably Kriih's most terrible deed.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden2_r_12"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_12",
+		"message":"We confronted him. Of course he denied everything, that hypocrite. But who else could it have been?",
+		"replies":[
+		  {
+			"text":"Good question.",
+			"nextPhraseID":"ratdom_rat_warden2_r_13"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_13",
+		"message":"He deserved immediate death for that act. However, we only locked him up until he told us where he was hiding our beloved skeleton.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden2_r_14"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_14",
+		"message":"For security reasons, we don't let anyone in until he finally admits everything and King Rakiir is back in his seat.",
+		"replies":[
+		  {
+			"text":"I did find the skeleton. Can Kriih be released now?",
+			"nextPhraseID":"ratdom_rat_warden2_r_15"
+		  },
+		  {
+			"text":"Can I speak to Kriih? Maybe he regrets what he did and wouldn't do it again.",
+			"nextPhraseID":"ratdom_rat_warden2_r_16",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":390,
+						"negate":true
+                    }
+                ]
+		  },
+		  {
+			"text":"I don't think it was Kriih.",
+			"nextPhraseID":"ratdom_rat_warden2_r_17"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_15",
+		"message":"Of course not. He would steal the bones just one more time.",
+		"replies":[
+		  {
+			"text":"You have a sad opinion of your fellow rats.",
+			"nextPhraseID":"ratdom_rat_warden2_r_15a"
+		  },
+		  {
+			"text":"Can I speak to Kriih? Maybe he regrets what he did and wouldn't do it again.",
+			"nextPhraseID":"ratdom_rat_warden2_r_16"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_15a",
+		"message":"They're just rats. What do you expect?",
+		"replies":[
+		  {
+			"text":"Can I speak to Kriih? Maybe he regrets what he did and wouldn't do it again.",
+			"nextPhraseID":"ratdom_rat_warden2_r_16"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_16",
+		"message":"No, you can't speak to Kriih. It is too dangerous.",
+		"replies":[
+		  {
+			"text":"Well, I have 100 gold pieces here. Can I speak to Kriih?",
+			"nextPhraseID":"ratdom_rat_warden2_r_16a",
+			"requires":[
+				{
+					"requireType":"inventoryRemove",
+					"requireID":"gold",
+					"value":100
+				}
+			]
+		  },
+		  {
+			"text":"Maybe it wasn't Kriih after all?",
+			"nextPhraseID":"ratdom_rat_warden2_r_17"
+		  },
+		  {
+			"text":"Alright, I think I'll take a look at the rest of the exhibition now.",
+			"nextPhraseID":"X"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_16a",
+		"message":"Sure you can talk to him. Do you see the stairs over there? Just walk along there, you can't miss it.",
+		"replies":[
+		  {
+			"text":"OK, bye.",
+			"nextPhraseID":"X"
+		  }
+		],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":395
+            }
+        ]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_17",
+		"message":"Of course he was. It couldn't have been otherwise. Go now please, I have work to do."
+	},
+	{
+		"id":"ratdom_rat_warden2_r_2",
+		"message":"",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden2_r_3"
 		  }
 		]
 	},

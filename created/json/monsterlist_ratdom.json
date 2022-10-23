@@ -66,6 +66,25 @@
 		"spawnGroup":"ratdom_bone_collector"
     },
     {
+        "id":"ratdom_ff_guard",
+		"name":"Feygard patrol watch",
+		"iconID":"monsters_rltiles3:14",
+		"maxHP":80,
+		"unique":1,
+		"monsterClass":"humanoid",
+        "phraseID":"ratdom_ff_guard",
+		"attackDamage":{
+			"min":12,
+			"max":17
+		},
+		"spawnGroup":"ratdom_ff_guard",
+		"droplistID":"ratdom_ff_guard",
+		"attackCost":5,
+		"attackChance":170,
+		"blockChance":180,
+		"damageResistance":3
+    },
+    {
         "id":"ratdom_ghost1",
         "name":"Ghost",
         "iconID":"monsters_tometik2:65",
@@ -128,6 +147,14 @@
         },
         "spawnGroup":"ratdom_gruil",
         "droplistID":"drop_ratdom_gruil"
+    },
+    {
+        "id":"ratdom_kriih",
+        "name":"Kriih",
+        "iconID":"monsters_rats:1",
+		"moveCost":2,
+		"spawnGroup":"ratdom_kriih",
+		"phraseID":"ratdom_kriih"
     },
     {
         "id":"ratdom_leonid",
@@ -715,6 +742,14 @@
         "damageResistance":5
     },
     {
+        "id":"ratdom_sriih",
+        "name":"Sriih",
+        "iconID":"monsters_rats:1",
+		"moveCost":5,
+		"spawnGroup":"ratdom_sriih",
+		"phraseID":"ratdom_sriih"
+    },
+    {
         "id":"ratdom_tharal",
         "name":"Tharal",
         "iconID":"monsters_men:4",
@@ -800,7 +835,7 @@
         "name":"Wart",
         "iconID":"monsters_rltiles3:10",
         "phraseID":"ratdom_rat_warden2",
-        "droplistID":"ratdom_rat_warden"
+        "droplistID":"ratdom_rat_warden2"
     },
     {
         "id":"ratdom_water_fish1",
