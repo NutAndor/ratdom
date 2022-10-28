@@ -149,12 +149,12 @@
         "droplistID":"drop_ratdom_gruil"
     },
     {
-        "id":"ratdom_kriih",
-        "name":"Kriih",
+        "id":"ratdom_fraedro",
+        "name":"Fraedro",
         "iconID":"monsters_rats:1",
 		"moveCost":2,
-		"spawnGroup":"ratdom_kriih",
-		"phraseID":"ratdom_kriih"
+		"spawnGroup":"ratdom_fraedro",
+		"phraseID":"ratdom_fraedro"
     },
     {
         "id":"ratdom_leonid",

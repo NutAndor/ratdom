@@ -345,10 +345,10 @@
     <property name="spawngroup" value="burrower_4"/>
    </properties>
   </object>
-  <object id="89" name="ratdom_kriih" type="spawn" x="160" y="224" width="128" height="64">
+  <object id="89" name="ratdom_fraedro" type="spawn" x="160" y="224" width="128" height="64">
    <properties>
     <property name="quantity" value="1"/>
-    <property name="spawngroup" value="ratdom_kriih"/>
+    <property name="spawngroup" value="ratdom_fraedro"/>
    </properties>
   </object>
  </objectgroup>

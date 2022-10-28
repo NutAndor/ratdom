@@ -300,6 +300,60 @@
         ]
     },
     {
+        "id":"ratdom_fraedro",
+        "message":"Please don't hurt me.",
+        "replies":[
+            {
+                "text":"Why did you steal King Rah's skeleton?",
+                "nextPhraseID":"ratdom_fraedro_10"
+            },
+            {
+                "text":"OK, bye.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_10",
+        "message":"It was not me, it was not me.",
+        "replies":[
+            {
+                "text":"Finally confess!",
+                "nextPhraseID":"ratdom_fraedro_10"
+            },
+            {
+                "text":"I believe you. Go now, as long as you can.",
+                "nextPhraseID":"ratdom_fraedro_20"
+            },
+            {
+                "text":"I give up.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_20",
+        "message":"What? Thank you, thank you!",
+        "replies":[
+            {
+                "text":"You better get out of the area quick.",
+                "nextPhraseID":"R"
+            }
+		],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":398
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_fraedro",
+                "mapName":"ratdom_maze_626"
+            }
+        ]
+    },
+    {
         "id":"ratdom_goldhunter_talk_b",
         "switchToNPC":"ratdom_goldhunter",
         "replies":[
@@ -408,60 +462,6 @@
     },
     {
         "id":"ratdom_maze_boulder"
-    },
-    {
-        "id":"ratdom_kriih",
-        "message":"Please don't hurt me.",
-        "replies":[
-            {
-                "text":"Why did you steal King Rakiir's skeleton?",
-                "nextPhraseID":"ratdom_kriih_10"
-            },
-            {
-                "text":"OK, bye.",
-                "nextPhraseID":"X"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_kriih_10",
-        "message":"It was not me, it was not me.",
-        "replies":[
-            {
-                "text":"Finally confess!",
-                "nextPhraseID":"ratdom_kriih_10"
-            },
-            {
-                "text":"I believe you. Go now, as long as you can.",
-                "nextPhraseID":"X"
-            },
-            {
-                "text":"I give up.",
-                "nextPhraseID":"X"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_kriih_20",
-        "message":"What? Thank you, thank you!",
-        "replies":[
-            {
-                "text":"You better get out of the area quick.",
-                "nextPhraseID":"R"
-            }
-		],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"ratdom_quest",
-                "value":398
-            },
-            {
-                "rewardType":"removeSpawnArea",
-                "rewardID":"ratdom_kriih",
-                "mapName":"ratdom_maze_626"
-            }
-        ]
     },
     {
         "id":"ratdom_librarian",
@@ -1264,7 +1264,7 @@
     },
     {
         "id":"ratdom_rat_museum_sign1",
-        "message":"Here you can see the complete skeleton of King Rakiir.",
+        "message":"Here you can see the complete skeleton of King Rah.",
         "replies":[
             {
                 "text":"I see nothing.",
@@ -1975,12 +1975,16 @@
 		"message":"Welcome in our great rat museum! Shall I tell you something about our great expositions?",
 		"replies":[
 		  {
+			"text":"Thank you, I'll find my way.",
+			"nextPhraseID":"X"
+		  },
+		  {
 			"text":"Why is here an empty podest?",
 			"nextPhraseID":"ratdom_rat_warden2_r_1"
 		  },
 		  {
-			"text":"Thank you, I'll find my way.",
-			"nextPhraseID":"X"
+			"text":"I want to visit Fraedro.",
+			"nextPhraseID":"ratdom_rat_warden2_r_14"
 		  },
 		  {
 			"text":"Do you also have something to purchase?",
@@ -2010,7 +2014,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_3",
-		"message":"But Kriih was filled with jealousy and consumed with envy.",
+		"message":"But Fraedro was filled with jealousy and consumed with envy.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2040,7 +2044,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_6",
-		"message":"Especially the most brilliant piece of the exhibition: The completely preserved skeleton of King Rakiir - the bones in an erect, stately posture, in his right hand his dreaded sword!",
+		"message":"Especially the most brilliant piece of the exhibition: The completely preserved skeleton of King Rah - the bones in an erect, stately posture, in his right hand his dreaded sword!",
 		"replies":[
 		  {
 			"text":"I would like to see that.",
@@ -2050,7 +2054,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_7",
-		"message":"Yes, King Rakiir was a great leader. Many battles were fought against the monsters that came out of the rift. But when the superiority became too great, Rakiir led his people into the caves under the Blackwater Mountains and founded a new empire there.",
+		"message":"Yes, King Rah was a great leader. Many battles were fought against the monsters that came out of the rift. But when the superiority became too great, Rah led his people into the caves under the Blackwater Mountains and founded a new empire there.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2070,7 +2074,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_9",
-		"message":"However, one bad day I found this place ransacked! Only an empty pedestal stands where the magnificent skeleton of Rakiir was.",
+		"message":"However, one bad day I found this place ransacked! Only an empty pedestal stands where the magnificent skeleton of Rah was.",
 		"replies":[
 		  {
 			"text":"No.",
@@ -2080,7 +2084,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_10",
-		"message":"This was probably Kriih's most terrible deed.",
+		"message":"This was probably Fraedro's most terrible deed.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2110,14 +2114,14 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_14",
-		"message":"For security reasons, we don't let anyone in until he finally admits everything and King Rakiir is back in his seat.",
+		"message":"For security reasons, we don't let anyone in until he finally admits everything and King Rah is back in his seat.",
 		"replies":[
 		  {
-			"text":"I did find the skeleton. Can Kriih be released now?",
+			"text":"I did find the skeleton. Can Fraedro be released now?",
 			"nextPhraseID":"ratdom_rat_warden2_r_15"
 		  },
 		  {
-			"text":"Can I speak to Kriih? Maybe he regrets what he did and wouldn't do it again.",
+			"text":"Can I speak to Fraedro? Maybe he regrets what he did and wouldn't do it again.",
 			"nextPhraseID":"ratdom_rat_warden2_r_16",
                 "requires":[
                     {			
@@ -2129,7 +2133,7 @@
                 ]
 		  },
 		  {
-			"text":"I don't think it was Kriih.",
+			"text":"I don't think it was Fraedro.",
 			"nextPhraseID":"ratdom_rat_warden2_r_17"
 		  }
 		]
@@ -2143,7 +2147,7 @@
 			"nextPhraseID":"ratdom_rat_warden2_r_15a"
 		  },
 		  {
-			"text":"Can I speak to Kriih? Maybe he regrets what he did and wouldn't do it again.",
+			"text":"Can I speak to Fraedro? Maybe he regrets what he did and wouldn't do it again.",
 			"nextPhraseID":"ratdom_rat_warden2_r_16"
 		  }
 		]
@@ -2153,17 +2157,17 @@
 		"message":"They're just rats. What do you expect?",
 		"replies":[
 		  {
-			"text":"Can I speak to Kriih? Maybe he regrets what he did and wouldn't do it again.",
+			"text":"Can I speak to Fraedro? Maybe he regrets what he did and wouldn't do it again.",
 			"nextPhraseID":"ratdom_rat_warden2_r_16"
 		  }
 		]
 	},
 	{
 		"id":"ratdom_rat_warden2_r_16",
-		"message":"No, you can't speak to Kriih. It is too dangerous.",
+		"message":"No, you can't speak to Fraedro. It is too dangerous.",
 		"replies":[
 		  {
-			"text":"Well, I have 100 gold pieces here. Can I speak to Kriih?",
+			"text":"Well, I have 100 gold pieces here. Can I speak to Fraedro?",
 			"nextPhraseID":"ratdom_rat_warden2_r_16a",
 			"requires":[
 				{
@@ -2174,7 +2178,7 @@
 			]
 		  },
 		  {
-			"text":"Maybe it wasn't Kriih after all?",
+			"text":"Maybe it wasn't Fraedro after all?",
 			"nextPhraseID":"ratdom_rat_warden2_r_17"
 		  },
 		  {
