@@ -326,8 +326,45 @@
                 "nextPhraseID":"ratdom_fraedro_20"
             },
             {
+                "text":"I am going to kill you for your deeds now.",
+                "nextPhraseID":"ratdom_fraedro_12"
+            },
+            {
                 "text":"I give up.",
                 "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_12",
+        "message":"Please don't! It was not me!",
+        "replies":[
+            {
+                "text":"Die now!",
+                "nextPhraseID":"ratdom_fraedro_14"
+            },
+            {
+                "text":"Run and live with your guilty conscience.",
+                "nextPhraseID":"ratdom_fraedro_20"
+            },
+            {
+                "text":"I give up.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_14",
+        "replies":[
+            {
+                "nextPhraseID":"F"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":399
             }
         ]
     },
