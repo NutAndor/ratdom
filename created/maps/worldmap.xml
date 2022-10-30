@@ -110,7 +110,7 @@
     <namedarea id="ratdom_maze_goldhunter_area" name="Gold hunter" type="other"/>
     <namedarea id="ratdom_maze_skeleton_dance" name="Skeleton dance" type="other"/>
     <namedarea id="ratdom_maze_museum" name="Museum" type="other"/>
-    <namedarea id="ratdom_maze_labyrinth" name="Museum" type="other"/>
+    <namedarea id="ratdom_maze_labyrinth" name="Labyrinth" type="other"/>
   </segment>
   <segment id="ratdom_level_6" x="0" y="0">
     <map area="ratdom_maze_library" id="ratdom_maze_611" x="0" y="30"/>

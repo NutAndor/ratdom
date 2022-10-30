@@ -290,7 +290,7 @@
         "message":"You will pay for it now!.",
         "replies":[
             {
-                "text":"But you were so stupid...",
+                "text":"But you were so stupid ...",
                 "nextPhraseID":"F"
             },
             {
@@ -444,7 +444,7 @@
         "replies":[
             {
                 "nextPhraseID":"ratdom_goldhunter_talk_20",
-				"text":"But..."
+				"text":"But ..."
             },
             {
                 "nextPhraseID":"X",
@@ -1015,7 +1015,7 @@
                 ]
 			},
             {
-                "text":"Where would I find this yellow artefact?",
+                "text":"Where would I find this yellow artifact?",
 				"nextPhraseID":"ratdom_rat_50",
                 "requires":[
                     {			
@@ -1129,7 +1129,7 @@
     },
     {
         "id":"ratdom_rat_10_10",
-        "message":"You must help me to find a yellow, round artefact. Then I'll show you the exit.",
+        "message":"You must help me to find a yellow, round artifact. Then I'll show you the exit.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -1139,7 +1139,7 @@
 		],
         "replies":[
             {
-                "text":"Where would I find this yellow artefact?",
+                "text":"Where would I find this yellow artifact?",
 				"nextPhraseID":"ratdom_rat_50"
 			}
         ]
@@ -1167,7 +1167,7 @@
     },
     {
         "id":"ratdom_rat_60",
-        "message":"Yes. The artefact must be behind this statue. Did you seek there?",
+        "message":"Yes. The artifact must be behind this statue. Did you seek there?",
         "replies":[
             {
                 "text":"Not yet. I didn't know there was a statue in our supply cave?",
@@ -1254,7 +1254,7 @@
     },
     {
         "id":"ratdom_rat_100",
-        "message":"I hope  you finally have found my artefact?",
+        "message":"I hope  you finally have found my artifact?",
         "replies":[
             {
                 "text":"Eh, no, not yet.",
@@ -1334,7 +1334,7 @@
 		"message":"Yes please?",
 		"replies":[
 		  {
-			"text":"May I enter now?",
+			"text":"I have found some bones. May I enter now?",
 			"nextPhraseID":"ratdom_rat_warden_50",
 			"requires":[
 			  {
@@ -1398,7 +1398,17 @@
 	},
 	{
 		"id":"ratdom_rat_warden_30",
-		"message":"This used to be a happy place of memories.",
+		"message":"This used to be a happy place of memories. Many objects and statues from the past invite you to linger and think. Everyrat loved this place.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_31"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_31",
+		"message":"Well, almost everyrat.",
 		"replies":[
 		  {
 			"text":"N",
@@ -1408,7 +1418,28 @@
 	},
 	{
 		"id":"ratdom_rat_warden_32",
-		"message":"But Fraedro was filled with jealousy and consumed with envy. How he hated to see guests crowding and admiring the valuable pieces on display in these halls.",
+		"message":"But Fraedro was filled with jealousy and consumed with envy.",
+		"replies":[
+		  {
+			"text":"Yes, it is always the same thing.",
+			"nextPhraseID":"ratdom_rat_warden_33"
+		  },
+		  {
+			"text":"Sigh. I know that story already. Get to the point.",
+			"nextPhraseID":"ratdom_rat_warden_44b",
+			"requires":[
+			  {
+				"requireType":"questProgress",
+				"requireID":"ratdom_quest",
+				"value":310
+			  }
+			]
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_33",
+		"message":"How he hated it when visitors crowded these halls around the valuable exhibits and admired the statues.",
 		"replies":[
 		  {
 			"text":"N",
@@ -1418,7 +1449,17 @@
 	},
 	{
 		"id":"ratdom_rat_warden_34",
-		"message":"The fully preserved skeleton of King Rah, the powerful founder of this empire, was particularly brilliant. Standing upright, his dreaded sword in his bony right hand.",
+		"message":"He wanted to be the center of attention. A larger-than-life statue of himself should dominate the room, he thought.",
+		"replies":[
+		  {
+			"text":"Such a braggart.",
+			"nextPhraseID":"ratdom_rat_warden_35"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_35",
+		"message":"He hated especially the fully preserved skeleton of King Rah, the powerful founder of this empire. It was particularly brilliant: King Rah, standing upright, his dreaded sword in his bony right hand.",
 		"replies":[
 		  {
 			"text":"N",
@@ -1428,7 +1469,17 @@
 	},
 	{
 		"id":"ratdom_rat_warden_36",
-		"message":"Fleeing from the numerous monsters that appeared when the world was divided, King Rah had led his people into the Black Water Mountains and created the underground passages there.",
+		"message":"Yes, King Rah was a great leader. Many battles were fought against the monsters that came out of the rift. But when the superiority became too great, Rah led his people into the caves under the Blackwater Mountains and founded a new empire there.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_37"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_37",
+		"message":"The wise King Rah had the existing caves further expanded as protection.",
 		"replies":[
 		  {
 			"text":"That's why the passages are laid out so confusingly?",
@@ -1441,17 +1492,31 @@
 		"message":"Right. This should be additional protection from enemies.",
 		"replies":[
 		  {
-			"text":"Interesting. But why is the passage closed now?",
+			"text":"Interesting. But why is the passage here closed now?",
 			"nextPhraseID":"ratdom_rat_warden_40"
 		  }
 		]
 	},
 	{
 		"id":"ratdom_rat_warden_40",
-		"message":"Some time ago this place was robbed and desecrated. Only an empty pedestal remained where the richly decorated skeleton of King Rah had been.",
+		"message":"One bad day I found this place ransacked! Only an empty pedestal remained where the richly decorated skeleton of King Rah had been.",
 		"replies":[
 		  {
-			"text":"N",
+			"text":"No.",
+			"nextPhraseID":"ratdom_rat_warden_41"
+		  },
+		  {
+			"text":"How did that happen?",
+			"nextPhraseID":"ratdom_rat_warden_42"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_41",
+		"message":"Yes.",
+		"replies":[
+		  {
+			"text":"Ooh.",
 			"nextPhraseID":"ratdom_rat_warden_42"
 		  }
 		]
@@ -1472,7 +1537,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_44",
-		"message":"Of course he denied everything. But who else could it have been?",
+		"message":"Of course he denied everything, that hypocrite! But who else could have done it?",
 		"replies":[
 		  {
 			"text":"N",
@@ -1482,7 +1547,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_44a",
-		"message":"He deserved immediate death for this terrible act. However, we only locked him up until he reveals where he stashed our beloved royal skeleton.",
+		"message":"He deserved immediate death for this terrible act. However, we only locked him up until he would reveal where he stashed our beloved royal skeleton.",
 		"replies":[
 		  {
 			"text":"N",
@@ -1492,7 +1557,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_44b",
-		"message":"For security reasons, we don't let anyone in or out until Fraedro has admitted everything. And until King Rah is back in his accustomed place.",
+		"message":"For security reasons, we don't let anyone in or out until King Rah is back in his accustomed place.",
 		"replies":[
 		  {
 			"text":"Even 100 pieces of gold don't change your mind?",
@@ -1500,11 +1565,27 @@
 		  },
 		  {
 			"text":"If the skeleton is back, may I pass?",
-			"nextPhraseID":"ratdom_rat_warden_48"
+			"nextPhraseID":"ratdom_rat_warden_48",
+			"requires":[
+			  {
+				"requireType":"questProgress",
+				"requireID":"ratdom_quest",
+				"value":390,
+				"negate":true
+			  }
+			]
 		  },
 		  {
 			"text":"I want to talk with Fraedro.",
-			"nextPhraseID":"ratdom_rat_warden_46b"
+			"nextPhraseID":"ratdom_rat_warden_46b",
+			"requires":[
+			  {
+				"requireType":"questProgress",
+				"requireID":"ratdom_quest",
+				"value":395,
+				"negate":true
+			  }
+			]
 		  },
 		  {
 			"text":"What lies behind this blocked passage?",
@@ -1531,7 +1612,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_46a",
-		"message":"Of course not!",
+		"message":"Of course not! This door will remain closed until King Rah returns.",
 		"replies":[
 		  {
 			"text":"Sorry.",
@@ -1912,11 +1993,12 @@
 	},
 	{
 		"id":"ratdom_rat_warden_80",
+		"switchToNPC":"ratdom_rat_warden",
 		"message":"I can't let you enter our Memorial Hall. We have to get back our skeleton statue of King Rah first.",
 		"replies":[
 		  {
-			"text":"OK. I will find it for you.",
-			"nextPhraseID":"X"
+			"text":"OK. I will find the bones for you.",
+			"nextPhraseID":"ratdom_rat_warden_90"
 		  },
 		  {
 			"text":"This maze is terrible. Do you have any idea how I could find my way out again?",
@@ -1951,15 +2033,24 @@
 		"message":"Didn't I tell you?",
 		"replies":[
 		  {
-			"text":"N",
+			"text":"You talk too much anyway.",
 			"nextPhraseID":"ratdom_rat_warden_80"
 		  }
 		]
 	},
 	{
 		"id":"ratdom_rat_warden_90",
-		"switchToNPC":"ratdom_rat_warden",
-		"message":"Maybe you find wisdom in my compass?",
+		"message":"The cave system is huge and really very confusing. It already surprised me how you found your way to me here.",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_91"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_91",
+		"message":"Maybe you'll find wisdom in my compass?",
 		"replies":[
 		  {
 			"text":"What compass?",
@@ -1969,7 +2060,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_92",
-		"message":"Wear this compass and you may perceive otherwise invisible signs on the walls. Follow these.",
+		"message":"Start at the entrance where you entered the lower part of these caves.",
 		"replies":[
 		  {
 			"text":"N",
@@ -1979,7 +2070,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_94",
-		"message":"Start at the entrance where you entered the lower part of these caves.",
+		"message":"There you put on the necklace with my compass. With this compass you may perceive otherwise invisible signs on the walls. Follow these.",
 		"replies":[
 		  {
 			"text":"N",
@@ -1992,7 +2083,7 @@
 		"message":"It will be a far journey. But you will meet everything that you need to meet. And even more.",
 		"replies":[
 		  {
-			"text":"Sounds great!",
+			"text":"This is finally good news.",
 			"nextPhraseID":"ratdom_rat_warden_98"
 		  }
 		]
@@ -2031,7 +2122,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_1",
-		"message":"This used to be a happy place of memories. Many objects and statues from the past invite you to linger and think. Everyrat loved this place.",
+		"message":"Here stood the statue of King Rah. I told you about it.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2041,7 +2132,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_2",
-		"message":"Well, almost everyrat.",
+		"message":"Thank you for bringing the bones back to me. But I still have to put them back together.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2051,107 +2142,17 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_3",
-		"message":"But Fraedro was filled with jealousy and consumed with envy.",
+		"message":"Until then, our great museum will have to do without this highlight of the exhibition.",
 		"replies":[
 		  {
-			"text":"N",
-			"nextPhraseID":"ratdom_rat_warden2_r_4"
-		  }
-		]
-	},
-	{
-		"id":"ratdom_rat_warden2_r_4",
-		"message":"How he hated it when visitors crowded these halls around the valuable exhibits and admired the statues.",
-		"replies":[
-		  {
-			"text":"N",
-			"nextPhraseID":"ratdom_rat_warden2_r_5"
-		  }
-		]
-	},
-	{
-		"id":"ratdom_rat_warden2_r_5",
-		"message":"He wanted to be the center of attention. A larger-than-life statue of himself should dominate the room, he thought.",
-		"replies":[
-		  {
-			"text":"N",
-			"nextPhraseID":"ratdom_rat_warden2_r_6"
-		  }
-		]
-	},
-	{
-		"id":"ratdom_rat_warden2_r_6",
-		"message":"Especially the most brilliant piece of the exhibition: The completely preserved skeleton of King Rah - the bones in an erect, stately posture, in his right hand his dreaded sword!",
-		"replies":[
-		  {
-			"text":"I would like to see that.",
-			"nextPhraseID":"ratdom_rat_warden2_r_7"
-		  }
-		]
-	},
-	{
-		"id":"ratdom_rat_warden2_r_7",
-		"message":"Yes, King Rah was a great leader. Many battles were fought against the monsters that came out of the rift. But when the superiority became too great, Rah led his people into the caves under the Blackwater Mountains and founded a new empire there.",
-		"replies":[
-		  {
-			"text":"N",
-			"nextPhraseID":"ratdom_rat_warden2_r_8"
-		  }
-		]
-	},
-	{
-		"id":"ratdom_rat_warden2_r_8",
-		"message":"This glorious time should be remembered in this place.",
-		"replies":[
-		  {
-			"text":"Very nice.",
-			"nextPhraseID":"ratdom_rat_warden2_r_9"
-		  }
-		]
-	},
-	{
-		"id":"ratdom_rat_warden2_r_9",
-		"message":"However, one bad day I found this place ransacked! Only an empty pedestal stands where the magnificent skeleton of Rah was.",
-		"replies":[
-		  {
-			"text":"No.",
-			"nextPhraseID":"ratdom_rat_warden2_r_10"
-		  }
-		]
-	},
-	{
-		"id":"ratdom_rat_warden2_r_10",
-		"message":"This was probably Fraedro's most terrible deed.",
-		"replies":[
-		  {
-			"text":"N",
-			"nextPhraseID":"ratdom_rat_warden2_r_12"
-		  }
-		]
-	},
-	{
-		"id":"ratdom_rat_warden2_r_12",
-		"message":"We confronted him. Of course he denied everything, that hypocrite. But who else could it have been?",
-		"replies":[
-		  {
-			"text":"Good question.",
-			"nextPhraseID":"ratdom_rat_warden2_r_13"
-		  }
-		]
-	},
-	{
-		"id":"ratdom_rat_warden2_r_13",
-		"message":"He deserved immediate death for that act. However, we only locked him up until he told us where he was hiding our beloved skeleton.",
-		"replies":[
-		  {
-			"text":"N",
+			"text":"Too bad.",
 			"nextPhraseID":"ratdom_rat_warden2_r_14"
 		  }
 		]
 	},
 	{
 		"id":"ratdom_rat_warden2_r_14",
-		"message":"For security reasons, we don't let anyone in until he finally admits everything and King Rah is back in his seat.",
+		"message":"For security reasons, we don't let anyone talk with Fraedro until he finally admits everything.",
 		"replies":[
 		  {
 			"text":"I did find the skeleton. Can Fraedro be released now?",
@@ -2208,9 +2209,21 @@
 			"nextPhraseID":"ratdom_rat_warden2_r_16a",
 			"requires":[
 				{
-					"requireType":"inventoryRemove",
+					"requireType":"inventoryKeep",
 					"requireID":"gold",
 					"value":100
+				}
+			]
+		  },
+		  {
+			"text":"I would like to offer him 100 gold pieces to let me through, but I don't have enough with me.",
+			"nextPhraseID":"X",
+			"requires":[
+				{
+					"requireType":"inventoryKeep",
+					"requireID":"gold",
+					"value":100,
+					"negate":true
 				}
 			]
 		  },
@@ -2226,11 +2239,32 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_16a",
-		"message":"Sure you can talk to him. Do you see the stairs over there? Just walk along there, you can't miss it.",
+		"message":"You think you could bribe me for a ridiculous 100 gold pieces?",
+		"replies":[
+		  {
+			"text":"Eh, no. Of course not. Sorry.",
+			"nextPhraseID":"X"
+		  },
+		  {
+			"text":"Well, if you want to put it that way ...",
+			"nextPhraseID":"ratdom_rat_warden2_r_16b",
+			"requires":[
+				{
+					"requireType":"inventoryRemove",
+					"requireID":"gold",
+					"value":100
+				}
+			]
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_16b",
+		"message":"[Hastily takes the gold] Sure you can talk to him. Do you see the stairs over there? Just walk along there, you can't miss it.",
 		"replies":[
 		  {
 			"text":"OK, bye.",
-			"nextPhraseID":"X"
+			"nextPhraseID":"ratdom_rat_warden2_r_16c"
 		  }
 		],
         "rewards":[
@@ -2240,6 +2274,56 @@
                 "value":395
             }
         ]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_16c",
+		"message":"I hope you don't think I'll keep the gold for myself. I will use it for the museum.",
+		"replies":[
+		  {
+			"text":"Sure, bye.",
+			"nextPhraseID":"ratdom_rat_warden2_r_16d"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_16d",
+		"message":"You do not believe me!",
+		"replies":[
+		  {
+			"text":"Yes, of course I believe you. But I have to go on.",
+			"nextPhraseID":"ratdom_rat_warden2_r_16e"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_16e",
+		"message":"I'm honest as a church rat. Yes indeed.",
+		"replies":[
+		  {
+			"text":"Bye.",
+			"nextPhraseID":"ratdom_rat_warden2_r_16f"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_16f",
+		"message":"I am a little offended that you would accuse me of something despicable like accepting gold.",
+		"replies":[
+		  {
+			"text":"But I just want to go.",
+			"nextPhraseID":"ratdom_rat_warden2_r_16x"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_r_16x",
+		"message":"Yes, go now, and don't keep me from my work.",
+		"replies":[
+		  {
+			"text":"??",
+			"nextPhraseID":"X"
+		  }
+		]
 	},
 	{
 		"id":"ratdom_rat_warden2_r_17",
@@ -2260,7 +2344,7 @@
         "message":"If strangers come hither to gain \nour treasure, their hope is in vain. \nIn darkest deep ground, \nwith our Yellow Round, \ntheir bones will for ever remain.",
         "replies":[
             {
-                "text":"Nice. And now to work...",
+                "text":"Nice. And now to work ...",
                 "nextPhraseID":"ratdom_roundling_90"
             }
         ]
@@ -2865,7 +2949,7 @@
 		],
 		"replies":[
             {
-                "text":"I go and tell Bloskelt. Although the messenger of bad news always gets into trouble...",
+                "text":"I go and tell Bloskelt. Although the messenger of bad news always gets into trouble ...",
                 "nextPhraseID":"X"
             }
         ]
@@ -2882,7 +2966,7 @@
 		],
 		"replies":[
             {
-                "text":"I go and tell Roskelt. Although the messenger of bad news always gets into trouble...",
+                "text":"I go and tell Roskelt. Although the messenger of bad news always gets into trouble ...",
                 "nextPhraseID":"X"
             }
         ]
@@ -3011,7 +3095,7 @@
 		],
 		"replies":[
             {
-				"text":"Hm, not much of a shower...",
+				"text":"Hm, not much of a shower ...",
                 "nextPhraseID":"ratdom_skeleton_boss_70_20"
             }
         ]
@@ -3318,7 +3402,7 @@
 	},
     {
         "id":"whootibarfag_52",
-        "message":"Who knows? Tell me about your artefact.",
+        "message":"Who knows? Tell me about your artifact.",
 		"replies":[
             {
 				"text":"It's big, round and yellow. Clevered, what else do you know about this?",
@@ -3343,13 +3427,14 @@
 		"replies":[
             {
 				"text":"N",
-                "nextPhraseID":"whootibarfag_58"
+                "nextPhraseID":"whootibarfag_68"
             }
         ]
 	},
     {
-        "id":"whootibarfag_58",
-        "message":"...",
+        "id":"whootibarfag_68",
+		"switchToNPC":"whootibarfag",
+        "message":"Clevred gets into raptures and can hardly be stopped.",
 		"replies":[
             {
 				"text":"N",

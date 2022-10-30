@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="45">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="46">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -204,37 +204,37 @@
  </layer>
  <layer id="6" name="Light1" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt0sENgCAMhWEGcWMdQR0BnIHJtIm9NAEa6CsebPKfvzRtXkLI4NLb9UQTHUy25CDNrWCi3dKuSLe2K9Kt7YpyW6aFm0Qac9TVGpZu629+18alzgn35Q5l1m7vTWa4u4Mpf4HM1dHlX/A2v9INn62PFQ==
+   eJw7JMPAcIiGuAKI10PxBiAGgXV0sBNmFzqgpb09OOyktb24/EpLe/H5lVb24otXWtpLyE5q2LseDRNjJyX2EhOWtLCXULoZtZc69nYB8bwBiF+Y3XOJwNjcR4v8S0ycDIS9c+hgJ3paANnZTSd7kdMCPe0cTBgAE+uNDg==
   </data>
  </layer>
  <layer id="7" name="Light2" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJw7JMPAcIjGeD0UbwBiEFhHBzthdqEDWtrZg8PO4WovrjCmpb347KSVvfjsnAOUm0uh+euxYEL+rKJxONLCXnzpFB+YQ+OwpNROcsNyqNlJavzB8gY2TGramUeC3ZTmDXLsJiUcScFz8dhPKzvR7ac07kYyBgDaOX9z
+   eJw7JMPAcIiGuAKI10PxBiAGgXV0sBNmFzqgpb09OOwcrvbiCmNa2ovPTlrZi8/OOUC5uRSYjZw/kDEhf1ZRaCch82lhL750ig+AwribhmFJqZ3khuVQspOc+IPlDWyYWDtBuAuI55FgNyVplFy7SQlHUuyei8d+WtiJzX5K4m6kYwAJi3rV
   </data>
  </layer>
  <layer id="8" name="Light3" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJw7JMPAcAiKe4AYGVQhyVEDb4Cavw5NnJb2ops9GO1FDw962UtNu/HZC8LzsNhNjfAmZC8t/TwXCRNjL7XTGC5Mq7AmNS6oGdak2ksPu3HZS2u78dlLy7geKHtBGFuaHgxhTSt/j9o7POwFAB18kv8=
+   eJw7JMPAcAiKe4AYGVQhyVEDb4Cavw5NnJb2ops9GO1FDw962Quzu5LG9oLwPCx2UyO8CdmLy8/UCOu5SJgYe0GAGmGND3fRMKxJjQtqpi9S7aWH3bjspbXd+OylZVwPlL240jRyWK+nUXgT8jOt/D1q7/CwFwBmLZEO
   </data>
  </layer>
  <layer id="9" name="Light4" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYCAPVMkwMBwiEW+QgehdJ0OmpWTY20OBXej2rkfD9LAXG1g3QPbOoYG9c2UIY0rCeR4OeXLSLzpGdiN6OOFyFzXsRcboZtPbXuQ0gS2saWEvejrE5md8eYRce9H9Qq+wJjbNj9pLfUyPNE2s3fSyFz28R+0lHwMAbV9hbg==
+   eJxjYCAPVMkwMBwiEW+QgehdJ0OmpWTY20OBXcgA5Ob1aJge9uJyy0DYO4cG9s6VIYxpEc7kpF90jOxG9HCah8Nd1LAXGaObjSs8aGUvLE104fAzLexFT4fY/Iwvj5BrL7pf6BHW2NI/veJ4pNtLrzRNrN30sBdbeI/aSz4GAEGAYC0=
   </data>
  </layer>
  <layer id="10" name="Light5" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJw7JMPAcAiKNwAxOqhCkqcUw8xfR8BOatrbg2Y+PjtpaS86HxnMoWIYE2svNe0k1l5q20msvdRMw8h4LhKmdd7BhbGBUXtH7aW2vbTIu8TYSw+/jto7ai+tMAAFKKO7
+   eJw7JMPAcAiIK4B4AxCjgyqoPDUwzPx1BOykpr09aObjs5OW9qLzkcEcoFw3ne2dQ8V4JdZeattJrL3UTMPIeC4SpnXewYWxgVF7R+2ltr3ULKNIsZcefh21d9ReWmEA7zeibw==
   </data>
  </layer>
  <layer id="11" name="Light6" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJw7JMPAcAiKNwAxNcE6JLORzUcW76GynTBQhcP8UXvpay8IzyWA55Hotjl40g+yvYQwKWEyB4t+ZD/Qwl5sdlKK8YX1HDL8QgrGFf+0sm8Uj+JRPIoHEgMA00B6vg==
+   eJw7JMPAcAiIK4B4AxBTE6wDmlcJNf8QkvnrkMR6qGwnDFThMH/UXvra2wXEcwngeSS6bQ5QfTcBe4nBpIQJsp0wjOwHWtiLzU5KcBeBsJ4D9Qs17SQmHdDCvlE8ikfxKB5oDACQM3hw
   </data>
  </layer>
  <layer id="12" name="Light7" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJw7JMPAcIhOeAMQg8A6OtrZA7UTBkbtHbV3qNq7Ac1OetiL7s9Re+ln56i9o/aO2ju07QUATCS0lA==
+   eJw7JMPAcIgOuAKINwAxCKyjk50g3AO1EwZG7R21lxp4wwDYi24nPexFD9/hbi+2MKa1vbj8OmrvqL2j9g5tewEtRbSS
   </data>
  </layer>
  <layer id="13" name="Light8" width="30" height="20" visible="0">
@@ -249,7 +249,7 @@
  </layer>
  <layer id="15" name="Compass" width="30" height="20" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrk2FgKBvFo3gUj+JRPIpH8SgexVTDANM6VkA=
+   eJwrk2FgKBvFdMUdg8ANo3gUj+JRPIpH8SimHQYAYeFWUg==
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
@@ -433,20 +433,20 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object id="42" name="ratdom_rat_conv2:0" type="replace" x="64" y="96" width="32" height="32" visible="0">
-   <properties>
-    <property name="Objects" value="Top"/>
-    <property name="requireId" value="ratdom_maze"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="30"/>
-   </properties>
-  </object>
   <object id="41" name="ratdom_rat_conv2:1" type="replace" x="64" y="96" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="31"/>
+   </properties>
+  </object>
+  <object id="45" name="ratdom_rat_conv2:2" type="replace" x="96" y="96" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Compass"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="32"/>
    </properties>
   </object>
  </objectgroup>

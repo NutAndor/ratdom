@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="87">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="88">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzFlM0NwjAMhaNOgILEsWdmQKwAK0CbCSgjMgnlR4xBrCYospwXpz3wJCuXfHq243hojRkysfVx8nH2wTVazEkMyTXTWculKnGX4PGx4X6TZ/cKP4mVck19EJt6XgHDWe75sjpW21euuRwJcV2cAUXtSN1Cfo567/lU9D3VvfL+Ur2DX/+H/mh0LMyUA3nv2jKfE/0FidfMofR3R/auqzVmo/dtY8wjYdEc830l1Z7bA9KOPYD+ObAneQ2/eyx3qiXHRh7lgNhcDjUsf0P6m1T3F1vaTm8=
+   eJzFlM0NwjAMhaNOgILEsWdmqFgBVoA2E7SMyCSUHzEGsUgly4pf3PbAk6xc8unZjuOhdm5QYh/jHOMSQ2r0mMsxpFD9zrkcV4nrk8fHp/uVzh4Mfjk2lyv3QSz3vAJGstLz5W2sta9SSzkS4tppBgy1I7Ur+SXqoufT0Heu+8z7a/VOft0f+mPRqTBTAeTd1GVeE/2FHG+Zw9zfHcW7braYnbxvO+cejEVzzPeGVru2B+SuI/4I+hfAntRykL2jWjTWkgNiS32wsPIN6W9S3V/Ri03/
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -258,7 +258,7 @@
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUBvFo3gUj+JRPIpHKAYAFCd3iQ==
+   eJxTk2NgUBvFo3gUj+JRTBVsMQjcMIpJwwAyz3eb
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
@@ -414,20 +414,20 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object id="84" name="ratdom_rat_conv2:0" type="replace" x="384" y="736" width="32" height="32" visible="0">
-   <properties>
-    <property name="Objects" value="Top"/>
-    <property name="requireId" value="ratdom_maze"/>
-    <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="30"/>
-   </properties>
-  </object>
   <object id="85" name="ratdom_rat_conv2:1" type="replace" x="384" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="31"/>
+   </properties>
+  </object>
+  <object id="87" name="ratdom_rat_conv2:2" type="replace" x="352" y="704" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Compass"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="32"/>
    </properties>
   </object>
  </objectgroup>

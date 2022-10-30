@@ -62,7 +62,7 @@
     },
     {
         "id":"ratdom_dev_info_10",
-        "message":"This area is made for rather high level players: The quests Lodar, Charwood and the supply cave are mandatory.",
+        "message":"This area is made for rather high level players: The quests Lodar, Charwood, Colonel Lutarc, and the starter quests Disallowed substance and Rat infestation are mandatory.",
         "replies":[
             {
                 "text":"N",
@@ -284,7 +284,7 @@
  		"mapName":"ratdom_maze_427"
  	  }
     ],
-    "message":"Wait...",
+    "message":"Wait ...",
     "replies":[
       {
         "text":"Clevred! What's wrong with you?",
@@ -294,7 +294,7 @@
   },
   {
     "id":"ratdom_artefact_la_12",
-    "message":"I got a serious blow. These roundlings were too much. I feel my end coming... ",
+    "message":"I got a serious blow. These roundlings were too much. I feel my end coming ... ",
     "replies":[
       {
         "text":"No, I will give you a healing potion!",
@@ -304,7 +304,7 @@
   },
   {
     "id":"ratdom_artefact_la_14",
-    "message":"Too late, I feel my end coming... Take my artefact... and use it wisely. Farewell...",
+    "message":"Too late, I feel my end coming ... Take my artifact ... and use it wisely. Farewell ...",
     "replies":[
       {
         "text":"N",
@@ -1223,7 +1223,7 @@
     "message":"A wooden plank - hmm ...",
     "replies":[
       {
-        "text":"That's exactly what I need! Let's build a bridge...",
+        "text":"That's exactly what I need! Let's build a bridge ...",
         "nextPhraseID":"ratdom_goldhunter_bridge_90"
       },
       {
@@ -2779,7 +2779,7 @@
     "message":"Then you came and murdered them. Just because. And you proudly boasted in front of your father about this act.",
     "replies":[
       {
-        "text":"Eh...",
+        "text":"Eh ...",
 		"nextPhraseID":"ratdom_rat_conv2_40e"
       }
     ],
@@ -2796,7 +2796,7 @@
     "message":"Not that I liked my uncle, but he didn't deserve such an end.",
     "replies":[
       {
-        "text":"Well...",
+        "text":"Well ...",
 		"nextPhraseID":"ratdom_rat_conv2_40f"
       }
     ]
@@ -2806,7 +2806,7 @@
     "message":"Neither my aunt. She was always squeeking too loud by far. But they were decent rats.",
     "replies":[
       {
-        "text":"Well...",
+        "text":"Well ...",
 		"nextPhraseID":"ratdom_rat_conv2_40g"
       }
     ]
@@ -3601,7 +3601,7 @@
   {
     "id":"ratdom_skel_bone_30",
     "switchToNPC":"none",
-    "message":"You picked the bone from its podest. Immediatly the music stopped. O oh...",
+    "message":"You picked the bone from its podest. Immediatly the music stopped. O oh ...",
 	"rewards":[	{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance", "mapName":"ratdom_maze_543d" },
 				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance_grp", "mapName":"ratdom_maze_543d" },
 				{ "rewardType":"removeSpawnArea", "rewardID":"ratdom_skel_dance1", "mapName":"ratdom_maze_543d" },
@@ -4035,7 +4035,7 @@
     "id":"ratdom_wakeup",
     "replies":[
       {
-        "nextPhraseID":"ratdom_wakeup_90",
+        "nextPhraseID":"ratdom_wakeup_50",
         "requires":[
           {
             "requireType":"questProgress",
@@ -4056,7 +4056,7 @@
         ]
       },
       {
-        "nextPhraseID":"ratdom_wakeup_90",
+        "nextPhraseID":"ratdom_wakeup_50",
         "requires":[
           {
             "requireType":"questProgress",
@@ -4093,13 +4093,18 @@
           },
           {
             "requireType":"questProgress",
-            "requireID":"lodar2",
-            "value":60
+            "requireID":"odair",
+            "value":100
           },
           {
             "requireType":"questProgress",
-            "requireID":"odair",
-            "value":100
+            "requireID":"bonemeal",
+            "value":30
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"lodar2",
+            "value":60
           },
           {
             "requireType":"questProgress",
@@ -4223,7 +4228,7 @@
   {
     "id":"ratdom_wakeup_20",
     "switchToNPC":"none",
-    "message":"You were so tired yesterday, that you didn't even make it to your bed. You dreamed of rats and that something  bit you firmly in your toes. Apparently you had a nightmare. \nYou open your eyes...",
+    "message":"You were so tired yesterday, that you didn't even make it to your bed. You dreamed of rats and that something  bit you firmly in your toes. Apparently you had a nightmare. \nYou open your eyes ...",
     "replies":[
       {
         "text":"N",
@@ -4234,6 +4239,35 @@
   {
     "id":"ratdom_wakeup_30",
     "message":"... but you seem to sleep still!"
+  },
+  {
+    "id":"ratdom_wakeup_50",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_wakeup_90",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_mikhail",
+            "value":90
+          }
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_wakeup_52"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_wakeup_52",
+    "switchToNPC":"ratdom_mikhail",
+    "message":"Hey! Have you already done all my tasks?",
+    "replies":[
+      {
+        "text":"Oh. Hello Gruiik.",
+        "nextPhraseID":"ratdom_mikhail"
+      }
+    ]
   },
   {
     "id":"ratdom_wakeup_90",

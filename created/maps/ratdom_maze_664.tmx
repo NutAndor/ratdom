@@ -188,12 +188,12 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJydlDEOwjAMRRM2LoF6h3IBKhGO0HZkBCaYy+HYOBaJFEtf7k9iOnxVTfzyHdtKODgXDJqi5qhHVJdlYT475+6ZexvZ5CPMori+wTGmxV1IfhZO2C2csP9wUxZjexIjkh4kjfkf2ZHEYF2WrJvqfwdrGHPO7HfPdfLlvRY7bGQTZ/VNcRhf4zQr+emv1Zf5Y91wnfm26jYQtnY/Vgfti3lhHngu863NBebLfEt5lvrWmqvanFlZ1jfNsjxL/dOsji/NScnXenfmi35XImutXn4tZEOFffq1ZA/fu6Ph7dX6AUuu89I=
+   eJyllMENwjAMRRNuLIGyQ1kAJMIILSMAJziX4bgxFqlkS8Z1bCccvqImfv3OT5S8CyE7NBVdiu5FCeRh3psQbsC9nOzig8zMuMHgJMbizkJ/Hg7ZHg7ZFm4CSewg1KDwDBaN8E3ZUaihucygKzv/ROZozQnYz1ZWUtYs9hj7WI2TWKu+xiLHx9aeaxydl3yt3HC0ctb64L6H+Dtq/2n1re1Xqtf8vb5Wzq15SfdK6tPK+d/99t5nr583q2dci7JZYR9xLVyj793e8fZyfQGmZQLh
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKMKBNYA4HogTgBgZJDNBaHz60PWgA2L0JTERpxeXff+ECOu1georxGEXLr34/JiIxax4OQRG1vdYCKH+MRb30gpcEsUuzkVEOOACUmh61yDxHwPZr9khGAQOi0HYIDXywgwMCkC8Gk3/FyLCQx+oz0CYNHc+p0I4/6BjXH2jo10w8JoOdtIzDLEBYsKVmDQ42MAlIezsgQDk5DVQ2YAMCPlhNgVlFgwAAKEFMcQ=
+   eJwrkmNgKMKBNYA4HogTgBgZJDNBaHz60PWgA2L0JTERpxeXff+ECOu1georxGEXLr34/JiIxax4OQRG1vdYCKH+MRb30gpcEsUuzkVEOOACUmh61yDxHwPZr9khOJGRgeGwGIQNUiMvzMCgAMSr0fR/ISI89IH6DISJc18hI4R+TsDcREZUuogRU80PGsQVzJ5CNPqbEHZ3UdteZPAayX+FeMKBVHORAXoY4lJfSKK9xLr3GxFxSEwahIFEtHgjVj2xgNjwuSSEnU0uQDcf5G50jAsQymvYAKhsQAaE/DCbgjILBgCKsj32
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -583,7 +583,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="21" name="water02">
+ <objectgroup id="21" name="water02" visible="0">
   <properties>
    <property name="active" value="false"/>
   </properties>

@@ -10,7 +10,7 @@
     {
         "id":"ratdom_artefact",
 		"iconID":"items_consumables:23",
-        "name":"Rat's artefact",
+        "name":"Rat's artifact",
         "displaytype":"extraordinary",
         "hasManualPrice":1,
         "baseMarketCost":3000,
