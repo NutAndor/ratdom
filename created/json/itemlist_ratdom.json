@@ -107,35 +107,35 @@
     },
     {
         "id":"ratdom_rat_skelett_back",
-        "iconID":"items_misc:0",
+        "iconID":"items_omgeeky:1",
         "name":"Back bones of a rat",
         "displaytype":"quest",
         "category":"other"
     },
     {
         "id":"ratdom_rat_skelett_leg",
-        "iconID":"items_misc:0",
+        "iconID":"items_omgeeky:2",
         "name":"Leg bones of a rat",
         "displaytype":"quest",
         "category":"other"
     },
     {
         "id":"ratdom_rat_skelett_leg_coll",
-        "iconID":"items_misc:0",
+        "iconID":"items_omgeeky:2",
         "name":"Leg bones of a rat",
         "displaytype":"quest",
         "category":"other"
     },
     {
         "id":"ratdom_rat_skelett_skull",
-        "iconID":"items_misc:0",
+        "iconID":"items_omgeeky:0",
         "name":"Rat skull",
         "displaytype":"quest",
         "category":"other"
     },
     {
         "id":"ratdom_rat_skelett_tail",
-        "iconID":"items_misc:0",
+        "iconID":"items_omgeeky:3",
         "name":"Tail bones of a rat",
         "displaytype":"quest",
         "category":"other"

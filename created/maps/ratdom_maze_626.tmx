@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="90">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="91">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -188,7 +188,7 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlNsNwjAMRTsFn1F3IIwAGSF0hJQRmk7HYsTCkcwlJg8JiQ8qnY9GPrYrNXc20zQntkRI+MSVoedintD7krhxPZL9lfHCWdnbRf2p4EcmCCeCd+R90Mc+O5xnj7AffER6kpqveTW/5hFu0NNmnztc6ffMlNhB7893cT+ww8jOa4GWf3oR9dG8ZlfNy9mEyAzVPMymUob6Dg+zL/D3u0YPe3h2NY/uvZahwbznU67He489Nj67H9ryBedYZY5GnkM8APDKqxc=
+   eJztlNsNwjAMRTsFn1F3oIxAM0LoCAkjNJ2OxYiFI5lLrDwkJD6odD4a+cSuVN/ZTNOc2BM+4RI3hp7VvKD3LXHneiT7gXHCCewdov5S8CPjhRPBO/M86OM9B5xnb634CHqtvubV/JpH2EFP633tcKXf01OyDHp/vov9gRlGZg4FWv7pTdRH855dNS9nEyIzVPMwm0oZ6jo8zD7P328bPbzDsat5tPe0w6UM8+Yzn3I97j3esfPZ49SWL9hnUfpo5D7EE15Bqyk=
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
@@ -324,6 +324,7 @@
   <object id="61" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="62" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="63" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="90" name="ratdom_rat_rah_complete" type="script" x="128" y="96" width="32" height="96"/>
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>

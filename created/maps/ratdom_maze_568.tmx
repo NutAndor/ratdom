@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYCAf/BFFsMWZILQcEwUG4gGnhQireQ5VwwV1wzMi9AwW8JBEtz4aYL8dE2Ng0CPTDduBemeTmU5AekkFFoKoemF8YsEaJojexyS6eRdQz24xiF4Ym1iwXQwTE2PfNiA+jabvFFQcn/0wN6LrR/YDIftIsR9ZDKYGxN4hgKkPZiY+e09D1aO7Bd1edD8hu2MXmn50fyObj+62U2KoboKpRQen0NyF7E50fxKKY3SzCIFTaHYi+5kYgOwnXP4bqgAAO+lwHw==
+   eJxjYCAf/BFFsMWZILQcEwUG4gGnhQireQ5VwwV1wzMi9AwW8JBEtz4aYL8dE2Ng0CPTDduBemeTmU5AekkFFoKoemF8YsEaJojexyS6eRdQz24xiF4Ym1iwXQwTE2PfNiA+jabvFFQcn/0wN6LrR/YDIftIsR9ZDKYGxC5ixdQHMxOfvaeh6tHdgm4vup+Q3bELTT+6v5HNR3fbKTFUN8HUooNTaO5Cdie6PwnFMbpZhMApNDuR/UwMQPYTLv8NVQAAc+1vzg==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -418,8 +418,8 @@
   <object id="143" name="ratdom_mz2" type="script" x="256" y="448" width="64" height="32"/>
   <object id="144" name="ratdom_mz6" type="script" x="256" y="480" width="32" height="160"/>
   <object id="145" name="ratdom_mz7" type="script" x="224" y="640" width="64" height="32"/>
-  <object id="146" name="ratdom_mz_center" type="container" x="224" y="640" width="32" height="32"/>
-  <object id="171" name="ratdom_mz_center_s" type="script" x="224" y="640" width="32" height="32"/>
+  <object id="146" name="ratdom_mz_center" type="container" x="224" y="608" width="32" height="32"/>
+  <object id="171" name="ratdom_mz_center_s" type="script" x="224" y="608" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="26" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>

@@ -82,7 +82,7 @@
     },
     {
         "id":"ratdom_dev_info_20",
-        "message":"You have a dream about Crossglen beeing taken over by rats. You have to free the village again with the help of a smart cheeky rat called Clevred. \nIt is not sure, if it is really a dream - who knows? I tend to let it open.\nAnyway the maze will be left open to visit, so it has some kind of reality. Also if you have killed Mara or Tharal, the will later be vanished from the townhall.",
+        "message":"You have a dream about Crossglen beeing taken over by rats. You have to free the village again with the help of a smart cheeky rat called Clevred. \nIt is not sure, if it is really a dream - who knows? I tend to let it open.\nAnyway the maze will be left open to visit, so it has some kind of reality. Also if you have killed Mara or Tharal, they will later be vanished from the townhall.",
         "replies":[
             {
                 "text":"N",
@@ -3427,8 +3427,28 @@
     ]
   },
   {
+    "id":"ratdom_rat_flora",
+    "rewards":[
+      {
+        "rewardType":"actorCondition",
+        "rewardID":"regen",
+        "value":25
+      }
+    ]
+  },
+  {
     "id":"ratdom_rat_pub",
     "message":"Dish of the day: Filet de serpent sur pommes de terre au chou rouge."
+  },
+  {
+    "id":"ratdom_rat_rah_complete",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":130
+      }
+    ]
   },
   {
     "id":"ratdom_rat_statue",
@@ -4271,6 +4291,16 @@
   },
   {
     "id":"ratdom_wakeup_90",
+    "message":"You stumbled to the ground.",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_wakeup_92"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_wakeup_92",
     "rewards":[
       {
         "rewardType":"questProgress",
@@ -4303,7 +4333,7 @@
         "mapName":"crossglen"
       }
     ],
-    "message":"You didn't make it to your bed again. Nevertheless you took some minutes of sleep. \nWhen you woke up, something had changed. The rats are gone!"
+    "message":"You didn't make it to your bed - again. Nevertheless you took some minutes of sleep. \nWhen you woke up, something had changed. The rats are gone!"
   },
   {
 	"id":"ratdom_water_flag",
@@ -4443,6 +4473,12 @@
 					"requireType":"inventoryRemove",
 					"requireID":"ratdom_wells_ball",
 					"value":1
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":51,
+					"negate":true
 				}
 			],
 			"nextPhraseID":"ratdom_well_1_10"
@@ -4620,6 +4656,12 @@
 					"requireType":"inventoryRemove",
 					"requireID":"ratdom_wells_ball",
 					"value":1
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":51,
+					"negate":true
 				}
 			],
 			"nextPhraseID":"ratdom_well_2_10"
@@ -4781,6 +4823,12 @@
 					"requireType":"inventoryRemove",
 					"requireID":"ratdom_wells_ball",
 					"value":1
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":51,
+					"negate":true
 				}
 			],
 			"nextPhraseID":"ratdom_well_3_10"
@@ -4894,6 +4942,12 @@
 					"requireType":"inventoryRemove",
 					"requireID":"ratdom_wells_ball",
 					"value":1
+				},
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":51,
+					"negate":true
 				}
 			],
 			"nextPhraseID":"ratdom_well_4_09"
@@ -6412,6 +6466,11 @@
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":49
+		},
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":51
 		}
 	]
   },

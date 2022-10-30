@@ -498,7 +498,15 @@
         ]
     },
     {
-        "id":"ratdom_maze_boulder"
+        "id":"ratdom_maze_boulder",
+		"message":"Ouch!",
+		"rewards":[
+			{
+				"rewardType":"actorCondition",
+				"rewardID":"fire",
+				"value":3
+			}
+		]
     },
     {
         "id":"ratdom_librarian",
@@ -573,7 +581,8 @@
         ]
     },
     {
-        "id":"ratdom_maze_mole"
+        "id":"ratdom_maze_mole",
+        "message":"Who's there?"
     },
     {
         "id":"ratdom_mikhail",
@@ -1282,7 +1291,14 @@
     },
 	{
         "id":"ratdom_rat_bwm1_10",
-        "message":"Your brother was here often. He had made himself rather comfortable."
+        "message":"Your brother was here often. He had made himself rather comfortable.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":50
+            }
+		]
     },
     {
         "id":"ratdom_rat_bwm1_20",
@@ -1305,7 +1321,26 @@
         "replies":[
             {
                 "text":"I see nothing.",
-				"nextPhraseID":"X"
+				"nextPhraseID":"X",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":130,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Such a great sight! Wart has done a great job.",
+				"nextPhraseID":"X",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":130
+                    }
+                ]
             }
         ]
     },
