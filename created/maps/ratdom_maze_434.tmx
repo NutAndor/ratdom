@@ -188,7 +188,7 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJydlNENgzAMRJmin4gdSkegjAAZITAC7XRdrLGaqJZ1lxgqvQ8knu1wToe+64bEkYiJJbFm5Pfsf8hzSLwUg6L4W2ZRjjy/zfsP4Je6pc4OvHuex/q2DvOEseJbtKdp+cxr+S1PmJ3eSnzrLsBjru2td6ZkvVVmZzuzq/y950ZZMzc4smbeXslqzKBZ0f56Mp4vemw3hOmi6+nJ9srTk+Vjd7I2s80nOnsH8J0PR2/UE92HM9na+4BmYNna+4DO33J1DfTt0N6j/7BIzo3uia1xODNnZzrjCp/b3/0CjU+jvA==
+   eJydlN0NwyAMhDNFHyN2aDtCkhEIIxBGoJ2uixVUUJF1B04i3QMSn384O2aeJpMUk3ySTdqL8rfOP+WzS3o1Mo0qfxTZhsnnt7j/BHyNW+MEwN1LPZKXcRi3DngpyWl5xo34EZe1Kbmd8JK1gGOszN3OTPX66NTOZiY0/mv7Rl4z1im8ZlzoePUoQrWi+dV4vF3k2GxkLRdZTU42V5qczB85k72apT9emduBd46K3Cgn2ocz3sp9QDUwb+U+oP5HbBsDvR2ae/QP86RvtCcyRlR6zno6w2Z9bn/2C/q3o84=
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
