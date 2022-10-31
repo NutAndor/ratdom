@@ -188,12 +188,12 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJyllMENwzAIRTNFj1Z3aDtCmhEaj+BmBCfTZYNMVFCNRBHYOI30D5byAMM3axiGFZRAb9ALNBfh9wxf4TmCFtBVKIsYPE4sZ+Q2hZUxeJylnDl3K/U8GnFkLuJQ9wovxTmuFm9xvAatjhanxSB5uX80iXpTmbWXPy6/s0J+PJk7d7BRmZGHtTzfYqdge97DapzHG7JHPXfV2B4/8tl6c1rz8XqK+iw96Z2t7HN25LY8wd/DXOGsPUjvgfanl9P28NjBafevcegJa4cmhaP/5Y6SMbLCnfG617M78+sHfpGmZg==
+   eJyllNENwjAMRDsFnxU7ACO0HYFmhNIRUqZjAybCEbZkLLu5lEj3kY93TuKLt77rNtJCepDupJlV1th/VfaJtJLORtl4aJ/E+8I9HdZ6aJ+V95q78HluFR9bS7ixwltZDuUjTnRlWZ8a53mIUO4fTea8C/ca5d+n314VfjhYOzewyekRwkaZr7FTH2ceYT0OyYZ9o5a7emxLHnVv0ZpRf9BMyTvbTKK9te+cgdpRJvR/mHe4aA7Kf5D5iXLeHB4aOO/+e1zJhDe75P7e7PVmlPXIDnck62hmXyqvH+v5png=
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYCAf/BGlQPMAAT858vT5APVZyZGuH6TPGoiLSNSPrK8ISb8vEsZmlg+aHlwY3SxfLPaN4lE8ikfxSMAAUB/D8g==
+   eJxjYCAf/BGlQPMAAT858vT5APVZyZGuH6TPGoiLSNSPrK8ISb8vEsZmFjZ92DC6Wb5E6hvFo3gUj+LhhgEx5MO7
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">

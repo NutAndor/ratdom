@@ -2143,11 +2143,27 @@
 		  },
 		  {
 			"text":"Why is here an empty podest?",
-			"nextPhraseID":"ratdom_rat_warden2_r_1"
+			"nextPhraseID":"ratdom_rat_warden2_r_1",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":130,
+						"negate":true
+                    }
+                ]
 		  },
 		  {
 			"text":"I want to visit Fraedro.",
-			"nextPhraseID":"ratdom_rat_warden2_r_14"
+			"nextPhraseID":"ratdom_rat_warden2_r_14",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":130,
+						"negate":true
+                    }
+                ]
 		  },
 		  {
 			"text":"Do you also have something to purchase?",

@@ -3437,6 +3437,48 @@
     ]
   },
   {
+    "id":"ratdom_rat_flora_warn",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_flora_warn_10",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":140,
+			"negate":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_flora_warn_10",
+    "switchToNPC":"ratdom_rat",
+	"message":"Wait! This could be a trap!",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_flora_warn_20",
+		"text":"Do you think? It looks so peaceful."
+      },
+      {
+        "nextPhraseID":"X",
+		"text":"Maybe you are right. We better leave."
+      }
+    ],
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":140
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_flora_warn_20",
+	"message":"Yeah. Let's better not go under the blue swirl."
+  },
+  {
     "id":"ratdom_rat_pub",
     "message":"Dish of the day: Filet de serpent sur pommes de terre au chou rouge."
   },

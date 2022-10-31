@@ -188,13 +188,14 @@
 			{ "progress":109, "logText":"109=Color_5 active" },
 			{ "progress":120, "logText":"120=Leg Bone taken" },
 			{ "progress":121, "logText":"121=Met instrument maker" },
-			{ "progress":130, "logText":"130=Rah in museum." }
+			{ "progress":130, "logText":"130=Rah in museum." },
+			{ "progress":140, "logText":"140=Flora warning." }
 			]
     },
     {
         "id":"ratdom_maze",
         "name":"Ratdom_maze",
-        "showInLog":1,
+        "showInLog":0,
         "stages":[	
 			{ "progress":1, "logText":"Light-1" },
 			{ "progress":2, "logText":"Light-2" },
