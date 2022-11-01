@@ -3431,7 +3431,7 @@
     "rewards":[
       {
         "rewardType":"actorCondition",
-        "rewardID":"regen",
+        "rewardID":"shadowbless_heal",
         "value":25
       }
     ]
