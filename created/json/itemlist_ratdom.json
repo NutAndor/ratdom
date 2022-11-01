@@ -74,6 +74,14 @@
         "category":"neck"
     },
     {
+        "id":"ratdom_fraedro_key",
+        "iconID":"items_japozero:387",
+        "name":"Fraedro's key",
+        "description":"A tiny golden key",
+        "displaytype":"quest",
+        "category":"other"
+    },
+    {
         "id":"ratdom_pickaxe",
         "iconID":"items_misc_5:24",
         "name":"Pickaxe",

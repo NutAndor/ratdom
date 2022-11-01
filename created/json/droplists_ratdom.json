@@ -220,6 +220,40 @@
 			}
 		]
 	},
+	{
+		"id":"ratdom_kriih",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":200,
+					"max":500
+				}
+			}
+		]
+	},
+	{
+		"id":"ratdom_fraedro",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":200,
+					"max":500
+				}
+			},
+			{
+				"itemID":"ratdom_fraedro_key",
+				"chance":"100",
+				"quantity":{
+					"min":1,
+					"max":1
+				}
+			}
+		]
+	},
     {
         "id":"ratdom_librarian",
         "items":[

@@ -82,6 +82,8 @@
 				"logText":"You released Fraedro." },
 			{	"progress":399, 
 				"logText":"You attack Fraedro to avenge the theft of King Rah." },
+			{	"progress":400, 
+				"logText":"You tried Fraedro's tiny golden key in a hole of the cavewall near Kriih's prison. Immediatly the wall gave way to another passage." },
 			{	"progress":900, 
 				"logText":"You finally found the yellow artifact: It was a big, smelly cheese - almost everlasting. Clevred was overjoyed!" },
 			{	"progress":950, 

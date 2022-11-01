@@ -972,6 +972,154 @@
       }
     ]
   },
+    {
+        "id":"ratdom_fraedro_key",
+		"message":"The cave wall looks very massive here.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_fraedro_key_10",
+                "text":"Search the wall for some weak points or holes."
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_key_10",
+		"message":"You found a tiny hole.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_fraedro_key_12",
+                "text":"Insert a bone into the hole.",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"bone",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_fraedro_key_20",
+                "text":"Insert Fraedro's golden key into the hole.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"ratdom_fraedro_key",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_fraedro_key_12",
+                "text":"Hit the hole with your pickaxe.",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"ratdom_pickaxe",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_fraedro_key_12f",
+                "text":"Stuff a fish into the hole.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"rawperch",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_key_12",
+        "switchToNPC":"none",
+		"message":"Nothing happens.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_fraedro_key_12",
+                "text":"Insert a bone into the hole.",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"bone",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_fraedro_key_20",
+                "text":"Insert Fraedro's golden key into the hole.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"fraedro_key",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_fraedro_key_12",
+                "text":"Hit the hole with your pickaxe.",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"ratdom_pickaxe",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_fraedro_key_12f",
+                "text":"Stuff a fish into the hole.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"rawperch",
+                        "value":1
+                    }
+                ]
+            }
+       ]
+    },
+    {
+        "id":"ratdom_fraedro_key_12f",
+        "switchToNPC":"ratdom_rat",
+		"message":"A fish? Really??",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_fraedro_key_12",
+                "text":"N"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_key_20",
+		"message":"The key easily slipped into the hole and vanished! Suddenly a big rumbling makes you close your eyes.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_fraedro_key_30",
+                "text":"Oh."
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":400
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_key_30",
+        "switchToNPC":"ratdom_rat",
+		"message":"I hate to admit it, but that was a good idea for once."
+    },
+    {
+        "id":"ratdom_fraedro_sign",
+		"message":"Access denied!"
+    },
   {
     "id":"ratdom_ghost1",
     "rewards":[
@@ -3632,8 +3780,8 @@
   },
   {
     "id":"ratdom_rat_warden_exit",
-    "switchToNPC":"ratdom_rat_warden",
-    "message":"You can't get through."
+    "switchToNPC":"ratdom_rat_warden2",
+    "message":"Hey! You must not go there!."
   },
   {
     "id":"ratdom_skel_bone_10",

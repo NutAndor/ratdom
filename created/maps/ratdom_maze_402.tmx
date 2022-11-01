@@ -274,18 +274,6 @@
     <property name="place" value="north2"/>
    </properties>
   </object>
-  <object id="88" name="north2" type="mapchange" x="416" y="0" width="64" height="64">
-   <properties>
-    <property name="map" value="ratdom_maze_393"/>
-    <property name="place" value="south1"/>
-   </properties>
-  </object>
-  <object id="89" name="north1" type="mapchange" x="0" y="0" width="64" height="64">
-   <properties>
-    <property name="map" value="ratdom_maze_392"/>
-    <property name="place" value="south2"/>
-   </properties>
-  </object>
   <object id="90" name="ratdom_maze_light1" type="script" x="0" y="0" width="128" height="192">
    <properties>
     <property name="when" value="always"/>

@@ -85,6 +85,21 @@
 		"damageResistance":3
     },
     {
+        "id":"ratdom_fraedro",
+        "name":"Fraedro",
+        "iconID":"monsters_rats:1",
+		"moveCost":1,
+        "unique":1,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":20,
+            "max":30
+        },
+		"phraseID":"ratdom_fraedro",
+		"spawnGroup":"ratdom_fraedro",
+        "droplistID":"ratdom_fraedro"
+    },
+    {
         "id":"ratdom_ghost1",
         "name":"Ghost",
         "iconID":"monsters_tometik2:65",
@@ -149,12 +164,21 @@
         "droplistID":"drop_ratdom_gruil"
     },
     {
-        "id":"ratdom_fraedro",
-        "name":"Fraedro",
-        "iconID":"monsters_rats:1",
-		"moveCost":2,
-		"spawnGroup":"ratdom_fraedro",
-		"phraseID":"ratdom_fraedro"
+        "id":"ratdom_kriih",
+        "name":"Kriih",
+        "iconID":"monsters_rats:2",
+        "maxHP":160,
+        "maxAP":10,
+        "moveCost":3,
+        "unique":1,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":20,
+            "max":30
+        },
+        "phraseID":"ratdom_kriih",
+        "spawnGroup":"ratdom_kriih",
+        "droplistID":"ratdom_kriih"
     },
     {
         "id":"ratdom_leonid",
@@ -391,6 +415,21 @@
         "attackCost":99,
         "attackChance":60,
         "blockChance":40
+    },
+    {
+        "id":"ratdom_rat_warden",
+        "name":"Wart",
+        "iconID":"monsters_rltiles3:10",
+        "movementAggressionType":"wholeMap",
+        "phraseID":"ratdom_rat_warden",
+        "droplistID":"ratdom_rat_warden"
+    },
+    {
+        "id":"ratdom_rat_warden2",
+        "name":"Wart",
+        "iconID":"monsters_rltiles3:10",
+        "phraseID":"ratdom_rat_warden2",
+        "droplistID":"ratdom_rat_warden2"
     },
     {
         "id":"ratdom_roundling",
@@ -821,21 +860,6 @@
 				}
 			]
 		}
-    },
-    {
-        "id":"ratdom_rat_warden",
-        "name":"Wart",
-        "iconID":"monsters_rltiles3:10",
-        "movementAggressionType":"wholeMap",
-        "phraseID":"ratdom_rat_warden",
-        "droplistID":"ratdom_rat_warden"
-    },
-    {
-        "id":"ratdom_rat_warden2",
-        "name":"Wart",
-        "iconID":"monsters_rltiles3:10",
-        "phraseID":"ratdom_rat_warden2",
-        "droplistID":"ratdom_rat_warden2"
     },
     {
         "id":"ratdom_water_fish1",

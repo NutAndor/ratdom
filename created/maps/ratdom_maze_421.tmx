@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="58">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="60">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,12 +193,12 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFIMAvPNAuYGB4JDTQLhgFxID/dIqnJyMwPQgMgnw4mMFgKKeIBaB88pBOafgfhfYAAItMBnc=
+   eJxjYGBguCPEQBE4CtR/jAwzDgP1HKHAbnLtRQZ9whCaX5gyc6gBHlHol1FAH/CfTvH0ZASmB4FBkA8HMxgM5RSxAJRPHtIpDf+j0B4AvVwNDw==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSI6CAQWXxcjXa0phvA5Vuw9ToPcSGXoHyq0DpXeg4hakj5z4AQF6pwl6g6GYBklJR9QqiwD4EhHz
+   eJxjYICArUIMDNuEGFCAmxwDQbAZqGeLEGF1uAA2e0cBYXBZjHy9pkTE63C0+zAFei+RoXeg3DpQegcqbkH6yIkfEKB3mqA3GIppkJR0RK2yCAB9vhac
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -206,9 +206,9 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="5" name="Walkable" width="15" height="30" visible="0">
+ <layer id="5" name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYICAjWKYGJ84OsCmDp9edHNI0UesOwiZTwwgxk3khge5+rDpJVYfsWFDK7244pLe7iZV/0DopZY+etg50OlqIPRSM5yJ1YsPkKsPnxmE1OCSI8VfuMyldbwj6wcAgnHupg==
+   eJzF0tENABAMBNCbwv4r2NCviF7vBG3iB0+rAEBv+4FgbY3IM6vkydyuHmV+zctCqcl1zLt9dJ3am1c2e8tfdbu+wt5yP3JW/6sKe7PPqmVx6tgZ2Z5ozblXdO7rd5/9ANws9Bc=
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -412,6 +412,22 @@
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="8"/>
+   </properties>
+  </object>
+  <object id="58" name="ratdom_rat_conv2:1" type="replace" x="384" y="736" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Compass"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="31"/>
+   </properties>
+  </object>
+  <object id="59" name="ratdom_rat_conv2:1" type="replace" x="320" y="32" width="32" height="32" visible="0">
+   <properties>
+    <property name="Objects" value="Compass"/>
+    <property name="requireId" value="ratdom_maze"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="32"/>
    </properties>
   </object>
  </objectgroup>

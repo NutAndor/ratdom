@@ -304,12 +304,40 @@
         "message":"Please don't hurt me.",
         "replies":[
             {
+                "text":"Who are you?",
+                "nextPhraseID":"ratdom_fraedro_2"
+            },
+            {
                 "text":"Why did you steal King Rah's skeleton?",
                 "nextPhraseID":"ratdom_fraedro_10"
             },
             {
                 "text":"OK, bye.",
                 "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_2",
+        "message":"Fraedro, good sir. Please don't hurt me.",
+        "replies":[
+            {
+                "text":"Ah, that's why you're so heavily guarded.",
+                "nextPhraseID":"ratdom_fraedro_4"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_4",
+        "message":"I don't know why I'm being held here. I haven't done anything wrong.",
+        "replies":[
+            {
+                "text":"Yeah, everyone says that.",
+                "nextPhraseID":"ratdom_fraedro"
+            },
+            {
+                "text":"I believe you. Go now, as long as you can.",
+                "nextPhraseID":"ratdom_fraedro_20"
             }
         ]
     },
@@ -370,7 +398,7 @@
     },
     {
         "id":"ratdom_fraedro_20",
-        "message":"What? Thank you, thank you!",
+        "message":"What? Thank you, thank you! [Fraedro turned to flee, losing a small golden key in the process]",
         "replies":[
             {
                 "text":"You better get out of the area quick.",
@@ -382,6 +410,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_quest",
                 "value":398
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"ratdom_fraedro_key",
+                "value":1
             },
             {
                 "rewardType":"removeSpawnArea",
@@ -496,6 +529,10 @@
 				"text":"Enough. Enjoy yourself."
             }
         ]
+    },
+    {
+        "id":"ratdom_kriih",
+		"message":"Hi $playername. I am Kriih."
     },
     {
         "id":"ratdom_maze_boulder",
@@ -1296,7 +1333,7 @@
             {
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_quest",
-                "value":50
+                "value":130
             }
 		]
     },
@@ -1316,7 +1353,7 @@
         ]
     },
     {
-        "id":"ratdom_rat_museum_sign1",
+        "id":"ratdom_rat_museum_sign_1",
         "message":"Here you can see the complete skeleton of King Rah.",
         "replies":[
             {
@@ -1343,6 +1380,54 @@
                 ]
             }
         ]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2a",
+        "message":"This is the crown of the old Kingdom."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2b",
+        "message":"This is the great key.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_rat_museum_sign_2b_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2b_10",
+        "message":"No rat knows where it fits."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2c",
+        "message":"This is King Rah's diary.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_rat_museum_sign_2c_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2c_10",
+        "message":"At least that is the prevailing opinion. It is written in secret script."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3a",
+        "message":"A suit of armor several centuries old, with the Rat Empire emblem."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3b",
+        "message":"Wonderfully decorated chests - unfortunately all locked."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3c",
+        "message":"Many shelves loaded with thick books."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3d",
+        "message":"A great ax from the last century. You don't want to face a warrior with this weapon in your hands"
     },
     {
         "id":"ratdom_rat_pub_owner_10",
@@ -2147,7 +2232,7 @@
                 "requires":[
                     {			
                         "requireType":"questProgress",
-                        "requireID":"ratdom_quest",
+                        "requireID":"ratdom_nondisplay",
                         "value":130,
 						"negate":true
                     }
@@ -3484,8 +3569,8 @@
 	},
     {
         "id":"whootibarfag_68",
-		"switchToNPC":"whootibarfag",
-        "message":"Clevred gets into raptures and can hardly be stopped.",
+		"switchToNPC":"none",
+        "message":"Clevred tells and tells.",
 		"replies":[
             {
 				"text":"N",
@@ -3496,6 +3581,16 @@
     {
         "id":"whootibarfag_70",
 		"switchToNPC":"whootibarfag",
+        "message":"Hold on!",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_71"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_71",
         "message":"I'm afraid I can't help you much there. I'm more familiar with the events out here on the mountain.",
 		"replies":[
             {
