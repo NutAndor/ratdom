@@ -343,7 +343,7 @@
 		"items":[
 			{
 				"itemID":"ratdom_maze_mole_food",
-				"chance":"50",
+				"chance":"66",
 				"quantity":{
 					"min":1,
 					"max":1
