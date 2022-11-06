@@ -174,10 +174,23 @@
 		]
 	},
 	{
+		"id":"ratdom_ff_guard",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":2,
+					"max":9
+				}
+			}
+		]
+	},
+	{
 		"id":"ratdom_ff_guard_loot1",
 		"items":[
 			{
-				"itemID":"sullengard_finest",
+				"itemID":"sullengrad_finest",
 				"chance":"100",
 				"quantity":{
 					"min":20,
@@ -321,6 +334,27 @@
 				"quantity":{
 					"min":1,
 					"max":5
+				}
+			}
+		]
+	},
+	{
+		"id":"ratdom_maze_mole_food",
+		"items":[
+			{
+				"itemID":"ratdom_maze_mole_food",
+				"chance":"50",
+				"quantity":{
+					"min":1,
+					"max":1
+				}
+			},
+			{
+				"itemID":"gold",
+				"chance":"33",
+				"quantity":{
+					"min":1,
+					"max":2
 				}
 			}
 		]

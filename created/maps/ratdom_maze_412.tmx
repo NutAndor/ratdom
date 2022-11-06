@@ -188,17 +188,17 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlMENwyAMRTNFjyg7JNmgkBESRkgzAs2Snaig2qprGTCokf4BlGdj/LEzw7BGPUBb1A5KnzMfpbWPOqNGkIO9J+gQ4nhYJ+4i7MpiBSHOCWvKTcDeyd4oxLnY/mS+tcxRS4bnohxVjc9xNb7GOai/h0O9br/s1sDy3EcjT3MH4G1n7tDAeuHONCz3vJZFf3MfalmJ6/WGttZ/+0rbG6k/Wk/xOYKe1PaW33NQ5M55gr6HvcBJvaXvAeenluOzD+vXctKbKnHJE7kZagUO/5/ZfXDeClypD0uG1XqWnukN8KGlvQ==
+   eJytlOENhCAMhZ2EuIO6wYEjKCN4jsC5+0Gu5JqXIoVo8n5A/FpKH3VmGNaoN2mL2knpc+antPZRZ9RIcrT3IR1CHE/rxF2MXSFWEOKctObcROyL7Y1CnAv2J/OvZY5aCjyKc1w1vsTV+BrnqP4eLgvZrYHF3Ecjj71KvO3MHRpYL9StYdHzWjb7G32oZSWu1xvaWp/2lbY3Un+0nsI5kj2p7S3ec1DkLnmCv4f9hpN6y99Dnp9aDmdfrl/LSW/qjkueKM1QK3D5/xnuA3krcHd9WAqs1rP8TF+zAaO/
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYKA/eCiExBFGMLcDxXcIYSgnChwH6jtBpl4YeEKh/pECWgQYGPKECaujNQhmJV9vMol6FyOpL6TA3kYy9c4A6ptIpN5iJHXLgewVZNppSKJ6N6A97lC7HMmwL4gNGKdAHMJGut4koJ5kIE4hQy81wEM6lh20KKf28JMe38gAFN+N/OTrn0FmGqUkfSMDAAGmFLs=
+   eJxjYKA/eCiExBFGMLcDxXcIYSgnChwH6jtBpl4YeEKh/qECDotRpr9FgIEhT5iwOlrYjQyCWcnXm0yi3sVI6gspsLeRTL0zgPomEqm3GEndciB7BZl2GpKoHhS37lC7HMmwL4gNGKdAHMJGut4koJ5kIE4hQy81wEM6lh20KKf28JMe38gAFN+N/OTrn0FmGqUkfSMDALkEFvs=
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYICAy2IMGMBNDlMMBC6hqT2MRS8ywGY2TBzdLEJ2EWvncAe4wpQYYAqN1zhh6riFHLvJBZT4m5I0QyidYgPUcut0Vgg9m4l0vaQCM6Bd5qzk6aVG3MazkaePnPgBAXqniaEMNgsxMGwRor6508lMb9QEAPAvF9k=
+   eJxjYICAy2IMGMBNDlMMBC6hqT2MRS8ywGY2TBzdLEJ2EWvncAe4wpQYMJcJQscJU8ct5NhNLqDE35SkGULpFBuglluns0Lo2USGHSX+NAPaZc5Knl5qxG08G3n6yIkfEKB3mhjKYLMQA8MWIeqbO53M9EZNAACfnxi9
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30">
@@ -206,7 +206,7 @@
    eJxjYBgFo2AUjAIIOCw20C4YBaOA/gAAi0gA2g==
   </data>
  </layer>
- <layer id="5" name="Walkable" width="15" height="30">
+ <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFc4rjkCGF0vcSahU0dMsCnhxh5XIAYN5GqD59+csKSVH2U6iWUPsiJy6HgZ3rbSw2/UuLWgYjfgcDUiB9S9ZOrFx8gVx8+MwipwSVHir/I1UeNOIRhAHtfA7I=
   </data>
@@ -327,7 +327,7 @@
   <object id="73" name="ratdom_ff_guard_loot1" type="container" x="256" y="480" width="32" height="32"/>
   <object id="74" name="ratdom_ff_guard_loot2" type="container" x="160" y="544" width="32" height="32"/>
  </objectgroup>
- <objectgroup id="17" name="Spawn" visible="0">
+ <objectgroup id="17" name="Spawn">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
   <object id="44" name="cavesnake2" type="spawn" x="160" y="672" width="160" height="192">
    <properties>

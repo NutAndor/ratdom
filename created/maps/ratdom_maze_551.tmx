@@ -188,17 +188,17 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJylk8ERhCAMRS3As0fGHlZLWC1BLWG1BNzqtrHlQGZCJsAPHv6NR0h4WVzXLUD2kCPkChljUOaM3BdkOXML7lXhNKbGrcr7EI5qtnBU08oRa+lP5jek7GZgV1H3Y+R5bR/5d2Ntb2APZdYIK51H2ZJTCNvilDYjS68a+8Qr9G+0/0Gd0vYIdUrbXQ/UzjnB92EvcNrf8n04xRtqHOdv1n/JwdIdm8s7SE5MIXOmf+kRnZ/EPOQd3qUeIe4R3w/pvah39K4/f92ofg==
+   eJylk8ERwyAMBF1A3nky6SFOCbFLsF1C7BJweg8PNCPfCDiRx/1YCcFqCsMwEVlTtpQj5ZHDMnvmviSrmRO4Z4OzmBY3G/djOOnZw0lPLyesZz4M9lwc7Azsx8lrNmb+3dk7OtjNmJth0XmWrTnFsD1OWW/kmdVi//GK/Rvrf1inrD1inbJ2NxK9S07ofVgrnPW3eh92uEOL0/yp5q85WKuxhLKD4sSY8irMjx7J+RHeA2vEcPWIcU/42/1al/VO7vUDthGmEg==
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx58eonRh00vsfqw6bUhUh+6XlLsRNdLip2jYBSMglEwCmgLAPCvFwY=
+   eJwrkmNgKMKBNYA4HogTgBgbwKcPlx58eonRh00vsfqw6bUhUh+6XlLsRNdLip20AIfFRqbdo4C2YDRuRwE1wECkIwDXeBpq
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMANiuSwi18Sw6MJC7hMonpK7CIXDIQbKbHzMAV6TXHEK7GAEncPpN2UhBk5cTxQbh0ovQMVtyB95OZBeqcJeoOhmAYpTUfkAABVoxZG
+   eJxjYMANiuSwi18Sw6MJC7hMonpK7CIXDIQbKbHzMAV65zKRrxcEKHH3QNpNSZiRE8cD5daB0jtQcQvSR24epHeaoDcYimmQ0nREDgAAJ58Xdg==
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -325,7 +325,7 @@
   <object id="70" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="71" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
  </objectgroup>
- <objectgroup id="17" name="Spawn">
+ <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
   <object id="44" name="ratdom_maze_boulder" type="spawn" x="32" y="96" width="352" height="832">
    <properties>

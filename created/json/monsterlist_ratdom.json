@@ -301,9 +301,26 @@
 			]
 		},
         "spawnGroup":"ratdom_maze_mole2",
-        "droplistID":"ratdom_maze_mole2",
         "attackCost":5,
         "attackChance":120
+    },
+    {
+        "id":"ratdom_maze_mole_food",
+        "name":"Nutritious cave snake",
+        "iconID":"monsters_snakes:3",
+        "maxHP":31,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":12,
+            "max":12
+        },
+        "spawnGroup":"ratdom_maze_mole_food",
+        "droplistID":"ratdom_maze_mole_food",
+        "attackCost":6,
+        "attackChance":110,
+        "criticalSkill":30,
+        "criticalMultiplier":2.0,
+        "blockChance":30
     },
     {
         "id":"ratdom_maze_rat1",

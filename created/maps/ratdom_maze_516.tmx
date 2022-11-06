@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="24" nextobjectid="81">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="24" nextobjectid="82">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -186,9 +186,6 @@
  <tileset firstgid="7705" name="map_ratdom" tilewidth="32" tileheight="32" tilecount="108" columns="18">
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
- <tileset firstgid="7813" name="map_broken_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
-  <image source="../../../../../laeroth/ATCS/laeroth/created/drawable/map_broken_1.png" width="512" height="256"/>
- </tileset>
  <layer id="20" name="Base" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYBg+QEGOvnpBemB4FIyCUTAKRsHQBAAwswE3
@@ -196,17 +193,17 @@
  </layer>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlMENwjAMRTsAZ9QT6h1uhBFIRwBGCIwQWJKJKKIRxbL9fyIOX+qhL9/xdxw3XRcXOjuKjsZJV0cnwN4dpUlHhx1mrfrvd1FW2ECyA/Dd9h/tFHYP+nVQvBhO1l3DFT3Xv6yXDfJOlfzSO4NskbeWraVLRbaSuzWw48w9GlmNa50N9q7/nis2Gy0fdqZKn+VMstnKPmfCW/OU78Hbl9bbL+8B7ctgnPHm0b5kamB6b9WQnP8DOCOTmVv3kOfXzPsLWOOoBQ==
+   eJytlMENgzAMRVHPDMCp4k5vwAiEEYAR0o6QMi57EAmiVpbz7QQOT+LAi+N8J+ZZFOaPGWAAo+cNmAT3C7CeAbj1SVn9vgPuglsLblMdvBi3Fc6Lq6Xx6L5TvFhtlI1U2yb6NBuUrVQbZUtZErKl3ifDHU9vzXQ5L3c2tL3ePVfabLh8tDMVzpnOpDZbes5OUZurSe8Dei+3B++G+yC9l52nj/jSexngfG3/aA8W/N8Jazhl5rE+6Pop874D/YemmA==
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBhc4AkHgs0DxLxE6NnICcFfoHo7WRkYZIC0LBl6kUEZK369jzggmIkTU85YjgjLgeCSKHn6BhI8FxpoF0CAHYH4wQf8KND7mET/nx6g8Ho2SOIJHfgRSOOP8LjbSo6wflygSI58/SC9IGyDpJfYfADTi83uTwTMgOklx+3IemH6fZHMeIhm91Mh3HpJcQMuvdjcQIpefG4A+YUYvehxCAMARNs1jQ==
+   eJxjYBhc4AkHgs0DxLxE6NnICcFfoHo7WRkYZIC0LBl6kUEZK369jzggmIkTU85YDr/ew2IQ+pIoafqoAWB2kwueCw2c3cjAjkD84AN+FOh9TKL/T1MQXpSAZ3S2l9i49SOQxh/hcbeVHGH9uECRHPn6QXpB2AZJL7H5AKYXm92fCJgB00uO25H1wvT7IpnxEM3up0K49ZLiBlx6sbmBFL343ADyCzF60eMQBgCAnDjx
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSGIBl8VIU08tvYeHoF5TEsMWHVASXiPVbkri6xIZekfTNGmA3PAC6SMnfkCAXH2UxO0oGDwAFo8AfsETcg==
+   eJxjYMAN3OTwSGIBl8VIU08tvYeHoN65TOTrBQFKwmuk2k1JfF0iQ+9omiYNkBteIH3kxA8IkKtvIPPAKKAegMUjANAVFUE=
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30">
@@ -254,7 +251,7 @@
    eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPA4prUuBuQvrx2U3Iz4TsxqdXA4gTyNBLSB8+vYTilxK9+OJ4MKYrQvGKL5wJpSlK/EsobkF2x2Oxn5A+XO4nRR+yfnL0jQLSAQBVg3tv
   </data>
  </layer>
- <layer id="13" name="Light7" width="15" height="30">
+ <layer id="13" name="Light7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJwrkmNgsAFiYoEWUG0REh4ovVZA7EekfnS9xNrtA1RjTaZebHYS625cegnZjcu9xNgdBxTXxKOXkN2E9BPyNz4/E7Ibn14NIE4gQy8hffj0UpI+COnFF8eE9A5EuiIUr/jCmVCaopV/R6JefGFNKB/gspvY8n0w6AUAXmdxeQ==
   </data>
@@ -357,8 +354,14 @@
   </object>
   <object id="75" name="cavesnake2b" type="spawn" x="128" y="96" width="64" height="64">
    <properties>
-    <property name="quantity" value="3"/>
+    <property name="quantity" value="2"/>
     <property name="spawngroup" value="cavesnake2"/>
+   </properties>
+  </object>
+  <object id="81" name="ratdom_maze_mole_food" type="spawn" x="128" y="96" width="64" height="64">
+   <properties>
+    <property name="quantity" value="1"/>
+    <property name="spawngroup" value="ratdom_maze_mole_food"/>
    </properties>
   </object>
  </objectgroup>

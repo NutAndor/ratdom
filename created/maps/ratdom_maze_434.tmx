@@ -188,17 +188,17 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJydlN0NwyAMhDNFHyN2aDtCkhEIIxBGoJ2uixVUUJF1B04i3QMSn384O2aeJpMUk3ySTdqL8rfOP+WzS3o1Mo0qfxTZhsnnt7j/BHyNW+MEwN1LPZKXcRi3DngpyWl5xo34EZe1Kbmd8JK1gGOszN3OTPX66NTOZiY0/mv7Rl4z1im8ZlzoePUoQrWi+dV4vF3k2GxkLRdZTU42V5qczB85k72apT9emduBd46K3Cgn2ocz3sp9QDUwb+U+oP5HbBsDvR2ae/QP86RvtCcyRlR6zno6w2Z9bn/2C/q3o84=
+   eJydlOsNwyAQgzNJxA5tR2gyAmEEkhHS7l5QQUKWDZdE8g8kvnvgu7h5mlzSmRSTfNJWlL9l/iufQ9KnkWtU+b3IN0w+f+H+i/A1bo1zEO5R6kEe4yhuGfAo5Ky84kb8iMtajdwmeGQ94RSLuduZqV7vndrVzByN/9a+mdeKDQavFXd0vHoWsVrZ/Fo8Xm9yajay3jdZS041V5acyh+cyV7N6E805g7knU9DbpaT7cMVb3EfWA3KW9wH1v+IbWOwt2Nzz/5hUfTN9gRjnEbPVU9XWOzpB/NrozM=
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYKAfeCQEoXnEcKthEybevBdCqHwxEvTiAg+RzHwthFvdQANK3HYYT/jTGlDLbmz+fzQI4+vbIHDTYxLc8GSIpqvBAEjNk/ROG+jlJToA5R9cfgDF7WGg3JFBkJ5pAQCmihQj
+   eJxjYKAfeCQEoXnEcKthEybevBdCqHwxEvTiAg+RzHwthFvdQANK3HYYT/jTGlDLbmz+fzQI4+vbIHDTYxLc8GSIpqvBAEjNk/ROG+jlJToA5R9cfgDF7WGg3JFBkJ6pBZDTKwCwoBT8
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSFIITCk0m1L9Qx1cFiNf71ymkWn3YQr0XiJD70C5daD0DlTcgvSREz8gQK5/B8JOaujdLMTAsEWIdL2Uxi2tACV5DLkOAQCNNxYt
+   eJxjYMAN3OTwSFIITCk0m1L9Qx1cFiNf71ymkWn3YQr0XiJD70C5daD0DlTcgvSREz8gQK5/B8JOaujdLMTAsEWIdL2Uxi2tALXKIgCQ4xZ5
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -339,7 +339,7 @@
     <property name="spawngroup" value="cavesnake2"/>
    </properties>
   </object>
-  <object id="56" name="ratdom_maze_rat" type="spawn" x="64" y="64" width="352" height="128">
+  <object id="56" name="ratdom_maze_rat" type="spawn" x="256" y="96" width="96" height="128">
    <properties>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_maze_rat"/>

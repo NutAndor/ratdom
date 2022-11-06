@@ -216,10 +216,17 @@
         "id":"ratdom_ff_guard",
         "replies":[
             {
-                "nextPhraseID":"ratdom_ff_guard_10"
+                "nextPhraseID":"ratdom_ff_guard_20",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"jolnor",
+                        "value":20
+                    }
+                ]
             },
             {
-                "nextPhraseID":"ratdom_ff_guard_20"
+                "nextPhraseID":"ratdom_ff_guard_10"
             }
         ]
     },
@@ -256,14 +263,31 @@
         "message":"You had made me leave my post in front of the Foaming Flask!",
         "replies":[
             {
-                "text":"N",
+                "text":"Oh. It's you ...",
+                "nextPhraseID":"ratdom_ff_guard_42"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ff_outsideguard",
+                "mapName":"road1"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_ff_guard_42",
+        "message":"Surprised? I'm sure you didn't think we'd see each other again.",
+        "replies":[
+            {
+                "text":"Oh. It's you ...",
                 "nextPhraseID":"ratdom_ff_guard_50"
             }
         ]
     },
     {
         "id":"ratdom_ff_guard_50",
-        "message":"I lost everything because of this! Above all, my honor!",
+        "message":"I have lost everything because of this! Above all, my honor!",
         "replies":[
             {
                 "text":"What honor?",
@@ -2464,16 +2488,6 @@
 	{
 		"id":"ratdom_rat_warden2_r_17",
 		"message":"Of course he was. It couldn't have been otherwise. Go now please, I have work to do."
-	},
-	{
-		"id":"ratdom_rat_warden2_r_2",
-		"message":"",
-		"replies":[
-		  {
-			"text":"N",
-			"nextPhraseID":"ratdom_rat_warden2_r_3"
-		  }
-		]
 	},
     {
         "id":"ratdom_roundling",

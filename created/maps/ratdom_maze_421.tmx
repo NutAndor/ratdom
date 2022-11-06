@@ -188,17 +188,17 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytlN0NgzAMhJmCx4gdSkcojJAyQugIgenYoBM1UW3JPfLjoCLdA5E/O7FPHkzXDUE+yAXZoCcpfpP5Kv4vQS+KRzG/kqxgVuJ2EX9P8BvJCWYD7kb3QR7z7HDO3FThUchp+RxX42tc1HyRY737X9Y2sFjbNfKyNnvmcbG2b2CXRM80bM7zNXY2Z8+3sCnuqje0b/23r7SzSc1H6ynuM3pSO1vss1fULu1BuUNzXGq2uENtA4e7j99f8mAphzV5D7InRpPeYc6cfcTxI/QDc3g6P3qd97COzKvxziH8+gFOWaXF
+   eJytlNENwyAMRDNFP63s0HSEJiPQjEA6Asl0XaxEtSV0MWBQI91HEM/G9skjDcMYFaJ8lIt6sc5vpp/O/zXqzfdRwm8slzAbc0dy/6HwO8snzA7cnd+DPMY54Fy4ucKjkLPyOa7G17hTSycnQtY1sJjbN/KaZ56duUMDuyp1W9ic52vsQlfPt7Aa1+sNa63/9pV1Ntp8rJ6SPqMnrbPFPgdD7tIeTHdojtNmizvUNXC4+6T+kgdLMRzlPSiemEjfYZ6uPpL7E/QDYwQ+/9xs3sM8adxWv34BCW2jLA==
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYGBguCPEQBE4CtR/jAwzDgP1HKHAbnLtRQZ9whCaX5gyc6gBHlHol1FAH/CfTvH0ZASmB4FBkA8HMxgM5RSxAJRPHtIpDf+j0B4AvVwNDw==
+   eJxjYGBguCPEQBE4CtR/jAwzDgP1HKHAbnLtRQZ9whCaX5gyc6gBHlHoF2LBYTH62DPY7KYW+E+neHpCJ3uoBagRtwKDIB8OZjAYyiliASifPKRTGv5HTv2DlF4BS/0Qcw==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYICArUIMDNuEGFCAmxwDQbAZqGeLEGF1uAA2e0cBYXBZjHy9pkTE63C0+zAFei+RoXeg3DpQegcqbkH6yIkfEKB3mqA3GIppkJR0RK2yCAB9vhac
+   eJxjYICArUIMDNuEGFCAmxwDQbAZqGeLEGF1uAA2e0cBYXBZjHy9c5lGpt2HKdB7iQy9A+XWgdI7UHEL0kdO/IAAvdMEvcFQTIOmRNQ7MECtsggAMNoXzA==
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -206,7 +206,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="5" name="Walkable" width="15" height="30">
+ <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzF0tENABAMBNCbwv4r2NCviF7vBG3iB0+rAEBv+4FgbY3IM6vkydyuHmV+zctCqcl1zLt9dJ3am1c2e8tfdbu+wt5yP3JW/6sKe7PPqmVx6tgZ2Z5ozblXdO7rd5/9ANws9Bc=
   </data>
@@ -258,7 +258,7 @@
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUBvFo3gUj+JRPIpHKAYAFCd3iQ==
+   eJxTk2NgUKMxVqWDHaN4FI/iUTyKRzE5GAANg3eI
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
