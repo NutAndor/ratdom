@@ -1,5 +1,14 @@
 [
     {
+        "id":"ratdom_bwm_sign",
+        "message":"East Up Down West",
+        "replies":[
+            {
+                "text":"Now what's that supposed to mean?"
+            }
+        ]
+    },
+    {
         "id":"ratdom_check_backbone",
         "replies":[
             {

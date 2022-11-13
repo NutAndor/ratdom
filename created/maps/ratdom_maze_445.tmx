@@ -193,12 +193,12 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN4uTwSI6CIQsOi41Mu0cBbcFo3I6CoQSQ0ysA7/kD4Q==
+   eJxjYMAN4uTwSNIAPBUgX+9XJL1PKDDnCwV6hwo4LDY87H5EQVx9GoB4fkOCnY8pcN/nAUrDA5muqAWeURB23+gY7t9HQDlFa4CcXgG5wQ+8
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSI6CAQWXxcjXO5dpZNp9mAK9l8jQO1BuHSi9AxW3IH3kxA8I0DtNjALqAmqVRQAbMBA1
+   eJxjYICA/0IMGMBNDlNsFCDAYyxhRgl4RIJ5l8XIt2cuE/l6QYBPmDK7n1IQbpT4+zAFei+RoXeg3IquF1vexqf3CZnxQ2m6Ije8QPrIiR8QoHeaQAbPBcjTR0n+wweeUbE8I9csUstUapWDAOnmGWI=
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYICAjWKYGJc4sjwDHv2EMDX1k2MOLjCQ9pOrl55hT614o3eaoWZc0UMvtfTRw86BTlcDoZea4UysXnyAXH34zCCkBpccKf5CVkeKPkrjAFk/AEai9mw=
+   eJxjYICAjWKYGJc4sjwDHv2EMLX1k2oONjBU9FNiL6VhT614o3eaoZZecuMZxqannaTqpcTOwRI/9NJLzfghVj+yWlL0EwtIdScuOVL8hctPtAxHdP0AmTD73Q==
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -325,7 +325,7 @@
   <object id="57" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="58" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
  </objectgroup>
- <objectgroup id="17" name="Spawn" visible="0">
+ <objectgroup id="17" name="Spawn">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
   <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
    <properties>
