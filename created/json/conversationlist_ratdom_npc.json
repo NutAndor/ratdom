@@ -280,7 +280,7 @@
         "message":"Surprised? I'm sure you didn't think we'd see each other again.",
         "replies":[
             {
-                "text":"Oh. It's you ...",
+                "text":"N",
                 "nextPhraseID":"ratdom_ff_guard_50"
             }
         ]
@@ -1199,7 +1199,7 @@
     },
     {
         "id":"ratdom_rat_10_10",
-        "message":"You must help me to find a yellow, round artifact. Then I'll show you the exit.",
+        "message":"Sure. You must do me a favor first. Help me to find a yellow, round artifact. Then I'll show you the exit.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -1209,14 +1209,30 @@
 		],
         "replies":[
             {
-                "text":"Where would I find this yellow artifact?",
+                "text":"A yellow round artifact? Where would I find this thing?",
 				"nextPhraseID":"ratdom_rat_50"
 			}
         ]
     },
     {
         "id":"ratdom_rat_50",
+        "message":"Thing! Don't call it just 'thing'! It is a great marvel in our world!",
+        "replies":[
+            {
+                "text":"If you say so. And where is this marvel?",
+				"nextPhraseID":"ratdom_rat_52"
+			}
+        ]
+    },
+    {
+        "id":"ratdom_rat_52",
         "message":"It is deep in the rat cave, of course. Use your eyes.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_quest",
+                "value":52
+            },
         "replies":[
             {
                 "text":"In our supply cave? That should be easy.",
@@ -1973,7 +1989,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_69",
-		"message":"You could go and find all of King Rah's bones.",
+		"message":"Please go and find all of King Rah's bones.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2402,11 +2418,11 @@
 		"message":"You think you could bribe me for a ridiculous 100 gold pieces?",
 		"replies":[
 		  {
-			"text":"Eh, no. Of course not. Sorry.",
+			"text":"Eh, no. Of course not. Sorry. I'll better leave.",
 			"nextPhraseID":"X"
 		  },
 		  {
-			"text":"Well, if you want to put it that way ...",
+			"text":"Well, if you don't want the gold ...",
 			"nextPhraseID":"ratdom_rat_warden2_r_16b",
 			"requires":[
 				{
@@ -2420,7 +2436,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2_r_16b",
-		"message":"[Hastily takes the gold] Sure you can talk to him. Do you see the stairs over there? Just walk along there, you can't miss it.",
+		"message":"Wait! [He takes the gold hastily] Sure you can talk to Fraedro. Do you see the stairs over there? Just walk along there, you can't miss it.",
 		"replies":[
 		  {
 			"text":"OK, bye.",

@@ -418,7 +418,7 @@
 		"items":[	
 			{ "itemID":"bone",		
 			  "chance":"100", 
-			  "quantity":{ "min":1, "max":10 } 
+			  "quantity":{ "min":2, "max":10 } 
 			}]
 	},
 	{	"id":"ratdom_drop_torch",

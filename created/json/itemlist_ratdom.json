@@ -83,7 +83,7 @@
     },
     {
         "id":"ratdom_maze_mole_food",
-        "iconID":"items_consumables:27",
+        "iconID":"items_consumables:25",
         "name":"Nutritious snake meat",
         "hasManualPrice":1,
         "baseMarketCost":120,
