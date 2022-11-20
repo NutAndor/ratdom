@@ -1232,7 +1232,8 @@
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_quest",
                 "value":52
-            },
+            }
+        ],
         "replies":[
             {
                 "text":"In our supply cave? That should be easy.",
@@ -1872,6 +1873,11 @@
 				"requireType":"inventoryRemove",
 				"requireID":"ratdom_rat_skelett_back",
 				"value":1
+			  },
+			  {
+				"requireType":"inventoryRemove",
+				"requireID":"ratdom_rat_skelett_ribs",
+				"value":1
 			  }
 			]
 		  },
@@ -1910,7 +1916,17 @@
 			"requires":[
 			  {
 				"requireType":"inventoryKeep",
-				"requireID":"ratdom_rat_skelett_tail",
+				"requireID":"ratdom_rat_skelett_back",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_67",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_ribs",
 				"value":1
 			  }
 			]
@@ -1988,6 +2004,16 @@
 		]
 	},
 	{
+		"id":"ratdom_rat_warden_67",
+		"message":"Great! These bones look like King Rah's ribs!",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_70"
+		  }
+		]
+	},
+	{
 		"id":"ratdom_rat_warden_69",
 		"message":"Please go and find all of King Rah's bones.",
 		"replies":[
@@ -2017,6 +2043,11 @@
 				"requireType":"inventoryKeep",
 				"requireID":"ratdom_rat_skelett_back",
 				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_ribs",
+				"value":1
 			  }
 			]
 		  },
@@ -2036,6 +2067,11 @@
 			  {
 				"requireType":"inventoryKeep",
 				"requireID":"ratdom_rat_skelett_back",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_ribs",
 				"value":1
 			  }
 			]
@@ -2057,6 +2093,11 @@
 				"requireType":"inventoryKeep",
 				"requireID":"ratdom_rat_skelett_back",
 				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_ribs",
+				"value":1
 			  }
 			]
 		  },
@@ -2076,6 +2117,36 @@
 			  {
 				"requireType":"inventoryKeep",
 				"requireID":"ratdom_rat_skelett_tail",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_ribs",
+				"value":1
+			  }
+			]
+		  },
+		  {
+			"nextPhraseID":"ratdom_rat_warden_77a",
+			"requires":[
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_skull",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_leg",
+				"value":4
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_tail",
+				"value":1
+			  },
+			  {
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_rat_skelett_back",
 				"value":1
 			  }
 			]
@@ -2142,8 +2213,22 @@
 		]
 	},
 	{
+		"id":"ratdom_rat_warden_77a",
+		"message":"Great! Only King Rah's rib bones are missing. You will find them too, I am sure.",
+		"replies":[
+		  {
+			"text":"Of course.",
+			"nextPhraseID":"X"
+		  },
+		  {
+			"text":"I hope it is worth the hard work.",
+			"nextPhraseID":"X"
+		  }
+		]
+	},
+	{
 		"id":"ratdom_rat_warden_79",
-		"message":"In total we need the head, the back bone, 4 legs and the tail of course.",
+		"message":"In total we need the head, the ribs and the back bone, 4 legs and the tail of course.",
 		"replies":[
 		  {
 			"text":"OK, I'll be back.",
@@ -3241,7 +3326,7 @@
 	},
     {
         "id":"ratdom_skeleton_boss_70_10",
-        "message":"Good. I will shower you with gold and jewels.",
+        "message":"Good. I will shower you with gold, jewels and bones.",
 		"rewards":[
 			{
 				"rewardType":"questProgress",
@@ -3257,6 +3342,11 @@
 				"rewardType":"giveItem",
 				"rewardID":"gem1",
 				"value":2
+			},
+			{
+				"rewardType":"giveItem",
+				"rewardID":"ratdom_rat_skelett_ribs",
+				"value":1
 			}
 		],
 		"replies":[

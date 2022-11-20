@@ -173,6 +173,13 @@
         "category":"other"
     },
     {
+        "id":"ratdom_rat_skelett_ribs",
+        "iconID":"items_misc_3:150",
+        "name":"Rib bones of a rat",
+        "displaytype":"quest",
+        "category":"other"
+    },
+    {
         "id":"ratdom_wells_ball",
         "iconID":"items_misc:0",
         "name":"Shimmering globe",
