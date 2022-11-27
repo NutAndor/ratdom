@@ -1,5 +1,121 @@
 [
     {
+        "id":"ratdom_455_chest",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_455_chest_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":150,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_455_chest_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_455_chest_10",
+        "message":"This chest is empty.",
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":150
+			}
+		]
+    },
+    {
+        "id":"ratdom_455_chest_20",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_455_chest_35",
+                "requires":[
+                    {
+                        "requireType":"random",
+						"requireID":"17"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_455_chest_34",
+                "requires":[
+                    {
+                        "requireType":"random",
+						"requireID":"20"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_455_chest_33",
+                "requires":[
+                    {
+                        "requireType":"random",
+						"requireID":"25"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_455_chest_32",
+                "requires":[
+                    {
+                        "requireType":"random",
+						"requireID":"33"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_455_chest_31",
+                "requires":[
+                    {
+                        "requireType":"random",
+						"requireID":"50"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_455_chest_30"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_455_chest_30",
+        "message":"This chest is still empty."
+    },
+    {
+        "id":"ratdom_455_chest_31",
+        "message":"No matter how often you look - this chest is empty."
+    },
+    {
+        "id":"ratdom_455_chest_32",
+        "message":"Empty."
+    },
+    {
+        "id":"ratdom_455_chest_33",
+        "message":"Oh! What a surprise!",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_455_chest_33a"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_455_chest_33a",
+        "message":"This time the chest looks even more empty."
+    },
+    {
+        "id":"ratdom_455_chest_34",
+        "message":"Your sighs resound as a loud echo from the empty chest."
+    },
+    {
+        "id":"ratdom_455_chest_35",
+        "message":"How often do you want to check if the chest stays empty?"
+    },
+    {
         "id":"ratdom_bwm_sign",
         "message":"East Up Down West",
         "replies":[
@@ -111,7 +227,7 @@
     },
     {
         "id":"ratdom_dev_info_30",
-        "message":"Companion: Clevred will accompany you thou not seen. He is small enough to hide or travel in your bag. But he will talk to you, sometimes randomly, sometimes giving advice. \nHis presence is limited to the ratdom quests though.",
+        "message":"Companion: Clevred will accompany you though not seen. He is small enough to hide or travel in your bag. But he will talk to you, sometimes randomly, sometimes giving advice. \nHis presence is limited to the ratdom quests though.",
         "replies":[
             {
                 "text":"Lighting",
@@ -141,7 +257,7 @@
     },
     {
         "id":"ratdom_dev_info_44",
-        "message":"Rats: You may find out yourself, or you are told by Clevred after some time wandering: If you just want to get out again: Look for the passages whith a rat in front of it - they are leading back the shortest way to the entrance.",
+        "message":"Rats: You may find out yourself, or Clevred tells you after some time of wandering: If you want to get out of the maze again: Look for the passages whith a rat in front of it - they are directly leading back to the entrance.",
         "replies":[
             {
                 "text":"N",

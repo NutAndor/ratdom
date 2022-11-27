@@ -2172,7 +2172,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_71a",
-		"message":"Great! Now we only need the legs. You will find them too, I am sure.",
+		"message":"Great! Now we only need the fourth leg. You will find it too, I am sure.",
 		"replies":[
 		  {
 			"text":"Of course.",
@@ -3344,6 +3344,11 @@
 				"value":2
 			},
 			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_quest",
+				"value":37
+			},
+			{
 				"rewardType":"giveItem",
 				"rewardID":"ratdom_rat_skelett_ribs",
 				"value":1
@@ -3351,7 +3356,7 @@
 		],
 		"replies":[
             {
-				"text":"Hm, not much of a shower ...",
+				"text":"Hm, not much of a shower ... and ugh - there are even rat bones included.",
                 "nextPhraseID":"ratdom_skeleton_boss_70_20"
             }
         ]

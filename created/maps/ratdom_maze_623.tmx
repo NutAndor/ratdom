@@ -258,7 +258,7 @@
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUBuEWHUQuGEUj2IQthgEbhjFIwNbs5Gf3ryBekFgoP0wFDEAJvl3cg==
+   eJxTk2NgUBuEGAQG2g2jeBSDsMUgcMMoHhkYBMhNbzAw0H4YihgAtDJ2nQ==
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">

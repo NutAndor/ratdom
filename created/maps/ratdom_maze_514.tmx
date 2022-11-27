@@ -191,7 +191,7 @@
    eJztksENgCAMRZnEuIM4AqygjoCOgO5uOTRpmmJB4wHj4Z347+eD+s4YX8hckf3d++5Xd2vdT9yrzNtuy/+AlGvtzslZgBWYKjrQ2YAdCKRD89A5gB6IpCO3AT10ODGzQfOojxtchcc7nOINgAVG4SwIHuYtew/eEQVP+4bShhKPbkicm/+wOA==
   </data>
  </layer>
- <layer id="2" name="Objects" width="15" height="30">
+ <layer id="2" name="Objects" width="15" height="30" locked="1">
   <data encoding="base64" compression="zlib">
    eJwrkmNgKBrFo3gUj2IqYA0gjgdiTTL0JAAxCMQRaYYGkh50EIdHP7K+q3wQ2pwflY/NDbjsc+fH7wZkfVxM2NXi0o9snxQOvU+FEGxxEsxHBwLCmGIPhTDFBiP4LUqZfgBbFbjc
   </data>

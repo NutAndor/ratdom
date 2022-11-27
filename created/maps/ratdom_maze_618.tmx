@@ -258,7 +258,7 @@
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUBvFo3iAsOoA6R3sfhvFgxeDgBUbeXotgNiLTL2jmHYYALP2d1w=
+   eJxTk2NgUBvFo3iAsCoFekFgoN1PK7+N4sGLQcCKjTy9FkDsRabeUUw7DACUIXcZ
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">
@@ -418,7 +418,7 @@
     <property name="requireValue" value="31"/>
    </properties>
   </object>
-  <object id="78" name="ratdom_rat_conv2:2" type="replace" x="96" y="704" width="64" height="64" visible="0">
+  <object id="78" name="ratdom_rat_conv2:2" type="replace" x="96" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
