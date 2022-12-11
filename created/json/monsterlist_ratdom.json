@@ -824,7 +824,7 @@
     {
         "id":"ratdom_troll",
         "name":"Cave troll",
-        "iconID":"monsters_tometik5:14",
+        "iconID":"monsters_cyclops:0",
 		"maxHP":230,
 		"maxAP":10,
 		"moveCost":5,

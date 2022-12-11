@@ -125,6 +125,17 @@
         ]
     },
     {
+        "id":"ratdom_542_chair",
+        "message":"An inexplicable dreadful fear overtakes you.",
+		"rewards":[
+		  {
+			"rewardType":"actorCondition",
+			"rewardID":"fear",
+			"value":25
+		  }
+		]
+    },
+    {
         "id":"ratdom_check_backbone",
         "replies":[
             {
