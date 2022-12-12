@@ -195,7 +195,13 @@
 			{ "progress":121, "logText":"121=Met instrument maker" },
 			{ "progress":130, "logText":"130=Rah in museum." },
 			{ "progress":140, "logText":"140=Flora warning." },
-			{ "progress":150, "logText":"150=Saw empty chest" }
+			{ "progress":150, "logText":"150=Saw empty chest" },
+			{ "progress":162, "logText":"162=Troll_2 spawned" },
+			{ "progress":163, "logText":"163=Troll_3 spawned" },
+			{ "progress":164, "logText":"162=Troll_4 spawned" },
+			{ "progress":165, "logText":"162=Troll_5 spawned" },
+			{ "progress":166, "logText":"162=Troll_6 spawned" },
+			{ "progress":169, "logText":"169=Troll_9 spawned" }
 			]
     },
     {

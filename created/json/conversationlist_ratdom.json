@@ -4298,6 +4298,61 @@
     "message":"You stopped short under the stare of the skeleton leader."
   },
   {
+    "id":"ratdom_troll_kill",
+    "replies":[ {	"nextPhraseID":"ratdom_troll_kill_2",
+					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":162, "negate":true },
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_1", "value":2 }] },
+				{	"nextPhraseID":"ratdom_troll_kill_3", 
+					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":163, "negate":true },
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_2", "value":10 }] },
+				{	"nextPhraseID":"ratdom_troll_kill_4", 
+					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":164, "negate":true },
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_2", "value":10 }] },
+				{	"nextPhraseID":"ratdom_troll_kill_5", 
+					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":165, "negate":true },
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_2", "value":10 }] },
+				{	"nextPhraseID":"ratdom_troll_kill_6", 
+					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":166, "negate":true },
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_2", "value":10 }] },
+				{	"nextPhraseID":"ratdom_troll_kill_9", 
+					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":169, "negate":true },
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_3", "value":10 }] }]
+  },
+  {
+    "id":"ratdom_troll_kill_2",
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":162 },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_2", "mapName":"ratdom_maze_517" }]
+  },
+  {
+    "id":"ratdom_troll_kill_3",
+	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":163 },
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_1", "mapName":"ratdom_maze_517" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_3", "mapName":"ratdom_maze_517" }]
+  },
+  {
+    "id":"ratdom_troll_kill_4",
+	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":164 },
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_2", "mapName":"ratdom_maze_517" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_4", "mapName":"ratdom_maze_517" }]
+  },
+  {
+    "id":"ratdom_troll_kill_5",
+	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":165 },
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_3", "mapName":"ratdom_maze_517" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_5", "mapName":"ratdom_maze_517" }]
+  },
+  {
+    "id":"ratdom_troll_kill_6",
+	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":166 },
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_4", "mapName":"ratdom_maze_517" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_6", "mapName":"ratdom_maze_517" }]
+  },
+  {
+    "id":"ratdom_troll_kill_9",
+	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":169 },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_9", "mapName":"ratdom_maze_517" }]
+  },
+  {
     "id":"ratdom_uglybrute_script",
     "replies":[
       {

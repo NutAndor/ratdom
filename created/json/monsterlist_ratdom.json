@@ -822,32 +822,209 @@
         "droplistID":"drop_ratdom_tharal"
     },
     {
-        "id":"ratdom_troll",
+        "id":"ratdom_troll_1",
         "name":"Cave troll",
-        "iconID":"monsters_cyclops:0",
+        "iconID":"monsters_tometik5:14",
 		"maxHP":230,
 		"maxAP":10,
-		"moveCost":5,
+		"moveCost":2,
+        "movementAggressionType":"helpOthers",
 		"monsterClass":"giant",
 		"attackDamage":{
 			"min":1,
-			"max":15
+			"max":30
 		},
-		"spawnGroup":"ratdom_troll",
+		"spawnGroup":"ratdom_troll_1",
 		"droplistID":"ratdom_troll",
 		"attackCost":5,
-		"attackChance":60,
-		"blockChance":40,
+		"attackChance":90,
+		"blockChance":70,
 		"hitEffect":{
 			"conditionsTarget":[
 				{
 					"condition":"stunned",
 					"magnitude":1,
+					"duration":4,
+					"chance":"5"
+				}
+			]
+		}
+    },
+    {
+        "id":"ratdom_troll_2",
+        "name":"Cave troll",
+        "iconID":"monsters_tometik5:14",
+		"maxHP":230,
+		"maxAP":10,
+		"moveCost":2,
+        "movementAggressionType":"helpOthers",
+		"monsterClass":"giant",
+		"attackDamage":{
+			"min":1,
+			"max":30
+		},
+		"spawnGroup":"ratdom_troll_2",
+		"droplistID":"ratdom_troll",
+		"attackCost":5,
+		"attackChance":90,
+		"blockChance":70,
+		"hitEffect":{
+			"conditionsTarget":[
+				{
+					"condition":"stunned",
+					"magnitude":1,
+					"duration":4,
+					"chance":"5"
+				}
+			]
+		}
+    },
+    {
+        "id":"ratdom_troll_3",
+        "name":"Cave troll",
+        "iconID":"monsters_tometik5:14",
+		"maxHP":330,
+		"maxAP":10,
+		"moveCost":2,
+        "movementAggressionType":"helpOthers",
+		"monsterClass":"giant",
+		"attackDamage":{
+			"min":10,
+			"max":40
+		},
+		"spawnGroup":"ratdom_troll_3",
+		"droplistID":"ratdom_troll",
+		"attackCost":5,
+		"attackChance":90,
+		"blockChance":70,
+		"hitEffect":{
+			"conditionsTarget":[
+				{
+					"condition":"stunned",
+					"magnitude":1,
+					"duration":4,
+					"chance":"10"
+				}
+			]
+		}
+    },
+    {
+        "id":"ratdom_troll_4",
+        "name":"Cave troll",
+        "iconID":"monsters_tometik5:14",
+		"maxHP":330,
+		"maxAP":10,
+		"moveCost":2,
+        "movementAggressionType":"helpOthers",
+		"monsterClass":"giant",
+		"attackDamage":{
+			"min":10,
+			"max":40
+		},
+		"spawnGroup":"ratdom_troll_4",
+		"droplistID":"ratdom_troll",
+		"attackCost":5,
+		"attackChance":90,
+		"blockChance":70,
+		"hitEffect":{
+			"conditionsTarget":[
+				{
+					"condition":"stunned",
+					"magnitude":1,
+					"duration":4,
+					"chance":"10"
+				}
+			]
+		}
+    },
+    {
+        "id":"ratdom_troll_5",
+        "name":"Cave troll",
+        "iconID":"monsters_tometik5:14",
+		"maxHP":430,
+		"maxAP":10,
+		"moveCost":2,
+        "movementAggressionType":"helpOthers",
+		"monsterClass":"giant",
+		"attackDamage":{
+			"min":15,
+			"max":50
+		},
+		"spawnGroup":"ratdom_troll_5",
+		"droplistID":"ratdom_troll",
+		"attackCost":5,
+		"attackChance":90,
+		"blockChance":70,
+		"hitEffect":{
+			"conditionsTarget":[
+				{
+					"condition":"stunned",
+					"magnitude":1,
+					"duration":4,
+					"chance":"5"
+				}
+			]
+		}
+    },
+    {
+        "id":"ratdom_troll_6",
+        "name":"Cave troll",
+        "iconID":"monsters_tometik5:14",
+		"maxHP":430,
+		"maxAP":10,
+		"moveCost":2,
+        "movementAggressionType":"helpOthers",
+		"monsterClass":"giant",
+		"attackDamage":{
+			"min":15,
+			"max":50
+		},
+		"spawnGroup":"ratdom_troll_6",
+		"droplistID":"ratdom_troll",
+		"attackCost":5,
+		"attackChance":90,
+		"blockChance":70,
+		"hitEffect":{
+			"conditionsTarget":[
+				{
+					"condition":"stunned",
+					"magnitude":1,
+					"duration":4,
+					"chance":"5"
+				}
+			]
+		}
+    },
+    {
+        "id":"ratdom_troll_9",
+        "name":"Giant cave troll",
+        "iconID":"monsters_cyclops:0",
+		"maxHP":590,
+		"maxAP":10,
+		"moveCost":8,
+        "unique":1,
+		"monsterClass":"giant",
+		"attackDamage":{
+			"min":20,
+			"max":60
+		},
+		"movementAggressionType":"protectSpawn",
+		"spawnGroup":"ratdom_troll_9",
+		"droplistID":"ratdom_troll_9",
+		"attackCost":9,
+		"attackChance":90,
+		"blockChance":90,
+		"hitEffect":{
+			"conditionsTarget":[
+				{
+					"condition":"stunned",
+					"magnitude":3,
 					"duration":2,
 					"chance":"10"
 				}
 			]
 		}
+        "damageResistance":15
     },
     {
         "id":"ratdom_uglybrute",
