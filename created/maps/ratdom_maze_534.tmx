@@ -324,49 +324,49 @@
   <object id="52" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="53" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="54" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
-  <object id="68" name="ratdom_534_j1s" type="script" x="64" y="864" width="64" height="32">
+  <object id="68" name="ratdom_534_j1s" type="mapchange" x="64" y="864" width="64" height="32">
    <properties>
     <property name="map" value="ratdom_maze_534"/>
     <property name="place" value="ratdom_534_j1n"/>
    </properties>
   </object>
-  <object id="69" name="ratdom_534_j1n" type="script" x="96" y="800" width="64" height="32">
+  <object id="69" name="ratdom_534_j1n" type="mapchange" x="96" y="800" width="64" height="32">
    <properties>
     <property name="map" value="ratdom_maze_534"/>
     <property name="place" value="ratdom_534_j1s"/>
    </properties>
   </object>
-  <object id="70" name="ratdom_534_j2s" type="script" x="192" y="640" width="96" height="32">
+  <object id="70" name="ratdom_534_j2s" type="mapchange" x="192" y="640" width="96" height="32">
    <properties>
     <property name="map" value="ratdom_maze_534"/>
     <property name="place" value="ratdom_534_j2n"/>
    </properties>
   </object>
-  <object id="71" name="ratdom_534_j2n" type="script" x="192" y="576" width="96" height="32">
+  <object id="71" name="ratdom_534_j2n" type="mapchange" x="192" y="576" width="96" height="32">
    <properties>
     <property name="map" value="ratdom_maze_534"/>
     <property name="place" value="ratdom_534_j2s"/>
    </properties>
   </object>
-  <object id="72" name="ratdom_534_j3s" type="script" x="224" y="352" width="64" height="32">
+  <object id="72" name="ratdom_534_j3s" type="mapchange" x="224" y="352" width="64" height="32">
    <properties>
     <property name="map" value="ratdom_maze_534"/>
     <property name="place" value="ratdom_534_j3n"/>
    </properties>
   </object>
-  <object id="73" name="ratdom_534_j3n" type="script" x="224" y="288" width="64" height="32">
+  <object id="73" name="ratdom_534_j3n" type="mapchange" x="224" y="288" width="64" height="32">
    <properties>
     <property name="map" value="ratdom_maze_534"/>
     <property name="place" value="ratdom_534_j3s"/>
    </properties>
   </object>
-  <object id="74" name="ratdom_534_j4e" type="script" x="160" y="128" width="32" height="64">
+  <object id="74" name="ratdom_534_j4e" type="mapchange" x="160" y="128" width="32" height="64">
    <properties>
     <property name="map" value="ratdom_maze_534"/>
     <property name="place" value="ratdom_534_j4w"/>
    </properties>
   </object>
-  <object id="75" name="ratdom_534_j4w" type="script" x="96" y="96" width="32" height="64">
+  <object id="75" name="ratdom_534_j4w" type="mapchange" x="96" y="96" width="32" height="64">
    <properties>
     <property name="map" value="ratdom_maze_534"/>
     <property name="place" value="ratdom_534_j4e"/>

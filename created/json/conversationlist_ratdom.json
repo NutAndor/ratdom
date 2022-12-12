@@ -99,6 +99,7 @@
         "message":"Oh! What a surprise!",
         "replies":[
             {
+                "text":"N",
                 "nextPhraseID":"ratdom_455_chest_33a"
             }
         ]
@@ -120,7 +121,8 @@
         "message":"East Up Down West",
         "replies":[
             {
-                "text":"Now what's that supposed to mean?"
+                "text":"Now what's that supposed to mean?",
+                "nextPhraseID":"X"
             }
         ]
     },

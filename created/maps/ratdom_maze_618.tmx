@@ -228,7 +228,7 @@
  </layer>
  <layer id="9" name="Light3" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IkHA/FmkSq14CqTwBiGIgjQr8Gkp7LYgwogJB+GyS7WNgZMIAWEXaCwCkserHZja4PBG5h0YuuH5s+QgDmdlL1IeslB4xUvQAy47cd
+   eJwrkmNgKBrFo3gUj2IkHA/FmkSq14CqTwBiGIgjQr8Gkp7LYgwogJB+GzkGvECLCDtB4BQ7pl5sdqPrA4FbWPSi68emjxCAuZ1Ufch6yQEjVS8AGiq3Eg==
   </data>
  </layer>
  <layer id="10" name="Light4" width="15" height="30" visible="0">
