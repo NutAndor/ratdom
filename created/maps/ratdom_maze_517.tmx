@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="82">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="25" nextobjectid="85">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -188,12 +188,12 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzFlNERgzAMQ7kOwnWH0hEKI0BHSBmBdtzuUefDR89n2Qo/fOiPFwVL8dh33Wi0ANnvrJ6iF9AccJNoFb2BiugRsB/RFWhz2OGPRZwq8o24bFatfpn3jeCQd5RN5l0aeZtNlG3m7WUbdfPIrCu3HmC10143GdbjmIxRL8/oFZuNlw/bKZ2z7SSbrZ3zRnh7nvY9RPvye8G7qvLZvqz76w74bF+qPL7lTaE7oHsP/b530RmFzBz9hz2fkd7rB/vXpug=
+   eJzFlNERgzAMQ7kO0mOH0hEKI0BHSBmBMm73qLnDPz7LVvLDx/tDUbAUj/euGw0LwH5neQsfwBzoJmEVvoAivALtLvSALdEindKqzWZV65d5Pwgd8o6yybxLpd5mE2WbeUfZet1smfWhWxu02mmvm4zW0zEZo15e0Ss2Gy8ftlM6Z9tJNls7543w9jzte4j25e+Gd9Whz/blIDyBPtuXiqeveVPoDujew0l0RiEzR/9hz2fQe/0BaU6m+g==
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBhcwFyYPH0PhTDF/mMRoybgx+NWYzn8eg+LkaePGgCX3fQA1LR7MwXxe5jGaQMXICVNCpCZFwYKUCtuseXlgQZFchBsQ0b+hOm1AmI/qH4+IuMWphddP6l6Yfp9kcw4jSec0fWS4gZcerG5AQZgaR2fXnxu+C1KnF5ccQgA8MEquw==
+   eJxjYBhcwFwYQnMxkabvoRCm2H8sYtQE/MK45Yzl8Os9LEaePmoAXHbTA6DbnURiPCODzRTE72Eapw1cgJQ0KYAnfQ1GQK10hS0vDzQokoNgGzLyJ0yvFRD7QfXzERm3ML3o+knVC9Pvi2TGaTzhjK6XFDfg0ovNDTAAS+v49OJzw29R4vTiikMAA0orKw==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -209,6 +209,31 @@
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFccoMN4wLk6iNGP7n68Okn17+UhBc99SLrpzSeB0ovqfrpHcfYwHBPVwOhl5rhTKm7ydFP7fim1A3k6KWGfhAGAIz7DQY=
+  </data>
+ </layer>
+ <layer id="21" name="Objects_2" width="15" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBicQJB9oF0wCkbBKBgFo2AkAAChgQAZ
+  </data>
+ </layer>
+ <layer id="22" name="Objects_3" width="15" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAdEGQnX68iBXpHwSgYBaNgFIwCYgEAqKkAQQ==
+  </data>
+ </layer>
+ <layer id="24" name="Above_3" width="15" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBic4KbQQLtgFIyCUTAKRsFIAADwEQDs
+  </data>
+ </layer>
+ <layer id="20" name="Objects_9" width="15" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYKANEGZnYBABYlF20vUqA/WoALEqGXrvCJGuZxSMglEwCkbByAUAKk0BwQ==
+  </data>
+ </layer>
+ <layer id="23" name="Above_9" width="15" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh84IwQA8NOIN4lNNAuGQWjYBSMglEw3AEA2SsCdg==
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -324,7 +349,7 @@
   <object id="69" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="70" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="71" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
-  <object id="80" name="ratdom_troll_kill" type="script" x="96" y="96" width="288" height="576">
+  <object id="80" name="ratdom_troll_kill" type="script" x="128" y="96" width="256" height="576">
    <properties>
     <property name="when" value="always"/>
    </properties>
@@ -344,48 +369,48 @@
     <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
-  <object id="68" name="ratdom_troll_1" type="spawn" x="160" y="192" width="192" height="160">
+  <object id="68" name="ratdom_troll_1" type="spawn" x="160" y="96" width="192" height="128">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="ratdom_troll_1"/>
    </properties>
   </object>
-  <object id="81" name="ratdom_troll_2" type="spawn" x="128" y="98" width="256" height="672">
+  <object id="81" name="ratdom_troll_2" type="spawn" x="128" y="98" width="256" height="318">
    <properties>
     <property name="active" value="false"/>
-    <property name="quantity" value="3"/>
+    <property name="quantity" value="5"/>
     <property name="spawngroup" value="ratdom_troll_2"/>
    </properties>
   </object>
   <object id="76" name="ratdom_troll_3" type="spawn" x="128" y="96" width="256" height="672">
    <properties>
     <property name="active" value="false"/>
-    <property name="quantity" value="3"/>
+    <property name="quantity" value="8"/>
     <property name="spawngroup" value="ratdom_troll_3"/>
    </properties>
   </object>
-  <object id="77" name="ratdom_troll_4" type="spawn" x="128" y="96" width="256" height="224">
+  <object id="77" name="ratdom_troll_4" type="spawn" x="128" y="96" width="256" height="672">
    <properties>
     <property name="active" value="false"/>
-    <property name="quantity" value="3"/>
+    <property name="quantity" value="10"/>
     <property name="spawngroup" value="ratdom_troll_4"/>
    </properties>
   </object>
   <object id="79" name="ratdom_troll_5" type="spawn" x="128" y="96" width="256" height="672">
    <properties>
     <property name="active" value="false"/>
-    <property name="quantity" value="3"/>
+    <property name="quantity" value="10"/>
     <property name="spawngroup" value="ratdom_troll_5"/>
    </properties>
   </object>
-  <object id="78" name="ratdom_troll_6" type="spawn" x="128" y="96" width="256" height="224">
+  <object id="78" name="ratdom_troll_6" type="spawn" x="128" y="96" width="256" height="384">
    <properties>
     <property name="active" value="false"/>
-    <property name="quantity" value="3"/>
+    <property name="quantity" value="5"/>
     <property name="spawngroup" value="ratdom_troll_6"/>
    </properties>
   </object>
-  <object id="75" name="ratdom_troll_9" type="spawn" x="128" y="96" width="256" height="224">
+  <object id="75" name="ratdom_troll_9" type="spawn" x="128" y="96" width="256" height="256">
    <properties>
     <property name="active" value="false"/>
     <property name="quantity" value="1"/>
@@ -481,6 +506,32 @@
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="31"/>
+   </properties>
+  </object>
+  <object id="82" name="ratdom_troll_2" type="replace" x="224" y="32" width="96" height="96">
+   <properties>
+    <property name="Objects" value="Objects_2"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="162"/>
+   </properties>
+  </object>
+  <object id="84" name="ratdom_troll_3" type="replace" x="224" y="32" width="96" height="96">
+   <properties>
+    <property name="Above" value="Above_3"/>
+    <property name="Objects" value="Objects_3"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="163"/>
+   </properties>
+  </object>
+  <object id="83" name="ratdom_troll_9" type="replace" x="224" y="32" width="96" height="96">
+   <properties>
+    <property name="Above" value="Above_9"/>
+    <property name="Objects" value="Objects_9"/>
+    <property name="requireId" value="ratdom_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="169"/>
    </properties>
   </object>
  </objectgroup>

@@ -823,7 +823,7 @@
     },
     {
         "id":"ratdom_troll_1",
-        "name":"Cave troll",
+        "name":"Young cave troll",
         "iconID":"monsters_tometik5:14",
 		"maxHP":230,
 		"maxAP":10,
@@ -852,7 +852,7 @@
     },
     {
         "id":"ratdom_troll_2",
-        "name":"Cave troll",
+        "name":"Weak cave troll",
         "iconID":"monsters_tometik5:14",
 		"maxHP":230,
 		"maxAP":10,
@@ -881,7 +881,7 @@
     },
     {
         "id":"ratdom_troll_3",
-        "name":"Cave troll",
+        "name":"Big cave troll",
         "iconID":"monsters_tometik5:14",
 		"maxHP":330,
 		"maxAP":10,
@@ -910,7 +910,7 @@
     },
     {
         "id":"ratdom_troll_4",
-        "name":"Cave troll",
+        "name":"Stubborn cave troll",
         "iconID":"monsters_tometik5:14",
 		"maxHP":330,
 		"maxAP":10,
@@ -939,7 +939,7 @@
     },
     {
         "id":"ratdom_troll_5",
-        "name":"Cave troll",
+        "name":"Dangerous cave troll",
         "iconID":"monsters_tometik5:14",
 		"maxHP":430,
 		"maxAP":10,
@@ -968,7 +968,7 @@
     },
     {
         "id":"ratdom_troll_6",
-        "name":"Cave troll",
+        "name":"Ancient	cave troll",
         "iconID":"monsters_tometik5:14",
 		"maxHP":430,
 		"maxAP":10,

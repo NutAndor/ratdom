@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYECAIiaGIQekhTHFxCnwx2MhBPuhEG51IPCRgPxgBYfFCPuNWMBJYliD7IYBSQrT23YK/HCcBL1DMV88GYC0iRy3o4C6AFsa/EZEHMPyJznpgdL8OdgBcnoFAALCDcg=
+   eJxjYECAIiaGIQekhTHFxCnwx2MhBPuhEG51IPCRgPxgBYfFCPuNWMBJYliD7IYBSsNvOwX6j5OgdyjmiycDkDaR43YUUBdgS4PfiIhjWP4kJz1IDsF0TwpATq8AIc4OsA==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">

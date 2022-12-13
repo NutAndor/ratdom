@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYBg+4JEQKp9feGDcQSp4IURYDTXBYTHK9FPiXkrtHmggNgTS1D86pycYGAxx+3yA/A4CAxXuIECqv4ktG5/QyU9PybRnBx+CTUncAwCWEQ2f
+   eJxjYBge4KMQA8MjIVQxfuGBcQup4IUQYTXUBIfFKNNPiXsptXuggdgQSFP/6JyeYGAwxO3zAfI7CAxUuIMAqf4mtmx8Qic/PSXTnh18CDYlcQ8A6RkOog==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFc4sgAl358etHNIUUfLnfgkyfGH4TMI0U/KWFBqj5K44DUsKemXlxxSW93k6ofWQ+5eukVx9jAcE9XA6GXmuFMrF58gFx9+MwgpAaXHCn+QlZHij6YemzmkIoBDB7xwg==
+   eJzdklEKACAIQztF979CN4w+AgmnLsqggT/lG0trtZQGagidSyHeYlcfhtNyaHk9/4gimVjO4tk5slx0NrdYtMvs3CwvmV02a8eafv9XL9iTc46ylnY5y8PrQXfMu2Qfw81+zYetDugE8ok=
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
