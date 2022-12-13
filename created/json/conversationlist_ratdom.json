@@ -4307,21 +4307,32 @@
 								{ "requireType":"killedMonster", "requireID":"ratdom_troll_2", "value":5 }] },
 				{	"nextPhraseID":"ratdom_troll_kill_4", 
 					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":164, "negate":true },
-								{ "requireType":"killedMonster", "requireID":"ratdom_troll_2", "value":10 }] },
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_3", "value":10 }] },
 				{	"nextPhraseID":"ratdom_troll_kill_5", 
 					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":165, "negate":true },
-								{ "requireType":"killedMonster", "requireID":"ratdom_troll_2", "value":12 }] },
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_4", "value":12 }] },
 				{	"nextPhraseID":"ratdom_troll_kill_6", 
 					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":166, "negate":true },
-								{ "requireType":"killedMonster", "requireID":"ratdom_troll_2", "value":10 }] },
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_5", "value":10 }] },
 				{	"nextPhraseID":"ratdom_troll_kill_9", 
 					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":169, "negate":true },
-								{ "requireType":"killedMonster", "requireID":"ratdom_troll_3", "value":10 }] }]
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_6", "value":10 }] }]
   },
   {
     "id":"ratdom_troll_kill_2",
+    "replies":[ { "nextPhraseID":"ratdom_troll_kill_2a" }],
 	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":162 },
 				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_2", "mapName":"ratdom_maze_517" }]
+  },
+  {
+    "id":"ratdom_troll_kill_2a",
+    "replies":[ { 	"text":"N", 
+					"nextPhraseID":"ratdom_troll_kill_2b" }],
+    "message":"The last words of the young troll are echoing through the cave:\n'Help! Help! This sneaky dwarf kills us ...'\n\nThen - silence.\n\nSuddenly the cave was filled with more and more trolls."
+  },
+  {
+    "id":"ratdom_troll_kill_2b",
+    "message":"They were everywhere!"
   },
   {
     "id":"ratdom_troll_kill_3",
