@@ -450,6 +450,48 @@
 		]
 	},
 	{
+		"id":"ratdom_troll_loot_1",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":1000,
+					"max":5000
+				}
+			},
+			{
+				"itemID":"gem2",
+				"chance":"100",
+				"quantity":{
+					"min":1,
+					"max":3
+				}
+			}
+		]
+	},
+	{
+		"id":"ratdom_troll_loot_2",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":1000,
+					"max":5000
+				}
+			},
+			{
+				"itemID":"gem1",
+				"chance":"100",
+				"quantity":{
+					"min":1,
+					"max":3
+				}
+			}
+		]
+	},
+	{
 		"id":"ratdom_troll_9",
 		"items":[
 			{

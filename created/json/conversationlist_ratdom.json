@@ -4298,6 +4298,72 @@
     "message":"You stopped short under the stare of the skeleton leader."
   },
   {
+    "id":"ratdom_troll_door1",
+	"switchToNPC":"ratdom_rat",
+    "message":"Do you really want to open this ominous looking massive door? It looks dangerous.",
+    "replies":[
+      {
+		"text":"Mmh, maybe not.",
+        "nextPhraseID":"X"
+      },
+      {
+		"text":"Sure. No risk no fun!",
+        "nextPhraseID":"ratdom_troll_door1_10"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_troll_door1_10",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":170
+		}
+	]
+  },
+  {
+    "id":"ratdom_troll_door2",
+	"switchToNPC":"ratdom_rat",
+    "message":"It must be extremely dangerous, because it is secured with two strong doors.",
+    "replies":[
+      {
+		"text":"Indeed.",
+        "nextPhraseID":"ratdom_troll_door2_10"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_troll_door2_10",
+	"switchToNPC":"ratdom_rat",
+    "message":"Also I don't believe that the artifact is behind this door.",
+    "replies":[
+      {
+		"text":"OK. Let's go back and seek your artifact.",
+        "nextPhraseID":"ratdom_troll_door2_20"
+      },
+	  {
+		"text":"No, Clevred. We are going inside.",
+        "nextPhraseID":"ratdom_troll_door2_30"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_troll_door2_20",
+    "message":"Yeah. Wise decision."
+  },
+  {
+    "id":"ratdom_troll_door2_30",
+    "message":"He never listens to me, does he?",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":171
+		}
+	]
+  },
+  {
     "id":"ratdom_troll_kill",
     "replies":[ {	"nextPhraseID":"ratdom_troll_kill_2",
 					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":162, "negate":true },
@@ -4316,52 +4382,55 @@
 								{ "requireType":"killedMonster", "requireID":"ratdom_troll_5", "value":10 }] },
 				{	"nextPhraseID":"ratdom_troll_kill_9", 
 					"requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":169, "negate":true },
-								{ "requireType":"killedMonster", "requireID":"ratdom_troll_6", "value":10 }] }]
+								{ "requireType":"killedMonster", "requireID":"ratdom_troll_6", "value":5 }] }]
   },
   {
     "id":"ratdom_troll_kill_2",
     "replies":[ { "nextPhraseID":"ratdom_troll_kill_2a" }],
-	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":162 },
-				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_2", "mapName":"ratdom_maze_517" }]
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":162 }]
   },
   {
     "id":"ratdom_troll_kill_2a",
     "replies":[ { 	"text":"N", 
 					"nextPhraseID":"ratdom_troll_kill_2b" }],
-    "message":"The last words of the young troll are echoing through the cave:\n'Help! Help! This sneaky dwarf kills us ...'\n\nThen - silence.\n\nSuddenly the cave was filled with more and more trolls."
+    "message":"The last words of the young troll are echoing through the cave:\n'Help! Help! This sneaky dwarf kills us ...'\n\nThen - silence.\n\nSuddenly the cave is filled with the sound of stomping feet."
   },
   {
     "id":"ratdom_troll_kill_2b",
-    "message":"They were everywhere!"
+    "message":"Trolls - they are everywhere!"
   },
   {
     "id":"ratdom_troll_kill_3",
 	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":163 },
-				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_1", "mapName":"ratdom_maze_517" },
-				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_3", "mapName":"ratdom_maze_517" }]
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_1", "mapName":"ratdom_maze_517a" }]
   },
   {
     "id":"ratdom_troll_kill_4",
 	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":164 },
-				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_2", "mapName":"ratdom_maze_517" },
-				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_4", "mapName":"ratdom_maze_517" }]
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_2a", "mapName":"ratdom_maze_517a" },
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_2b", "mapName":"ratdom_maze_517a" },
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_2c", "mapName":"ratdom_maze_517a" }]
   },
   {
     "id":"ratdom_troll_kill_5",
 	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":165 },
-				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_3", "mapName":"ratdom_maze_517" },
-				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_5", "mapName":"ratdom_maze_517" }]
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_3", "mapName":"ratdom_maze_517a" }]
   },
   {
     "id":"ratdom_troll_kill_6",
 	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":166 },
-				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_4", "mapName":"ratdom_maze_517" },
-				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_6", "mapName":"ratdom_maze_517" }]
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_4a", "mapName":"ratdom_maze_517a" },
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_4b", "mapName":"ratdom_maze_517a" }]
   },
   {
     "id":"ratdom_troll_kill_9",
 	"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":169 },
-				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_9", "mapName":"ratdom_maze_517" }]
+				{ "rewardType":"deactivateSpawnArea", "rewardID":"ratdom_troll_5", "mapName":"ratdom_maze_517a" },
+				{ "rewardType":"spawnAll", "rewardID":"ratdom_troll_1", "mapName":"ratdom_maze_517a" }]
+  },
+  {
+    "id":"ratdom_troll_sign1",
+    "message":"Beware the trolls!"
   },
   {
     "id":"ratdom_uglybrute_script",
