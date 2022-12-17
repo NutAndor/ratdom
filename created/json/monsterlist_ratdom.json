@@ -232,7 +232,7 @@
     },
     {
         "id":"ratdom_maze_boulder1",
-        "name":"Boulder",
+        "name":"Flaming orb",
         "iconID":"monsters_rltiles1:15",
 		"moveCost":5,
         "phraseID":"ratdom_maze_boulder",
@@ -240,7 +240,7 @@
     },
     {
         "id":"ratdom_maze_boulder2",
-        "name":"Boulder",
+        "name":"Flaming orb",
         "iconID":"monsters_rltiles1:14",
 		"moveCost":5,
         "phraseID":"ratdom_maze_boulder",
@@ -248,7 +248,7 @@
     },
     {
         "id":"ratdom_maze_boulder3",
-        "name":"Boulder",
+        "name":"Flaming orb",
         "iconID":"monsters_rltiles1:3",
 		"moveCost":5,
         "phraseID":"ratdom_maze_boulder",
@@ -256,7 +256,7 @@
     },
     {
         "id":"ratdom_maze_boulder4",
-        "name":"Boulder",
+        "name":"Flaming orb",
         "iconID":"monsters_rltiles1:15",
 		"moveCost":10,
         "phraseID":"ratdom_maze_boulder",
@@ -264,7 +264,7 @@
     },
     {
         "id":"ratdom_maze_boulder5",
-        "name":"Boulder",
+        "name":"Flaming orb",
         "iconID":"monsters_rltiles1:15",
 		"moveCost":2,
         "phraseID":"ratdom_maze_boulder",
@@ -880,7 +880,7 @@
     },
     {
         "id":"ratdom_troll_3",
-        "name":"Big cave troll",
+        "name":"Angry cave troll",
         "iconID":"monsters_tometik5:14",
 		"maxHP":330,
 		"maxAP":10,
@@ -909,7 +909,7 @@
     },
     {
         "id":"ratdom_troll_4",
-        "name":"Stubborn cave troll",
+        "name":"Mad cave troll",
         "iconID":"monsters_tometik5:14",
 		"maxHP":330,
 		"maxAP":10,

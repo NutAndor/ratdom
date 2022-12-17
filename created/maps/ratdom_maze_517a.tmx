@@ -191,14 +191,14 @@
    eJzd08ENgzAMBdCIQRBihdIRCCMAI5SOUFiyXaGDkEi2ZFU/jgOXtod/QTx9hxhfO+dB5pCGMibeQZlC7sLe6FnOxb4lZBP2Qc+0/pn6VuE4K/UjP5DbgJP90ffAak56ZHOO8w/Wn7TTiZl5d1rFXUBntLw7z8q5V4Vtai+vdPfvhOP/Ap3X8q3RXpXcE7I891Fr6f42azmzZnPdRy3aScvcFvfpo+kKnJxdO9+v2R32IpqF
   </data>
  </layer>
- <layer id="2" name="Objects" width="15" height="30">
+ <layer id="2" name="Objects" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYKAduCNEup7LTBCaiwm7/EWgma/RzLUQhNBrsOiByZEMhMnUhwRO4/A/PxFmPyEQdi/ICNuBAofF8Mv/p7JfXlLZPOQ09JwIs2H+PSOEPU2im4kOBAikj2t0iHti4oQe7iAWEBMv2AChtAkDb+jhVxLKHGLdjQ8EsRGn7iYWvydh0fuKDmFEbjwTAgBVJhkn
+   eJxjYKAduCNEup7LTBCaiwm7/EWgma/RzLUQhNBrsOiByZEMhMnUhwRO4/A/PxFmPyEQdi/ICNuBAofF8Mv/p7JfXlLZPOQ09JwIs2H+PSOEPU2im4kOBAikj2t0iHti4oQe7iAWEBMv2AChtAkDb+jhVxLKHGLdTQ1wE4vfk9gwxV7RIYzIjWdCAAD4/RjP
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAO3ORQMTZ5XCBCDhWTArLkUDEpoEYOFRMCl8VIMx8ZHB7VSzSYy0S+Xkr0I8dvN4lmoPv3MQn+p9S/A5UuKQVDMT8N1bii1N2UgqEY1/j0AgC4sB1x
+   eJxjYMAO3ORQMTZ5XCBCDhWTArLkUDEpoEYOFRMCl8VIMx8ZHB7VSzSYy0S+Xkr0I8dvN4lmoPv3MQn+p9S/A5UuKQVDMT8N1bii1N0gEMRGvt6hGNf49AIAFNkdyQ==
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30">
@@ -433,6 +433,7 @@
   </object>
   <object id="98" name="ratdom_troll_door2" type="replace" x="256" y="800" width="32" height="64">
    <properties>
+    <property name="Above" value="Walkable"/>
     <property name="Objects" value="Walkable"/>
     <property name="requireId" value="ratdom_nondisplay"/>
     <property name="requireType" value="questProgress"/>

@@ -188,12 +188,12 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJy1lEkOwjAMRXuBXCHKFaCFPWXougwqLBk2pUcA7k6s2mqw3MZZUOkrm744+f6Os1nmvF5erVfjdUbBt7PjcoGIf6JonzF2IfBvFO2zVfKF6deZX3PT79FMsCG/Qbb26xL5NlKb+KMZzgD8HveIscQ/zK8HtZKtmHegXMFJfXMKr6Zqt4n81d/xhjopvZZq1wlegy7s3CslC1xn0/tUIfcR/NawEqfpsZQNTc1/5ErbG/KZsnE3+kyRzzyT2t5yn+EditWWMsHnQXr7iJN6y9/QJoGDd28evH10/xhHc1BCnpGn+xMXziv1BjJR2H4OSpzDtRl6zuvR/wXzA2pC/UPApmSvYv+lZjY8zxersaZM
+   eJy1lEsSgjAMhrlAr9DpFVR0L4qs8THo0scGPQJ6d5tpMtRMgHQhM/90w5e0fx7OZpnz6rxar8brjIJvZ4flIhH/RFGcIXYp8G8UxSmVfG7COfPnwoQYzQgb81tka3+uvAoT8o/lJv5o+jsAv8cYUyzxD/PrQa1kK+YdaKHgpLo5hVdjudtE/urfeEOdlF5LuesEr0EXdu+1kgXuZdPrVCH3EfzWsBKnqbHUG5qc/+grbW3IZ+qNu9H3FPnMe1JbW+4z7KGp3FJP8HmQdh9xUm35Dm0SONh782j30funOJoD2Hkl8h2yxMXzSrWBnshtmIMC53Bj+przfPR/zvyAnJD/ELEpvVex/1J7Nr7PF/QRpkk=
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYGBgeCzEgBPEyTEwxAOxJhAXoWFkwCOM2wwtAnplhHGbEYfFbmwAZkYDmjy63YQAsn5S9SLrJ1XvU6Q4IEUvvrjDBQ6Lka6HWgDZbvS4IhVQqp8UQE44YwOPSDDnKZl2UsutpIKBTFfUAvjKMWzgIVJYy5ColxyAL02Qmx/skNzNg4MNAn/Q7J7LBKH7oeqQ/U9MWMxhQpjxkgpp9jkFZgAAzesmkg==
+   eJxjYGBgeCzEgBPEyTEwxAOxJhAXoWFkwCOM2wwtAnplhHGbEYfFbmwAZkYDmjy63aQAcvTC7CdV71OkOCBFL764wwUOi5Guh1oA2W70uCIVUKqfFEBOOGMDj0gw5ymZdlLLraSCgUxX1AL4yjFs4CFSWMuQqJccgC9NkJsf7JDczYODDQJ/0OyeywSh+6HqkP1PTFjMYUKY8ZIKafY5BWYAAB7MJfQ=
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -383,7 +383,7 @@
   </object>
  </objectgroup>
  <objectgroup id="18" name="Keys" visible="0"/>
- <objectgroup id="19" name="Replace" visible="0">
+ <objectgroup id="19" name="Replace">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">
    <properties>
     <property name="Top" value="Light10"/>
@@ -456,7 +456,7 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object id="70" name="ratdom_rat_conv2:1" type="replace" x="96" y="736" width="32" height="32" visible="0">
+  <object id="70" name="ratdom_rat_conv2:1" type="replace" x="288" y="288" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
