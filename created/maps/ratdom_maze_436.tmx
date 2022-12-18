@@ -414,7 +414,7 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object id="69" name="ratdom_rat_conv2:1" type="replace" x="192" y="32" width="32" height="32" visible="0">
+  <object id="69" name="ratdom_rat_conv2:1" type="replace" x="288" y="64" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>

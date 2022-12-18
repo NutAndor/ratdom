@@ -256,7 +256,7 @@
    eJxjYBgFo2AUjAIIOCw20C4YBaOA/gAAi0gA2g==
   </data>
  </layer>
- <layer id="15" name="Compass" width="15" height="30" visible="0">
+ <layer id="15" name="Compass" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxTk2NgUBvFo3gUj+JRPIpHKAYAFCd3iQ==
   </data>
@@ -327,7 +327,7 @@
   <object id="73" name="ratdom_ff_guard_loot1" type="container" x="256" y="480" width="32" height="32"/>
   <object id="74" name="ratdom_ff_guard_loot2" type="container" x="160" y="544" width="32" height="32"/>
  </objectgroup>
- <objectgroup id="17" name="Spawn">
+ <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
   <object id="44" name="cavesnake2" type="spawn" x="160" y="672" width="160" height="192">
    <properties>
@@ -434,7 +434,7 @@
     <property name="requireValue" value="8"/>
    </properties>
   </object>
-  <object id="69" name="ratdom_rat_conv2:0" type="replace" x="384" y="736" width="32" height="32" visible="0">
+  <object id="69" name="ratdom_rat_conv2:0" type="replace" x="96" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Top"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -442,7 +442,7 @@
     <property name="requireValue" value="30"/>
    </properties>
   </object>
-  <object id="70" name="ratdom_rat_conv2:1" type="replace" x="384" y="736" width="32" height="32" visible="0">
+  <object id="70" name="ratdom_rat_conv2:1" type="replace" x="96" y="736" width="32" height="32" visible="0">
    <properties>
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
@@ -455,7 +455,7 @@
     <property name="Objects" value="Compass"/>
     <property name="requireId" value="ratdom_maze"/>
     <property name="requireType" value="questProgress"/>
-    <property name="requireValue" value="32"/>
+    <property name="requireValue" value="31"/>
    </properties>
   </object>
  </objectgroup>

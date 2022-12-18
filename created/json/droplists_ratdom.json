@@ -271,22 +271,6 @@
         "id":"ratdom_librarian",
         "items":[
             {
-                "itemID":"ratdom_compass_bwm",
-                "chance":"10",
-                "quantity":{
-                    "min":1,
-                    "max":1
-                }
-            },
-            {
-                "itemID":"ratdom_compass_tour",
-                "chance":"50",
-                "quantity":{
-                    "min":1,
-                    "max":1
-                }
-            },
-            {
                 "itemID":"ratdom_torch",
                 "chance":"50",
                 "quantity":{
@@ -298,8 +282,8 @@
 				"itemID":"gold",
 				"chance":"50",
 				"quantity":{
-					"min":10,
-					"max":50
+					"min":30,
+					"max":80
 				}
 			},
 			{

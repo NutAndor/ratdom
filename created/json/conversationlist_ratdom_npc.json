@@ -3609,36 +3609,56 @@
 	},
     {
         "id":"whootibarfag_30",
-        "message":"Yes, I have interesting items to sell. However, no food, I need it for myself.",
+        "message":"I should have known. No one comes up here to ask for wisdom.",
 		"replies":[
             {
-				"text":"Then what do you have for sale?",
+				"text":"N",
                 "nextPhraseID":"whootibarfag_32"
             }
         ]
 	},
     {
         "id":"whootibarfag_32",
+        "message":"I have great knowledge, you know?",
+		"replies":[
+            {
+				"text":"Maybe another time. Let's just trade.",
+                "nextPhraseID":"whootibarfag_40"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_40",
+        "message":"Sigh. Well, I have interesting items to sell. However, no food, I need it for myself.",
+		"replies":[
+            {
+				"text":"Then what do you have for sale?",
+                "nextPhraseID":"whootibarfag_42"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_42",
         "message":"Torches to light your way.",
 		"replies":[
             {
 				"text":"I have already one.",
-                "nextPhraseID":"whootibarfag_34"
+                "nextPhraseID":"whootibarfag_44"
             }
         ]
 	},
     {
-        "id":"whootibarfag_34",
+        "id":"whootibarfag_44",
         "message":"Hand carved snowballs.",
 		"replies":[
             {
 				"text":"N",
-                "nextPhraseID":"whootibarfag_36"
+                "nextPhraseID":"whootibarfag_46"
             }
         ]
 	},
     {
-        "id":"whootibarfag_36",
+        "id":"whootibarfag_46",
         "message":"And finally, a medallion that will help you find your way here if your memory fails you.",
 		"replies":[
             {
