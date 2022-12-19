@@ -4323,6 +4323,36 @@
 	]
   },
   {
+    "id":"ratdom_store_door1",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":181
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":182
+		}
+	]
+  },
+  {
+    "id":"ratdom_store_door2",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":182
+		},
+		{
+			"rewardType":"removeQuestProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":181
+		}
+	]
+  },
+  {
     "id":"ratdom_troll_door2",
 	"switchToNPC":"ratdom_rat",
     "message":"It must be extremely dangerous, because it is secured with two strong doors.",
