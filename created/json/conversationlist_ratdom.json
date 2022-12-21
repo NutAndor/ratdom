@@ -2646,6 +2646,103 @@
     ]
   },
   {
+    "id":"ratdom_rat_cheese_key",
+	"switchToNPC":"ratdom_rat_warden",
+	"message":"Hey! Don't take any cheese into the museum! I don't want greasy finger prints all over the valuable objects!",
+    "replies":[
+      {
+		"text":"How do you know that I have some in my bag?",
+        "nextPhraseID":"ratdom_rat_cheese_key_12"
+      },
+      {
+		"text":"Now calm down. Can I deposit my cheese here somewhere?",
+        "nextPhraseID":"ratdom_rat_cheese_key_20"
+      },
+      {
+		"text":"I don't go anywhere without my cheese.",
+        "nextPhraseID":"ratdom_rat_cheese_key"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_10",
+	"message":"Then you can't enter.",
+    "replies":[
+      {
+		"text":"So what can I do now?",
+        "nextPhraseID":"ratdom_rat_cheese_key_20"
+      },
+      {
+		"text":"I'm not interested in your dusty stuff anyway.",
+        "nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_12",
+	"switchToNPC":"ratdom_rat",
+	"message":"Of course he smells it, you poor two-leg with your pathetic nose.",
+    "replies":[
+      {
+		"text":"Oh. What can I do now?",
+        "nextPhraseID":"ratdom_rat_cheese_key_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_20",
+	"switchToNPC":"ratdom_rat_warden",
+	"message":"You can give me the cheese, I'll take good care of it. Or you can just put it here on the floor.",
+    "replies":[
+      {
+		"text":"Good. Here please.",
+        "nextPhraseID":"ratdom_rat_cheese_key_30"
+      },
+      {
+		"text":"I'll just put it down here.",
+        "nextPhraseID":"X"
+      },
+      {
+		"text":"Maybe I should just eat everything at once here and now.",
+        "nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_30",
+    "replies":[	{ "nextPhraseID":"ratdom_rat_cheese_key_30_1",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_30_2", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
+	]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_30_1",
+    "replies":[	{ "nextPhraseID":"ratdom_rat_cheese_key_30_1",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_30_2",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
+	],
+	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese1", "value":1 },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
+	]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_30_2",
+    "replies":[ { "nextPhraseID":"ratdom_rat_cheese_key_30_2", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }] }
+	],
+	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese2", "value":1 },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
+	]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_40",
+	"message":"You may enter now."
+  },
+  {
     "id":"ratdom_rat_conv1",
     "replies":[
       {
@@ -3844,6 +3941,77 @@
     "id":"ratdom_rat_statue_40",
     "switchToNPC":"ratdom_rat",
     "message":"When will you finally try to use the pickaxe?"
+  },
+  {
+    "id":"ratdom_rat_sword_key",
+    "replies":[
+      {
+		"nextPhraseID":"ratdom_rat_sword_key_10",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":180,
+			"negate":true
+          }
+        ]
+      },
+      {
+		"nextPhraseID":"ratdom_rat_sword_key_20",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":183
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_sword_key_10",
+    "switchToNPC":"ratdom_rat",
+    "message":"What a nice sword. Too bad it's stuck firmly in the wall."
+  },
+  {
+    "id":"ratdom_rat_sword_key_20",
+    "switchToNPC":"ratdom_rat",
+    "message":"Look, the image of the sword still shines."
+  },
+  {
+    "id":"ratdom_rat_sword_key_30",
+    "switchToNPC":"ratdom_rat",
+    "message":"King Rah's sword! Quick - say the words!",
+    "replies":[
+      {
+		"text":"Veni gladio fidelis?",
+		"nextPhraseID":"ratdom_rat_sword_key_40",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":180
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_sword_key_40",
+    "switchToNPC":"ratdom_rat",
+    "message":"Yes, yes! It moves! You have it!!",
+    "rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":183
+		},
+		{
+			"rewardType":"giveItem",
+			"rewardID":"ratdom_rat_sword",
+			"value":1
+		}
+    ]
   },
   {
     "id":"ratdom_rat_warden_bell",
