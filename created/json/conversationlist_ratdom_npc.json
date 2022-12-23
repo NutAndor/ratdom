@@ -325,7 +325,25 @@
     },
     {
         "id":"ratdom_fraedro",
-        "message":"Please don't hurt me. I am starving.",
+        "replies":[
+            {
+                "requires":[ { "requireType":"inventoryKeep", "requireID":"cheese", "value":1 },
+							 { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true } ],
+                "nextPhraseID":"ratdom_fraedro_cheese"
+            },
+            {
+                "requires":[ { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1 },
+							 { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true } ],
+                "nextPhraseID":"ratdom_fraedro_cheese"
+            },
+            {
+                "nextPhraseID":"ratdom_fraedro_1"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_1",
+        "message":"Please don't hurt me.",
         "replies":[
             {
                 "text":"Who are you?",
@@ -338,18 +356,6 @@
             {
                 "text":"OK, bye.",
                 "nextPhraseID":"X"
-            },
-            {
-                "text":"Starving? I have some cheese for you here.",
-                "requires":[ { "requireType":"inventoryRemove", "requireID":"cheese", "value":1 },
-							 { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true } ],
-                "nextPhraseID":"ratdom_fraedro_cheese"
-            },
-            {
-                "text":"Starving? I have some cheese for you here.",
-                "requires":[ { "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 },
-							 { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true } ],
-                "nextPhraseID":"ratdom_fraedro_cheese"
             }
         ]
     },
@@ -461,6 +467,28 @@
     },
     {
         "id":"ratdom_fraedro_cheese",
+        "message":"Please don't hurt me. I am starving.",
+        "replies":[
+            {
+                "text":"Who are you?",
+                "nextPhraseID":"ratdom_fraedro_2"
+            },
+            {
+                "text":"Why did you steal King Rah's skeleton?",
+                "nextPhraseID":"ratdom_fraedro_10"
+            },
+            {
+                "text":"OK, bye.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Starving? I have some cheese for you here.",
+                "nextPhraseID":"ratdom_fraedro_cheese_1"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_cheese_1",
         "message":"Oh, my pleading has been heard. Thanks!",
         "replies":[
             {
@@ -474,7 +502,7 @@
         "message":"You must be the rightful heir of King Rah.",
         "replies":[
             {
-                "text":"N",
+                "text":"Who, me?",
                 "nextPhraseID":"ratdom_fraedro_cheese_12"
             }
         ]
@@ -502,12 +530,12 @@
         ]
     },
     {
-        "id":"ratdom_fraedro_cheese_20",
+        "id":"ratdom_fraedro_cheese_30",
         "message":"You'll find it further down in the caves. Say the words 'Veni gladio fidelis'.",
         "replies":[
             {
                 "text":"I'll try to remember.",
-                "nextPhraseID":"ratdom_fraedro"
+                "nextPhraseID":"ratdom_fraedro_cheese_32"
             }
         ],
         "rewards":[
@@ -515,6 +543,17 @@
                 "rewardType":"questProgress",
                 "rewardID":"ratdom_nondisplay",
                 "value":180
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_cheese_32",
+		"switchToNPC":"ratdom_rat",
+        "message":"[Clevred rolls his eyes] He. will. try. to remember. That can only go wrong.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_fraedro_1"
             }
         ]
     },

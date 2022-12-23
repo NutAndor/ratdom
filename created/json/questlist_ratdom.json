@@ -203,7 +203,11 @@
 			{ "progress":166, "logText":"162=Troll_6 spawned" },
 			{ "progress":169, "logText":"169=Troll_9 spawned" },
 			{ "progress":170, "logText":"170=Troll door 1 open" },
-			{ "progress":171, "logText":"171=Troll door 2 open" }
+			{ "progress":171, "logText":"171=Troll door 2 open" },
+			{ "progress":180, "logText":"180=Veni" },
+			{ "progress":181, "logText":"181=Store door 1 open" },
+			{ "progress":182, "logText":"182=Store door 2 open" },
+			{ "progress":183, "logText":"183=Venit" }
 			]
     },
     {

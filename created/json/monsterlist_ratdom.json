@@ -87,7 +87,7 @@
     {
         "id":"ratdom_fraedro",
         "name":"Fraedro",
-        "iconID":"monsters_rats:1",
+        "iconID":"monsters_rats:0",
 		"moveCost":1,
         "unique":1,
         "monsterClass":"animal",

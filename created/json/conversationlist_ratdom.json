@@ -2725,22 +2725,22 @@
 				  "requires":[{ "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }] },
 				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
 	],
-	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese1", "value":1 },
-				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
+	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese1", "value":1 }
 	]
   },
   {
     "id":"ratdom_rat_cheese_key_30_2",
     "replies":[ { "nextPhraseID":"ratdom_rat_cheese_key_30_2", 
-				  "requires":[{ "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }] }
-	],
-	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese2", "value":1 },
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }] },
 				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
+	],
+	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese2", "value":1 }
 	]
   },
   {
     "id":"ratdom_rat_cheese_key_40",
-	"message":"You may enter now."
+	"message":"Now you may follow me into our museum.",
+	"rewards":[ { "rewardType":"removeSpawnArea", "mapName":"ratdom_maze_624", "rewardID":"ratdom_rat_warden" }]
   },
   {
     "id":"ratdom_rat_conv1",
@@ -3965,6 +3965,9 @@
             "value":183
           }
         ]
+      },
+      {
+		"nextPhraseID":"ratdom_rat_sword_key_30"
       }
     ]
   },
