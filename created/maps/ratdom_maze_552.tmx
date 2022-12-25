@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="92">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="96">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKMKDNYA4AYixAXL1/RbFr9cGhz5C9uKzk5BeQnbi00vITmx6iXErLr3EuJUaemkBDosNrP2jgHZguMWtFlK+Ge56fYDqrcnQi66PkF6Qel8oRtcHwn9ESVOPy15s7sKHAQeaP8U=
+   eJwrkmNgKMKDNYA4AYixAXL1/RbFr9cGhz5C9uKyU1uIsF5CduLTi8uf+PSiu/WZIPF6iXErNfTSAhwWo0w/vnAa7OA1ndyOnN7pCZDj9sUQjicY0ELKN4QAerokRS8l9lJLrw9QvTUOvX/xxCW6PkL2gtT7QjG6PhD+I0qaelz2YnMXPgwAjRRGJw==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -324,6 +324,10 @@
   <object id="64" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="65" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="66" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="92" name="ratdom_rat_dim0" type="script" x="32" y="864" width="32" height="64"/>
+  <object id="93" name="ratdom_rat_dim1" type="script" x="64" y="800" width="256" height="128"/>
+  <object id="94" name="ratdom_rat_dim2" type="script" x="128" y="640" width="224" height="160"/>
+  <object id="95" name="ratdom_rat_dim3" type="script" x="192" y="608" width="96" height="32"/>
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>

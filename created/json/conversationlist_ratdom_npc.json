@@ -343,6 +343,7 @@
     },
     {
         "id":"ratdom_fraedro_1",
+		"switchToNPC":"ratdom_fraedro",
         "message":"Please don't hurt me.",
         "replies":[
             {
@@ -467,6 +468,7 @@
     },
     {
         "id":"ratdom_fraedro_cheese",
+		"switchToNPC":"ratdom_fraedro",
         "message":"Please don't hurt me. I am starving.",
         "replies":[
             {
@@ -3805,8 +3807,12 @@
         "message":"I should have known. No one comes up here to ask for wisdom.",
 		"replies":[
             {
-				"text":"N",
+				"text":"Not now. Let us trade first.",
                 "nextPhraseID":"whootibarfag_32"
+            },
+            {
+				"text":"All right, let's get this over with. Enlighten me.",
+                "nextPhraseID":"whootibarfag_100"
             }
         ]
 	},
@@ -3817,6 +3823,10 @@
             {
 				"text":"Maybe another time. Let's just trade.",
                 "nextPhraseID":"whootibarfag_40"
+            },
+            {
+				"text":"Then finally say what you want to say. And after that show me your goods.",
+                "nextPhraseID":"whootibarfag_100"
             }
         ]
 	},
@@ -3953,6 +3963,114 @@
 		"replies":[
             {
 				"text":"Thank you.",
+                "nextPhraseID":"X"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_100",
+        "message":"I know that I know nothing.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_110"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_110",
+        "message":"But at least I think, so I am. Then I left the cave.",
+		"replies":[
+            {
+				"text":"From the shadows to the light.",
+                "nextPhraseID":"whootibarfag_112"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_112",
+        "message":"Yes, yes! How did you know?",
+		"replies":[
+            {
+				"text":"I just guessed.",
+                "nextPhraseID":"whootibarfag_120"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_120",
+        "message":"Now I need to know what is louder: The noise of a lonely falling tree, or the sound of one hand clapping.",
+		"replies":[
+            {
+				"text":"Eh ...",
+                "nextPhraseID":"whootibarfag_120"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_122",
+        "message":"I don't really expect you to know.",
+		"replies":[
+            {
+				"text":"Yes. I know.",
+                "nextPhraseID":"whootibarfag_130"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_130",
+		"switchToNPC":"ratdom_rat",
+        "message":"There are many paths leading to happyness.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_132"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_132",
+        "message":"One of them is to stop whining.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_140"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_140",
+		"switchToNPC":"whootibarfag",
+        "message":"Hey - I'm the one with the wisdom here!",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_142"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_142",
+		"switchToNPC":"ratdom_rat",
+        "message":"Arrogance is the surest path to failure.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_190"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_190",
+		"switchToNPC":"whootibarfag",
+        "message":"Seize the day.",
+		"replies":[
+            {
+				"text":"Enough! What. do. you. have. for. sale?",
+                "nextPhraseID":"whootibarfag_40"
+            },
+            {
+				"text":"I give up. Come, Clevred, let us leave.",
                 "nextPhraseID":"X"
             }
         ]

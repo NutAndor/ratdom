@@ -357,6 +357,22 @@
 		"switchToNPC":"ratdom_rat",
         "message":"Can we finally move on? We still have an artifact to find."
     },
+    {
+        "id":"ratdom_rat_dim0",
+		"rewards":[ { "rewardType":"changeMapFilter", "rewardID":"none" } ]
+    },
+    {
+        "id":"ratdom_rat_dim1",
+		"rewards":[ { "rewardType":"changeMapFilter", "rewardID":"black20" } ]
+    },
+    {
+        "id":"ratdom_rat_dim2",
+		"rewards":[ { "rewardType":"changeMapFilter", "rewardID":"black40" } ]
+    },
+    {
+        "id":"ratdom_rat_dim3",
+		"rewards":[ { "rewardType":"changeMapFilter", "rewardID":"black60" } ]
+    },
   {
     "id":"ratdom_artefact_la",
     "replies":[
