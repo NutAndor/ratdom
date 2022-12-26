@@ -1506,83 +1506,6 @@
         ]
     },
     {
-        "id":"ratdom_rat_museum_sign_1",
-        "message":"Here you can see the complete skeleton of King Rah.",
-        "replies":[
-            {
-                "text":"I see nothing.",
-				"nextPhraseID":"X",
-                "requires":[
-                    {			
-                        "requireType":"questProgress",
-                        "requireID":"ratdom_nondisplay",
-                        "value":130,
-						"negate":true
-                    }
-                ]
-            },
-            {
-                "text":"Such a great sight! Wart has done a great job.",
-				"nextPhraseID":"X",
-                "requires":[
-                    {			
-                        "requireType":"questProgress",
-                        "requireID":"ratdom_nondisplay",
-                        "value":130
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_museum_sign_2a",
-        "message":"This is the crown of the old Kingdom."
-    },
-    {
-        "id":"ratdom_rat_museum_sign_2b",
-        "message":"This is the great key.",
-        "replies":[
-            {
-                "text":"N",
-				"nextPhraseID":"ratdom_rat_museum_sign_2b_10"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_museum_sign_2b_10",
-        "message":"No rat knows where it fits."
-    },
-    {
-        "id":"ratdom_rat_museum_sign_2c",
-        "message":"This is King Rah's diary.",
-        "replies":[
-            {
-                "text":"N",
-				"nextPhraseID":"ratdom_rat_museum_sign_2c_10"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_rat_museum_sign_2c_10",
-        "message":"At least that is the prevailing opinion. It is written in secret script."
-    },
-    {
-        "id":"ratdom_rat_museum_sign_3a",
-        "message":"A suit of armor several centuries old, with the Rat Empire emblem."
-    },
-    {
-        "id":"ratdom_rat_museum_sign_3b",
-        "message":"Wonderfully decorated chests - unfortunately all locked."
-    },
-    {
-        "id":"ratdom_rat_museum_sign_3c",
-        "message":"Many shelves loaded with thick books."
-    },
-    {
-        "id":"ratdom_rat_museum_sign_3d",
-        "message":"A great ax from the last century. You don't want to face a warrior with this weapon in your hands"
-    },
-    {
         "id":"ratdom_rat_pub_owner_10",
         "message":"Yes, I've always wanted that. Only my customers are usually a bit special.",
         "replies":[
@@ -3952,8 +3875,27 @@
         "message":"But you might ask an old friend of mine. He has a small but valuable collection of important items and I'm sure he'll be happy to show you around.",
 		"replies":[
             {
-				"text":"N",
-                "nextPhraseID":"whootibarfag_74"
+				"text":"We'll look for him.",
+                "nextPhraseID":"whootibarfag_74",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":310,
+						"negate":true
+                    }
+                ]
+            },
+            {
+				"text":"You mean Wart? We have already met him.",
+                "nextPhraseID":"whootibarfag_76",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":310
+                    }
+                ]
             }
         ]
 	},
@@ -3963,7 +3905,25 @@
 		"replies":[
             {
 				"text":"Thank you.",
-                "nextPhraseID":"X"
+                "nextPhraseID":"whootibarfag_76"
+            },
+            {
+				"text":"Do you have anything to trade?",
+                "nextPhraseID":"whootibarfag_30"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_76",
+        "message":"Good, so that's settled. Now I could share a little of my wisdom with you?",
+		"replies":[
+            {
+				"text":"Not now. Let us trade first.",
+                "nextPhraseID":"whootibarfag_32"
+            },
+            {
+				"text":"All right, let's get this over with. Enlighten me.",
+                "nextPhraseID":"whootibarfag_100"
             }
         ]
 	},
@@ -4003,13 +3963,13 @@
 		"replies":[
             {
 				"text":"Eh ...",
-                "nextPhraseID":"whootibarfag_120"
+                "nextPhraseID":"whootibarfag_122"
             }
         ]
 	},
     {
         "id":"whootibarfag_122",
-        "message":"I don't really expect you to know.",
+        "message":"I didn't really expect you to know.",
 		"replies":[
             {
 				"text":"Yes. I know.",
@@ -4053,6 +4013,28 @@
         "id":"whootibarfag_142",
 		"switchToNPC":"ratdom_rat",
         "message":"Arrogance is the surest path to failure.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_150"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_150",
+		"switchToNPC":"whootibarfag",
+        "message":"From failure we learn.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_152"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_152",
+		"switchToNPC":"ratdom_rat",
+        "message":"Learn as if you were to live forever.",
 		"replies":[
             {
 				"text":"N",

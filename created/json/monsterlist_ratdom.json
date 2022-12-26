@@ -164,6 +164,21 @@
         "droplistID":"drop_ratdom_gruil"
     },
     {
+        "id":"ratdom_king_rah",
+        "name":"King Rah",
+        "iconID":"monsters_tometik8:59",
+        "maxHP":160,
+        "maxAP":10,
+        "moveCost":3,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":20,
+            "max":30
+        },
+        "spawnGroup":"ratdom_king_rah",
+        "droplistID":"ratdom_king_rah"
+    },
+    {
         "id":"ratdom_kriih",
         "name":"Kriih",
         "iconID":"monsters_rats:2",

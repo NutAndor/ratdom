@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="66">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="20" nextobjectid="67">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -193,12 +193,12 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAP4uQYGOKBWBOIi9AwsSAOi34YeChEWL8WmfbSQ+8THO4nx14BYcrdDAKE9B4WI91MaoGBtBtXXBEDHlOgdygBPmHy9VIrbh+NkLDGBezZcMsRKi/9kfS6k1F2IOt144ewdyPZSUzcuMmRnxZAekHYBIoJgR18mHphmBQAACn6In8=
+   eJxjYMAP4uQYGOKBWBOIi9AwsSAOi34YeChEWL8WmfbSQ+8THO4nx14BYcrdDAKE9B4WI91MaoGBtBtXXBEDHlOgdygBPmHy9VIrbh+NkLDGBezZcMsRKi/9kfS6o+X/3SSEK0ivGz+EjZz2iYkbNzny0wJILwibQDEhsIMPUy8MkwIAMQMjdA==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OTwSOIA1mwMDPZshNWZYjHbG6jPn404M7DpRzeDXOBNgV56gcti5OudyzQy7T5Mgd5LZOgdKLcOlN6BiluQPnLiBwTonSYIAWqUW8hmkBqmyGXfQKYFYgEleQwZAAB1Xhar
+   eJxjYMAN3OTwSOIA1mwMDPZshNWZYjHbG6jPn404M7DpRzeDXOBNgV56gcti5OudyzQy7T5Mgd5LZOgdKLcOlN6BiluQPnLiBwTolSaILUuxlVuRROqFlVvIZpAapshl30CmBWIBJXkMGQAAvS0Xhg==
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzFkksKACAIRDtF979CN2wRgZQ5jkgOuJF55qfWlka/w8pLaZ5XSIapofk0eTiLl17UF+K9M2WwzA3Y3Wey6Ca/+mb5CjaL+/Fm9b+qYDP37GUtRblXDZlDHsR7emPvttkId8YEiEb3Mw==
+   eJzFksENACAIA53C/VdwQx9+iFZKDRESPtrTWmxt1ehne+u2kObWllHOQDpUEc7jrZb5Ynz0TRmsMgM1+0yWzeSXb5WvYLO4H3dW/6sKVsl533tlvWJeGR/xyDRoL5qjOjeU62tPW8D1pQ==
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -346,8 +346,14 @@
     <property name="spawngroup" value="ratdom_roundling"/>
    </properties>
   </object>
+  <object id="66" name="ratdom_king_rah" type="spawn" x="32" y="736" width="32" height="64">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ratdom_king_rah"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup id="18" name="keys">
+ <objectgroup id="18" name="keys" visible="0">
   <object id="53" name="ratdom_rat_final_1" type="key" x="192" y="288" width="96" height="32">
    <properties>
     <property name="phrase" value="ratdom_rat_final_1"/>

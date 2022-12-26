@@ -3877,6 +3877,159 @@
     "id":"ratdom_rat_flora_warn_20",
 	"message":"Yeah. Let's better not go under the blue swirl."
   },
+    {
+        "id":"ratdom_rat_museum_sign_1",
+        "message":"Here you can see the complete skeleton of King Rah.",
+        "replies":[
+            {
+                "text":"I see nothing.",
+				"nextPhraseID":"X",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":130,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Such a great sight! Wart has done a great job.",
+				"nextPhraseID":"X",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":130
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2a",
+        "message":"This is the crown of the old Kingdom."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2b",
+        "message":"This is the great key.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_rat_museum_sign_2b_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2b_10",
+        "message":"No rat knows where it fits."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2c",
+        "message":"This is King Rah's diary.",
+        "replies":[
+            {
+                "text":"N",
+				"nextPhraseID":"ratdom_rat_museum_sign_2c_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_2c_10",
+        "message":"At least that is the prevailing opinion. It is written in secret script."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3a",
+        "message":"A suit of armor several centuries old, with the Rat Empire emblem."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3b",
+        "message":"Wonderfully decorated chests - unfortunately all locked."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3c",
+        "message":"Many shelves loaded with thick books."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3d",
+        "message":"A great ax from the last century. You don't want to face a warrior with this weapon in your hands"
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e",
+        "replies":[ { "nextPhraseID":"ratdom_rat_museum_sign_3e_20",
+					  "requires":[{ "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":184 }] },
+					{ "nextPhraseID":"ratdom_rat_museum_sign_3e_10" } ]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_10",
+        "message":"The table is empty. The displayed item seems to be missing."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_20",
+        "message":"King Rah's mighty sword."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check",
+        "replies":[	{ "nextPhraseID":"ratdom_rat_museum_sign_3e_check_10",
+					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }] },
+					{ "nextPhraseID":"ratdom_rat_museum_sign_3e_check_20",
+					  "requires":[{ "requireType":"wear", "requireID":"ratdom_rat_sword" }] }]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check_10",
+		"switchToNPC":"ratdom_rat_warden2",
+        "message":"Oh, you bring the mighty sword of King Rah! That's great, thank you. We will keep it in honour.",
+        "replies":[{ "text":"Hey - my sword!",
+					 "nextPhraseID":"ratdom_rat_museum_sign_3e_check_12" }],
+		"rewards":[{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":184 },
+				   { "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":380 }]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check_12",
+        "message":"Look how nice it looks on the table over there."
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check_20",
+		"switchToNPC":"ratdom_rat_warden2",
+        "message":"Oh, you have found the mighty sword of King Rah! That's great.",
+        "replies":[{ "text":"N",
+					 "nextPhraseID":"ratdom_rat_museum_sign_3e_check_30" }]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check_30",
+        "message":"You may give it to us now. I will add it to the exhibition.",
+        "replies":[	{ "text":"Sure. Here you are.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_32",
+					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }] 
+					},
+					{ "text":"Hm, give me 1000 gold for it.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_34",
+					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }]
+					},
+					{ "text":"Hm, give me 50000 gold for it.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_36",
+					  "requires":[{ "requireType":"inventoryKeep", "requireID":"ratdom_rat_sword", "value":1 }]
+					},
+					{ "text":"No, I decided to keep it." }
+		]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check_32",
+		"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":184 },
+					{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":380 }]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check_34",
+        "message":"This is much money for our museum. But here you have 1000 gold.",
+		"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":184 },
+					{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":381 },
+					{ "rewardType":"giveItem", "rewardID":"gold", "value":1000 }]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check_36",
+        "message":"You are crazy. Our museum doesn't have such a big amount of gold.",
+        "replies":[{ "nextPhraseID":"ratdom_rat_museum_sign_3e_check_30" }]
+    },
   {
     "id":"ratdom_rat_pub",
     "message":"Dish of the day: Filet de serpent sur pommes de terre au chou rouge."
@@ -3995,7 +4148,7 @@
   {
     "id":"ratdom_rat_sword_key_20",
     "switchToNPC":"ratdom_rat",
-    "message":"Look, the image of the sword still shines."
+    "message":"The sword is gone! There is just an illusion left."
   },
   {
     "id":"ratdom_rat_sword_key_30",
@@ -4004,31 +4157,81 @@
     "replies":[
       {
 		"text":"Veni gladio fidelis?",
-		"nextPhraseID":"ratdom_rat_sword_key_40",
-        "requires":[
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_nondisplay",
-            "value":180
-          }
-        ]
+		"nextPhraseID":"ratdom_rat_sword_key_40"
       }
     ]
   },
   {
     "id":"ratdom_rat_sword_key_40",
     "switchToNPC":"ratdom_rat",
-    "message":"Yes, yes! It moves! You have it!!",
+    "message":"Yes, yes! It moves ...",
+    "replies":[
+      {
+		"text":"Hey, what is this?",
+		"nextPhraseID":"ratdom_rat_sword_key_50"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_sword_key_50",
+    "switchToNPC":"ratdom_king_rah",
+    "message":"Who dareth to challenge me?",
+    "replies":[
+      {
+		"text":"King Rah? You are not dead since long ago?",
+		"nextPhraseID":"ratdom_rat_sword_key_52"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_sword_key_52",
+    "switchToNPC":"ratdom_rat",
+    "message":"Probably this is just a vision to protect the sword.",
+    "replies":[
+      {
+		"text":"Probably??",
+		"nextPhraseID":"ratdom_rat_sword_key_54"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_sword_key_54",
+    "switchToNPC":"ratdom_king_rah",
+    "message":"Proveth thyself worthy to wield my sword!",
+    "replies":[
+      {
+		"text":"N",
+		"nextPhraseID":"ratdom_rat_sword_key_56"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_sword_key_56",
+    "message":"Thou hast but one try.",
+    "replies":[
+      {
+		"text":"One try is enough for me. Attack!",
+		"nextPhraseID":"ratdom_rat_sword_key_90"
+      },
+      {
+		"text":"Uh, I'll be right back ...",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_sword_key_90",
+    "replies":[
+      {
+		"text":"N",
+		"nextPhraseID":"F"
+      }
+    ],
     "rewards":[
 		{
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_nondisplay",
 			"value":183
-		},
-		{
-			"rewardType":"giveItem",
-			"rewardID":"ratdom_rat_sword",
-			"value":1
 		}
     ]
   },
@@ -4063,7 +4266,7 @@
     "message":"Oh, there is a note attached to it:\n\n'Museum closed until further notice due to vandalism.\nRing the bell for further advice.'\n",
     "replies":[
       {
-        "text":"OK, they had their chance.",
+        "text":"OK, they had their chance. Let's leave.",
         "nextPhraseID":"X"
       },
       {
