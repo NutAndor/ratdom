@@ -3969,24 +3969,44 @@
         "message":"King Rah's mighty sword."
     },
     {
-        "id":"ratdom_rat_museum_sign_3e_check",
-        "replies":[	{ "nextPhraseID":"ratdom_rat_museum_sign_3e_check_10",
-					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }] },
-					{ "nextPhraseID":"ratdom_rat_museum_sign_3e_check_20",
-					  "requires":[{ "requireType":"wear", "requireID":"ratdom_rat_sword", "value":1 }] }]
-    },
-    {
         "id":"ratdom_rat_museum_sign_3e_check_10",
 		"switchToNPC":"ratdom_rat_warden2",
-        "message":"Oh, you bring the mighty sword of King Rah! That's great, thank you. We will keep it in honour.",
-        "replies":[{ "text":"Hey - my sword!",
-					 "nextPhraseID":"ratdom_rat_museum_sign_3e_check_12" }],
-		"rewards":[{ "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":184 },
-				   { "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":380 }]
+        "message":"Oh, you bring the mighty sword of King Rah! That's great, we will keep it in honour.",
+        "replies":[	{ "text":"Sure. Here you are.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_12",
+					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }] 
+					},
+					{ "text":"Give me 1000 gold for it.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_14",
+					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }]
+					},
+					{ "text":"Give me 50000 gold for it.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_16",
+					  "requires":[{ "requireType":"inventoryKeep", "requireID":"ratdom_rat_sword", "value":1 }]
+					},
+					{ "text":"No, I decided to keep it.",
+					  "nextPhraseID":"X" 
+					}
+		]
     },
     {
         "id":"ratdom_rat_museum_sign_3e_check_12",
-        "message":"Look how nice it looks on the table over there."
+        "message":"Look how nice it looks on the table over there.",
+        "rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":184 },
+					{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":380 }]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check_14",
+        "message":"This is much money for our museum. But here you have 1000 gold.",
+		"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":184 },
+					{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":381 },
+					{ "rewardType":"giveItem", "rewardID":"gold", "value":1000 }]
+    },
+    {
+        "id":"ratdom_rat_museum_sign_3e_check_16",
+        "message":"You are crazy. Our museum doesn't have such a big amount of gold.",
+        "replies":[ { "text":"N",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_30" }]
     },
     {
         "id":"ratdom_rat_museum_sign_3e_check_20",
@@ -3997,40 +4017,31 @@
     },
     {
         "id":"ratdom_rat_museum_sign_3e_check_30",
-        "message":"You may give it to us now. I will add it to the exhibition.",
-        "replies":[	{ "text":"Sure. Here you are.",
-					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_32",
+        "message":"You may as well give the sword to us now, or you won't get through here.",
+        "replies":[	{ "text":"OK. Here you are.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_12",
 					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }] 
 					},
-					{ "text":"Hm, give me 1000 gold for it.",
-					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_34",
+					{ "text":"Give me 1000 gold for it.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_14",
 					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }]
 					},
-					{ "text":"Hm, give me 50000 gold for it.",
-					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_36",
-					  "requires":[{ "requireType":"inventoryKeep", "requireID":"ratdom_rat_sword", "value":1 }]
+					{ "text":"So I have no choice. Here you are.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_12",
+					  "requires":[{ "requireType":"wearRemove", "requireID":"ratdom_rat_sword", "value":1 }] 
 					},
-					{ "text":"No, I decided to keep it.",
+					{ "text":"Give me 1000 gold for it.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_14",
+					  "requires":[{ "requireType":"wearRemove", "requireID":"ratdom_rat_sword", "value":1 }]
+					},
+					{ "text":"Give me 50000 gold for it.",
+					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_16",
+					  "requires":[{ "requireType":"wear", "requireID":"ratdom_rat_sword", "value":1 }]
+					},
+					{ "text":"I'd rather starve here than give you the sword.",
 					  "nextPhraseID":"X" 
 					}
 		]
-    },
-    {
-        "id":"ratdom_rat_museum_sign_3e_check_32",
-		"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":184 },
-					{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":380 }]
-    },
-    {
-        "id":"ratdom_rat_museum_sign_3e_check_34",
-        "message":"This is much money for our museum. But here you have 1000 gold.",
-		"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":184 },
-					{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":381 },
-					{ "rewardType":"giveItem", "rewardID":"gold", "value":1000 }]
-    },
-    {
-        "id":"ratdom_rat_museum_sign_3e_check_36",
-        "message":"You are crazy. Our museum doesn't have such a big amount of gold.",
-        "replies":[{ "nextPhraseID":"ratdom_rat_museum_sign_3e_check_30" }]
     },
   {
     "id":"ratdom_rat_pub",
