@@ -3973,7 +3973,7 @@
         "replies":[	{ "nextPhraseID":"ratdom_rat_museum_sign_3e_check_10",
 					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }] },
 					{ "nextPhraseID":"ratdom_rat_museum_sign_3e_check_20",
-					  "requires":[{ "requireType":"wear", "requireID":"ratdom_rat_sword" }] }]
+					  "requires":[{ "requireType":"wear", "requireID":"ratdom_rat_sword", "value":1 }] }]
     },
     {
         "id":"ratdom_rat_museum_sign_3e_check_10",
@@ -4010,7 +4010,9 @@
 					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_36",
 					  "requires":[{ "requireType":"inventoryKeep", "requireID":"ratdom_rat_sword", "value":1 }]
 					},
-					{ "text":"No, I decided to keep it." }
+					{ "text":"No, I decided to keep it.",
+					  "nextPhraseID":"X" 
+					}
 		]
     },
     {
@@ -4167,67 +4169,16 @@
     "message":"Yes, yes! It moves ...",
     "replies":[
       {
-		"text":"Hey, what is this?",
-		"nextPhraseID":"ratdom_rat_sword_key_50"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_sword_key_50",
-    "switchToNPC":"ratdom_king_rah",
-    "message":"Who dareth to challenge me?",
-    "replies":[
-      {
-		"text":"King Rah? You are not dead since long ago?",
-		"nextPhraseID":"ratdom_rat_sword_key_52"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_sword_key_52",
-    "switchToNPC":"ratdom_rat",
-    "message":"Probably this is just a vision to protect the sword.",
-    "replies":[
-      {
-		"text":"Probably??",
-		"nextPhraseID":"ratdom_rat_sword_key_54"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_sword_key_54",
-    "switchToNPC":"ratdom_king_rah",
-    "message":"Proveth thyself worthy to wield my sword!",
-    "replies":[
-      {
-		"text":"N",
-		"nextPhraseID":"ratdom_rat_sword_key_56"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_sword_key_56",
-    "message":"Thou hast but one try.",
-    "replies":[
-      {
-		"text":"One try is enough for me. Attack!",
-		"nextPhraseID":"ratdom_rat_sword_key_90"
-      },
-      {
-		"text":"Uh, I'll be right back ...",
-		"nextPhraseID":"X"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_rat_sword_key_90",
-    "replies":[
-      {
-		"text":"N",
-		"nextPhraseID":"F"
+		"text":"Hey, who is this?",
+		"nextPhraseID":"ratdom_king_rah"
       }
     ],
     "rewards":[
+		{
+			"rewardType":"spawnAll",
+			"rewardID":"ratdom_king_rah",
+			"mapName":"ratdom_maze_627"
+		},
 		{
 			"rewardType":"questProgress",
 			"rewardID":"ratdom_nondisplay",

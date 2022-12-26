@@ -206,7 +206,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="5" name="Walkable" width="15" height="30" visible="0">
+ <layer id="5" name="Walkable" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJzFksENACAIA53C/VdwQx9+iFZKDRESPtrTWmxt1ehne+u2kObWllHOQDpUEc7jrZb5Ynz0TRmsMgM1+0yWzeSXb5WvYLO4H3dW/6sKVsl533tlvWJeGR/xyDRoL5qjOjeU62tPW8D1pQ==
   </data>
@@ -326,7 +326,7 @@
   </object>
   <object id="51" name="ratdom_artefact_ly" type="script" x="384" y="896" width="32" height="32"/>
  </objectgroup>
- <objectgroup id="17" name="Spawn" visible="0">
+ <objectgroup id="17" name="Spawn">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
   <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
    <properties>
@@ -346,9 +346,9 @@
     <property name="spawngroup" value="ratdom_roundling"/>
    </properties>
   </object>
-  <object id="66" name="ratdom_king_rah" type="spawn" x="32" y="736" width="32" height="64">
+  <object id="66" name="ratdom_king_rah" type="spawn" x="64" y="832" width="64" height="64">
    <properties>
-    <property name="quantity" value="2"/>
+    <property name="active" value="false"/>
     <property name="spawngroup" value="ratdom_king_rah"/>
    </properties>
   </object>

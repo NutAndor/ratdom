@@ -170,6 +170,7 @@
         "maxHP":160,
         "maxAP":10,
         "moveCost":3,
+        "unique":1,
         "monsterClass":"animal",
         "attackDamage":{
             "min":20,
@@ -982,7 +983,7 @@
     },
     {
         "id":"ratdom_troll_6",
-        "name":"Ancient	cave troll",
+        "name":"Ancient cave troll",
         "iconID":"monsters_tometik5:14",
 		"maxHP":430,
 		"maxAP":10,
@@ -1037,7 +1038,7 @@
 					"chance":"10"
 				}
 			]
-		}
+		},
         "damageResistance":15
     },
     {

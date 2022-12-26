@@ -1525,6 +1525,53 @@
             }
         ]
     },
+  {
+    "id":"ratdom_king_rah",
+	"switchToNPC":"ratdom_king_rah",
+    "message":"Who dareth to challenge me?",
+    "replies":[
+      {
+		"text":"King Rah? You are not dead since long ago?",
+		"nextPhraseID":"ratdom_king_rah_52"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_king_rah_52",
+    "switchToNPC":"ratdom_rat",
+    "message":"Probably this is just a vision to protect the sword.",
+    "replies":[
+      {
+		"text":"Probably??",
+		"nextPhraseID":"ratdom_king_rah_54"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_king_rah_54",
+    "switchToNPC":"ratdom_king_rah",
+    "message":"Proveth thyself worthy to wield my sword!",
+    "replies":[
+      {
+		"text":"N",
+		"nextPhraseID":"ratdom_king_rah_56"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_king_rah_56",
+    "message":"Thou hast but one try.",
+    "replies":[
+      {
+		"text":"One try is enough for me. Attack!",
+		"nextPhraseID":"F"
+      },
+      {
+		"text":"Uh, I'll be right back ...",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
 	{
 		"id":"ratdom_rat_warden",
 		"message":"Yes please?",
