@@ -193,7 +193,7 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYKA/+C06AJaOAjg4LDYy7R4FtAWjcTsKhhJATq8Aky4EdQ==
+   eJxjYIAAXyYIJgfEMkEwLoBu7m9RVP5OAfxm4wMnoXpZ8ajDJSdGpn9xATYqm0crcFiMMv2UhBuldg8GQO10QytAb3cO9bilZ/7FV16RWw6DAL7yktb+QzYfn/8GCwClV1GoOwEOcAmC
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccuRiGMDFJ1YfshgywCWPz0x8gBg3kaqPWPeTopfceKC3XlLinJbuJlX/QOillj562DnQ6Wog9FIznInViw+Qqw+fGYTU4JIjxV/I6kjRR2m8I+sHADn781A=
+   eJzFksENACAIA53C/VdwQ+PDhIfFVlGa8DBwWMFWS2kghlDuNKbQmeWsP6sVg/ozYjypnMerc1Q5djavWGXnL32rfAYbxf24M/tfZbCRc2ZZT6ec12NXg3LKu2ydwt3u3fIdHCj0Fw==
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">

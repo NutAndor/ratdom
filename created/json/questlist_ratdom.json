@@ -243,7 +243,9 @@
 			{ "progress":32, "logText":"compass Tour" },
 			{ "progress":33, "logText":"compass 3" },
 			{ "progress":34, "logText":"compass 4" },
-			{ "progress":35, "logText":"compass 5" }
+			{ "progress":35, "logText":"compass 5" },
+			{ "progress":131, "logText":"Rec compass BWM" },
+			{ "progress":132, "logText":"Rec compass Tour" }
         ]
     }
 ]

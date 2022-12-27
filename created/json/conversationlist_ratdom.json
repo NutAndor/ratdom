@@ -2949,16 +2949,34 @@
     "id":"ratdom_rat_conv2_1",
     "replies":[
       {	"nextPhraseID":"ratdom_rat_conv2_400",
-		"requires":[{ "requireType":"random", "requireID":"1" },
+		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":131, "negate":true },
+					{ "requireType":"random", "requireID":"1" },
 					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
 					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_bwm", "value":1 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_410",
-		"requires":[{ "requireType":"random", "requireID":"2" },
+		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":132, "negate":true },
+					{ "requireType":"random", "requireID":"2" },
 					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
 					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_tour", "value":1 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_600",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
+					{ "requireType":"random", "requireID":"10" }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_590",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
+					{ "requireType":"random", "requireID":"11" }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_580",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
+					{ "requireType":"random", "requireID":"12" }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_570",
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
+					{ "requireType":"random", "requireID":"14" }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_560",
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
@@ -2984,16 +3002,16 @@
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_500",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":31 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":130 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_40",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":30 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":80 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_30",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":20 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":40 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_20",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":10 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":20 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_10",
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":5 }]
@@ -3235,7 +3253,7 @@
     "replies":[
       {
         "text":"No need. I know the way perfectly well.",
-		"nextPhraseID":"X"
+		"nextPhraseID":"ratdom_rat_conv2_409"
       },
       {
         "text":"Well, why don't I? Really, I forgot about it.",
@@ -3253,9 +3271,19 @@
     "replies":[
       {
         "text":"Ah, OK.",
-		"nextPhraseID":"X"
+		"nextPhraseID":"ratdom_rat_conv2_409"
       }
     ]
+  },
+  {
+    "id":"ratdom_rat_conv2_409",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_maze",
+			"value":131
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_410",
@@ -3264,7 +3292,7 @@
     "replies":[
       {
         "text":"No need. I know the way perfectly well.",
-		"nextPhraseID":"X"
+		"nextPhraseID":"ratdom_rat_conv2_419"
       },
       {
         "text":"Well, why don't I? Really, I forgot about it.",
@@ -3288,7 +3316,7 @@
   },
   {
     "id":"ratdom_rat_conv2_414",
-    "message":"The way might be somewhat longer, but you won't miss any of the cave wonders.",
+    "message":"The way might be somewhat longer, but you won't miss anything important of the cave wonders.",
     "replies":[
       {
         "text":"N",
@@ -3308,7 +3336,24 @@
   },
   {
     "id":"ratdom_rat_conv2_418",
-    "message":"[muttering] Want to hope so, but don't really believe it yet."
+    "message":"[muttering] Want to hope so, but don't really believe it yet.",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_maze",
+			"value":132
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_419",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_maze",
+			"value":132
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_500",
@@ -3316,7 +3361,7 @@
 		{
 			"rewardType":"alignmentSet",
 			"rewardID":"ratdom_rat_conv2",
-			"value":1010
+			"value":1000
 		}
 	]
   },
@@ -3334,7 +3379,7 @@
 		{
 			"rewardType":"alignmentSet",
 			"rewardID":"ratdom_rat_conv2",
-			"value":1010
+			"value":1000
 		}
 	]
   },
@@ -3382,7 +3427,7 @@
 		{
 			"rewardType":"alignmentSet",
 			"rewardID":"ratdom_rat_conv2",
-			"value":1010
+			"value":1000
 		}
 	]
   },
@@ -3400,7 +3445,7 @@
 		{
 			"rewardType":"alignmentSet",
 			"rewardID":"ratdom_rat_conv2",
-			"value":1010
+			"value":1000
 		}
 	]
   },
@@ -3418,7 +3463,7 @@
 		{
 			"rewardType":"alignmentSet",
 			"rewardID":"ratdom_rat_conv2",
-			"value":1010
+			"value":1000
 		}
 	]
   },
@@ -3603,7 +3648,7 @@
 		{
 			"rewardType":"alignmentSet",
 			"rewardID":"ratdom_rat_conv2",
-			"value":1010
+			"value":1000
 		}
 	]
   },
@@ -3631,7 +3676,7 @@
 		{
 			"rewardType":"alignmentSet",
 			"rewardID":"ratdom_rat_conv2",
-			"value":1010
+			"value":1000
 		}
 	]
   },
@@ -3727,6 +3772,128 @@
     ]
   },
   {
+    "id":"ratdom_rat_conv2_570",
+	"switchToNPC":"ratdom_rat",
+    "message":"Don't worry, I am still by your side.",
+    "replies":[
+      {
+        "text":"I didn't worry.",
+		"nextPhraseID":"X"
+      }
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1000
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_580",
+	"switchToNPC":"ratdom_rat",
+    "message":"Whar do you think it will look like?",
+    "replies":[
+      {
+        "text":"What?",
+		"nextPhraseID":"ratdom_rat_conv2_582"
+      }
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1000
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_582",
+    "message":"The artifact, of course. Will it be big and round and shiny like I was always told?",
+    "replies":[
+      {
+        "text":"And will it be worth our labour to find it?",
+		"nextPhraseID":"ratdom_rat_conv2_584"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_584",
+    "message":"Labour?! This is a fun tour!",
+    "replies":[
+      {
+        "text":"Is it? Good to know.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_590",
+	"switchToNPC":"ratdom_rat",
+    "message":"Hey, you know what?",
+    "replies":[
+      {
+        "text":"Oh jolly, why can't you be silent for a minute at least?",
+		"nextPhraseID":"ratdom_rat_conv2_592"
+      }
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":900
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_592",
+    "message":"Phh. You are so mean. I won't talk to you anymore.",
+    "replies":[
+      {
+        "text":"At last.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_600",
+	"switchToNPC":"ratdom_rat",
+    "message":"There was a young rat of Prim,\nWho was so uncommonly thin",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_602"
+      }
+    ],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_rat_conv2",
+			"value":1000
+		}
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_602",
+    "message":"That when it essayed\nTo drink lemonade",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_604"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_604",
+    "message":"It slipped through the straw and fell in.",
+    "replies":[
+      {
+        "text":"Hahaha - that is a good one.",
+		"nextPhraseID":"X"
+      }
+    ]
+  },
+  {
     "id":"ratdom_rat_crossglen_02",
     "message":"I remember your brother was sometimes up here with one or two other human beings.",
     "rewards":[
@@ -3759,6 +3926,140 @@
   {
     "id":"ratdom_rat_crossglen_20",
     "message":"Hey, wake up!"
+  },
+  {
+    "id":"ratdom_rat_eatme",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_eatme_4", 
+		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_rat_eatme", "requireValue":10 }]
+      },
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_eatme_2"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_eatme_2",
+    "message":"An empty plate."
+  },
+  {
+    "id":"ratdom_rat_eatme_4",
+    "message":"You hear a voice: \"Eat me!\"",
+    "replies":[
+      {
+        "text":"Oh that looks tasty. Let's try it.",
+        "nextPhraseID":"ratdom_rat_eatme_10"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_eatme_10",
+    "message":"You swallow it down and wait.",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_eatme_12"
+      }
+    ],
+    "rewards":[
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_eatme"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_eatme_12",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_eatme_20", 
+		"requires":[{ "requireType":"random", "requireID":"40" }]
+      },
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_eatme_30", 
+		"requires":[{ "requireType":"random", "requireID":"40" }]
+      },
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_eatme_40", 
+		"requires":[{ "requireType":"random", "requireID":"20" }]
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_eatme_20",
+    "message":"Nothing obvious happens."
+  },
+  {
+    "id":"ratdom_rat_eatme_30",
+    "message":"You feel a pleasant warmth flowing through your body.",
+    "rewards":[
+      {
+        "rewardType":"actorCondition",
+        "rewardID":"food",
+        "value":10
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_eatme_40",
+    "message":"You feel strange and suddenly icy cold.",
+    "rewards":[
+      {
+        "rewardType":"actorCondition",
+        "rewardID":"foodp",
+        "value":4
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_drinkme",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_drinkme_4", 
+		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_rat_drinkme", "requireValue":10 }]
+      },
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_drinkme_2"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_drinkme_2",
+    "message":"An beautiful bottle - unfortunately empty."
+  },
+  {
+    "id":"ratdom_rat_drinkme_4",
+    "message":"You hear a voice: \"Drink me!\"",
+    "replies":[
+      {
+        "text":"What a lovely color of the bottle. Let's try it.",
+        "nextPhraseID":"ratdom_rat_drinkme_10"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_drinkme_10",
+    "message":"You swallow it down and wait.",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_eatme_12"
+      }
+    ],
+    "rewards":[
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_drinkme"
+      }
+    ]
   },
   {
     "id":"ratdom_rat_final_1",
@@ -5047,7 +5348,16 @@
         "rewardType":"activateMapObjectGroup",
         "rewardID":"ratdom_keys",
         "mapName":"crossglen"
+      },
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_eatme"
+      },
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_drinkme"
       }
+
     ],
     "replies":[
       {
