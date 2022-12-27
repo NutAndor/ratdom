@@ -3933,7 +3933,7 @@
       {
         "text":"N",
         "nextPhraseID":"ratdom_rat_eatme_4", 
-		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_rat_eatme", "requireValue":10 }]
+		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_rat_eatme", "value":10 }]
       },
       {
         "text":"N",
@@ -3950,14 +3950,14 @@
     "message":"You hear a voice: \"Eat me!\"",
     "replies":[
       {
-        "text":"Oh that looks tasty. Let's try it.",
+        "text":"Oh that cake looks tasty. Let's try it.",
         "nextPhraseID":"ratdom_rat_eatme_10"
       }
     ]
   },
   {
     "id":"ratdom_rat_eatme_10",
-    "message":"You swallow it down and wait.",
+    "message":"You gulp the cake down and wait.",
     "replies":[
       {
         "text":"N",
@@ -3976,18 +3976,17 @@
     "replies":[
       {
         "text":"N",
-        "nextPhraseID":"ratdom_rat_eatme_20", 
-		"requires":[{ "requireType":"random", "requireID":"40" }]
+        "nextPhraseID":"ratdom_rat_eatme_40", 
+		"requires":[{ "requireType":"random", "requireID":"70" }]
       },
       {
         "text":"N",
         "nextPhraseID":"ratdom_rat_eatme_30", 
-		"requires":[{ "requireType":"random", "requireID":"40" }]
+		"requires":[{ "requireType":"random", "requireID":"50" }]
       },
       {
         "text":"N",
-        "nextPhraseID":"ratdom_rat_eatme_40", 
-		"requires":[{ "requireType":"random", "requireID":"20" }]
+        "nextPhraseID":"ratdom_rat_eatme_20"
       }
     ]
   },
@@ -4023,7 +4022,7 @@
       {
         "text":"N",
         "nextPhraseID":"ratdom_rat_drinkme_4", 
-		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_rat_drinkme", "requireValue":10 }]
+		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_rat_drinkme", "value":10 }]
       },
       {
         "text":"N",
@@ -4051,13 +4050,58 @@
     "replies":[
       {
         "text":"N",
-        "nextPhraseID":"ratdom_rat_eatme_12"
+        "nextPhraseID":"ratdom_rat_drinkme_12"
       }
     ],
     "rewards":[
       {
         "rewardType":"createTimer",
         "rewardID":"ratdom_rat_drinkme"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_drinkme_12",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_drinkme_40", 
+		"requires":[{ "requireType":"random", "requireID":"70" }]
+      },
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_drinkme_30", 
+		"requires":[{ "requireType":"random", "requireID":"50" }]
+      },
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_rat_drinkme_20"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_drinkme_20",
+    "message":"Nothing obvious happens."
+  },
+  {
+    "id":"ratdom_rat_drinkme_30",
+    "message":"You feel a pleasant warmth flowing through your body.",
+    "rewards":[
+      {
+        "rewardType":"actorCondition",
+        "rewardID":"regen2",
+        "value":20
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_drinkme_40",
+    "message":"You feel dizzy and suddenly start to sweat heavily.",
+    "rewards":[
+      {
+        "rewardType":"actorCondition",
+        "rewardID":"poison_weak",
+        "value":9
       }
     ]
   },
