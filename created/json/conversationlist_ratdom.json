@@ -202,6 +202,51 @@
 		]
     },
     {
+        "id":"ratdom_646_statues",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_646_statues_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":92,
+						"negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_646_statues_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_646_statues_10",
+		"switchToNPC":"ratdom_rat",
+        "message":"Hey - these statues are not real! We can just move through them.",
+        "replies":[
+            {
+                "nextPhraseID":"X",
+				"text":"'Eery thing."
+            },
+            {
+                "nextPhraseID":"ratdom_646_statues_20"
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":92
+			}
+		]
+    },
+    {
+        "id":"ratdom_646_statues_20",
+		"switchToNPC":"ratdom_rat",
+        "message":"These statues always give me a shudder when I pass through them."
+    },
+    {
         "id":"ratdom_check_backbone",
         "replies":[
             {
@@ -2779,7 +2824,7 @@
 	"message":"You can give me the cheese, I'll take good care of it. Or you can just put it here on the floor.",
     "replies":[
       {
-		"text":"Good. Here please.",
+		"text":"Good. Here please take my cheese. But don't eat it.",
         "nextPhraseID":"ratdom_rat_cheese_key_30"
       },
       {
@@ -4365,7 +4410,7 @@
     },
     {
         "id":"ratdom_rat_museum_sign_3d",
-        "message":"A great ax from the last century. You don't want to face a warrior with this weapon in your hands"
+        "message":"A great axe from the last century. You don't want to face a warrior with this weapon in his hands."
     },
     {
         "id":"ratdom_rat_museum_sign_3e",
@@ -4684,7 +4729,7 @@
   {
     "id":"ratdom_rat_warden_exit",
     "switchToNPC":"ratdom_rat_warden2",
-    "message":"Hey! You must not go there!."
+    "message":"Hey! You must not go there!"
   },
   {
     "id":"ratdom_skel_bone_10",
