@@ -587,7 +587,7 @@
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:28",
         "monsterClass":"undead",
-        "phraseID":"do_nothing",
+        "phraseID":"ratdom_do_nothing",
         "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
@@ -595,7 +595,7 @@
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:29",
         "monsterClass":"undead",
-        "phraseID":"do_nothing",
+        "phraseID":"ratdom_do_nothing",
         "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
@@ -603,7 +603,7 @@
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:30",
         "monsterClass":"undead",
-        "phraseID":"do_nothing",
+        "phraseID":"ratdom_do_nothing",
         "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
@@ -611,7 +611,7 @@
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:31",
         "monsterClass":"undead",
-        "phraseID":"do_nothing",
+        "phraseID":"ratdom_do_nothing",
         "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
@@ -619,7 +619,7 @@
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:32",
         "monsterClass":"undead",
-        "phraseID":"do_nothing",
+        "phraseID":"ratdom_do_nothing",
         "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
@@ -627,7 +627,7 @@
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:33",
         "monsterClass":"undead",
-        "phraseID":"do_nothing",
+        "phraseID":"ratdom_do_nothing",
         "spawnGroup":"ratdom_skel_dance_grp"
     },
     {
@@ -635,7 +635,7 @@
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:34",
         "monsterClass":"undead",
-        "phraseID":"do_nothing",
+        "phraseID":"ratdom_do_nothing",
         "spawnGroup":"ratdom_skel_dance_grp"
     },
     {

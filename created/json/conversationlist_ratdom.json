@@ -437,6 +437,10 @@
         "id":"ratdom_rat_dim3",
 		"rewards":[ { "rewardType":"changeMapFilter", "rewardID":"black60" } ]
     },
+    {
+        "id":"ratdom_rat_dim3a",
+		"rewards":[ { "rewardType":"changeMapFilter", "rewardID":"black60" } ]
+    },
   {
     "id":"ratdom_artefact_la",
     "replies":[
@@ -7800,7 +7804,7 @@
 	]
   },
   {
-    "id":"do_nothing",
+    "id":"ratdom_do_nothing",
     "message":"Let's do the bone dance again!"
   }
 ]
