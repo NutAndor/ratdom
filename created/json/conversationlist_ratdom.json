@@ -127,6 +127,70 @@
         ]
     },
     {
+        "id":"ratdom_531_sw",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_531_sw_10",
+                "requires":[
+                    {
+                        "requireType":"wear",
+                        "requireID":"ratdom_pickaxe",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_531_sw_20"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_531_sw_10",
+        "message":"With a single well-aimed blow, you bring down the rock face. The noise of the collapsing wall is deafening.",
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":91
+			}
+		]
+    },
+    {
+        "id":"ratdom_531_sw_20",
+		"switchToNPC":"ratdom_rat",
+        "message":"This rock face looks kind of wrong. Shall we take a closer look?",
+        "replies":[
+            {
+                "text":"Yes. I'll probe for a hidden mechanism.",
+                "nextPhraseID":"ratdom_531_sw_22"
+            },
+            {
+                "text":"Maybe I should use my pickaxe?",
+                "nextPhraseID":"ratdom_531_sw_30"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_531_sw_22",
+		"switchToNPC":"none",
+        "message":"You don't find anything special."
+    },
+    {
+        "id":"ratdom_531_sw_30",
+		"switchToNPC":"ratdom_rat",
+        "message":"Maybe. Although you would have to work in the dark then, because you can't hold the torch at the same time.",
+        "replies":[
+            {
+                "text":"Right. Nothing special here for sure.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_531_sw_32",
+        "message":"Let's better go on and finally find my artifact."
+    },
+    {
         "id":"ratdom_542_chair",
         "message":"An inexplicable dreadful fear overtakes you.",
 		"rewards":[

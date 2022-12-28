@@ -1,11 +1,4 @@
 [
-	{	"id":"ratdom_artefact",
-		"items":[	
-			{ "itemID":"ratdom_artefact",		
-			  "chance":"100", 
-			  "quantity":{ "min":1, "max":1 } 
-			}]
-	},
 	{
 		"id":"container_gold_3_10",
 		"items":[
@@ -121,6 +114,39 @@
             }
         ]
     },
+	{	"id":"ratdom_531_loot1",
+		"items":[	
+			{ "itemID":"gold",		
+			  "chance":"100", 
+			  "quantity":{ "min":200, "max":400 } 
+			}]
+	},
+	{	"id":"ratdom_531_loot2",
+		"items":[	
+			{ "itemID":"gold",		
+			  "chance":"50", 
+			  "quantity":{ "min":10, "max":40 } 
+			},
+			{ "itemID":"gem2",
+			  "chance":"50", 
+			  "quantity":{ "min":2, "max":4 } 
+			},
+			{ "itemID":"gem3",
+			  "chance":"50", 
+			  "quantity":{ "min":2, "max":4 } 
+			},
+			{ "itemID":"gem5",
+			  "chance":"50", 
+			  "quantity":{ "min":2, "max":4 } 
+			}]
+	},
+	{	"id":"ratdom_artefact",
+		"items":[	
+			{ "itemID":"ratdom_artefact",		
+			  "chance":"100", 
+			  "quantity":{ "min":1, "max":1 } 
+			}]
+	},
 	{
 		"id":"ratdom_bone_collector_container",
 		"items":[

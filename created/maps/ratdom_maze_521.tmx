@@ -193,12 +193,12 @@
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKMKDNYA4AYixAXL1EdJrg0cfPr2E7MSnl5Cd+PQSshObXmLcisscYtxKbb3UAofFBtb+UUA7MNziVpOCvKKFlNeHgl4foHprMvSi6yOkF6TeF4rR9WHTS0g9Lr3Y3IUPAwCmbDkj
+   eJwrkmNgKMKDNYA4AYixAXL1EdJrg0cfPr3odiYyEa+XkJ349OLzJy69hMIHnznEuJXaetEBtrAlBhwWo4795IJiqLu5yHQ/CEhRoJdYYChMeztwgaQhGrcgkA4Mtwwywg7m5wokvZok5JV2oL4OJL1aSHmdEEhGC298eougakHpeCbQvllQOwWZcOs1xhIeK4Fiq4QR+dgHqN6aBDfDALo+mF5c5QNIvS8Uo+vDZi8h9bjsxeYufBgAxA5D6Q==
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMANiuSwi18Sw6OJiuAyBfYcJlMvyE5y/UeunSBAjp0DET6U2juXiXy9lNo9UuJnoPQOVNwOpTw7CgYnAAAXVhVP
+   eJxjYMANiuSwi18Sw6OJiuAyBfYcJlMvyE5y/UeunSBAjp0DET6U2juXiXy9lNo9UuJnoPQOVNxSK8+WC5Oml17lIC1BIgl+TgKqTSYxjIYKAABovBc4
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccuRiGKCHPmRAD3309h+l8USpW+ltL7XihtI0QS+91NJHDzupHT9DQS81w5lYvfgAvfTRK0zJjUdS9YEwACJ5ECI=
+   eJzbKMbAsBEHBgFccuRiGKCHPmRAD3309h+l8USpW+ltL7XihtI0QS+91NJHDzupHT9DQS+17CTFDHT1xOrFZRchvdRyJz3DlFR9IAwAdksUzA==
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -218,7 +218,7 @@
  </layer>
  <layer id="7" name="Light1" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYCAdaMkxMBTJkaFxEOj1I0M/TK8VEPuSYIYPUJ01VG8RkhmE9GPTB8M2ePQi69sshqkXn91aSOqw6cVntxYOtxKy24cIfcj6fZEwsfpG8SgexaOYEAYATSa/4g==
+   eJxjYCAdaMkxMBTJkaFxEOj1I0M/TK8VEPuSYIYPUJ01VG8RkhmE9GPTB8M2ePQi69sshqkXn91aSOqw6cVntxYOtxKyG58/sen3RcLE6hvFo3gUj2JCGABmoL90
   </data>
  </layer>
  <layer id="8" name="Light2" width="15" height="30" visible="0">
@@ -233,7 +233,7 @@
  </layer>
  <layer id="10" name="Light4" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwdxBPTZ4NAHA1pk2IlsNzb3E9KHy/2E3IpPPzl6QWBUL/EAAHSdtrE=
+   eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AwQ1iRBHzqII6DfBoc+GNAiw05CdhPSh24GsW7Fp58cvSAwqpd4AACbJ7Xp
   </data>
  </layer>
  <layer id="11" name="Light5" width="15" height="30" visible="0">
@@ -248,7 +248,7 @@
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz26Qe63x6MVndxwBfYTsBunXxKPXioC/8fmZkN2E9CaQoVeDgD58eilJH4T04otjQnppla7wxS2huMEXzoTSFK38OxL14gtrQvkAl93Elu+DQS8A+/Ry6w==
+   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz26Qe63x6MVndxxQXJOAXnx2E9JvRcDf+PxMyG5CehPI0KtBQB8+vZSkD0J68cUxIb20Slf44pZQ3OALZ0Jpilb+HYl68YU1oXyAy25iy/fBoBcAkAlyog==
   </data>
  </layer>
  <layer id="14" name="Light8" width="15" height="30">
