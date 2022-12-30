@@ -206,7 +206,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="5" name="Walkable" width="15" height="30">
+ <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFc4rjkCGFy9dJTHzIYzO4kFE+0diu97aVW3FCql5L0RIpeaumjh50DnTYGws3UDGdi9WLTQ4x+XIAe7qR3PJKT7gA3AhJ3
   </data>
@@ -327,10 +327,10 @@
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
-  <object id="44" name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
+  <object id="44" name="ratdom_m8" type="spawn" x="160" y="288" width="192" height="416">
    <properties>
     <property name="quantity" value="2"/>
-    <property name="spawngroup" value="cavesnake2"/>
+    <property name="spawngroup" value="ratdom_m8"/>
    </properties>
   </object>
   <object id="55" name="ratdom_maze_rat" type="spawn" x="128" y="704" width="96" height="160">

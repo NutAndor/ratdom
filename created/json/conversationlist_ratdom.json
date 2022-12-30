@@ -227,10 +227,7 @@
         "replies":[
             {
                 "nextPhraseID":"X",
-				"text":"'Eery thing."
-            },
-            {
-                "nextPhraseID":"ratdom_646_statues_20"
+				"text":"'That's eery."
             }
         ],
 		"rewards":[
@@ -1321,7 +1318,7 @@
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
-                        "requireID":"fraedro_key",
+                        "requireID":"ratdom_fraedro_key",
                         "value":1
                     }
                 ]

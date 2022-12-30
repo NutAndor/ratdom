@@ -333,6 +333,12 @@
     <property name="spawngroup" value="ratdom_maze_rat"/>
    </properties>
   </object>
+  <object name="cavesnake2" type="spawn" x="160" y="288" width="192" height="416">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="cavesnake2"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="18" name="Keys" visible="0"/>
  <objectgroup id="19" name="Replace" visible="0">
