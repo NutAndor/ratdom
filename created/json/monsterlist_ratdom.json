@@ -58,8 +58,8 @@
         }
     },
     {
-        "id":"ratdom_m2",
-        "name":"ratdom_m2",
+        "id":"ratdom_m2a",
+        "name":"Vicious cave snake",
         "iconID":"monsters_rltiles2:26",
         "maxHP":30,
         "maxAP":10,
@@ -87,9 +87,38 @@
         }
     },
     {
-        "id":"ratdom_m3",
-        "name":"ratdom_m3",
-        "iconID":"monsters_rltiles2:114",
+        "id":"ratdom_m2b",
+        "name":"Malicious cave snake",
+        "iconID":"monsters_snakes:1",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m2",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"poison_weak",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"10"
+                }
+            ]
+        }
+    },
+    {
+        "id":"ratdom_m3a",
+        "name":"Malignant cave snake",
+        "iconID":"monsters_snakes:2",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -116,9 +145,38 @@
         }
     },
     {
-        "id":"ratdom_m4",
-        "name":"ratdom_m4",
-        "iconID":"monsters_rltiles2:116",
+        "id":"ratdom_m3b",
+        "name":"Nasty cave snake",
+        "iconID":"monsters_snakes:2",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m3",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"poison_weak",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"10"
+                }
+            ]
+        }
+    },
+    {
+        "id":"ratdom_m4a",
+        "name":"Pernicious cave snake",
+        "iconID":"monsters_rltiles2:22",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -145,9 +203,38 @@
         }
     },
     {
-        "id":"ratdom_m5",
-        "name":"ratdom_m5",
-        "iconID":"monsters_rltiles2:120",
+        "id":"ratdom_m4b",
+        "name":"Virulent cave snake",
+        "iconID":"monsters_rltiles2:27",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m4",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"poison_weak",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"10"
+                }
+            ]
+        }
+    },
+    {
+        "id":"ratdom_m5a",
+        "name":"Lazy snail",
+        "iconID":"monsters_rltiles2:122",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -174,9 +261,9 @@
         }
     },
     {
-        "id":"ratdom_m6",
-        "name":"ratdom_m6",
-        "iconID":"monsters_rltiles2:129",
+        "id":"ratdom_m5b",
+        "name":"Poisenous snail",
+        "iconID":"monsters_rltiles2:120",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -184,7 +271,7 @@
             "min":5,
             "max":5
         },
-        "spawnGroup":"ratdom_m6",
+        "spawnGroup":"ratdom_m5",
         "droplistID":"snake",
         "attackCost":5,
         "attackChance":110,
@@ -197,15 +284,53 @@
                     "condition":"poison_weak",
                     "magnitude":1,
                     "duration":3,
-                    "chance":"10"
+                    "chance":"30"
                 }
             ]
         }
     },
     {
-        "id":"ratdom_m7",
-        "name":"ratdom_m7",
-        "iconID":"monsters_rltiles2:144",
+        "id":"ratdom_m6a",
+        "name":"Cave gnome",
+        "iconID":"monsters_rltiles2:128",
+        "maxHP":60,
+        "maxAP":10,
+        "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":5,
+            "max":15
+        },
+        "spawnGroup":"ratdom_m6",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":130,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20
+    },
+    {
+        "id":"ratdom_m6b",
+        "name":"Plump cave gnome",
+        "iconID":"monsters_rltiles2:132",
+        "maxHP":80,
+        "maxAP":10,
+        "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":10,
+            "max":25
+        },
+        "spawnGroup":"ratdom_m6",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20
+    },
+    {
+        "id":"ratdom_m7a",
+        "name":"Fierce cave lizard",
+        "iconID":"monsters_rltiles2:114",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -232,9 +357,9 @@
         }
     },
     {
-        "id":"ratdom_m8",
-        "name":"ratdom_m8",
-        "iconID":"monsters_rltiles2:152",
+        "id":"ratdom_m7b",
+        "name":"Snappy cave lizard",
+        "iconID":"monsters_rltiles2:116",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -242,7 +367,7 @@
             "min":5,
             "max":5
         },
-        "spawnGroup":"ratdom_m8",
+        "spawnGroup":"ratdom_m7",
         "droplistID":"snake",
         "attackCost":5,
         "attackChance":110,
@@ -261,9 +386,47 @@
         }
     },
     {
-        "id":"ratdom_m9",
-        "name":"ratdom_m9",
-        "iconID":"monsters_rltiles2:159",
+        "id":"ratdom_m8a",
+        "name":"Elvedridge",
+        "iconID":"monsters_rltiles2:80",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m8",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20
+    },
+    {
+        "id":"ratdom_m8b",
+        "name":"Dangerous elvedridge",
+        "iconID":"monsters_rltiles2:76",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m8",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20
+    },
+    {
+        "id":"ratdom_m9a",
+        "name":"Giant hornbat",
+        "iconID":"monsters_rltiles2:101",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -277,22 +440,50 @@
         "attackChance":110,
         "criticalSkill":40,
         "criticalMultiplier":2.0,
-        "blockChance":20,
-        "hitEffect":{
-            "conditionsTarget":[
-                {
-                    "condition":"poison_weak",
-                    "magnitude":1,
-                    "duration":3,
-                    "chance":"10"
-                }
-            ]
-        }
+        "blockChance":20
     },
     {
-        "id":"ratdom_m10",
-        "name":"ratdom_m10",
-        "iconID":"monsters_rltiles4:35",
+        "id":"ratdom_m9b",
+        "name":"Cave teckel",
+        "iconID":"monsters_rltiles2:111",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m9",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20
+    },
+    {
+        "id":"ratdom_m9c",
+        "name":"Cave wolf",
+        "iconID":"monsters_rltiles2:110",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m9",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20
+    },
+    {
+        "id":"ratdom_m10a",
+        "name":"Poisonous caterpillar",
+        "iconID":"monsters_rltiles4:38",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -319,9 +510,38 @@
         }
     },
     {
-        "id":"ratdom_m11",
-        "name":"ratdom_m11",
+        "id":"ratdom_m10b",
+        "name":"Biting caterpillar",
         "iconID":"monsters_rltiles4:39",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m10",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"poison_weak",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"10"
+                }
+            ]
+        }
+    },
+    {
+        "id":"ratdom_m11a",
+        "name":"Young cave worm",
+        "iconID":"monsters_tometik9:23",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -348,9 +568,67 @@
         }
     },
     {
-        "id":"ratdom_m12",
-        "name":"ratdom_m12",
-        "iconID":"monsters_tometik4:24",
+        "id":"ratdom_m11b",
+        "name":"Angry cave worm",
+        "iconID":"monsters_tometik9:41",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m11",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"poison_weak",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"10"
+                }
+            ]
+        }
+    },
+    {
+        "id":"ratdom_m11c",
+        "name":"Old cave worm",
+        "iconID":"monsters_tometik9:33",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"reptile",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m11",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"poison_weak",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"10"
+                }
+            ]
+        }
+    },
+    {
+        "id":"ratdom_m12a",
+        "name":"Quick viper",
+        "iconID":"monsters_tometik4:20",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -377,9 +655,9 @@
         }
     },
     {
-        "id":"ratdom_m13",
-        "name":"ratdom_m13",
-        "iconID":"monsters_eye1:0",
+        "id":"ratdom_m12b",
+        "name":"Nasty viper",
+        "iconID":"monsters_tometik4:17",
         "maxHP":30,
         "maxAP":10,
         "monsterClass":"reptile",
@@ -387,7 +665,7 @@
             "min":5,
             "max":5
         },
-        "spawnGroup":"ratdom_m13",
+        "spawnGroup":"ratdom_m12",
         "droplistID":"snake",
         "attackCost":5,
         "attackChance":110,
@@ -406,33 +684,42 @@
         }
     },
     {
-        "id":"ratdom_m14",
-        "name":"ratdom_m14",
-        "iconID":"monsters_tometik2:22",
+        "id":"ratdom_m13a",
+        "name":"Young roundling",
+        "iconID":"monsters_eye1:0",
         "maxHP":30,
         "maxAP":10,
-        "monsterClass":"reptile",
+        "monsterClass":"animal",
         "attackDamage":{
             "min":5,
             "max":5
         },
-        "spawnGroup":"ratdom_m14",
+        "spawnGroup":"ratdom_m13",
         "droplistID":"snake",
         "attackCost":5,
         "attackChance":110,
         "criticalSkill":40,
         "criticalMultiplier":2.0,
-        "blockChance":20,
-        "hitEffect":{
-            "conditionsTarget":[
-                {
-                    "condition":"poison_weak",
-                    "magnitude":1,
-                    "duration":3,
-                    "chance":"10"
-                }
-            ]
-        }
+        "blockChance":20
+    },
+    {
+        "id":"ratdom_m13b",
+        "name":"Curious roundling",
+        "iconID":"monsters_eye2:0",
+        "maxHP":30,
+        "maxAP":10,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":5,
+            "max":5
+        },
+        "spawnGroup":"ratdom_m13",
+        "droplistID":"snake",
+        "attackCost":5,
+        "attackChance":110,
+        "criticalSkill":40,
+        "criticalMultiplier":2.0,
+        "blockChance":20
     },
     {
         "id":"ratdom_bone_collector",
