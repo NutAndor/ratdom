@@ -866,6 +866,11 @@
         "rewardType":"removeQuestProgress",
         "rewardID":"ratdom_nondisplay",
         "value":12
+      },
+      {
+        "rewardType":"spawnAll",
+        "rewardID":"ratdom_roundling2",
+        "mapName":"ratdom_maze_627"
       }
     ],
     "message":"I got it! I got my artifact! Finally!",
@@ -4195,13 +4200,13 @@
     "replies":[
       {
         "text":"N",
-        "nextPhraseID":"ratdom_rat_eatme_40", 
-		"requires":[{ "requireType":"random", "requireID":"70" }]
+        "nextPhraseID":"ratdom_rat_eatme_30", 
+		"requires":[{ "requireType":"random", "requireID":"50" }]
       },
       {
         "text":"N",
-        "nextPhraseID":"ratdom_rat_eatme_30", 
-		"requires":[{ "requireType":"random", "requireID":"50" }]
+        "nextPhraseID":"ratdom_rat_eatme_40", 
+		"requires":[{ "requireType":"random", "requireID":"30" }]
       },
       {
         "text":"N",
@@ -4285,12 +4290,12 @@
       {
         "text":"N",
         "nextPhraseID":"ratdom_rat_drinkme_40", 
-		"requires":[{ "requireType":"random", "requireID":"70" }]
+		"requires":[{ "requireType":"random", "requireID":"15" }]
       },
       {
         "text":"N",
         "nextPhraseID":"ratdom_rat_drinkme_30", 
-		"requires":[{ "requireType":"random", "requireID":"50" }]
+		"requires":[{ "requireType":"random", "requireID":"70" }]
       },
       {
         "text":"N",

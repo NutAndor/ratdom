@@ -1161,6 +1161,21 @@
         "phraseID":"ratdom_roundling2",
         "attackCost":5,
         "attackChance":120
+    },
+    {
+        "id":"ratdom_roundling3",
+        "name":"Roundling",
+        "iconID":"monsters_rltiles1:134",
+        "maxHP":200,
+        "monsterClass":"humanoid",
+        "movementAggressionType":"wholeMap",
+        "attackDamage":{
+            "min":10,
+            "max":30
+        },
+        "spawnGroup":"ratdom_roundling3",
+        "attackCost":5,
+        "attackChance":120
     },    
 	{
         "id":"ratdom_skel_lute",
