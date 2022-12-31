@@ -1532,7 +1532,26 @@
     "replies":[
       {
 		"text":"King Rah? You are not dead since long ago?",
-		"nextPhraseID":"ratdom_king_rah_52"
+		"nextPhraseID":"ratdom_king_rah_52",
+		"requires":[
+			{			
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":10
+			}
+		]
+      },
+      {
+		"text":"King Rah? You are not dead since long ago?",
+		"nextPhraseID":"ratdom_king_rah_54",
+		"requires":[
+			{			
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":10,
+				"negate":true
+			}
+		]
       }
     ]
   },
@@ -1553,17 +1572,7 @@
     "message":"Proveth thyself worthy to wield my sword!",
     "replies":[
       {
-		"text":"N",
-		"nextPhraseID":"ratdom_king_rah_56"
-      }
-    ]
-  },
-  {
-    "id":"ratdom_king_rah_56",
-    "message":"Thou hast but one try.",
-    "replies":[
-      {
-		"text":"One try is enough for me. Attack!",
+		"text":"OK then. Attack!",
 		"nextPhraseID":"F"
       },
       {
@@ -2790,7 +2799,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"Well, OK. Clevred, do as they want.",
+                "text":"Well, OK. We have no chance against so many roundlings.",
                 "nextPhraseID":"ratdom_roundling2_10"
             },
             {
@@ -2802,6 +2811,20 @@
     {
         "id":"ratdom_roundling2_10",
 		"switchToNPC":"ratdom_rat",
+        "message":"Coward! You didn't even try.",
+		"replies":[
+            {
+                "text":"Never call me coward! Attack!",
+                "nextPhraseID":"ratdom_roundling2_90"
+            },
+            {
+                "text":"They are too many for us, we would be killed. Let's give up the artifact.",
+                "nextPhraseID":"ratdom_roundling2_12"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_roundling2_12",
         "message":"Never! I'd rather die!",
 		"replies":[
             {
@@ -3850,7 +3873,14 @@
             },
             {
 				"text":"Maybe you can help us?",
-                "nextPhraseID":"whootibarfag_52"
+                "nextPhraseID":"whootibarfag_52",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+                ]
             }
         ]
 	},
@@ -4020,7 +4050,26 @@
 		"replies":[
             {
 				"text":"Yes. I know.",
-                "nextPhraseID":"whootibarfag_130"
+                "nextPhraseID":"whootibarfag_130",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+                ]
+            },
+            {
+				"text":"Enough. It's getting late.",
+                "nextPhraseID":"whootibarfag_190",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10,
+						"negate":true
+					}
+                ]
             }
         ]
 	},
@@ -4100,7 +4149,14 @@
             },
             {
 				"text":"I give up. Come, Clevred, let us leave.",
-                "nextPhraseID":"X"
+                "nextPhraseID":"X",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+                ]
             }
         ]
 	}

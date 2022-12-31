@@ -140,7 +140,17 @@
                 ]
             },
             {
-                "nextPhraseID":"ratdom_531_sw_20"
+                "nextPhraseID":"ratdom_531_sw_20",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+				]
+            },
+            {
+                "nextPhraseID":"ratdom_531_sw_12"
             }
         ]
     },
@@ -156,6 +166,20 @@
 		]
     },
     {
+        "id":"ratdom_531_sw_12",
+        "message":"This rock face looks kind of wrong.",
+        "replies":[
+            {
+                "text":"I'll probe for a hidden mechanism.",
+                "nextPhraseID":"ratdom_531_sw_22"
+            },
+            {
+                "text":"Maybe I should use my pickaxe?",
+                "nextPhraseID":"ratdom_531_sw_30"
+            }
+        ]
+    },
+    {
         "id":"ratdom_531_sw_20",
 		"switchToNPC":"ratdom_rat",
         "message":"This rock face looks kind of wrong. Shall we take a closer look?",
@@ -166,7 +190,7 @@
             },
             {
                 "text":"Maybe I should use my pickaxe?",
-                "nextPhraseID":"ratdom_531_sw_30"
+                "nextPhraseID":"X"
             }
         ]
     },
@@ -212,11 +236,34 @@
                         "requireID":"ratdom_nondisplay",
                         "value":92,
 						"negate":true
+                    },
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_646_statues_12",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":92,
+						"negate":true
                     }
                 ]
             },
             {
-                "nextPhraseID":"ratdom_646_statues_20"
+                "nextPhraseID":"ratdom_646_statues_20",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+				]
             }
         ]
     },
@@ -224,6 +271,23 @@
         "id":"ratdom_646_statues_10",
 		"switchToNPC":"ratdom_rat",
         "message":"Hey - these statues are not real! We can just move through them.",
+        "replies":[
+            {
+                "nextPhraseID":"X",
+				"text":"'That's eery."
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":92
+			}
+		]
+    },
+    {
+        "id":"ratdom_646_statues_12",
+        "message":"These statues are not real, you can just move through them.",
         "replies":[
             {
                 "nextPhraseID":"X",
@@ -1354,7 +1418,14 @@
         "replies":[
             {
                 "nextPhraseID":"ratdom_fraedro_key_12",
-                "text":"N"
+                "text":"N",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+				]
             }
         ]
     },
@@ -1364,7 +1435,14 @@
         "replies":[
             {
                 "nextPhraseID":"ratdom_fraedro_key_30",
-                "text":"Oh."
+                "text":"Oh.",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+				]
             }
         ],
         "rewards":[
@@ -2778,7 +2856,14 @@
     "replies":[
       {
 		"text":"How do you know that I have some in my bag?",
-        "nextPhraseID":"ratdom_rat_cheese_key_12"
+        "nextPhraseID":"ratdom_rat_cheese_key_12",
+		"requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":10
+			}
+		]
       },
       {
 		"text":"Now calm down. Can I deposit my cheese here somewhere?",
@@ -3060,14 +3145,14 @@
     "replies":[
       {	"nextPhraseID":"ratdom_rat_conv2_400",
 		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":131, "negate":true },
-					{ "requireType":"random", "requireID":"1" },
+					{ "requireType":"random", "requireID":"25" },
 					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
 					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_bwm", "value":1 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_410",
 		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":132, "negate":true },
-					{ "requireType":"random", "requireID":"2" },
+					{ "requireType":"random", "requireID":"25" },
 					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
 					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_tour", "value":1 }]
@@ -3112,19 +3197,19 @@
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_500",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":130 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":90 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_40",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":80 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":60 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_30",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":40 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":30 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_20",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":20 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":15 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_10",
-		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":5 }]
+		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":4 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_1b"
       }
@@ -3367,7 +3452,7 @@
       },
       {
         "text":"Well, why don't I? Really, I forgot about it.",
-		"nextPhraseID":"X"
+		"nextPhraseID":"ratdom_rat_conv2_409"
       },
       {
         "text":"I didn't see any use.",
@@ -3406,7 +3491,7 @@
       },
       {
         "text":"Well, why don't I? Really, I forgot about it.",
-		"nextPhraseID":"X"
+		"nextPhraseID":"ratdom_rat_conv2_419"
       },
       {
         "text":"I didn't see any use.",
@@ -3426,7 +3511,7 @@
   },
   {
     "id":"ratdom_rat_conv2_414",
-    "message":"The way might be somewhat longer, but you won't miss anything important of the cave wonders.",
+    "message":"The way might be somewhat longer, but you won't miss anything important in the cave wonders.",
     "replies":[
       {
         "text":"N",
@@ -3436,10 +3521,34 @@
   },
   {
     "id":"ratdom_rat_conv2_416",
-    "message":"Should there be a branch, it will be marked with a flag and a special formed shield.",
+    "message":"Should there be a branch, it will be marked with a special formed shield and an additional flag.",
     "replies":[
       {
         "text":"Got it.",
+		"nextPhraseID":"ratdom_rat_conv2_418"
+      },
+      {
+        "text":"What?",
+		"nextPhraseID":"ratdom_rat_conv2_417"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_417",
+    "message":"Sigh. If you see a shield together with a flag, then first look for another passage marked with a special formed shield.",
+    "replies":[
+      {
+        "text":"And then?",
+		"nextPhraseID":"ratdom_rat_conv2_417a"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_417a",
+    "message":"Then follow this passage to the end. We might find something important there. Then go back and follow the usual shield.",
+    "replies":[
+      {
+        "text":"Eh, ok. Got it.",
 		"nextPhraseID":"ratdom_rat_conv2_418"
       }
     ]
@@ -4301,6 +4410,11 @@
             "requireID":"ratdom_nondisplay",
             "value":140,
 			"negate":true
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":110
           }
         ]
       }
@@ -4590,11 +4704,42 @@
             "requireID":"ratdom_nondisplay",
             "value":180,
 			"negate":true
+          },
+		  {
+			"requireType":"questProgress",
+			"requireID":"ratdom_nondisplay",
+			"value":10
+		  }
+        ]
+      },
+      {
+		"nextPhraseID":"ratdom_rat_sword_key_12",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":180,
+			"negate":true
           }
         ]
       },
       {
 		"nextPhraseID":"ratdom_rat_sword_key_20",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":183
+          },
+		  {
+			"requireType":"questProgress",
+			"requireID":"ratdom_nondisplay",
+			"value":10
+		  }
+        ]
+      },
+      {
+		"nextPhraseID":"ratdom_rat_sword_key_22",
         "requires":[
           {
             "requireType":"questProgress",
@@ -4614,8 +4759,16 @@
     "message":"What a nice sword. Too bad it's stuck firmly in the wall."
   },
   {
+    "id":"ratdom_rat_sword_key_12",
+    "message":"What a nice sword. Too bad it's stuck firmly in the wall."
+  },
+  {
     "id":"ratdom_rat_sword_key_20",
     "switchToNPC":"ratdom_rat",
+    "message":"The sword is gone! There is just an illusion left."
+  },
+  {
+    "id":"ratdom_rat_sword_key_22",
     "message":"The sword is gone! There is just an illusion left."
   },
   {
@@ -4630,9 +4783,42 @@
     ]
   },
   {
+    "id":"ratdom_rat_sword_key_32",
+    "switchToNPC":"ratdom_rat",
+    "message":"King Rah's sword! Now what again were the words to say?",
+    "replies":[
+      {
+		"text":"Veni gladio fidelis?",
+		"nextPhraseID":"ratdom_rat_sword_key_40"
+      }
+    ]
+  },
+  {
     "id":"ratdom_rat_sword_key_40",
     "switchToNPC":"ratdom_rat",
     "message":"Yes, yes! It moves ...",
+    "replies":[
+      {
+		"text":"Hey, who is this?",
+		"nextPhraseID":"ratdom_king_rah"
+      }
+    ],
+    "rewards":[
+		{
+			"rewardType":"spawnAll",
+			"rewardID":"ratdom_king_rah",
+			"mapName":"ratdom_maze_627"
+		},
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":183
+		}
+    ]
+  },
+  {
+    "id":"ratdom_rat_sword_key_42",
+    "message":"The great sword starts to vibrate.",
     "replies":[
       {
 		"text":"Hey, who is this?",
@@ -5106,28 +5292,21 @@
   },
   {
     "id":"ratdom_troll_door1",
-	"switchToNPC":"ratdom_rat",
-    "message":"Do you really want to open this ominous looking massive door? It looks dangerous.",
     "replies":[
       {
-		"text":"Mmh, maybe not.",
-        "nextPhraseID":"X"
+        "nextPhraseID":"ratdom_troll_door1_1",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":10
+          }
+        ]
       },
       {
-		"text":"Sure. No risk no fun!",
-        "nextPhraseID":"ratdom_troll_door1_10"
-      }        
-	]
-  },
-  {
-    "id":"ratdom_troll_door1_10",
-	"rewards":[
-		{
-			"rewardType":"questProgress",
-			"rewardID":"ratdom_nondisplay",
-			"value":170
-		}
-	]
+        "nextPhraseID":"ratdom_troll_door1_2"
+      }
+    ]
   },
   {
     "id":"ratdom_store_door1",
@@ -5160,13 +5339,84 @@
 	]
   },
   {
+    "id":"ratdom_troll_door1_1",
+	"switchToNPC":"ratdom_rat",
+    "message":"Do you really want to open this ominous looking massive door? It looks dangerous.",
+    "replies":[
+      {
+		"text":"Mmh, maybe not.",
+        "nextPhraseID":"X"
+      },
+      {
+		"text":"Sure. No risk no fun!",
+        "nextPhraseID":"ratdom_troll_door1_10"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_troll_door1_2",
+    "message":"This ominous looking massive door looks dangerous.",
+    "replies":[
+      {
+		"text":"Mmh, better leave it alone.",
+        "nextPhraseID":"X"
+      },
+      {
+		"text":"No risk no fun. Open!",
+        "nextPhraseID":"ratdom_troll_door1_10"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_troll_door1_10",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":170
+		}
+	]
+  },
+  {
     "id":"ratdom_troll_door2",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_troll_door2_1",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":10
+          }
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_troll_door2_2"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_troll_door2_1",
 	"switchToNPC":"ratdom_rat",
     "message":"It must be extremely dangerous, because it is secured with two strong doors.",
     "replies":[
       {
 		"text":"Indeed.",
         "nextPhraseID":"ratdom_troll_door2_10"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_troll_door2_2",
+    "message":"It must be extremely dangerous, because it is secured with two strong doors.",
+    "replies":[
+      {
+		"text":"Go back.",
+        "nextPhraseID":"X"
+      },
+      {
+		"text":"Open anyway.",
+        "nextPhraseID":"ratdom_troll_door2_32"
       }        
 	]
   },
@@ -5192,6 +5442,16 @@
   {
     "id":"ratdom_troll_door2_30",
     "message":"He never listens to me, does he?",
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_nondisplay",
+			"value":171
+		}
+	]
+  },
+  {
+    "id":"ratdom_troll_door2_32",
 	"rewards":[
 		{
 			"rewardType":"questProgress",
