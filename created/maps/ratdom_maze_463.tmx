@@ -188,7 +188,7 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlMEJwzAMRXPtAj2a7NB0hMYjuBnB7ghxpusSHacWlUH52FgOFHpo4B1i9CwFoj+aYRgTa8InXOLO0DObD/S+JB5cj2Q/ME44gb1N1F8LfmS8cCJ4F54Hfbxng/PszQ0fQU/r17yW3/IIK+pfJ72XwZ63DlfO3tNTMh30/nwX+wMzHJk5FND804uoj2afXS0vZxMiM7TmYTaVMtR1eJh9nr/fKj28w7Fb82jvaYdLGebNPp9kPe493rHy2fOsyxfsM1X61Mh9iDdQt6u3
+   eJztlMENgzAMRbl2gR4jdigdoTBCyghJRyBM1yU6Tm3VlsxXoiQ9g/QORH52kPAf3TCMxEYEwhNPgZ/Z/eD3lXhJPaJ+FLxxoni7qb9n/CQE4yTwbnIf9LHPDufqzRUfQa/VL3k1v+Yxi6n/XNo9BWc+Olx7956ZlulP7+QE4V2IGVr+6dXUJ3fMrpqn2YTYDC15mE25DPUdHmZfkO9fGj3s4cUtebz3vMO5DAvumE+2Hvcee2xy9r625QvOmQpzSugc5gtNu6u2
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
@@ -243,7 +243,7 @@
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzJmC3Hw79cUT4F5/dIP2aZNpNyM+E7CakN4EMvRoE9OHTSyh+KdGLL44HY7oiFDf4whlfmtKAYlL9q0HATmS749HsJ0YfNveTqg9ZPzn6RgHpAACgRXsk
+   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzJmC3Hw79cUT4F5/dIP2aZNpNyM+E7CakN4EMvRoE9OHTSyh+KdGLL44HY7oiFDf4wplQmtIg07/ExC3I7ng0+4nRh839pOpD1k+OvlFAOgAA5mR7uA==
   </data>
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">

@@ -218,27 +218,27 @@
  </layer>
  <layer id="7" name="Light1" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYCAdaMkxMBTJkaFxEOj1I0M/TK8VEPuSYIYPUJ01VG8RkhmE9GPTB8M2ePQi69sshqkXn91aSOqw6cVntxYOtxKy24cIfcj6fZEwsfpG8SgexaOYEAYATSa/4g==
+   eJxjYCAdaMkxMBTJkaFxEOj1I0M/TK8VEPuSYIYPUJ01VG8RkhmE9GPTB8M2ePQi69sshqkXn91aSOqw6cVntxYOtxKyG58/sen3RcLE6hvFo3gUj2JCGABmoL90
   </data>
  </layer>
  <layer id="8" name="Light2" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKAJiGyAmFRRRQW8CmXrJsdOHTPeC9FlD9VoBsR+R+pH1IWNC+nHpI+R2fPrwuZ2QPlx2+xChB5vdpOhD1u9Lhr5RPIpH8SgmhAHmSMXj
+   eJwrkmNgKAJiGyAmFRRRQW8CmXrJsdOHTPeC9FlD9VoBsR+R+pH1FZGgH5s+YsIanz58dhPSh8tuYvWh202KPmT9vmToG8WjeBSPYkIYALv8xQY=
   </data>
  </layer>
  <layer id="9" name="Light3" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IkHA/FpOpJAGIYiCNSH7IeZEBIvw0OfTCgRYadhOwmpA+XfmL1obudVH3IeskBI1UvABEdt1Y=
+   eJwrkmNgKBrFo3gUj2Io1gDieCjWJFFPAhDDQBwR+jXQ9CADQvptcOiDAS0y7MRnNzH6sOknRR+620nVh6yXHDBS9QIAxnW0LQ==
   </data>
  </layer>
  <layer id="10" name="Light4" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwdxBPTZ4NAHA1pk2IlsNzb3E9KHy/2E3IpPPzl6QWBUL/EAAHSdtrE=
+   eJwrkmNgKBrFo3gUj2Ig1gDieCDWJENfAhCDQBzUDGLMQdaHDuII6LfBoQ8GtMiwE9ludPcTow+X+wm5FZd+cvWCwKhe4gEAokSz0g==
   </data>
  </layer>
  <layer id="11" name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+Pw6CPGbkL6CflbiwK7CelNIFMvPn349OJzK6V6yU0bhPxKq3RFKG5w6SdkJ7p+XyRMrL5RPIphGABVP5aT
+   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+OA4pp49BKym5B+Qv7WosBufHo1gDiBDL2E9OHTi8+tlOolN23gs5OW6YpQvOLST8hOdP2+SJhYfaN4FMMwADiMlW0=
   </data>
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
@@ -325,7 +325,7 @@
   <object id="57" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="58" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
  </objectgroup>
- <objectgroup id="17" name="Spawn">
+ <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
   <object id="44" name="ratdom_m7" type="spawn" x="160" y="288" width="192" height="416">
    <properties>

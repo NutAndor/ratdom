@@ -228,7 +228,7 @@
  </layer>
  <layer id="9" name="Light3" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IkHA/FxKrXgKpPAGIYiAOyNYnQh6wHGRDSb4NDHwxokWEnPruJ0Yesnxx96G4nVR+yXnLASNULAO9PtQk=
+   eJwrkmNgKBrFo3gUj2Io1gDieCjWJFFPAhDDQBwR+jXQ9CADQvptcOiDAS0y7MRnNzH6kPWTow/d7aTqQ9ZLDhipegFAkLR2
   </data>
  </layer>
  <layer id="10" name="Light4" width="15" height="30" visible="0">
@@ -243,7 +243,7 @@
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPA4prUuBuQvrx2U3Iz4TsxqdXA4gTyNBLSB8+vYTilxK9+OJ4MKYrQvGKL5wJpSly/UtM3GKzmxh96GaQow9ZPzn6RgHpAABU9Hrt
+   eJwrkmNgKBrFZOF4INaA0uhYE48+G6g+XECLgF5cwAcoZ41HrxUQ++HQH0fAzYTsJqQfn92E/EzIbnx6QeGcQIZeQvrw6cXnVkr14otjQnoHIl0Rild84UwoTZHrX2LiNg4qT6o+dDPI0Yesnxx9o4B0AAB0mnps
   </data>
  </layer>
  <layer id="13" name="Light7" width="15" height="30" visible="0">
