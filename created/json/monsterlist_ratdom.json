@@ -857,6 +857,7 @@
             "max":30
         },
         "phraseID":"ratdom_kriih",
+        "droplistID":"drop_ratdom_kriih",
         "spawnGroup":"ratdom_kriih",
         "droplistID":"ratdom_kriih"
     },
@@ -1491,14 +1492,6 @@
         "attackCost":5,
         "attackChance":100,
         "damageResistance":5
-    },
-    {
-        "id":"ratdom_sriih",
-        "name":"Sriih",
-        "iconID":"monsters_rats:1",
-		"moveCost":5,
-		"spawnGroup":"ratdom_sriih",
-		"phraseID":"ratdom_sriih"
     },
     {
         "id":"ratdom_tharal",

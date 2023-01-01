@@ -668,7 +668,237 @@
     },
     {
         "id":"ratdom_kriih",
-		"message":"Hi $playername. I am Kriih."
+        "replies":[
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":398
+                    }
+                ],
+                "nextPhraseID":"ratdom_kriih_202"
+            },
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":399
+                    }
+                ],
+                "nextPhraseID":"ratdom_kriih_200"
+            },
+            {
+                "nextPhraseID":"ratdom_kriih_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_10",
+		"message":"Hi $playername. I am watching you."
+    },
+    {
+        "id":"ratdom_kriih_200",
+		"message":"Hi $playername. Well done.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_210",
+				"text":"What do you mean?"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_202",
+		"message":"Hi $playername. I am not amused with what you have done.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_204",
+				"text":"What do you mean?"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_204",
+		"message":"You released Fraedro. You should have killed him or left him in custody.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_206",
+				"text":"What do you mean?"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_206",
+		"message":"My plan was that Fraedro should be sentenced to death.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_220",
+				"text":"Why?"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_210",
+		"message":"Killing Fraedro. I loved to see that.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_220",
+				"text":"He earned it."
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_220",
+		"message":"He deserved death, yes. But not because of the stupid skeleton.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_230",
+				"text":"Not?"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_230",
+		"message":"Of course not. As if Fraedro could. He's far too good a rat to do such a thing.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_240",
+				"text":"N"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_240",
+		"message":"I took the skeleton myself and scattered the pieces so that no one would find them.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_250",
+				"text":"N"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_250",
+		"message":"And then I blamed it on my cousin Fraedro.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_260",
+				"text":"How mean."
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_260",
+		"message":"Hahaha! That was funny!",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_270",
+				"text":"Why did you do that? He's your cousin."
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_270",
+		"message":"Yes, yes. But he got in my way.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_280",
+				"text":"N"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_280",
+		"message":"I caught him and presentes them to Wart. He believed my story and and put him under arrest.",
+        "replies":[
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":399
+                    }
+                ],
+                "nextPhraseID":"ratdom_kriih_290",
+				"text":"And then I killed him."
+            },
+            {
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":398
+                    }
+                ],
+                "nextPhraseID":"ratdom_kriih_300",
+				"text":"And then I have set him free."
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_290",
+		"message":"That was even better than I had planned. I have to thank you. Here, take some coins for the dirty work.",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_kriih_292",
+				"text":"I don't want your bloody gold."
+            },
+            {
+                "nextPhraseID":"ratdom_kriih_294",
+				"text":"It better has to be many coins."
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_292",
+		"message":"Oh how funny. He also has a guilty conscience. It just keeps getting better!",
+        "replies":[
+            {
+                "nextPhraseID":"X",
+				"text":"I better leave before I forget myself."
+            },
+            {
+                "nextPhraseID":"F",
+				"text":"Now you pay for it - attack!"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_kriih_294",
+		"message":"10 pieces of gold is not enough? Oh, you draw your weapon? I'd better be gone then.",
+        "replies":[
+            {
+                "nextPhraseID":"X",
+				"text":"Wait, you coward!"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_kriih",
+                "mapName":"ratdom_maze_412"
+            },
+			{
+				"rewardType":"giveItem",
+				"rewardID":"gold",
+				"value":10
+			}
+        ]
+    },
+    {
+        "id":"ratdom_kriih_300",
+		"message":"Yes, you destroyed my beautiful plan. You have to pay for that.",
+        "replies":[
+            {
+                "nextPhraseID":"F",
+				"text":"We'll see who pays here."
+            },
+            {
+                "nextPhraseID":"X",
+				"text":"I better run."
+            }
+        ]
     },
     {
         "id":"ratdom_maze_boulder",
@@ -2769,7 +2999,18 @@
         "message":"If strangers come hither to gain \nour treasure, their hope is in vain. \nIn darkest deep ground, \nwith our Yellow Round, \ntheir bones will for ever remain.",
         "replies":[
             {
-                "text":"Nice. And now to work ...",
+                "text":"What a nice poem. They are good, aren't they, Clevred?",
+                "nextPhraseID":"ratdom_roundling_10"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_roundling_10",
+		"switchToNPC":"ratdom_rat",
+        "message":"Really, they're good at poetry. But we'll take the artefact with us anyway.",
+        "replies":[
+            {
+                "text":"Of course. So now to work ...",
                 "nextPhraseID":"ratdom_roundling_90"
             }
         ]
