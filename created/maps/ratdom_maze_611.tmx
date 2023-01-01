@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccoMN4wLk6qNUP7luJte/lIQXPfUi66c0nilNI4Nd71CzcyDT1WDQS0k409PuweQGZDMo0UupfgC35wt4
+   eJzbKMbAsBEHBgFccoMRYwPk6KGGflq5F5d+SsKKnnqR9VMax5Smj8Gud6jZOVTTJLX0UhLO9LR7MLkB2QxK9FKqHwC1Mg0G
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">

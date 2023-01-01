@@ -241,7 +241,7 @@
    eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AxizYHpQwcgczTx6LPBoQ8GtMiwE9nueCz2E9KHbgaxbsWnnxy9IDCql3gAADm+th8=
   </data>
  </layer>
- <layer id="11" name="Light5" width="15" height="30" visible="0">
+ <layer id="11" name="Light5" width="15" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu7Xw6CNkNzF6sdlNyL3o+n2RMLH6RvEoHsWjmBAGAF4Uu/c=
   </data>
