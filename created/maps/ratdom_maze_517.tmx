@@ -228,7 +228,7 @@
  </layer>
  <layer id="8" name="Light2" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKAJiGyAmFRRRQW8CmXrJsdOHTPeC9FlD9VoBsR+R+pH1IWNC+nHpI+R2fPrwuZ2QPlx2E6sP3W5S9CHr9yVD3ygexaN4FBPCAPVLxT4=
+   eJwrkmNgKAJiGyAmFRRRqFcDiBPI1EuOnT5kuhekzxqq1wqI/YjUj6yviAT92PQRE9b49OGzm5A+XHYTqw/dblL0Iev3JUPfKB7Fo3gUE8IA12bEvA==
   </data>
  </layer>
  <layer id="9" name="Light3" width="15" height="30" visible="0">
@@ -238,12 +238,12 @@
  </layer>
  <layer id="10" name="Light4" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IojidTXwIQg0Ac1AwQ1iRBHzqII6DfBoc+GNAiw05ku7G5n5A+XO4n5FZc+snVCwKjeokHAP7QtY0=
+   eJwrkmNgKBrFo3gUj2Ig1gDieCDWJENfAhCDQBzUDGLMQdaHDuII6LfBoQ8GtMiwE9lubO4npA+X+wm5FZd+cvWCwKhe4gEAK+u0HA==
   </data>
  </layer>
  <layer id="11" name="Light5" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+OA4pp49BKym5B+Qv7WosBuQnoTyNSLTx8+vfjcSqlectMGIb/SKl0Rihtc+gnZia7fFwkTq28Uj2IYBgCPmpYB
+   eJxjYBg5wEeOgcFPjjx91kBsBcS+JJgB01eEhK2I0I9NHwzb4NGLTx8hu+OA4pp49BKym5B+Qv7WosBufHo1gDiBDL2E9OHTi8+tlOolN23gs5OW6YpQvOLST8hOdP2+SJhYfaN4FMMwADiMlW0=
   </data>
  </layer>
  <layer id="12" name="Light6" width="15" height="30" visible="0">
@@ -251,9 +251,9 @@
    eJwrkmNgKBrFZOF4PBifPhsgxge0yNTrA5SzxqPXCoj9cOiPA4prUuBuQvrx2U3Iz4TsxqdXA4gTyNBLSB8+vYTilxK9+OJ4MKYrQvGKL5wJpSly/UtM3ILsjsdiPyF9uNxPij5k/eToGwWkAwC7rHsl
   </data>
  </layer>
- <layer id="13" name="Light7" width="15" height="30" visible="0">
+ <layer id="13" name="Light7" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgsAFiYoEWUG0REh4ovSDsR6R+bHqJsdsHiz5i9WKzk1h349OLz26Qe63x6MVndxxQXJOAXnx2E6Mfn7/x+ZmQ3fj0agBxAhl6CenDp5eS9EFIL744JqSXVunKCk/cEopXfOFMKE3Ryr8jUS++sCaUD3DZTWz5Phj0AgBfeXKQ
+   eJwrkmNgsAFiYoEWUG0REh4ovVZA7EekfnS9xNrtA1RjTaZebHYS625cegnZjcu9xNgdBxTXxKOXkN2E9BPyNz4/E7Ibn14NIE4gQy8hffj0UpI+COnFF8eE9A5EuiIUr/jCmVCaopV/R6JefGFNKB/gspvY8n0w6AUAXmdxeQ==
   </data>
  </layer>
  <layer id="14" name="Light8" width="15" height="30">

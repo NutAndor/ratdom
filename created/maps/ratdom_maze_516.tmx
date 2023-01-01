@@ -233,12 +233,12 @@
  </layer>
  <layer id="9" name="Light3" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IkHA/FxKrXgKpPAGIYiAOyNYnQh6wHGRDSb4NDHwxokWEnIbsJ6cOln1h96G4nVR+yXnLASNULAHhStVQ=
+   eJwrkmNgKBrFo3gUj2Io1gDieCjWJFFPAhDDQBwR+jXQ9CADQvptcOiDAS0y7CRkNyF9uPQTqw/d7aTqQ9ZLDhipegHJhLTB
   </data>
  </layer>
  <layer id="10" name="Light4" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJwrkmNgKBrFo3gUj2IojidDjwYQJwAxCMRBzQBhTRL0oYM4AvptcOiDAS0y7ES2G5v7CenD5X5CbsWln1y9IDCql3gAAN4atK8=
+   eJwrkmNgKBrFo3gUj2Ig1gDieCDWJENfAhCDQBzUDGLMQdaHDuII6LfBoQ8GtMiwE9lubO4npA+X+wm5FZd+cvWCwKhe4gEAK+u0HA==
   </data>
  </layer>
  <layer id="11" name="Light5" width="15" height="30" visible="0">
