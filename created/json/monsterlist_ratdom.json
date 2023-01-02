@@ -301,7 +301,7 @@
             "max":15
         },
         "spawnGroup":"ratdom_m6",
-        "droplistID":"snake",
+        "droplistID":"container_gold_3_10",
         "attackCost":5,
         "attackChance":130,
         "criticalSkill":40,
@@ -320,7 +320,7 @@
             "max":25
         },
         "spawnGroup":"ratdom_m6",
-        "droplistID":"snake",
+        "droplistID":"container_gold_3_10",
         "attackCost":5,
         "attackChance":110,
         "criticalSkill":40,
@@ -339,7 +339,6 @@
             "max":5
         },
         "spawnGroup":"ratdom_m7",
-        "droplistID":"snake",
         "attackCost":5,
         "attackChance":110,
         "criticalSkill":40,
@@ -368,7 +367,6 @@
             "max":5
         },
         "spawnGroup":"ratdom_m7",
-        "droplistID":"snake",
         "attackCost":5,
         "attackChance":110,
         "criticalSkill":40,
@@ -429,13 +427,12 @@
         "iconID":"monsters_rltiles2:101",
         "maxHP":30,
         "maxAP":10,
-        "monsterClass":"reptile",
+        "monsterClass":"animal",
         "attackDamage":{
             "min":5,
             "max":5
         },
         "spawnGroup":"ratdom_m9",
-        "droplistID":"snake",
         "attackCost":5,
         "attackChance":110,
         "criticalSkill":40,
@@ -448,7 +445,7 @@
         "iconID":"monsters_rltiles2:111",
         "maxHP":30,
         "maxAP":10,
-        "monsterClass":"reptile",
+        "monsterClass":"animal",
         "attackDamage":{
             "min":5,
             "max":5
@@ -467,7 +464,7 @@
         "iconID":"monsters_rltiles2:110",
         "maxHP":30,
         "maxAP":10,
-        "monsterClass":"reptile",
+        "monsterClass":"animal",
         "attackDamage":{
             "min":5,
             "max":5
@@ -695,7 +692,6 @@
             "max":5
         },
         "spawnGroup":"ratdom_m13",
-        "droplistID":"snake",
         "attackCost":5,
         "attackChance":110,
         "criticalSkill":40,
@@ -714,7 +710,6 @@
             "max":5
         },
         "spawnGroup":"ratdom_m13",
-        "droplistID":"snake",
         "attackCost":5,
         "attackChance":110,
         "criticalSkill":40,

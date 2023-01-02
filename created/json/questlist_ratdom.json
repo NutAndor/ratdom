@@ -63,7 +63,7 @@
 				"logText":"You put a bone into the hole, and the wall crumbled to dust.",
                 "rewardExperience":200 },
 			{	"progress":110, 
-				"logText":"A torch helped you to see in the dark. Unfortunately, the torch is so heavy, that you have to lift it with both hands." },
+				"logText":"A torch could help you to see in the dark. Unfortunately, the torch is so heavy, that you have to lift it with both hands." },
 			{ 	"progress":120, 
 				"logText":"You found a platform from which you have a good view over Crossglen. Andor seemed to have been here many times." },
 			{ 	"progress":130, 

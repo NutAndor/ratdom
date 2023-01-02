@@ -4230,7 +4230,7 @@
           {
             "requireType":"questProgress",
             "requireID":"ratdom_nondisplay",
-            "value":110
+            "value":10
           }
         ]
       }
