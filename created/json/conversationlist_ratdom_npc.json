@@ -2782,7 +2782,29 @@
 		  {
 			"text":"Do you also have something to purchase?",
 			"nextPhraseID":"S"
+		  },
+		  {
+			"text":"Please give me back my cheese.",
+			"nextPhraseID":"ratdom_rat_warden2_cheese",
+			"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1 }]
+		  },
+		  {
+			"text":"Please give me back my delicious Charwood cheddar.",
+			"nextPhraseID":"ratdom_rat_warden2_cheese",
+			"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1 }]
 		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden2_cheese",
+		"message":"Sure. Let's go outside.",
+		"rewards":[ 
+			{ 
+				"rewardType":"spawnAll", 
+				"mapName":"ratdom_maze_624", 
+				"rewardID":"ratdom_rat_warden" 
+			}
 		]
 	},
 	{
