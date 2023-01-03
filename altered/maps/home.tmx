@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="12" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="15">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="12" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="15">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -198,7 +198,7 @@
    eJxjYCAe8HFB6MtiJGgCgsNY1OMzA5v6SySqJ8Y9W1lJU48ONvKT7p6TWPTgU/8Fhx3EAgBKfQwX
   </data>
  </layer>
- <layer id="12" name="Top" width="12" height="10">
+ <layer id="12" name="Top" width="12" height="10" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFwxkAAAHgAAE=
   </data>
@@ -210,7 +210,7 @@
  </layer>
  <layer id="9" name="ratdom_Top" width="12" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYKAciEswMEgAsaQEdnl0OXUgWwOINSVQ9cMAshw2ANNPrLvmyWKXQ3cvurvQ5dDdi8u/uNyLz0/4zEQPH1IAAJ5QCAo=
+   eJxjYKAciEswMEgAsaQEdnl0OXUgWwOINSVQ9cMAshw2ANNPrJvmyWKXx+WmaazY7UR3L0z/MizqsbkXn5/whSF6+JACALdxCYE=
   </data>
  </layer>
  <layer id="8" name="Top0" width="12" height="10" visible="0">
@@ -218,7 +218,17 @@
    eJxjYBgFwxkAAAHgAAE=
   </data>
  </layer>
- <objectgroup id="5" name="mapevents">
+ <layer id="13" name="ratdom_Walkable" width="12" height="10" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzbKMbAsJFIDALEqqUnJhaQqgddLbo+fGFDrHnkqic2XgB5iT1q
+  </data>
+ </layer>
+ <layer id="14" name="Walkable0" width="12" height="10" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzbKMbAsJFIDALEqqUnJhaQqgddLbo+bPL4zKememLjBQAAWzyj
+  </data>
+ </layer>
+ <objectgroup id="5" name="mapevents" visible="0">
   <object id="1" name="entrance" type="mapchange" x="160" y="288" width="32" height="32">
    <properties>
     <property name="map" value="crossglen"/>
@@ -245,7 +255,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="7" name="spawn">
+ <objectgroup id="7" name="spawn" visible="0">
   <object id="7" name="mikhail" type="spawn" x="288" y="128" width="32" height="32">
    <properties>
     <property name="spawngroup" value="mikhail"/>
@@ -279,6 +289,7 @@
   <object id="12" name="ratdom_nondisplay_1" type="replace" x="32" y="32" width="320" height="256">
    <properties>
     <property name="Top" value="ratdom_Top"/>
+    <property name="Walkable" value="ratdom_Walkable"/>
     <property name="requireId" value="ratdom_nondisplay"/>
     <property name="requireType" value="questProgress"/>
     <property name="requireValue" value="1"/>
@@ -287,6 +298,7 @@
   <object id="13" name="ratdom_nondisplay_not_1" type="replace" x="32" y="32" width="320" height="256">
    <properties>
     <property name="Top" value="Top0"/>
+    <property name="Walkable" value="Walkable0"/>
     <property name="requireId" value="ratdom_nondisplay"/>
     <property name="requireNegation" value="true"/>
     <property name="requireType" value="questProgress"/>

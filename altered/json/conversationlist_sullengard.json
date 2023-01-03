@@ -1,0 +1,36 @@
+[
+    {
+        "id":"parents_argue_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"parents_argue_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"andor",
+                        "value":100
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"andor",
+                        "value":110,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"sullengard_hidden",
+                        "value":26,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    }
+]
