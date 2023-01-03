@@ -1072,7 +1072,7 @@
     },
     {
         "id":"ratdom_mikhail_02",
-        "message":"As you see. Did you find your brother Andor already? He hasn't been back for too long now.",
+        "message":"As you see. Did you find your brother Andor already? He hasn't been back home for a while now.",
         "replies":[
             {
                 "text":"Eh, what? No, I am still looking after Andor.",
@@ -1085,7 +1085,7 @@
         "message":"I should have thought so. Anyway.",
         "replies":[
             {
-                "text":"What do you do in my house? Where is Mikhail?",
+                "text":"What are you doing in my house? Where is Mikhail?",
                 "nextPhraseID":"ratdom_mikhail_04"
             }
         ]
@@ -1531,10 +1531,10 @@
     },
     {
         "id":"ratdom_rat_10",
-        "message":"I know the way out, of course. Rats know all ways everywhere.",
+        "message":"I know the way out, of course. Rats know the way out everywhere",
         "replies":[
             {
-                "text":"Great. Show me the way out of this rat infected place here.",
+                "text":"Great. Show me the way out of this rat infested place here.",
 				"nextPhraseID":"ratdom_rat_10_10"
 			}
         ]

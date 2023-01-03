@@ -1761,7 +1761,7 @@
     "message":"You see a note pinned to the door\n * Town hall closed * ",
     "replies":[
       {
-        "text":"It's the first time, that I see it closed.",
+        "text":"This is the first time I've ever seen it closed.",
         "nextPhraseID":"X"
       },
       {
@@ -1780,7 +1780,7 @@
   },
   {
     "id":"crossglen_ratdom_key_3_20",
-    "message":"A bag with a freshly baken bread was dangling at the door.",
+    "message":"A bag of freshly baked bread is dangling at the door.",
     "rewards":[
       {
         "rewardType":"questProgress",
@@ -5633,7 +5633,7 @@
   {
     "id":"ratdom_wakeup_20",
     "switchToNPC":"none",
-    "message":"You were so tired yesterday, that you didn't even make it to your bed. You dreamed of rats and that something  bit you firmly in your toes. Apparently you had a nightmare. \nYou open your eyes ...",
+    "message":"You were so tired yesterday, that you didn't even make it to your bed. You dreamed of rats and that something bit your toes firmly. Apparently you had a nightmare. \nYou open your eyes ...",
     "replies":[
       {
         "text":"N",
