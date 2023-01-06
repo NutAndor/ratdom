@@ -324,27 +324,9 @@
         ]
     },
     {
-        "id":"ratdom_fraedro",
-        "replies":[
-            {
-                "requires":[ { "requireType":"inventoryKeep", "requireID":"cheese", "value":1 },
-							 { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true } ],
-                "nextPhraseID":"ratdom_fraedro_cheese"
-            },
-            {
-                "requires":[ { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1 },
-							 { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true } ],
-                "nextPhraseID":"ratdom_fraedro_cheese"
-            },
-            {
-                "nextPhraseID":"ratdom_fraedro_1"
-            }
-        ]
-    },
-    {
-        "id":"ratdom_fraedro_1",
+        "id":"ratdom_fraedro"
 		"switchToNPC":"ratdom_fraedro",
-        "message":"Please don't hurt me.",
+        "message":"Please don't hurt me. I am starving.",
         "replies":[
             {
                 "text":"Who are you?",
@@ -353,6 +335,45 @@
             {
                 "text":"Why did you steal King Rah's skeleton?",
                 "nextPhraseID":"ratdom_fraedro_10"
+            },
+            {
+                "requires":[ { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true },
+							 { "requireType":"inventoryRemove", "requireID":"cheese", "value":1 }],
+                "text":"Starving? I have some cheese for you here.",
+                "nextPhraseID":"ratdom_fraedro_cheese_1"
+            },
+            {
+                "requires":[ { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true },
+							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true } },
+							 { "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }],
+                "text":"Starving? I have some good cheddar from Charwood for you here.",
+                "nextPhraseID":"ratdom_fraedro_cheese_1"
+            },
+            {
+                "requires":[ { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true },
+							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1, "negate":true } },
+							 { "requireType":"inventoryRemove", "requireID":"cheese_blue", "value":1 }],
+                "text":"Starving? I have some moldy blue cheese for you here.",
+                "nextPhraseID":"ratdom_fraedro_cheese_1"
+            },
+            {
+                "requires":[ { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true },
+							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"cheese_blue", "value":1, "negate":true } },
+							 { "requireType":"inventoryRemove", "requireID":"cheese_goat", "value":1 }],
+                "text":"Starving? I have some goat cheese for you here. It smells only slightly.",
+                "nextPhraseID":"ratdom_fraedro_cheese_1"
+            },
+            {
+                "requires":[ { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true },
+							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"cheese_blue", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"cheese_goat", "value":1, "negate":true }],
+                "text":"Starving? Sorry, I have no cheese for you.",
+                "nextPhraseID":"ratdom_fraedro_cheese"
             },
             {
                 "text":"OK, bye.",
@@ -467,29 +488,6 @@
         ]
     },
     {
-        "id":"ratdom_fraedro_cheese",
-		"switchToNPC":"ratdom_fraedro",
-        "message":"Please don't hurt me. I am starving.",
-        "replies":[
-            {
-                "text":"Who are you?",
-                "nextPhraseID":"ratdom_fraedro_2"
-            },
-            {
-                "text":"Why did you steal King Rah's skeleton?",
-                "nextPhraseID":"ratdom_fraedro_10"
-            },
-            {
-                "text":"OK, bye.",
-                "nextPhraseID":"X"
-            },
-            {
-                "text":"Starving? I have some cheese for you here.",
-                "nextPhraseID":"ratdom_fraedro_cheese_1"
-            }
-        ]
-    },
-    {
         "id":"ratdom_fraedro_cheese_1",
         "message":"Oh, my pleading has been heard. Thanks!",
         "replies":[
@@ -505,7 +503,18 @@
         "replies":[
             {
                 "text":"Who, me?",
-                "nextPhraseID":"ratdom_fraedro_cheese_12"
+                "nextPhraseID":"ratdom_fraedro_cheese_12",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "text":"Sure.",
+                "nextPhraseID":"ratdom_fraedro_cheese_14"
             }
         ]
     },
@@ -537,7 +546,14 @@
         "replies":[
             {
                 "text":"I'll try to remember.",
-                "nextPhraseID":"ratdom_fraedro_cheese_32"
+                "nextPhraseID":"ratdom_fraedro_cheese_32",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
             }
         ],
         "rewards":[
@@ -555,7 +571,7 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"ratdom_fraedro_1"
+                "nextPhraseID":"ratdom_fraedro"
             }
         ]
     },
@@ -1817,6 +1833,11 @@
 				"rewardType":"questProgress",
 				"rewardID":"ratdom_quest",
 				"value":940
+			},
+			{
+				"rewardType":"removeQuestProgress",
+				"rewardID":"ratdom_quest",
+				"value":942
 			},
 			{
 				"rewardType":"removeQuestProgress",

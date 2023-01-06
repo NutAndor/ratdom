@@ -1534,7 +1534,14 @@
       },
       {
         "text":"It would be a good idea to make a fire now.",
-        "nextPhraseID":"ratdom_goldhunter_bridge_20"
+        "nextPhraseID":"ratdom_goldhunter_bridge_20",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":10
+          }
+        ]
       }        
 	]
   },
@@ -1869,6 +1876,22 @@
     "id":"ratdom_maze_rat1",
     "replies":[
       {
+        "nextPhraseID":"ratdom_maze_rat1_30",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":10,
+            "negate":true
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":940
+          }
+        ]
+      },
+      {
         "nextPhraseID":"ratdom_maze_rat1_10",
         "requires":[
           {
@@ -1917,6 +1940,87 @@
     "switchToNPC":"ratdom_rat",
     "message":"It might be no good idea, to stumble in the dark."
   },
+  {
+    "id":"ratdom_maze_rat1_30",
+    "switchToNPC":"ratdom_rat",
+    "message":"$1 - I knew you would come back!",
+    "replies":[
+      {
+        "text":"Clevred? Is that really you?",
+		"nextPhraseID":"ratdom_maze_rat2_32"
+	  }
+	]
+  },
+  {
+    "id":"ratdom_maze_rat1_32",
+    "message":"Sure, you blockhead. Nice to see you again.",
+    "replies":[
+      {
+        "text":"I thought you were going to fetch your artifact at last?",
+		"nextPhraseID":"ratdom_maze_rat2_34"
+	  }
+	]
+  },
+  {
+    "id":"ratdom_maze_rat1_34",
+    "message":"Yes, yes. But for some jobs you need someone bigger.",
+    "replies":[
+      {
+        "text":"OK, let us try again to find it.",
+		"nextPhraseID":"ratdom_maze_rat2_36"
+	  },
+      {
+        "text":"So, am I good enough for the dirty work? Forget it. Bye.",
+		"nextPhraseID":"X"
+	  }
+	]
+  },
+    {
+        "id":"ratdom_maze_rat2_36",
+        "message":"Great - then let's go!",
+		"rewards":[
+			{
+				"rewardType":"removeQuestProgress",
+				"rewardID":"ratdom_quest",
+				"value":940
+			},
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_quest",
+				"value":942
+			},
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":10
+			},
+			{
+				"rewardType":"removeQuestProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":13
+			},
+			{
+				"rewardType":"removeQuestProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":21
+			},
+			{
+				"rewardType":"removeQuestProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":22
+			},
+			{
+				"rewardType":"removeQuestProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":23
+			},
+			{
+				"rewardType":"spawnAll",
+				"rewardID":"ratdom_roundling",
+				"mapName":"ratdom_maze_627"
+			}
+		],
+    },
   {
     "id":"ratdom_maze_rat2",
     "replies":[
@@ -2959,6 +3063,20 @@
   {
     "id":"ratdom_rat_conv2_1",
     "replies":[
+      {	"nextPhraseID":"ratdom_rat_conv2_410",
+		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":132, "negate":true },
+					{ "requireType":"random", "requireID":"25" },
+					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
+					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
+					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_tour", "value":1 }]
+      },
+      {	"nextPhraseID":"ratdom_rat_conv2_410",
+		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_compass_tour", "value":50 },
+					{ "requireType":"random", "requireID":"25" },
+					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
+					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
+					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_tour", "value":1 }]
+      },
       {	"nextPhraseID":"ratdom_rat_conv2_400",
 		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":131, "negate":true },
 					{ "requireType":"random", "requireID":"25" },
@@ -2966,12 +3084,12 @@
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
 					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_bwm", "value":1 }]
       },
-      {	"nextPhraseID":"ratdom_rat_conv2_410",
-		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":132, "negate":true },
+      {	"nextPhraseID":"ratdom_rat_conv2_400",
+		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_compass_bwm", "value":50, "negate":true },
 					{ "requireType":"random", "requireID":"25" },
 					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
-					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_tour", "value":1 }]
+					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_bwm", "value":1 }]
       },
       {	"nextPhraseID":"ratdom_rat_conv2_600",
 		"requires":[{ "requireType":"factionScoreEquals", "requireID":"ratdom_rat_conv2", "value":1025 },
@@ -3155,6 +3273,10 @@
       {
         "text":"Me, I loath these tunnels by now.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ],
 	"rewards":[
@@ -3246,6 +3368,10 @@
       {
         "text":"Sure.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
   },
@@ -3284,10 +3410,7 @@
         "text":"Ah, OK.",
 		"nextPhraseID":"ratdom_rat_conv2_409"
       }
-    ]
-  },
-  {
-    "id":"ratdom_rat_conv2_409",
+    ],
 	"rewards":[
 		{
 			"rewardType":"questProgress",
@@ -3295,6 +3418,15 @@
 			"value":131
 		}
 	]
+  },
+  {
+    "id":"ratdom_rat_conv2_409",
+    "rewards":[
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_compass_bwm"
+      }
+    ]
   },
   {
     "id":"ratdom_rat_conv2_410",
@@ -3307,7 +3439,7 @@
       },
       {
         "text":"Well, why don't I? Really, I forgot about it.",
-		"nextPhraseID":"ratdom_rat_conv2_419"
+		"nextPhraseID":"ratdom_rat_conv2_413"
       },
       {
         "text":"I didn't see any use.",
@@ -3317,7 +3449,17 @@
   },
   {
     "id":"ratdom_rat_conv2_412",
-    "message":"That's simple enough even for a simple mind: If worn they will mark the passage towards the most interesting places here in the caves.",
+    "message":"That's simple enough even for a simple mind: If worn it will mark the passage towards the most interesting places here in the caves.",
+    "replies":[
+      {
+        "text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_414"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_413",
+    "message":"You should not forget important things. The necklace works simple enough even for you: If worn it will mark the passage towards the most interesting places here in the caves.",
     "replies":[
       {
         "text":"N",
@@ -3327,7 +3469,7 @@
   },
   {
     "id":"ratdom_rat_conv2_414",
-    "message":"The way might be somewhat longer, but you won't miss anything important in the cave wonders.",
+    "message":"The way might be somewhat longer, but you won't miss anything important of the cave's wonders.",
     "replies":[
       {
         "text":"N",
@@ -3337,12 +3479,8 @@
   },
   {
     "id":"ratdom_rat_conv2_416",
-    "message":"Should there be a branch, it will be marked with a special formed shield and an additional flag.",
+    "message":"Should there be a branch, there will be an additional flag. The side trip is marked with a different orange shield.",
     "replies":[
-      {
-        "text":"Got it.",
-		"nextPhraseID":"ratdom_rat_conv2_418"
-      },
       {
         "text":"What?",
 		"nextPhraseID":"ratdom_rat_conv2_417"
@@ -3351,7 +3489,7 @@
   },
   {
     "id":"ratdom_rat_conv2_417",
-    "message":"Sigh. If you see a shield together with a flag, then first look for another passage marked with a special formed shield.",
+    "message":"Sigh. If you see a shield together with a flag, then first look for another passage marked with a special formed orange shield.",
     "replies":[
       {
         "text":"And then?",
@@ -3361,34 +3499,33 @@
   },
   {
     "id":"ratdom_rat_conv2_417a",
-    "message":"Then follow this passage to the end. We might find something important there. Then go back and follow the usual shield.",
+    "message":"Follow this passage to the end. We might find something important there. Then go back to the crossing and follow the usual shield.",
     "replies":[
       {
         "text":"Eh, ok. Got it.",
 		"nextPhraseID":"ratdom_rat_conv2_418"
       }
-    ]
+    ],
+	"rewards":[
+		{
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_maze",
+			"value":132
+		}
+	]
   },
   {
     "id":"ratdom_rat_conv2_418",
-    "message":"[muttering] Want to hope so, but don't really believe it yet.",
-	"rewards":[
-		{
-			"rewardType":"questProgress",
-			"rewardID":"ratdom_maze",
-			"value":132
-		}
-	]
+    "message":"[muttering] Want to hope so, but don't really believe it yet."
   },
   {
     "id":"ratdom_rat_conv2_419",
-	"rewards":[
-		{
-			"rewardType":"questProgress",
-			"rewardID":"ratdom_maze",
-			"value":132
-		}
-	]
+    "rewards":[
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_compass_tour"
+      }
+    ]
   },
   {
     "id":"ratdom_rat_conv2_500",
@@ -3445,6 +3582,10 @@
       {
         "text":"Nice song.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
   },
@@ -3456,6 +3597,10 @@
       {
         "text":"I hope so.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ],
 	"rewards":[
@@ -3474,6 +3619,10 @@
       {
         "text":"Do Not Annoy Me!",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ],
 	"rewards":[
@@ -3558,6 +3707,10 @@
       {
         "text":"I'll give up.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
   },
@@ -3677,6 +3830,10 @@
       {
         "text":"What? Take a look at yourself: Crooked four legs, much too short to even hold a knife.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ],
 	"rewards":[
@@ -3705,6 +3862,10 @@
       {
         "text":"I don't have any problem.",
 		"nextPhraseID":"ratdom_rat_conv2_562"
+      },
+      {
+        "text":"I have a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ],
 	"rewards":[
@@ -3803,6 +3964,10 @@
       {
         "text":"Indeed.",
         "nextPhraseID":"ratdom_rat_crossglen_02"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
   },
@@ -3814,6 +3979,10 @@
       {
         "text":"I didn't worry.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ],
 	"rewards":[
@@ -3859,6 +4028,10 @@
       {
         "text":"Is it? Good to know.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
   },
@@ -3887,6 +4060,10 @@
       {
         "text":"At last.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
   },
@@ -3925,8 +4102,52 @@
       {
         "text":"Hahaha - that is a good one.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
+  },
+  {
+    "id":"ratdom_rat_conv2_900",
+    "message":"Sure - what do you want to know?",
+    "replies":[
+      {
+        "text":"Why do you seem to know everything?",
+		"nextPhraseID":"ratdom_rat_conv2_902"
+      },
+      {
+        "text":"How does the orange amulett works in detail?",
+		"nextPhraseID":"ratdom_rat_conv2_412",
+		"requires":[
+			{
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_compass_tour",
+				"value":1
+			}
+		]
+      },
+      {
+        "text":"How does the blue amulett works in detail?",
+		"nextPhraseID":"ratdom_rat_conv2_402",
+		"requires":[
+			{
+				"requireType":"inventoryKeep",
+				"requireID":"ratdom_compass_bwm",
+				"value":1
+			}
+		]
+      },
+      {
+        "text":"How do I get back out of this cave?",
+		"nextPhraseID":"ratdom_rat_conv2_20c"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_conv2_902",
+    "message":"I think that's the only thing I do not know."
   },
   {
     "id":"ratdom_rat_crossglen_02",
@@ -4600,12 +4821,11 @@
   },
   {
     "id":"ratdom_rat_sword_key_32",
-    "switchToNPC":"ratdom_rat",
     "message":"King Rah's sword! Now what again were the words to say?",
     "replies":[
       {
 		"text":"Veni gladio fidelis?",
-		"nextPhraseID":"ratdom_rat_sword_key_40"
+		"nextPhraseID":"ratdom_rat_sword_key_42"
       }
     ]
   },
@@ -5592,8 +5812,15 @@
       {
         "rewardType":"createTimer",
         "rewardID":"ratdom_rat_drinkme"
+      },
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_compass_tour"
+      },
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_compass_bwm"
       }
-
     ],
     "replies":[
       {
@@ -5724,7 +5951,7 @@
         "mapName":"crossglen"
       }
     ],
-    "message":"You didn't make it to your bed - again. Nevertheless you took some minutes of sleep. \nWhen you woke up, something had changed. The rats are gone!\n\nWhat a terrible dream. Or - was everything really just a dream?"
+    "message":"You didn't make it to your bed - again. Nevertheless you took some minutes of sleep.\nWhen you woke up, something had changed. The rats are gone!\n\nWhat a terrible dream. Or - was everything really just a dream?"
   },
   {
 	"id":"ratdom_water_flag",
@@ -7661,8 +7888,8 @@
 			]
 		},
 		{
-			"text":"Oh my. I just don't know, how to solve this.",
-			"nextPhraseID":"ratdom_wells_chest_10",
+			"text":"Oh my. I just don't know how to solve this.",
+			"nextPhraseID":"ratdom_wells_chest_9",
 			"requires":[
 				{
 					"requireType":"factionScoreEquals",
@@ -7686,7 +7913,53 @@
 	]
   },
   {
+    "id":"ratdom_wells_chest_9",
+	"replies":[
+		{
+			"text":"N",
+			"nextPhraseID":"ratdom_wells_chest_10"
+		}
+	],
+	"rewards":[
+		{
+			"rewardType":"alignmentSet",
+			"rewardID":"ratdom_wells",
+			"value":10
+		}
+	]
+  },
+  {
     "id":"ratdom_wells_chest_10",
+	"replies":[
+		{
+			"text":"N",
+			"nextPhraseID":"ratdom_wells_chest_14",
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_nondisplay",
+					"value":10
+				}
+			]
+		},
+		{
+			"text":"N",
+			"nextPhraseID":"ratdom_wells_chest_12"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_12",
+	"message":"Clevred certainly would have known what to do now.",
+	"replies":[
+		{
+			"text":"Why only have I left him?",
+			"nextPhraseID":"X"
+		}
+	]
+  },
+  {
+    "id":"ratdom_wells_chest_14",
 	"switchToNPC":"ratdom_rat",
 	"message":"Sigh. Need help again?",
 	"replies":[
@@ -7696,7 +7969,7 @@
 		},
 		{
 			"text":"Don't pretend you know how to solve it.",
-			"nextPhraseID":"ratdom_wells_chest_12"
+			"nextPhraseID":"ratdom_wells_chest_16"
 		},
 		{
 			"text":"Please. I just don't know what to do here.",
@@ -7705,7 +7978,7 @@
 	]
   },
   {
-    "id":"ratdom_wells_chest_12",
+    "id":"ratdom_wells_chest_16",
 	"message":"I don't pretend to know. I do know.",
 	"replies":[
 		{
