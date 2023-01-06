@@ -197,7 +197,7 @@
     },
     {
         "id":"ratdom_bone_collector_54",
-		"message":"Yes you have. I'll better put it back agin. This is a very valuable bone, you know?",
+		"message":"Yes you have. I'll better put it back agin. This is a very valuable bone, you know? [Loirash takes the bone from you]",
         "replies":[
             {
                 "text":"I see.",
@@ -324,7 +324,7 @@
         ]
     },
     {
-        "id":"ratdom_fraedro"
+        "id":"ratdom_fraedro",
 		"switchToNPC":"ratdom_fraedro",
         "message":"Please don't hurt me. I am starving.",
         "replies":[
@@ -344,36 +344,36 @@
             },
             {
                 "requires":[ { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true },
-							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true },
 							 { "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }],
                 "text":"Starving? I have some good cheddar from Charwood for you here.",
                 "nextPhraseID":"ratdom_fraedro_cheese_1"
             },
             {
                 "requires":[ { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true },
-							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true } },
-							 { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true },
+							 { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1, "negate":true },
 							 { "requireType":"inventoryRemove", "requireID":"cheese_blue", "value":1 }],
                 "text":"Starving? I have some moldy blue cheese for you here.",
                 "nextPhraseID":"ratdom_fraedro_cheese_1"
             },
             {
                 "requires":[ { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true },
-							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true } },
-							 { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1, "negate":true } },
-							 { "requireType":"inventoryKeep", "requireID":"cheese_blue", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true },
+							 { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1, "negate":true },
+							 { "requireType":"inventoryKeep", "requireID":"cheese_blue", "value":1, "negate":true },
 							 { "requireType":"inventoryRemove", "requireID":"cheese_goat", "value":1 }],
                 "text":"Starving? I have some goat cheese for you here. It smells only slightly.",
                 "nextPhraseID":"ratdom_fraedro_cheese_1"
             },
             {
                 "requires":[ { "requireType":"questProgress", "requireID":"ratdom_nondisplay", "value":180, "negate":true },
-							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true } },
-							 { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1, "negate":true } },
-							 { "requireType":"inventoryKeep", "requireID":"cheese_blue", "value":1, "negate":true } },
+							 { "requireType":"inventoryKeep", "requireID":"cheese", "value":1, "negate":true },
+							 { "requireType":"inventoryKeep", "requireID":"charwood_cheddar", "value":1, "negate":true },
+							 { "requireType":"inventoryKeep", "requireID":"cheese_blue", "value":1, "negate":true },
 							 { "requireType":"inventoryKeep", "requireID":"cheese_goat", "value":1, "negate":true }],
                 "text":"Starving? Sorry, I have no cheese for you.",
-                "nextPhraseID":"ratdom_fraedro_cheese"
+                "nextPhraseID":"ratdom_fraedro"
             },
             {
                 "text":"OK, bye.",
@@ -514,7 +514,7 @@
             },
             {
                 "text":"Sure.",
-                "nextPhraseID":"ratdom_fraedro_cheese_14"
+                "nextPhraseID":"ratdom_fraedro_cheese_20"
             }
         ]
     },
@@ -1098,7 +1098,7 @@
     },
     {
         "id":"ratdom_mikhail_03",
-        "message":"I should have thought so. Anyway.",
+        "message":"I should have guessed. Anyway.",
         "replies":[
             {
                 "text":"What are you doing in my house? Where is Mikhail?",
@@ -1546,7 +1546,7 @@
 						"requireID":"ratdom_rat_conv2", 
 						"value":5,
 						"negate":true
-					},
+					}
                 ]
 			},
 			{
@@ -1575,7 +1575,7 @@
     },
     {
         "id":"ratdom_rat_10",
-        "message":"I know the way out, of course. Rats know the way out everywhere",
+        "message":"I know the way out, of course. Rats always know the way out.",
         "replies":[
             {
                 "text":"Great. Show me the way out of this rat infested place here.",
@@ -1640,17 +1640,17 @@
     },
     {
         "id":"ratdom_rat_60",
-        "message":"Yes. The artifact must be behind this statue. Did you seek there?",
+        "message":"Yes. The artifact must be behind this statue. Did you look there?",
         "replies":[
             {
-                "text":"Not yet. I didn't know there was a statue in our supply cave?",
+                "text":"Not yet. I didn't know there was a statue in our supply cave. Is it now?",
 				"nextPhraseID":"ratdom_rat_60_10"
 			}
         ]
     },
     {
         "id":"ratdom_rat_60_10",
-        "message":"We had build up the statue of Andor in memory, that he never killed any rats.",
+        "message":"We erected the statue in honor of Andor for never killing rats.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -1660,7 +1660,7 @@
 		],
         "replies":[
             {
-                "text":"OK. I'll seek behind the statue.",
+                "text":"OK. I'll have a look behind the statue.",
 				"nextPhraseID":"X"
 			},
             {
@@ -1671,17 +1671,17 @@
     },
     {
         "id":"ratdom_rat_70",
-        "message":"Probably you are too fat to get by. Tore the statue down. But don't tell anyrat that I said so.",
+        "message":"Probably you are too fat to get by. Tear the statue down. But don't tell any rat that I said so.",
         "replies":[
             {
-                "text":"A pity to destroy such a beautyful thing.",
+                "text":"It's a pity to destroy such a beautiful statue.",
 				"nextPhraseID":"ratdom_rat_70_10"
 			}
         ]
     },
     {
         "id":"ratdom_rat_70_10",
-        "message":"I better will accompany you. I think it will be necessary to have an eye on you."
+        "message":"I better accompany you. I think it would be wise to keep an eye on you."
     },
     {
         "id":"ratdom_rat_80",
@@ -1909,7 +1909,7 @@
 				"rewardID":"ratdom_keys",
 				"mapName":"crossglen"
 			}
-		],
+		]
     },
     {
         "id":"ratdom_rat_bwm1",
@@ -2074,10 +2074,25 @@
 			"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1 }]
 		  },
 		  {
-			"text":"Please give me back my delicious Charwood cheddar.",
+			"text":"Please give me back my cheese.",
 			"nextPhraseID":"ratdom_rat_warden_cheese",
 			"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1, "negate":true },
 						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1 }]
+		  },
+		  {
+			"text":"Please give me back my cheese.",
+			"nextPhraseID":"ratdom_rat_warden_cheese",
+			"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese3", "value":1 }]
+		  },
+		  {
+			"text":"Please give me back my cheese.",
+			"nextPhraseID":"ratdom_rat_warden_cheese",
+			"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese3", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese4", "value":1 }]
 		  }
 		]
 	},
@@ -2111,7 +2126,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_30",
-		"message":"This used to be a happy place of memories. Many objects and statues from the past invite you to linger and think. Everyrat loved this place.",
+		"message":"This used to be a happy place of memories. Many objects and statues from the past invite you to linger and think. Every rat loved this place.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2121,7 +2136,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_31",
-		"message":"Well, almost everyrat.",
+		"message":"Well, almost every rat.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2273,7 +2288,7 @@
 		"message":"For security reasons, we don't let anyone in or out until King Rah is back in his accustomed place.",
 		"replies":[
 		  {
-			"text":"Even 100 pieces of gold don't change your mind?",
+			"text":"Even 100 pieces of gold wouldn't change your mind?",
 			"nextPhraseID":"ratdom_rat_warden_46a"
 		  },
 		  {
@@ -2345,7 +2360,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_46c",
-		"message":"The museum of course.",
+		"message":"The memory hall of course.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2375,7 +2390,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_48",
-		"message":"If King Rah is with us again, that would be great! Of course you can then go to our museum. You would be our guest of honor.",
+		"message":"If King Rah is with us again, that would be great! Of course you can then go to our memory hall. You would be our guest of honor.",
 		"replies":[
 		  {
 			"text":"N",
@@ -2507,6 +2522,75 @@
 	},
 	{
 		"id":"ratdom_rat_warden_54",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_54d",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"25"
+				}
+			]
+		  },
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_54c",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"33"
+				}
+			]
+		  },
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_54b",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"50"
+				}
+			]
+		  },
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_54a"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_54a",
+		"message":"Thank you!",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_54"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_54b",
+		"message":"Thank you!",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_54"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_54c",
+		"message":"Thank you!",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_54"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_54d",
 		"message":"Thank you!",
 		"replies":[
 		  {
@@ -2912,13 +2996,80 @@
 		"message":"There you put on the necklace with my compass. With this compass you may perceive otherwise invisible signs on the walls. Follow these.",
 		"replies":[
 		  {
-			"text":"N",
+			"text":"What signs?",
+			"nextPhraseID":"ratdom_rat_warden_95"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_95",
+		"message":"Shields in orange and yellow color. Orange for the main route and yellow for short side tunnels.",
+		"replies":[
+		  {
+			"text":"What?",
+			"nextPhraseID":"ratdom_rat_warden_95_10"
+		  },
+		  {
+			"text":"OK.",
 			"nextPhraseID":"ratdom_rat_warden_96"
 		  }
 		]
 	},
 	{
+		"id":"ratdom_rat_warden_95_10",
+		"message":"Should there be a branch, there will be an additional flag. The side trip is marked with a yellow shield.",
+		"replies":[
+			{
+				"text":"What?",
+				"nextPhraseID":"ratdom_rat_warden_95_20"
+			}
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_95_20",
+		"message":"Sigh. If you see an orange shield together with a flag, then first look for another passage marked with a yellow shield.",
+		"replies":[
+			{
+				"text":"And then?",
+				"nextPhraseID":"ratdom_rat_warden_95_30"
+			}
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_95_30",
+		"message":"Follow this passage to the end. We might find something important there. Then go back to the crossing and follow the orange shield again.",
+		"replies":[
+			{
+				"text":"Eh, ok. Got it.",
+				"nextPhraseID":"ratdom_rat_warden_95_40"
+			}
+		],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_maze",
+				"value":132
+			},
+			{
+				"rewardType":"createTimer",
+				"rewardID":"ratdom_compass_tour"
+			}
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_95_40",
+		"switchToNPC":"ratdom_rat",
+		"message":"[muttering] Want to hope so, but don't really believe it yet.",
+		"replies":[
+			{
+				"text":"N",
+				"nextPhraseID":"ratdom_rat_warden_96"
+			}
+		]
+	},
+	{
 		"id":"ratdom_rat_warden_96",
+		"switchToNPC":"ratdom_rat_warden",
 		"message":"It will be a far journey. But you will meet everything that you need to meet. And even more.",
 		"replies":[
 		  {
@@ -2929,12 +3080,68 @@
 	},
 	{
 		"id":"ratdom_rat_warden_98",
-		"message":"But beware! It slows you down, because your mind is clouded and partly in another dimension.",
+		"message":"Beware! It slows you down, because your mind is clouded and partly in another dimension.",
 		"replies":[
-		  {
-			"text":"No problem.",
-			"nextPhraseID":"S"
-		  }
+			{
+				"text":"No problem. Show me this wonderful item.",
+				"nextPhraseID":"S"
+			},
+            {
+				"text":"However, I am as poor as a church rat.",
+                "nextPhraseID":"ratdom_rat_warden_99",
+                "requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"gold",
+						"value":5555,
+						"negate":true
+					},
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":192,
+						"negate":true
+                    }
+                ]
+            }
+
+		]
+	},
+    {
+        "id":"ratdom_rat_warden_99",
+        "message":"Well, I have too good a heart. Here, take the amulett for 100 gold pieces.",
+		"replies":[
+            {
+				"text":"Oh thank you! Here is the gold.",
+                "nextPhraseID":"ratdom_rat_warden_99a",
+                "requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"gold",
+						"value":100,
+						"negate":true
+					}
+                ]
+            },
+            {
+				"text":"I will think about it.",
+                "nextPhraseID":"X"
+            }
+        ]
+	},
+    {
+        "id":"ratdom_rat_warden_99a",
+		"rewards":[
+			{
+				"rewardType":"giveItem",
+				"rewardID":"ratdom_compass_tour",
+				"value":1
+			},
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":192
+            }
 		]
 	},
 	{
@@ -2943,6 +3150,10 @@
 					  "requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1 }] },
 					{ "nextPhraseID":"ratdom_rat_warden_cheese_2",
 					  "requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1 }] },
+					{ "nextPhraseID":"ratdom_rat_warden_cheese_3",
+					  "requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese3", "value":1 }] },
+					{ "nextPhraseID":"ratdom_rat_warden_cheese_4",
+					  "requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese4", "value":1 }] },
 					{ "nextPhraseID":"ratdom_rat_warden_cheese_50" }
 		]
 	},
@@ -2950,9 +3161,7 @@
 		"id":"ratdom_rat_warden_cheese_1",
 		"replies":[ { "nextPhraseID":"ratdom_rat_warden_cheese_1",
 					  "requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1 }] },
-					{ "nextPhraseID":"ratdom_rat_warden_cheese_2",
-					  "requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1 }] },
-					{ "nextPhraseID":"ratdom_rat_warden_cheese_50" }
+					{ "nextPhraseID":"ratdom_rat_warden_cheese" }
 		],
 		"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese1", "value":-1 },
 					{ "rewardType":"giveItem", "rewardID":"cheese", "value":1 }
@@ -2963,10 +3172,32 @@
 		"id":"ratdom_rat_warden_cheese_2",
 		"replies":[ { "nextPhraseID":"ratdom_rat_warden_cheese_2",
 					  "requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1 }] },
-					{ "nextPhraseID":"ratdom_rat_warden_cheese_50" }
+					{ "nextPhraseID":"ratdom_rat_warden_cheese" }
 		],
 		"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese2", "value":-1 },
 					{ "rewardType":"giveItem", "rewardID":"charwood_cheddar", "value":1 }
+		]
+	
+	},
+	{
+		"id":"ratdom_rat_warden_cheese_3",
+		"replies":[ { "nextPhraseID":"ratdom_rat_warden_cheese_3",
+					  "requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese3", "value":1 }] },
+					{ "nextPhraseID":"ratdom_rat_warden_cheese" }
+		],
+		"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese3", "value":-1 },
+					{ "rewardType":"giveItem", "rewardID":"cheese_blue", "value":1 }
+		]
+	
+	},
+	{
+		"id":"ratdom_rat_warden_cheese_4",
+		"replies":[ { "nextPhraseID":"ratdom_rat_warden_cheese_4",
+					  "requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese4", "value":1 }] },
+					{ "nextPhraseID":"ratdom_rat_warden_cheese" }
+		],
+		"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese4", "value":-1 },
+					{ "rewardType":"giveItem", "rewardID":"cheese_goat", "value":1 }
 		]
 	
 	},
@@ -3011,7 +3242,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden2",
-		"message":"Welcome in our great rat museum! Shall I tell you something about our great expositions?",
+		"message":"Welcome to our great rat memory hall! Shall I tell you something about our great expositions?",
 		"replies":[
 		  {
 			"text":"Thank you, I'll find my way.",
@@ -3042,7 +3273,7 @@
                 ]
 		  },
 		  {
-			"text":"Do you also have something to purchase?",
+			"text":"Do you have anything for sale?",
 			"nextPhraseID":"S"
 		  },
 		  {
@@ -3280,7 +3511,7 @@
 	},
     {
         "id":"ratdom_roundling",
-        "message":"If strangers come hither to gain \nour treasure, their hope is in vain. \nIn darkest deep ground, \nwith our Yellow Round, \ntheir bones will for ever remain.",
+        "message":"If strangers come hither to gain \nour treasure, their hope is in vain. \nIn darkest deep ground, \nwith our Yellow Round, \ntheir bones will forever remain.",
         "replies":[
             {
                 "text":"What a nice poem. They are good, aren't they, Clevred?",
@@ -3320,7 +3551,7 @@
         "message":"A thief who thinks to get through \nwith our treasure, is due \nto give his life \nupon a strife, \nand all his stolen goods too.",
         "replies":[
             {
-                "text":"Eh, Let us think a minute.",
+                "text":"Eh, let us think a minute.",
                 "nextPhraseID":"X"
             },
             {
@@ -3716,7 +3947,7 @@
 	},
     {
         "id":"ratdom_skeleton_boss_11_10",
-        "message":"Of course I could, But why should I?",
+        "message":"Of course I could. But why should I?",
 		"replies":[
             {
                 "text":"Yes, right. Why should you?",
@@ -3726,7 +3957,7 @@
 	},
     {
         "id":"ratdom_skeleton_boss_12_10",
-        "message":"Of course I could, But why should I?",
+        "message":"Of course I could. But why should I?",
 		"replies":[
             {
                 "text":"Yes, right. Why should you?",
@@ -3858,7 +4089,7 @@
 		],
 		"replies":[
             {
-                "text":"How generously.",
+                "text":"How generous.",
                 "nextPhraseID":"X"
             }
         ]
@@ -3875,7 +4106,7 @@
 		],
 		"replies":[
             {
-                "text":"How generously.",
+                "text":"How generous.",
                 "nextPhraseID":"X"
             }
         ]
@@ -3913,7 +4144,7 @@
 		],
 		"replies":[
             {
-                "text":"I go and tell Bloskelt. Although the messenger of bad news always gets into trouble ...",
+                "text":"I will go and tell Bloskelt. Although the messenger of bad news always gets into trouble ...",
                 "nextPhraseID":"X"
             }
         ]
@@ -3930,7 +4161,7 @@
 		],
 		"replies":[
             {
-                "text":"I go and tell Roskelt. Although the messenger of bad news always gets into trouble ...",
+                "text":"I will go and tell Roskelt. Although the messenger of bad news always gets into trouble ...",
                 "nextPhraseID":"X"
             }
         ]
@@ -4312,7 +4543,14 @@
 		"replies":[
             {
 				"text":"I'm helping a cheeky little rat find an artifact.",
-                "nextPhraseID":"whootibarfag_50"
+                "nextPhraseID":"whootibarfag_50",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
             },
             {
 				"text":"Do you have anything to trade?",
@@ -4329,8 +4567,15 @@
                 "nextPhraseID":"whootibarfag_32"
             },
             {
-				"text":"All right, let's get this over with. Enlighten me.",
-                "nextPhraseID":"whootibarfag_100"
+				"text":"All right, let's get this over with. Enlighten us.",
+                "nextPhraseID":"whootibarfag_100",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
             }
         ]
 	},
@@ -4344,7 +4589,14 @@
             },
             {
 				"text":"Then finally say what you want to say. And after that show me your goods.",
-                "nextPhraseID":"whootibarfag_100"
+                "nextPhraseID":"whootibarfag_100",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
             }
         ]
 	},
@@ -4363,7 +4615,7 @@
         "message":"Torches to light your way.",
 		"replies":[
             {
-				"text":"I have already one.",
+				"text":"I already have one.",
                 "nextPhraseID":"whootibarfag_44"
             }
         ]
@@ -4383,8 +4635,90 @@
         "message":"And finally, a medallion that will help you find your way here if your memory fails you.",
 		"replies":[
             {
-				"text":"Now that sounds interesting.",
+				"text":"Now that sounds interesting. Show me your items, please.",
                 "nextPhraseID":"S"
+            },
+            {
+				"text":"However, I am as poor as a church rat.",
+                "nextPhraseID":"whootibarfag_48",
+                "requires":[
+					{
+						"requireType":"inventoryKeep",
+						"requireID":"gold",
+						"value":3333,
+						"negate":true
+					},
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":191,
+						"negate":true
+                    }
+                ]
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_48",
+        "message":"Well, I have too good a heart. Here, take the amulett for 100 gold pieces.",
+		"replies":[
+            {
+				"text":"Oh thank you! Here is the gold.",
+                "nextPhraseID":"whootibarfag_48a",
+                "requires":[
+					{
+						"requireType":"inventoryRemove",
+						"requireID":"gold",
+						"value":100,
+						"negate":true
+					}
+                ]
+            },
+            {
+				"text":"I will think about it.",
+                "nextPhraseID":"whootibarfag_48b"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_48a",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_48b"
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"giveItem",
+				"rewardID":"ratdom_compass_bwm",
+				"value":1
+			},
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":191
+            }
+		]
+	},
+    {
+        "id":"whootibarfag_48b",
+        "message":"Well, now some wisdom ...",
+		"replies":[
+            {
+				"text":"It is getting late. Bye.",
+                "nextPhraseID":"X"
+            },
+            {
+				"text":"All right, let's get this over with. Enlighten us.",
+                "nextPhraseID":"whootibarfag_100",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
             }
         ]
 	},
@@ -4394,18 +4728,11 @@
 		"replies":[
             {
 				"text":"Thanks. Then we'll go looking further.",
-                "nextPhraseID":"whootibarfag_50"
+                "nextPhraseID":"X"
             },
             {
 				"text":"Maybe you can help us?",
-                "nextPhraseID":"whootibarfag_52",
-                "requires":[
-					{
-						"requireType":"questProgress",
-						"requireID":"ratdom_nondisplay",
-						"value":10
-					}
-                ]
+                "nextPhraseID":"whootibarfag_52"
             }
         ]
 	},
@@ -4414,8 +4741,19 @@
         "message":"Who knows? Tell me about your artifact.",
 		"replies":[
             {
+				"text":"Maybe another time. Let's just trade.",
+                "nextPhraseID":"whootibarfag_40"
+            },
+            {
 				"text":"It's big, round and yellow. Clevered, what else do you know about this?",
-                "nextPhraseID":"whootibarfag_54"
+                "nextPhraseID":"whootibarfag_54",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+                ]
             }
         ]
 	},
@@ -4432,7 +4770,7 @@
 	},
     {
         "id":"whootibarfag_56",
-        "message":"Who needs gold! It is much better.",
+        "message":"Who needs gold?! It is much better.",
 		"replies":[
             {
 				"text":"N",
@@ -4601,7 +4939,7 @@
     {
         "id":"whootibarfag_130",
 		"switchToNPC":"ratdom_rat",
-        "message":"There are many paths leading to happyness.",
+        "message":"There are many paths leading to happiness.",
 		"replies":[
             {
 				"text":"N",

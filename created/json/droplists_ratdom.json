@@ -1,5 +1,18 @@
 [
 	{
+		"id":"container_gold_200_500",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":200,
+					"max":500
+				}
+			}
+		]
+	},
+	{
 		"id":"container_gold_3_10",
 		"items":[
 			{
@@ -37,19 +50,6 @@
 				"quantity":{
 					"min":1,
 					"max":1
-				}
-			}
-		]
-	},
-	{
-		"id":"container_gold_200_500",
-		"items":[
-			{
-				"itemID":"gold",
-				"chance":"100",
-				"quantity":{
-					"min":200,
-					"max":500
 				}
 			}
 		]
@@ -219,6 +219,13 @@
 			  "quantity":{ "min":2, "max":4 } 
 			}]
 	},
+	{	"id":"ratdom_616_loot1",
+		"items":[	
+			{ "itemID":"gold",		
+			  "chance":"100", 
+			  "quantity":{ "min":50, "max":100 } 
+			}]
+	},
 	{	"id":"ratdom_artefact",
 		"items":[	
 			{ "itemID":"ratdom_artefact",		
@@ -318,40 +325,6 @@
 		]
 	},
 	{
-		"id":"ratdom_goldhunter_drop",
-		"items":[
-            {
-                "itemID":"ratdom_rat_skelett_leg",
-                "chance":"100",
-                "quantity":{
-                    "min":1,
-                    "max":1
-                }
-            },
-			{
-				"itemID":"gold",
-				"chance":"100",
-				"quantity":{
-					"min":30,
-					"max":200
-				}
-			}
-		]
-	},
-	{
-		"id":"ratdom_kriih",
-		"items":[
-			{
-				"itemID":"gold",
-				"chance":"100",
-				"quantity":{
-					"min":200,
-					"max":500
-				}
-			}
-		]
-	},
-	{
 		"id":"ratdom_fraedro",
 		"items":[
 			{
@@ -372,6 +345,27 @@
 			}
 		]
 	},
+	{
+		"id":"ratdom_goldhunter_drop",
+		"items":[
+            {
+                "itemID":"ratdom_rat_skelett_leg",
+                "chance":"100",
+                "quantity":{
+                    "min":1,
+                    "max":1
+                }
+            },
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":30,
+					"max":200
+				}
+			}
+		]
+	},
     {
         "id":"ratdom_king_rah",
         "items":[
@@ -385,6 +379,19 @@
             }
        ]
     },
+	{
+		"id":"ratdom_kriih",
+		"items":[
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":200,
+					"max":500
+				}
+			}
+		]
+	},
     {
         "id":"ratdom_librarian",
         "items":[
@@ -491,6 +498,22 @@
                 "quantity":{
                     "min":5,
                     "max":5
+                }
+            },
+            {
+                "itemID":"charwood_cheddar",
+                "chance":"100",
+                "quantity":{
+                    "min":2,
+                    "max":2
+                }
+            },
+            {
+                "itemID":"ferm-garlic",
+                "chance":"80",
+                "quantity":{
+                    "min":1,
+                    "max":3
                 }
             },
             {
@@ -705,11 +728,11 @@
                 }
             },
 			{
-				"itemID":"club3",
+				"itemID":"handcarved_snowball",
 				"chance":"100",
 				"quantity":{
-					"min":1,
-					"max":2
+					"min":100,
+					"max":150
 				}
 			}
        ]

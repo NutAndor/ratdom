@@ -912,7 +912,7 @@
   {
     "id":"ratdom_bone_collector_s3_10",
 	"switchToNPC":"ratdom_bone_collector",
-	"message":"I am really disappointed in you to steal my most precious bone. I take it back now.",
+	"message":"I am really disappointed in you to steal my most precious bone. I'll take it back now.",
     "replies":[
       {
         "text":"Yikes! You have startled me. Yes, sorry.",
@@ -1171,7 +1171,12 @@
                         "requireType":"inventoryRemove",
                         "requireID":"rawperch",
                         "value":1
-                    }
+                    },
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
                 ]
             }
         ]
@@ -1222,7 +1227,12 @@
                         "requireType":"inventoryRemove",
                         "requireID":"rawperch",
                         "value":1
-                    }
+                    },
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
                 ]
             }
        ]
@@ -1230,20 +1240,7 @@
     {
         "id":"ratdom_fraedro_key_12f",
         "switchToNPC":"ratdom_rat",
-		"message":"A fish? Really??",
-        "replies":[
-            {
-                "nextPhraseID":"ratdom_fraedro_key_12",
-                "text":"N",
-                "requires":[
-					{
-						"requireType":"questProgress",
-						"requireID":"ratdom_nondisplay",
-						"value":10
-					}
-				]
-            }
-        ]
+		"message":"A fish? Really??"
     },
     {
         "id":"ratdom_fraedro_key_20",
@@ -1943,7 +1940,7 @@
   {
     "id":"ratdom_maze_rat1_30",
     "switchToNPC":"ratdom_rat",
-    "message":"$1 - I knew you would come back!",
+    "message":"$playername - I knew you would come back!",
     "replies":[
       {
         "text":"Clevred? Is that really you?",
@@ -2019,7 +2016,7 @@
 				"rewardID":"ratdom_roundling",
 				"mapName":"ratdom_maze_627"
 			}
-		],
+		]
     },
   {
     "id":"ratdom_maze_rat2",
@@ -2870,7 +2867,7 @@
   },
   {
     "id":"ratdom_rat_cheese_key_40",
-	"message":"Now you may follow me into our museum.",
+	"message":"Now you may follow me into our memory hall.",
 	"rewards":[ { "rewardType":"removeSpawnArea", "mapName":"ratdom_maze_624", "rewardID":"ratdom_rat_warden" }]
   },
   {
@@ -3479,7 +3476,7 @@
   },
   {
     "id":"ratdom_rat_conv2_416",
-    "message":"Should there be a branch, there will be an additional flag. The side trip is marked with a different orange shield.",
+    "message":"Should there be a branch, there will be an additional flag. The side trip is marked with a yellow shield.",
     "replies":[
       {
         "text":"What?",
@@ -3489,7 +3486,7 @@
   },
   {
     "id":"ratdom_rat_conv2_417",
-    "message":"Sigh. If you see a shield together with a flag, then first look for another passage marked with a special formed orange shield.",
+    "message":"Sigh. If you see an orange shield together with a flag, then first look for another passage marked with a yellow shield.",
     "replies":[
       {
         "text":"And then?",
@@ -3499,7 +3496,7 @@
   },
   {
     "id":"ratdom_rat_conv2_417a",
-    "message":"Follow this passage to the end. We might find something important there. Then go back to the crossing and follow the usual shield.",
+    "message":"Follow this passage to the end. We might find something important there. Then go back to the crossing and follow the orange shield again.",
     "replies":[
       {
         "text":"Eh, ok. Got it.",
@@ -3507,11 +3504,15 @@
       }
     ],
 	"rewards":[
-		{
-			"rewardType":"questProgress",
-			"rewardID":"ratdom_maze",
-			"value":132
-		}
+	  {
+		"rewardType":"questProgress",
+		"rewardID":"ratdom_maze",
+		"value":132
+	  },
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_compass_tour"
+      }
 	]
   },
   {
@@ -3996,7 +3997,7 @@
   {
     "id":"ratdom_rat_conv2_580",
 	"switchToNPC":"ratdom_rat",
-    "message":"Whar do you think it will look like?",
+    "message":"What do you think it will look like?",
     "replies":[
       {
         "text":"What?",
@@ -4016,14 +4017,14 @@
     "message":"The artifact, of course. Will it be big and round and shiny like I was always told?",
     "replies":[
       {
-        "text":"And will it be worth our labour to find it?",
+        "text":"And will it be worth our labor to find it?",
 		"nextPhraseID":"ratdom_rat_conv2_584"
       }
     ]
   },
   {
     "id":"ratdom_rat_conv2_584",
-    "message":"Labour?! This is a fun tour!",
+    "message":"Labor?! This is a fun tour!",
     "replies":[
       {
         "text":"Is it? Good to know.",
@@ -4410,7 +4411,7 @@
     "message":"Over there - look, the roundling!",
     "replies":[
       {
-        "text":"He hadn't remarked us yet.",
+        "text":"He hadn't noticed us yet.",
         "nextPhraseID":"ratdom_rat_final_3_10"
       }
     ]
@@ -4577,7 +4578,7 @@
     {
         "id":"ratdom_rat_museum_sign_3e_check_10",
 		"switchToNPC":"ratdom_rat_warden2",
-        "message":"Oh, you bring the mighty sword of King Rah! That's great, we will keep it in honour.",
+        "message":"Oh, you bring the mighty sword of King Rah! That's great, we will keep it in honor.",
         "replies":[	{ "text":"Sure. Here you are.",
 					  "nextPhraseID":"ratdom_rat_museum_sign_3e_check_12",
 					  "requires":[{ "requireType":"inventoryRemove", "requireID":"ratdom_rat_sword", "value":1 }] 
@@ -4603,7 +4604,7 @@
     },
     {
         "id":"ratdom_rat_museum_sign_3e_check_14",
-        "message":"This is much money for our museum. But here you have 1000 gold.",
+        "message":"This is a lot of money for our museum. But here you have 1000 gold.",
 		"rewards":[ { "rewardType":"questProgress", "rewardID":"ratdom_nondisplay", "value":184 },
 					{ "rewardType":"questProgress", "rewardID":"ratdom_quest", "value":381 },
 					{ "rewardType":"giveItem", "rewardID":"gold", "value":1000 }]
@@ -4786,7 +4787,17 @@
         ]
       },
       {
-		"nextPhraseID":"ratdom_rat_sword_key_30"
+		"nextPhraseID":"ratdom_rat_sword_key_30",
+        "requires":[
+		  {
+			"requireType":"questProgress",
+			"requireID":"ratdom_nondisplay",
+			"value":10
+		  }
+        ]
+      },
+      {
+		"nextPhraseID":"ratdom_rat_sword_key_32"
       }
     ]
   },
@@ -4825,36 +4836,13 @@
     "replies":[
       {
 		"text":"Veni gladio fidelis?",
-		"nextPhraseID":"ratdom_rat_sword_key_42"
+		"nextPhraseID":"ratdom_rat_sword_key_40"
       }
     ]
   },
   {
     "id":"ratdom_rat_sword_key_40",
-    "switchToNPC":"ratdom_rat",
     "message":"Yes, yes! It moves ...",
-    "replies":[
-      {
-		"text":"Hey, who is this?",
-		"nextPhraseID":"ratdom_king_rah"
-      }
-    ],
-    "rewards":[
-		{
-			"rewardType":"spawnAll",
-			"rewardID":"ratdom_king_rah",
-			"mapName":"ratdom_maze_627"
-		},
-		{
-			"rewardType":"questProgress",
-			"rewardID":"ratdom_nondisplay",
-			"value":183
-		}
-    ]
-  },
-  {
-    "id":"ratdom_rat_sword_key_42",
-    "message":"The great sword starts to vibrate.",
     "replies":[
       {
 		"text":"Hey, who is this?",
@@ -5866,7 +5854,7 @@
   {
     "id":"ratdom_wakeup_20",
     "switchToNPC":"none",
-    "message":"You were so tired yesterday, that you didn't even make it to your bed. You dreamed of rats and that something bit your toes firmly. Apparently you had a nightmare. \nYou open your eyes ...",
+    "message":"You were so tired yesterday, that you didn't even make it to your bed. You dreamed of rats and that something bit your toes firmly. Apparently you had a nightmare.\nYou open your eyes ...",
     "replies":[
       {
         "text":"N",
@@ -5919,6 +5907,13 @@
   },
   {
     "id":"ratdom_wakeup_92",
+    "message":"You didn't make it to your bed - again. Nevertheless you took some minutes of sleep.\nWhen you woke up, something had changed. The rats are gone!\n\nWhat a terrible dream. Or - was everything really just a dream?",
+	"replies":[
+		{
+			"text":"My head ...",
+			"nextPhraseID":"ratdom_wakeup_100"
+		}
+	],
     "rewards":[
       {
         "rewardType":"questProgress",
@@ -5950,8 +5945,42 @@
         "rewardID":"ratdom_keys",
         "mapName":"crossglen"
       }
-    ],
-    "message":"You didn't make it to your bed - again. Nevertheless you took some minutes of sleep.\nWhen you woke up, something had changed. The rats are gone!\n\nWhat a terrible dream. Or - was everything really just a dream?"
+    ]
+  },
+  {
+	"id":"ratdom_wakeup_100",
+    "switchToNPC":"mikhail",
+    "message":"$playername - do I have to worry about you?",
+	"replies":[
+		{
+			"text":"Where is the big rat?",
+			"nextPhraseID":"ratdom_wakeup_110"
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_110",
+    "message":"You got rid of the rats long ago.",
+	"replies":[
+		{
+			"text":"No. Yes, but ...  Where is Clevred?",
+			"nextPhraseID":"ratdom_wakeup_120"
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_120",
+    "message":"I don't know anyone with that name. You must have had a bad dream. And better leave out all the mead.",
+	"replies":[
+		{
+			"text":"I didn't drink.",
+			"nextPhraseID":"ratdom_wakeup_130"
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_130",
+    "message":"Yes that's what they all say. Better go and find Andor at last."
   },
   {
 	"id":"ratdom_water_flag",
