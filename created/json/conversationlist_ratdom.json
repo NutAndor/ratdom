@@ -420,7 +420,7 @@
 	  {
 		"rewardType":"removeSpawnArea",
 		"rewardID":"ratdom_roundling",
- 		"mapName":"ratdom_maze_427"
+ 		"mapName":"ratdom_maze_627"
  	  }
     ],
     "message":"Wait ...",
@@ -5484,6 +5484,12 @@
           {
             "requireType":"questProgress",
             "requireID":"ratdom_quest",
+            "value":940,
+            "negate":true
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
             "value":999,
             "negate":true
           },
@@ -5718,7 +5724,7 @@
         "mapName":"crossglen"
       }
     ],
-    "message":"You didn't make it to your bed - again. Nevertheless you took some minutes of sleep. \nWhen you woke up, something had changed. The rats are gone!"
+    "message":"You didn't make it to your bed - again. Nevertheless you took some minutes of sleep. \nWhen you woke up, something had changed. The rats are gone!\n\nWhat a terrible dream. Or - was everything really just a dream?"
   },
   {
 	"id":"ratdom_water_flag",

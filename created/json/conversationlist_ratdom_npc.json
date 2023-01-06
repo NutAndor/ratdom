@@ -1524,8 +1524,36 @@
                         "requireType":"questProgress",
                         "requireID":"ratdom_quest",
                         "value":100
-                    }
+                    },
+					{ 
+						"requireType":"factionScore", 
+						"requireID":"ratdom_rat_conv2", 
+						"value":5,
+						"negate":true
+					},
                 ]
+			},
+			{
+				"text":"Clevred, I give up. You must search for your powerful artifact alone.",
+				"nextPhraseID":"ratdom_rat_200",
+				"requires":[
+					{ 
+						"requireType":"factionScore", 
+						"requireID":"ratdom_rat_conv2", 
+						"value":5 
+					},
+					{ 
+						"requireType":"questProgress", 
+						"requireID":"ratdom_quest", 
+						"value":900,
+						"negate":true
+					},
+					{ 
+						"requireType":"questProgress", 
+						"requireID":"ratdom_mikhail", 
+						"value":90
+					}
+				]
 			}
         ]
     },
@@ -1690,6 +1718,177 @@
 				"nextPhraseID":"X"
             }
         ]
+    },
+    {
+        "id":"ratdom_rat_200",
+        "message":"NO! You want to leave me alone in this huge maze?",
+        "replies":[
+            {
+                "text":"Eh, of course not.",
+				"nextPhraseID":"X"
+            },
+            {
+                "text":"Well, I don't see any way to help you.",
+				"nextPhraseID":"ratdom_rat_210"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_210",
+        "message":"You promised. You promised to find my artifact for me.",
+        "replies":[
+            {
+                "text":"Yes, you're right. Let's try again. Back to the caves!",
+				"nextPhraseID":"X"
+            },
+            {
+                "text":"I can't keep the promise. Sorry.",
+				"nextPhraseID":"ratdom_rat_220"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_220",
+        "message":"So I should keep looking on my own?",
+        "replies":[
+            {
+                "text":"Yes.",
+				"nextPhraseID":"ratdom_rat_230"
+            },
+            {
+                "text":"Well ...",
+				"nextPhraseID":"ratdom_rat_230"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_230",
+        "message":"And you still want me to tell you how to get out of here?",
+        "replies":[
+            {
+                "text":"Yes. Please.",
+				"nextPhraseID":"ratdom_rat_240"
+            },
+            {
+                "text":"Alright, you won. Let's try again.",
+				"nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_240",
+        "message":"Fine, you don't want it any other way. I'll find the artifact on my own too. Farewell.",
+        "replies":[
+            {
+                "text":"Farewell. And sorry.",
+				"nextPhraseID":"ratdom_rat_250"
+            },
+            {
+                "text":"Wait ...",
+				"nextPhraseID":"ratdom_rat_242"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_242",
+        "message":"Yes?",
+        "replies":[
+            {
+                "text":"I was stupid. Forget what I said.",
+				"nextPhraseID":"ratdom_rat_250"
+            },
+            {
+                "text":"Nothing.",
+				"nextPhraseID":"ratdom_rat_240"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_rat_250",
+        "message":"Bye. We will never meet again.",
+        "replies":[
+            {
+                "text":"Bye.",
+				"nextPhraseID":"X"
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_quest",
+				"value":940
+			},
+			{
+				"rewardType":"removeQuestProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":1
+			},
+			{
+				"rewardType":"removeQuestProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":10
+			},
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":13
+			},
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":21
+			},
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":22
+			},
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":23
+			},
+			{
+				"rewardType":"removeSpawnArea",
+				"rewardID":"ratdom_rat",
+				"mapName":"home"
+			},
+			{
+				"rewardType":"removeSpawnArea",
+				"rewardID":"ratdom_rat_bwm1",
+				"mapName":"ratdom_bwm1"
+			},
+			{
+				"rewardType":"deactivateSpawnArea",
+				"rewardID":"ratdom_roundling2",
+				"mapName":"ratdom_maze_448"
+			},
+			{
+				"rewardType":"removeSpawnArea",
+				"rewardID":"ratdom_roundling",
+				"mapName":"ratdom_maze_627"
+			},
+			{
+				"rewardType":"removeSpawnArea",
+				"rewardID":"ratdom_mara",
+				"mapName":"crossglen"
+			},
+			{
+				"rewardType":"removeSpawnArea",
+				"rewardID":"ratdom_tharal",
+				"mapName":"crossglen"
+			},
+			{
+				"rewardType":"removeSpawnArea",
+				"rewardID":"crossglen_caverat",
+				"mapName":"crossglen"
+			},
+			{
+				"rewardType":"deactivateMapObjectGroup",
+				"rewardID":"ratdom_keys",
+				"mapName":"crossglen"
+			}
+		],
     },
     {
         "id":"ratdom_rat_bwm1",
@@ -2500,6 +2699,13 @@
 			"text":"I hope it is worth the hard work.",
 			"nextPhraseID":"X"
 		  }
+		],
+		"rewards":[
+		  {
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_quest",
+			"value":321
+		  }
 		]
 	},
 	{
@@ -2513,6 +2719,13 @@
 		  {
 			"text":"I hope it is worth the hard work.",
 			"nextPhraseID":"X"
+		  }
+		],
+		"rewards":[
+		  {
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_quest",
+			"value":325
 		  }
 		]
 	},
@@ -2528,6 +2741,13 @@
 			"text":"I hope it is worth the hard work.",
 			"nextPhraseID":"X"
 		  }
+		],
+		"rewards":[
+		  {
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_quest",
+			"value":324
+		  }
 		]
 	},
 	{
@@ -2541,6 +2761,13 @@
 		  {
 			"text":"I hope it is worth the hard work.",
 			"nextPhraseID":"X"
+		  }
+		],
+		"rewards":[
+		  {
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_quest",
+			"value":322
 		  }
 		]
 	},
@@ -2556,6 +2783,13 @@
 			"text":"I hope it is worth the hard work.",
 			"nextPhraseID":"X"
 		  }
+		],
+		"rewards":[
+		  {
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_quest",
+			"value":323
+		  }
 		]
 	},
 	{
@@ -2565,6 +2799,13 @@
 		  {
 			"text":"OK, I'll be back.",
 			"nextPhraseID":"X"
+		  }
+		],
+		"rewards":[
+		  {
+			"rewardType":"questProgress",
+			"rewardID":"ratdom_quest",
+			"value":320
 		  }
 		]
 	},
