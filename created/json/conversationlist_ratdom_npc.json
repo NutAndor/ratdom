@@ -997,6 +997,24 @@
             {
                 "text":"Bye.",
                 "nextPhraseID":"X"
+            },
+            {
+                "text":"Tell me about Andor, or ...",
+                "nextPhraseID":"ratdom_librarian_14"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_14",
+        "message":"Or what? Attack? Hahaha!",
+        "replies":[
+            {
+                "text":"You'll soon stop laughing.",
+                "nextPhraseID":"F"
+            },
+            {
+                "text":"Just you wait when I come back.",
+                "nextPhraseID":"X"
             }
         ]
     },
@@ -1034,7 +1052,23 @@
         "replies":[
             {
                 "text":"Take your time, rather be thoroughly!",
+                "nextPhraseID":"ratdom_librarian_32"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_32",
+        "replies":[
+            {
+                "text":"N",
                 "nextPhraseID":"R"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":93
             }
         ]
     },

@@ -325,16 +325,99 @@
 						"negate":true
                     }
                 ]
+            },
+            {
+                "nextPhraseID":"ratdom_check_backbone_20",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"ratdom_rat_skelett_back",
+                        "value":1,
+						"negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":93
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":94,
+						"negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"ratdom_check_backbone_30",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"ratdom_rat_skelett_back",
+                        "value":1,
+						"negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":93
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":94,
+						"negate":true
+                    }
+                ]
             }
         ]
     },
     {
         "id":"ratdom_check_backbone_10",
+		"message":"You wonder why you have found some rat bones in a library.",
 		"rewards":[
 			{
 				"rewardType":"questProgress",
 				"rewardID":"ratdom_quest",
 				"value":36
+			}
+		]
+    },
+    {
+        "id":"ratdom_check_backbone_20",
+		"switchToNPC":"ratdom_rat",
+		"message":"Why didn't you take the bones with you?",
+        "replies":[
+            {
+                "nextPhraseID":"ratdom_check_backbone_22",
+				"text":"What bones?"
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":94
+			}
+		]
+    },
+    {
+        "id":"ratdom_check_backbone_22",
+		"message":"Oh man, he's blind to make matters worse."
+    },
+    {
+        "id":"ratdom_check_backbone_26",
+		"message":"I should take a closer look at the library.",
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":94
 			}
 		]
     },
@@ -1488,6 +1571,82 @@
     ]
   },
   {
+    "id":"ratdom_goldhunter_bone_reminder",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_goldhunter_bone_reminder_20",
+        "requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_quest",
+				"value":31,
+				"negate":true
+			},
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":76,
+				"negate":true
+			},
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":10
+			}
+        ]
+      },
+      {
+        "nextPhraseID":"ratdom_goldhunter_bone_reminder_26",
+        "requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_quest",
+				"value":31,
+				"negate":true
+			},
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":76,
+				"negate":true
+			}
+        ]
+      }        
+	]
+  },
+  {
+    "id":"ratdom_goldhunter_bone_reminder_20",
+    "message":"Why didn't you take the bones with you?",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_goldhunter_bone_reminder_22",
+			"text":"What bones?"
+		}
+	],
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":76
+      }
+    ]
+  },
+  {
+		"id":"ratdom_goldhunter_bone_reminder_22",
+		"message":"Oh man, he's blind to make matters worse."
+  },
+  {
+		"id":"ratdom_goldhunter_bone_reminder_26",
+		"message":"I should take a closer look back on the isle.",
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_nondisplay",
+				"value":76
+			}
+		]
+  },
+  {
     "id":"ratdom_goldhunter_bridge",
     "replies":[
       {
@@ -1949,7 +2108,7 @@
     "replies":[
       {
         "text":"Clevred? Is that really you?",
-		"nextPhraseID":"ratdom_maze_rat2_32"
+		"nextPhraseID":"ratdom_maze_rat1_32"
 	  }
 	]
   },
@@ -1959,7 +2118,7 @@
     "replies":[
       {
         "text":"I thought you were going to fetch your artifact at last?",
-		"nextPhraseID":"ratdom_maze_rat2_34"
+		"nextPhraseID":"ratdom_maze_rat1_34"
 	  }
 	]
   },
@@ -1969,7 +2128,7 @@
     "replies":[
       {
         "text":"OK, let us try again to find it.",
-		"nextPhraseID":"ratdom_maze_rat2_36"
+		"nextPhraseID":"ratdom_maze_rat1_36"
 	  },
       {
         "text":"So, am I good enough for the dirty work? Forget it. Bye.",
@@ -1978,7 +2137,7 @@
 	]
   },
     {
-        "id":"ratdom_maze_rat2_36",
+        "id":"ratdom_maze_rat1_36",
         "message":"Great - then let's go!",
 		"rewards":[
 			{
@@ -5985,7 +6144,66 @@
   },
   {
 	"id":"ratdom_wakeup_130",
-    "message":"Yes that's what they all say. Better go and find Andor at last."
+    "message":"Yes that's what they all say. Better go and find Andor at last.",
+	"replies":[
+		{
+			"text":"N",
+			"nextPhraseID":"ratdom_wakeup_140",
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_mikhail",
+					"value":30
+				}
+			]
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_140",
+    "message":"When I think of drinking - Mara seems to have disappeared. So we're all going to stop drinking mead.",
+	"replies":[
+		{
+			"text":"Oh.",
+			"nextPhraseID":"ratdom_wakeup_142"
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_142",
+    "message":"Maybe she wanted to fulfill her dream of opening a tavern in Brightport?",
+	"replies":[
+		{
+			"text":"Oh.",
+			"nextPhraseID":"ratdom_wakeup_144"
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_144",
+	"replies":[
+		{
+			"text":"N",
+			"nextPhraseID":"ratdom_wakeup_146",
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_mikhail",
+					"value":32
+				}
+			]
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_146",
+    "message":"Tharal has also disappeared. But I don't think that has anything to do with each other. He often just roams through the forest and will definitely be back soon.",
+	"replies":[
+		{
+			"text":"I hope so.",
+			"nextPhraseID":"X"
+		}
+	]
   },
   {
 	"id":"ratdom_water_flag",
