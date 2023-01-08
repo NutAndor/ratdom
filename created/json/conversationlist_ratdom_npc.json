@@ -325,6 +325,45 @@
     },
     {
         "id":"ratdom_fraedro",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_fraedro_1",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":180
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_fraedro_1s"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_1",
+		"switchToNPC":"ratdom_fraedro",
+        "message":"Please don't hurt me.",
+        "replies":[
+            {
+                "text":"Who are you?",
+                "nextPhraseID":"ratdom_fraedro_2"
+            },
+            {
+                "text":"Why did you steal King Rah's skeleton?",
+                "nextPhraseID":"ratdom_fraedro_10"
+            },
+            {
+                "text":"OK, bye.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_fraedro_1s",
 		"switchToNPC":"ratdom_fraedro",
         "message":"Please don't hurt me. I am starving.",
         "replies":[
@@ -1887,6 +1926,11 @@
 			{
 				"rewardType":"removeSpawnArea",
 				"rewardID":"ratdom_roundling",
+				"mapName":"ratdom_maze_627"
+			},
+			{
+				"rewardType":"removeSpawnArea",
+				"rewardID":"ratdom_roundling3",
 				"mapName":"ratdom_maze_627"
 			},
 			{
@@ -3620,7 +3664,12 @@
             {
                 "rewardType":"removeSpawnArea",
                 "rewardID":"ratdom_roundling",
-                "mapName":"ratdom_maze_427"
+                "mapName":"ratdom_maze_627"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"ratdom_roundling3",
+                "mapName":"ratdom_maze_627"
             },
             {
                 "rewardType":"removeSpawnArea",

@@ -1514,19 +1514,19 @@
 		"monsterClass":"giant",
 		"attackDamage":{
 			"min":1,
-			"max":30
+			"max":10
 		},
 		"spawnGroup":"ratdom_troll_1",
 		"droplistID":"ratdom_troll",
 		"attackCost":5,
-		"attackChance":90,
-		"blockChance":70,
+		"attackChance":50,
+		"blockChance":30,
 		"hitEffect":{
 			"conditionsTarget":[
 				{
 					"condition":"stunned",
 					"magnitude":1,
-					"duration":4,
+					"duration":2,
 					"chance":"5"
 				}
 			]
@@ -1538,25 +1538,25 @@
         "iconID":"monsters_tometik5:14",
 		"maxHP":230,
 		"maxAP":10,
-		"moveCost":2,
+		"moveCost":5,
         "movementAggressionType":"wholeMap",
 		"monsterClass":"giant",
 		"attackDamage":{
 			"min":1,
-			"max":30
+			"max":12
 		},
 		"spawnGroup":"ratdom_troll_2",
 		"droplistID":"ratdom_troll",
-		"attackCost":5,
-		"attackChance":90,
-		"blockChance":70,
+		"attackCost":3,
+		"attackChance":55,
+		"blockChance":35,
 		"hitEffect":{
 			"conditionsTarget":[
 				{
 					"condition":"stunned",
 					"magnitude":1,
-					"duration":4,
-					"chance":"5"
+					"duration":2,
+					"chance":"10"
 				}
 			]
 		}
@@ -1567,18 +1567,18 @@
         "iconID":"monsters_tometik5:14",
 		"maxHP":330,
 		"maxAP":10,
-		"moveCost":2,
+		"moveCost":3,
         "movementAggressionType":"wholeMap",
 		"monsterClass":"giant",
 		"attackDamage":{
 			"min":10,
-			"max":40
+			"max":15
 		},
 		"spawnGroup":"ratdom_troll_3",
 		"droplistID":"ratdom_troll",
 		"attackCost":5,
-		"attackChance":90,
-		"blockChance":70,
+		"attackChance":60,
+		"blockChance":40,
 		"hitEffect":{
 			"conditionsTarget":[
 				{
@@ -1601,7 +1601,7 @@
 		"monsterClass":"giant",
 		"attackDamage":{
 			"min":10,
-			"max":40
+			"max":20
 		},
 		"spawnGroup":"ratdom_troll_4",
 		"droplistID":"ratdom_troll",
@@ -1613,7 +1613,7 @@
 				{
 					"condition":"stunned",
 					"magnitude":1,
-					"duration":4,
+					"duration":3,
 					"chance":"10"
 				}
 			]
@@ -1623,19 +1623,19 @@
         "id":"ratdom_troll_5",
         "name":"Dangerous cave troll",
         "iconID":"monsters_tometik5:14",
-		"maxHP":430,
+		"maxHP":380,
 		"maxAP":10,
-		"moveCost":2,
+		"moveCost":5,
         "movementAggressionType":"wholeMap",
 		"monsterClass":"giant",
 		"attackDamage":{
 			"min":15,
-			"max":50
+			"max":30
 		},
 		"spawnGroup":"ratdom_troll_5",
 		"droplistID":"ratdom_troll",
 		"attackCost":5,
-		"attackChance":90,
+		"attackChance":60,
 		"blockChance":70,
 		"hitEffect":{
 			"conditionsTarget":[
@@ -1654,12 +1654,12 @@
         "iconID":"monsters_tometik5:14",
 		"maxHP":430,
 		"maxAP":10,
-		"moveCost":2,
+		"moveCost":5,
         "movementAggressionType":"wholeMap",
 		"monsterClass":"giant",
 		"attackDamage":{
 			"min":15,
-			"max":50
+			"max":30
 		},
 		"spawnGroup":"ratdom_troll_6",
 		"droplistID":"ratdom_troll",
@@ -1671,7 +1671,7 @@
 				{
 					"condition":"stunned",
 					"magnitude":1,
-					"duration":4,
+					"duration":6,
 					"chance":"5"
 				}
 			]
@@ -1700,9 +1700,9 @@
 			"conditionsTarget":[
 				{
 					"condition":"stunned",
-					"magnitude":3,
-					"duration":2,
-					"chance":"10"
+					"magnitude":1,
+					"duration":5,
+					"chance":"5"
 				}
 			]
 		},

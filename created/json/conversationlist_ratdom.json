@@ -421,6 +421,11 @@
 		"rewardType":"removeSpawnArea",
 		"rewardID":"ratdom_roundling",
  		"mapName":"ratdom_maze_627"
+ 	  },
+	  {
+		"rewardType":"removeSpawnArea",
+		"rewardID":"ratdom_roundling3",
+ 		"mapName":"ratdom_maze_627"
  	  }
     ],
     "message":"Wait ...",
@@ -680,7 +685,7 @@
       },
       {
         "rewardType":"spawnAll",
-        "rewardID":"ratdom_roundling2",
+        "rewardID":"ratdom_roundling3",
         "mapName":"ratdom_maze_627"
       }
     ],
@@ -3062,13 +3067,7 @@
     "replies":[
       {	"nextPhraseID":"ratdom_rat_conv2_410",
 		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":132, "negate":true },
-					{ "requireType":"random", "requireID":"25" },
-					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
-					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
-					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_tour", "value":1 }]
-      },
-      {	"nextPhraseID":"ratdom_rat_conv2_410",
-		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_compass_tour", "value":50 },
+					{ "requireType":"timerElapsed", "requireID":"ratdom_compass_bwm", "value":50 },
 					{ "requireType":"random", "requireID":"25" },
 					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
@@ -3076,13 +3075,7 @@
       },
       {	"nextPhraseID":"ratdom_rat_conv2_400",
 		"requires":[{ "requireType":"questProgress", "requireID":"ratdom_maze", "value":131, "negate":true },
-					{ "requireType":"random", "requireID":"25" },
-					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
-					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
-					{ "requireType":"inventoryKeep", "requireID":"ratdom_compass_bwm", "value":1 }]
-      },
-      {	"nextPhraseID":"ratdom_rat_conv2_400",
-		"requires":[{ "requireType":"timerElapsed", "requireID":"ratdom_compass_bwm", "value":50, "negate":true },
+					{ "requireType":"timerElapsed", "requireID":"ratdom_compass_bwm", "value":50 },
 					{ "requireType":"random", "requireID":"25" },
 					{ "requireType":"wear", "requireID":"ratdom_compass_bwm", "value":1, "negate":true },
 					{ "requireType":"wear", "requireID":"ratdom_compass_tour", "value":1, "negate":true },
@@ -3391,13 +3384,28 @@
       },
       {
         "text":"Well, why don't I? Really, I forgot about it.",
-		"nextPhraseID":"ratdom_rat_conv2_409"
+		"nextPhraseID":"ratdom_rat_conv2_402"
       },
       {
         "text":"I didn't see any use.",
 		"nextPhraseID":"ratdom_rat_conv2_402"
+      },
+      {
+        "text":"I understood how the blue necklace works. Don't bother me with that anymore.",
+		"nextPhraseID":"ratdom_rat_conv2_401"
       }
     ]
+  },
+  {
+    "id":"ratdom_rat_conv2_401",
+    "message":"It's okay. If you still want to hear it again, just ask me.",
+	"rewards":[
+	  {
+		"rewardType":"questProgress",
+		"rewardID":"ratdom_maze",
+		"value":131
+	  }
+	]
   },
   {
     "id":"ratdom_rat_conv2_402",
@@ -3407,14 +3415,7 @@
         "text":"Ah, OK.",
 		"nextPhraseID":"ratdom_rat_conv2_409"
       }
-    ],
-	"rewards":[
-		{
-			"rewardType":"questProgress",
-			"rewardID":"ratdom_maze",
-			"value":131
-		}
-	]
+    ]
   },
   {
     "id":"ratdom_rat_conv2_409",
@@ -3441,8 +3442,23 @@
       {
         "text":"I didn't see any use.",
 		"nextPhraseID":"ratdom_rat_conv2_412"
+      },
+      {
+        "text":"I understood how the orange necklace works. Don't bother me with that anymore.",
+		"nextPhraseID":"ratdom_rat_conv2_411"
       }
     ]
+  },
+  {
+    "id":"ratdom_rat_conv2_411",
+    "message":"It's okay. If you still want to hear it again, just ask me.",
+	"rewards":[
+	  {
+		"rewardType":"questProgress",
+		"rewardID":"ratdom_maze",
+		"value":132
+	  }
+	]
   },
   {
     "id":"ratdom_rat_conv2_412",
@@ -3502,18 +3518,7 @@
         "text":"Eh, ok. Got it.",
 		"nextPhraseID":"ratdom_rat_conv2_418"
       }
-    ],
-	"rewards":[
-	  {
-		"rewardType":"questProgress",
-		"rewardID":"ratdom_maze",
-		"value":132
-	  },
-      {
-        "rewardType":"createTimer",
-        "rewardID":"ratdom_compass_tour"
-      }
-	]
+    ]
   },
   {
     "id":"ratdom_rat_conv2_418",
@@ -7066,6 +7071,18 @@
   },
   {
 	"id":"ratdom_well_20",
+	"replies":[
+		{
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"achievements",
+					"value":1
+				}
+			],
+			"nextPhraseID":"ratdom_well_22"
+		}
+	],
 	"rewards":[
 		{
 			"rewardType":"removeSpawnArea",
@@ -7087,6 +7104,16 @@
 			"rewardID":"ratdom_nondisplay",
 			"value":49
 		},
+		{
+			"rewardType":"questProgress",
+			"rewardID":"achievements",
+			"value":125
+		}
+	]
+  },
+  {
+	"id":"ratdom_well_22",
+	"rewards":[
 		{
 			"rewardType":"questProgress",
 			"rewardID":"achievements",
