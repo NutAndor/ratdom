@@ -354,7 +354,7 @@
                 ]
             },
             {
-                "nextPhraseID":"ratdom_check_backbone_30",
+                "nextPhraseID":"ratdom_check_backbone_26",
                 "requires":[
                     {
                         "requireType":"inventoryKeep",
