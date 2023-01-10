@@ -729,18 +729,12 @@
           {
             "requireType":"questProgress",
             "requireID":"ratdom_nondisplay",
-            "value":1
+            "value":10
           },
           {
             "requireType":"questProgress",
             "requireID":"ratdom_nondisplay",
             "value":11,
-            "negate":true
-          },
-          {
-            "requireType":"questProgress",
-            "requireID":"ratdom_nondisplay",
-            "value":13,
             "negate":true
           }
         ]
