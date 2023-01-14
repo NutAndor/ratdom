@@ -375,6 +375,7 @@
   <object id="67" name="ratdom_roundling3" type="spawn" x="288" y="192" width="32" height="192">
    <properties>
     <property name="active" value="false"/>
+	<property name="ignoreAreas" value="true"/>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="ratdom_roundling3"/>
    </properties>

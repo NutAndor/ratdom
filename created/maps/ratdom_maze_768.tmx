@@ -198,7 +198,7 @@
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OQwxS6L4dGAA8D0XELSa4rFbGzgEg77iNU/XAE58QADc5lGpt240hI+YC6Inz8YAChMYO5yF2Bg8BBAlUcWQ3f/YaQwCQeqiUDTi00Mm15SwUDqHYiwojTdIwNS0iQ17R1oAMv72OolSgEA+3UaUA==
+   eJxjYMAN3OQwxS6L4dGAA8D0XELSa4rFbGzgEg77iNU/XAE58QADc5lGpt240hI+YC6Inz8YAChMYO5yF2Bg8BBAlUcWQ3f/YaQwCQeqiUDTi00Mm15SwUDqHYiwojTdI4OhkCZpAWB5H1u9RCkAAEOfGbE=
   </data>
  </layer>
  <layer id="4" name="Light_on" width="15" height="30" visible="0">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Light_off" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AU4ALhgvj5gwUQ667B6n56gqEeVkMlTQ4lAABueANB
+   eJxjYBgFo2AU4ALpgvj5gwUQ667B6n56gqEeVkMlTQ4lAAC5hwPB
   </data>
  </layer>
  <layer id="6" name="Top" width="15" height="30" visible="0">
