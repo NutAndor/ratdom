@@ -331,9 +331,9 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="58" name="ratdom_rat_648_conv1" type="script" x="224" y="320" width="64" height="32"/>
-  <object id="59" name="ratdom_rat_648_conv2" type="script" x="224" y="416" width="128" height="32"/>
-  <object id="60" name="ratdom_rat_648_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="58" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
+  <object id="59" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
+  <object id="60" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
   <object id="92" name="ratdom_ghost1" type="script" x="160" y="288" width="192" height="160" visible="0"/>
   <object id="93" name="ratdom_ghost2" type="script" x="160" y="96" width="128" height="160" visible="0"/>
   <object id="94" name="ratdom_ghost3" type="script" x="160" y="480" width="160" height="160" visible="0"/>

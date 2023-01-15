@@ -1365,7 +1365,7 @@
 			"requires":[
 				{
 					"requireType":"random",
-					"requireID":"20"
+					"requireID":"10"
 				}
 			]
 		}
@@ -1421,7 +1421,7 @@
 			"requires":[
 				{
 					"requireType":"random",
-					"requireID":"20"
+					"requireID":"10"
 				}
 			]
 		}
@@ -1477,7 +1477,7 @@
 			"requires":[
 				{
 					"requireType":"random",
-					"requireID":"20"
+					"requireID":"10"
 				}
 			]
 		}
@@ -1589,7 +1589,7 @@
 			"requires":[
 				{
 					"requireType":"random",
-					"requireID":"4"
+					"requireID":"20"
 				}
 			]
 		},
@@ -1598,7 +1598,7 @@
 			"requires":[
 				{
 					"requireType":"random",
-					"requireID":"4"
+					"requireID":"25"
 				}
 			]
 		},
@@ -1607,7 +1607,7 @@
 			"requires":[
 				{
 					"requireType":"random",
-					"requireID":"4"
+					"requireID":"33"
 				}
 			]
 		},
@@ -1616,18 +1616,12 @@
 			"requires":[
 				{
 					"requireType":"random",
-					"requireID":"4"
+					"requireID":"50"
 				}
 			]
 		},
 		{
-			"nextPhraseID":"ratdom_ghost_50",
-			"requires":[
-				{
-					"requireType":"random",
-					"requireID":"5"
-				}
-			]
+			"nextPhraseID":"ratdom_ghost_50"
 		}
 	]
   },
@@ -1738,6 +1732,7 @@
 			}
 		]
       }
+	]
   },
   {
     "id":"ratdom_ghost_50b",
@@ -4881,6 +4876,10 @@
   {
     "id":"ratdom_rat_flora_warn_20",
 	"message":"Yeah. Let's better not go under the blue swirl."
+  },
+  {
+    "id":"ratdom_rat_kriih_sign_1",
+	"message":"Visitors not wanted"
   },
     {
         "id":"ratdom_rat_museum_sign_1",

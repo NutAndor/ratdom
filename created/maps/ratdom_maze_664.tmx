@@ -206,7 +206,7 @@
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
- <layer id="12" name="Walkable" width="15" height="30">
+ <layer id="12" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFc4rjkCGFy9ZKjDxmQo2cw6yPXf/TWi00dNj4uMVLAqN5RvaN6h75eUvWTWn5hwwBxlI17
   </data>
@@ -258,7 +258,7 @@
  </layer>
  <layer id="15" name="Compass" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJxTk2NgUBuEWHUQuGEUj+JRPIpH8fDHAA23d4g=
+   eJxTk2NgUBuE2GIQuGEUj+JRPIpH8fDHAIgHd5s=
   </data>
  </layer>
  <objectgroup id="16" name="Mapevents" visible="0">

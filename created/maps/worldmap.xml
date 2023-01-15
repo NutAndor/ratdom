@@ -65,7 +65,7 @@
     <map id="ratdom_maze_506" x="165" y="0"/>
     <map id="ratdom_maze_513" x="60" y="30"/>
     <map id="ratdom_maze_514" x="90" y="30"/>
-    <map id="ratdom_maze_515" x="120" y="30"/>
+    <map area="ratdom_maze_museum" id="ratdom_maze_515" x="120" y="30"/>
     <map id="ratdom_maze_516" x="150" y="30"/>
     <map id="ratdom_maze_517" x="180" y="30"/>
     <map id="ratdom_maze_521" x="15" y="60"/>
@@ -92,7 +92,7 @@
     <map id="ratdom_maze_545" x="135" y="120"/>
     <map id="ratdom_maze_546" x="165" y="120"/>
     <map id="ratdom_maze_547" x="195" y="120"/>
-    <map area="ratdom_maze_museum" id="ratdom_maze_551" x="0" y="150"/>
+    <map id="ratdom_maze_551" x="0" y="150"/>
     <map id="ratdom_maze_552" x="30" y="150"/>
     <map id="ratdom_maze_553" x="60" y="150"/>
     <map id="ratdom_maze_554" x="90" y="150"/>
