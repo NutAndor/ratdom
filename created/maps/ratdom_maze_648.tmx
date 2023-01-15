@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="22" nextobjectid="97">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="22" nextobjectid="98">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -188,7 +188,7 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJytldENwyAMRDMJ6g6lI1BGSDICzQgkuxeroFonAwYl0n0E+dkyPuA0y3ImhaRP0pq0ZdH3Nj/R/85iaO2RFSEHz1OYg8U4xmIOnqcwF4txufZLyMHzXLD+NP9eWjwKOS1f43p8jyP5Sa4I2XWAxdphkMdZFT/M1I4D7C70rWGJOyZYnzn0oZaVuFlvaHu921fa2Ujz0Xqq7DN6Ujtb3OeoqF3zBD8PW4OTZsvPA79jNZx0D7sBTuq/xZEnrJHvsCBwJd7CfmAOfBd63vMQZyt1auJxX25vpTo=
+   eJytleENhCAMhZ3E3A7iCMgI6gicI6C7HyRt0rwUKeRM3g9Jv9dAn3jP03Rnxaxv1p51kPjZ6P0UNWXtQ0rgIX2YuUSNFyx6SB9mHlHjqfeqeEifB9YX4rYGj0LOyte4Ft/iisIgx0J272Cxd+zkcVach5HeqYM9lX1b2MJdA2wgDnNoZTVuNBvWvf47V9bZaPOxZorPGTNpnS2eczL0rmVCfg/HC6fNVn4P8o61cNo97Ds4bf9vXMmEm/U7LCoc1zs4D/TA/0IrewHqXKVPTbLuB7vApNY=
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
@@ -198,7 +198,7 @@
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN3OQwxS6L4dFAAFxC0muKxWwYyATKZQFxNhY1rnKE9WMDxnLY/YMMfgkwMPwWwK6PkF4QUBbGro8Yvbj04dJLSTzMZSJfL73sRg8DEHYH4sNodruSEMboekkBsLR7URLIliROD7ZwUhLGFMMGKHErKXrRwxfdzcSmRxAYqHQF0neJTL3USBMwoExk3CIDZkFUPqzsCyex3EA3w5VMvSAQToZedWGE3aQA5HKcVDfD0isxZTs6AKk3QUrTAGhKLB8=
+   eJxjYMAN3OQgGBlcFsOjgQC4hKTXVA63ukygXBYQZ2NR4ypHWD82YIzFL+jglwADw28B7PoI6QUBZWHs+ojRi0sfLr2UxMNcJvL10stu9DAAYXcgPoxmtysJYYyulxQAS7sXJYFsSeL0YAsnJWFMMWyAEreSohc9fNHdTGx6BIGBSlcgfZfI1EuNNAEDykTGLTJgFkTlw8q+cBLLDXQzXMnUCwLhZOhVF0bYTQpALsdJdTMsvRJTtqMDkHoTpDQNABr5LIM=
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">
@@ -208,7 +208,7 @@
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHBgFccjB5QmqI0U+MGdjUYAOkuJEYQKr7SQkTUu3Dp5eWYU9NvZSmG2q5m1T91NBLL/9iA8M9XQ2EXmqkCVL1o6snVj+xgFR3oruF3DAl1T/o+ijFAIcS/jI=
+   eJzbKMbAsBEHhgFy5QlhZECMWnz6cZmDz3xiAKnuJyVMSLUPn15ahj019VKabqjlblL1U0MvvfyLDQz3dDUQeqmRJkjVj66eWP3EAlLdie4WcsOUVP+g66MUAwAohf1r
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
@@ -331,9 +331,9 @@
     <property name="when" value="always"/>
    </properties>
   </object>
-  <object id="58" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32" visible="0"/>
-  <object id="59" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
-  <object id="60" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="58" name="ratdom_rat_648_conv1" type="script" x="224" y="320" width="64" height="32"/>
+  <object id="59" name="ratdom_rat_648_conv2" type="script" x="224" y="416" width="128" height="32"/>
+  <object id="60" name="ratdom_rat_648_conv3" type="script" x="192" y="608" width="96" height="32"/>
   <object id="92" name="ratdom_ghost1" type="script" x="160" y="288" width="192" height="160" visible="0"/>
   <object id="93" name="ratdom_ghost2" type="script" x="160" y="96" width="128" height="160" visible="0"/>
   <object id="94" name="ratdom_ghost3" type="script" x="160" y="480" width="160" height="160" visible="0"/>
@@ -371,6 +371,7 @@
     <property name="spawngroup" value="ratdom_ghost4"/>
    </properties>
   </object>
+  <object id="97" name="ratdom_ghost" type="spawn" x="256" y="0" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="20" name="keys" visible="0"/>
  <objectgroup id="21" name="Replace" visible="0">

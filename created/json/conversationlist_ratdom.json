@@ -932,7 +932,7 @@
   },
   {
     "id":"ratdom_bone_collector_s1_30",
-	"message":"You put the wrong bone onto the stack and try to look as innocent as possible.",
+	"message":"You exchange the ancient bone for the wrong bone and try to look as innocent as possible.",
     "rewards":[
       {
         "rewardType":"giveItem",
@@ -1359,6 +1359,17 @@
     },
   {
     "id":"ratdom_ghost1",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_ghost",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"20"
+				}
+			]
+		}
+	],
     "rewards":[
       {
         "rewardType":"questProgress",
@@ -1404,6 +1415,17 @@
   },
   {
     "id":"ratdom_ghost2",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_ghost",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"20"
+				}
+			]
+		}
+	],
     "rewards":[
       {
         "rewardType":"removeQuestProgress",
@@ -1449,6 +1471,17 @@
   },
   {
     "id":"ratdom_ghost3",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_ghost",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"20"
+				}
+			]
+		}
+	],
     "rewards":[
       {
         "rewardType":"removeQuestProgress",
@@ -1494,6 +1527,17 @@
   },
   {
     "id":"ratdom_ghost4",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_ghost",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"20"
+				}
+			]
+		}
+	],
     "rewards":[
       {
         "rewardType":"removeQuestProgress",
@@ -1536,6 +1580,169 @@
 		"mapName":"ratdom_maze_648"
 	  }
     ]
+  },
+  {
+    "id":"ratdom_ghost",
+	"replies":[
+		{
+			"nextPhraseID":"ratdom_ghost_10",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"4"
+				}
+			]
+		},
+		{
+			"nextPhraseID":"ratdom_ghost_20",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"4"
+				}
+			]
+		},
+		{
+			"nextPhraseID":"ratdom_ghost_30",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"4"
+				}
+			]
+		},
+		{
+			"nextPhraseID":"ratdom_ghost_40",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"4"
+				}
+			]
+		},
+		{
+			"nextPhraseID":"ratdom_ghost_50",
+			"requires":[
+				{
+					"requireType":"random",
+					"requireID":"5"
+				}
+			]
+		}
+	]
+  },
+  {
+    "id":"ratdom_ghost_10",
+    "message":"Goosebumps crawl up your back.",
+    "rewards":[
+      {
+        "rewardType":"actorCondition",
+        "rewardID":"fear",
+        "value":10
+      }
+    ]
+  },
+  {
+    "id":"ratdom_ghost_20",
+    "message":"B o o m!  A loud crack makes you jump.",
+    "rewards":[
+      {
+        "rewardType":"actorCondition",
+        "rewardID":"fear",
+        "value":10
+      }
+    ]
+  },
+  {
+    "id":"ratdom_ghost_30",
+	"switchToNPC":"ratdom_ghost",
+    "message":"Whooo is distuuurbing my reeeest?!",
+    "replies":[
+      {
+        "text":"Me.",
+        "nextPhraseID":"ratdom_ghost_30a",
+		"requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":10
+			}
+		]
+      },
+      {
+        "text":"Me.",
+        "nextPhraseID":"X",
+		"requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":10,
+				"negate":true
+			}
+		]
+      }        
+	]
+  },
+  {
+    "id":"ratdom_ghost_30a",
+	"switchToNPC":"ratdom_rat",
+    "message":"Me too. [giggles]"
+  },
+  {
+    "id":"ratdom_ghost_40",
+    "message":"A mad giggle fills the room.",
+    "replies":[
+      {
+        "text":"Who are you?",
+        "nextPhraseID":"ratdom_ghost_40a"
+      },
+      {
+        "text":"What do you want?",
+        "nextPhraseID":"ratdom_ghost_40a"
+      }        
+	]
+  },
+  {
+    "id":"ratdom_ghost_40a",
+    "message":"No reply."
+  },
+  {
+    "id":"ratdom_ghost_50",
+    "message":"Something hisses through the air and hits you hard in the back of the head.",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_ghost_50a"
+      }        
+	],
+    "rewards":[
+      {
+        "rewardType":"actorCondition",
+        "rewardID":"head_wound",
+        "value":3
+      }
+    ]
+  },
+  {
+    "id":"ratdom_ghost_50a",
+    "message":"You can't tell what it was. But it hurt.",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_ghost_50b",
+		"requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":10
+			}
+		]
+      }
+  },
+  {
+    "id":"ratdom_ghost_50b",
+	"switchToNPC":"ratdom_rat",
+    "message":"You should learn to dodge in time, you clumsy two-legged creature."
   },
   {
     "id":"ratdom_goldhunter_bone",
@@ -1610,6 +1817,7 @@
   },
   {
     "id":"ratdom_goldhunter_bone_reminder_20",
+    "switchToNPC":"ratdom_rat",
     "message":"Why didn't you take the bones with you?",
 	"replies":[
 		{
@@ -2926,6 +3134,22 @@
   },
   {
     "id":"ratdom_rat_cheese_key",
+    "replies":[
+      {
+		"text":"N",
+		"nextPhraseID":"ratdom_rat_cheese_key_2"
+      }
+    ],
+    "rewards":[
+		{
+			"rewardType":"spawnAll",
+			"rewardID":"ratdom_rat_warden",
+			"mapName":"ratdom_maze_624"
+		}
+    ]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_2",
 	"switchToNPC":"ratdom_rat_warden",
 	"message":"Hey! Don't take any cheese into the museum! I don't want greasy finger prints all over the valuable objects!",
     "replies":[
@@ -3332,6 +3556,10 @@
       {
         "text":"Do you think so? I am rather lost already.",
 		"nextPhraseID":"ratdom_rat_conv2_20b"
+      },
+      {
+        "text":"Is it? Then tell me how to get out.",
+		"nextPhraseID":"ratdom_rat_conv2_20b"
       }
     ]
   },
@@ -3340,7 +3568,7 @@
 	"message":"Two-legs are really dumb. We rats always know where to go.",
     "replies":[
       {
-        "text":"N",
+        "text":"For example, how would I get back to Crossglen?",
 		"nextPhraseID":"ratdom_rat_conv2_20c"
       }
     ]
@@ -3359,7 +3587,7 @@
       },
       {
         "text":"Of course - you are right!",
-		"nextPhraseID":"ratdom_rat_conv2_1b"
+		"nextPhraseID":"ratdom_rat_conv2_20e"
       }
     ]
   },
@@ -3369,11 +3597,11 @@
     "replies":[
       {
         "text":"Eh, of course I did.",
-		"nextPhraseID":"ratdom_rat_conv2_1b"
+		"nextPhraseID":"ratdom_rat_conv2_20e"
       },
       {
         "text":"Now that you mention it, indeed they do!",
-		"nextPhraseID":"ratdom_rat_conv2_1b"
+		"nextPhraseID":"ratdom_rat_conv2_20e"
       },
       {
         "text":"And?",
@@ -3799,7 +4027,7 @@
     "replies":[
       {
         "text":"Why not? What about 'Rock Paper Scissors'?",
-		"nextPhraseID":"X"
+		"nextPhraseID":"ratdom_rat_conv2_542"
       }
     ],
 	"rewards":[
@@ -3812,7 +4040,7 @@
   },
   {
     "id":"ratdom_rat_conv2_542",
-    "message":"OK. Ready - Sick - GO!",
+    "message":"OK. I begin. Ready - Sick - GO!",
     "replies":[
       {
         "text":"Rock",
@@ -3904,6 +4132,10 @@
       {
         "text":"I'll give up.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
   },
@@ -3938,6 +4170,10 @@
       {
         "text":"I'll give up.",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
   },
@@ -3978,6 +4214,10 @@
       {
         "text":"Cheater! I don't play with you anymore!",
 		"nextPhraseID":"X"
+      },
+      {
+        "text":"Clevred, let me ask you a question.",
+		"nextPhraseID":"ratdom_rat_conv2_900"
       }
     ]
   },

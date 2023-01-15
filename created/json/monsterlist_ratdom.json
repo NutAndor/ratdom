@@ -759,6 +759,13 @@
         "droplistID":"ratdom_fraedro"
     },
     {
+        "id":"ratdom_ghost",
+        "name":"Ghost",
+        "iconID":"monsters_tometik2:65",
+		"moveCost":5,
+		"spawnGroup":"ratdom_ghost"
+    },
+    {
         "id":"ratdom_ghost1",
         "name":"Ghost",
         "iconID":"monsters_tometik2:65",
