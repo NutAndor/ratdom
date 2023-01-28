@@ -4512,6 +4512,16 @@
 		"nextPhraseID":"ratdom_rat_conv2_902"
       },
       {
+        "text":"Was this huge cave behind our supply cave the whole time? I had never seen her before.",
+		"nextPhraseID":"ratdom_rat_conv2_940",
+		"requires":[
+			{
+				"requireType":"random",
+				"requireID":"50"
+			}
+		]
+      },
+      {
         "text":"How does the orange amulett works in detail?",
 		"nextPhraseID":"ratdom_rat_conv2_412",
 		"requires":[
@@ -4519,6 +4529,16 @@
 				"requireType":"inventoryKeep",
 				"requireID":"ratdom_compass_tour",
 				"value":1
+			}
+		]
+      },
+      {
+        "text":"What will you do with the artifact if we gain it?",
+		"nextPhraseID":"ratdom_rat_conv2_910",
+		"requires":[
+			{
+				"requireType":"random",
+				"requireID":"50"
 			}
 		]
       },
@@ -4534,6 +4554,26 @@
 		]
       },
       {
+        "text":"Why do you hunt for the artifact?",
+		"nextPhraseID":"ratdom_rat_conv2_920",
+		"requires":[
+			{
+				"requireType":"random",
+				"requireID":"10"
+			}
+		]
+      },
+      {
+        "text":"Am I dreaming all this?",
+		"nextPhraseID":"ratdom_rat_conv2_930",
+		"requires":[
+			{
+				"requireType":"random",
+				"requireID":"10"
+			}
+		]
+      },
+      {
         "text":"How do I get back out of this cave?",
 		"nextPhraseID":"ratdom_rat_conv2_20c"
       }
@@ -4542,6 +4582,38 @@
   {
     "id":"ratdom_rat_conv2_902",
     "message":"I think that's the only thing I do not know."
+  },
+  {
+    "id":"ratdom_rat_conv2_910",
+    "message":"Oh, that's easy. I will get famous - even more than King Rah himself!"
+  },
+  {
+    "id":"ratdom_rat_conv2_920",
+    "message":"Because it's there, of course."
+  },
+  {
+    "id":"ratdom_rat_conv2_930",
+    "message":"Who knows? And even if - in every dream there is a grain of truth.",
+    "replies":[
+      {
+		"text":"N",
+		"nextPhraseID":"ratdom_rat_conv2_932"
+	  }
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_932",
+    "message":"I'd better bite your toe hard one more time. Maybe then you will know?",
+    "replies":[
+      {
+		"text":"Eh ... no, it's not that important.",
+		"nextPhraseID":"X"
+	  }
+	]
+  },
+  {
+    "id":"ratdom_rat_conv2_940",
+    "message":"Of course. After all, you two-legged folk shouldn't find our realm too easily."
   },
   {
     "id":"ratdom_rat_crossglen_02",
