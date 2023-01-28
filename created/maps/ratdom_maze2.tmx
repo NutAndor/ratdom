@@ -213,22 +213,22 @@
  </layer>
  <layer id="6" name="Light1" width="8" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzTkGNgSABiXACfHK2BDw67tYDiRVBMjnwckrwfFdTY4AkjkLwVHjNgduBSU4TkDmz2IMtjMwNZHpsZ6PLo/sUmj6wGlzwI++KRG8XUwQBHtFEm
+   eJzTkGNgSABiXACfHK2BDw67tYDiRVBMjnwckrwfATVWRKixwRNGhMwoImBPEZJbsdmDLI/NDGR5bGagy6OHCTZ5ZDW45EFu8cUhN4qphwFl5VC2
   </data>
  </layer>
  <layer id="7" name="Light2" width="8" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbLMbAsHkUD1kcJ4dfHgTwqYEBLRxqiJXHZQcywGYGMsBmBjpAV4MNIKvBBWBuISTvJ4cQC5LE7hdkNSDgg8UfMDXY5GDYFyhnTSA+0TEA27uTog==
+   eJzbLMbAsHkUD1kcJ4dfHgTwqYEBLRxqiJXHZQcywGYGMgCZoSmHWx6bGmwAWQ0uoEWkvJ8cQixIElPeSg5VDQj4APnWSG5EVoMuh6zGF4ccPgwAeoGP6Q==
   </data>
  </layer>
  <layer id="8" name="Light3" width="8" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbLMbAsBmIE+QYwEBLDsJHxjA5bPLIctjk0QEheXS70UEcUL+mHG55dDv85DDlkc2wwSKPrMZKDrsZMDX4zED2Dy4zkP2KTQ2yPDZ7BrO8jxxueXS5UUweBgAksXNS
+   eJzbLMbAsBmIE+QYwEBLDsJHxjA5bPLIctjk0QGl8nFAeU053PLoZvjJYcojm2GDRR5ZjZUcdjNgavCZAQIgeXxmwNyJSw1yWGCzZzDL+8jhlgfJWWNJa6OYNAwA9gJxfw==
   </data>
  </layer>
  <layer id="9" name="Light4" width="8" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbLMbAsBmIE+QYwEBLDsJHxjA5bPLIctjk0QGl8nEE5NHN8JPDlAeZoQlVY4NFHl0NNjOQ3YLLDBDA5w5keVxm0EM+Xg6CsQH0+EUGPgTkrHHIw+Rg8Qfi+yJha6T488GSHgnhIjkIJlXfUMQAWdpllA==
+   eJzbLMbAsBmIE+QYwEBLDsJHxjA5bPLIctjk0QGl8nFAeU053PLoZvjJYcojm2GDRR5ZjZUcdjNgavCZAQIgeXxmwNyJSw1MvkgOuz2UymsAxeKhGD0uQQCbGAz4EJCzxiEPk4PFH4jvi4RhciDsgyU9EsIgvxaRoW8oYgDC8GZF
   </data>
  </layer>
  <layer id="10" name="Light5" width="8" height="30" visible="0">
@@ -238,7 +238,7 @@
  </layer>
  <layer id="11" name="Light6" width="8" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbLMbAsHkU0wxryDEwxCNhZLkEIN8GiJGBlhxCDgQS0OTj5DDFBivwweNOkJw1FnmQuC9UDhQO2PQghyEy0JLDDH9K5f2Q3Igtfq2g7vXFopceGACBo3ni
+   eJzbLMbAsHkU0wxryDEwxCNhTTmEXAKQbQPEyEBLDiEHAglo8nFymGKDFfjgcSdIzhqLPEjcFyoHCgdsepDDFxloyWGGP6XyfnL45a2g7vXF4jZ6YADXeXhv
   </data>
  </layer>
  <layer id="12" name="Light7" width="8" height="30" visible="0">

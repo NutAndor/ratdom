@@ -190,7 +190,7 @@
  </layer>
  <layer id="2" name="Objects" width="23" height="19">
   <data encoding="base64" compression="zlib">
-   eJyNVEFuwkAMXDUSh3IqQY1ID/0AP8obSM/wgxZ+UPUJVUUR3JCoKvUBgQsSFxr4AQfUXmqra8V4d51YWi2svTOeWSvGVLHvmNqYxPU1vlhd+c83jPNZ1OwgNw7caxKvcHd7455/WMy13Y81HJg/sj5LWz8EL0bMj03LxST++/jyPuYLxe9HqH+KK65Dy+2zuP3fpW9alB6PKda9cA453qyGFw/fTmj5VrQdWO7sqfPhk8a+qM8iY3JlSW/KBjNOmNMEdChLC/KKPJWYZaK/v9Sq6eSYMr567pnE03RKzOvUmHYa5sksnq8XijnoWnTc/lLAvRPYPE+4xJGzPbQeIpefzx99f7Ko4kBODbMpD3nMdSA++V03X7TeFY2fyaU3oRiI/rDfH+jpF9Y+wDkQb8nfAmcX/5+sf10x7745wdyM9Yi987fg+PQuJ5an33xOluz7Tth//UmMrw==
+   eJyNVEtKA0EQbRzIIq6SEYeMCy/gjeYMibjUG/i5gXgECSq6EAKK4AGSbIRs4iQ3yEJ0YxXpYt5U99SkoOikq/q9V5/EucqWfddqN2l7Tsze9uL3c+C8VTkLil03vNvF7untVy+8f/eYM3+uWzg4vgadpc8/p15cQD/mnRBT+I/T+nuOT41+X1L+VVpxrTqhzunh9tR9s4zxupC/AA2zQT2XY6+kf9Lbcox9DXcRPsHJfezbqG0FsZ9IXgyf+c/IT1R+kTg3Mlz3pozwTdSOCOZDRnUYbpn0SnqqMcvMnj8b1mrViZjaPgfhncaz6tSY3dy5/byZp/B4MS1iz1TXSz/UlxPukcLGuOAKxwjOJj9NQn7cP/n/KZKKgzktzF15pMdYB+NLv9v2S/zRqPEjq/emyYZKH+v9JU1/5MsGzqGaJc6Cd5e/b3z/DtS+x/aEY0+gkbXjLBBf5rKBuHzGPcHfrmD/AyaGj7E=
   </data>
  </layer>
  <layer id="3" name="Above" width="23" height="19">
@@ -200,7 +200,7 @@
  </layer>
  <layer id="9" name="Top" width="23" height="19">
   <data encoding="base64" compression="zlib">
-   eJxjYBg54JH4QLtgFIyCUTAKRgEtAQDFsAD6
+   eJxjYBg54JH4QLuAuiCRiXZmF9LQ7FEwCkbBKKAVAADepAHQ
   </data>
  </layer>
  <layer id="4" name="Walkable" width="23" height="19" visible="0">
@@ -208,7 +208,7 @@
    eJylk1EOgCAMQzkF978CN9QfE9N03Z4uIUShXTu2s9c693ri7H5V4Xj0PHGlfFSj4t77F+7EQXQr3tVvwuXuTyLdJTV2eqp/RI/7Vj0OT/qA9GHy1s2C5q+8JfzUZ+JJ2ogmp0txpBc1X1dzOn+TOnUzR3x8faM/Qeee6Onegnru+ozyVxovOLillA==
   </data>
  </layer>
- <objectgroup id="5" name="Mapevents">
+ <objectgroup id="5" name="Mapevents" visible="0">
   <object id="1" name="south1" type="mapchange" x="32" y="576" width="224" height="32">
    <properties>
     <property name="map" value="blackwater_mountain32"/>
@@ -235,7 +235,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="6" name="Spawn">
+ <objectgroup id="6" name="Spawn" visible="0">
   <object id="5" name="wyrm_2" type="spawn" x="32" y="448" width="512" height="96">
    <properties>
     <property name="spawngroup" value="wyrm_2"/>

@@ -188,17 +188,17 @@
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJzFlNENwyAMRDMJ8g5JR2gzAu0ItCPQ7h6QbAlZhzH8FOn+eD5hH6awbVSUi1JRLHqy6nmEvqiR8G+W1OmxN8B/WVLnPsHrOtFgLZ7Y3/Ie+Y9Yi/ewJ+B2B4fmRo5eWd5pkkeZ8bwZeXt7XfVa7HXlPgvsydxvkUWcZ8YoG//KlXc2aD7eTEmfZ/+veOo+Z4d3LxPtf0C7Tzg0W71D4wSnd5+838qgVSMOuJqJI+AdlgAn9w/VD10jA24l697MtswFmOOjqg==
+   eJzFlNENwjAMRDtJ5B0oI0BHCIwQGCGwO4kUS5F1cS/5odL99flk+2IJ2yZFuSgVxaJHU/3uYSzppPyrSeuM2CvgP01a5zbB2zrRYT1emr/nfeZ/xno8wx6AuxAc2psQs/K80ySPMsP0jLzZWVc9F2ddufcCezTuu8gijtkxysa/csXuBu2HzZTOefb9qqedcya8R5no3wO6fcqh3dobGic4e/u0f5ZD/XtczcQe8A1LgNP/dzMPWyMDbiXrbGZ75get+6O8
   </data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYMAN4uTwSNIAPBUgX+9XJL1PiDTnsRCm2BcK3EApeITFPbQAh8Uo088nTJndT6nkz0cUxNWnAYjnNyTY+ZgC931G0/ufxPB+Qmb8UJquBgN4RkG4f6NTmgLlv+80sOsZFcsfcs3CVibTCiCnVwA1dhfK
+   eJxjYMAN4uTwSNIAPBUgX+9XoN6LYhD2EyLNeSyEKfaFAjdQCh5hcQ8twGExyvTzCVNm91Mq+fMRBXH1aQDi+Q0Jdj6mwH2fkfICCPwnMbyfkBk/lKarwQCeURDu3+iUpkD57zsN7HpGxfKHXLOwlcm0AsjpFQC2NhmY
   </data>
  </layer>
  <layer id="3" name="Above" width="15" height="30">
   <data encoding="base64" compression="zlib">
-   eJxjYICA/0IMGMBNDlNsFAwOcFmMfL1zmajnDnrbTYm/D1Og9xIZegfKrQOld6DiFqSPnPgBAXqnCWTwXIAy/aOAeuUgAKuAEVQ=
+   eJxjYICA/0IMGMBNDlNsFAwOcFmMfL1zmUam3Ycp0HuJDL0D5daB0jtQcQvSR078gAC90wQyeC5Amf5RQL2yCAAQqRI9
   </data>
  </layer>
  <layer id="4" name="Top" width="15" height="30" visible="0">

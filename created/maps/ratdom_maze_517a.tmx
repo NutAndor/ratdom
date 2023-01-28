@@ -302,54 +302,63 @@
   </object>
   <object id="81" name="ratdom_troll_2a" type="spawn" x="0" y="160" width="64" height="160">
    <properties>
+    <property name="ignoreAreas" value="true"/>
     <property name="quantity" value="5"/>
     <property name="spawngroup" value="ratdom_troll_2"/>
    </properties>
   </object>
   <object id="85" name="ratdom_troll_2b" type="spawn" x="128" y="832" width="64" height="32">
    <properties>
+    <property name="ignoreAreas" value="true"/>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="ratdom_troll_2"/>
    </properties>
   </object>
   <object id="86" name="ratdom_troll_2c" type="spawn" x="192" y="896" width="32" height="32">
    <properties>
+    <property name="ignoreAreas" value="true"/>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_troll_2"/>
    </properties>
   </object>
   <object id="76" name="ratdom_troll_3" type="spawn" x="32" y="672" width="96" height="96">
    <properties>
+    <property name="ignoreAreas" value="true"/>
     <property name="quantity" value="8"/>
     <property name="spawngroup" value="ratdom_troll_3"/>
    </properties>
   </object>
   <object id="77" name="ratdom_troll_4a" type="spawn" x="32" y="512" width="64" height="128">
    <properties>
+    <property name="ignoreAreas" value="true"/>
     <property name="quantity" value="5"/>
     <property name="spawngroup" value="ratdom_troll_4"/>
    </properties>
   </object>
   <object id="87" name="ratdom_troll_4b" type="spawn" x="448" y="128" width="32" height="256">
    <properties>
+    <property name="ignoreAreas" value="true"/>
     <property name="quantity" value="5"/>
     <property name="spawngroup" value="ratdom_troll_4"/>
    </properties>
   </object>
   <object id="79" name="ratdom_troll_5" type="spawn" x="448" y="448" width="32" height="256">
    <properties>
+    <property name="ignoreAreas" value="true"/>
     <property name="quantity" value="10"/>
     <property name="spawngroup" value="ratdom_troll_5"/>
    </properties>
   </object>
   <object id="78" name="ratdom_troll_6" type="spawn" x="352" y="768" width="128" height="128">
    <properties>
+    <property name="ignoreAreas" value="true"/>
     <property name="quantity" value="5"/>
     <property name="spawngroup" value="ratdom_troll_6"/>
    </properties>
   </object>
   <object id="75" name="ratdom_troll_9" type="spawn" x="224" y="0" width="64" height="96">
    <properties>
+    <property name="ignoreAreas" value="true"/>
     <property name="quantity" value="1"/>
     <property name="spawngroup" value="ratdom_troll_9"/>
    </properties>

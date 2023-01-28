@@ -141,7 +141,7 @@
 		"message":"This cave is a great source of bones of high quality, so I stay until my instrument is complete.",
         "replies":[
             {
-                "text":"May I have look?.",
+                "text":"May I have a look?",
 				"nextPhraseID":"ratdom_bone_collector_22"
             },
             {
