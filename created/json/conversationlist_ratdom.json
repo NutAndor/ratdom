@@ -3219,6 +3219,10 @@
 				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese", "value":1 }] },
 				{ "nextPhraseID":"ratdom_rat_cheese_key_30_2", 
 				  "requires":[{ "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_30_3", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese_blue", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_30_4", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese_goat", "value":1 }] },
 				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
 	]
   },
@@ -3228,6 +3232,10 @@
 				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese", "value":1 }] },
 				{ "nextPhraseID":"ratdom_rat_cheese_key_30_2",
 				  "requires":[{ "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_30_3",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese_blue", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_30_4", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese_goat", "value":1 }] },
 				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
 	],
 	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese1", "value":1 }
@@ -3237,9 +3245,33 @@
     "id":"ratdom_rat_cheese_key_30_2",
     "replies":[ { "nextPhraseID":"ratdom_rat_cheese_key_30_2", 
 				  "requires":[{ "requireType":"inventoryRemove", "requireID":"charwood_cheddar", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_30_3",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese_blue", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_30_4", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese_goat", "value":1 }] },
 				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
 	],
 	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese2", "value":1 }
+	]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_30_3",
+    "replies":[ { "nextPhraseID":"ratdom_rat_cheese_key_30_3", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese_blue", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_30_4", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese_goat", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
+	],
+	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese3", "value":1 }
+	]
+  },
+  {
+    "id":"ratdom_rat_cheese_key_30_4",
+    "replies":[ { "nextPhraseID":"ratdom_rat_cheese_key_30_4", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"cheese_goat", "value":1 }] },
+				{ "nextPhraseID":"ratdom_rat_cheese_key_40" }
+	],
+	"rewards":[ { "rewardType":"alignmentChange", "rewardID":"ratdom_rat_cheese4", "value":1 }
 	]
   },
   {
@@ -4156,7 +4188,7 @@
   },
   {
     "id":"ratdom_rat_conv2_542sr",
-    "message":"Rock - let's smash you scissors!",
+    "message":"Rock - let's smash your scissors!",
     "replies":[
       {
         "text":"You win. Again?",
@@ -6461,6 +6493,17 @@
 					"value":30
 				}
 			]
+		},
+		{
+			"text":"N",
+			"nextPhraseID":"ratdom_wakeup_150",
+			"requires":[
+				{
+					"requireType":"questProgress",
+					"requireID":"ratdom_mikhail",
+					"value":32
+				}
+			]
 		}
 	]
   },
@@ -6476,7 +6519,7 @@
   },
   {
 	"id":"ratdom_wakeup_142",
-    "message":"Maybe she wanted to fulfill her dream of opening a tavern in Brightport?",
+    "message":"Maybe she wanted to make her dream of opening a tavern in Brightport come true?",
 	"replies":[
 		{
 			"text":"Oh.",
@@ -6506,6 +6549,36 @@
 	"replies":[
 		{
 			"text":"I hope so.",
+			"nextPhraseID":"X"
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_150",
+    "message":"By the way - Tharal seems to have disappeared. So he won't be able to cure your head ache.",
+	"replies":[
+		{
+			"text":"Oh.",
+			"nextPhraseID":"ratdom_wakeup_152"
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_152",
+    "message":"Maybe he just needed some time of piece and roams through the forest?",
+	"replies":[
+		{
+			"text":"Eh, maybe. Sure.",
+			"nextPhraseID":"ratdom_wakeup_154"
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_154",
+    "message":"I hope he will be back soon.",
+	"replies":[
+		{
+			"text":"I hope so too.",
 			"nextPhraseID":"X"
 		}
 	]

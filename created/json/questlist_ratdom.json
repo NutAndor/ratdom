@@ -209,6 +209,7 @@
 			{ "progress":92, "logText":"92=646 statues seen" },
 			{ "progress":93, "logText":"93=Librarian went away" },
 			{ "progress":94, "logText":"94=Hint Library" },
+			{ "progress":95, "logText":"95=Librarian reading" },
 			{ "progress":100, "logText":"100=clock active" },
 			{ "progress":101, "logText":"101=Lute_1 active" },
 			{ "progress":102, "logText":"102=Horn_1 active" },

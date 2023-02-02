@@ -472,6 +472,22 @@
         "id":"ratdom_mz_center",
         "items":[
             {
+                "itemID":"gem1",
+                "chance":"50",
+                "quantity":{
+                    "min":1,
+                    "max":2
+                }
+            },
+			{
+				"itemID":"gold",
+				"chance":"100",
+				"quantity":{
+					"min":10,
+					"max":30
+				}
+			},
+            {
                 "itemID":"ratdom_rat_skelett_leg",
                 "chance":"100",
                 "quantity":{
@@ -704,6 +720,19 @@
                 "quantity":{
                     "min":80,
                     "max":200
+                }
+            }
+        ]
+    },
+    {
+        "id":"well_water",
+        "items":[
+            {
+                "itemID":"well_water",
+                "chance":"100",
+                "quantity":{
+                    "min":1,
+                    "max":3
                 }
             }
         ]

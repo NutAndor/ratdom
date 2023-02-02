@@ -154,7 +154,8 @@
     {
         "id":"ratdom_rat_skelett_leg_coll",
         "iconID":"items_omgeeky:2",
-        "name":"Leg bones of a rat",
+        "name":"Leg bone of a rat",
+		"description":"The most precious bone of the instrument maker's bone collection"
         "displaytype":"quest",
         "category":"other"
     },
@@ -232,17 +233,33 @@
         "iconID":"items_consumables:27",
         "name":"Cooked snake meat",
         "hasManualPrice":1,
-        "baseMarketCost":39,
+        "baseMarketCost":90,
         "category":"food",
         "useEffect":{
             "conditionsSource":[
                 {
                     "condition":"food",
-                    "magnitude":3,
-                    "duration":10,
+                    "magnitude":4,
+                    "duration":8,
                     "chance":"100"
                 }
             ]
         }
-    }
+    },
+	{
+		"id":"well_water",
+		"iconID":"items_omi2:13",
+		"name":"Bottle of well water",
+		"displaytype":"extraordinary",
+		"hasManualPrice":1,
+		"baseMarketCost":126,
+		"category":"healing",
+		"description":"As if freshly drawn from the well",
+		"useEffect":{
+			"increaseCurrentHP":{
+				"min":5,
+				"max":20
+			}
+		}
+	}
 ]

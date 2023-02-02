@@ -387,6 +387,24 @@
     <property name="requireValue" value="1"/>
    </properties>
   </object>
+  <object name="ratdom_rat_cheese3_key" type="key" x="448" y="32" width="32" height="32">
+   <properties>
+    <property name="phrase" value="ratdom_rat_cheese_key"/>
+    <property name="requireId" value="cheese_blue"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="inventoryKeep"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
+  <object name="ratdom_rat_cheese4_key" type="key" x="448" y="32" width="32" height="32">
+   <properties>
+    <property name="phrase" value="ratdom_rat_cheese_key"/>
+    <property name="requireId" value="cheese_goat"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="inventoryKeep"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="19" name="Replace" visible="0">
   <object id="27" name="ratdom_maze:10" type="replace" x="0" y="0" width="480" height="960" visible="0">

@@ -779,7 +779,7 @@
         "replies":[
             {
                 "nextPhraseID":"ratdom_kriih_206",
-				"text":"What do you mean?"
+				"text":"I think Fraedro is absolutely innocent."
             }
         ]
     },
@@ -789,7 +789,7 @@
         "replies":[
             {
                 "nextPhraseID":"ratdom_kriih_220",
-				"text":"Why?"
+				"text":"Really - why?"
             }
         ]
     },
@@ -809,7 +809,7 @@
         "replies":[
             {
                 "nextPhraseID":"ratdom_kriih_230",
-				"text":"Not?"
+				"text":"Not? Now I'm confused."
             }
         ]
     },
@@ -839,13 +839,13 @@
         "replies":[
             {
                 "nextPhraseID":"ratdom_kriih_260",
-				"text":"How mean."
+				"text":"How mean!"
             }
         ]
     },
     {
         "id":"ratdom_kriih_260",
-		"message":"Hahaha! That was funny!",
+		"message":"Hahaha! You are funny!",
         "replies":[
             {
                 "nextPhraseID":"ratdom_kriih_270",
@@ -865,7 +865,7 @@
     },
     {
         "id":"ratdom_kriih_280",
-		"message":"I caught him and presented him to Wart. He believed my story and and put him under arrest.",
+		"message":"I caught him and presented him to Wart. He believed my story and put him under arrest.",
         "replies":[
             {
                 "requires":[
@@ -907,7 +907,7 @@
     },
     {
         "id":"ratdom_kriih_292",
-		"message":"Oh how funny. He also has a guilty conscience. It just keeps getting better!",
+		"message":"Oh how cute. This two-leg has a guilty conscience. It just keeps getting better!",
         "replies":[
             {
                 "nextPhraseID":"X",
@@ -921,7 +921,7 @@
     },
     {
         "id":"ratdom_kriih_294",
-		"message":"10 pieces of gold is not enough? Oh, you draw your weapon? I'd better be gone then.",
+		"message":"10 pieces of gold is not enough? Oh, you draw your weapon? I think I'd better be gone ...",
         "replies":[
             {
                 "nextPhraseID":"X",
@@ -943,7 +943,7 @@
     },
     {
         "id":"ratdom_kriih_300",
-		"message":"Yes, you destroyed my beautiful plan. You have to pay for that.",
+		"message":"Yes, you have destroyed my beautiful plan. You have to pay for that.",
         "replies":[
             {
                 "nextPhraseID":"F",
@@ -968,6 +968,26 @@
     },
     {
         "id":"ratdom_librarian",
+        "replies":[
+            {
+                "text":"N",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":95
+                    }
+                ],
+                "nextPhraseID":"ratdom_librarian_42"
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"ratdom_librarian_2"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_2",
         "message":"Andor! Good that you are back at last!",
         "replies":[
             {
@@ -977,6 +997,17 @@
             {
                 "text":"Indeed. Any news?",
                 "nextPhraseID":"ratdom_librarian_20"
+            },
+            {
+                "text":"Here I have a new book for your library.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"book_world_history",
+                        "value":1
+                    }
+                ],
+                "nextPhraseID":"ratdom_librarian_40"
             }
         ]
     },
@@ -1020,7 +1051,7 @@
     },
     {
         "id":"ratdom_librarian_20",
-        "message":"I am not sure. Today I hear strangers footsteps in the corridors.",
+        "message":"I am not sure. Today I hear footsteps of strangers in the corridors.",
         "replies":[
             {
                 "text":"[muttering] Probably mine.",
@@ -1029,6 +1060,10 @@
             {
                 "text":"Then what are you waiting for? Go and look who is wandering through our passages!",
                 "nextPhraseID":"ratdom_librarian_30"
+            },
+            {
+                "text":"Nonsense. Strangers would never find this secret library.",
+                "nextPhraseID":"ratdom_librarian_24"
             }
         ]
     },
@@ -1048,7 +1083,7 @@
     },
     {
         "id":"ratdom_librarian_30",
-        "message":"As you command me I'll be right back",
+        "message":"As you command me - I'll be right back.",
         "replies":[
             {
                 "text":"Take your time, rather be thoroughly!",
@@ -1071,6 +1106,32 @@
                 "value":93
             }
         ]
+    },
+    {
+        "id":"ratdom_librarian_40",
+        "replies":[
+            {
+			"text":"Oh! What wonder! I always wanted to have a copy of that wonderful book!\nHere, take this special bone as a token of my everlasting thanks. [gives leg bone of a rat]",
+                "nextPhraseID":"ratdom_librarian_42"
+            }
+        ],
+        "rewards":[
+			{
+				"rewardType":"giveItem",
+				"rewardID":"ratdom_rat_skelett_leg",
+				"value":1
+			},
+            {
+                "rewardType":"questProgress",
+                "rewardID":"ratdom_nondisplay",
+                "value":95
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_42",
+        "switchToNPC":"none",
+        "message":"The librarian is completely absorbed in his new book."
     },
     {
         "id":"ratdom_maze_mole",
@@ -1716,7 +1777,7 @@
         "message":"Yes. The artifact must be behind this statue. Did you look there?",
         "replies":[
             {
-                "text":"Not yet. I didn't know there was a statue in our supply cave. Is it now?",
+                "text":"Not yet. I didn't even know there was a statue in our supply cave. How long has it been there?",
 				"nextPhraseID":"ratdom_rat_60_10"
 			}
         ]
@@ -1754,7 +1815,7 @@
     },
     {
         "id":"ratdom_rat_70_10",
-        "message":"I better accompany you. I think it would be wise to keep an eye on you."
+        "message":"Hmm. I better accompany you. I think it would be wise to keep an eye on you."
     },
     {
         "id":"ratdom_rat_80",
@@ -2583,7 +2644,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_52",
-		"message":"What are my old eyes seeing? King Rah is back, completely! I am overwhelmed with joy!\nYou may pass now of course.",
+		"message":"Let's have a look. Oh, what are my old eyes seeing? King Rah is back, completely! I am overwhelmed with joy!\nYou may pass now of course.",
 		"replies":[
 		  {
 			"text":"I hope you can puzzle your king back together.",
@@ -2872,7 +2933,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_70a",
-		"message":"Great! Only King Rah's head is missing. You will find it too, I am sure.",
+		"message":"Let's have a look ... Great! Only King Rah's head is missing. You will find it too, I am sure.",
 		"replies":[
 		  {
 			"text":"Of course.",
@@ -2893,7 +2954,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_71a",
-		"message":"Great! Now we only need the fourth leg. You will find it too, I am sure.",
+		"message":"Let's have a look ... Great! Now we only need the fourth leg. You will find it too, I am sure.",
 		"replies":[
 		  {
 			"text":"Of course.",
@@ -2914,7 +2975,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_75a",
-		"message":"Great! Only King Rah's tail is missing. You will find it too, I am sure.",
+		"message":"Let's have a look ... Great! Only King Rah's tail is missing. You will find it too, I am sure.",
 		"replies":[
 		  {
 			"text":"Of course.",
@@ -2935,7 +2996,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_76a",
-		"message":"Great! Only King Rah's back bone is missing. You will find it too, I am sure.",
+		"message":"Let's have a look ... Great! Only King Rah's back bone is missing. You will find it too, I am sure.",
 		"replies":[
 		  {
 			"text":"Of course.",
@@ -2956,7 +3017,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_77a",
-		"message":"Great! Only King Rah's rib bones are missing. You will find them too, I am sure.",
+		"message":"Let's have a look ... Great! Only King Rah's rib bones are missing. You will find them too, I am sure.",
 		"replies":[
 		  {
 			"text":"Of course.",
@@ -2977,7 +3038,7 @@
 	},
 	{
 		"id":"ratdom_rat_warden_79",
-		"message":"In total we need the head, the ribs and the back bone, 4 legs and the tail of course.",
+		"message":"Let's have a look ... In total we need the head, the ribs and the back bone, 4 legs and the tail of course.",
 		"replies":[
 		  {
 			"text":"OK, I'll be back.",
@@ -3364,6 +3425,21 @@
 			"nextPhraseID":"ratdom_rat_warden2_cheese",
 			"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1, "negate":true },
 						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1 }]
+		  },
+		  {
+			"text":"Please give me back my moldy blue cheese.",
+			"nextPhraseID":"ratdom_rat_warden2_cheese",
+			"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese3", "value":1 }]
+		  },
+		  {
+			"text":"Please give me back my goat cheese.",
+			"nextPhraseID":"ratdom_rat_warden2_cheese",
+			"requires":[{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese1", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese2", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese3", "value":1, "negate":true },
+						{ "requireType":"factionScore", "requireID":"ratdom_rat_cheese4", "value":1 }]
 		  }
 		]
 	},
@@ -3969,7 +4045,13 @@
                     {			
                         "requireType":"questProgress",
                         "requireID":"ratdom_skeleton",
-                        "value":62,
+                        "value":62
+                    }
+                ]
+            },
+            {
+                "text":"Who are you?",
+                "nextPhraseID":"ratdom_skeleton_boss_11_30",
                 "requires":[
                     {			
                         "requireType":"questProgress",
@@ -3978,12 +4060,6 @@
 						"negate":true
                     }
                 ]
-                    }
-                ]
-            },
-            {
-                "text":"Who are you?",
-                "nextPhraseID":"ratdom_skeleton_boss_11_30"
             }
         ]
 	},
