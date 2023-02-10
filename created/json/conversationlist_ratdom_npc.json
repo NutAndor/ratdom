@@ -1082,6 +1082,40 @@
         ]
     },
     {
+        "id":"ratdom_librarian_24",
+        "message":"You're right, I'm sure I only see pipe dreams.",
+        "replies":[
+            {
+                "text":"N",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"book_world_history",
+                        "value":1
+                    }
+                ],
+                "nextPhraseID":"ratdom_librarian_26"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_librarian_26",
+        "message":"If only I had something to read. Something new, that I haven't read twenty times already.",
+        "replies":[
+            {
+                "text":"Here I have a new book for your library.",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"book_world_history",
+                        "value":1
+                    }
+                ],
+                "nextPhraseID":"ratdom_librarian_40"
+            }
+        ]
+    },
+    {
         "id":"ratdom_librarian_30",
         "message":"As you command me - I'll be right back.",
         "replies":[
@@ -1111,14 +1145,14 @@
         "id":"ratdom_librarian_40",
         "replies":[
             {
-			"text":"Oh! What wonder! I always wanted to have a copy of that wonderful book!\nHere, take this special bone as a token of my everlasting thanks. [gives leg bone of a rat]",
+				"text":"Oh! What wonder! I always wanted to have a copy of that wonderful book!\nHere, take this special bone as a token of my everlasting thanks. [gives leg bone of a rat]",
                 "nextPhraseID":"ratdom_librarian_42"
             }
         ],
         "rewards":[
 			{
 				"rewardType":"giveItem",
-				"rewardID":"ratdom_rat_skelett_leg",
+				"rewardID":"ratdom_rat_skelett_back",
 				"value":1
 			},
             {
@@ -4688,7 +4722,7 @@
 	},
     {
         "id":"whootibarfag_22",
-        "message":"Sigh. Always in a hurry. Who are you?",
+        "message":"Sigh. Always in a hurry. Again - who are you?",
 		"replies":[
             {
 				"text":"N",
@@ -4708,12 +4742,35 @@
                         "requireType":"questProgress",
                         "requireID":"ratdom_nondisplay",
                         "value":10
+                    },
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":900,
+						"negate":true
                     }
                 ]
             },
             {
 				"text":"Do you have anything to trade?",
                 "nextPhraseID":"whootibarfag_30"
+            },
+            {
+				"text":"I recovered and brought back Rat King Rah's skeleton.",
+                "nextPhraseID":"whootibarfag_200",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":390
+                    },
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_quest",
+                        "value":210,
+						"negate":true
+                    }
+                ]
             }
         ]
 	},
@@ -5179,6 +5236,154 @@
 						"value":10
 					}
                 ]
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_200",
+        "message":"Oh, yes. Of course I know.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_202"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_202",
+        "message":"Nothing remains hidden from me what is happening here in the mountain.",
+		"replies":[
+            {
+				"text":"I really had to run around a lot.",
+                "nextPhraseID":"whootibarfag_210",
+                "requires":[
+					{
+						"requireType":"skillLevel",
+						"requireID":"evasion",
+						"value":4,
+						"negate":true
+					}
+                ]
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_210",
+        "message":"Well, I see you've learned a lot by searching the rat kingdom. But you're still missing one thing ...",
+		"replies":[
+            {
+				"text":"What do you mean?",
+                "nextPhraseID":"whootibarfag_220"
+            },
+            {
+				"text":"You mean wisdom?",
+                "nextPhraseID":"whootibarfag_212"
+            },
+            {
+				"text":"Yes, I lack patience. The patience to keep listening to your babble.",
+                "nextPhraseID":"X"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_212",
+        "message":"Wisdom? No, hahaha!",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_214"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_214",
+        "message":"Leave wisdom to the wise. So to me.",
+		"replies":[
+            {
+				"text":"So what am I missing?",
+                "nextPhraseID":"whootibarfag_220"
+            },
+            {
+				"text":"I will. What do you have for sale?",
+                "nextPhraseID":"whootibarfag_42"
+            },
+            {
+				"text":"As you wish. I leave the wise now. Bye.",
+                "nextPhraseID":"X"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_220",
+        "message":"You've seen enough rats skilfully flee and escape.",
+		"replies":[
+            {
+				"text":"Oh yes, I actually have.",
+                "nextPhraseID":"whootibarfag_222"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_222",
+        "message":"You just haven't understood that you can make this ability your own.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_224"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_224",
+        "message":"Come closer.",
+		"replies":[
+            {
+				"text":"N",
+                "nextPhraseID":"whootibarfag_226"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_226",
+        "message":"Closer ...",
+		"replies":[
+            {
+				"text":"[You hold your breath - from tension, and because of his bad breath.]",
+                "nextPhraseID":"whootibarfag_230"
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_230",
+		"switchToNPC":"none",
+        "message":"Whootibarfag let you in on the secret of the rat escape. This increases your ability to flee and escape.",
+		"replies":[
+            {
+				"text":"Hey! Yes of course! That's how it works!",
+                "nextPhraseID":"whootibarfag_240"
+            }
+        ],
+		"rewards":[
+			{
+				"rewardType":"questProgress",
+				"rewardID":"ratdom_quest",
+				"value":210
+			},
+            {
+                "rewardType":"skillIncrease",
+                "rewardID":"evasion",
+                "value":1
+            }
+        ]
+	},
+    {
+        "id":"whootibarfag_240",
+		"switchToNPC":"whootibarfag",
+        "message":"Use this knowledge well. Go now, I need some rest.",
+		"replies":[
+            {
+				"text":"Thanks for all your help. Good bye.",
+                "nextPhraseID":"X"
             }
         ]
 	}
