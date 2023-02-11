@@ -1718,6 +1718,23 @@
                 ]
 			},
 			{
+				"text":"Will I ever be able to use my bed again? Sigh.",
+				"nextPhraseID":"X",
+				"requires":[
+					{ 
+						"requireType":"factionScore", 
+						"requireID":"ratdom_rat_conv2", 
+						"value":5 
+					},
+					{ 
+						"requireType":"questProgress", 
+						"requireID":"ratdom_quest", 
+						"value":900,
+						"negate":true
+					}
+				]
+			},
+			{
 				"text":"Clevred, I give up. You must search for your powerful artifact alone.",
 				"nextPhraseID":"ratdom_rat_200",
 				"requires":[
@@ -1979,13 +1996,17 @@
         "replies":[
             {
                 "text":"I was stupid. Forget what I said.",
-				"nextPhraseID":"ratdom_rat_250"
+				"nextPhraseID":"ratdom_rat_244"
             },
             {
                 "text":"Nothing.",
 				"nextPhraseID":"ratdom_rat_240"
             }
         ]
+    },
+    {
+        "id":"ratdom_rat_244",
+        "message":"Don't ever scare me that bad again"
     },
     {
         "id":"ratdom_rat_250",

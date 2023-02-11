@@ -6199,6 +6199,12 @@
           {
             "requireType":"questProgress",
             "requireID":"ratdom_quest",
+            "value":942,
+            "negate":true
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
             "value":999,
             "negate":true
           },
