@@ -7,9 +7,8 @@
     <map id="crossglen_cave" x="25" y="-12"/>
   </segment>
   <segment id="ratdom_level_4" x="0" y="0">
-    <map id="ratdom_maze_402" x="45" y="0"/>
+    <map area="ratdom_maze_nomap" id="ratdom_maze_402" x="45" y="0"/>
     <map id="ratdom_maze_403" x="75" y="0"/>
-    <map id="ratdom_maze_411" x="0" y="30"/>
     <map id="ratdom_maze_412" x="30" y="30"/>
     <map id="ratdom_maze_413" x="60" y="30"/>
     <map id="ratdom_maze_414" x="90" y="30"/>
@@ -62,7 +61,7 @@
 	<namedarea id="ratdom_maze_instrument_maker" name="Instrument maker" type="other"/>
   </segment>
   <segment id="ratdom_level_5" x="0" y="0">
-    <map id="ratdom_maze_506" x="165" y="0"/>
+    <map area="ratdom_maze_nomap" id="ratdom_maze_506" x="165" y="0"/>
     <map id="ratdom_maze_513" x="60" y="30"/>
     <map id="ratdom_maze_514" x="90" y="30"/>
     <map area="ratdom_maze_museum" id="ratdom_maze_515" x="120" y="30"/>
@@ -114,7 +113,7 @@
   </segment>
   <segment id="ratdom_level_6" x="0" y="0">
     <map area="ratdom_maze_library" id="ratdom_maze_611" x="0" y="30"/>
-    <map id="ratdom_maze_612" x="30" y="30"/>
+    <map area="ratdom_maze_nomap" id="ratdom_maze_612" x="30" y="30"/>
     <map id="ratdom_maze_616" x="150" y="30"/>
     <map id="ratdom_maze_617" x="180" y="30"/>
     <map id="ratdom_maze_618" x="210" y="30"/>

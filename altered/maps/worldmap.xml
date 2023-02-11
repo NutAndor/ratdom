@@ -491,7 +491,6 @@
     <map id="sullengard_ravine2" x="502" y="535"/>
 	<map id="gapfillerhole" x="194" y="375"/>
     <map id="ratdom_bwm1" x="137" y="355"/>
-    <map id="ratdom_maze_worldmap" x="27" y="303"/>
     <namedarea id="crossglen" name="Crossglen" type="settlement"/>
     <namedarea id="crossroads" name="Crossroads Guardhouse" type="other"/>
     <namedarea id="charwoodh" name="Charwood" type="settlement"/>
