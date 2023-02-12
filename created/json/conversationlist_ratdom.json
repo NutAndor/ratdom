@@ -175,7 +175,26 @@
             },
             {
                 "text":"Maybe I should use my pickaxe?",
-                "nextPhraseID":"ratdom_531_sw_30"
+                "nextPhraseID":"ratdom_531_sw_30",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10
+					}
+				]
+            },
+            {
+                "text":"Maybe I should use my pickaxe?",
+                "nextPhraseID":"ratdom_531_sw_31",
+                "requires":[
+					{
+						"requireType":"questProgress",
+						"requireID":"ratdom_nondisplay",
+						"value":10,
+						"negate":true
+					}
+				]
             }
         ]
     },
@@ -203,6 +222,16 @@
         "id":"ratdom_531_sw_30",
 		"switchToNPC":"ratdom_rat",
         "message":"Maybe. Although you would have to work in the dark then, because you can't hold the torch at the same time.",
+        "replies":[
+            {
+                "text":"Right. Nothing special here for sure.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"ratdom_531_sw_31",
+        "message":"You think: I would have to work in the dark then, because I can't hold the torch at the same time.",
         "replies":[
             {
                 "text":"Right. Nothing special here for sure.",
@@ -586,6 +615,26 @@
     ]
   },
   {
+    "id":"ratdom_artefact_lc",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_artefact_lc_10",
+        "requires":[
+          {
+            "requireType":"inventoryKeep",
+            "requireID":"ratdom_artefact",
+            "value":1
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_quest",
+            "value":942
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id":"ratdom_artefact_ld",
     "replies":[
       {
@@ -599,6 +648,24 @@
         ]
       }
     ]
+  },
+  {
+    "id":"ratdom_artefact_lc_10",
+    "switchToNPC":"none",
+    "message":"The big yellow cheese now weighs heavily in your bag. Small consolation for the loss of a friend, though.",
+    "replies":[
+      {
+        "text":"Sigh. Clevred, I will miss you.",
+		"nextPhraseID":"X"
+      }
+    ],
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_quest",
+        "value":948
+      }
+	]
   },
   {
     "id":"ratdom_artefact_ld_10",

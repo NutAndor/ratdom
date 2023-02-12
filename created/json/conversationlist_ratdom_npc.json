@@ -1143,9 +1143,10 @@
     },
     {
         "id":"ratdom_librarian_40",
+        "message":"Oh! What wonder! I always wanted to have a copy of that wonderful book!\nHere, take this special bone as a token of my everlasting thanks. [gives leg bone of a rat]",
         "replies":[
             {
-				"text":"Oh! What wonder! I always wanted to have a copy of that wonderful book!\nHere, take this special bone as a token of my everlasting thanks. [gives leg bone of a rat]",
+				"text":"A lousy bone for this valuable book?!",
                 "nextPhraseID":"ratdom_librarian_42"
             }
         ],
@@ -3231,11 +3232,30 @@
 	},
 	{
 		"id":"ratdom_rat_warden_95_30",
-		"message":"Follow this passage to the end. We might find something important there. Then go back to the crossing and follow the orange shield again.",
+		"message":"Follow this passage to the end. You might find something important there. Then go back to the crossing and follow the orange shield again.",
 		"replies":[
 			{
 				"text":"Eh, ok. Got it.",
-				"nextPhraseID":"ratdom_rat_warden_95_40"
+				"nextPhraseID":"ratdom_rat_warden_95_40",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
+			},
+			{
+				"text":"Eh, ok. Got it.",
+				"nextPhraseID":"ratdom_rat_warden_95_41",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10,
+						"negate":true
+                    }
+                ]
 			}
 		],
 		"rewards":[
@@ -3253,6 +3273,16 @@
 	{
 		"id":"ratdom_rat_warden_95_40",
 		"switchToNPC":"ratdom_rat",
+		"message":"[muttering] Want to hope so, but don't really believe it yet.",
+		"replies":[
+			{
+				"text":"N",
+				"nextPhraseID":"ratdom_rat_warden_96"
+			}
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_95_41",
 		"message":"[muttering] Want to hope so, but don't really believe it yet.",
 		"replies":[
 			{
@@ -3312,8 +3342,7 @@
 					{
 						"requireType":"inventoryRemove",
 						"requireID":"gold",
-						"value":100,
-						"negate":true
+						"value":100
 					}
                 ]
             },
