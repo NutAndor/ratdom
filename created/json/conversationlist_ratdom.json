@@ -1265,6 +1265,118 @@
       }
     ]
   },
+  {
+    "id":"ratdom_door_412",
+    "replies":[
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_door_412_30",
+        "requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":174,
+				"negate":true
+			}
+        ]
+      },
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_door_412_20",
+        "requires":[
+			{
+				"requireType":"killedMonster",
+				"requireID":"ratdom_ff_guard",
+				"value":1
+			}
+        ]
+      },
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_door_412_10"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_412_0",
+    "rewards":[
+      {
+        "rewardType":"removeQuestProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":174
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_412_1",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":174
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_412_10",
+    "message":"There is a guard somewhere behind this massive gate."
+  },
+  {
+    "id":"ratdom_door_412_20",
+    "message":"Hey, this massive looking gate has a hole.",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":173
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_412_30",
+    "message":"This is a rather massive gate."
+  },
+  {
+    "id":"ratdom_door_533",
+    "message":"The door can only be opened from this side.",
+    "replies":[
+      {
+        "text":"Open the door.",
+        "nextPhraseID":"ratdom_door_533_open"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_533_open_10",
+    "message":"If I go through, I can't go back.",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":172
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_533_close",
+    "rewards":[
+      {
+        "rewardType":"removeQuestProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":172
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_533_open_10",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":172
+      }
+    ]
+  },
     {
         "id":"ratdom_fraedro_key",
 		"message":"The cave wall looks very massive here.",
