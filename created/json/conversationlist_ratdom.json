@@ -560,7 +560,7 @@
   },
   {
     "id":"ratdom_artefact_la_14",
-    "message":"Too late, I feel my end coming ... Take my artifact ... and use it wisely. Farewell ...",
+    "message":"Too late, I feel my end coming ... Take my artifact ... and use it wisely. Farewell ...\n[You get an item]",
     "replies":[
       {
         "text":"N",
@@ -629,21 +629,12 @@
             "requireType":"questProgress",
             "requireID":"ratdom_quest",
             "value":942
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id":"ratdom_artefact_ld",
-    "replies":[
-      {
-        "nextPhraseID":"ratdom_artefact_ld_10",
-        "requires":[
+          },
           {
             "requireType":"questProgress",
-            "requireID":"ratdom_nondisplay",
-            "value":11
+            "requireID":"ratdom_quest",
+            "value":948,
+			"negate":true
           }
         ]
       }
@@ -666,6 +657,21 @@
         "value":948
       }
 	]
+  },
+  {
+    "id":"ratdom_artefact_ld",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_artefact_ld_10",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":11
+          }
+        ]
+      }
+    ]
   },
   {
     "id":"ratdom_artefact_ld_10",
@@ -1338,17 +1344,44 @@
   },
   {
     "id":"ratdom_door_533",
-    "message":"The door can only be opened from this side.",
     "replies":[
       {
-        "text":"Open the door.",
-        "nextPhraseID":"ratdom_door_533_open"
+        "text":"N",
+        "nextPhraseID":"ratdom_door_533_10",
+        "requires":[
+			{
+				"requireType":"questProgress",
+				"requireID":"ratdom_nondisplay",
+				"value":10
+			}
+        ]
+      },
+      {
+        "text":"N",
+        "nextPhraseID":"ratdom_door_533_20"
       }
     ]
   },
   {
-    "id":"ratdom_door_533_open_10",
-    "message":"If I go through, I can't go back.",
+    "id":"ratdom_door_533_10",
+	"switchToNPC":"ratdom_rat",
+    "message":"Look, the door seems to be unlocked.",
+    "replies":[
+      {
+        "text":"Open the door.",
+        "nextPhraseID":"ratdom_door_533_12"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_533_12",
+    "message":"Wait - the door has no handle on the other side. If we go through, we can't go back.",
+    "replies":[
+      {
+        "text":"Right. I don't think that there is anything interesting there.",
+        "nextPhraseID":"ratdom_door_533_14"
+      }
+	],
     "rewards":[
       {
         "rewardType":"questProgress",
@@ -1356,22 +1389,56 @@
         "value":172
       }
     ]
+  },
+  {
+    "id":"ratdom_door_533_14",
+    "message":"I agree. Probably just a shortcut back."
+  },
+  {
+    "id":"ratdom_door_533_open_10",
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":172
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_533_20",
+    "message":"The door seems to be unlocked.",
+    "replies":[
+      {
+        "text":"Open the door.",
+        "nextPhraseID":"ratdom_door_533_22"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_533_22",
+    "message":"Hmm, the door has no handle on the other side. If I go through, I can't go back.",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_door_533_24"
+      }
+	],
+    "rewards":[
+      {
+        "rewardType":"questProgress",
+        "rewardID":"ratdom_nondisplay",
+        "value":172
+      }
+    ]
+  },
+  {
+    "id":"ratdom_door_533_24",
+    "message":"Looks like there is anything interesting there. Probably just a shortcut back."
   },
   {
     "id":"ratdom_door_533_close",
     "rewards":[
       {
         "rewardType":"removeQuestProgress",
-        "rewardID":"ratdom_nondisplay",
-        "value":172
-      }
-    ]
-  },
-  {
-    "id":"ratdom_door_533_open_10",
-    "rewards":[
-      {
-        "rewardType":"questProgress",
         "rewardID":"ratdom_nondisplay",
         "value":172
       }
@@ -6649,7 +6716,7 @@
     "message":"You got rid of the rats long ago.",
 	"replies":[
 		{
-			"text":"No. Yes, but ...  Where is Clevred?",
+			"text":"No. Yes, but ...  Have you seen Clevred?",
 			"nextPhraseID":"ratdom_wakeup_120"
 		}
 	]
@@ -6667,6 +6734,15 @@
   {
 	"id":"ratdom_wakeup_130",
     "message":"Yes that's what they all say. Better go and find Andor at last.",
+	"replies":[
+		{
+			"text":"But ...",
+			"nextPhraseID":"ratdom_wakeup_132"
+		}
+	]
+  },
+  {
+	"id":"ratdom_wakeup_132",
 	"replies":[
 		{
 			"text":"N",
@@ -6733,7 +6809,7 @@
     "message":"Tharal has also disappeared. But I don't think that has anything to do with each other. He often just roams through the forest and will definitely be back soon.",
 	"replies":[
 		{
-			"text":"I hope so.",
+			"text":"I hope so. But I have a bad feeling ...",
 			"nextPhraseID":"X"
 		}
 	]
@@ -6763,7 +6839,7 @@
     "message":"I hope he will be back soon.",
 	"replies":[
 		{
-			"text":"I hope so too.",
+			"text":"I hope so too. But I have a bad feeling ...",
 			"nextPhraseID":"X"
 		}
 	]

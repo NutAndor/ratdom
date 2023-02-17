@@ -107,7 +107,7 @@
 			{	"progress":400, 
 				"logText":"You tried Fraedro's tiny golden key in a hole of the cavewall near to his prison. Immediatly the wall gave way to another passage." },
 			{	"progress":900, 
-				"logText":"You finally found the yellow artifact: It was a large, round, and extremely foul-smelling cheese! Gold yellow, round, and so large that it would provide almost imperishable food. Clevred was overjoyed!" },
+				"logText":"You finally found the yellow artifact: It was a big round and smelly cheese! Gold yellow and so large that it would provide almost imperishable food. Clevred was overjoyed!" },
 			{	"progress":940, 
 				"logText":"You told Clevred you couldn't help him further with the search. He then left you to search on his own.",
 				"finishesQuest":1 },

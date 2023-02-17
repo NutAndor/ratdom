@@ -3147,17 +3147,38 @@
 	},
 	{
 		"id":"ratdom_rat_warden_84",
+		"replies":[
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_86",
+                "requires":[
+                    {			
+                        "requireType":"questProgress",
+                        "requireID":"ratdom_nondisplay",
+                        "value":10
+                    }
+                ]
+		  },
+		  {
+			"text":"N",
+			"nextPhraseID":"ratdom_rat_warden_80"
+		  }
+		]
+	},
+	{
+		"id":"ratdom_rat_warden_86",
 		"switchToNPC":"ratdom_rat",
 		"message":"Didn't I tell you?",
 		"replies":[
 		  {
-			"text":"You talk too much anyway.",
+			"text":"You talk all the time and too much anyway. I can't always listen to that.",
 			"nextPhraseID":"ratdom_rat_warden_80"
 		  }
 		]
 	},
 	{
 		"id":"ratdom_rat_warden_90",
+		"switchToNPC":"ratdom_rat_warden",
 		"message":"The cave system is huge and really very confusing. It already surprised me how you found your way to me here.",
 		"replies":[
 		  {
