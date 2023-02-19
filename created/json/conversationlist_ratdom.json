@@ -6478,6 +6478,11 @@
             "requireType":"questProgress",
             "requireID":"stn_colonel",
             "value":190
+          },
+          {
+            "requireType":"inventoryKeep",
+            "requireID":"gold",
+            "value":9000
           }
         ]
       }
