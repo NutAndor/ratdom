@@ -4623,27 +4623,6 @@
     "message":"Oh, don't look so murderous at me. You brutal biped."
   },
   {
-    "id":"ratdom_rat_crossglen",
-    "switchToNPC":"ratdom_rat_crossglen",
-    "message":"A beautiful view.",
-    "rewards":[
-      {
-        "rewardType":"createTimer",
-        "rewardID":"ratdom_rat_crossglen"
-      }
-    ],
-    "replies":[
-      {
-        "text":"Indeed.",
-        "nextPhraseID":"ratdom_rat_crossglen_02"
-      },
-      {
-        "text":"Clevred, let me ask you a question.",
-		"nextPhraseID":"ratdom_rat_conv2_900"
-      }
-    ]
-  },
-  {
     "id":"ratdom_rat_conv2_570",
 	"switchToNPC":"ratdom_rat",
     "message":"Don't worry, I am still by your side.",
@@ -4900,6 +4879,27 @@
       {
         "rewardType":"createTimer",
         "rewardID":"ratdom_rat_crossglen"
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_crossglen",
+    "switchToNPC":"ratdom_rat_crossglen",
+    "message":"A beautiful view.",
+    "rewards":[
+      {
+        "rewardType":"createTimer",
+        "rewardID":"ratdom_rat_crossglen"
+      }
+    ],
+    "replies":[
+      {
+        "text":"Indeed.",
+        "nextPhraseID":"ratdom_rat_crossglen_02"
+      },
+      {
+        "text":"Am I dreaming all this?",
+		"nextPhraseID":"ratdom_rat_conv2_930"
       }
     ]
   },
@@ -5172,11 +5172,39 @@
   },
   {
     "id":"ratdom_rat_flora",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_flora_10",
+        "requires":[
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":140
+          },
+          {
+            "requireType":"questProgress",
+            "requireID":"ratdom_nondisplay",
+            "value":10
+          }
+        ]
+      }
+    ],
     "rewards":[
       {
         "rewardType":"actorCondition",
         "rewardID":"shadowbless_heal",
         "value":25
+      }
+    ]
+  },
+  {
+    "id":"ratdom_rat_flora_10",
+    "switchToNPC":"ratdom_rat",
+	"message":"Why doesn't he ever do what he's told?",
+    "replies":[
+      {
+        "nextPhraseID":"ratdom_rat_flora_warn_20",
+		"text":"Hey, come in! It is cool and refreshing."
       }
     ]
   },
@@ -6778,7 +6806,7 @@
     "message":"When I think of drinking - Mara seems to have disappeared. So we're all going to stop drinking mead.",
 	"replies":[
 		{
-			"text":"Oh.",
+			"text":"What?",
 			"nextPhraseID":"ratdom_wakeup_142"
 		}
 	]
@@ -6831,7 +6859,7 @@
   },
   {
 	"id":"ratdom_wakeup_152",
-    "message":"Maybe he just needed some time of piece and roams through the forest?",
+    "message":"Maybe he has needed some time of piece and roams through the forest?",
 	"replies":[
 		{
 			"text":"Eh, maybe. Sure.",

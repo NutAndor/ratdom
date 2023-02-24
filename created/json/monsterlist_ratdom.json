@@ -843,7 +843,10 @@
             "max":30
         },
         "spawnGroup":"ratdom_king_rah",
-        "droplistID":"ratdom_king_rah"
+        "droplistID":"ratdom_king_rah",
+		"attackCost":3,
+		"attackChance":60,
+		"blockChance":40
     },
     {
         "id":"ratdom_kriih",
@@ -861,7 +864,10 @@
         "phraseID":"ratdom_kriih",
         "droplistID":"drop_ratdom_kriih",
         "spawnGroup":"ratdom_kriih",
-        "droplistID":"ratdom_kriih"
+        "droplistID":"ratdom_kriih",
+		"attackCost":3,
+		"attackChance":40,
+		"blockChance":20
     },
     {
         "id":"ratdom_leonid",

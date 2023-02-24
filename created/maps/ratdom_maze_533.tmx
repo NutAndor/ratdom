@@ -334,15 +334,15 @@
   <object id="52" name="ratdom_rat_conv1" type="script" x="224" y="320" width="64" height="32"/>
   <object id="53" name="ratdom_rat_conv2" type="script" x="224" y="416" width="128" height="32"/>
   <object id="54" name="ratdom_rat_conv3" type="script" x="192" y="608" width="96" height="32"/>
-  <object id="77" name="door533" type="mapchange" x="256" y="544" width="32" height="32">
+  <object id="77" name="door533" type="mapchange" x="256" y="480" width="32" height="32">
    <properties>
     <property name="map" value="ratdom_maze_533"/>
     <property name="place" value="door533_target"/>
    </properties>
   </object>
-  <object id="78" name="door533_target" type="mapchange" x="256" y="480" width="32" height="32"/>
+  <object id="78" name="door533_target" type="mapchange" x="256" y="544" width="32" height="32"/>
   <object id="80" name="ratdom_door_533_close" type="script" x="224" y="416" width="128" height="64"/>
-  <object id="81" name="ratdom_door_533_close" type="script" x="192" y="608" width="96" height="32"/>
+  <object id="81" name="ratdom_door_533_close" type="script" x="192" y="608" width="96" height="64"/>
  </objectgroup>
  <objectgroup id="17" name="Spawn" visible="0">
   <object id="50" name="ratdom_rat" type="spawn" x="224" y="0" width="32" height="32"/>
@@ -372,7 +372,7 @@
   </object>
  </objectgroup>
  <objectgroup id="18" name="Keys" visible="0">
-  <object id="79" name="ratdom_door_533" type="key" x="256" y="544" width="32" height="32">
+  <object id="79" name="ratdom_door_533" type="key" x="256" y="480" width="32" height="32">
    <properties>
     <property name="phrase" value="ratdom_door_533"/>
     <property name="requireId" value="ratdom_nondisplay"/>

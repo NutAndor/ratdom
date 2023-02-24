@@ -188,7 +188,7 @@
  </tileset>
  <layer id="1" name="Ground" width="10" height="30">
   <data encoding="base64" compression="zlib">
-   eJxbx8TAsA4LPgDFB3HIr4PKXYLiyzjUrIfKPYFiXGatxyM3GNTRChNrP754QFaDKx5IUbOeCDXEuolYs0DqNnKiiqHzsakDsWGYkDpc5iKbgc1OdEyOWmLieg4JaWL9EFBHSA2xaWgdUhoCAGgY0Vk=
+   eJxbx8TAsA4LPgDFB3HIr4PKXYLiyzjUrIfKPYFiXGatxyM3GNTRChNrP754QFaDKx5IUbOeCDXEuolYs0DqNnKiiqHzsakDsWGYkDpc5iKbgc1OZDwHj53YMLI6QnE9h4Q0sX4IqCOkhtg0tA4pDQEATRjRRw==
   </data>
  </layer>
  <layer id="2" name="Objects" width="10" height="30">
@@ -206,7 +206,7 @@
    eJxjYBgFtAabJAfaBaMAH5jLhF18z2i8DToAAPv0AkA=
   </data>
  </layer>
- <layer id="5" name="Walkable" width="10" height="30">
+ <layer id="5" name="Walkable" width="10" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEHBgFkNjLApR6XOnxmEZJDV0cMoEQdPv8SYwe6WnxuISZs0M2gVB0x7iPGv/jSBqnqCKUNfGZj009KGBFjL7JaWqUDQnmJkPuGsjpiMQDFhERp
   </data>
