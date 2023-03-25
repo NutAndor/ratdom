@@ -2,14 +2,14 @@
     {
         "id":"handcarved_snowball",
         "iconID":"items_misc:4",
+        "name":"Hand carved snowball",
         "hasManualPrice":1,
         "baseMarketCost":10,
-        "name":"Hand carved snowball",
         "category":"other"
     },
     {
         "id":"ratdom_artefact",
-		"iconID":"items_consumables:23",
+        "iconID":"items_consumables:23",
         "name":"Rat's artifact",
         "displaytype":"extraordinary",
         "hasManualPrice":1,
@@ -29,18 +29,22 @@
     },
     {
         "id":"ratdom_book",
-		"iconID":"items_books:0",
+        "iconID":"items_books:0",
         "name":"Nasty looking book",
         "displaytype":"extraordinary",
         "hasManualPrice":1,
         "baseMarketCost":300,
         "category":"other",
-		"description":"-> Enslavement <- \nand how to do it right.\n\n[As you scan the pages, you decide that this is not appropriate reading for you]"
+        "description":"-> Enslavement <- \nand how to do it right.\n\n[As you scan the pages, you decide that this is not appropriate reading for you]"
     },
     {
         "id":"ratdom_compass_bwm",
         "iconID":"items_reterski_1:9",
         "name":"Blue rat necklace",
+        "displaytype":"rare",
+        "hasManualPrice":1,
+        "baseMarketCost":3000,
+        "category":"neck",
         "description":"This necklace will guide you the shortest way towards the sky.\nWatch out for blue shields.",
         "equipEffect":{
             "addedConditions":[
@@ -49,20 +53,17 @@
                     "magnitude":1
                 }
             ]
-        },
-        "displaytype":"rare",
-        "hasManualPrice":1,
-        "baseMarketCost":3000,
-        "category":"neck"
+        }
     },
     {
         "id":"ratdom_compass_tour",
         "iconID":"items_reterski_1:10",
         "name":"Orange rat necklace",
-        "description":"This necklace will guide you a long way through the caves from Crossglen entrance unto every worthy place.\nWatch out for orange shields, but don't neglect the yellow shields.",
         "displaytype":"rare",
         "hasManualPrice":1,
         "baseMarketCost":5000,
+        "category":"neck",
+        "description":"This necklace will guide you a long way through the caves from Crossglen entrance unto every worthy place.\nWatch out for orange shields, but don't neglect the yellow shields.",
         "equipEffect":{
             "addedConditions":[
                 {
@@ -70,16 +71,15 @@
                     "magnitude":1
                 }
             ]
-        },
-        "category":"neck"
+        }
     },
     {
         "id":"ratdom_fraedro_key",
         "iconID":"items_japozero:387",
         "name":"Fraedro's key",
-        "description":"A tiny golden key",
         "displaytype":"quest",
-        "category":"other"
+        "category":"other",
+        "description":"A tiny golden key"
     },
     {
         "id":"ratdom_maze_mole_food",
@@ -155,9 +155,9 @@
         "id":"ratdom_rat_skelett_leg_coll",
         "iconID":"items_omgeeky:2",
         "name":"Leg bone of a rat",
-		"description":"The most precious bone of the instrument maker's bone collection"
         "displaytype":"quest",
-        "category":"other"
+        "category":"other",
+        "description":"The most precious bone of the instrument maker's bone collection"
     },
     {
         "id":"ratdom_rat_skelett_skull",
@@ -184,41 +184,32 @@
         "id":"ratdom_rat_sword",
         "iconID":"items_weapons_3:0",
         "name":"Rat King Rah's sword",
-		"displaytype":"extraordinary",
-		"hasManualPrice":1,
-		"baseMarketCost":2000,
-		"category":"2hsword",
-		"equipEffect":{
-			"increaseAttackDamage":{
-				"min":2,
-				"max":5
-			},
-			"increaseMaxHP":-4,
-            "increaseAttackCost":6,
-			"increaseAttackChance":15,
-			"increaseCriticalSkill":10,
-			"increaseBlockChance":-5,
-			"setCriticalMultiplier":2,
-			"setNonWeaponDamageModifier":125
-		},
-		"hitEffect":{
-			"conditionsSource":[
-				{
-					"condition":"speed_minor",
-					"magnitude":2,
-					"duration":3,
-					"chance":"10"
-				}
-			],
-			"conditionsTarget":[
-				{
-					"condition":"bleeding_wound",
-					"magnitude":3,
-					"duration":2,
-					"chance":"10"
-				}
-			]
-		}
+        "displaytype":"extraordinary",
+        "baseMarketCost":2000,
+        "category":"2hsword",
+        "equipEffect":{
+            "increaseAttackDamage":{
+                "min":3,
+                "max":7
+            },
+            "increaseMaxHP":-6,
+            "increaseAttackCost":5,
+            "increaseAttackChance":20,
+            "increaseCriticalSkill":4,
+            "increaseBlockChance":10,
+            "setCriticalMultiplier":2.0,
+            "setNonWeaponDamageModifier":125
+        },
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"head_wound",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"8"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_wells_ball",
@@ -245,20 +236,20 @@
             ]
         }
     },
-	{
-		"id":"well_water",
-		"iconID":"items_omi2:13",
-		"name":"Bottle of well water",
-		"displaytype":"extraordinary",
-		"hasManualPrice":1,
-		"baseMarketCost":126,
-		"category":"healing",
-		"description":"As if freshly drawn from the well",
-		"useEffect":{
-			"increaseCurrentHP":{
-				"min":5,
-				"max":20
-			}
-		}
-	}
+    {
+        "id":"well_water",
+        "iconID":"items_omi2:13",
+        "name":"Bottle of well water",
+        "displaytype":"extraordinary",
+        "hasManualPrice":1,
+        "baseMarketCost":126,
+        "category":"healing",
+        "description":"As if freshly drawn from the well",
+        "useEffect":{
+            "increaseCurrentHP":{
+                "min":5,
+                "max":20
+            }
+        }
+    }
 ]
