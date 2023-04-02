@@ -1244,7 +1244,7 @@
     },
     {
         "id":"ratdom_librarian_40",
-        "message":"Oh! What wonder! I always wanted to have a copy of that wonderful book!\nHere, take this special bone as a token of my everlasting thanks. [gives leg bone of a rat]",
+        "message":"Oh! What a wonder! I always wanted to have a copy of that wonderful book!\nHere, take this special bone as a token of my everlasting thanks. [gives leg bone of a rat]",
         "replies":[
             {
                 "text":"A lousy bone for this valuable book?!",
