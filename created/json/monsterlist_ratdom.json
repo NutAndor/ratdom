@@ -720,98 +720,98 @@
         "id":"ratdom_bone_collector",
         "name":"Loirash",
         "iconID":"monsters_ld1:63",
-		"moveCost":5,
-        "phraseID":"ratdom_bone_collector",
-		"spawnGroup":"ratdom_bone_collector"
+        "moveCost":5,
+        "spawnGroup":"ratdom_bone_collector",
+        "phraseID":"ratdom_bone_collector"
     },
     {
         "id":"ratdom_ff_guard",
-		"name":"Feygard patrol watch",
-		"iconID":"monsters_rltiles3:14",
-		"maxHP":80,
-		"unique":1,
-		"monsterClass":"humanoid",
+        "name":"Feygard patrol watch",
+        "iconID":"monsters_rltiles3:14",
+        "maxHP":80,
+        "unique":1,
+        "monsterClass":"humanoid",
+        "attackDamage":{
+            "min":12,
+            "max":17
+        },
+        "spawnGroup":"ratdom_ff_guard",
         "phraseID":"ratdom_ff_guard",
-		"attackDamage":{
-			"min":12,
-			"max":17
-		},
-		"spawnGroup":"ratdom_ff_guard",
-		"droplistID":"ratdom_ff_guard",
-		"attackCost":5,
-		"attackChance":170,
-		"blockChance":180,
-		"damageResistance":3
+        "droplistID":"ratdom_ff_guard",
+        "attackCost":5,
+        "attackChance":170,
+        "blockChance":180,
+        "damageResistance":3
     },
     {
         "id":"ratdom_fraedro",
         "name":"Fraedro",
         "iconID":"monsters_rats:0",
-		"moveCost":1,
+        "moveCost":1,
         "unique":1,
         "monsterClass":"animal",
         "attackDamage":{
             "min":20,
             "max":30
         },
-		"phraseID":"ratdom_fraedro",
-		"spawnGroup":"ratdom_fraedro",
+        "spawnGroup":"ratdom_fraedro",
+        "phraseID":"ratdom_fraedro",
         "droplistID":"ratdom_fraedro"
     },
     {
         "id":"ratdom_ghost",
         "name":"Ghost",
         "iconID":"monsters_tometik2:65",
-		"moveCost":5,
-		"spawnGroup":"ratdom_ghost"
+        "moveCost":5,
+        "spawnGroup":"ratdom_ghost"
     },
     {
         "id":"ratdom_ghost1",
         "name":"Ghost",
         "iconID":"monsters_tometik2:65",
-		"moveCost":5,
-		"spawnGroup":"ratdom_ghost3"
+        "moveCost":5,
+        "spawnGroup":"ratdom_ghost3"
     },
     {
         "id":"ratdom_ghost2",
         "name":"Ghost",
         "iconID":"monsters_tometik8:24",
-		"moveCost":5,
-		"spawnGroup":"ratdom_ghost1"
+        "moveCost":5,
+        "spawnGroup":"ratdom_ghost1"
     },
     {
         "id":"ratdom_ghost3",
         "name":"Ghost",
         "iconID":"monsters_tometik8:50",
-		"moveCost":5,
-		"spawnGroup":"ratdom_ghost3"
+        "moveCost":5,
+        "spawnGroup":"ratdom_ghost3"
     },
     {
         "id":"ratdom_ghost4",
         "name":"Ghost",
         "iconID":"monsters_wraiths:0",
-		"moveCost":5,
-		"spawnGroup":"ratdom_ghost4"
+        "moveCost":5,
+        "spawnGroup":"ratdom_ghost4"
     },
     {
         "id":"ratdom_goldhunter",
         "name":"Gold hunter",
         "iconID":"monsters_ld1:82",
-		"maxHP":70,
-		"maxAP":10,
-		"moveCost":5,
+        "maxHP":70,
+        "maxAP":10,
+        "moveCost":5,
         "unique":1,
-		"monsterClass":"humanoid",
+        "monsterClass":"humanoid",
         "movementAggressionType":"wholeMap",
-		"attackDamage":{
-			"min":3,
-			"max":10
-		},
-		"spawnGroup":"ratdom_goldhunter",
-		"droplistID":"container_gold_200_500",
-		"attackCost":5,
-		"attackChance":60,
-		"blockChance":40
+        "attackDamage":{
+            "min":3,
+            "max":10
+        },
+        "spawnGroup":"ratdom_goldhunter",
+        "droplistID":"container_gold_200_500",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":40
     },
     {
         "id":"ratdom_gruil",
@@ -844,9 +844,9 @@
         },
         "spawnGroup":"ratdom_king_rah",
         "droplistID":"ratdom_king_rah",
-		"attackCost":3,
-		"attackChance":60,
-		"blockChance":40
+        "attackCost":3,
+        "attackChance":60,
+        "blockChance":40
     },
     {
         "id":"ratdom_kriih",
@@ -861,13 +861,12 @@
             "min":20,
             "max":30
         },
-        "phraseID":"ratdom_kriih",
-        "droplistID":"drop_ratdom_kriih",
         "spawnGroup":"ratdom_kriih",
+        "phraseID":"ratdom_kriih",
         "droplistID":"ratdom_kriih",
-		"attackCost":3,
-		"attackChance":40,
-		"blockChance":20
+        "attackCost":3,
+        "attackChance":40,
+        "blockChance":20
     },
     {
         "id":"ratdom_leonid",
@@ -897,8 +896,8 @@
             "max":30
         },
         "spawnGroup":"ratdom_librarian",
-        "droplistID":"ratdom_librarian",
-        "phraseID":"ratdom_librarian"
+        "phraseID":"ratdom_librarian",
+        "droplistID":"ratdom_librarian"
     },
     {
         "id":"ratdom_mara",
@@ -923,75 +922,75 @@
         "id":"ratdom_maze_boulder1",
         "name":"Flaming orb",
         "iconID":"monsters_rltiles1:15",
-		"moveCost":5,
-        "phraseID":"ratdom_maze_boulder",
-        "spawnGroup":"ratdom_maze_boulder"
+        "moveCost":5,
+        "spawnGroup":"ratdom_maze_boulder",
+        "phraseID":"ratdom_maze_boulder"
     },
     {
         "id":"ratdom_maze_boulder2",
         "name":"Flaming orb",
         "iconID":"monsters_rltiles1:14",
-		"moveCost":5,
-        "phraseID":"ratdom_maze_boulder",
-        "spawnGroup":"ratdom_maze_boulder"
+        "moveCost":5,
+        "spawnGroup":"ratdom_maze_boulder",
+        "phraseID":"ratdom_maze_boulder"
     },
     {
         "id":"ratdom_maze_boulder3",
         "name":"Flaming orb",
         "iconID":"monsters_rltiles1:3",
-		"moveCost":5,
-        "phraseID":"ratdom_maze_boulder",
-        "spawnGroup":"ratdom_maze_boulder"
+        "moveCost":5,
+        "spawnGroup":"ratdom_maze_boulder",
+        "phraseID":"ratdom_maze_boulder"
     },
     {
         "id":"ratdom_maze_boulder4",
         "name":"Flaming orb",
         "iconID":"monsters_rltiles1:15",
-		"moveCost":10,
-        "phraseID":"ratdom_maze_boulder",
-        "spawnGroup":"ratdom_maze_boulder"
+        "moveCost":10,
+        "spawnGroup":"ratdom_maze_boulder",
+        "phraseID":"ratdom_maze_boulder"
     },
     {
         "id":"ratdom_maze_boulder5",
         "name":"Flaming orb",
         "iconID":"monsters_rltiles1:15",
-		"moveCost":2,
-        "phraseID":"ratdom_maze_boulder",
-        "spawnGroup":"ratdom_maze_boulder"
+        "moveCost":2,
+        "spawnGroup":"ratdom_maze_boulder",
+        "phraseID":"ratdom_maze_boulder"
     },
     {
         "id":"ratdom_maze_mole",
         "name":"Cave mole",
         "iconID":"monsters_rltiles1:50",
-		"moveCost":5,
-        "phraseID":"ratdom_maze_mole",
-        "spawnGroup":"ratdom_maze_mole"
+        "moveCost":5,
+        "spawnGroup":"ratdom_maze_mole",
+        "phraseID":"ratdom_maze_mole"
     },
     {
         "id":"ratdom_maze_mole2",
         "name":"Cave mole",
         "iconID":"monsters_rltiles1:50",
-        "unique":1,
         "maxHP":70,
+        "unique":1,
         "monsterClass":"animal",
         "movementAggressionType":"wholeMap",
         "attackDamage":{
             "min":8,
             "max":15
         },
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"bleeding_wound",
-					"magnitude":1,
-					"duration":2,
-					"chance":"75"
-				}
-			]
-		},
         "spawnGroup":"ratdom_maze_mole2",
         "attackCost":5,
-        "attackChance":120
+        "attackChance":120,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"bleeding_wound",
+                    "magnitude":1,
+                    "duration":2,
+                    "chance":"75"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_maze_mole_food",
@@ -1047,26 +1046,26 @@
         "iconID":"monsters_ld2:188",
         "maxHP":5,
         "monsterClass":"animal",
+        "movementAggressionType":"helpOthers",
         "attackDamage":{
             "min":8,
             "max":18
         },
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"slime",
-					"magnitude":1,
-					"duration":2,
-					"chance":"30"
-				}
-			]
-		},
-        "movementAggressionType":"helpOthers",
         "spawnGroup":"ratdom_maze_slime",
         "droplistID":"rat",
         "attackCost":5,
         "attackChance":130,
-        "blockChance":40
+        "blockChance":40,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"slime",
+                    "magnitude":1,
+                    "duration":2,
+                    "chance":"30"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_mikhail",
@@ -1185,8 +1184,8 @@
         "spawnGroup":"ratdom_roundling3",
         "attackCost":5,
         "attackChance":120
-    },    
-	{
+    },
+    {
         "id":"ratdom_skel_lute",
         "name":"Lutenist",
         "iconID":"monsters_fatboy73:41",
@@ -1213,8 +1212,8 @@
         "iconID":"monsters_fatboy73:47",
         "monsterClass":"undead",
         "spawnGroup":"ratdom_skel_cymb"
-    },    
-	{
+    },
+    {
         "id":"ratdom_skel_lute1",
         "name":"Lutenist",
         "iconID":"monsters_fatboy73:41",
@@ -1241,8 +1240,8 @@
         "iconID":"monsters_fatboy73:47",
         "monsterClass":"undead",
         "spawnGroup":"ratdom_skel_cymb1"
-    },    
-	{
+    },
+    {
         "id":"ratdom_skel_lute2",
         "name":"Lutenist",
         "iconID":"monsters_fatboy73:40",
@@ -1275,67 +1274,70 @@
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:28",
         "monsterClass":"undead",
-        "phraseID":"ratdom_do_nothing",
-        "spawnGroup":"ratdom_skel_dance_grp"
+        "spawnGroup":"ratdom_skel_dance_grp",
+        "phraseID":"ratdom_do_nothing"
     },
     {
         "id":"ratdom_skel_dance2",
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:29",
         "monsterClass":"undead",
-        "phraseID":"ratdom_do_nothing",
-        "spawnGroup":"ratdom_skel_dance_grp"
+        "spawnGroup":"ratdom_skel_dance_grp",
+        "phraseID":"ratdom_do_nothing"
     },
     {
         "id":"ratdom_skel_dance3",
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:30",
         "monsterClass":"undead",
-        "phraseID":"ratdom_do_nothing",
-        "spawnGroup":"ratdom_skel_dance_grp"
+        "spawnGroup":"ratdom_skel_dance_grp",
+        "phraseID":"ratdom_do_nothing"
     },
     {
         "id":"ratdom_skel_dance4",
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:31",
         "monsterClass":"undead",
-        "phraseID":"ratdom_do_nothing",
-        "spawnGroup":"ratdom_skel_dance_grp"
+        "spawnGroup":"ratdom_skel_dance_grp",
+        "phraseID":"ratdom_do_nothing"
     },
     {
         "id":"ratdom_skel_dance5",
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:32",
         "monsterClass":"undead",
-        "phraseID":"ratdom_do_nothing",
-        "spawnGroup":"ratdom_skel_dance_grp"
+        "spawnGroup":"ratdom_skel_dance_grp",
+        "phraseID":"ratdom_do_nothing"
     },
     {
         "id":"ratdom_skel_dance6",
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:33",
         "monsterClass":"undead",
-        "phraseID":"ratdom_do_nothing",
-        "spawnGroup":"ratdom_skel_dance_grp"
+        "spawnGroup":"ratdom_skel_dance_grp",
+        "phraseID":"ratdom_do_nothing"
     },
     {
         "id":"ratdom_skel_dance7",
         "name":"Dancing skeleton",
         "iconID":"monsters_tometik8:34",
         "monsterClass":"undead",
-        "phraseID":"ratdom_do_nothing",
-        "spawnGroup":"ratdom_skel_dance_grp"
+        "spawnGroup":"ratdom_skel_dance_grp",
+        "phraseID":"ratdom_do_nothing"
     },
     {
         "id":"ratdom_skel_dance21",
         "name":"Angry skeleton",
         "iconID":"monsters_tometik8:35",
         "maxHP":80,
+        "unique":1,
         "monsterClass":"undead",
         "movementAggressionType":"helpOthers",
-        "attackDamage":{ "min":10, "max":20 },
+        "attackDamage":{
+            "min":10,
+            "max":20
+        },
         "spawnGroup":"ratdom_skel_dance2_grp",
-        "unique":1,
         "attackCost":5,
         "attackChance":80
     },
@@ -1344,11 +1346,14 @@
         "name":"Angry skeleton",
         "iconID":"monsters_tometik8:36",
         "maxHP":80,
+        "unique":1,
         "monsterClass":"undead",
         "movementAggressionType":"helpOthers",
-        "attackDamage":{ "min":10, "max":20 },
+        "attackDamage":{
+            "min":10,
+            "max":20
+        },
         "spawnGroup":"ratdom_skel_dance2_grp",
-        "unique":1,
         "attackCost":5,
         "attackChance":80
     },
@@ -1357,11 +1362,14 @@
         "name":"Angry skeleton",
         "iconID":"monsters_tometik8:37",
         "maxHP":80,
+        "unique":1,
         "monsterClass":"undead",
         "movementAggressionType":"helpOthers",
-        "attackDamage":{ "min":10, "max":20 },
+        "attackDamage":{
+            "min":10,
+            "max":20
+        },
         "spawnGroup":"ratdom_skel_dance2_grp",
-        "unique":1,
         "attackCost":5,
         "attackChance":80
     },
@@ -1370,11 +1378,14 @@
         "name":"Angry skeleton",
         "iconID":"monsters_tometik8:38",
         "maxHP":80,
+        "unique":1,
         "monsterClass":"undead",
         "movementAggressionType":"helpOthers",
-        "attackDamage":{ "min":10, "max":20 },
+        "attackDamage":{
+            "min":10,
+            "max":20
+        },
         "spawnGroup":"ratdom_skel_dance2_grp",
-        "unique":1,
         "attackCost":5,
         "attackChance":80
     },
@@ -1383,11 +1394,14 @@
         "name":"Angry skeleton",
         "iconID":"monsters_tometik8:39",
         "maxHP":80,
+        "unique":1,
         "monsterClass":"undead",
         "movementAggressionType":"helpOthers",
-        "attackDamage":{ "min":10, "max":20 },
+        "attackDamage":{
+            "min":10,
+            "max":20
+        },
         "spawnGroup":"ratdom_skel_dance2_grp",
-        "unique":1,
         "attackCost":5,
         "attackChance":80
     },
@@ -1396,11 +1410,14 @@
         "name":"Angry skeleton",
         "iconID":"monsters_tometik8:40",
         "maxHP":80,
+        "unique":1,
         "monsterClass":"undead",
         "movementAggressionType":"wholeMap",
-        "attackDamage":{ "min":10, "max":30 },
+        "attackDamage":{
+            "min":10,
+            "max":30
+        },
         "spawnGroup":"ratdom_skel_dance2_grp",
-        "unique":1,
         "attackCost":5,
         "attackChance":100
     },
@@ -1409,11 +1426,14 @@
         "name":"Angry skeleton",
         "iconID":"monsters_tometik8:57",
         "maxHP":80,
+        "unique":1,
         "monsterClass":"undead",
         "movementAggressionType":"wholeMap",
-        "attackDamage":{ "min":10, "max":30 },
+        "attackDamage":{
+            "min":10,
+            "max":30
+        },
         "spawnGroup":"ratdom_skel_dance2_grp",
-        "unique":1,
         "attackCost":5,
         "attackChance":100
     },
@@ -1432,7 +1452,7 @@
         "maxHP":60,
         "maxAP":10,
         "monsterClass":"construct",
-		"movementAggressionType":"protectSpawn",
+        "movementAggressionType":"protectSpawn",
         "attackDamage":{
             "min":10,
             "max":20
@@ -1451,7 +1471,7 @@
         "maxHP":60,
         "maxAP":10,
         "monsterClass":"construct",
-		"movementAggressionType":"protectSpawn",
+        "movementAggressionType":"protectSpawn",
         "attackDamage":{
             "min":10,
             "max":20
@@ -1469,8 +1489,8 @@
         "iconID":"monsters_tometik8:43",
         "maxHP":100,
         "maxAP":10,
+        "unique":1,
         "monsterClass":"construct",
-		"unique":1,
         "attackDamage":{
             "min":15,
             "max":30
@@ -1488,8 +1508,8 @@
         "iconID":"monsters_tometik8:44",
         "maxHP":100,
         "maxAP":10,
+        "unique":1,
         "monsterClass":"construct",
-		"unique":1,
         "attackDamage":{
             "min":15,
             "max":30
@@ -1521,234 +1541,234 @@
         "id":"ratdom_troll_1",
         "name":"Young cave troll",
         "iconID":"monsters_tometik5:14",
-		"maxHP":230,
-		"maxAP":10,
-		"moveCost":2,
-		"monsterClass":"giant",
-		"attackDamage":{
-			"min":1,
-			"max":10
-		},
-		"spawnGroup":"ratdom_troll_1",
-		"droplistID":"ratdom_troll",
-		"attackCost":5,
-		"attackChance":50,
-		"blockChance":30,
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"stunned",
-					"magnitude":1,
-					"duration":2,
-					"chance":"5"
-				}
-			]
-		}
+        "maxHP":230,
+        "maxAP":10,
+        "moveCost":2,
+        "monsterClass":"giant",
+        "attackDamage":{
+            "min":1,
+            "max":10
+        },
+        "spawnGroup":"ratdom_troll_1",
+        "droplistID":"ratdom_troll",
+        "attackCost":5,
+        "attackChance":50,
+        "blockChance":30,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"stunned",
+                    "magnitude":1,
+                    "duration":2,
+                    "chance":"5"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_troll_2",
         "name":"Weak cave troll",
         "iconID":"monsters_tometik5:14",
-		"maxHP":230,
-		"maxAP":10,
-		"moveCost":5,
+        "maxHP":230,
+        "maxAP":10,
+        "moveCost":5,
+        "monsterClass":"giant",
         "movementAggressionType":"wholeMap",
-		"monsterClass":"giant",
-		"attackDamage":{
-			"min":1,
-			"max":12
-		},
-		"spawnGroup":"ratdom_troll_2",
-		"droplistID":"ratdom_troll",
-		"attackCost":3,
-		"attackChance":55,
-		"blockChance":35,
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"stunned",
-					"magnitude":1,
-					"duration":2,
-					"chance":"10"
-				}
-			]
-		}
+        "attackDamage":{
+            "min":1,
+            "max":12
+        },
+        "spawnGroup":"ratdom_troll_2",
+        "droplistID":"ratdom_troll",
+        "attackCost":3,
+        "attackChance":55,
+        "blockChance":35,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"stunned",
+                    "magnitude":1,
+                    "duration":2,
+                    "chance":"10"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_troll_3",
         "name":"Angry cave troll",
         "iconID":"monsters_tometik5:14",
-		"maxHP":330,
-		"maxAP":10,
-		"moveCost":3,
+        "maxHP":330,
+        "maxAP":10,
+        "moveCost":3,
+        "monsterClass":"giant",
         "movementAggressionType":"wholeMap",
-		"monsterClass":"giant",
-		"attackDamage":{
-			"min":10,
-			"max":15
-		},
-		"spawnGroup":"ratdom_troll_3",
-		"droplistID":"ratdom_troll",
-		"attackCost":5,
-		"attackChance":60,
-		"blockChance":40,
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"stunned",
-					"magnitude":1,
-					"duration":4,
-					"chance":"10"
-				}
-			]
-		}
+        "attackDamage":{
+            "min":10,
+            "max":15
+        },
+        "spawnGroup":"ratdom_troll_3",
+        "droplistID":"ratdom_troll",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":40,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"stunned",
+                    "magnitude":1,
+                    "duration":4,
+                    "chance":"10"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_troll_4",
         "name":"Mad cave troll",
         "iconID":"monsters_tometik5:14",
-		"maxHP":330,
-		"maxAP":10,
-		"moveCost":2,
+        "maxHP":330,
+        "maxAP":10,
+        "moveCost":2,
+        "monsterClass":"giant",
         "movementAggressionType":"wholeMap",
-		"monsterClass":"giant",
-		"attackDamage":{
-			"min":10,
-			"max":20
-		},
-		"spawnGroup":"ratdom_troll_4",
-		"droplistID":"ratdom_troll",
-		"attackCost":5,
-		"attackChance":90,
-		"blockChance":70,
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"stunned",
-					"magnitude":1,
-					"duration":3,
-					"chance":"10"
-				}
-			]
-		}
+        "attackDamage":{
+            "min":10,
+            "max":20
+        },
+        "spawnGroup":"ratdom_troll_4",
+        "droplistID":"ratdom_troll",
+        "attackCost":5,
+        "attackChance":90,
+        "blockChance":70,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"stunned",
+                    "magnitude":1,
+                    "duration":3,
+                    "chance":"10"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_troll_5",
         "name":"Dangerous cave troll",
         "iconID":"monsters_tometik5:14",
-		"maxHP":380,
-		"maxAP":10,
-		"moveCost":5,
+        "maxHP":380,
+        "maxAP":10,
+        "moveCost":5,
+        "monsterClass":"giant",
         "movementAggressionType":"wholeMap",
-		"monsterClass":"giant",
-		"attackDamage":{
-			"min":15,
-			"max":30
-		},
-		"spawnGroup":"ratdom_troll_5",
-		"droplistID":"ratdom_troll",
-		"attackCost":5,
-		"attackChance":60,
-		"blockChance":70,
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"stunned",
-					"magnitude":1,
-					"duration":4,
-					"chance":"5"
-				}
-			]
-		}
+        "attackDamage":{
+            "min":15,
+            "max":30
+        },
+        "spawnGroup":"ratdom_troll_5",
+        "droplistID":"ratdom_troll",
+        "attackCost":5,
+        "attackChance":60,
+        "blockChance":70,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"stunned",
+                    "magnitude":1,
+                    "duration":4,
+                    "chance":"5"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_troll_6",
         "name":"Ancient cave troll",
         "iconID":"monsters_tometik5:14",
-		"maxHP":430,
-		"maxAP":10,
-		"moveCost":5,
+        "maxHP":430,
+        "maxAP":10,
+        "moveCost":5,
+        "monsterClass":"giant",
         "movementAggressionType":"wholeMap",
-		"monsterClass":"giant",
-		"attackDamage":{
-			"min":15,
-			"max":30
-		},
-		"spawnGroup":"ratdom_troll_6",
-		"droplistID":"ratdom_troll",
-		"attackCost":5,
-		"attackChance":90,
-		"blockChance":70,
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"stunned",
-					"magnitude":1,
-					"duration":6,
-					"chance":"5"
-				}
-			]
-		}
+        "attackDamage":{
+            "min":15,
+            "max":30
+        },
+        "spawnGroup":"ratdom_troll_6",
+        "droplistID":"ratdom_troll",
+        "attackCost":5,
+        "attackChance":90,
+        "blockChance":70,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"stunned",
+                    "magnitude":1,
+                    "duration":6,
+                    "chance":"5"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_troll_9",
         "name":"Giant cave troll",
         "iconID":"monsters_cyclops:0",
-		"maxHP":590,
-		"maxAP":10,
-		"moveCost":8,
+        "maxHP":590,
+        "maxAP":10,
+        "moveCost":8,
         "unique":1,
-		"monsterClass":"giant",
-		"attackDamage":{
-			"min":20,
-			"max":60
-		},
-		"movementAggressionType":"wholeMap",
-		"spawnGroup":"ratdom_troll_9",
-		"droplistID":"ratdom_troll_9",
-		"attackCost":9,
-		"attackChance":90,
-		"blockChance":90,
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"stunned",
-					"magnitude":1,
-					"duration":5,
-					"chance":"5"
-				}
-			]
-		},
-        "damageResistance":15
+        "monsterClass":"giant",
+        "movementAggressionType":"wholeMap",
+        "attackDamage":{
+            "min":20,
+            "max":60
+        },
+        "spawnGroup":"ratdom_troll_9",
+        "droplistID":"ratdom_troll_9",
+        "attackCost":9,
+        "attackChance":90,
+        "blockChance":90,
+        "damageResistance":15,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"stunned",
+                    "magnitude":1,
+                    "duration":5,
+                    "chance":"5"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_uglybrute",
         "name":"Cave troll",
         "iconID":"monsters_tometik5:14",
-		"maxHP":230,
-		"maxAP":10,
-		"moveCost":2,
+        "maxHP":230,
+        "maxAP":10,
+        "moveCost":2,
+        "monsterClass":"giant",
         "movementAggressionType":"wholeMap",
-		"monsterClass":"giant",
-		"attackDamage":{
-			"min":1,
-			"max":30
-		},
-		"spawnGroup":"ratdom_uglybrute",
-		"droplistID":"ratdom_uglybrute",
-		"attackCost":5,
-		"attackChance":90,
-		"blockChance":70,
-		"hitEffect":{
-			"conditionsTarget":[
-				{
-					"condition":"stunned",
-					"magnitude":1,
-					"duration":4,
-					"chance":"10"
-				}
-			]
-		}
+        "attackDamage":{
+            "min":1,
+            "max":30
+        },
+        "spawnGroup":"ratdom_uglybrute",
+        "droplistID":"ratdom_uglybrute",
+        "attackCost":5,
+        "attackChance":90,
+        "blockChance":70,
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"stunned",
+                    "magnitude":1,
+                    "duration":4,
+                    "chance":"10"
+                }
+            ]
+        }
     },
     {
         "id":"ratdom_water_fish1",
