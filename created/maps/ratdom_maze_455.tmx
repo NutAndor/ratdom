@@ -201,14 +201,14 @@
    eJxjYMANiuSwi18Sw6NpiILLFPiJ3PCgxM7DFOg1xRGvxAJK3D2XaeDspiTMyInjgXLrQOkdqLgF6SM3D9I7TQwnAAr3xwMQ7pToxQUAVh0Vsw==
   </data>
  </layer>
- <layer id="4" name="Top" width="15" height="30">
+ <layer id="4" name="Top" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGLgAABwgAAQ==
   </data>
  </layer>
  <layer id="5" name="Walkable" width="15" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsBEHdpPDLg4DuPThw+TqJUcfMiBHz2DWR67/qBkX9LaXUrupFdb00jsY3DtQ8TMU9GIDA6WXkH58avGZQcgOcswk5A9S/UKMHkIYAAQ/BBY=
+   eJzbKMbAsBEHBgFc4rjkCGFy9ZKjDxmQo2cw6yPXf9SMC3rbS6nd1ApreukdDO4dqPgZCnqxgYHSS0g/PrX4zCBkBzlmEvIHqX4hRg8hDABQAAOy
   </data>
  </layer>
  <layer id="6" name="Light10" width="15" height="30" visible="0">
