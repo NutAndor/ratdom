@@ -137,7 +137,7 @@
     },
     {
         "id":"ratdom_bone_collector_20",
-        "message":"This cave is a great source of bones of high quality, so I stay until my instrument is complete.",
+        "message":"This cave is a great source of bones of high quality, so I will stay until my instrument is complete.",
         "switchToNPC":"ratdom_bone_collector",
         "replies":[
             {
@@ -193,11 +193,11 @@
     },
     {
         "id":"ratdom_bone_collector_52",
-        "message":"Well, no. This is my favorite bone, it makes good sound. Put it back, please."
+        "message":"Well, no. This is my favorite bone, it makes a good sound. Put it back, please."
     },
     {
         "id":"ratdom_bone_collector_54",
-        "message":"Yes you have. I'll better put it back agin. This is a very valuable bone, you know? [Loirash takes the bone from you]",
+        "message":"Yes you have. I'd better put it back again. This is a very valuable bone, you know? [Loirash takes the bone from you]",
         "replies":[
             {
                 "text":"I see.",
