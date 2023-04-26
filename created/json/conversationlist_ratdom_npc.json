@@ -540,21 +540,21 @@
                 "nextPhraseID":"ratdom_fraedro"
             },
             {
-                "text":"I believe you. Go now, as long as you can.",
+                "text":"I believe you. Go now, while you can.",
                 "nextPhraseID":"ratdom_fraedro_20"
             }
         ]
     },
     {
         "id":"ratdom_fraedro_10",
-        "message":"It was not me, it was not me.",
+        "message":"It was not me! It was not me!",
         "replies":[
             {
                 "text":"Finally confess!",
                 "nextPhraseID":"ratdom_fraedro_10"
             },
             {
-                "text":"I believe you. Go now, as long as you can.",
+                "text":"I believe you. Go now, while you can.",
                 "nextPhraseID":"ratdom_fraedro_20"
             },
             {
@@ -1001,7 +1001,7 @@
                 "nextPhraseID":"ratdom_kriih_292"
             },
             {
-                "text":"It better has to be many coins.",
+                "text":"It had better be many coins.",
                 "nextPhraseID":"ratdom_kriih_294"
             }
         ]
@@ -1011,7 +1011,7 @@
         "message":"Oh how cute. This two-leg has a guilty conscience. It just keeps getting better!",
         "replies":[
             {
-                "text":"I better leave before I forget myself.",
+                "text":"I should leave before I forget myself.",
                 "nextPhraseID":"X"
             },
             {
@@ -1051,7 +1051,7 @@
                 "nextPhraseID":"F"
             },
             {
-                "text":"I better run.",
+                "text":"I have to run.",
                 "nextPhraseID":"X"
             }
         ]
