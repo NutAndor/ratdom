@@ -1092,7 +1092,7 @@
         "message":"Andor! Good that you are back at last!",
         "replies":[
             {
-                "text":"I am $playername. You must mix me with my brother.",
+                "text":"I am $playername. You have confused me with my brother.",
                 "nextPhraseID":"ratdom_librarian_10"
             },
             {
@@ -1170,7 +1170,7 @@
     },
     {
         "id":"ratdom_librarian_22",
-        "message":"What?? You are the stranger! You are not allowed to be here!",
+        "message":"What? You are the stranger! You are not allowed to be here!",
         "replies":[
             {
                 "text":"It's fine, I'm going already.",
@@ -1221,7 +1221,7 @@
         "message":"As you command me - I'll be right back.",
         "replies":[
             {
-                "text":"Take your time, rather be thoroughly!",
+                "text":"Take your time, better to be be thorough!",
                 "nextPhraseID":"ratdom_librarian_32"
             }
         ]
