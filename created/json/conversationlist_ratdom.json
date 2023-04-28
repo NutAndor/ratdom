@@ -2314,7 +2314,7 @@
     },
     {
         "id":"ratdom_goldhunter_bed2_10",
-        "message":"Another wooden plank - the ugly troll from above must have thrown it!",
+        "message":"Another wooden plank - the ugly ogre from above must have thrown it!",
         "replies":[
             {
                 "text":"Now at last let's build the bridge.",
@@ -2328,7 +2328,7 @@
     },
     {
         "id":"ratdom_goldhunter_bed2_20",
-        "message":"No, not this time. You were very lucky that something pursuaded the troll to do you this favour.",
+        "message":"No, not this time. You were very lucky that something pursuaded the ogre to do you this favour.",
         "switchToNPC":"ratdom_rat",
         "replies":[
             {
@@ -8353,7 +8353,7 @@
     },
     {
         "id":"ratdom_troll_kill_2a",
-        "message":"The last words of the young troll are echoing through the cave:\n'Help! Help! This sneaky dwarf kills us ...'\n\nThen - silence.\n\nSuddenly the cave is filled with the sound of stomping feet.",
+        "message":"The last words of the young ogre are echoing through the cave:\n'Help! Help! This sneaky dwarf kills us ...'\n\nThen - silence.\n\nSuddenly the cave is filled with the sound of stomping feet.",
         "replies":[
             {
                 "text":"N",
@@ -8363,7 +8363,7 @@
     },
     {
         "id":"ratdom_troll_kill_2b",
-        "message":"Trolls - they are everywhere!"
+        "message":"Ogres - they are everywhere!"
     },
     {
         "id":"ratdom_troll_kill_3",
@@ -8462,7 +8462,7 @@
     },
     {
         "id":"ratdom_troll_sign1",
-        "message":"Beware of the trolls!"
+        "message":"Beware of the ogre!"
     },
     {
         "id":"ratdom_uglybrute_script",
