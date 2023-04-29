@@ -3758,7 +3758,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"Why is here an empty podest?",
+                "text":"Why is here an empty pedestal?",
                 "nextPhraseID":"ratdom_rat_warden2_r_1",
                 "requires":[
                     {
@@ -4000,7 +4000,7 @@
         "message":"You think you could bribe me for a ridiculous 100 gold pieces?",
         "replies":[
             {
-                "text":"Eh, no. Of course not. Sorry. I'll better leave.",
+                "text":"Eh, no. Of course not. Sorry. I'd better leave.",
                 "nextPhraseID":"X"
             },
             {
@@ -4089,7 +4089,7 @@
     },
     {
         "id":"ratdom_roundling",
-        "message":"If strangers come hither to gain \nour treasure, their hope is in vain. \nIn darkest deep ground, \nwith our Yellow Round, \ntheir bones will forever remain.",
+        "message":"If strangers come hither to gain \nour treasure, their hope is in vain. \nIn the darkest deep ground, \nwith our Yellow Round, \ntheir bones will forever remain.",
         "replies":[
             {
                 "text":"What a nice poem. They are good, aren't they, Clevred?",
@@ -4099,7 +4099,7 @@
     },
     {
         "id":"ratdom_roundling_10",
-        "message":"Really, they're good at poetry. But we'll take the artefact with us anyway.",
+        "message":"Really, they're good at poetry. But we'll take the artifact with us anyway.",
         "switchToNPC":"ratdom_rat",
         "replies":[
             {
