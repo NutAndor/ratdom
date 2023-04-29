@@ -4446,7 +4446,7 @@
     },
     {
         "id":"ratdom_skeleton_boss_11",
-        "message":"Mortal - What do you do in my realm?",
+        "message":"Mortal - What are you doing in my realm?",
         "replies":[
             {
                 "text":"I have lost my way. Could you help me?",
@@ -4487,7 +4487,7 @@
     },
     {
         "id":"ratdom_skeleton_boss_12",
-        "message":"Mortal - What do you do in my realm?",
+        "message":"Mortal - What are you doing in my realm?",
         "replies":[
             {
                 "text":"I have lost my way. Could you help me?",
@@ -4640,7 +4640,7 @@
     },
     {
         "id":"ratdom_skeleton_boss_11_40",
-        "message":"There is just one being, that denies me my rightful title. Bloskelt, my wretched brother.",
+        "message":"There is just one being that denies me my rightful title. Bloskelt, my wretched brother.",
         "replies":[
             {
                 "text":"N",
@@ -4650,7 +4650,7 @@
     },
     {
         "id":"ratdom_skeleton_boss_12_40",
-        "message":"There is just one being, that denies me my rightful title. Roskelt, my wretched brother.",
+        "message":"There is just one being that denies me my rightful title. Roskelt, my wretched brother.",
         "replies":[
             {
                 "text":"N",
@@ -4694,7 +4694,7 @@
     },
     {
         "id":"ratdom_skeleton_boss_11_50",
-        "message":"My brother again! He always tries to mock me! And surely  you are now going to tell me, that I should surrender?",
+        "message":"My brother again! He always tries to mock me! And surely you are now going to tell me, that I should surrender?",
         "replies":[
             {
                 "text":"Eh, yes. How did you know?",
@@ -4901,7 +4901,7 @@
     },
     {
         "id":"ratdom_skeleton_boss_90",
-        "message":"Thank you again for your efforts.",
+        "message":"Thank you again for your effort.",
         "replies":[
             {
                 "text":"It could have been a bit more gold.",
@@ -5263,7 +5263,7 @@
     },
     {
         "id":"whootibarfag_48",
-        "message":"Well, I have too good a heart. Here, take the amulett for 100 gold pieces.",
+        "message":"Well, I have too good a heart. Here, take the amulet for 100 gold pieces.",
         "replies":[
             {
                 "text":"Oh thank you! Here is the gold.",
@@ -5502,7 +5502,7 @@
     },
     {
         "id":"whootibarfag_120",
-        "message":"Now I need to know what is louder: The noise of a lonely falling tree, or the sound of one hand clapping.",
+        "message":"Now I need to know what is louder: the noise of a lonely falling tree, or the sound of one hand clapping.",
         "replies":[
             {
                 "text":"Eh ...",
@@ -5638,7 +5638,7 @@
     },
     {
         "id":"whootibarfag_202",
-        "message":"Nothing remains hidden from me what is happening here in the mountain.",
+        "message":"Nothing remains hidden from me that is happening here in the mountain.",
         "replies":[
             {
                 "text":"I really had to run around a lot.",
@@ -5663,7 +5663,7 @@
                 "nextPhraseID":"whootibarfag_220"
             },
             {
-                "text":"You mean wisdom?",
+                "text":"Do you mean wisdom?",
                 "nextPhraseID":"whootibarfag_212"
             },
             {
