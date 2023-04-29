@@ -1361,7 +1361,7 @@
         "message":"As you see. Did you find your brother Andor already? He hasn't been back home for a while now.",
         "replies":[
             {
-                "text":"Eh, what? No, I am still looking after Andor.",
+                "text":"Eh, what? No, I am still looking for Andor.",
                 "nextPhraseID":"ratdom_mikhail_03"
             }
         ]
@@ -1448,7 +1448,7 @@
     },
     {
         "id":"ratdom_mikhail_10_20",
-        "message":"Was about time.",
+        "message":"It's about time.",
         "replies":[
             {
                 "text":"What - no thanks? Rats.",
@@ -1603,7 +1603,7 @@
     },
     {
         "id":"ratdom_mikhail_70",
-        "message":"Where is my bread? Why does it need so long?",
+        "message":"Where is my bread? Why does it need to take so long?",
         "replies":[
             {
                 "text":"Just a minute.",
@@ -1667,7 +1667,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"I would have gone anyway now.",
+                "text":"I would have gone anyway.",
                 "nextPhraseID":"X"
             }
         ],
@@ -1706,7 +1706,7 @@
                 ]
             },
             {
-                "text":"Where would I find this yellow artifact?",
+                "text":"Where would I find this yellow artifact thing?",
                 "nextPhraseID":"ratdom_rat_50",
                 "requires":[
                     {
@@ -1968,11 +1968,11 @@
     },
     {
         "id":"ratdom_rat_70_10",
-        "message":"Hmm. I better accompany you. I think it would be wise to keep an eye on you."
+        "message":"Hmm. I had better accompany you. I think it would be wise to keep an eye on you."
     },
     {
         "id":"ratdom_rat_80",
-        "message":"The statue is well built. You'd probably need a pickaxe to tore it down.",
+        "message":"The statue is well built. You'll probably need a pickaxe to tear it down.",
         "replies":[
             {
                 "text":"Where would I get a pickaxe?",
@@ -1982,7 +1982,7 @@
     },
     {
         "id":"ratdom_rat_80_10",
-        "message":"O dear - I can't believe it! Are you really that stupid?",
+        "message":"Oh dear - I can't believe it! Are you really that stupid?",
         "replies":[
             {
                 "text":"N",
@@ -1992,7 +1992,7 @@
     },
     {
         "id":"ratdom_rat_80_20",
-        "message":"Think yourself: Where are pickaxes supposed to be?"
+        "message":"Think for yourself; where are pickaxes supposed to be?"
     },
     {
         "id":"ratdom_rat_82",
@@ -2014,7 +2014,7 @@
     },
     {
         "id":"ratdom_rat_100",
-        "message":"I hope  you finally have found my artifact?",
+        "message":"I hope  you have finally found my artifact?",
         "replies":[
             {
                 "text":"Eh, no, not yet.",
@@ -2080,7 +2080,7 @@
     },
     {
         "id":"ratdom_rat_240",
-        "message":"Fine, you don't want it any other way. I'll find the artifact on my own too. Farewell.",
+        "message":"Fine, you don't want it any other way. I'll find the artifact on my own. Farewell.",
         "replies":[
             {
                 "text":"Farewell. And sorry.",
@@ -2108,7 +2108,7 @@
     },
     {
         "id":"ratdom_rat_244",
-        "message":"Don't ever scare me that bad again"
+        "message":"Don't ever scare me like that again."
     },
     {
         "id":"ratdom_rat_250",
@@ -3292,7 +3292,7 @@
     },
     {
         "id":"ratdom_rat_warden_82",
-        "message":"That is easy. Just choose the exit where you see rats in front of. Rats always know their way out.",
+        "message":"That is easy. Just choose the exit where you see rats in front of it. Rats always know their way out.",
         "replies":[
             {
                 "text":"N",
@@ -3411,7 +3411,7 @@
         "message":"Follow this passage to the end. You might find something important there. Then go back to the crossing and follow the orange shield again.",
         "replies":[
             {
-                "text":"Eh, ok. Got it.",
+                "text":"Eh, OK. Got it.",
                 "nextPhraseID":"ratdom_rat_warden_95_40",
                 "requires":[
                     {
@@ -3422,7 +3422,7 @@
                 ]
             },
             {
-                "text":"Eh, ok. Got it.",
+                "text":"Eh, OK. Got it.",
                 "nextPhraseID":"ratdom_rat_warden_95_41",
                 "requires":[
                     {
@@ -3448,7 +3448,7 @@
     },
     {
         "id":"ratdom_rat_warden_95_40",
-        "message":"[muttering] Want to hope so, but don't really believe it yet.",
+        "message":"[muttering] I want to hope so, but I don't really believe it yet.",
         "switchToNPC":"ratdom_rat",
         "replies":[
             {
@@ -3459,7 +3459,7 @@
     },
     {
         "id":"ratdom_rat_warden_95_41",
-        "message":"[muttering] Want to hope so, but don't really believe it yet.",
+        "message":"[muttering] I want to hope so, but I don't really believe it yet.",
         "replies":[
             {
                 "text":"N",
@@ -3508,7 +3508,7 @@
     },
     {
         "id":"ratdom_rat_warden_99",
-        "message":"Well, I have too good a heart. Here, take the amulett for 100 gold pieces.",
+        "message":"Well, I have too good a heart. Here, take the amulet for 100 gold pieces.",
         "replies":[
             {
                 "text":"Oh thank you! Here is the gold.",
@@ -3747,7 +3747,7 @@
     },
     {
         "id":"ratdom_rat_warden_cheese_54",
-        "message":"Insolence. I'll pretend like I didn't hear it."
+        "message":"Insolence. I'll pretend that I didn't hear it."
     },
     {
         "id":"ratdom_rat_warden2",
