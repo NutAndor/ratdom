@@ -602,7 +602,7 @@
     },
     {
         "id":"ratdom_fraedro_20",
-        "message":"What? Thank you, thank you! [Fraedro turned to flee, losing a small golden key in the process]",
+        "message":"What? Thank you, thank you! [Fraedro turns to flee, losing a small golden key in the process]",
         "replies":[
             {
                 "text":"You better get out of the area quick.",
@@ -814,7 +814,7 @@
     },
     {
         "id":"ratdom_goldhunter_talk_40",
-        "message":"You would like to know, he? But I don't tell you!",
+        "message":"You would like to know, he? But I won't tell you!",
         "replies":[
             {
                 "text":"Enough. Enjoy yourself.",

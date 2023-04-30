@@ -2567,7 +2567,7 @@
     },
     {
         "id":"ratdom_maze_rat1_20",
-        "message":"It might be no good idea, to stumble in the dark.",
+        "message":"It might not be a good idea to stumble in the dark.",
         "switchToNPC":"ratdom_rat"
     },
     {
@@ -2676,7 +2676,7 @@
     },
     {
         "id":"ratdom_maze_rat2_20",
-        "message":"It might be no good idea, to stumble in the dark."
+        "message":"It might not be a good idea to stumble in the dark."
     },
     {
         "id":"ratdom_maze_light1",
@@ -4091,7 +4091,7 @@
     },
     {
         "id":"ratdom_rat_cheese_key_2",
-        "message":"Hey! Don't take any cheese into the museum! I don't want greasy finger prints all over the valuable objects!",
+        "message":"Hey! Don't take any cheese into the museum! I don't want greasy fingerprints all over the valuable objects!",
         "switchToNPC":"ratdom_rat_warden",
         "replies":[
             {
@@ -5174,7 +5174,7 @@
     },
     {
         "id":"ratdom_rat_conv2_20e",
-        "message":"If you want to get out, just use the passages where you see rats in front of.",
+        "message":"If you want to get out, just use the passages that you see rats in front of.",
         "replies":[
             {
                 "text":"N",
@@ -5238,7 +5238,7 @@
     },
     {
         "id":"ratdom_rat_conv2_40b",
-        "message":"What I always wanted to ask you: Why did you actually kill my uncle?",
+        "message":"What I always wanted to ask you: why did you actually kill my uncle?",
         "switchToNPC":"ratdom_rat",
         "replies":[
             {
@@ -5465,14 +5465,14 @@
         "message":"Follow this passage to the end. We might find something important there. Then go back to the crossing and follow the orange shield again.",
         "replies":[
             {
-                "text":"Eh, ok. Got it.",
+                "text":"Eh, OK. Got it.",
                 "nextPhraseID":"ratdom_rat_conv2_418"
             }
         ]
     },
     {
         "id":"ratdom_rat_conv2_418",
-        "message":"[muttering] Want to hope so, but don't really believe it yet."
+        "message":"[muttering] I want to hope so, but I don't really believe it yet."
     },
     {
         "id":"ratdom_rat_conv2_419",
@@ -5609,7 +5609,7 @@
     },
     {
         "id":"ratdom_rat_conv2_542",
-        "message":"OK. I begin. Ready - Sick - GO!",
+        "message":"OK. I begin. Ready - Steady - GO!",
         "replies":[
             {
                 "text":"Rock",
@@ -6066,7 +6066,7 @@
         "switchToNPC":"ratdom_rat",
         "replies":[
             {
-                "text":"Oh jolly, why can't you be silent for a minute at least?",
+                "text":"Oh great, why can't you be silent for a minute at least?",
                 "nextPhraseID":"ratdom_rat_conv2_592"
             }
         ],
@@ -6112,7 +6112,7 @@
     },
     {
         "id":"ratdom_rat_conv2_602",
-        "message":"That when it essayed\nTo drink lemonade",
+        "message":"That when it tried\nTo drink lemonade",
         "replies":[
             {
                 "text":"N",
@@ -6143,7 +6143,7 @@
                 "nextPhraseID":"ratdom_rat_conv2_902"
             },
             {
-                "text":"Was this huge cave behind our supply cave the whole time? I had never seen her before.",
+                "text":"Was this huge cave behind our supply cave the whole time? I had never seen it before.",
                 "nextPhraseID":"ratdom_rat_conv2_940",
                 "requires":[
                     {
@@ -6153,7 +6153,7 @@
                 ]
             },
             {
-                "text":"How does the orange amulett works in detail?",
+                "text":"How does the orange amulet work, in detail?",
                 "nextPhraseID":"ratdom_rat_conv2_412",
                 "requires":[
                     {
@@ -6174,7 +6174,7 @@
                 ]
             },
             {
-                "text":"How does the blue amulett works in detail?",
+                "text":"How does the blue amulet work, in detail?",
                 "nextPhraseID":"ratdom_rat_conv2_402",
                 "requires":[
                     {
@@ -6216,7 +6216,7 @@
     },
     {
         "id":"ratdom_rat_conv2_910",
-        "message":"Oh, that's easy. I will get famous - even more than King Rah himself!"
+        "message":"Oh, that's easy. I will become famous - even more than King Rah himself!"
     },
     {
         "id":"ratdom_rat_conv2_920",
@@ -6560,7 +6560,7 @@
         "switchToNPC":"ratdom_rat",
         "replies":[
             {
-                "text":"He hadn't noticed us yet.",
+                "text":"He hasn't noticed us yet.",
                 "nextPhraseID":"ratdom_rat_final_3_10"
             }
         ]
@@ -7250,7 +7250,7 @@
     },
     {
         "id":"ratdom_skel_bone_30",
-        "message":"You picked the bone from its podest. Immediatly the music stopped. O oh ...",
+        "message":"You picked the bone from its pedestal. Immediatly the music stopped. Uh oh ...",
         "switchToNPC":"none",
         "rewards":[
             {
@@ -8892,7 +8892,7 @@
     },
     {
         "id":"ratdom_wakeup_120",
-        "message":"I don't know anyone with that name. You must have had a bad dream. And better leave out all the mead.",
+        "message":"I don't know anyone with that name. You must have had a bad dream. And better stay off the mead.",
         "replies":[
             {
                 "text":"I didn't drink.",
@@ -8985,7 +8985,7 @@
     },
     {
         "id":"ratdom_wakeup_150",
-        "message":"By the way - Tharal seems to have disappeared. So he won't be able to cure your head ache.",
+        "message":"By the way - Tharal seems to have disappeared. So he won't be able to cure your headache.",
         "replies":[
             {
                 "text":"Oh.",
@@ -8995,7 +8995,7 @@
     },
     {
         "id":"ratdom_wakeup_152",
-        "message":"Maybe he has needed some time of piece and roams through the forest?",
+        "message":"Maybe he needed some time of peace and roams through the forest?",
         "replies":[
             {
                 "text":"Eh, maybe. Sure.",
@@ -11067,7 +11067,7 @@
         "message":"Clevred certainly would have known what to do now.",
         "replies":[
             {
-                "text":"Why only have I left him?",
+                "text":"Why only did I leave him?",
                 "nextPhraseID":"X"
             }
         ]
@@ -11144,7 +11144,7 @@
         "message":"Oh dear. What do you have a head for, just against the rain? Well I could do it for you.",
         "replies":[
             {
-                "text":"Wait, I try once more.",
+                "text":"Wait, I'll try once more.",
                 "nextPhraseID":"X"
             },
             {
