@@ -2368,7 +2368,7 @@
         "message":"This must be a bad dream.",
         "replies":[
             {
-                "text":"How can I just wake up?",
+                "text":"How can I finally wake up?",
                 "nextPhraseID":"X"
             },
             {
@@ -5609,7 +5609,7 @@
     },
     {
         "id":"ratdom_rat_conv2_542",
-        "message":"OK. I begin. Ready - Steady - GO!",
+        "message":"OK. I begin. Ready - Set - GO!",
         "replies":[
             {
                 "text":"Rock",
