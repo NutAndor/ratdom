@@ -6,7 +6,7 @@
         "stages":[
             {
                 "progress":10,
-                "logText":"A huge rat called Gruiik told you, that they drove all the people out of this village."
+                "logText":"A huge rat called Gruiik told you that they drove all the people out of this village."
             },
             {
                 "progress":20,
@@ -22,12 +22,12 @@
             },
             {
                 "progress":52,
-                "logText":"You told Gruiik, that you killed Mara and Tharal.",
+                "logText":"You told Gruiik that you killed Mara and Tharal.",
                 "rewardExperience":500
             },
             {
                 "progress":54,
-                "logText":"You lied to Gruiik, that you killed Mara and Tharal.",
+                "logText":"You lied to Gruiik that you killed Mara and Tharal.",
                 "rewardExperience":500
             },
             {
@@ -45,7 +45,7 @@
             },
             {
                 "progress":90,
-                "logText":"The huge rat ignored you furthermore.",
+                "logText":"The huge rat ignores you after he has the bread.",
                 "finishesQuest":1
             }
         ]
@@ -57,7 +57,7 @@
         "stages":[
             {
                 "progress":10,
-                "logText":"You woke up when you felt that something had bitten you in your toe. Apparently you had a nightmare - there were rats everywhere! Anyway, you were not a bit recovered."
+                "logText":"You woke up when you felt that something had bitten your your toe. Apparently you had a nightmare - there were rats everywhere! Anyway, you were not even slightly recovered."
             },
             {
                 "progress":30,
@@ -73,7 +73,7 @@
             },
             {
                 "progress":33,
-                "logText":"In the center of a labyrinth you found a leg bone of a  rat."
+                "logText":"In the center of a labyrinth you found a leg bone of a rat."
             },
             {
                 "progress":34,
@@ -139,7 +139,7 @@
             },
             {
                 "progress":200,
-                "logText":"You found an exit from the caves to the surface. Cold icy wind was swirling up here on the Black Water mountain top.\nAstonishingly you are not alone here - Whootibarfag, a very old hermit seemed to have awaited you.",
+                "logText":"You found an exit from the caves to the surface. Cold icy wind was swirling up here on the Black Water mountain top. \nAstonishingly you are not alone here - Whootibarfag, a very old hermit seemed to have been waiting for you.",
                 "rewardExperience":500
             },
             {
@@ -210,7 +210,7 @@
             },
             {
                 "progress":900,
-                "logText":"You finally found the yellow artifact: It was a big round and smelly cheese! Gold yellow and so large that it would provide almost imperishable food. Clevred was overjoyed!"
+                "logText":"You finally found the yellow artifact: It was a big round and smelly cheese! Golden yellow and so large that it would provide almost unlimited food. Clevred was overjoyed!"
             },
             {
                 "progress":940,
@@ -229,7 +229,7 @@
             },
             {
                 "progress":950,
-                "logText":"You fought your way through the roundlings. But Clevred was seriously wounded in the fight. He was just able to give you his beloved artifact.\nWith a last breath he thanked you for your company and died in your arms.",
+                "logText":"You fought your way through the roundlings. But Clevred was seriously wounded in the fight. He was just able to give you his beloved artifact. \nWith a last breath he thanked you for your company and died in your arms.",
                 "rewardExperience":1000
             },
             {
@@ -239,7 +239,7 @@
             },
             {
                 "progress":999,
-                "logText":"You fell asleep just in front of your bed. After long hours of deep and dreamless sleep you woke up - all the rats were gone! Now - was it only a dream?",
+                "logText":"You fell asleep just in front of your bed. After long hours of deep and dreamless sleep you woke up - all the rats were gone! Was it only a dream?",
                 "rewardExperience":20000,
                 "finishesQuest":1
             }

@@ -302,7 +302,7 @@
         "switchToNPC":"ratdom_rat",
         "replies":[
             {
-                "text":"'That's eery.",
+                "text":"That's eery.",
                 "nextPhraseID":"X"
             }
         ],
@@ -319,7 +319,7 @@
         "message":"These statues are not real, you can just move through them.",
         "replies":[
             {
-                "text":"'That's eery.",
+                "text":"That's eery.",
                 "nextPhraseID":"X"
             }
         ],
@@ -437,7 +437,7 @@
     },
     {
         "id":"ratdom_check_backbone_22",
-        "message":"Oh man, he's blind to make matters worse."
+        "message":"Oh man, to make metters worse, he's blind."
     },
     {
         "id":"ratdom_check_backbone_26",
@@ -595,7 +595,7 @@
     },
     {
         "id":"ratdom_artefact_la_20",
-        "message":"Long time ago you asked me how to get out of here. Go home, take a nap and you will find out.",
+        "message":"A long time ago you asked me how to get out of here. Go home, take a nap and you will find out.",
         "replies":[
             {
                 "text":"N",
@@ -966,7 +966,7 @@
                 ]
             },
             {
-                "text":"Maybe you could put another bone of your bag instead?",
+                "text":"Maybe you could put another bone from your bag instead?",
                 "nextPhraseID":"ratdom_bone_collector_s1_24"
             },
             {
@@ -1457,7 +1457,7 @@
     },
     {
         "id":"ratdom_door_533_24",
-        "message":"Looks like there is anything interesting there. Probably just a shortcut back."
+        "message":"Looks like there isn't anything interesting there. Probably just a shortcut back."
     },
     {
         "id":"ratdom_door_533_close",
@@ -1474,7 +1474,7 @@
         "message":"The cave wall looks very massive here.",
         "replies":[
             {
-                "text":"Search the wall for some weak points or holes.",
+                "text":"You search the wall for some weak points or holes.",
                 "nextPhraseID":"ratdom_fraedro_key_10"
             }
         ]
@@ -2101,7 +2101,7 @@
     },
     {
         "id":"ratdom_goldhunter_bone_reminder_22",
-        "message":"Oh man, he's blind to make matters worse."
+        "message":"Oh man, to make matters worse, he's blind."
     },
     {
         "id":"ratdom_goldhunter_bone_reminder_26",
@@ -2176,7 +2176,7 @@
     },
     {
         "id":"ratdom_goldhunter_bridge_20",
-        "message":"No it would be not.",
+        "message":"No it would not.",
         "switchToNPC":"ratdom_rat",
         "replies":[
             {
@@ -2328,7 +2328,7 @@
     },
     {
         "id":"ratdom_goldhunter_bed2_20",
-        "message":"No, not this time. You were very lucky that something pursuaded the ogre to do you this favour.",
+        "message":"No, not this time. You were very lucky that something pursuaded the ogre to do you this favor.",
         "switchToNPC":"ratdom_rat",
         "replies":[
             {
@@ -2368,7 +2368,7 @@
         "message":"This must be a bad dream.",
         "replies":[
             {
-                "text":"How can I only wake up?",
+                "text":"How can I just wake up?",
                 "nextPhraseID":"X"
             },
             {
