@@ -285,6 +285,7 @@
             {
                 "progress":90,
                 "logText":"For your effort, you got a pretty poor reward.",
+                "rewardExperience":1000,
                 "finishesQuest":1
             }
         ]
